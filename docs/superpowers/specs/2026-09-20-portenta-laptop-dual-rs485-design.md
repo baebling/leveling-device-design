@@ -34,7 +34,7 @@ Control/status power is not the E-stop safety substitute.
 
 | Branch | Fixed configuration | Before joining the full network | Stale/failed response action |
 |---|---|---|---|
-| DMC motion | Addresses 1/2/3, short J5 daisy chain, each axis has a unique address | Verify address, encoder direction, controlled JOG and STOP one axis at a time with actuator supported | Portenta command-session timeout, bounded JOG, all-axis STOP and latched fault. A new laptop `START` is required after reconnection. `HOLD_DMC_STOP_BEHAVIOR`: serial STOP is not proof that a Portenta hang or bus failure bounds retained DMC motion. |
+| DMC motion | Addresses 1/2/3, short J5 daisy chain, each axis has a unique address | Verify the DMC 5 V encoder supply/output current, A/B logic and pull-up compatibility, 6 ppr resolution/count scaling, address and three-node multidrop configuration, encoder direction, controlled JOG/STOP, and reverse escape after the internal limit one axis at a time with actuator supported | Portenta command-session timeout, bounded JOG, all-axis STOP and latched fault. A new laptop `START` is required after reconnection. `HOLD_DMC_STOP_BEHAVIOR`: serial STOP is not proof that a Portenta hang or bus failure bounds retained DMC motion. |
 | IMU sensing | SG01 static IP, TCP server/slave on TCP 502; Portenta is Modbus TCP client/master; SG01 is RTU master; HWT905 IDs 11 and 12 | Configure one HWT905 at a time, save, power-cycle and read back its ID/settings, then connect both | Missing, malformed, wrong-ID, out-of-order, or older-than-the-configured freshness deadline sample inhibits `LEVEL`, emits a latched communication fault and is logged. The numerical deadline and 20 Hz behaviour remain `HOLD_BENCH_VERIFY`. |
 
 `Moxa MB3180` remains a fallback only; no verified serial-isolation basis exists in current evidence, so it cannot silently replace SG01.
@@ -58,6 +58,7 @@ Normal `HOME` never seeks either actuator end limit. It may return to the saved 
 
 - `HOLD_ACTUATOR_SWITCH_POINTS` — measure all actual internal low/high switch points; 205~305 mm CAD values are not switch-trip values.
 - `HOLD_ACTUATOR_PEAK_STALL_CURVE` — supplier evidence for actual peak/stall current, duration, duty cycle and reverse escape after internal limit.
+- `HOLD_DMC_ENCODER_MULTIDROP_COMPATIBILITY` — DMC-200 ↔ LM4075OE 5 V A/B 6 ppr electrical/feedback compatibility: DMC 5 V encoder supply/output current, A/B logic/pull-up, count scaling, three-node addresses/multidrop configuration, and reverse escape after internal limit.
 - `HOLD_DMC_STOP_BEHAVIOR` — retained-command/watchdog and failure response on master hang or motion-bus loss.
 - `HOLD_SG01_QUOTE_CARD_STOCK` — domestic card checkout, VAT/lead/stock evidence for tGW-715i-T.
 - `HOLD_SMPS_30A_SKU` — exact 24 V 30 A-class SKU, continuous rating, input protection and applicable certification evidence.

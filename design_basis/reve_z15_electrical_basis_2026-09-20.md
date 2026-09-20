@@ -23,7 +23,7 @@ The supplied LM4075OE-1075 table states 24 V no-load 0.4 A and loaded 1.5 A per 
 => 24 V, 30 A class motor PSU basis
 ```
 
-DMC-200's stated 8 A continuous capacity is compatible with the 1.5 A nominal loaded datum per axis, but it does not confirm peak-duration behaviour, fuse coordination, cable gauge, contactor rating, bus regeneration or actuator compatibility. The gateway contribution is small (tGW-715i-T nominal 0.07 A at 24 V) but control-current allocation is not released until Portenta, IMU, encoder, relay/contactor coil and protection data are summed from final part data sheets.
+DMC-200's stated 8 A continuous capacity is compatible with the 1.5 A nominal loaded datum per axis, but it does not confirm peak-duration behaviour, fuse coordination, cable gauge, contactor rating, bus regeneration or actuator compatibility. In particular, the DMC-200 ↔ LM4075OE 5 V A/B 6 ppr feedback interface must prove the DMC 5 V encoder supply/output current, A/B logic/pull-up compatibility, resolution/count scaling, three-node address/multidrop configuration and reverse escape after an internal limit. The gateway contribution is small (tGW-715i-T nominal 0.07 A at 24 V) but control-current allocation is not released until Portenta, IMU, encoder, relay/contactor coil and protection data are summed from final part data sheets.
 
 ## Motion and response expectations
 
@@ -37,6 +37,7 @@ Normal HOME does not contact an internal actuator limit. It uses only valid save
 |---|---|
 | `HOLD_ACTUATOR_SWITCH_POINTS` | Three physical `L_low_switch` / `L_high_switch` measurements, reverse-escape check, then re-run Z/pin/collision review. |
 | `HOLD_ACTUATOR_PEAK_STALL_CURVE` | Written supplier or measured 24 V peak/stall current, duration and duty curve. |
+| `HOLD_DMC_ENCODER_MULTIDROP_COMPATIBILITY` | Bench and supplier evidence for DMC-200 ↔ LM4075OE 5 V A/B 6 ppr supply/output current, logic/pull-up, count scaling, address 1/2/3 three-node multidrop settings, and reverse escape after internal limit. |
 | `HOLD_DMC_STOP_BEHAVIOR` | Bench fault injection: Portenta reset/hang and motion-bus unplug response, confirmed DMC retained-command/watchdog result. |
 | `HOLD_SG01_QUOTE_CARD_STOCK` | Domestic VAT-included price, card purchase route, inventory and lead-time evidence for tGW-715i-T. |
 | `HOLD_SMPS_30A_SKU` | Exact 24 V 30 A-class SKU with continuous rating, input/protection details and applicable certification. |
