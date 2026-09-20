@@ -6,6 +6,7 @@
 .mplcache/
 .tools/
 vendor/
+node_modules/
 wheelhouse/
 tmp/
 logs/
