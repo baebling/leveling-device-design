@@ -62,3 +62,30 @@ design_basis\powered_reve_rebaseline_concept_2026-09-17.md:141:최초 조립은 
 - Actual `L_low_switch` and `L_high_switch` remain unmeasured.
 - Central-guide overlap at physical Z=65 mm, physical cable clearance, and all real-world commissioning results remain unverified.
 - The existing no-independent-mechanical-stop safety deviation remains unresolved and continues to block purchase and fabrication release.
+
+## Fix round 1 — routine HOME / limit-seeking separation
+
+Updated the three Task 1 design records so routine/general HOME only validates a saved, valid position and the saved physical Z=15 mm datum with no manual-move evidence, then returns to that datum without seeking an internal limit. If any condition is absent or invalid, it refuses as `HOME_START_UNVERIFIED`. Internal-limit seeking is reserved for named, block-supported supervised `COMMISSIONING_HOME` or recovery; that path remains LEVEL-inhibited until general-HOME conditions are newly satisfied and verified.
+
+The `L_low_switch`-based return wording is now explicitly scoped to supervised limit-seeking, preventing it from describing general HOME. The concept state flow likewise makes saved-position validation explicit before `MOVE_TO_Z0_DATUM`.
+
+### Fix verification
+
+Command run:
+
+```powershell
+$files = @('design_basis/powered_reve_rebaseline_concept_2026-09-17.md','requirements/current_variant_priority_2026-09-17.md','verification/reve_z15_rebaseline_decision_2026-09-20.md'); $patterns = @('일반 HOME.*내장.*리미트','HOME_START_UNVERIFIED','COMMISSIONING_HOME','자동 LEVEL.*시작하지 않'); foreach ($pattern in $patterns) { $count = (rg -n --pcre2 $pattern $files | Measure-Object -Line).Lines; "${pattern}: $count" }; git diff --check; "git diff --check exit: $LASTEXITCODE"; rg -n "Z=15|Z=65|221\.281|289\.523|218~292|205~305" $files | Measure-Object -Line | ForEach-Object { "Z+15 value-match lines: $($_.Lines)" }
+```
+
+Exact output:
+
+```text
+일반 HOME.*내장.*리미트: 7
+HOME_START_UNVERIFIED: 9
+COMMISSIONING_HOME: 9
+자동 LEVEL.*시작하지 않: 3
+git diff --check exit: 0
+Z+15 value-match lines: 28
+```
+
+`git diff --check` emitted only CRLF conversion warnings; it reported no whitespace errors and exited 0.
