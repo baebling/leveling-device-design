@@ -1,0 +1,6 @@
+﻿Arduino CLI version: 1.5.1
+Arduino CLI SHA256: FABE42E0EB04D00E776A66178299FF95A46C623DBC260F997E58FD514853DD40
+FQBN: arduino:avr:mega
+Sketch: C:\Users\gangm\OneDrive\2. 연구실\지원사업\BIZ-Lab 창업클럽\수평유지장치설계 프로젝트\firmware\reve_leveling_controller
+Build output: C:\Users\gangm\OneDrive\2. 연구실\지원사업\BIZ-Lab 창업클럽\수평유지장치설계 프로젝트\outputs\profile_radial_revE_poc_release_candidate\firmware_build
+Compiled UTC: 2026-09-04T04:29:10.4478406Z

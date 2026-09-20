@@ -1,0 +1,177 @@
+{
+  "revision": "D",
+  "status": "ACTUATOR_JOINT_GEOMETRY_CORRECTED_VENDOR_A2_INTERFACE_OPEN",
+  "artifact_count": 34,
+  "artifacts": [
+    {
+      "path": "outputs/navimro_fusion360_revD/ACTUATOR_JOINT_REBUILD_REVD.md",
+      "bytes": 6575,
+      "sha256": "55b24bd79c2f22389f1f4c46c38dad84780f2d80abc7213702ae1e4d628c9ade"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/DMD150_OFFICIAL_MANUAL_REVIEW_REVD.md",
+      "bytes": 3707,
+      "sha256": "472dcb7c45d0ac254d5a8f1e1a71d64648ea436dd3a3b78a4cdad0c99ead7bc3"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/ELECTRICAL_CONTROL_COMPLETENESS_REVD.md",
+      "bytes": 5417,
+      "sha256": "ff6bfa3bb23b2bccb73f1b8e40e42ec84f4f7344f39dfe818edc60e3f167fb5d"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/FUSION360_IMPORT_README.md",
+      "bytes": 2862,
+      "sha256": "a39e0a426b1f6b32a771732b56f0c3678a16a463e2ae7a1bff2957fb69ead551"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/NAVIMRO_revD_component_manifest.csv",
+      "bytes": 43819,
+      "sha256": "da465f14831e73b1713394fcf152948298a1f36ddbddb5a6bf3573a9b7009dfb"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/NAVIMRO_revD_detailed_BOM.csv",
+      "bytes": 5759,
+      "sha256": "da89b707a69bba6ed886f6c24e08c458d848d144114284bc7f499320ab97b041"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/NAVIMRO_revD_fastener_schedule.csv",
+      "bytes": 1760,
+      "sha256": "c7160a15c3ea120a677ed67cb0fde876c3f36e2c791a15a2ecdc4f85b8b2bc8c"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/NAVIMRO_revD_procurement_gaps.csv",
+      "bytes": 1360,
+      "sha256": "22a7aa6beffd19e34d932524ff2153b193f8ff6acd6cceab3e3e435fd3ab3016"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/NAVIMRO_revD_provisional_interfaces.csv",
+      "bytes": 18068,
+      "sha256": "fc703514e4e6a91abac5f8aaca09a37c6da716a5f787904a28e64d7131dd069e"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/NAVIMRO_single_order_BOM_revD.csv",
+      "bytes": 12350,
+      "sha256": "c20cd3f4e4e6154e681af1509a4ad26b7934d77a7505d53218a832af36fb2efc"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/NAVIMRO_single_order_BOM_revD.md",
+      "bytes": 7068,
+      "sha256": "765b0a777eeef41b17803300d2157b9f80ea3af394cf3d0fd7423fd7c1a0177e"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/NAVIMRO_vendor_inquiry_revD.md",
+      "bytes": 6473,
+      "sha256": "812d1a6e19389e80009555b07790106e66420058054204dd4224bddab5f0576e"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/renders/actuator_joint_closeup.png",
+      "bytes": 826482,
+      "sha256": "5c0c62d008fa21a6d2ddad19bf219d0a9be3baa376399337e7a8681fc56aacbb"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/renders/detailed_exploded.png",
+      "bytes": 830136,
+      "sha256": "30806f305af40d1a03f471bdf2f0dee1dafe204d5b40740ebfe43c586ee435dd"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/renders/detailed_iso.png",
+      "bytes": 786750,
+      "sha256": "8947d651d0d9a80fb208d4a193987a90079bfb93bf014ed328e871bf0049fc33"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/renders/detailed_top.png",
+      "bytes": 737686,
+      "sha256": "738115f427fff6fc64b77cd58a681e1f83b8207a15c34f4cd5adc4571fc5603d"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/renders/detailed_underside.png",
+      "bytes": 776369,
+      "sha256": "bacab56c9d236f76de5c4bd893e01d7d4f72db2b1b65f66ae20d44bd931b83d2"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/ACT1_complete_mounting_cassette_neutral_revD.step",
+      "bytes": 579978,
+      "sha256": "6aa44d021f15f8624e04023a0dc30ba8e2d3f5c6cbecd3c68727438114346da5"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/NAVIMRO_detailed_collapsed_revD.step",
+      "bytes": 10469615,
+      "sha256": "fcaf7cf5e9b9bdae102cf0e25313513ed5ddec7d28148e61e6af435bba17badc"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/NAVIMRO_detailed_exploded_revD.step",
+      "bytes": 10454977,
+      "sha256": "7793d8e67abec09eb685455dce3bb04d5d6ab1ab8ff78179ba0befd9b8aac016"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/NAVIMRO_detailed_max_pitch_revD.step",
+      "bytes": 10784030,
+      "sha256": "06c6f8579544e3079f07ee42349d7d107e8aafb85f6f680819ba0ee92b5aa1ea"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/NAVIMRO_detailed_max_pitch_roll_revD.step",
+      "bytes": 11023674,
+      "sha256": "e565d8ce46a3ad7f3b7cc098552ed2b302ba1c7c6de0386146429ffb0497a948"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/NAVIMRO_detailed_max_roll_revD.step",
+      "bytes": 10745170,
+      "sha256": "7e7d3b18c5e9c3dac7d5484a9af6c0cb05101475f4d7224adee1d770e4a210af"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/NAVIMRO_detailed_neutral_revD.step",
+      "bytes": 10470477,
+      "sha256": "7799b0f85353c248bb0beb24a0d4c2ae6ac55b8010c7909f2658539f726f9d26"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/NAVIMRO_detailed_raised_revD.step",
+      "bytes": 10470773,
+      "sha256": "b933a41292cb1f333e3cff68e4508bd0838c4166b9265550be04286d51c9b6b2"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/NAVIMRO_module_only_collapsed_revD.step",
+      "bytes": 9579028,
+      "sha256": "2555ed40aed92808da58ba84fab1fb53cb07b969dce71c41961a2ea7f03d0b30"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/SUB_01_LOWER_FRAME_revD.step",
+      "bytes": 2536199,
+      "sha256": "efaa6703105148536c1337eafe37e97d2bc20670be540fa0bba0e382b954cdf7"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/SUB_02_FIXED_GUIDE_revD.step",
+      "bytes": 1117449,
+      "sha256": "f03a8e6908d137aeb09e5ae5285f44df9cc8b6c48374e69dcaadf5cd22e63b05"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/SUB_03_MOVING_GUIDE_revD.step",
+      "bytes": 627335,
+      "sha256": "9b7ff1c0d4f6f5e7d7ab8d724923425d08de0f06766fa870b7873bf9352a018b"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/SUB_04_CARDAN_revD.step",
+      "bytes": 672458,
+      "sha256": "8f3f0a7b84d1e33c78dba189471956587ea87e5f82ea227ba8fe28e126c7534c"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/SUB_05_UPPER_FRAME_revD.step",
+      "bytes": 2293030,
+      "sha256": "803b4f923a02411648c32b1d137c510b772c715b1a9d5f8273df65468a7745db"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/SUB_06_ACTUATORS_revD.step",
+      "bytes": 1159793,
+      "sha256": "78f1cf3a9e346d13063b7d0d7e2505644b16a1fb47e22b5809e3ef9c8424189f"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/SUB_07_DECK_revD.step",
+      "bytes": 841912,
+      "sha256": "31b3f29866773dea65fcc1a5fa3fe3e40fe8df01058cef1c0f17b6e278d86eda"
+    },
+    {
+      "path": "outputs/navimro_fusion360_revD/step/SUB_08_CART_COUPLING_revD.step",
+      "bytes": 829892,
+      "sha256": "1923bd16f1e8187516da7e714c51e63dc01adf65f5f26eb92d03df213d064421"
+    }
+  ]
+}

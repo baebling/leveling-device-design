@@ -1,0 +1,188 @@
+﻿component_name,group,interface,required_confirmation
+NVR-P09_LMF_tab_1_1,02_FIXED_GUIDE,SS400 80x50x6,Transfer drill from delivered LMF12UU
+LMF12UU_1_1,02_FIXED_GUIDE,LMF12UU linear bushing,Confirm delivered dimensions and replace planning geometry
+LMF_1_1_1_screw,02_FIXED_GUIDE,M5 socket screw,Confirm delivered dimensions and replace planning geometry
+LMF_1_1_1_washer,02_FIXED_GUIDE,M5 flat washer,Confirm delivered dimensions and replace planning geometry
+LMF_1_1_1_nyloc,02_FIXED_GUIDE,M5 nyloc nut,Confirm delivered dimensions and replace planning geometry
+LMF_1_1_2_screw,02_FIXED_GUIDE,M5 socket screw,Confirm delivered dimensions and replace planning geometry
+LMF_1_1_2_washer,02_FIXED_GUIDE,M5 flat washer,Confirm delivered dimensions and replace planning geometry
+LMF_1_1_2_nyloc,02_FIXED_GUIDE,M5 nyloc nut,Confirm delivered dimensions and replace planning geometry
+NVR-P09_LMF_tab_1_2,02_FIXED_GUIDE,SS400 80x50x6,Transfer drill from delivered LMF12UU
+LMF12UU_1_2,02_FIXED_GUIDE,LMF12UU linear bushing,Confirm delivered dimensions and replace planning geometry
+LMF_1_2_1_screw,02_FIXED_GUIDE,M5 socket screw,Confirm delivered dimensions and replace planning geometry
+LMF_1_2_1_washer,02_FIXED_GUIDE,M5 flat washer,Confirm delivered dimensions and replace planning geometry
+LMF_1_2_1_nyloc,02_FIXED_GUIDE,M5 nyloc nut,Confirm delivered dimensions and replace planning geometry
+LMF_1_2_2_screw,02_FIXED_GUIDE,M5 socket screw,Confirm delivered dimensions and replace planning geometry
+LMF_1_2_2_washer,02_FIXED_GUIDE,M5 flat washer,Confirm delivered dimensions and replace planning geometry
+LMF_1_2_2_nyloc,02_FIXED_GUIDE,M5 nyloc nut,Confirm delivered dimensions and replace planning geometry
+NVR-P09_LMF_tab_2_1,02_FIXED_GUIDE,SS400 80x50x6,Transfer drill from delivered LMF12UU
+LMF12UU_2_1,02_FIXED_GUIDE,LMF12UU linear bushing,Confirm delivered dimensions and replace planning geometry
+LMF_2_1_1_screw,02_FIXED_GUIDE,M5 socket screw,Confirm delivered dimensions and replace planning geometry
+LMF_2_1_1_washer,02_FIXED_GUIDE,M5 flat washer,Confirm delivered dimensions and replace planning geometry
+LMF_2_1_1_nyloc,02_FIXED_GUIDE,M5 nyloc nut,Confirm delivered dimensions and replace planning geometry
+LMF_2_1_2_screw,02_FIXED_GUIDE,M5 socket screw,Confirm delivered dimensions and replace planning geometry
+LMF_2_1_2_washer,02_FIXED_GUIDE,M5 flat washer,Confirm delivered dimensions and replace planning geometry
+LMF_2_1_2_nyloc,02_FIXED_GUIDE,M5 nyloc nut,Confirm delivered dimensions and replace planning geometry
+NVR-P09_LMF_tab_2_2,02_FIXED_GUIDE,SS400 80x50x6,Transfer drill from delivered LMF12UU
+LMF12UU_2_2,02_FIXED_GUIDE,LMF12UU linear bushing,Confirm delivered dimensions and replace planning geometry
+LMF_2_2_1_screw,02_FIXED_GUIDE,M5 socket screw,Confirm delivered dimensions and replace planning geometry
+LMF_2_2_1_washer,02_FIXED_GUIDE,M5 flat washer,Confirm delivered dimensions and replace planning geometry
+LMF_2_2_1_nyloc,02_FIXED_GUIDE,M5 nyloc nut,Confirm delivered dimensions and replace planning geometry
+LMF_2_2_2_screw,02_FIXED_GUIDE,M5 socket screw,Confirm delivered dimensions and replace planning geometry
+LMF_2_2_2_washer,02_FIXED_GUIDE,M5 flat washer,Confirm delivered dimensions and replace planning geometry
+LMF_2_2_2_nyloc,02_FIXED_GUIDE,M5 nyloc nut,Confirm delivered dimensions and replace planning geometry
+SK12_1_1,03_MOVING_GUIDE,SK12 shaft support,Confirm delivered dimensions and replace planning geometry
+SK12_1_1_1_screw,03_MOVING_GUIDE,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+SK12_1_1_1_washer,03_MOVING_GUIDE,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+SK12_1_1_1_tnut,03_MOVING_GUIDE,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+SK12_1_1_2_screw,03_MOVING_GUIDE,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+SK12_1_1_2_washer,03_MOVING_GUIDE,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+SK12_1_1_2_tnut,03_MOVING_GUIDE,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+SK12_2_1,03_MOVING_GUIDE,SK12 shaft support,Confirm delivered dimensions and replace planning geometry
+SK12_2_1_1_screw,03_MOVING_GUIDE,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+SK12_2_1_1_washer,03_MOVING_GUIDE,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+SK12_2_1_1_tnut,03_MOVING_GUIDE,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+SK12_2_1_2_screw,03_MOVING_GUIDE,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+SK12_2_1_2_washer,03_MOVING_GUIDE,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+SK12_2_1_2_tnut,03_MOVING_GUIDE,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+SK12_1_2,03_MOVING_GUIDE,SK12 shaft support,Confirm delivered dimensions and replace planning geometry
+SK12_1_2_1_screw,03_MOVING_GUIDE,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+SK12_1_2_1_washer,03_MOVING_GUIDE,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+SK12_1_2_1_tnut,03_MOVING_GUIDE,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+SK12_1_2_2_screw,03_MOVING_GUIDE,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+SK12_1_2_2_washer,03_MOVING_GUIDE,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+SK12_1_2_2_tnut,03_MOVING_GUIDE,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+SK12_2_2,03_MOVING_GUIDE,SK12 shaft support,Confirm delivered dimensions and replace planning geometry
+SK12_2_2_1_screw,03_MOVING_GUIDE,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+SK12_2_2_1_washer,03_MOVING_GUIDE,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+SK12_2_2_1_tnut,03_MOVING_GUIDE,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+SK12_2_2_2_screw,03_MOVING_GUIDE,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+SK12_2_2_2_washer,03_MOVING_GUIDE,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+SK12_2_2_2_tnut,03_MOVING_GUIDE,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+split_collar_1_1,03_MOVING_GUIDE,12 mm split collar,Confirm delivered dimensions and replace planning geometry
+split_collar_1_2,03_MOVING_GUIDE,12 mm split collar,Confirm delivered dimensions and replace planning geometry
+split_collar_2_1,03_MOVING_GUIDE,12 mm split collar,Confirm delivered dimensions and replace planning geometry
+split_collar_2_2,03_MOVING_GUIDE,12 mm split collar,Confirm delivered dimensions and replace planning geometry
+CARDAN_X_pin,04_CARDAN,M8 pivot bolt,Confirm delivered dimensions and replace planning geometry
+CARDAN_X_washer_A,04_CARDAN,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+CARDAN_X_washer_B,04_CARDAN,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+CARDAN_X_nyloc,04_CARDAN,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+CARDAN_Y_pin,04_CARDAN,M8 pivot bolt,Confirm delivered dimensions and replace planning geometry
+CARDAN_Y_washer_A,04_CARDAN,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+CARDAN_Y_washer_B,04_CARDAN,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+CARDAN_Y_nyloc,04_CARDAN,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+LA2000_A2_PROVISIONAL_1,06_ACTUATORS,DIHOOL LA2000-125150 planning body,Replace with supplier STEP and measured pin centres
+ACT1_LOWER_UH_bracket_PROVISIONAL,06_ACTUATORS,DIHOOL U/H bracket stack,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_pin,06_ACTUATORS,M8 pivot bolt,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_washer_A,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_washer_B,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_nyloc,06_ACTUATORS,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_BASE_1_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_BASE_1_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_BASE_1_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_BASE_2_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_BASE_2_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT1_LOWER_BASE_2_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_UH_bracket_PROVISIONAL,06_ACTUATORS,DIHOOL U/H bracket stack,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_pin,06_ACTUATORS,M8 pivot bolt,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_washer_A,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_washer_B,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_nyloc,06_ACTUATORS,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_BASE_1_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_BASE_1_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_BASE_1_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_BASE_2_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_BASE_2_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT1_UPPER_BASE_2_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+LA2000_A2_PROVISIONAL_2,06_ACTUATORS,DIHOOL LA2000-125150 planning body,Replace with supplier STEP and measured pin centres
+ACT2_LOWER_UH_bracket_PROVISIONAL,06_ACTUATORS,DIHOOL U/H bracket stack,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_pin,06_ACTUATORS,M8 pivot bolt,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_washer_A,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_washer_B,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_nyloc,06_ACTUATORS,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_BASE_1_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_BASE_1_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_BASE_1_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_BASE_2_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_BASE_2_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT2_LOWER_BASE_2_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_UH_bracket_PROVISIONAL,06_ACTUATORS,DIHOOL U/H bracket stack,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_pin,06_ACTUATORS,M8 pivot bolt,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_washer_A,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_washer_B,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_nyloc,06_ACTUATORS,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_BASE_1_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_BASE_1_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_BASE_1_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_BASE_2_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_BASE_2_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT2_UPPER_BASE_2_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+LA2000_A2_PROVISIONAL_3,06_ACTUATORS,DIHOOL LA2000-125150 planning body,Replace with supplier STEP and measured pin centres
+ACT3_LOWER_UH_bracket_PROVISIONAL,06_ACTUATORS,DIHOOL U/H bracket stack,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_pin,06_ACTUATORS,M8 pivot bolt,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_washer_A,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_washer_B,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_nyloc,06_ACTUATORS,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_BASE_1_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_BASE_1_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_BASE_1_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_BASE_2_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_BASE_2_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT3_LOWER_BASE_2_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_UH_bracket_PROVISIONAL,06_ACTUATORS,DIHOOL U/H bracket stack,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_pin,06_ACTUATORS,M8 pivot bolt,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_washer_A,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_washer_B,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_nyloc,06_ACTUATORS,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_BASE_1_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_BASE_1_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_BASE_1_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_BASE_2_screw,06_ACTUATORS,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_BASE_2_washer,06_ACTUATORS,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+ACT3_UPPER_BASE_2_tnut,06_ACTUATORS,M8 T-slot nut,Confirm delivered dimensions and replace planning geometry
+NVR-P10_master_locator_plate,08_CART_COUPLING,SS400 120x50x6,Confirm delivered dimensions and replace planning geometry
+NVR-C02_master_locator_PROVISIONAL,08_CART_COUPLING,turned steel locator pin,Confirm delivered dimensions and replace planning geometry
+LOCATOR_1_screw,08_CART_COUPLING,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+LOCATOR_1_washer,08_CART_COUPLING,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+LOCATOR_1_nyloc,08_CART_COUPLING,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+NVR-P10_secondary_locator_plate,08_CART_COUPLING,SS400 120x50x6,Confirm delivered dimensions and replace planning geometry
+NVR-C02_secondary_locator_PROVISIONAL,08_CART_COUPLING,turned steel locator pin,Confirm delivered dimensions and replace planning geometry
+LOCATOR_2_screw,08_CART_COUPLING,M8 socket screw,Confirm delivered dimensions and replace planning geometry
+LOCATOR_2_washer,08_CART_COUPLING,M8 flat washer,Confirm delivered dimensions and replace planning geometry
+LOCATOR_2_nyloc,08_CART_COUPLING,M8 nyloc nut,Confirm delivered dimensions and replace planning geometry
+NVR-P11_latch_spreader_1,08_CART_COUPLING,SS400 100x50x6,Confirm delivered dimensions and replace planning geometry
+CR3001_latch_1_PROVISIONAL,08_CART_COUPLING,CR-3001 latch,Confirm delivered dimensions and replace planning geometry
+NVR-P12_CR3001_keeper_1_PROVISIONAL,08_CART_COUPLING,SS400 keeper fitted to CR-3001,Confirm delivered dimensions and replace planning geometry
+LATCH_1_1_screw,08_CART_COUPLING,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+LATCH_1_1_washer,08_CART_COUPLING,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+LATCH_1_1_tnut,08_CART_COUPLING,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+LATCH_1_2_screw,08_CART_COUPLING,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+LATCH_1_2_washer,08_CART_COUPLING,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+LATCH_1_2_tnut,08_CART_COUPLING,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+NVR-P11_latch_spreader_2,08_CART_COUPLING,SS400 100x50x6,Confirm delivered dimensions and replace planning geometry
+CR3001_latch_2_PROVISIONAL,08_CART_COUPLING,CR-3001 latch,Confirm delivered dimensions and replace planning geometry
+NVR-P12_CR3001_keeper_2_PROVISIONAL,08_CART_COUPLING,SS400 keeper fitted to CR-3001,Confirm delivered dimensions and replace planning geometry
+LATCH_2_1_screw,08_CART_COUPLING,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+LATCH_2_1_washer,08_CART_COUPLING,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+LATCH_2_1_tnut,08_CART_COUPLING,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+LATCH_2_2_screw,08_CART_COUPLING,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+LATCH_2_2_washer,08_CART_COUPLING,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+LATCH_2_2_tnut,08_CART_COUPLING,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+NVR-P11_latch_spreader_3,08_CART_COUPLING,SS400 100x50x6,Confirm delivered dimensions and replace planning geometry
+CR3001_latch_3_PROVISIONAL,08_CART_COUPLING,CR-3001 latch,Confirm delivered dimensions and replace planning geometry
+NVR-P12_CR3001_keeper_3_PROVISIONAL,08_CART_COUPLING,SS400 keeper fitted to CR-3001,Confirm delivered dimensions and replace planning geometry
+LATCH_3_1_screw,08_CART_COUPLING,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+LATCH_3_1_washer,08_CART_COUPLING,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+LATCH_3_1_tnut,08_CART_COUPLING,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+LATCH_3_2_screw,08_CART_COUPLING,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+LATCH_3_2_washer,08_CART_COUPLING,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+LATCH_3_2_tnut,08_CART_COUPLING,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+NVR-P11_latch_spreader_4,08_CART_COUPLING,SS400 100x50x6,Confirm delivered dimensions and replace planning geometry
+CR3001_latch_4_PROVISIONAL,08_CART_COUPLING,CR-3001 latch,Confirm delivered dimensions and replace planning geometry
+NVR-P12_CR3001_keeper_4_PROVISIONAL,08_CART_COUPLING,SS400 keeper fitted to CR-3001,Confirm delivered dimensions and replace planning geometry
+LATCH_4_1_screw,08_CART_COUPLING,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+LATCH_4_1_washer,08_CART_COUPLING,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+LATCH_4_1_tnut,08_CART_COUPLING,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry
+LATCH_4_2_screw,08_CART_COUPLING,M6 socket screw,Confirm delivered dimensions and replace planning geometry
+LATCH_4_2_washer,08_CART_COUPLING,M6 flat washer,Confirm delivered dimensions and replace planning geometry
+LATCH_4_2_tnut,08_CART_COUPLING,M6 T-slot nut,Confirm delivered dimensions and replace planning geometry

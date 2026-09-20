@@ -1,0 +1,5 @@
+﻿frame,profile,length_mm,quantity,end_cut
+lower,DNF4040,700,2,90 deg
+lower,DNF4040,620,4,90 deg
+upper,DNF3030,700,2,90 deg
+upper,DNF3030,640,3,90 deg

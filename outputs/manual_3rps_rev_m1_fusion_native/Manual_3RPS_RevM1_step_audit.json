@@ -1,0 +1,541 @@
+{
+  "source": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\Manual_3RPS_RevM1_NEUTRAL.step",
+  "main_step_solid_count": 253,
+  "main_bounds_mm": {
+    "xmin": -350.0,
+    "xmax": 350.0,
+    "ymin": -350.0,
+    "ymax": 350.0,
+    "zmin": 0.0,
+    "zmax": 300.0,
+    "xlen": 700.0,
+    "ylen": 700.0,
+    "zlen": 300.0
+  },
+  "group_summary": {
+    "lower_frame": {
+      "solid_count": 6,
+      "bounds_mm": {
+        "xmin": -350.0,
+        "xmax": 350.0,
+        "ymin": -350.0,
+        "ymax": 350.0,
+        "zmin": 0.0,
+        "zmax": 40.0,
+        "xlen": 700.0,
+        "ylen": 700.0,
+        "zlen": 40.0
+      }
+    },
+    "lower_brackets": {
+      "solid_count": 8,
+      "bounds_mm": {
+        "xmin": -310.0,
+        "xmax": 310.0,
+        "ymin": -310.0,
+        "ymax": 310.0,
+        "zmin": 2.5,
+        "zmax": 37.5,
+        "xlen": 620.0,
+        "ylen": 620.0,
+        "zlen": 35.0
+      }
+    },
+    "lower_adapters": {
+      "solid_count": 3,
+      "bounds_mm": {
+        "xmin": -124.951905283833,
+        "xmax": 124.951905283833,
+        "ymin": -77.5,
+        "ymax": 115.0,
+        "zmin": 40.0,
+        "zmax": 48.0,
+        "xlen": 249.903810567666,
+        "ylen": 192.5,
+        "zlen": 8.0
+      }
+    },
+    "lower_joints": {
+      "solid_count": 3,
+      "bounds_mm": {
+        "xmin": -103.43266739736609,
+        "xmax": 103.43266739736603,
+        "ymin": -74.150635094611,
+        "ymax": 105.0,
+        "zmin": 48.0,
+        "zmax": 108.0,
+        "xlen": 206.86533479473212,
+        "ylen": 179.150635094611,
+        "zlen": 60.0
+      }
+    },
+    "manual_struts": {
+      "solid_count": 21,
+      "bounds_mm": {
+        "xmin": -203.797305744351,
+        "xmax": 203.79730574435087,
+        "ymin": -120.11071045657359,
+        "ymax": 234.2320521223346,
+        "zmin": 61.433653374525214,
+        "zmax": 222.36164268236323,
+        "xlen": 407.59461148870184,
+        "ylen": 354.3427625789082,
+        "zlen": 160.927989307838
+      }
+    },
+    "upper_frame": {
+      "solid_count": 6,
+      "bounds_mm": {
+        "xmin": -350.0,
+        "xmax": 350.0,
+        "ymin": -350.0,
+        "ymax": 350.0,
+        "zmin": 270.0,
+        "zmax": 300.0,
+        "xlen": 700.0,
+        "ylen": 700.0,
+        "zlen": 30.0
+      }
+    },
+    "upper_brackets": {
+      "solid_count": 8,
+      "bounds_mm": {
+        "xmin": -320.0,
+        "xmax": 320.0,
+        "ymin": -315.0,
+        "ymax": 315.0,
+        "zmin": 272.5,
+        "zmax": 297.5,
+        "xlen": 640.0,
+        "ylen": 630.0,
+        "zlen": 25.0
+      }
+    },
+    "upper_joints": {
+      "solid_count": 6,
+      "bounds_mm": {
+        "xmin": -266.50635094611,
+        "xmax": 266.50635094611,
+        "ymin": -155.0,
+        "ymax": 280.0,
+        "zmin": 200.47340318862157,
+        "zmax": 270.0,
+        "xlen": 533.01270189222,
+        "ylen": 435.0,
+        "zlen": 69.52659681137843
+      }
+    },
+    "fasteners": {
+      "solid_count": 192,
+      "bounds_mm": {
+        "xmin": -326.5,
+        "xmax": 326.5,
+        "ymin": -321.5,
+        "ymax": 321.5,
+        "zmin": 13.2,
+        "zmax": 290.1,
+        "xlen": 653.0,
+        "ylen": 643.0,
+        "zlen": 276.90000000000003
+      }
+    }
+  },
+  "intersection_tolerance_mm3": 0.01,
+  "cross_group_reports": [
+    {
+      "pair": "lower_frame::lower_brackets",
+      "checked_pairs": 48,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_frame::lower_adapters",
+      "checked_pairs": 18,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_frame::lower_joints",
+      "checked_pairs": 18,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_frame::manual_struts",
+      "checked_pairs": 126,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_frame::upper_frame",
+      "checked_pairs": 36,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_frame::upper_brackets",
+      "checked_pairs": 48,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_frame::upper_joints",
+      "checked_pairs": 36,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_frame::fasteners",
+      "checked_pairs": 1152,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_brackets::lower_adapters",
+      "checked_pairs": 24,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_brackets::lower_joints",
+      "checked_pairs": 24,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_brackets::manual_struts",
+      "checked_pairs": 168,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_brackets::upper_frame",
+      "checked_pairs": 48,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_brackets::upper_brackets",
+      "checked_pairs": 64,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_brackets::upper_joints",
+      "checked_pairs": 48,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_brackets::fasteners",
+      "checked_pairs": 1536,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_adapters::lower_joints",
+      "checked_pairs": 9,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_adapters::manual_struts",
+      "checked_pairs": 63,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_adapters::upper_frame",
+      "checked_pairs": 18,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_adapters::upper_brackets",
+      "checked_pairs": 24,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_adapters::upper_joints",
+      "checked_pairs": 18,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_adapters::fasteners",
+      "checked_pairs": 576,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_joints::manual_struts",
+      "checked_pairs": 63,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_joints::upper_frame",
+      "checked_pairs": 18,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_joints::upper_brackets",
+      "checked_pairs": 24,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_joints::upper_joints",
+      "checked_pairs": 18,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_joints::fasteners",
+      "checked_pairs": 576,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "manual_struts::upper_frame",
+      "checked_pairs": 126,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "manual_struts::upper_brackets",
+      "checked_pairs": 168,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "manual_struts::upper_joints",
+      "checked_pairs": 126,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "manual_struts::fasteners",
+      "checked_pairs": 4032,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_frame::upper_brackets",
+      "checked_pairs": 48,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_frame::upper_joints",
+      "checked_pairs": 36,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_frame::fasteners",
+      "checked_pairs": 1152,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_brackets::upper_joints",
+      "checked_pairs": 48,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_brackets::fasteners",
+      "checked_pairs": 1536,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_joints::fasteners",
+      "checked_pairs": 1152,
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    }
+  ],
+  "self_group_reports": [
+    {
+      "group": "lower_frame",
+      "checked_pairs": 15,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "group": "lower_brackets",
+      "checked_pairs": 28,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "group": "lower_adapters",
+      "checked_pairs": 3,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "group": "lower_joints",
+      "checked_pairs": 3,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "group": "manual_struts",
+      "checked_pairs": 210,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "group": "upper_frame",
+      "checked_pairs": 15,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "group": "upper_brackets",
+      "checked_pairs": 28,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "group": "upper_joints",
+      "checked_pairs": 15,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "group": "fasteners",
+      "checked_pairs": 18336,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    }
+  ],
+  "checks": {
+    "700x700x300_envelope": true,
+    "all_36_cross_group_pairs_have_no_positive_volume_overlap": true,
+    "all_9_group_internal_pairs_have_no_positive_volume_overlap": true
+  },
+  "pass": true
+}

@@ -1,0 +1,24 @@
+# Local runtimes, caches, and disposable working files
+.arduino/
+.artifact_work/
+.cache/
+.codex_tmp/
+.mplcache/
+.tools/
+vendor/
+wheelhouse/
+tmp/
+logs/
+
+# Python and CAD execution by-products
+__pycache__/
+*.py[cod]
+*.log
+*.bak
+*.tmp
+
+# Agent-local implementation ledgers; source plans and specifications remain tracked.
+.superpowers/sdd/
+
+# Local export scratch space. Curated results are kept under outputs/.
+output/

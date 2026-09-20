@@ -1,0 +1,712 @@
+{
+  "A1_COMPLETE_ASSEMBLED": [
+    {
+      "name": "LOWER_FRONT_RAIL",
+      "group": "LOWER_frame",
+      "basis": "HFS8-4080-450; cut only; slot section simplified"
+    },
+    {
+      "name": "UPPER_FRONT_RAIL",
+      "group": "UPPER_frame",
+      "basis": "HFS8-4080-450; cut only; slot section simplified"
+    },
+    {
+      "name": "L1_SHAT12_L",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "L1_L_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_L_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_L_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_L_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_L_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_L_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_SHAT_CLAMP_HEAD_L",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "L1_SHIM_STACK_L",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "L1_MCL12F_L",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "L1_SHAT12_R",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "L1_R_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_R_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_R_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_R_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_R_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_R_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_SHAT_CLAMP_HEAD_R",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "L1_SHIM_STACK_R",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "L1_MCL12F_R",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "L1_SHAFT12X100",
+      "group": "shafts",
+      "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+    },
+    {
+      "name": "U1_SHAT12_L",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "U1_L_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_L_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_L_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_L_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_L_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_L_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_SHAT_CLAMP_HEAD_L",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "U1_SHIM_STACK_L",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "U1_MCL12F_L",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "U1_SHAT12_R",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "U1_R_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_R_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_R_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_R_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_R_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_R_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_SHAT_CLAMP_HEAD_R",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "U1_SHIM_STACK_R",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "U1_MCL12F_R",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "U1_SHAFT12X100",
+      "group": "shafts",
+      "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+    },
+    {
+      "name": "A1_TURNBUCKLE",
+      "group": "links",
+      "basis": "NBK STB-M12 + BJ761-12011N + DIN6334 M12x36 + THK PHS12L; threaded envelopes"
+    },
+    {
+      "name": "A1_PHS12L_INNER",
+      "group": "bearings",
+      "basis": "catalogue component envelope"
+    }
+  ],
+  "A1_LOWER_ASSEMBLED": [
+    {
+      "name": "LOWER_HFS8_4080",
+      "group": "profile",
+      "basis": "HFS8-4080 cut segment; joint interface section exact, internal cavity simplified"
+    },
+    {
+      "name": "BJ761_12011N",
+      "group": "joint_member",
+      "basis": "IMAO BJ761-12011N; thread helix and eye blend schematic"
+    },
+    {
+      "name": "L1_SHAT12_L",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "L1_L_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_L_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_L_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_L_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_L_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_L_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_SHAT_CLAMP_HEAD_L",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "L1_SHIM_STACK_L",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "L1_MCL12F_L",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "L1_SHAT12_R",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "L1_R_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_R_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_R_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_R_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_R_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_R_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_SHAT_CLAMP_HEAD_R",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "L1_SHIM_STACK_R",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "L1_MCL12F_R",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "L1_SHAFT12X100",
+      "group": "shafts",
+      "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+    }
+  ],
+  "A1_UPPER_ASSEMBLED": [
+    {
+      "name": "UPPER_HFS8_4080",
+      "group": "profile",
+      "basis": "HFS8-4080 cut segment; joint interface section exact, internal cavity simplified"
+    },
+    {
+      "name": "PHS12L_HOLDER",
+      "group": "joint_member",
+      "basis": "THK PHS12L; outer catalogue dimensions, grease nipple/thread helix omitted"
+    },
+    {
+      "name": "PHS12L_INNER_RING",
+      "group": "joint_member",
+      "basis": "THK PHS12L; d12 H7, ball22.225, width16"
+    },
+    {
+      "name": "U1_SHAT12_L",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "U1_L_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_L_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_L_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_L_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_L_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_L_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_SHAT_CLAMP_HEAD_L",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "U1_SHIM_STACK_L",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "U1_MCL12F_L",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "U1_SHAT12_R",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "U1_R_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_R_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_R_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_R_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_R_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_R_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_SHAT_CLAMP_HEAD_R",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "U1_SHIM_STACK_R",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "U1_MCL12F_R",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "U1_SHAFT12X100",
+      "group": "shafts",
+      "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+    }
+  ],
+  "A1_LOWER_EXPLODED": [
+    {
+      "name": "LOWER_HFS8_4080",
+      "group": "profile",
+      "basis": "HFS8-4080 cut segment; joint interface section exact, internal cavity simplified"
+    },
+    {
+      "name": "BJ761_12011N",
+      "group": "joint_member",
+      "basis": "IMAO BJ761-12011N; thread helix and eye blend schematic"
+    },
+    {
+      "name": "L1_SHAT12_L",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "L1_L_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_L_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_L_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_L_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_L_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_L_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_SHAT_CLAMP_HEAD_L",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "L1_SHIM_STACK_L",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "L1_MCL12F_L",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "L1_SHAT12_R",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "L1_R_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_R_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_R_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_R_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "L1_R_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "L1_R_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "L1_SHAT_CLAMP_HEAD_R",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "L1_SHIM_STACK_R",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "L1_MCL12F_R",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "L1_SHAFT12X100",
+      "group": "shafts",
+      "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+    }
+  ],
+  "A1_UPPER_EXPLODED": [
+    {
+      "name": "UPPER_HFS8_4080",
+      "group": "profile",
+      "basis": "HFS8-4080 cut segment; joint interface section exact, internal cavity simplified"
+    },
+    {
+      "name": "PHS12L_HOLDER",
+      "group": "joint_member",
+      "basis": "THK PHS12L; outer catalogue dimensions, grease nipple/thread helix omitted"
+    },
+    {
+      "name": "PHS12L_INNER_RING",
+      "group": "joint_member",
+      "basis": "THK PHS12L; d12 H7, ball22.225, width16"
+    },
+    {
+      "name": "U1_SHAT12_L",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "U1_L_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_L_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_L_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_L_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_L_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_L_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_SHAT_CLAMP_HEAD_L",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "U1_SHIM_STACK_L",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "U1_MCL12F_L",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "U1_SHAT12_R",
+      "group": "supports",
+      "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+    },
+    {
+      "name": "U1_R_M5X16_1",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_R_W5_1",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_R_HNTT8_5_1",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_R_M5X16_2",
+      "group": "fasteners",
+      "basis": "M5x16 socket; nominal engagement6.5 and floor clearance3.5"
+    },
+    {
+      "name": "U1_R_W5_2",
+      "group": "fasteners",
+      "basis": "catalogue component envelope"
+    },
+    {
+      "name": "U1_R_HNTT8_5_2",
+      "group": "fasteners",
+      "basis": "HNTT8-5 boss3/total9, taper schematic"
+    },
+    {
+      "name": "U1_SHAT_CLAMP_HEAD_R",
+      "group": "clamp_heads",
+      "basis": "Supplied M4 head envelope; tool corridor +X"
+    },
+    {
+      "name": "U1_SHIM_STACK_R",
+      "group": "shims",
+      "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+    },
+    {
+      "name": "U1_MCL12F_R",
+      "group": "collars",
+      "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+    },
+    {
+      "name": "U1_SHAFT12X100",
+      "group": "shafts",
+      "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+    }
+  ]
+}

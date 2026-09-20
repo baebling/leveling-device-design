@@ -1,0 +1,48 @@
+﻿bom_key,description_or_material,quantity,status,used_in_groups,action
+A2_M8_INTERFACE,M8x1.25 threaded interface and jam-nut envelope,6,PROVISIONAL_VENDOR_CONFIRM,06_ACTUATORS,Replace dimensions from delivered part before fabrication
+CARDAN_ANGLE_STOP,M8 adjustable stop assembly,4,MODELED,04_CARDAN,Use modeled position and quantity
+CR3001,CR-3001 latch,4,PROVISIONAL_VENDOR_CONFIRM,08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+DECK_SPACER,nylon compression spacer,16,MODELED,07_DECK,Use modeled position and quantity
+GUIDE_RISER_ANGLE,SS400 angle bracket,4,MODELED,02_FIXED_GUIDE,Use modeled position and quantity
+JFT8R,JMC JFT-8R M8 female spherical rod end,6,MODELED,06_ACTUATORS,Use modeled position and quantity
+JFT8_SPACER_PAIR,4 mm misalignment spacer pair,6,PROVISIONAL_VENDOR_CONFIRM,06_ACTUATORS,Replace dimensions from delivered part before fabrication
+LA2000_125150,DIHOOL LA2000-125150 A2 conservative envelope,3,PROVISIONAL_VENDOR_CONFIRM,06_ACTUATORS,Replace dimensions from delivered part before fabrication
+LMF12UU,LMF12UU linear bushing,4,PROVISIONAL_VENDOR_CONFIRM,02_FIXED_GUIDE,Replace dimensions from delivered part before fabrication
+LOCATOR_MASTER,turned steel locator pin,1,PROVISIONAL_VENDOR_CONFIRM,08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+LOCATOR_SECONDARY,turned steel locator pin,1,PROVISIONAL_VENDOR_CONFIRM,08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+M5_NYLOC,M5 nyloc nut,8,PROVISIONAL_VENDOR_CONFIRM,02_FIXED_GUIDE,Replace dimensions from delivered part before fabrication
+M5_SOCKET_SCREW,M5 socket screw,8,PROVISIONAL_VENDOR_CONFIRM,02_FIXED_GUIDE,Replace dimensions from delivered part before fabrication
+M5_WASHER,M5 flat washer,8,PROVISIONAL_VENDOR_CONFIRM,02_FIXED_GUIDE,Replace dimensions from delivered part before fabrication
+M6_SOCKET_SCREW,M6 socket screw,16,PROVISIONAL_VENDOR_CONFIRM,03_MOVING_GUIDE;08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+M6_TNUT,M6 T-slot nut,16,PROVISIONAL_VENDOR_CONFIRM,03_MOVING_GUIDE;08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+M6_WASHER,M6 flat washer,16,PROVISIONAL_VENDOR_CONFIRM,03_MOVING_GUIDE;08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+M8_NYLOC,M8 nyloc nut,10,PROVISIONAL_VENDOR_CONFIRM,04_CARDAN;06_ACTUATORS;08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+M8_PIVOT_BOLT,M8 pivot bolt,8,PROVISIONAL_VENDOR_CONFIRM,04_CARDAN;06_ACTUATORS,Replace dimensions from delivered part before fabrication
+M8_SOCKET_SCREW,M8 socket screw,98,PROVISIONAL_VENDOR_CONFIRM,01_LOWER_FRAME;02_FIXED_GUIDE;04_CARDAN;05_UPPER_FRAME;07_DECK;08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+M8_TNUT,M8 T-slot nut,96,MODELED,01_LOWER_FRAME;02_FIXED_GUIDE;04_CARDAN;05_UPPER_FRAME;07_DECK,Use modeled position and quantity
+M8_WASHER,M8 flat washer,114,PROVISIONAL_VENDOR_CONFIRM,01_LOWER_FRAME;02_FIXED_GUIDE;04_CARDAN;05_UPPER_FRAME;06_ACTUATORS;07_DECK;08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+NVR-G07,SS400 50x6,4,MODELED,02_FIXED_GUIDE,Use modeled position and quantity
+NVR-P01,SS400 50x6,4,MODELED,01_LOWER_FRAME,Use modeled position and quantity
+NVR-P03,SS400 100x50x6 welded yoke base,3,MODELED,05_UPPER_FRAME,Use modeled position and quantity
+NVR-P04,SS400 100x50x6 welded yoke base,3,MODELED,01_LOWER_FRAME,Use modeled position and quantity
+NVR-P06,SS400 200x50x6,2,MODELED,02_FIXED_GUIDE,Use modeled position and quantity
+NVR-P07,SS400 50x6,4,MODELED,04_CARDAN,Use modeled position and quantity
+NVR-P08,SS400 100x50x6,2,MODELED,04_CARDAN,Use modeled position and quantity
+NVR-P09,SS400 80x50x6,4,PROVISIONAL_VENDOR_CONFIRM,02_FIXED_GUIDE,Replace dimensions from delivered part before fabrication
+NVR-P10,SS400 120x50x6,2,PROVISIONAL_VENDOR_CONFIRM,08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+NVR-P11,SS400 100x50x6,4,PROVISIONAL_VENDOR_CONFIRM,08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+NVR-P12,SS400 keeper fitted to CR-3001,4,PROVISIONAL_VENDOR_CONFIRM,08_CART_COUPLING,Replace dimensions from delivered part before fabrication
+NVR-P14,SS400 50x50x6,6,MODELED,04_CARDAN,Use modeled position and quantity
+NVR-P16,SS400 50x6 welded lug with 8.2 mm bore,12,MODELED,06_ACTUATORS,Use modeled position and quantity
+NVR-S01,SUJ2 ground shaft 12x240,2,MODELED,03_MOVING_GUIDE,Use modeled position and quantity
+NVR-U02,clear PMMA 900x800x15,1,MODELED,07_DECK,Use modeled position and quantity
+PROFILE_4040_240,6063-T5 4040 T-slot profile,2,MODELED,03_MOVING_GUIDE,Use modeled position and quantity
+PROFILE_4040_420,6063-T5 4040 T-slot profile,2,MODELED,05_UPPER_FRAME,Use modeled position and quantity
+PROFILE_4040_640,6063-T5 4040 T-slot profile,5,MODELED,01_LOWER_FRAME,Use modeled position and quantity
+PROFILE_4040_660,6063-T5 4040 T-slot profile,4,MODELED,05_UPPER_FRAME,Use modeled position and quantity
+PROFILE_4040_760,6063-T5 4040 T-slot profile,2,MODELED,08_CART_COUPLING,Use modeled position and quantity
+PROFILE_4040_820,6063-T5 4040 T-slot profile,2,MODELED,01_LOWER_FRAME,Use modeled position and quantity
+PROFILE_4040_840,6063-T5 4040 T-slot profile,2,MODELED,05_UPPER_FRAME,Use modeled position and quantity
+PROFILE_JOINT_PLATE,profile joint angle/plate,22,MODELED,01_LOWER_FRAME;05_UPPER_FRAME,Use modeled position and quantity
+SK12,SK12 shaft support,4,PROVISIONAL_VENDOR_CONFIRM,03_MOVING_GUIDE,Replace dimensions from delivered part before fabrication
+SPLIT_COLLAR,12 mm split collar,4,PROVISIONAL_VENDOR_CONFIRM,03_MOVING_GUIDE,Replace dimensions from delivered part before fabrication

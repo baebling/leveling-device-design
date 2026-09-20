@@ -1,0 +1,13 @@
+﻿item,description,used_quantity,navimro_sku,purchase_note
+F01,M8x20 full-thread hex bolt,16,K53672490,3 packs of 6; 4035 brackets
+F02,SP408 40-series M8 spring nut,22,K14671419,16 bracket + 6 LMB; one 100 pack
+F03,M6x15 SCM435 button socket bolt,16,K14333089,DCB3025; one 100 pack
+F04,SP306 30-series M6 spring nut,16,K14671215,DCB3025; one 100 pack
+F05,M8x16 full-thread hex bolt,6,K53672478,LMB-10; one pack of 7
+F06,LMB-10 included 6 mm pin and retainer,3,WITH_J02,confirm included contents before order
+F07,"M6x50 half-thread hex bolt, thread length 18",3,K53672105,upper pivot; one pack of 10
+F08,M6 flat washer ID6.4 OD12.5 t1.5,6,K14530259,upper pivot; one 100 pack
+F09,M6 prevailing-torque nut,3,SKU_OPEN,must not loosen; select after one-axis fit
+F10,M6 ID shim 0.5/1.0 mm,12,SKU_OPEN,final quantity after eye-width measurement
+F11,TB306 M6x20 T-bolt,3,K55868014,"PHS6-to-3030, 12.5 mm nominal engagement"
+F12,medium-strength threadlocker,1,NAVIMRO_OPEN,PHS6 stud/jam nut and stop hardware

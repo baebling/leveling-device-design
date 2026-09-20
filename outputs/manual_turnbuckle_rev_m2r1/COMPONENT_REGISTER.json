@@ -1,0 +1,562 @@
+[
+  {
+    "name": "LOWER_SIDE_L",
+    "group": "lower_frame",
+    "material_or_assumption": "DNF4040"
+  },
+  {
+    "name": "LOWER_SIDE_R",
+    "group": "lower_frame",
+    "material_or_assumption": "DNF4040"
+  },
+  {
+    "name": "LOWER_CROSS_1",
+    "group": "lower_frame",
+    "material_or_assumption": "DNF4040"
+  },
+  {
+    "name": "LOWER_CROSS_2",
+    "group": "lower_frame",
+    "material_or_assumption": "DNF4040"
+  },
+  {
+    "name": "LOWER_CROSS_3",
+    "group": "lower_frame",
+    "material_or_assumption": "DNF4040"
+  },
+  {
+    "name": "LOWER_CROSS_4",
+    "group": "lower_frame",
+    "material_or_assumption": "DNF4040"
+  },
+  {
+    "name": "L4035_1_L",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "L4035_1_R",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "L4035_2_L",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "L4035_2_R",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "L4035_3_L",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "L4035_3_R",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "L4035_4_L",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "L4035_4_R",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "L1_ADAPTER",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061-T6 5t"
+  },
+  {
+    "name": "L1_SPACER_-1",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L15"
+  },
+  {
+    "name": "L1_M8_BOLT_-1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x35 socket bolt + T-nut"
+  },
+  {
+    "name": "L1_SPACER_+1",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L15"
+  },
+  {
+    "name": "L1_M8_BOLT_+1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x35 socket bolt + T-nut"
+  },
+  {
+    "name": "L1_BJ762_12001",
+    "group": "lower_supports",
+    "material_or_assumption": "SCM435"
+  },
+  {
+    "name": "L1_M12_NUT",
+    "group": "fasteners",
+    "material_or_assumption": "M12 nut"
+  },
+  {
+    "name": "L2_ADAPTER",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061-T6 5t"
+  },
+  {
+    "name": "L2_SPACER_-1",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L15"
+  },
+  {
+    "name": "L2_M8_BOLT_-1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x35 socket bolt + T-nut"
+  },
+  {
+    "name": "L2_SPACER_+1",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L15"
+  },
+  {
+    "name": "L2_M8_BOLT_+1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x35 socket bolt + T-nut"
+  },
+  {
+    "name": "L2_BJ762_12001",
+    "group": "lower_supports",
+    "material_or_assumption": "SCM435"
+  },
+  {
+    "name": "L2_M12_NUT",
+    "group": "fasteners",
+    "material_or_assumption": "M12 nut"
+  },
+  {
+    "name": "L3_ADAPTER",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061-T6 5t"
+  },
+  {
+    "name": "L3_SPACER_-1",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L15"
+  },
+  {
+    "name": "L3_M8_BOLT_-1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x35 socket bolt + T-nut"
+  },
+  {
+    "name": "L3_SPACER_+1",
+    "group": "lower_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L15"
+  },
+  {
+    "name": "L3_M8_BOLT_+1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x35 socket bolt + T-nut"
+  },
+  {
+    "name": "L3_BJ762_12001",
+    "group": "lower_supports",
+    "material_or_assumption": "SCM435"
+  },
+  {
+    "name": "L3_M12_NUT",
+    "group": "fasteners",
+    "material_or_assumption": "M12 nut"
+  },
+  {
+    "name": "UPPER_SIDE_L",
+    "group": "upper_frame",
+    "material_or_assumption": "DNF3030"
+  },
+  {
+    "name": "UPPER_SIDE_R",
+    "group": "upper_frame",
+    "material_or_assumption": "DNF3030"
+  },
+  {
+    "name": "UPPER_CROSS_1",
+    "group": "upper_frame",
+    "material_or_assumption": "DNF3030"
+  },
+  {
+    "name": "UPPER_CROSS_2",
+    "group": "upper_frame",
+    "material_or_assumption": "DNF3030"
+  },
+  {
+    "name": "UPPER_CROSS_3",
+    "group": "upper_frame",
+    "material_or_assumption": "DNF3030"
+  },
+  {
+    "name": "UDCB3025_1_L",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "UDCB3025_1_R",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "UDCB3025_2_L",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "UDCB3025_2_R",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "UDCB3025_3_L",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "UDCB3025_3_R",
+    "group": "frame_brackets",
+    "material_or_assumption": "standard profile inside bracket"
+  },
+  {
+    "name": "U1_ADAPTER",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061-T6 5t"
+  },
+  {
+    "name": "U1_SPACER_-1",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L20"
+  },
+  {
+    "name": "U1_M8_BOLT_-1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x40 socket bolt + T-nut"
+  },
+  {
+    "name": "U1_SPACER_+1",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L20"
+  },
+  {
+    "name": "U1_M8_BOLT_+1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x40 socket bolt + T-nut"
+  },
+  {
+    "name": "U1_M20_NUT",
+    "group": "fasteners",
+    "material_or_assumption": "M20 nut"
+  },
+  {
+    "name": "U2_ADAPTER",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061-T6 5t"
+  },
+  {
+    "name": "U2_SPACER_-1",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L20"
+  },
+  {
+    "name": "U2_M8_BOLT_-1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x40 socket bolt + T-nut"
+  },
+  {
+    "name": "U2_SPACER_+1",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L20"
+  },
+  {
+    "name": "U2_M8_BOLT_+1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x40 socket bolt + T-nut"
+  },
+  {
+    "name": "U2_M20_NUT",
+    "group": "fasteners",
+    "material_or_assumption": "M20 nut"
+  },
+  {
+    "name": "U3_ADAPTER",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061-T6 5t"
+  },
+  {
+    "name": "U3_SPACER_-1",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L20"
+  },
+  {
+    "name": "U3_M8_BOLT_-1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x40 socket bolt + T-nut"
+  },
+  {
+    "name": "U3_SPACER_+1",
+    "group": "upper_adapters",
+    "material_or_assumption": "A6061 OD16 ID8.5 L20"
+  },
+  {
+    "name": "U3_M8_BOLT_+1",
+    "group": "adapter_fasteners",
+    "material_or_assumption": "M8x40 socket bolt + T-nut"
+  },
+  {
+    "name": "U3_M20_NUT",
+    "group": "fasteners",
+    "material_or_assumption": "M20 nut"
+  },
+  {
+    "name": "L1_SUPPLIED_PIN",
+    "group": "joint_pins",
+    "material_or_assumption": "BJ762 supplied pin D12"
+  },
+  {
+    "name": "L2_SUPPLIED_PIN",
+    "group": "joint_pins",
+    "material_or_assumption": "BJ762 supplied pin D12"
+  },
+  {
+    "name": "L3_SUPPLIED_PIN",
+    "group": "joint_pins",
+    "material_or_assumption": "BJ762 supplied pin D12"
+  },
+  {
+    "name": "U1_FORK",
+    "group": "upper_supports",
+    "material_or_assumption": "BJ762-20001 nominal envelope; provisional bore/gap"
+  },
+  {
+    "name": "U1_BUSH_L",
+    "group": "upper_bushes",
+    "material_or_assumption": "6 flanged bushes total; material/fit supplier hold"
+  },
+  {
+    "name": "U1_INNER_SPACER_L",
+    "group": "upper_inner_spacers",
+    "material_or_assumption": "inner-ring side spacer; provisional new part"
+  },
+  {
+    "name": "U1_WASHER_L",
+    "group": "upper_pin_washers",
+    "material_or_assumption": "PROVISIONAL geometry"
+  },
+  {
+    "name": "U1_BUSH_R",
+    "group": "upper_bushes",
+    "material_or_assumption": "6 flanged bushes total; material/fit supplier hold"
+  },
+  {
+    "name": "U1_INNER_SPACER_R",
+    "group": "upper_inner_spacers",
+    "material_or_assumption": "inner-ring side spacer; provisional new part"
+  },
+  {
+    "name": "U1_WASHER_R",
+    "group": "upper_pin_washers",
+    "material_or_assumption": "PROVISIONAL geometry"
+  },
+  {
+    "name": "U1_PIN_M12X80",
+    "group": "upper_pins",
+    "material_or_assumption": "candidate M12x80; 50 mm smooth grip MUST be verified; threads represented by envelope"
+  },
+  {
+    "name": "U1_LOCK_NUT",
+    "group": "upper_pin_nuts",
+    "material_or_assumption": "M12 retaining nut; thread and locking geometry omitted"
+  },
+  {
+    "name": "U2_FORK",
+    "group": "upper_supports",
+    "material_or_assumption": "BJ762-20001 nominal envelope; provisional bore/gap"
+  },
+  {
+    "name": "U2_BUSH_L",
+    "group": "upper_bushes",
+    "material_or_assumption": "6 flanged bushes total; material/fit supplier hold"
+  },
+  {
+    "name": "U2_INNER_SPACER_L",
+    "group": "upper_inner_spacers",
+    "material_or_assumption": "inner-ring side spacer; provisional new part"
+  },
+  {
+    "name": "U2_WASHER_L",
+    "group": "upper_pin_washers",
+    "material_or_assumption": "PROVISIONAL geometry"
+  },
+  {
+    "name": "U2_BUSH_R",
+    "group": "upper_bushes",
+    "material_or_assumption": "6 flanged bushes total; material/fit supplier hold"
+  },
+  {
+    "name": "U2_INNER_SPACER_R",
+    "group": "upper_inner_spacers",
+    "material_or_assumption": "inner-ring side spacer; provisional new part"
+  },
+  {
+    "name": "U2_WASHER_R",
+    "group": "upper_pin_washers",
+    "material_or_assumption": "PROVISIONAL geometry"
+  },
+  {
+    "name": "U2_PIN_M12X80",
+    "group": "upper_pins",
+    "material_or_assumption": "candidate M12x80; 50 mm smooth grip MUST be verified; threads represented by envelope"
+  },
+  {
+    "name": "U2_LOCK_NUT",
+    "group": "upper_pin_nuts",
+    "material_or_assumption": "M12 retaining nut; thread and locking geometry omitted"
+  },
+  {
+    "name": "U3_FORK",
+    "group": "upper_supports",
+    "material_or_assumption": "BJ762-20001 nominal envelope; provisional bore/gap"
+  },
+  {
+    "name": "U3_BUSH_L",
+    "group": "upper_bushes",
+    "material_or_assumption": "6 flanged bushes total; material/fit supplier hold"
+  },
+  {
+    "name": "U3_INNER_SPACER_L",
+    "group": "upper_inner_spacers",
+    "material_or_assumption": "inner-ring side spacer; provisional new part"
+  },
+  {
+    "name": "U3_WASHER_L",
+    "group": "upper_pin_washers",
+    "material_or_assumption": "PROVISIONAL geometry"
+  },
+  {
+    "name": "U3_BUSH_R",
+    "group": "upper_bushes",
+    "material_or_assumption": "6 flanged bushes total; material/fit supplier hold"
+  },
+  {
+    "name": "U3_INNER_SPACER_R",
+    "group": "upper_inner_spacers",
+    "material_or_assumption": "inner-ring side spacer; provisional new part"
+  },
+  {
+    "name": "U3_WASHER_R",
+    "group": "upper_pin_washers",
+    "material_or_assumption": "PROVISIONAL geometry"
+  },
+  {
+    "name": "U3_PIN_M12X80",
+    "group": "upper_pins",
+    "material_or_assumption": "candidate M12x80; 50 mm smooth grip MUST be verified; threads represented by envelope"
+  },
+  {
+    "name": "U3_LOCK_NUT",
+    "group": "upper_pin_nuts",
+    "material_or_assumption": "M12 retaining nut; thread and locking geometry omitted"
+  },
+  {
+    "name": "LEG_1_STB_M12_LINK",
+    "group": "links",
+    "material_or_assumption": "M2 threaded stack envelope; rod-end housing nominal, not vendor STEP"
+  },
+  {
+    "name": "U1_INNER_BEARING",
+    "group": "upper_bearings",
+    "material_or_assumption": "spherical inner bearing envelope, supplier geometry hold"
+  },
+  {
+    "name": "LEG_2_STB_M12_LINK",
+    "group": "links",
+    "material_or_assumption": "M2 threaded stack envelope; rod-end housing nominal, not vendor STEP"
+  },
+  {
+    "name": "U2_INNER_BEARING",
+    "group": "upper_bearings",
+    "material_or_assumption": "spherical inner bearing envelope, supplier geometry hold"
+  },
+  {
+    "name": "LEG_3_STB_M12_LINK",
+    "group": "links",
+    "material_or_assumption": "M2 threaded stack envelope; rod-end housing nominal, not vendor STEP"
+  },
+  {
+    "name": "U3_INNER_BEARING",
+    "group": "upper_bearings",
+    "material_or_assumption": "spherical inner bearing envelope, supplier geometry hold"
+  },
+  {
+    "name": "L1_AXIS_FILM",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "L1_AXIS_TEXT",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "U1_AXIS_FILM",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "U1_AXIS_TEXT",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "L2_AXIS_FILM",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "L2_AXIS_TEXT",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "U2_AXIS_FILM",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "U2_AXIS_TEXT",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "L3_AXIS_FILM",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "L3_AXIS_TEXT",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "U3_AXIS_FILM",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  },
+  {
+    "name": "U3_AXIS_TEXT",
+    "group": "labels",
+    "material_or_assumption": "label film / ink"
+  }
+]

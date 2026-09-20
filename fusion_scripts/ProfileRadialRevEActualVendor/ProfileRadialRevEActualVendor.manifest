@@ -1,0 +1,10 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "OpenAI Codex",
+  "description": {
+    "": "Build Rev E with actual LM4075OE vendor STEP bodies and run interference/section checks."
+  },
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}

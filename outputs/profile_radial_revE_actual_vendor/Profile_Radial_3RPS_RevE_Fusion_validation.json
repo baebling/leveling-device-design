@@ -1,0 +1,1633 @@
+{
+  "revision": "E_ACTUAL_VENDOR_STEP",
+  "status": "FUSION_NATIVE_CAD_REVIEW_NOT_FOR_ORDER",
+  "parameters": {
+    "outer_length_mm": 700.0,
+    "lower_profile_mm": 40.0,
+    "upper_profile_mm": 30.0,
+    "lower_cross_length_mm": 620.0,
+    "upper_cross_length_mm": 640.0,
+    "lower_support_radius_mm": 95.0,
+    "upper_support_radius_mm": 250.0,
+    "lower_pin_z_mm": 84.0,
+    "upper_ring_z_collapsed_mm": 246.0,
+    "upper_profile_bottom_z_collapsed_mm": 270.0,
+    "upper_profile_top_z_collapsed_mm": 300.0,
+    "lift_mm": 50.0,
+    "angle_deg": 3.0,
+    "actuator_min_pin_mm": 205.0,
+    "actuator_max_pin_mm": 305.0,
+    "actuator_eye_outer_radius_mm": 10.0,
+    "upper_rod_eye_overlap_mm": 2.0,
+    "joint_side_offset_mm": 14.5,
+    "adapter_length_x_mm": 120.0,
+    "adapter_width_y_mm": 70.0,
+    "adapter_thickness_mm": 8.0,
+    "adapter_profile_hole_pitch_mm": 96.0,
+    "lmb_hole_pitch_mm": 36.0,
+    "lmb_base_length_mm": 56.0,
+    "lmb_base_width_mm": 26.0,
+    "lmb_pin_offset_from_base_center_mm": 18.0,
+    "stop_catch_center_z_mm": 72.0,
+    "stop_lower_washer_center_z_mm": 14.0,
+    "stop_upper_washer_center_z_mm": 80.0,
+    "stop_command_clearance_mm": 2.0,
+    "stop_opening_radius_mm": 25.0,
+    "stop_rod_radius_mm": 5.0,
+    "stop_rod_offset_from_crossbar_mm": 52.0,
+    "stop_contact_bar_length_mm": 70.0,
+    "stop_contact_bar_width_mm": 20.0
+  },
+  "support_azimuths_deg": [
+    90.0,
+    210.0,
+    330.0
+  ],
+  "support_gaps_deg": [
+    120.0,
+    120.0,
+    120.0
+  ],
+  "lower_profile_cuts": [
+    [
+      "LOWER_SIDE_L",
+      "4040",
+      700.0
+    ],
+    [
+      "LOWER_SIDE_R",
+      "4040",
+      700.0
+    ],
+    [
+      "LOWER_CROSS_FRONT",
+      "4040",
+      620.0
+    ],
+    [
+      "LOWER_CROSS_A1",
+      "4040",
+      620.0
+    ],
+    [
+      "LOWER_CROSS_A23",
+      "4040",
+      620.0
+    ],
+    [
+      "LOWER_CROSS_REAR",
+      "4040",
+      620.0
+    ]
+  ],
+  "upper_profile_cuts": [
+    [
+      "UPPER_SIDE_L",
+      "3030",
+      700.0
+    ],
+    [
+      "UPPER_SIDE_R",
+      "3030",
+      700.0
+    ],
+    [
+      "UPPER_CROSS_FRONT",
+      "3030",
+      640.0
+    ],
+    [
+      "UPPER_CROSS_A1",
+      "3030",
+      640.0
+    ],
+    [
+      "UPPER_CROSS_A23",
+      "3030",
+      640.0
+    ],
+    [
+      "UPPER_CROSS_REAR",
+      "3030",
+      640.0
+    ]
+  ],
+  "workspace": {
+    "pose_count": 27,
+    "minimum_pin_mm": 210.77174102543512,
+    "maximum_pin_mm": 276.93711548670905,
+    "retract_margin_mm": 5.771741025435119,
+    "extend_margin_mm": 28.062884513290953,
+    "maximum_constraint_residual_mm": 9.947598300641403e-14,
+    "passes": true,
+    "rows": [
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.3423555998030356,
+        "y_mm": 0.02030042268256491,
+        "yaw_rad": 0.0012918631270948636,
+        "residual_mm": 9.947598300641403e-14,
+        "pin_lengths_mm": [
+          215.26523374492106,
+          220.19077329196782,
+          237.02335284770479
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.009929059960762843,
+        "y_mm": 0.17130855070033402,
+        "yaw_rad": -3.9770790209039954e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          224.87420132704273,
+          215.6393789592807,
+          232.02653813065342
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "x_mm": 0.3424099921554037,
+        "y_mm": -0.019361331300167667,
+        "yaw_rad": -0.0014509463967370467,
+        "residual_mm": 7.164009559615313e-14,
+        "pin_lengths_mm": [
+          234.1389593317832,
+          211.17893752239425,
+          227.1245723546444
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.009929059960764711,
+        "y_mm": -0.1713085507002872,
+        "yaw_rad": -3.9770790209044934e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          214.57340815663125,
+          228.50701643614067,
+          229.4512116525346
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "yaw_rad": 0.0,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          224.20749318432692,
+          224.20749318432692,
+          224.20749318432692
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.009929059960764711,
+        "y_mm": -0.1713085507002872,
+        "yaw_rad": -3.9770790209044934e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          233.4955511338689,
+          220.00479750130998,
+          219.04971868142988
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "x_mm": 0.3424099921554037,
+        "y_mm": -0.019361331300167667,
+        "yaw_rad": -0.0014509463967370467,
+        "residual_mm": 7.164009559615313e-14,
+        "pin_lengths_mm": [
+          214.15531304973922,
+          236.62854627479027,
+          221.69258056548819
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.009929059960762843,
+        "y_mm": 0.17130855070033402,
+        "yaw_rad": -3.9770790209039954e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          223.77814410173448,
+          232.5698764622958,
+          216.1935645712217
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.3423555998030356,
+        "y_mm": 0.02030042268256491,
+        "yaw_rad": 0.0012918631270948636,
+        "residual_mm": 9.947598300641403e-14,
+        "pin_lengths_mm": [
+          233.05402322010394,
+          228.61378511228935,
+          210.77174102543512
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.3423555998030356,
+        "y_mm": 0.02030042268256491,
+        "yaw_rad": 0.0012918631270948636,
+        "residual_mm": 9.947598300641403e-14,
+        "pin_lengths_mm": [
+          233.34258405209454,
+          238.5734434101915,
+          256.53872585758506
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.009929059960762843,
+        "y_mm": 0.17130855070033402,
+        "yaw_rad": -3.9770790209039954e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          243.5802742234097,
+          233.75161310317077,
+          251.2148402428273
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "x_mm": 0.3424099921554037,
+        "y_mm": -0.019361331300167667,
+        "yaw_rad": -0.0014509463967370467,
+        "residual_mm": 7.164009559615313e-14,
+        "pin_lengths_mm": [
+          253.4507816927567,
+          229.00258106883115,
+          245.96480728039495
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.009929059960764711,
+        "y_mm": -0.1713085507002872,
+        "yaw_rad": -3.9770790209044934e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          232.62103953622824,
+          247.4564531246411,
+          248.46089903518418
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "yaw_rad": 0.0,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          242.88680491125902,
+          242.88680491125905,
+          242.88680491125902
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.009929059960764711,
+        "y_mm": -0.1713085507002872,
+        "yaw_rad": -3.9770790209044934e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          252.78325073537997,
+          238.3964582184714,
+          237.37695640869987
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "x_mm": 0.3424099921554037,
+        "y_mm": -0.019361331300167667,
+        "yaw_rad": -0.0014509463967370467,
+        "residual_mm": 7.164009559615313e-14,
+        "pin_lengths_mm": [
+          232.15566252782386,
+          256.1199532036137,
+          240.17594639052376
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.009929059960762843,
+        "y_mm": 0.17130855070033402,
+        "yaw_rad": -3.9770790209039954e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          242.41228147381582,
+          251.7921217339759,
+          234.3439263148873
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.3423555998030356,
+        "y_mm": 0.02030042268256491,
+        "yaw_rad": 0.0012918631270948636,
+        "residual_mm": 9.947598300641403e-14,
+        "pin_lengths_mm": [
+          252.29850785572125,
+          247.54989696157608,
+          228.56657398978413
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.3423555998030356,
+        "y_mm": 0.02030042268256491,
+        "yaw_rad": 0.0012918631270948636,
+        "residual_mm": 9.947598300641403e-14,
+        "pin_lengths_mm": [
+          252.60325058273122,
+          258.07091885425007,
+          276.93711548670905
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.009929059960762843,
+        "y_mm": 0.17130855070033402,
+        "yaw_rad": -3.9770790209039954e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          263.3330468418797,
+          253.04009859847238,
+          271.35120696168445
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "x_mm": 0.3424099921554037,
+        "y_mm": -0.019361331300167667,
+        "yaw_rad": -0.0014509463967370467,
+        "residual_mm": 7.164009559615313e-14,
+        "pin_lengths_mm": [
+          273.68512053885644,
+          248.06817736115582,
+          265.8228761293572
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.009929059960764711,
+        "y_mm": -0.1713085507002872,
+        "yaw_rad": -3.9770790209044934e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          251.85977960341083,
+          267.40219861756697,
+          268.45442475386346
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "yaw_rad": 0.0,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          262.6194966105906,
+          262.6194966105906,
+          262.6194966105906
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.009929059960764711,
+        "y_mm": -0.1713085507002872,
+        "yaw_rad": -3.9770790209044934e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          272.9992148438943,
+          257.9023684626226,
+          256.8323570216612
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "x_mm": 0.3424099921554037,
+        "y_mm": -0.019361331300167667,
+        "yaw_rad": -0.0014509463967370467,
+        "residual_mm": 7.164009559615313e-14,
+        "pin_lengths_mm": [
+          251.35633109200546,
+          276.49917169120414,
+          259.7525171608198
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.009929059960762843,
+        "y_mm": 0.17130855070033402,
+        "yaw_rad": -3.9770790209039954e-05,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          262.10831852702495,
+          271.95550683320823,
+          253.66216556543006
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.3423555998030356,
+        "y_mm": 0.02030042268256491,
+        "yaw_rad": 0.0012918631270948636,
+        "residual_mm": 9.947598300641403e-14,
+        "pin_lengths_mm": [
+          272.4791668978936,
+          267.4839064841207,
+          247.6098355800146
+        ]
+      }
+    ]
+  },
+  "joint_axes": {
+    "maximum_perpendicular_error_deg": 2.8624992133171654e-14,
+    "maximum_phs6_articulation_deg": 4.096369064245487,
+    "published_phs6_allowance_deg": 8.0,
+    "passes": true,
+    "rows": [
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.434126572505956e-14,
+        "phs6_articulation_deg": 3.000912144967273
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 4.096369064245487
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.8624992133171654e-14,
+        "phs6_articulation_deg": 1.0949545778687366
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.5788921733393258e-16,
+        "phs6_articulation_deg": 3.0000008646199934
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 1.499924875942143
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 6.3611093629270335e-15,
+        "phs6_articulation_deg": 1.4998215514698232
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.7530936044508764e-14,
+        "phs6_articulation_deg": 3.0011505787327204
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2722218725854067e-14,
+        "phs6_articulation_deg": 1.0946286872698874
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2722218725854067e-14,
+        "phs6_articulation_deg": 4.096281482079324
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.200610147918041e-16,
+        "phs6_articulation_deg": 0.002278698350310879
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5979731672960757
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 9.54166404439055e-15,
+        "phs6_articulation_deg": 2.5980328319775254
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.9825732964939523e-16,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.941237313878129e-16,
+        "phs6_articulation_deg": 0.002278698350310879
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5979731672960757
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5980328319775254
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.9166814323303703e-14,
+        "phs6_articulation_deg": 3.0011505787327204
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 9.54166404439055e-15,
+        "phs6_articulation_deg": 1.0946286872698874
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.5902773407317584e-14,
+        "phs6_articulation_deg": 4.096281482079324
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.58662552988099e-16,
+        "phs6_articulation_deg": 3.0000008646199934
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 1.499924875942143
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 1.4998215514698232
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.3246610703593561e-14,
+        "phs6_articulation_deg": 3.000912144967273
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 4.096369064245487
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.5444437451708134e-14,
+        "phs6_articulation_deg": 1.0949545778687366
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.3230229411592307e-14,
+        "phs6_articulation_deg": 3.000912144967273
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 4.096369064245487
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.2263882770244617e-14,
+        "phs6_articulation_deg": 1.0949545778687366
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.4576390374515643e-16,
+        "phs6_articulation_deg": 3.0000008646199934
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 1.499924875942143
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 0.0,
+        "phs6_articulation_deg": 1.4998215514698232
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.6195156685486904e-14,
+        "phs6_articulation_deg": 3.0011505787327204
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2722218725854067e-14,
+        "phs6_articulation_deg": 1.0946286872698874
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2722218725854067e-14,
+        "phs6_articulation_deg": 4.096281482079324
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.952294551639287e-16,
+        "phs6_articulation_deg": 0.002278698350310879
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 0.0,
+        "phs6_articulation_deg": 2.5979731672960757
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5980328319775254
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.7531972446578345e-16,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.716816979058466e-16,
+        "phs6_articulation_deg": 0.002278698350310879
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5979731672960757
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 6.3611093629270335e-15,
+        "phs6_articulation_deg": 2.5980328319775254
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.76807021499266e-14,
+        "phs6_articulation_deg": 3.0011505787327204
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 9.54166404439055e-15,
+        "phs6_articulation_deg": 1.0946286872698874
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2722218725854067e-14,
+        "phs6_articulation_deg": 4.096281482079324
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.4646622452565383e-16,
+        "phs6_articulation_deg": 3.0000008646199934
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 0.0,
+        "phs6_articulation_deg": 1.499924875942143
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 1.4998215514698232
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.223620363331041e-14,
+        "phs6_articulation_deg": 3.000912144967273
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 6.3611093629270335e-15,
+        "phs6_articulation_deg": 4.096369064245487
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.8624992133171654e-14,
+        "phs6_articulation_deg": 1.0949545778687366
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2221441772349152e-14,
+        "phs6_articulation_deg": 3.000912144967273
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 4.096369064245487
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.2263882770244617e-14,
+        "phs6_articulation_deg": 1.0949545778687366
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.3483006433081413e-16,
+        "phs6_articulation_deg": 3.0000008646199934
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 1.499924875942143
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 1.4998215514698232
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.499780153737137e-14,
+        "phs6_articulation_deg": 3.0011505787327204
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2722218725854067e-14,
+        "phs6_articulation_deg": 1.0946286872698874
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2722218725854067e-14,
+        "phs6_articulation_deg": 4.096281482079324
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.7267784824591095e-16,
+        "phs6_articulation_deg": 0.002278698350310879
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5979731672960757
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5980328319775254
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.546327636279747e-16,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 0.0
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.5156329772310104e-16,
+        "phs6_articulation_deg": 0.002278698350310879
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5979731672960757
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 2.5980328319775254
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.6330104373105572e-14,
+        "phs6_articulation_deg": 3.0011505787327204
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 9.54166404439055e-15,
+        "phs6_articulation_deg": 1.0946286872698874
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.2722218725854067e-14,
+        "phs6_articulation_deg": 4.096281482079324
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.354600717964592e-16,
+        "phs6_articulation_deg": 3.0000008646199934
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.5902773407317584e-15,
+        "phs6_articulation_deg": 1.499924875942143
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 1.4998215514698232
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 1,
+        "actuator_to_lower_pin_perpendicular_error_deg": 1.1329952134138139e-14,
+        "phs6_articulation_deg": 3.000912144967273
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 2,
+        "actuator_to_lower_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs6_articulation_deg": 4.096369064245487
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "actuator": 3,
+        "actuator_to_lower_pin_perpendicular_error_deg": 2.2263882770244617e-14,
+        "phs6_articulation_deg": 1.0949545778687366
+      }
+    ]
+  },
+  "mechanical_stops": {
+    "maximum_horizontal_sweep_mm": 14.133927383496076,
+    "allowed_center_sweep_mm": 20.0,
+    "minimum_radial_clearance_mm": 5.866072616503924,
+    "minimum_contact_bar_to_profile_clearance_mm": 7.866072616503924,
+    "lower_mechanical_contact_lift_mm": -2.0,
+    "upper_mechanical_contact_lift_mm": 52.0,
+    "command_range_mm": [
+      0.0,
+      50.0
+    ],
+    "passes": true,
+    "rows": [
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 13.168491420102159
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 12.51313962007505
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 11.610546972061394
+      },
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 9.129042387783942
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 9.435967140957958
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 8.777901544086715
+      },
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 12.57878872500036
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 14.101151788271995
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 13.144497436272934
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 9.658754516666905
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 8.88725598428188
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 8.906345909610877
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 0.0
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 0.0
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 0.0
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 8.554158397620768
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 9.325705145289877
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 9.306615213540548
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 13.166235931643904
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 11.64217582126755
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "horizontal_sweep_mm": 12.599803221259336
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 9.087092756739718
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 8.780541678794217
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "horizontal_sweep_mm": 9.4378882909077
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 12.574305477294187
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 13.230267426832999
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "horizontal_sweep_mm": 14.133927383496076
+      }
+    ]
+  },
+  "adapters": {
+    "adapter_count": 3,
+    "central_hub_plate_count": 0,
+    "adapter_size_mm": [
+      120.0,
+      70.0,
+      8.0
+    ],
+    "alignment": [
+      {
+        "id": "A1",
+        "crossbar_y_mm": 95.0,
+        "mount_hole_y_mm": [
+          95.0,
+          95.0
+        ],
+        "mount_holes_on_slot": true,
+        "lmb_hole_pitch_mm": 36.0
+      },
+      {
+        "id": "A2",
+        "crossbar_y_mm": -47.5,
+        "mount_hole_y_mm": [
+          -47.50000000000001,
+          -47.50000000000001
+        ],
+        "mount_holes_on_slot": true,
+        "lmb_hole_pitch_mm": 36.0
+      },
+      {
+        "id": "A3",
+        "crossbar_y_mm": -47.5,
+        "mount_hole_y_mm": [
+          -47.50000000000004,
+          -47.50000000000004
+        ],
+        "mount_holes_on_slot": true,
+        "lmb_hole_pitch_mm": 36.0
+      }
+    ],
+    "overlaps": [
+      {
+        "pair": [
+          "A1",
+          "A2"
+        ],
+        "overlaps": false
+      },
+      {
+        "pair": [
+          "A1",
+          "A3"
+        ],
+        "overlaps": false
+      },
+      {
+        "pair": [
+          "A2",
+          "A3"
+        ],
+        "overlaps": false
+      }
+    ],
+    "hole_edge_checks": [
+      {
+        "id": "A1",
+        "minimum_hole_center_edge_margin_mm": 11.0
+      },
+      {
+        "id": "A2",
+        "minimum_hole_center_edge_margin_mm": 12.0
+      },
+      {
+        "id": "A3",
+        "minimum_hole_center_edge_margin_mm": 10.0
+      }
+    ],
+    "profile_fastener_clearance_checks": [
+      {
+        "id": "A1",
+        "minimum_m8_socket_to_lmb_planar_clearance_mm": 10.5
+      },
+      {
+        "id": "A2",
+        "minimum_m8_socket_to_lmb_planar_clearance_mm": 15.5
+      },
+      {
+        "id": "A3",
+        "minimum_m8_socket_to_lmb_planar_clearance_mm": 6.433088560225535
+      }
+    ],
+    "passes": true
+  },
+  "connectors": {
+    "lower_4035_count": 8,
+    "upper_DCB3025_count": 8,
+    "axes_per_bracket": [
+      "horizontal_X",
+      "horizontal_Y"
+    ],
+    "lower_crossbar_center_to_bracket_corner_mm": 20.0,
+    "upper_crossbar_center_to_bracket_corner_mm": 15.0,
+    "bracket_corner_reference": "crossbar_outer_face",
+    "oblique_profile_joint_count": 0,
+    "unavailable_adjustable_bracket_count": 0,
+    "passes": true
+  },
+  "collapsed_height_mm": 300.0,
+  "digital_layout_passes": true,
+  "fabrication_release": false,
+  "purchase_release": false,
+  "fusion_native_component_count": 150,
+  "fusion_document_name": "Profile_Radial_3RPS_RevE_ACTUAL_VENDOR",
+  "fusion_f3d_path": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_ACTUAL_VENDOR.f3d",
+  "fusion_step_path": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_ACTUAL_VENDOR.step",
+  "actuator_envelope_basis": "Actual supplier STEP; six named bodies imported per actuator. Rear/front pin centers are 205.0 mm apart in the downloaded file.",
+  "mechanical_stop_mount": "Upper underslot anchor and 70x20 contact bars keep the M10 stop clear of profiles",
+  "fusion_group_step_paths": {
+    "lower_frame": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\lower_frame.step",
+    "lower_brackets": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\lower_brackets.step",
+    "lower_adapters": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\lower_adapters.step",
+    "actuators": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\actuators.step",
+    "upper_frame": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\upper_frame.step",
+    "upper_brackets": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\upper_brackets.step",
+    "lower_joints": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\lower_joints.step",
+    "upper_joints": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\upper_joints.step",
+    "mechanical_stops": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\mechanical_stops.step",
+    "fasteners": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_groups\\fasteners.step"
+  },
+  "vendor_step": "C:\\Users\\gangm\\Downloads\\LM4075OE-1075-100mm.stp",
+  "vendor_step_sha256": "1BC86009BADDCF6458EEB63FB1FCAC349FD80B6B64F9A0DDFA7C4B824DF52F3B",
+  "vendor_named_bodies_per_actuator": [
+    "UP",
+    "END",
+    "MOTER",
+    "WAIKE",
+    "FENGTOU",
+    "NEIGUAN"
+  ],
+  "fusion_interference": {
+    "method": "Fusion Design.analyzeInterference; coincident faces excluded",
+    "pass_count": 3,
+    "repeatable": true,
+    "all_zero_unexpected": true,
+    "passes": [
+      {
+        "pass": 1,
+        "checked_leaf_occurrences": 150,
+        "interference_count": 3,
+        "signature": [
+          [
+            "A1_LM4075OE_NEIGUAN_BODY",
+            "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.000116
+          ],
+          [
+            "A2_LM4075OE_NEIGUAN_BODY",
+            "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.001377
+          ],
+          [
+            "A3_LM4075OE_NEIGUAN_BODY",
+            "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.001377
+          ]
+        ],
+        "rows": [
+          {
+            "entity_one": "A1_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.00011598128452827597,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          },
+          {
+            "entity_one": "A2_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.0013769159431437311,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          },
+          {
+            "entity_one": "A3_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.0013769186166882586,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          }
+        ],
+        "unexpected_count": 0,
+        "passes": true
+      },
+      {
+        "pass": 2,
+        "checked_leaf_occurrences": 150,
+        "interference_count": 3,
+        "signature": [
+          [
+            "A1_LM4075OE_NEIGUAN_BODY",
+            "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.000116
+          ],
+          [
+            "A2_LM4075OE_NEIGUAN_BODY",
+            "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.001377
+          ],
+          [
+            "A3_LM4075OE_NEIGUAN_BODY",
+            "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.001377
+          ]
+        ],
+        "rows": [
+          {
+            "entity_one": "A1_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.00011598128452827597,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          },
+          {
+            "entity_one": "A2_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.0013769159431437311,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          },
+          {
+            "entity_one": "A3_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.0013769186166882586,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          }
+        ],
+        "unexpected_count": 0,
+        "passes": true
+      },
+      {
+        "pass": 3,
+        "checked_leaf_occurrences": 150,
+        "interference_count": 3,
+        "signature": [
+          [
+            "A1_LM4075OE_NEIGUAN_BODY",
+            "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.000116
+          ],
+          [
+            "A2_LM4075OE_NEIGUAN_BODY",
+            "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.001377
+          ],
+          [
+            "A3_LM4075OE_NEIGUAN_BODY",
+            "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            0.001377
+          ]
+        ],
+        "rows": [
+          {
+            "entity_one": "A1_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.00011598128452827597,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          },
+          {
+            "entity_one": "A2_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.0013769159431437311,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          },
+          {
+            "entity_one": "A3_LM4075OE_NEIGUAN_BODY",
+            "entity_two": "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+            "volume_mm3": 0.0013769186166882586,
+            "classification": "NUMERICAL_TOLERANCE_CONTACT"
+          }
+        ],
+        "unexpected_count": 0,
+        "passes": true
+      }
+    ]
+  },
+  "section_checks": [
+    {
+      "pass": 1,
+      "x_offset_mm": 0.0,
+      "image": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_SECTION_PASS_1.png"
+    },
+    {
+      "pass": 2,
+      "x_offset_mm": 3.0,
+      "image": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_SECTION_PASS_2.png"
+    },
+    {
+      "pass": 3,
+      "x_offset_mm": -3.0,
+      "image": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_SECTION_PASS_3.png"
+    }
+  ]
+}

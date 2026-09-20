@@ -1,0 +1,248 @@
+{
+  "generated_utc": "2026-08-27T08:43:14.383860+00:00",
+  "revision": "A",
+  "status": "PROTOTYPE_FABRICATION_BASELINE_VENDOR_TRANSFER_HOLES_OPEN",
+  "artifact_count": 48,
+  "artifacts": [
+    {
+      "path": "output/pdf/NAVIMRO_leveling_module_assembly_and_order_pack_revA.pdf",
+      "bytes": 756124,
+      "sha256": "4b8791d8fe8db411115c777bf4aec8c6a1e092ae51dd1f0cb34e8c3c49e63583"
+    },
+    {
+      "path": "output/pdf/NAVIMRO_leveling_module_fabrication_drawings_revA.pdf",
+      "bytes": 3202098,
+      "sha256": "e3a94ea584da185634c7c7e2fd05ec4152026c878ecd1579863704bed249763f"
+    },
+    {
+      "path": "output/pdf/NAVIMRO_visual_assembly_manual_revB.pdf",
+      "bytes": 6760443,
+      "sha256": "4921f53c5f99c3d677ff435b0a59b2ab21caabbf521acd7fd11f684f104502fb"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/00_exploded.png",
+      "bytes": 733967,
+      "sha256": "1ddfdc33899d0ea9ba6094b9c7513d6248f280ead12beec54eac6a4e2ff13c63"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/01_lower_frame.png",
+      "bytes": 781525,
+      "sha256": "79967b271759969752d06081e19dbd7b63fcf10cf9c6aaab768a046531aeec1a"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/02_fixed_tower.png",
+      "bytes": 790785,
+      "sha256": "c8e2fba19c8de2d42de175e29e9ed9a4286155bac37924aa4c778f676a3acd95"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/03_moving_guide.png",
+      "bytes": 779572,
+      "sha256": "791d3f197df115817b6da5350f944a3b26b58580647d7f31e44ed3564a19f174"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/04_cardan.png",
+      "bytes": 821933,
+      "sha256": "f120be86f7b2d62278d1bd6b5b1faf7587e3fea5a2daeca5556e991c49d81ebb"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/05_upper_frame.png",
+      "bytes": 742885,
+      "sha256": "6eb3448b4c0121142afb80039712de7b95a1702c769f860d9be3c76111344366"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/06_actuators.png",
+      "bytes": 842996,
+      "sha256": "572371f7f9db8a01aed8f52747a40f09346bd734faa4bba6b8d1c87b9358daa1"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/07_deck.png",
+      "bytes": 705912,
+      "sha256": "8233698b5e7d4e1a80ca15856ba32d97acd08ec1296dd6d528f7797b0682d445"
+    },
+    {
+      "path": "outputs/navimro_fabrication/assembly_guide/08_cart_coupling.png",
+      "bytes": 775729,
+      "sha256": "179fda5425c95c2fb8f14ce2d92b89895d1eb85a9623b31d1948a1d47d13bdbf"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P01_universal_lower_mount_tab.dxf",
+      "bytes": 20695,
+      "sha256": "6d0588c8295cb4c2ac6bf8fe3dcc058a523daad872312a3165d4f4b82bf72cba"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P02_actuator_outer_yoke_side.dxf",
+      "bytes": 19880,
+      "sha256": "97f63abc856b3efb96061fb488256a8980bdbb9b2ad5a68ef2aedb3970b7fcd6"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P03_upper_joint_spreader.dxf",
+      "bytes": 20690,
+      "sha256": "c948e60566685f04e74f2c83dae9ffbb22c246465f4ee0b5c75e5f497fcde0cf"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P04_lower_joint_spreader.dxf",
+      "bytes": 20690,
+      "sha256": "55b557c696596cc965a1368a707181859ab4ba7ad0bab57ecf1767d6e4e83acb"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P05_actuator_yoke_bridge.dxf",
+      "bytes": 20002,
+      "sha256": "0e0cc8d85d2802bf548346b3079d68eadc689e89027804b8d8dd1c9a272ea3fe"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P06_shaft_support_riser.dxf",
+      "bytes": 19735,
+      "sha256": "43dfb09b6e11befe5d6c788c44937c3cec0698997a46b1dc7c9c1f39f53b80ba"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P07_cardan_lug.dxf",
+      "bytes": 19863,
+      "sha256": "ab7521f5b6abe7742821197905ca227bc3ee865709471e71e8df9dae7f7182ef"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P08_cardan_bridge.dxf",
+      "bytes": 19993,
+      "sha256": "663e8088e2e05ca4c5bd5db9294f3e95ee1830076d1f3e7d10aceaca65d875ed"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P09_bushing_transfer_tab.dxf",
+      "bytes": 19726,
+      "sha256": "6256d1b69f6073041706806619454753ef84187d1ace3dbf4ff817b71bb291ca"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P10_locator_plate.dxf",
+      "bytes": 20804,
+      "sha256": "e2d8e0fdce94d7bbf01a03437bc210d5e9c7c6e1f02b3ea03da3b0a5b872bca2"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P11_latch_spreader.dxf",
+      "bytes": 19720,
+      "sha256": "b1c691004ef7e5645790b912f5a79d4c4fb72975f690f1f7be623eadb4f8b1a1"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P12_latch_keeper.dxf",
+      "bytes": 19718,
+      "sha256": "993f10293f4dc52209975fc9d2120e6da82069f82146bded5125b150a57590cb"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P13_rest_pad.dxf",
+      "bytes": 19988,
+      "sha256": "3b3b2e2b46538e2250d58e6b2246cedbbfd7836c6b90d262d33a87a2960f77b7"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P13_rest_pad_and_Z_bumper.dxf",
+      "bytes": 20001,
+      "sha256": "c0eb0008b210525ef3002ee30edae2f8c6ebb382cdf3c040861211e2e412bcc3"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-P14_cardan_cross_laminate.dxf",
+      "bytes": 20001,
+      "sha256": "f915ee08bae8302af03e809899c96864a91babecd7de13089f06c66228318c51"
+    },
+    {
+      "path": "outputs/navimro_fabrication/dxf/NVR-U02_upper_acrylic_deck.dxf",
+      "bytes": 22358,
+      "sha256": "22b2bd3ecda684efa3635d668d14fd57bb308ce6d1a14575e89870e26082da39"
+    },
+    {
+      "path": "outputs/navimro_fabrication/navimro_budget_4m.md",
+      "bytes": 1143,
+      "sha256": "815241d05bf7d9debe1ea32e0ce0503a1fdf97e40a02b68947fa81e37237dd53"
+    },
+    {
+      "path": "outputs/navimro_fabrication/renders/navimro_collapsed_iso.png",
+      "bytes": 721009,
+      "sha256": "b36ed9edbb7796090d0e264b5c396c9369f5217250c1c7b589810fa93b36a8c3"
+    },
+    {
+      "path": "outputs/navimro_fabrication/renders/navimro_front.png",
+      "bytes": 784764,
+      "sha256": "0beab8da472776344996398077db35b189913b020989e3cdd5a0ed9f2aed8578"
+    },
+    {
+      "path": "outputs/navimro_fabrication/renders/navimro_guide_detail.png",
+      "bytes": 848395,
+      "sha256": "93b318701998be13ea53f188b54be84261fec12bd606774538f15c2d85dec70f"
+    },
+    {
+      "path": "outputs/navimro_fabrication/renders/navimro_max_pitch_roll_iso.png",
+      "bytes": 711099,
+      "sha256": "880ef471093ad5879fc51b07035b0efdefd14691c1170843647f532b3c1bdcbf"
+    },
+    {
+      "path": "outputs/navimro_fabrication/renders/navimro_neutral_iso.png",
+      "bytes": 717966,
+      "sha256": "6a9ac4f3b1c539021703ab93f97e71f8d0c8e000f6b2911d57638da7f367678a"
+    },
+    {
+      "path": "outputs/navimro_fabrication/renders/navimro_raised_iso.png",
+      "bytes": 718848,
+      "sha256": "e2a066fbf58e2991c35822aeb6788d08e2481f2ff276356c7f9cfd4b638cccd6"
+    },
+    {
+      "path": "outputs/navimro_fabrication/renders/navimro_side.png",
+      "bytes": 726053,
+      "sha256": "8715e9d6a2a43252b95df7f7fd215cffcdcfb732937663a539b12a6d642a1f62"
+    },
+    {
+      "path": "outputs/navimro_fabrication/renders/navimro_top.png",
+      "bytes": 665591,
+      "sha256": "cd98fef6621954060857d816cc6bb164e6596bca877814ea5d262bd1cca0fa6e"
+    },
+    {
+      "path": "outputs/navimro_fabrication/step/navimro_radial3_collapsed.step",
+      "bytes": 1113875,
+      "sha256": "d4e6b01e0fd5a8f9c4f57ff688424c91590de94e8ab55f4a136196f1f0319be3"
+    },
+    {
+      "path": "outputs/navimro_fabrication/step/navimro_radial3_max_pitch.step",
+      "bytes": 1138071,
+      "sha256": "50779499d735687223e6e4e07db13519314b419e8f32a0c5337931ada619c6b8"
+    },
+    {
+      "path": "outputs/navimro_fabrication/step/navimro_radial3_max_pitch_roll.step",
+      "bytes": 1161390,
+      "sha256": "e70ae51ecbed81e7f728548bb009d648d89fd2741483dd6f1b6966e4a863d3d4"
+    },
+    {
+      "path": "outputs/navimro_fabrication/step/navimro_radial3_max_roll.step",
+      "bytes": 1135743,
+      "sha256": "a750ff2169d27a454ed302ad8c59e9acda8862d55ce7db6b3d30ddb543cbe80f"
+    },
+    {
+      "path": "outputs/navimro_fabrication/step/navimro_radial3_neutral.step",
+      "bytes": 1113885,
+      "sha256": "df092dbc6b4749d2dc23a709b35948ee2bd27d3676064329b6c8c4ee0318d576"
+    },
+    {
+      "path": "outputs/navimro_fabrication/step/navimro_radial3_raised.step",
+      "bytes": 1114036,
+      "sha256": "6c92bde8bba19ea104bfb88bf36c169f55bbe624e4b58c0a1deea06962f56483"
+    },
+    {
+      "path": "outputs/navimro_fabrication/tables/navimro_budget_4m.csv",
+      "bytes": 675,
+      "sha256": "049294c04b11aed954bbe4eea844d37840918200ec8dc0e76cfa6868cf2caac5"
+    },
+    {
+      "path": "outputs/navimro_fabrication/tables/navimro_flatbar_cut_list.csv",
+      "bytes": 1018,
+      "sha256": "a4714bcdc51f892cceb078e34eec6afba856ad4a106a619db6d0313a8789c85a"
+    },
+    {
+      "path": "outputs/navimro_fabrication/tables/navimro_profile_and_shaft_cut_list.csv",
+      "bytes": 727,
+      "sha256": "3c603eb323d5ebeb804d0fff5aa74ea4f64787a82ec725f22b34fe6c1758f095"
+    },
+    {
+      "path": "outputs/navimro_fabrication/verification/navimro_fabrication_verification.json",
+      "bytes": 2398,
+      "sha256": "ba24a485dae60a13010c02b89e6d665899fffb596c05c384640dced1c824add6"
+    },
+    {
+      "path": "outputs/navimro_fabrication/verification/navimro_fabrication_verification.md",
+      "bytes": 1694,
+      "sha256": "1d94a12c4fe01f0d4735aa571bc163155e89134b664ef916811e392dd6e89d96"
+    }
+  ]
+}

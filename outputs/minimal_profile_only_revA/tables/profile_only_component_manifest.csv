@@ -1,0 +1,92 @@
+﻿component_name,group,bom_key,material,status,notes
+lower_outer_side_L,lower_frame,4040_700,black anodized 4040 extrusion,RELEASED,
+lower_outer_side_R,lower_frame,4040_700,black anodized 4040 extrusion,RELEASED,
+lower_outer_cross_F,lower_frame,4040_620,black anodized 4040 extrusion,RELEASED,
+lower_outer_cross_B,lower_frame,4040_620,black anodized 4040 extrusion,RELEASED,
+lower_tangent_mount_rail_A1,lower_frame,4040_TANGENT_620,black anodized 4040 extrusion,RELEASED,Tangent-axis actuator rail
+lower_tangent_mount_rail_A2,lower_frame,4040_TANGENT_297,black anodized 4040 extrusion,RELEASED,Tangent-axis actuator rail
+lower_tangent_mount_rail_A3,lower_frame,4040_TANGENT_297,black anodized 4040 extrusion,RELEASED,Tangent-axis actuator rail
+lower_corner_connector_1,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_corner_connector_1_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_corner_connector_2,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_corner_connector_2_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_corner_connector_3,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_corner_connector_3_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_corner_connector_4,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_corner_connector_4_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_tangent_connector_1,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_tangent_connector_1_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_tangent_connector_2,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_tangent_connector_2_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_tangent_connector_3,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_tangent_connector_3_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_tangent_connector_4,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_tangent_connector_4_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_tangent_connector_5,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_tangent_connector_5_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+lower_tangent_connector_6,lower_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+lower_tangent_connector_6_4x_M8,lower_fasteners,M8_ANGLE_FASTENER_4SET,4x M8 socket screw and matching T-nut set,RELEASED,
+LMB10_A1,lower_joints,LMB10,LMB-10 clevis bracket,RELEASED,Side-mounted to keep collapsed height low
+LMB10_A1_pin,lower_joints,LMB10_PIN,6 mm clevis pin and retainer,RELEASED,
+LMB10_A1_mount_M8_1,lower_fasteners,M8_TNUT_SET,M8 socket screw and T-nut,RELEASED,
+LMB10_A1_mount_M8_2,lower_fasteners,M8_TNUT_SET,M8 socket screw and T-nut,RELEASED,
+LMB10_A2,lower_joints,LMB10,LMB-10 clevis bracket,RELEASED,Side-mounted to keep collapsed height low
+LMB10_A2_pin,lower_joints,LMB10_PIN,6 mm clevis pin and retainer,RELEASED,
+LMB10_A2_mount_M8_1,lower_fasteners,M8_TNUT_SET,M8 socket screw and T-nut,RELEASED,
+LMB10_A2_mount_M8_2,lower_fasteners,M8_TNUT_SET,M8 socket screw and T-nut,RELEASED,
+LMB10_A3,lower_joints,LMB10,LMB-10 clevis bracket,RELEASED,Side-mounted to keep collapsed height low
+LMB10_A3_pin,lower_joints,LMB10_PIN,6 mm clevis pin and retainer,RELEASED,
+LMB10_A3_mount_M8_1,lower_fasteners,M8_TNUT_SET,M8 socket screw and T-nut,RELEASED,
+LMB10_A3_mount_M8_2,lower_fasteners,M8_TNUT_SET,M8 socket screw and T-nut,RELEASED,
+upper_outer_side_L,upper_frame,3030_700,black anodized 3030 extrusion,RELEASED,
+upper_outer_side_R,upper_frame,3030_700,black anodized 3030 extrusion,RELEASED,
+upper_cross_F,upper_frame,3030_640,black anodized 3030 extrusion,RELEASED,
+upper_cross_B,upper_frame,3030_640,black anodized 3030 extrusion,RELEASED,
+upper_cross_A1,upper_frame,3030_640,black anodized 3030 extrusion,RELEASED,
+upper_cross_A23,upper_frame,3030_640,black anodized 3030 extrusion,RELEASED,
+upper_corner_connector_1,upper_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+upper_corner_connector_1_4x_M6,upper_fasteners,M6_ANGLE_FASTENER_4SET,4x M6 socket screw and matching T-nut set,RELEASED,
+upper_corner_connector_2,upper_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+upper_corner_connector_2_4x_M6,upper_fasteners,M6_ANGLE_FASTENER_4SET,4x M6 socket screw and matching T-nut set,RELEASED,
+upper_corner_connector_3,upper_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+upper_corner_connector_3_4x_M6,upper_fasteners,M6_ANGLE_FASTENER_4SET,4x M6 socket screw and matching T-nut set,RELEASED,
+upper_corner_connector_4,upper_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+upper_corner_connector_4_4x_M6,upper_fasteners,M6_ANGLE_FASTENER_4SET,4x M6 socket screw and matching T-nut set,RELEASED,
+upper_cross_connector_1_1,upper_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+upper_cross_connector_1_1_4x_M6,upper_fasteners,M6_ANGLE_FASTENER_4SET,4x M6 socket screw and matching T-nut set,RELEASED,
+upper_cross_connector_1_2,upper_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+upper_cross_connector_1_2_4x_M6,upper_fasteners,M6_ANGLE_FASTENER_4SET,4x M6 socket screw and matching T-nut set,RELEASED,
+upper_cross_connector_2_1,upper_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+upper_cross_connector_2_1_4x_M6,upper_fasteners,M6_ANGLE_FASTENER_4SET,4x M6 socket screw and matching T-nut set,RELEASED,
+upper_cross_connector_2_2,upper_connectors,ANGLE_CONNECTOR,catalog cast angle connector,RELEASED,
+upper_cross_connector_2_2_4x_M6,upper_fasteners,M6_ANGLE_FASTENER_4SET,4x M6 socket screw and matching T-nut set,RELEASED,
+PHS6_A1,upper_joints,PHS6,THK PHS6 rod end envelope,RELEASED,
+PHS6_A1_M6_hammer_head_bolt,upper_fasteners,M6_TBOLT,M6 hammer-head T-bolt with downward male thread,RELEASED,T-head captured in lower 3030 slot; PHS6 female thread screws onto stud
+PHS6_A2,upper_joints,PHS6,THK PHS6 rod end envelope,RELEASED,
+PHS6_A2_M6_hammer_head_bolt,upper_fasteners,M6_TBOLT,M6 hammer-head T-bolt with downward male thread,RELEASED,T-head captured in lower 3030 slot; PHS6 female thread screws onto stud
+PHS6_A3,upper_joints,PHS6,THK PHS6 rod end envelope,RELEASED,
+PHS6_A3_M6_hammer_head_bolt,upper_fasteners,M6_TBOLT,M6 hammer-head T-bolt with downward male thread,RELEASED,T-head captured in lower 3030 slot; PHS6 female thread screws onto stud
+LM4075OE_A1_body,actuators,LM4075OE_100,LM4075OE 100 mm planning envelope,PROVISIONAL,Pin length 230.457 mm; replace with vendor STEP
+LM4075OE_A1_rod,actuators,LM4075OE_100,chrome actuator rod envelope,PROVISIONAL,
+LM4075OE_A1_lower_eye,actuator_eyes,LM4075OE_100,18 mm lower eye envelope,PROVISIONAL,
+LM4075OE_A1_upper_eye,actuator_eyes,LM4075OE_100,18 mm upper eye envelope,PROVISIONAL,
+PHS6_A1_M6x50_joint_bolt,upper_fasteners,M6X50_PARTIAL,M6x50 partial-thread joint bolt,RELEASED,Single-side PHS6 connection; physical fit test required
+LM4075OE_A2_body,actuators,LM4075OE_100,LM4075OE 100 mm planning envelope,PROVISIONAL,Pin length 230.457 mm; replace with vendor STEP
+LM4075OE_A2_rod,actuators,LM4075OE_100,chrome actuator rod envelope,PROVISIONAL,
+LM4075OE_A2_lower_eye,actuator_eyes,LM4075OE_100,18 mm lower eye envelope,PROVISIONAL,
+LM4075OE_A2_upper_eye,actuator_eyes,LM4075OE_100,18 mm upper eye envelope,PROVISIONAL,
+PHS6_A2_M6x50_joint_bolt,upper_fasteners,M6X50_PARTIAL,M6x50 partial-thread joint bolt,RELEASED,Single-side PHS6 connection; physical fit test required
+LM4075OE_A3_body,actuators,LM4075OE_100,LM4075OE 100 mm planning envelope,PROVISIONAL,Pin length 230.457 mm; replace with vendor STEP
+LM4075OE_A3_rod,actuators,LM4075OE_100,chrome actuator rod envelope,PROVISIONAL,
+LM4075OE_A3_lower_eye,actuator_eyes,LM4075OE_100,18 mm lower eye envelope,PROVISIONAL,
+LM4075OE_A3_upper_eye,actuator_eyes,LM4075OE_100,18 mm upper eye envelope,PROVISIONAL,
+PHS6_A3_M6x50_joint_bolt,upper_fasteners,M6X50_PARTIAL,M6x50 partial-thread joint bolt,RELEASED,Single-side PHS6 connection; physical fit test required
+mechanical_stop_1_moving,mechanical_stops,M10_STOP_SET,M10 threaded stop rod with two adjustable collars,PROVISIONAL,Moves with upper frame; collar positions provide 50 mm mechanical travel
+mechanical_stop_1_catch_jaws,mechanical_stops,STOP_CATCH_PAIR,pair of T-slot stop-capture brackets,PROVISIONAL,50 mm open slot allows the verified 18.21 mm maximum rod sweep
+mechanical_stop_1_catch_2x_M8,mechanical_stops,STOP_CATCH_M8_2SET,2x M8 socket screw and T-nut for stop-capture brackets,PROVISIONAL,
+mechanical_stop_2_moving,mechanical_stops,M10_STOP_SET,M10 threaded stop rod with two adjustable collars,PROVISIONAL,Moves with upper frame; collar positions provide 50 mm mechanical travel
+mechanical_stop_2_catch_jaws,mechanical_stops,STOP_CATCH_PAIR,pair of T-slot stop-capture brackets,PROVISIONAL,50 mm open slot allows the verified 18.21 mm maximum rod sweep
+mechanical_stop_2_catch_2x_M8,mechanical_stops,STOP_CATCH_M8_2SET,2x M8 socket screw and T-nut for stop-capture brackets,PROVISIONAL,
+mechanical_stop_3_moving,mechanical_stops,M10_STOP_SET,M10 threaded stop rod with two adjustable collars,PROVISIONAL,Moves with upper frame; collar positions provide 50 mm mechanical travel
+mechanical_stop_3_catch_jaws,mechanical_stops,STOP_CATCH_PAIR,pair of T-slot stop-capture brackets,PROVISIONAL,50 mm open slot allows the verified 18.21 mm maximum rod sweep
+mechanical_stop_3_catch_2x_M8,mechanical_stops,STOP_CATCH_M8_2SET,2x M8 socket screw and T-nut for stop-capture brackets,PROVISIONAL,

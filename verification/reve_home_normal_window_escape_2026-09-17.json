@@ -1,0 +1,621 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-09-17",
+  "geometry_basis": "ProfileRadialRevD retained geometry",
+  "fabrication_status": "NOT APPROVED FOR FABRICATION",
+  "low_limit_mm": 205.0,
+  "low_limit_status": "NOMINAL_UNVERIFIED",
+  "target_mm": 210.0,
+  "step_mm": 1.0,
+  "orders": [
+    {
+      "order": [
+        1,
+        2,
+        3
+      ],
+      "terminal_lengths_mm": [
+        210.0,
+        210.0,
+        210.0
+      ],
+      "path_state_count": 16,
+      "evaluated_state_count": 16,
+      "maximum_tilt_deg": 0.23285647704614312,
+      "maximum_phs_articulation_deg": 0.20804863043305943,
+      "tilt_limit_deg": 5.0,
+      "joint_limit_deg": 8.0,
+      "joint_limit_status": "LEGACY_8_DEG_NOT_LDK_VERIFIED",
+      "failure_reasons": [],
+      "kinematic_pass": true,
+      "cad_collision_audited": false,
+      "worst_tilt": {
+        "step_index": 1,
+        "lengths_mm": [
+          206.0,
+          205.0,
+          205.0
+        ],
+        "pose": {
+          "x_mm": 5.9594679925786327e-05,
+          "y_mm": -0.0010323268771905677,
+          "lift_mm": -27.327050970069163,
+          "pitch_deg": -0.013451526870662247,
+          "roll_deg": 0.23246762423987258,
+          "yaw_rad": -7.157724460838096e-07,
+          "residual_mm": 3.262869086029241e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            206.0,
+            205.0,
+            205.0
+          ]
+        }
+      },
+      "worst_articulation": {
+        "step_index": 1,
+        "lengths_mm": [
+          206.0,
+          205.0,
+          205.0
+        ],
+        "pose": {
+          "x_mm": 5.9594679925786327e-05,
+          "y_mm": -0.0010323268771905677,
+          "lift_mm": -27.327050970069163,
+          "pitch_deg": -0.013451526870662247,
+          "roll_deg": 0.23246762423987258,
+          "yaw_rad": -7.157724460838096e-07,
+          "residual_mm": 3.262869086029241e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            206.0,
+            205.0,
+            205.0
+          ]
+        }
+      },
+      "terminal_pose": {
+        "x_mm": 5.050482801069456e-10,
+        "y_mm": -5.069012939430684e-11,
+        "lift_mm": -20.313726844370144,
+        "pitch_deg": -2.1756080945578744e-11,
+        "roll_deg": 1.435632126836595e-09,
+        "yaw_rad": -1.6005947732813106e-12,
+        "residual_mm": 5.91782622905157e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          210.0,
+          210.0,
+          210.0
+        ]
+      }
+    },
+    {
+      "order": [
+        1,
+        3,
+        2
+      ],
+      "terminal_lengths_mm": [
+        210.0,
+        210.0,
+        210.0
+      ],
+      "path_state_count": 16,
+      "evaluated_state_count": 16,
+      "maximum_tilt_deg": 0.23285647704614312,
+      "maximum_phs_articulation_deg": 0.20804863043305943,
+      "tilt_limit_deg": 5.0,
+      "joint_limit_deg": 8.0,
+      "joint_limit_status": "LEGACY_8_DEG_NOT_LDK_VERIFIED",
+      "failure_reasons": [],
+      "kinematic_pass": true,
+      "cad_collision_audited": false,
+      "worst_tilt": {
+        "step_index": 1,
+        "lengths_mm": [
+          206.0,
+          205.0,
+          205.0
+        ],
+        "pose": {
+          "x_mm": 5.9594679925786327e-05,
+          "y_mm": -0.0010323268771905677,
+          "lift_mm": -27.327050970069163,
+          "pitch_deg": -0.013451526870662247,
+          "roll_deg": 0.23246762423987258,
+          "yaw_rad": -7.157724460838096e-07,
+          "residual_mm": 3.262869086029241e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            206.0,
+            205.0,
+            205.0
+          ]
+        }
+      },
+      "worst_articulation": {
+        "step_index": 1,
+        "lengths_mm": [
+          206.0,
+          205.0,
+          205.0
+        ],
+        "pose": {
+          "x_mm": 5.9594679925786327e-05,
+          "y_mm": -0.0010323268771905677,
+          "lift_mm": -27.327050970069163,
+          "pitch_deg": -0.013451526870662247,
+          "roll_deg": 0.23246762423987258,
+          "yaw_rad": -7.157724460838096e-07,
+          "residual_mm": 3.262869086029241e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            206.0,
+            205.0,
+            205.0
+          ]
+        }
+      },
+      "terminal_pose": {
+        "x_mm": -3.0669844832201254e-10,
+        "y_mm": -4.419425975350777e-10,
+        "lift_mm": -20.31372684490146,
+        "pitch_deg": 1.1937418108588609e-10,
+        "roll_deg": 1.55229452123535e-09,
+        "yaw_rad": 1.5813233706211982e-12,
+        "residual_mm": 5.624031018669484e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          210.0,
+          210.0,
+          210.0
+        ]
+      }
+    },
+    {
+      "order": [
+        2,
+        1,
+        3
+      ],
+      "terminal_lengths_mm": [
+        210.0,
+        210.0,
+        210.0
+      ],
+      "path_state_count": 16,
+      "evaluated_state_count": 16,
+      "maximum_tilt_deg": 0.23285647715257635,
+      "maximum_phs_articulation_deg": 0.20804863108824329,
+      "tilt_limit_deg": 5.0,
+      "joint_limit_deg": 8.0,
+      "joint_limit_status": "LEGACY_8_DEG_NOT_LDK_VERIFIED",
+      "failure_reasons": [],
+      "kinematic_pass": true,
+      "cad_collision_audited": false,
+      "worst_tilt": {
+        "step_index": 1,
+        "lengths_mm": [
+          205.0,
+          206.0,
+          205.0
+        ],
+        "pose": {
+          "x_mm": 0.0008642239956204524,
+          "y_mm": 0.0005677739283581782,
+          "lift_mm": -27.32705096968185,
+          "pitch_deg": 0.20804853146152102,
+          "roll_deg": -0.10458487262142495,
+          "yaw_rad": -3.5535432301646736e-06,
+          "residual_mm": 6.458492407546146e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.0,
+            206.0,
+            205.0
+          ]
+        }
+      },
+      "worst_articulation": {
+        "step_index": 1,
+        "lengths_mm": [
+          205.0,
+          206.0,
+          205.0
+        ],
+        "pose": {
+          "x_mm": 0.0008642239956204524,
+          "y_mm": 0.0005677739283581782,
+          "lift_mm": -27.32705096968185,
+          "pitch_deg": 0.20804853146152102,
+          "roll_deg": -0.10458487262142495,
+          "yaw_rad": -3.5535432301646736e-06,
+          "residual_mm": 6.458492407546146e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.0,
+            206.0,
+            205.0
+          ]
+        }
+      },
+      "terminal_pose": {
+        "x_mm": 5.050785225170842e-10,
+        "y_mm": -5.072103316777071e-11,
+        "lift_mm": -20.3137268443715,
+        "pitch_deg": -2.1439772280120763e-11,
+        "roll_deg": 1.4355678789945226e-09,
+        "yaw_rad": -1.6000741186457759e-12,
+        "residual_mm": 5.916660938964924e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          210.0,
+          210.0,
+          210.0
+        ]
+      }
+    },
+    {
+      "order": [
+        2,
+        3,
+        1
+      ],
+      "terminal_lengths_mm": [
+        210.0,
+        210.0,
+        210.0
+      ],
+      "path_state_count": 16,
+      "evaluated_state_count": 16,
+      "maximum_tilt_deg": 0.23285647715257635,
+      "maximum_phs_articulation_deg": 0.20804863108824329,
+      "tilt_limit_deg": 5.0,
+      "joint_limit_deg": 8.0,
+      "joint_limit_status": "LEGACY_8_DEG_NOT_LDK_VERIFIED",
+      "failure_reasons": [],
+      "kinematic_pass": true,
+      "cad_collision_audited": false,
+      "worst_tilt": {
+        "step_index": 1,
+        "lengths_mm": [
+          205.0,
+          206.0,
+          205.0
+        ],
+        "pose": {
+          "x_mm": 0.0008642239956204524,
+          "y_mm": 0.0005677739283581782,
+          "lift_mm": -27.32705096968185,
+          "pitch_deg": 0.20804853146152102,
+          "roll_deg": -0.10458487262142495,
+          "yaw_rad": -3.5535432301646736e-06,
+          "residual_mm": 6.458492407546146e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.0,
+            206.0,
+            205.0
+          ]
+        }
+      },
+      "worst_articulation": {
+        "step_index": 1,
+        "lengths_mm": [
+          205.0,
+          206.0,
+          205.0
+        ],
+        "pose": {
+          "x_mm": 0.0008642239956204524,
+          "y_mm": 0.0005677739283581782,
+          "lift_mm": -27.32705096968185,
+          "pitch_deg": 0.20804853146152102,
+          "roll_deg": -0.10458487262142495,
+          "yaw_rad": -3.5535432301646736e-06,
+          "residual_mm": 6.458492407546146e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.0,
+            206.0,
+            205.0
+          ]
+        }
+      },
+      "terminal_pose": {
+        "x_mm": -1.9910656856022635e-10,
+        "y_mm": 5.007628054625249e-10,
+        "lift_mm": -20.313726845196275,
+        "pitch_deg": -3.497255882648929e-10,
+        "roll_deg": -7.09135512219931e-10,
+        "yaw_rad": 1.0481957211402301e-12,
+        "residual_mm": 2.894523731811205e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          210.0,
+          210.0,
+          210.0
+        ]
+      }
+    },
+    {
+      "order": [
+        3,
+        1,
+        2
+      ],
+      "terminal_lengths_mm": [
+        210.0,
+        210.0,
+        210.0
+      ],
+      "path_state_count": 16,
+      "evaluated_state_count": 16,
+      "maximum_tilt_deg": 0.23285647696162262,
+      "maximum_phs_articulation_deg": 0.20804862950634215,
+      "tilt_limit_deg": 5.0,
+      "joint_limit_deg": 8.0,
+      "joint_limit_status": "LEGACY_8_DEG_NOT_LDK_VERIFIED",
+      "failure_reasons": [],
+      "kinematic_pass": true,
+      "cad_collision_audited": false,
+      "worst_tilt": {
+        "step_index": 1,
+        "lengths_mm": [
+          205.0,
+          205.0,
+          206.0
+        ],
+        "pose": {
+          "x_mm": -0.000923818672879699,
+          "y_mm": 0.00046455298072728884,
+          "lift_mm": -27.327050969062913,
+          "pitch_deg": -0.194596921959797,
+          "roll_deg": -0.12788369602942487,
+          "yaw_rad": 3.5508251791627797e-06,
+          "residual_mm": 6.638288141402882e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.0,
+            205.0,
+            206.0
+          ]
+        }
+      },
+      "worst_articulation": {
+        "step_index": 1,
+        "lengths_mm": [
+          205.0,
+          205.0,
+          206.0
+        ],
+        "pose": {
+          "x_mm": -0.000923818672879699,
+          "y_mm": 0.00046455298072728884,
+          "lift_mm": -27.327050969062913,
+          "pitch_deg": -0.194596921959797,
+          "roll_deg": -0.12788369602942487,
+          "yaw_rad": 3.5508251791627797e-06,
+          "residual_mm": 6.638288141402882e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.0,
+            205.0,
+            206.0
+          ]
+        }
+      },
+      "terminal_pose": {
+        "x_mm": -3.0689814697806156e-10,
+        "y_mm": -4.4195118235629965e-10,
+        "lift_mm": -20.313726844902213,
+        "pitch_deg": 1.19882462409817e-10,
+        "roll_deg": 1.5519862671891467e-09,
+        "yaw_rad": 1.5801130067028674e-12,
+        "residual_mm": 5.622467824650812e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          210.0,
+          210.0,
+          210.0
+        ]
+      }
+    },
+    {
+      "order": [
+        3,
+        2,
+        1
+      ],
+      "terminal_lengths_mm": [
+        210.0,
+        210.0,
+        210.0
+      ],
+      "path_state_count": 16,
+      "evaluated_state_count": 16,
+      "maximum_tilt_deg": 0.23285647696162262,
+      "maximum_phs_articulation_deg": 0.20804862950634215,
+      "tilt_limit_deg": 5.0,
+      "joint_limit_deg": 8.0,
+      "joint_limit_status": "LEGACY_8_DEG_NOT_LDK_VERIFIED",
+      "failure_reasons": [],
+      "kinematic_pass": true,
+      "cad_collision_audited": false,
+      "worst_tilt": {
+        "step_index": 1,
+        "lengths_mm": [
+          205.0,
+          205.0,
+          206.0
+        ],
+        "pose": {
+          "x_mm": -0.000923818672879699,
+          "y_mm": 0.00046455298072728884,
+          "lift_mm": -27.327050969062913,
+          "pitch_deg": -0.194596921959797,
+          "roll_deg": -0.12788369602942487,
+          "yaw_rad": 3.5508251791627797e-06,
+          "residual_mm": 6.638288141402882e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.0,
+            205.0,
+            206.0
+          ]
+        }
+      },
+      "worst_articulation": {
+        "step_index": 1,
+        "lengths_mm": [
+          205.0,
+          205.0,
+          206.0
+        ],
+        "pose": {
+          "x_mm": -0.000923818672879699,
+          "y_mm": 0.00046455298072728884,
+          "lift_mm": -27.327050969062913,
+          "pitch_deg": -0.194596921959797,
+          "roll_deg": -0.12788369602942487,
+          "yaw_rad": 3.5508251791627797e-06,
+          "residual_mm": 6.638288141402882e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.0,
+            205.0,
+            206.0
+          ]
+        }
+      },
+      "terminal_pose": {
+        "x_mm": -1.9923026875717613e-10,
+        "y_mm": 5.008094324443144e-10,
+        "lift_mm": -20.313726845196424,
+        "pitch_deg": -3.49815606142485e-10,
+        "roll_deg": -7.091188323387135e-10,
+        "yaw_rad": 1.0477027475414117e-12,
+        "residual_mm": 2.894466888392344e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          210.0,
+          210.0,
+          210.0
+        ]
+      }
+    }
+  ],
+  "selected_order_summary": {
+    "order": [
+      3,
+      2,
+      1
+    ],
+    "terminal_lengths_mm": [
+      210.0,
+      210.0,
+      210.0
+    ],
+    "path_state_count": 16,
+    "evaluated_state_count": 16,
+    "maximum_tilt_deg": 0.23285647696162262,
+    "maximum_phs_articulation_deg": 0.20804862950634215,
+    "tilt_limit_deg": 5.0,
+    "joint_limit_deg": 8.0,
+    "joint_limit_status": "LEGACY_8_DEG_NOT_LDK_VERIFIED",
+    "failure_reasons": [],
+    "kinematic_pass": true,
+    "cad_collision_audited": false,
+    "worst_tilt": {
+      "step_index": 1,
+      "lengths_mm": [
+        205.0,
+        205.0,
+        206.0
+      ],
+      "pose": {
+        "x_mm": -0.000923818672879699,
+        "y_mm": 0.00046455298072728884,
+        "lift_mm": -27.327050969062913,
+        "pitch_deg": -0.194596921959797,
+        "roll_deg": -0.12788369602942487,
+        "yaw_rad": 3.5508251791627797e-06,
+        "residual_mm": 6.638288141402882e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          205.0,
+          205.0,
+          206.0
+        ]
+      }
+    },
+    "worst_articulation": {
+      "step_index": 1,
+      "lengths_mm": [
+        205.0,
+        205.0,
+        206.0
+      ],
+      "pose": {
+        "x_mm": -0.000923818672879699,
+        "y_mm": 0.00046455298072728884,
+        "lift_mm": -27.327050969062913,
+        "pitch_deg": -0.194596921959797,
+        "roll_deg": -0.12788369602942487,
+        "yaw_rad": 3.5508251791627797e-06,
+        "residual_mm": 6.638288141402882e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          205.0,
+          205.0,
+          206.0
+        ]
+      }
+    },
+    "terminal_pose": {
+      "x_mm": -1.9923026875717613e-10,
+      "y_mm": 5.008094324443144e-10,
+      "lift_mm": -20.313726845196424,
+      "pitch_deg": -3.49815606142485e-10,
+      "roll_deg": -7.091188323387135e-10,
+      "yaw_rad": 1.0477027475414117e-12,
+      "residual_mm": 2.894466888392344e-09,
+      "iterations": 2,
+      "converged": true,
+      "target_lengths_mm": [
+        210.0,
+        210.0,
+        210.0
+      ]
+    }
+  },
+  "selection_basis": "SAME_AS_SELECTED_HOME_RETRACTION_ORDER",
+  "all_orders_pass": true,
+  "release_ready": false,
+  "release_blockers": [
+    "Actual L_low_switch and hard-end overtravel are not supplier-verified.",
+    "Full-path CAD collision audit with final LMB/PHS/stop geometry is incomplete."
+  ]
+}

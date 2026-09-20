@@ -1,0 +1,334 @@
+{
+  "workspace": {
+    "parameters": {
+      "outer_length_mm": 700.0,
+      "lower_profile_mm": 40.0,
+      "upper_profile_mm": 30.0,
+      "lower_cross_length_mm": 620.0,
+      "upper_cross_length_mm": 640.0,
+      "lower_support_radius_mm": 75.0,
+      "upper_support_radius_mm": 315.0,
+      "lower_pin_z_mm": 81.0,
+      "upper_pin_z_mm": 213.0,
+      "upper_profile_bottom_z_mm": 270.0,
+      "upper_profile_top_z_mm": 300.0,
+      "angle_deg": 3.0,
+      "adapter_length_mm": 100.0,
+      "adapter_width_mm": 60.0,
+      "adapter_thickness_mm": 5.0,
+      "adapter_hole_pitch_mm": 70.0,
+      "lower_standoff_mm": 15.0,
+      "upper_standoff_mm": 20.0,
+      "thread_nominal_mm": 12.0,
+      "thread_pitch_mm": 1.75,
+      "stb_min_tip_span_mm": 171.0,
+      "sjn_thread_length_each_end_mm": 38.0,
+      "required_internal_engagement_mm": 18.0,
+      "coupling_nut_length_mm": 36.0,
+      "lower_stb_external_engagement_mm": 12.0,
+      "lower_eye_external_engagement_mm": 22.0,
+      "lower_coupling_internal_gap_mm": 2.0,
+      "bj761_eye_center_to_thread_tip_mm": 50.0,
+      "upper_rod_end_center_to_thread_end_mm": 50.0,
+      "upper_stb_external_engagement_mm": 13.0,
+      "design_leg_load_n": 600.0,
+      "steel_elastic_modulus_mpa": 205000.0,
+      "m12_conservative_minor_diameter_mm": 9.85,
+      "m12_tensile_stress_area_mm2": 84.3,
+      "aluminium_6061_t6_yield_mpa": 276.0
+    },
+    "pose_count": 9,
+    "required_minimum_pin_mm": 262.7236307194399,
+    "required_maximum_pin_mm": 284.44389927467705,
+    "required_adjustment_mm": 21.72026855523717,
+    "available_minimum_pin_mm": 260.0,
+    "available_maximum_pin_mm": 300.0,
+    "lower_length_margin_mm": 2.723630719439882,
+    "upper_length_margin_mm": 15.556100725322949,
+    "minimum_internal_engagement_mm": 25.778050362661475,
+    "maximum_constraint_residual_mm": 8.384404281969182e-13,
+    "passes": true,
+    "rows": [
+      {
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.43140033406982314,
+        "y_mm": 0.0005916248433613514,
+        "yaw_rad": 0.0013714047619160135,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          265.97448228888163,
+          271.3225600447932,
+          284.443899274677
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 176.97448228888163,
+            "internal_engagement_each_end_mm": 35.012758855559184,
+            "turns_from_stb_minimum": 1.7069949396804662
+          },
+          {
+            "turnbuckle_tip_span_mm": 182.3225600447932,
+            "internal_engagement_each_end_mm": 32.338719977603404,
+            "turns_from_stb_minimum": 3.2350171556551977
+          },
+          {
+            "turnbuckle_tip_span_mm": 195.443899274677,
+            "internal_engagement_each_end_mm": 25.778050362661503,
+            "turns_from_stb_minimum": 6.983971221336284
+          }
+        ]
+      },
+      {
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "x_mm": 9.520050109084988e-15,
+        "y_mm": 0.21584827615556876,
+        "yaw_rad": 3.0096506107981814e-17,
+        "residual_mm": 8.100187187665142e-13,
+        "pin_lengths_mm": [
+          274.0942424842831,
+          266.93003347240887,
+          280.69552002675465
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 185.0942424842831,
+            "internal_engagement_each_end_mm": 30.952878757858457,
+            "turns_from_stb_minimum": 4.026926424080882
+          },
+          {
+            "turnbuckle_tip_span_mm": 177.93003347240887,
+            "internal_engagement_each_end_mm": 34.53498326379557,
+            "turns_from_stb_minimum": 1.9800095635453903
+          },
+          {
+            "turnbuckle_tip_span_mm": 191.69552002675465,
+            "internal_engagement_each_end_mm": 27.652239986622675,
+            "turns_from_stb_minimum": 5.9130057219299
+          }
+        ]
+      },
+      {
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "x_mm": 0.4314003340698516,
+        "y_mm": 0.0005916248433282642,
+        "yaw_rad": -0.0013714047619159226,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          281.84217610956784,
+          262.72363071943994,
+          277.14250897345266
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 192.84217610956784,
+            "internal_engagement_each_end_mm": 27.078911945216078,
+            "turns_from_stb_minimum": 6.240621745590813
+          },
+          {
+            "turnbuckle_tip_span_mm": 173.72363071943994,
+            "internal_engagement_each_end_mm": 36.63818464028003,
+            "turns_from_stb_minimum": 0.7781802055542683
+          },
+          {
+            "turnbuckle_tip_span_mm": 188.14250897345266,
+            "internal_engagement_each_end_mm": 29.428745513273668,
+            "turns_from_stb_minimum": 4.897859706700761
+          }
+        ]
+      },
+      {
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "x_mm": 9.427756181624817e-15,
+        "y_mm": -0.21584827615555235,
+        "yaw_rad": 3.0096506109904015e-17,
+        "residual_mm": 8.384404281969182e-13,
+        "pin_lengths_mm": [
+          265.76892621508654,
+          277.9713558572038,
+          277.9713558572037
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 176.76892621508654,
+            "internal_engagement_each_end_mm": 35.11553689245673,
+            "turns_from_stb_minimum": 1.6482646328818678
+          },
+          {
+            "turnbuckle_tip_span_mm": 188.97135585720378,
+            "internal_engagement_each_end_mm": 29.014322071398112,
+            "turns_from_stb_minimum": 5.134673102058222
+          },
+          {
+            "turnbuckle_tip_span_mm": 188.97135585720372,
+            "internal_engagement_each_end_mm": 29.01432207139814,
+            "turns_from_stb_minimum": 5.134673102058206
+          }
+        ]
+      },
+      {
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "yaw_rad": 0.0,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          273.90509305231984,
+          273.90509305231984,
+          273.90509305231984
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 184.90509305231984,
+            "internal_engagement_each_end_mm": 31.04745347384008,
+            "turns_from_stb_minimum": 3.9728837292342405
+          },
+          {
+            "turnbuckle_tip_span_mm": 184.90509305231984,
+            "internal_engagement_each_end_mm": 31.04745347384008,
+            "turns_from_stb_minimum": 3.9728837292342405
+          },
+          {
+            "turnbuckle_tip_span_mm": 184.90509305231984,
+            "internal_engagement_each_end_mm": 31.04745347384008,
+            "turns_from_stb_minimum": 3.9728837292342405
+          }
+        ]
+      },
+      {
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "x_mm": 9.427756181624817e-15,
+        "y_mm": -0.21584827615555235,
+        "yaw_rad": 3.0096506109904015e-17,
+        "residual_mm": 8.384404281969182e-13,
+        "pin_lengths_mm": [
+          281.66937778865224,
+          270.02928832985697,
+          270.0292883298569
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 192.66937778865224,
+            "internal_engagement_each_end_mm": 27.16531110567388,
+            "turns_from_stb_minimum": 6.1912507967577834
+          },
+          {
+            "turnbuckle_tip_span_mm": 181.02928832985697,
+            "internal_engagement_each_end_mm": 32.985355835071516,
+            "turns_from_stb_minimum": 2.865510951387705
+          },
+          {
+            "turnbuckle_tip_span_mm": 181.0292883298569,
+            "internal_engagement_each_end_mm": 32.985355835071545,
+            "turns_from_stb_minimum": 2.8655109513876886
+          }
+        ]
+      },
+      {
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "x_mm": 0.4314003340698516,
+        "y_mm": 0.0005916248433282642,
+        "yaw_rad": -0.0013714047619159226,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          265.9744822888816,
+          284.44389927467705,
+          271.32256004479314
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 176.97448228888157,
+            "internal_engagement_each_end_mm": 35.01275885555921,
+            "turns_from_stb_minimum": 1.70699493968045
+          },
+          {
+            "turnbuckle_tip_span_mm": 195.44389927467705,
+            "internal_engagement_each_end_mm": 25.778050362661475,
+            "turns_from_stb_minimum": 6.9839712213363
+          },
+          {
+            "turnbuckle_tip_span_mm": 182.32256004479314,
+            "internal_engagement_each_end_mm": 32.33871997760343,
+            "turns_from_stb_minimum": 3.2350171556551817
+          }
+        ]
+      },
+      {
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "x_mm": 9.520050109084988e-15,
+        "y_mm": 0.21584827615556876,
+        "yaw_rad": 3.0096506107981814e-17,
+        "residual_mm": 8.100187187665142e-13,
+        "pin_lengths_mm": [
+          274.0942424842831,
+          280.6955200267547,
+          266.9300334724088
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 185.0942424842831,
+            "internal_engagement_each_end_mm": 30.952878757858457,
+            "turns_from_stb_minimum": 4.026926424080882
+          },
+          {
+            "turnbuckle_tip_span_mm": 191.6955200267547,
+            "internal_engagement_each_end_mm": 27.652239986622646,
+            "turns_from_stb_minimum": 5.913005721929916
+          },
+          {
+            "turnbuckle_tip_span_mm": 177.9300334724088,
+            "internal_engagement_each_end_mm": 34.534983263795596,
+            "turns_from_stb_minimum": 1.980009563545374
+          }
+        ]
+      },
+      {
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.43140033406982314,
+        "y_mm": 0.0005916248433613514,
+        "yaw_rad": 0.0013714047619160135,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          281.84217610956784,
+          277.1425089734527,
+          262.7236307194399
+        ],
+        "settings": [
+          {
+            "turnbuckle_tip_span_mm": 192.84217610956784,
+            "internal_engagement_each_end_mm": 27.078911945216078,
+            "turns_from_stb_minimum": 6.240621745590813
+          },
+          {
+            "turnbuckle_tip_span_mm": 188.14250897345272,
+            "internal_engagement_each_end_mm": 29.42874551327364,
+            "turns_from_stb_minimum": 4.897859706700777
+          },
+          {
+            "turnbuckle_tip_span_mm": 173.72363071943988,
+            "internal_engagement_each_end_mm": 36.63818464028006,
+            "turns_from_stb_minimum": 0.7781802055542519
+          }
+        ]
+      }
+    ]
+  },
+  "strength": {
+    "design_leg_load_n": 600.0,
+    "conservative_m12_euler_buckling_n": 11555.139161058609,
+    "buckling_factor": 19.258565268431013,
+    "m12_direct_thread_stress_mpa": 7.117437722419929,
+    "five_mm_adapter_plate_bending_stress_mpa": 42.0,
+    "adapter_plate_yield_factor": 6.571428571428571,
+    "passes_preliminary_screen": true,
+    "limitations": "Turnbuckle and hinge-support compression capacity is not published; supplier confirmation and a one-leg proof test remain mandatory."
+  }
+}

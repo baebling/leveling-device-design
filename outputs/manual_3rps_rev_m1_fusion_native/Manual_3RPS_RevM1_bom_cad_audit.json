@@ -1,0 +1,2167 @@
+{
+  "revision": "M1",
+  "bom_source": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\procurement\\manual_rev_m1_bom_data_2026-09-02.json",
+  "fusion_validation_source": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\Manual_3RPS_RevM1_validation.json",
+  "pass_count": 3,
+  "repeatable": true,
+  "passes": [
+    {
+      "pass": 1,
+      "native_component_count": 129,
+      "exact_covered_component_count": 129,
+      "all_matched_component_count": 129,
+      "uncovered_component_names": [],
+      "forbidden_electrical_term_hits": [],
+      "known_subtotal_krw": 320845.0,
+      "budgetary_total_krw": 2257845.0,
+      "budget_remaining_krw": 1742155.0,
+      "quote_required_rows": 13,
+      "checks": {
+        "native_component_count_is_129": true,
+        "all_nonproxy_cad_components_covered": true,
+        "all_bom_row_cad_counts_match": true,
+        "all_physical_quantities_match_cad": true,
+        "no_active_electrical_items": true,
+        "budgetary_total_below_4m_cap": true,
+        "fusion_interference_three_passes_zero": true,
+        "step_independent_audit_pass": true,
+        "digital_layout_pass": true
+      },
+      "rows": [
+        {
+          "line_id": "S01",
+          "matched_cad_occurrences": 2,
+          "expected_cad_occurrences": 2,
+          "physical_used_qty": 2,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "LOWER_SIDE_L_DNF4040_700",
+            "LOWER_SIDE_R_DNF4040_700"
+          ]
+        },
+        {
+          "line_id": "S02",
+          "matched_cad_occurrences": 4,
+          "expected_cad_occurrences": 4,
+          "physical_used_qty": 4,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "LOWER_CROSS_A1_DNF4040_620",
+            "LOWER_CROSS_A23_DNF4040_620",
+            "LOWER_CROSS_FRONT_DNF4040_620",
+            "LOWER_CROSS_REAR_DNF4040_620"
+          ]
+        },
+        {
+          "line_id": "S03",
+          "matched_cad_occurrences": 2,
+          "expected_cad_occurrences": 2,
+          "physical_used_qty": 2,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "UPPER_SIDE_L_DNF3030_700",
+            "UPPER_SIDE_R_DNF3030_700"
+          ]
+        },
+        {
+          "line_id": "S04",
+          "matched_cad_occurrences": 4,
+          "expected_cad_occurrences": 4,
+          "physical_used_qty": 4,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "UPPER_CROSS_A1_DNF3030_640",
+            "UPPER_CROSS_A23_DNF3030_640",
+            "UPPER_CROSS_FRONT_DNF3030_640",
+            "UPPER_CROSS_REAR_DNF3030_640"
+          ]
+        },
+        {
+          "line_id": "S05",
+          "matched_cad_occurrences": 8,
+          "expected_cad_occurrences": 8,
+          "physical_used_qty": 8,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "BRACKET4035_1_L",
+            "BRACKET4035_1_R",
+            "BRACKET4035_2_L",
+            "BRACKET4035_2_R",
+            "BRACKET4035_3_L",
+            "BRACKET4035_3_R",
+            "BRACKET4035_4_L",
+            "BRACKET4035_4_R"
+          ]
+        },
+        {
+          "line_id": "S06",
+          "matched_cad_occurrences": 8,
+          "expected_cad_occurrences": 8,
+          "physical_used_qty": 8,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "DCB3025_1_L",
+            "DCB3025_1_R",
+            "DCB3025_2_L",
+            "DCB3025_2_R",
+            "DCB3025_3_L",
+            "DCB3025_3_R",
+            "DCB3025_4_L",
+            "DCB3025_4_R"
+          ]
+        },
+        {
+          "line_id": "C01",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_ADAPTER_A6061_120x80x8",
+            "A2_LOWER_ADAPTER_A6061_120x80x8",
+            "A3_LOWER_ADAPTER_A6061_120x80x8"
+          ]
+        },
+        {
+          "line_id": "C02",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_ONE_PIECE_CLEVIS_A6061",
+            "A2_LOWER_ONE_PIECE_CLEVIS_A6061",
+            "A3_LOWER_ONE_PIECE_CLEVIS_A6061"
+          ]
+        },
+        {
+          "line_id": "C03",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_ONE_PIECE_CLEVIS_A6061",
+            "A2_UPPER_ONE_PIECE_CLEVIS_A6061",
+            "A3_UPPER_ONE_PIECE_CLEVIS_A6061"
+          ]
+        },
+        {
+          "line_id": "C04",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_OUTER_TUBE_OD32x2_L160_REAM28H7",
+            "A2_OUTER_TUBE_OD32x2_L160_REAM28H7",
+            "A3_OUTER_TUBE_OD32x2_L160_REAM28H7"
+          ]
+        },
+        {
+          "line_id": "C05",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_INNER_TUBE_OD25x2_L150_6POS",
+            "A2_INNER_TUBE_OD25x2_L150_6POS",
+            "A3_INNER_TUBE_OD25x2_L150_6POS"
+          ]
+        },
+        {
+          "line_id": "C06",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_POM_LOWER_GUIDE_RING",
+            "A2_POM_LOWER_GUIDE_RING",
+            "A3_POM_LOWER_GUIDE_RING"
+          ]
+        },
+        {
+          "line_id": "C07",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_A6061_M10_THREADED_PLUG",
+            "A2_A6061_M10_THREADED_PLUG",
+            "A3_A6061_M10_THREADED_PLUG"
+          ]
+        },
+        {
+          "line_id": "M01",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_IGUS_JFM_2528_21",
+            "A2_IGUS_JFM_2528_21",
+            "A3_IGUS_JFM_2528_21"
+          ]
+        },
+        {
+          "line_id": "M02",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_THK_PHS10_RH",
+            "A2_THK_PHS10_RH",
+            "A3_THK_PHS10_RH"
+          ]
+        },
+        {
+          "line_id": "M03",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_IMAO_BJ775_08040_SUS_COARSE_PIN",
+            "A2_IMAO_BJ775_08040_SUS_COARSE_PIN",
+            "A3_IMAO_BJ775_08040_SUS_COARSE_PIN"
+          ]
+        },
+        {
+          "line_id": "F01",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A1_CLEVIS_TO_ADAPTER_M8x16_2",
+            "A2_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A2_CLEVIS_TO_ADAPTER_M8x16_2",
+            "A3_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A3_CLEVIS_TO_ADAPTER_M8x16_2",
+            "BRACKET4035_1_L_BOLT_X",
+            "BRACKET4035_1_L_BOLT_Y",
+            "BRACKET4035_1_R_BOLT_X",
+            "BRACKET4035_1_R_BOLT_Y",
+            "BRACKET4035_2_L_BOLT_X",
+            "BRACKET4035_2_L_BOLT_Y",
+            "BRACKET4035_2_R_BOLT_X",
+            "BRACKET4035_2_R_BOLT_Y",
+            "BRACKET4035_3_L_BOLT_X",
+            "BRACKET4035_3_L_BOLT_Y",
+            "BRACKET4035_3_R_BOLT_X",
+            "BRACKET4035_3_R_BOLT_Y",
+            "BRACKET4035_4_L_BOLT_X",
+            "BRACKET4035_4_L_BOLT_Y",
+            "BRACKET4035_4_R_BOLT_X",
+            "BRACKET4035_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F02",
+          "matched_cad_occurrences": 6,
+          "expected_cad_occurrences": 6,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_ADAPTER_TO_PROFILE_M8x20_1",
+            "A1_ADAPTER_TO_PROFILE_M8x20_2",
+            "A2_ADAPTER_TO_PROFILE_M8x20_1",
+            "A2_ADAPTER_TO_PROFILE_M8x20_2",
+            "A3_ADAPTER_TO_PROFILE_M8x20_1",
+            "A3_ADAPTER_TO_PROFILE_M8x20_2"
+          ]
+        },
+        {
+          "line_id": "F03",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "DCB3025_1_L_BOLT_X",
+            "DCB3025_1_L_BOLT_Y",
+            "DCB3025_1_R_BOLT_X",
+            "DCB3025_1_R_BOLT_Y",
+            "DCB3025_2_L_BOLT_X",
+            "DCB3025_2_L_BOLT_Y",
+            "DCB3025_2_R_BOLT_X",
+            "DCB3025_2_R_BOLT_Y",
+            "DCB3025_3_L_BOLT_X",
+            "DCB3025_3_L_BOLT_Y",
+            "DCB3025_3_R_BOLT_X",
+            "DCB3025_3_R_BOLT_Y",
+            "DCB3025_4_L_BOLT_X",
+            "DCB3025_4_L_BOLT_Y",
+            "DCB3025_4_R_BOLT_X",
+            "DCB3025_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F04",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_ADAPTER_TO_PROFILE_M8x20_1",
+            "A1_ADAPTER_TO_PROFILE_M8x20_2",
+            "A2_ADAPTER_TO_PROFILE_M8x20_1",
+            "A2_ADAPTER_TO_PROFILE_M8x20_2",
+            "A3_ADAPTER_TO_PROFILE_M8x20_1",
+            "A3_ADAPTER_TO_PROFILE_M8x20_2",
+            "BRACKET4035_1_L_BOLT_X",
+            "BRACKET4035_1_L_BOLT_Y",
+            "BRACKET4035_1_R_BOLT_X",
+            "BRACKET4035_1_R_BOLT_Y",
+            "BRACKET4035_2_L_BOLT_X",
+            "BRACKET4035_2_L_BOLT_Y",
+            "BRACKET4035_2_R_BOLT_X",
+            "BRACKET4035_2_R_BOLT_Y",
+            "BRACKET4035_3_L_BOLT_X",
+            "BRACKET4035_3_L_BOLT_Y",
+            "BRACKET4035_3_R_BOLT_X",
+            "BRACKET4035_3_R_BOLT_Y",
+            "BRACKET4035_4_L_BOLT_X",
+            "BRACKET4035_4_L_BOLT_Y",
+            "BRACKET4035_4_R_BOLT_X",
+            "BRACKET4035_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F05",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "DCB3025_1_L_BOLT_X",
+            "DCB3025_1_L_BOLT_Y",
+            "DCB3025_1_R_BOLT_X",
+            "DCB3025_1_R_BOLT_Y",
+            "DCB3025_2_L_BOLT_X",
+            "DCB3025_2_L_BOLT_Y",
+            "DCB3025_2_R_BOLT_X",
+            "DCB3025_2_R_BOLT_Y",
+            "DCB3025_3_L_BOLT_X",
+            "DCB3025_3_L_BOLT_Y",
+            "DCB3025_3_R_BOLT_X",
+            "DCB3025_3_R_BOLT_Y",
+            "DCB3025_4_L_BOLT_X",
+            "DCB3025_4_L_BOLT_Y",
+            "DCB3025_4_R_BOLT_X",
+            "DCB3025_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F06",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_M10x1p5_FINE_STUD_L53",
+            "A2_M10x1p5_FINE_STUD_L53",
+            "A3_M10x1p5_FINE_STUD_L53"
+          ]
+        },
+        {
+          "line_id": "F07",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 2,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_2x_M10_DIN439_THIN_JAM_NUTS",
+            "A2_2x_M10_DIN439_THIN_JAM_NUTS",
+            "A3_2x_M10_DIN439_THIN_JAM_NUTS"
+          ]
+        },
+        {
+          "line_id": "F08",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_M8_SHOULDER_BOLT_GRIP46",
+            "A2_LOWER_M8_SHOULDER_BOLT_GRIP46",
+            "A3_LOWER_M8_SHOULDER_BOLT_GRIP46"
+          ]
+        },
+        {
+          "line_id": "F09",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_M10_SHOULDER_BOLT_GRIP32",
+            "A2_UPPER_M10_SHOULDER_BOLT_GRIP32",
+            "A3_UPPER_M10_SHOULDER_BOLT_GRIP32"
+          ]
+        },
+        {
+          "line_id": "F10",
+          "matched_cad_occurrences": 6,
+          "expected_cad_occurrences": 6,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A1_UPPER_ID10_OD18_SHIM_3MM_2",
+            "A2_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A2_UPPER_ID10_OD18_SHIM_3MM_2",
+            "A3_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A3_UPPER_ID10_OD18_SHIM_3MM_2"
+          ]
+        },
+        {
+          "line_id": "F11",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_PLUG_RETAINER_M4_GRIP32",
+            "A2_PLUG_RETAINER_M4_GRIP32",
+            "A3_PLUG_RETAINER_M4_GRIP32"
+          ]
+        },
+        {
+          "line_id": "F12",
+          "matched_cad_occurrences": 0,
+          "expected_cad_occurrences": 0,
+          "physical_used_qty": 1,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": []
+        }
+      ],
+      "signature": {
+        "component_count": 129,
+        "covered_component_count": 129,
+        "row_counts": [
+          [
+            "S01",
+            2,
+            true
+          ],
+          [
+            "S02",
+            4,
+            true
+          ],
+          [
+            "S03",
+            2,
+            true
+          ],
+          [
+            "S04",
+            4,
+            true
+          ],
+          [
+            "S05",
+            8,
+            true
+          ],
+          [
+            "S06",
+            8,
+            true
+          ],
+          [
+            "C01",
+            3,
+            true
+          ],
+          [
+            "C02",
+            3,
+            true
+          ],
+          [
+            "C03",
+            3,
+            true
+          ],
+          [
+            "C04",
+            3,
+            true
+          ],
+          [
+            "C05",
+            3,
+            true
+          ],
+          [
+            "C06",
+            3,
+            true
+          ],
+          [
+            "C07",
+            3,
+            true
+          ],
+          [
+            "M01",
+            3,
+            true
+          ],
+          [
+            "M02",
+            3,
+            true
+          ],
+          [
+            "M03",
+            3,
+            true
+          ],
+          [
+            "F01",
+            22,
+            true
+          ],
+          [
+            "F02",
+            6,
+            true
+          ],
+          [
+            "F03",
+            22,
+            true
+          ],
+          [
+            "F04",
+            22,
+            true
+          ],
+          [
+            "F05",
+            22,
+            true
+          ],
+          [
+            "F06",
+            3,
+            true
+          ],
+          [
+            "F07",
+            3,
+            true
+          ],
+          [
+            "F08",
+            3,
+            true
+          ],
+          [
+            "F09",
+            3,
+            true
+          ],
+          [
+            "F10",
+            6,
+            true
+          ],
+          [
+            "F11",
+            3,
+            true
+          ],
+          [
+            "F12",
+            0,
+            true
+          ]
+        ],
+        "budgetary_total_krw": 2257845.0,
+        "checks": [
+          [
+            "all_bom_row_cad_counts_match",
+            true
+          ],
+          [
+            "all_nonproxy_cad_components_covered",
+            true
+          ],
+          [
+            "all_physical_quantities_match_cad",
+            true
+          ],
+          [
+            "budgetary_total_below_4m_cap",
+            true
+          ],
+          [
+            "digital_layout_pass",
+            true
+          ],
+          [
+            "fusion_interference_three_passes_zero",
+            true
+          ],
+          [
+            "native_component_count_is_129",
+            true
+          ],
+          [
+            "no_active_electrical_items",
+            true
+          ],
+          [
+            "step_independent_audit_pass",
+            true
+          ]
+        ]
+      },
+      "passes": true
+    },
+    {
+      "pass": 2,
+      "native_component_count": 129,
+      "exact_covered_component_count": 129,
+      "all_matched_component_count": 129,
+      "uncovered_component_names": [],
+      "forbidden_electrical_term_hits": [],
+      "known_subtotal_krw": 320845.0,
+      "budgetary_total_krw": 2257845.0,
+      "budget_remaining_krw": 1742155.0,
+      "quote_required_rows": 13,
+      "checks": {
+        "native_component_count_is_129": true,
+        "all_nonproxy_cad_components_covered": true,
+        "all_bom_row_cad_counts_match": true,
+        "all_physical_quantities_match_cad": true,
+        "no_active_electrical_items": true,
+        "budgetary_total_below_4m_cap": true,
+        "fusion_interference_three_passes_zero": true,
+        "step_independent_audit_pass": true,
+        "digital_layout_pass": true
+      },
+      "rows": [
+        {
+          "line_id": "S01",
+          "matched_cad_occurrences": 2,
+          "expected_cad_occurrences": 2,
+          "physical_used_qty": 2,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "LOWER_SIDE_L_DNF4040_700",
+            "LOWER_SIDE_R_DNF4040_700"
+          ]
+        },
+        {
+          "line_id": "S02",
+          "matched_cad_occurrences": 4,
+          "expected_cad_occurrences": 4,
+          "physical_used_qty": 4,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "LOWER_CROSS_A1_DNF4040_620",
+            "LOWER_CROSS_A23_DNF4040_620",
+            "LOWER_CROSS_FRONT_DNF4040_620",
+            "LOWER_CROSS_REAR_DNF4040_620"
+          ]
+        },
+        {
+          "line_id": "S03",
+          "matched_cad_occurrences": 2,
+          "expected_cad_occurrences": 2,
+          "physical_used_qty": 2,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "UPPER_SIDE_L_DNF3030_700",
+            "UPPER_SIDE_R_DNF3030_700"
+          ]
+        },
+        {
+          "line_id": "S04",
+          "matched_cad_occurrences": 4,
+          "expected_cad_occurrences": 4,
+          "physical_used_qty": 4,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "UPPER_CROSS_A1_DNF3030_640",
+            "UPPER_CROSS_A23_DNF3030_640",
+            "UPPER_CROSS_FRONT_DNF3030_640",
+            "UPPER_CROSS_REAR_DNF3030_640"
+          ]
+        },
+        {
+          "line_id": "S05",
+          "matched_cad_occurrences": 8,
+          "expected_cad_occurrences": 8,
+          "physical_used_qty": 8,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "BRACKET4035_1_L",
+            "BRACKET4035_1_R",
+            "BRACKET4035_2_L",
+            "BRACKET4035_2_R",
+            "BRACKET4035_3_L",
+            "BRACKET4035_3_R",
+            "BRACKET4035_4_L",
+            "BRACKET4035_4_R"
+          ]
+        },
+        {
+          "line_id": "S06",
+          "matched_cad_occurrences": 8,
+          "expected_cad_occurrences": 8,
+          "physical_used_qty": 8,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "DCB3025_1_L",
+            "DCB3025_1_R",
+            "DCB3025_2_L",
+            "DCB3025_2_R",
+            "DCB3025_3_L",
+            "DCB3025_3_R",
+            "DCB3025_4_L",
+            "DCB3025_4_R"
+          ]
+        },
+        {
+          "line_id": "C01",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_ADAPTER_A6061_120x80x8",
+            "A2_LOWER_ADAPTER_A6061_120x80x8",
+            "A3_LOWER_ADAPTER_A6061_120x80x8"
+          ]
+        },
+        {
+          "line_id": "C02",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_ONE_PIECE_CLEVIS_A6061",
+            "A2_LOWER_ONE_PIECE_CLEVIS_A6061",
+            "A3_LOWER_ONE_PIECE_CLEVIS_A6061"
+          ]
+        },
+        {
+          "line_id": "C03",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_ONE_PIECE_CLEVIS_A6061",
+            "A2_UPPER_ONE_PIECE_CLEVIS_A6061",
+            "A3_UPPER_ONE_PIECE_CLEVIS_A6061"
+          ]
+        },
+        {
+          "line_id": "C04",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_OUTER_TUBE_OD32x2_L160_REAM28H7",
+            "A2_OUTER_TUBE_OD32x2_L160_REAM28H7",
+            "A3_OUTER_TUBE_OD32x2_L160_REAM28H7"
+          ]
+        },
+        {
+          "line_id": "C05",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_INNER_TUBE_OD25x2_L150_6POS",
+            "A2_INNER_TUBE_OD25x2_L150_6POS",
+            "A3_INNER_TUBE_OD25x2_L150_6POS"
+          ]
+        },
+        {
+          "line_id": "C06",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_POM_LOWER_GUIDE_RING",
+            "A2_POM_LOWER_GUIDE_RING",
+            "A3_POM_LOWER_GUIDE_RING"
+          ]
+        },
+        {
+          "line_id": "C07",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_A6061_M10_THREADED_PLUG",
+            "A2_A6061_M10_THREADED_PLUG",
+            "A3_A6061_M10_THREADED_PLUG"
+          ]
+        },
+        {
+          "line_id": "M01",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_IGUS_JFM_2528_21",
+            "A2_IGUS_JFM_2528_21",
+            "A3_IGUS_JFM_2528_21"
+          ]
+        },
+        {
+          "line_id": "M02",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_THK_PHS10_RH",
+            "A2_THK_PHS10_RH",
+            "A3_THK_PHS10_RH"
+          ]
+        },
+        {
+          "line_id": "M03",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_IMAO_BJ775_08040_SUS_COARSE_PIN",
+            "A2_IMAO_BJ775_08040_SUS_COARSE_PIN",
+            "A3_IMAO_BJ775_08040_SUS_COARSE_PIN"
+          ]
+        },
+        {
+          "line_id": "F01",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A1_CLEVIS_TO_ADAPTER_M8x16_2",
+            "A2_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A2_CLEVIS_TO_ADAPTER_M8x16_2",
+            "A3_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A3_CLEVIS_TO_ADAPTER_M8x16_2",
+            "BRACKET4035_1_L_BOLT_X",
+            "BRACKET4035_1_L_BOLT_Y",
+            "BRACKET4035_1_R_BOLT_X",
+            "BRACKET4035_1_R_BOLT_Y",
+            "BRACKET4035_2_L_BOLT_X",
+            "BRACKET4035_2_L_BOLT_Y",
+            "BRACKET4035_2_R_BOLT_X",
+            "BRACKET4035_2_R_BOLT_Y",
+            "BRACKET4035_3_L_BOLT_X",
+            "BRACKET4035_3_L_BOLT_Y",
+            "BRACKET4035_3_R_BOLT_X",
+            "BRACKET4035_3_R_BOLT_Y",
+            "BRACKET4035_4_L_BOLT_X",
+            "BRACKET4035_4_L_BOLT_Y",
+            "BRACKET4035_4_R_BOLT_X",
+            "BRACKET4035_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F02",
+          "matched_cad_occurrences": 6,
+          "expected_cad_occurrences": 6,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_ADAPTER_TO_PROFILE_M8x20_1",
+            "A1_ADAPTER_TO_PROFILE_M8x20_2",
+            "A2_ADAPTER_TO_PROFILE_M8x20_1",
+            "A2_ADAPTER_TO_PROFILE_M8x20_2",
+            "A3_ADAPTER_TO_PROFILE_M8x20_1",
+            "A3_ADAPTER_TO_PROFILE_M8x20_2"
+          ]
+        },
+        {
+          "line_id": "F03",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "DCB3025_1_L_BOLT_X",
+            "DCB3025_1_L_BOLT_Y",
+            "DCB3025_1_R_BOLT_X",
+            "DCB3025_1_R_BOLT_Y",
+            "DCB3025_2_L_BOLT_X",
+            "DCB3025_2_L_BOLT_Y",
+            "DCB3025_2_R_BOLT_X",
+            "DCB3025_2_R_BOLT_Y",
+            "DCB3025_3_L_BOLT_X",
+            "DCB3025_3_L_BOLT_Y",
+            "DCB3025_3_R_BOLT_X",
+            "DCB3025_3_R_BOLT_Y",
+            "DCB3025_4_L_BOLT_X",
+            "DCB3025_4_L_BOLT_Y",
+            "DCB3025_4_R_BOLT_X",
+            "DCB3025_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F04",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_ADAPTER_TO_PROFILE_M8x20_1",
+            "A1_ADAPTER_TO_PROFILE_M8x20_2",
+            "A2_ADAPTER_TO_PROFILE_M8x20_1",
+            "A2_ADAPTER_TO_PROFILE_M8x20_2",
+            "A3_ADAPTER_TO_PROFILE_M8x20_1",
+            "A3_ADAPTER_TO_PROFILE_M8x20_2",
+            "BRACKET4035_1_L_BOLT_X",
+            "BRACKET4035_1_L_BOLT_Y",
+            "BRACKET4035_1_R_BOLT_X",
+            "BRACKET4035_1_R_BOLT_Y",
+            "BRACKET4035_2_L_BOLT_X",
+            "BRACKET4035_2_L_BOLT_Y",
+            "BRACKET4035_2_R_BOLT_X",
+            "BRACKET4035_2_R_BOLT_Y",
+            "BRACKET4035_3_L_BOLT_X",
+            "BRACKET4035_3_L_BOLT_Y",
+            "BRACKET4035_3_R_BOLT_X",
+            "BRACKET4035_3_R_BOLT_Y",
+            "BRACKET4035_4_L_BOLT_X",
+            "BRACKET4035_4_L_BOLT_Y",
+            "BRACKET4035_4_R_BOLT_X",
+            "BRACKET4035_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F05",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "DCB3025_1_L_BOLT_X",
+            "DCB3025_1_L_BOLT_Y",
+            "DCB3025_1_R_BOLT_X",
+            "DCB3025_1_R_BOLT_Y",
+            "DCB3025_2_L_BOLT_X",
+            "DCB3025_2_L_BOLT_Y",
+            "DCB3025_2_R_BOLT_X",
+            "DCB3025_2_R_BOLT_Y",
+            "DCB3025_3_L_BOLT_X",
+            "DCB3025_3_L_BOLT_Y",
+            "DCB3025_3_R_BOLT_X",
+            "DCB3025_3_R_BOLT_Y",
+            "DCB3025_4_L_BOLT_X",
+            "DCB3025_4_L_BOLT_Y",
+            "DCB3025_4_R_BOLT_X",
+            "DCB3025_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F06",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_M10x1p5_FINE_STUD_L53",
+            "A2_M10x1p5_FINE_STUD_L53",
+            "A3_M10x1p5_FINE_STUD_L53"
+          ]
+        },
+        {
+          "line_id": "F07",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 2,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_2x_M10_DIN439_THIN_JAM_NUTS",
+            "A2_2x_M10_DIN439_THIN_JAM_NUTS",
+            "A3_2x_M10_DIN439_THIN_JAM_NUTS"
+          ]
+        },
+        {
+          "line_id": "F08",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_M8_SHOULDER_BOLT_GRIP46",
+            "A2_LOWER_M8_SHOULDER_BOLT_GRIP46",
+            "A3_LOWER_M8_SHOULDER_BOLT_GRIP46"
+          ]
+        },
+        {
+          "line_id": "F09",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_M10_SHOULDER_BOLT_GRIP32",
+            "A2_UPPER_M10_SHOULDER_BOLT_GRIP32",
+            "A3_UPPER_M10_SHOULDER_BOLT_GRIP32"
+          ]
+        },
+        {
+          "line_id": "F10",
+          "matched_cad_occurrences": 6,
+          "expected_cad_occurrences": 6,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A1_UPPER_ID10_OD18_SHIM_3MM_2",
+            "A2_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A2_UPPER_ID10_OD18_SHIM_3MM_2",
+            "A3_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A3_UPPER_ID10_OD18_SHIM_3MM_2"
+          ]
+        },
+        {
+          "line_id": "F11",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_PLUG_RETAINER_M4_GRIP32",
+            "A2_PLUG_RETAINER_M4_GRIP32",
+            "A3_PLUG_RETAINER_M4_GRIP32"
+          ]
+        },
+        {
+          "line_id": "F12",
+          "matched_cad_occurrences": 0,
+          "expected_cad_occurrences": 0,
+          "physical_used_qty": 1,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": []
+        }
+      ],
+      "signature": {
+        "component_count": 129,
+        "covered_component_count": 129,
+        "row_counts": [
+          [
+            "S01",
+            2,
+            true
+          ],
+          [
+            "S02",
+            4,
+            true
+          ],
+          [
+            "S03",
+            2,
+            true
+          ],
+          [
+            "S04",
+            4,
+            true
+          ],
+          [
+            "S05",
+            8,
+            true
+          ],
+          [
+            "S06",
+            8,
+            true
+          ],
+          [
+            "C01",
+            3,
+            true
+          ],
+          [
+            "C02",
+            3,
+            true
+          ],
+          [
+            "C03",
+            3,
+            true
+          ],
+          [
+            "C04",
+            3,
+            true
+          ],
+          [
+            "C05",
+            3,
+            true
+          ],
+          [
+            "C06",
+            3,
+            true
+          ],
+          [
+            "C07",
+            3,
+            true
+          ],
+          [
+            "M01",
+            3,
+            true
+          ],
+          [
+            "M02",
+            3,
+            true
+          ],
+          [
+            "M03",
+            3,
+            true
+          ],
+          [
+            "F01",
+            22,
+            true
+          ],
+          [
+            "F02",
+            6,
+            true
+          ],
+          [
+            "F03",
+            22,
+            true
+          ],
+          [
+            "F04",
+            22,
+            true
+          ],
+          [
+            "F05",
+            22,
+            true
+          ],
+          [
+            "F06",
+            3,
+            true
+          ],
+          [
+            "F07",
+            3,
+            true
+          ],
+          [
+            "F08",
+            3,
+            true
+          ],
+          [
+            "F09",
+            3,
+            true
+          ],
+          [
+            "F10",
+            6,
+            true
+          ],
+          [
+            "F11",
+            3,
+            true
+          ],
+          [
+            "F12",
+            0,
+            true
+          ]
+        ],
+        "budgetary_total_krw": 2257845.0,
+        "checks": [
+          [
+            "all_bom_row_cad_counts_match",
+            true
+          ],
+          [
+            "all_nonproxy_cad_components_covered",
+            true
+          ],
+          [
+            "all_physical_quantities_match_cad",
+            true
+          ],
+          [
+            "budgetary_total_below_4m_cap",
+            true
+          ],
+          [
+            "digital_layout_pass",
+            true
+          ],
+          [
+            "fusion_interference_three_passes_zero",
+            true
+          ],
+          [
+            "native_component_count_is_129",
+            true
+          ],
+          [
+            "no_active_electrical_items",
+            true
+          ],
+          [
+            "step_independent_audit_pass",
+            true
+          ]
+        ]
+      },
+      "passes": true
+    },
+    {
+      "pass": 3,
+      "native_component_count": 129,
+      "exact_covered_component_count": 129,
+      "all_matched_component_count": 129,
+      "uncovered_component_names": [],
+      "forbidden_electrical_term_hits": [],
+      "known_subtotal_krw": 320845.0,
+      "budgetary_total_krw": 2257845.0,
+      "budget_remaining_krw": 1742155.0,
+      "quote_required_rows": 13,
+      "checks": {
+        "native_component_count_is_129": true,
+        "all_nonproxy_cad_components_covered": true,
+        "all_bom_row_cad_counts_match": true,
+        "all_physical_quantities_match_cad": true,
+        "no_active_electrical_items": true,
+        "budgetary_total_below_4m_cap": true,
+        "fusion_interference_three_passes_zero": true,
+        "step_independent_audit_pass": true,
+        "digital_layout_pass": true
+      },
+      "rows": [
+        {
+          "line_id": "S01",
+          "matched_cad_occurrences": 2,
+          "expected_cad_occurrences": 2,
+          "physical_used_qty": 2,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "LOWER_SIDE_L_DNF4040_700",
+            "LOWER_SIDE_R_DNF4040_700"
+          ]
+        },
+        {
+          "line_id": "S02",
+          "matched_cad_occurrences": 4,
+          "expected_cad_occurrences": 4,
+          "physical_used_qty": 4,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "LOWER_CROSS_A1_DNF4040_620",
+            "LOWER_CROSS_A23_DNF4040_620",
+            "LOWER_CROSS_FRONT_DNF4040_620",
+            "LOWER_CROSS_REAR_DNF4040_620"
+          ]
+        },
+        {
+          "line_id": "S03",
+          "matched_cad_occurrences": 2,
+          "expected_cad_occurrences": 2,
+          "physical_used_qty": 2,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "UPPER_SIDE_L_DNF3030_700",
+            "UPPER_SIDE_R_DNF3030_700"
+          ]
+        },
+        {
+          "line_id": "S04",
+          "matched_cad_occurrences": 4,
+          "expected_cad_occurrences": 4,
+          "physical_used_qty": 4,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "UPPER_CROSS_A1_DNF3030_640",
+            "UPPER_CROSS_A23_DNF3030_640",
+            "UPPER_CROSS_FRONT_DNF3030_640",
+            "UPPER_CROSS_REAR_DNF3030_640"
+          ]
+        },
+        {
+          "line_id": "S05",
+          "matched_cad_occurrences": 8,
+          "expected_cad_occurrences": 8,
+          "physical_used_qty": 8,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "BRACKET4035_1_L",
+            "BRACKET4035_1_R",
+            "BRACKET4035_2_L",
+            "BRACKET4035_2_R",
+            "BRACKET4035_3_L",
+            "BRACKET4035_3_R",
+            "BRACKET4035_4_L",
+            "BRACKET4035_4_R"
+          ]
+        },
+        {
+          "line_id": "S06",
+          "matched_cad_occurrences": 8,
+          "expected_cad_occurrences": 8,
+          "physical_used_qty": 8,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "DCB3025_1_L",
+            "DCB3025_1_R",
+            "DCB3025_2_L",
+            "DCB3025_2_R",
+            "DCB3025_3_L",
+            "DCB3025_3_R",
+            "DCB3025_4_L",
+            "DCB3025_4_R"
+          ]
+        },
+        {
+          "line_id": "C01",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_ADAPTER_A6061_120x80x8",
+            "A2_LOWER_ADAPTER_A6061_120x80x8",
+            "A3_LOWER_ADAPTER_A6061_120x80x8"
+          ]
+        },
+        {
+          "line_id": "C02",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_ONE_PIECE_CLEVIS_A6061",
+            "A2_LOWER_ONE_PIECE_CLEVIS_A6061",
+            "A3_LOWER_ONE_PIECE_CLEVIS_A6061"
+          ]
+        },
+        {
+          "line_id": "C03",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_ONE_PIECE_CLEVIS_A6061",
+            "A2_UPPER_ONE_PIECE_CLEVIS_A6061",
+            "A3_UPPER_ONE_PIECE_CLEVIS_A6061"
+          ]
+        },
+        {
+          "line_id": "C04",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_OUTER_TUBE_OD32x2_L160_REAM28H7",
+            "A2_OUTER_TUBE_OD32x2_L160_REAM28H7",
+            "A3_OUTER_TUBE_OD32x2_L160_REAM28H7"
+          ]
+        },
+        {
+          "line_id": "C05",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_INNER_TUBE_OD25x2_L150_6POS",
+            "A2_INNER_TUBE_OD25x2_L150_6POS",
+            "A3_INNER_TUBE_OD25x2_L150_6POS"
+          ]
+        },
+        {
+          "line_id": "C06",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_POM_LOWER_GUIDE_RING",
+            "A2_POM_LOWER_GUIDE_RING",
+            "A3_POM_LOWER_GUIDE_RING"
+          ]
+        },
+        {
+          "line_id": "C07",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_A6061_M10_THREADED_PLUG",
+            "A2_A6061_M10_THREADED_PLUG",
+            "A3_A6061_M10_THREADED_PLUG"
+          ]
+        },
+        {
+          "line_id": "M01",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_IGUS_JFM_2528_21",
+            "A2_IGUS_JFM_2528_21",
+            "A3_IGUS_JFM_2528_21"
+          ]
+        },
+        {
+          "line_id": "M02",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_THK_PHS10_RH",
+            "A2_THK_PHS10_RH",
+            "A3_THK_PHS10_RH"
+          ]
+        },
+        {
+          "line_id": "M03",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_IMAO_BJ775_08040_SUS_COARSE_PIN",
+            "A2_IMAO_BJ775_08040_SUS_COARSE_PIN",
+            "A3_IMAO_BJ775_08040_SUS_COARSE_PIN"
+          ]
+        },
+        {
+          "line_id": "F01",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A1_CLEVIS_TO_ADAPTER_M8x16_2",
+            "A2_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A2_CLEVIS_TO_ADAPTER_M8x16_2",
+            "A3_CLEVIS_TO_ADAPTER_M8x16_1",
+            "A3_CLEVIS_TO_ADAPTER_M8x16_2",
+            "BRACKET4035_1_L_BOLT_X",
+            "BRACKET4035_1_L_BOLT_Y",
+            "BRACKET4035_1_R_BOLT_X",
+            "BRACKET4035_1_R_BOLT_Y",
+            "BRACKET4035_2_L_BOLT_X",
+            "BRACKET4035_2_L_BOLT_Y",
+            "BRACKET4035_2_R_BOLT_X",
+            "BRACKET4035_2_R_BOLT_Y",
+            "BRACKET4035_3_L_BOLT_X",
+            "BRACKET4035_3_L_BOLT_Y",
+            "BRACKET4035_3_R_BOLT_X",
+            "BRACKET4035_3_R_BOLT_Y",
+            "BRACKET4035_4_L_BOLT_X",
+            "BRACKET4035_4_L_BOLT_Y",
+            "BRACKET4035_4_R_BOLT_X",
+            "BRACKET4035_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F02",
+          "matched_cad_occurrences": 6,
+          "expected_cad_occurrences": 6,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_ADAPTER_TO_PROFILE_M8x20_1",
+            "A1_ADAPTER_TO_PROFILE_M8x20_2",
+            "A2_ADAPTER_TO_PROFILE_M8x20_1",
+            "A2_ADAPTER_TO_PROFILE_M8x20_2",
+            "A3_ADAPTER_TO_PROFILE_M8x20_1",
+            "A3_ADAPTER_TO_PROFILE_M8x20_2"
+          ]
+        },
+        {
+          "line_id": "F03",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "DCB3025_1_L_BOLT_X",
+            "DCB3025_1_L_BOLT_Y",
+            "DCB3025_1_R_BOLT_X",
+            "DCB3025_1_R_BOLT_Y",
+            "DCB3025_2_L_BOLT_X",
+            "DCB3025_2_L_BOLT_Y",
+            "DCB3025_2_R_BOLT_X",
+            "DCB3025_2_R_BOLT_Y",
+            "DCB3025_3_L_BOLT_X",
+            "DCB3025_3_L_BOLT_Y",
+            "DCB3025_3_R_BOLT_X",
+            "DCB3025_3_R_BOLT_Y",
+            "DCB3025_4_L_BOLT_X",
+            "DCB3025_4_L_BOLT_Y",
+            "DCB3025_4_R_BOLT_X",
+            "DCB3025_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F04",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_ADAPTER_TO_PROFILE_M8x20_1",
+            "A1_ADAPTER_TO_PROFILE_M8x20_2",
+            "A2_ADAPTER_TO_PROFILE_M8x20_1",
+            "A2_ADAPTER_TO_PROFILE_M8x20_2",
+            "A3_ADAPTER_TO_PROFILE_M8x20_1",
+            "A3_ADAPTER_TO_PROFILE_M8x20_2",
+            "BRACKET4035_1_L_BOLT_X",
+            "BRACKET4035_1_L_BOLT_Y",
+            "BRACKET4035_1_R_BOLT_X",
+            "BRACKET4035_1_R_BOLT_Y",
+            "BRACKET4035_2_L_BOLT_X",
+            "BRACKET4035_2_L_BOLT_Y",
+            "BRACKET4035_2_R_BOLT_X",
+            "BRACKET4035_2_R_BOLT_Y",
+            "BRACKET4035_3_L_BOLT_X",
+            "BRACKET4035_3_L_BOLT_Y",
+            "BRACKET4035_3_R_BOLT_X",
+            "BRACKET4035_3_R_BOLT_Y",
+            "BRACKET4035_4_L_BOLT_X",
+            "BRACKET4035_4_L_BOLT_Y",
+            "BRACKET4035_4_R_BOLT_X",
+            "BRACKET4035_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F05",
+          "matched_cad_occurrences": 22,
+          "expected_cad_occurrences": 22,
+          "physical_used_qty": 22,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+            "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+            "DCB3025_1_L_BOLT_X",
+            "DCB3025_1_L_BOLT_Y",
+            "DCB3025_1_R_BOLT_X",
+            "DCB3025_1_R_BOLT_Y",
+            "DCB3025_2_L_BOLT_X",
+            "DCB3025_2_L_BOLT_Y",
+            "DCB3025_2_R_BOLT_X",
+            "DCB3025_2_R_BOLT_Y",
+            "DCB3025_3_L_BOLT_X",
+            "DCB3025_3_L_BOLT_Y",
+            "DCB3025_3_R_BOLT_X",
+            "DCB3025_3_R_BOLT_Y",
+            "DCB3025_4_L_BOLT_X",
+            "DCB3025_4_L_BOLT_Y",
+            "DCB3025_4_R_BOLT_X",
+            "DCB3025_4_R_BOLT_Y"
+          ]
+        },
+        {
+          "line_id": "F06",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_M10x1p5_FINE_STUD_L53",
+            "A2_M10x1p5_FINE_STUD_L53",
+            "A3_M10x1p5_FINE_STUD_L53"
+          ]
+        },
+        {
+          "line_id": "F07",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 2,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_2x_M10_DIN439_THIN_JAM_NUTS",
+            "A2_2x_M10_DIN439_THIN_JAM_NUTS",
+            "A3_2x_M10_DIN439_THIN_JAM_NUTS"
+          ]
+        },
+        {
+          "line_id": "F08",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_LOWER_M8_SHOULDER_BOLT_GRIP46",
+            "A2_LOWER_M8_SHOULDER_BOLT_GRIP46",
+            "A3_LOWER_M8_SHOULDER_BOLT_GRIP46"
+          ]
+        },
+        {
+          "line_id": "F09",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_M10_SHOULDER_BOLT_GRIP32",
+            "A2_UPPER_M10_SHOULDER_BOLT_GRIP32",
+            "A3_UPPER_M10_SHOULDER_BOLT_GRIP32"
+          ]
+        },
+        {
+          "line_id": "F10",
+          "matched_cad_occurrences": 6,
+          "expected_cad_occurrences": 6,
+          "physical_used_qty": 6,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A1_UPPER_ID10_OD18_SHIM_3MM_2",
+            "A2_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A2_UPPER_ID10_OD18_SHIM_3MM_2",
+            "A3_UPPER_ID10_OD18_SHIM_3MM_1",
+            "A3_UPPER_ID10_OD18_SHIM_3MM_2"
+          ]
+        },
+        {
+          "line_id": "F11",
+          "matched_cad_occurrences": 3,
+          "expected_cad_occurrences": 3,
+          "physical_used_qty": 3,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": false,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": [
+            "A1_PLUG_RETAINER_M4_GRIP32",
+            "A2_PLUG_RETAINER_M4_GRIP32",
+            "A3_PLUG_RETAINER_M4_GRIP32"
+          ]
+        },
+        {
+          "line_id": "F12",
+          "matched_cad_occurrences": 0,
+          "expected_cad_occurrences": 0,
+          "physical_used_qty": 1,
+          "physical_qty_per_cad_occurrence": 1,
+          "cad_proxy": true,
+          "count_ok": true,
+          "physical_qty_ok": true,
+          "matched_names": []
+        }
+      ],
+      "signature": {
+        "component_count": 129,
+        "covered_component_count": 129,
+        "row_counts": [
+          [
+            "S01",
+            2,
+            true
+          ],
+          [
+            "S02",
+            4,
+            true
+          ],
+          [
+            "S03",
+            2,
+            true
+          ],
+          [
+            "S04",
+            4,
+            true
+          ],
+          [
+            "S05",
+            8,
+            true
+          ],
+          [
+            "S06",
+            8,
+            true
+          ],
+          [
+            "C01",
+            3,
+            true
+          ],
+          [
+            "C02",
+            3,
+            true
+          ],
+          [
+            "C03",
+            3,
+            true
+          ],
+          [
+            "C04",
+            3,
+            true
+          ],
+          [
+            "C05",
+            3,
+            true
+          ],
+          [
+            "C06",
+            3,
+            true
+          ],
+          [
+            "C07",
+            3,
+            true
+          ],
+          [
+            "M01",
+            3,
+            true
+          ],
+          [
+            "M02",
+            3,
+            true
+          ],
+          [
+            "M03",
+            3,
+            true
+          ],
+          [
+            "F01",
+            22,
+            true
+          ],
+          [
+            "F02",
+            6,
+            true
+          ],
+          [
+            "F03",
+            22,
+            true
+          ],
+          [
+            "F04",
+            22,
+            true
+          ],
+          [
+            "F05",
+            22,
+            true
+          ],
+          [
+            "F06",
+            3,
+            true
+          ],
+          [
+            "F07",
+            3,
+            true
+          ],
+          [
+            "F08",
+            3,
+            true
+          ],
+          [
+            "F09",
+            3,
+            true
+          ],
+          [
+            "F10",
+            6,
+            true
+          ],
+          [
+            "F11",
+            3,
+            true
+          ],
+          [
+            "F12",
+            0,
+            true
+          ]
+        ],
+        "budgetary_total_krw": 2257845.0,
+        "checks": [
+          [
+            "all_bom_row_cad_counts_match",
+            true
+          ],
+          [
+            "all_nonproxy_cad_components_covered",
+            true
+          ],
+          [
+            "all_physical_quantities_match_cad",
+            true
+          ],
+          [
+            "budgetary_total_below_4m_cap",
+            true
+          ],
+          [
+            "digital_layout_pass",
+            true
+          ],
+          [
+            "fusion_interference_three_passes_zero",
+            true
+          ],
+          [
+            "native_component_count_is_129",
+            true
+          ],
+          [
+            "no_active_electrical_items",
+            true
+          ],
+          [
+            "step_independent_audit_pass",
+            true
+          ]
+        ]
+      },
+      "passes": true
+    }
+  ],
+  "all_pass": true
+}

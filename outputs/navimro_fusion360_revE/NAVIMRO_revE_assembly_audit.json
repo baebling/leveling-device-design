@@ -1,0 +1,70 @@
+{
+  "revision": "E",
+  "parameters": {
+    "actuator_stroke_mm": 150.0,
+    "guide_shaft_length_mm": 230.0,
+    "guide_shaft_points_xy": [
+      [
+        -60.0,
+        -43.0
+      ],
+      [
+        60.0,
+        43.0
+      ]
+    ],
+    "cardan_axis_offset_mm": 12.0
+  },
+  "sample_count": 14,
+  "guide_motion_collisions": [],
+  "actuator_central_collisions": [],
+  "bore_interference": [],
+  "stop_clearance_mm": {
+    "collapsed": [
+      2.0,
+      2.0
+    ],
+    "raised": [
+      2.0,
+      2.0
+    ]
+  },
+  "connectivity_mm": {
+    "lower_bridge_to_carriage_mm": 0.0,
+    "upper_bridge_to_rail_a_mm": 0.0,
+    "upper_bridge_to_rail_b_mm": 0.0,
+    "upper_center_rail_separation_mm": 60.0,
+    "cardan_pin_separation_mm": 4.0
+  },
+  "module_envelope_mm": {
+    "x_mm": 900.0,
+    "y_mm": 800.0,
+    "z_mm": 300.0
+  },
+  "cart_reference_check": {
+    "collapsed_cart_bbox_mm": [
+      -380.0,
+      380.0,
+      -285.0,
+      285.0,
+      -155.0,
+      -80.0
+    ],
+    "collapsed_vertical_gap_mm": 56.0,
+    "raised_cart_bbox_mm": [
+      -380.0,
+      380.0,
+      -285.0,
+      285.0,
+      -155.0,
+      -80.0
+    ],
+    "raised_vertical_gap_mm": 56.0,
+    "static_reference": true
+  },
+  "stop_clearance_pass": true,
+  "connectivity_pass": true,
+  "module_height_pass": true,
+  "cart_coupling_status": "PROVISIONAL_SEPARATED_REFERENCE_NOT_INCLUDED_IN_PASS_CART_INTERFACE_UNFROZEN",
+  "digital_assembly_pass": true
+}

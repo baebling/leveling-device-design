@@ -1,0 +1,1742 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-09-17",
+  "geometry_basis": "ProfileRadialRevD retained geometry",
+  "fabrication_status": "NOT APPROVED FOR FABRICATION",
+  "start_pose_count": 1859,
+  "start_set_scope": "DENSE_GRID_ONLY",
+  "step_mm": 1.0,
+  "low_limit_mm": 205.0,
+  "low_limit_status": "NOMINAL_UNVERIFIED",
+  "sequential_orders": [
+    {
+      "order": [
+        1,
+        2,
+        3
+      ],
+      "common_pass": false,
+      "failed_start_count": 1729,
+      "evaluated_state_count": 50546,
+      "maximum_tilt_deg": 5.206352466739707,
+      "maximum_phs_articulation_deg": 5.189616168913557,
+      "worst_tilt": {
+        "start_index": 595,
+        "start_pose": [
+          15.0,
+          0.0,
+          2.0
+        ],
+        "path_worst": {
+          "step_index": 35,
+          "lengths_mm": [
+            206.75997468816072,
+            232.34140157974417,
+            231.67899087101998
+          ],
+          "pose": {
+            "x_mm": 0.05797072554894129,
+            "y_mm": -0.5133106098820172,
+            "lift_mm": -0.7169926187744404,
+            "pitch_deg": 0.4421125373154384,
+            "roll_deg": -5.187598376695901,
+            "yaw_rad": -0.0004694526909751177,
+            "residual_mm": 1.88606463780161e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.75997468816072,
+              232.34140157974417,
+              231.67899087101998
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 143,
+        "start_pose": [
+          0.0,
+          2.5,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 7,
+          "lengths_mm": [
+            207.2058470709327,
+            235.2883464000586,
+            222.99871305748772
+          ],
+          "pose": {
+            "x_mm": 0.43602029661768565,
+            "y_mm": -0.27093779498076853,
+            "lift_mm": -3.1978104367255367,
+            "pitch_deg": 2.649246072194766,
+            "roll_deg": -4.464546024562455,
+            "yaw_rad": -0.0019218319683124868,
+            "residual_mm": 2.3653967673453735e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              207.2058470709327,
+              235.2883464000586,
+              222.99871305748772
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 0,
+        "start_pose": [
+          0.0,
+          -3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 6,
+        "worst_tilt": {
+          "step_index": 5,
+          "lengths_mm": [
+            210.26523374492106,
+            220.19077329196782,
+            237.02335284770479
+          ],
+          "pose": {
+            "x_mm": -0.46900189841453127,
+            "y_mm": -0.11362928398212646,
+            "lift_mm": -2.2874583055794853,
+            "pitch_deg": -2.993036409278549,
+            "roll_deg": -4.046894651609828,
+            "yaw_rad": 0.001734041639933774,
+            "residual_mm": 1.493305035182857e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              210.26523374492106,
+              220.19077329196782,
+              237.02335284770479
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 5,
+          "lengths_mm": [
+            210.26523374492106,
+            220.19077329196782,
+            237.02335284770479
+          ],
+          "pose": {
+            "x_mm": -0.46900189841453127,
+            "y_mm": -0.11362928398212646,
+            "lift_mm": -2.2874583055794853,
+            "pitch_deg": -2.993036409278549,
+            "roll_deg": -4.046894651609828,
+            "yaw_rad": 0.001734041639933774,
+            "residual_mm": 1.493305035182857e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              210.26523374492106,
+              220.19077329196782,
+              237.02335284770479
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        1,
+        3,
+        2
+      ],
+      "common_pass": false,
+      "failed_start_count": 1726,
+      "evaluated_state_count": 50637,
+      "maximum_tilt_deg": 5.206352466739707,
+      "maximum_phs_articulation_deg": 5.189616168913557,
+      "worst_tilt": {
+        "start_index": 595,
+        "start_pose": [
+          15.0,
+          0.0,
+          2.0
+        ],
+        "path_worst": {
+          "step_index": 35,
+          "lengths_mm": [
+            206.75997468816072,
+            232.34140157974417,
+            231.67899087101998
+          ],
+          "pose": {
+            "x_mm": 0.05797072554894129,
+            "y_mm": -0.5133106098820172,
+            "lift_mm": -0.7169926187744404,
+            "pitch_deg": 0.4421125373154384,
+            "roll_deg": -5.187598376695901,
+            "yaw_rad": -0.0004694526909751177,
+            "residual_mm": 1.88606463780161e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.75997468816072,
+              232.34140157974417,
+              231.67899087101998
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 143,
+        "start_pose": [
+          0.0,
+          2.5,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 7,
+          "lengths_mm": [
+            207.2058470709327,
+            235.2883464000586,
+            222.99871305748772
+          ],
+          "pose": {
+            "x_mm": 0.43602029661768565,
+            "y_mm": -0.27093779498076853,
+            "lift_mm": -3.1978104367255367,
+            "pitch_deg": 2.649246072194766,
+            "roll_deg": -4.464546024562455,
+            "yaw_rad": -0.0019218319683124868,
+            "residual_mm": 2.3653967673453735e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              207.2058470709327,
+              235.2883464000586,
+              222.99871305748772
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 0,
+        "start_pose": [
+          0.0,
+          -3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 6,
+        "worst_tilt": {
+          "step_index": 5,
+          "lengths_mm": [
+            210.26523374492106,
+            220.19077329196782,
+            237.02335284770479
+          ],
+          "pose": {
+            "x_mm": -0.46900189841453127,
+            "y_mm": -0.11362928398212646,
+            "lift_mm": -2.2874583055794853,
+            "pitch_deg": -2.993036409278549,
+            "roll_deg": -4.046894651609828,
+            "yaw_rad": 0.001734041639933774,
+            "residual_mm": 1.493305035182857e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              210.26523374492106,
+              220.19077329196782,
+              237.02335284770479
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 5,
+          "lengths_mm": [
+            210.26523374492106,
+            220.19077329196782,
+            237.02335284770479
+          ],
+          "pose": {
+            "x_mm": -0.46900189841453127,
+            "y_mm": -0.11362928398212646,
+            "lift_mm": -2.2874583055794853,
+            "pitch_deg": -2.993036409278549,
+            "roll_deg": -4.046894651609828,
+            "yaw_rad": 0.001734041639933774,
+            "residual_mm": 1.493305035182857e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              210.26523374492106,
+              220.19077329196782,
+              237.02335284770479
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        2,
+        1,
+        3
+      ],
+      "common_pass": false,
+      "failed_start_count": 1730,
+      "evaluated_state_count": 50431,
+      "maximum_tilt_deg": 5.205415168158982,
+      "maximum_phs_articulation_deg": 5.183683723993114,
+      "worst_tilt": {
+        "start_index": 628,
+        "start_pose": [
+          15.0,
+          1.5,
+          -1.0
+        ],
+        "path_worst": {
+          "step_index": 34,
+          "lengths_mm": [
+            231.71441510212483,
+            207.09353178587645,
+            232.9801118640091
+          ],
+          "pose": {
+            "x_mm": 0.40127421274935005,
+            "y_mm": 0.32501602234924915,
+            "lift_mm": -0.25081466840961036,
+            "pitch_deg": -4.76017959270631,
+            "roll_deg": 2.108856390090357,
+            "yaw_rad": -0.0016498573706392008,
+            "residual_mm": 3.352710109538748e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              231.71441510212483,
+              207.09353178587645,
+              232.9801118640091
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 455,
+        "start_pose": [
+          10.0,
+          1.5,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 35,
+          "lengths_mm": [
+            221.3778241430972,
+            205.15371288566627,
+            232.95413622549222
+          ],
+          "pose": {
+            "x_mm": 0.04153930203914324,
+            "y_mm": 0.5104692295779141,
+            "lift_mm": -6.013239084703519,
+            "pitch_deg": -5.183674930572689,
+            "roll_deg": 0.06076479279027241,
+            "yaw_rad": -0.000166872183150012,
+            "residual_mm": 3.79677089767938e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              221.3778241430972,
+              205.15371288566627,
+              232.95413622549222
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 0,
+        "start_pose": [
+          0.0,
+          -3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 8,
+        "worst_tilt": {
+          "step_index": 7,
+          "lengths_mm": [
+            215.26523374492106,
+            213.19077329196782,
+            237.02335284770479
+          ],
+          "pose": {
+            "x_mm": -0.3892442481478393,
+            "y_mm": 0.2756252249514196,
+            "lift_mm": -3.2323549535108747,
+            "pitch_deg": -4.373798364236855,
+            "roll_deg": -2.4304176535686475,
+            "yaw_rad": 0.0015094170698616613,
+            "residual_mm": 3.932655090466142e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              215.26523374492106,
+              213.19077329196782,
+              237.02335284770479
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 7,
+          "lengths_mm": [
+            215.26523374492106,
+            213.19077329196782,
+            237.02335284770479
+          ],
+          "pose": {
+            "x_mm": -0.3892442481478393,
+            "y_mm": 0.2756252249514196,
+            "lift_mm": -3.2323549535108747,
+            "pitch_deg": -4.373798364236855,
+            "roll_deg": -2.4304176535686475,
+            "yaw_rad": 0.0015094170698616613,
+            "residual_mm": 3.932655090466142e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              215.26523374492106,
+              213.19077329196782,
+              237.02335284770479
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        2,
+        3,
+        1
+      ],
+      "common_pass": false,
+      "failed_start_count": 1721,
+      "evaluated_state_count": 50706,
+      "maximum_tilt_deg": 5.205415168158982,
+      "maximum_phs_articulation_deg": 5.183683723993114,
+      "worst_tilt": {
+        "start_index": 628,
+        "start_pose": [
+          15.0,
+          1.5,
+          -1.0
+        ],
+        "path_worst": {
+          "step_index": 34,
+          "lengths_mm": [
+            231.71441510212483,
+            207.09353178587645,
+            232.9801118640091
+          ],
+          "pose": {
+            "x_mm": 0.40127421274935005,
+            "y_mm": 0.32501602234924915,
+            "lift_mm": -0.25081466840961036,
+            "pitch_deg": -4.76017959270631,
+            "roll_deg": 2.108856390090357,
+            "yaw_rad": -0.0016498573706392008,
+            "residual_mm": 3.352710109538748e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              231.71441510212483,
+              207.09353178587645,
+              232.9801118640091
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 455,
+        "start_pose": [
+          10.0,
+          1.5,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 35,
+          "lengths_mm": [
+            221.3778241430972,
+            205.15371288566627,
+            232.95413622549222
+          ],
+          "pose": {
+            "x_mm": 0.04153930203914324,
+            "y_mm": 0.5104692295779141,
+            "lift_mm": -6.013239084703519,
+            "pitch_deg": -5.183674930572689,
+            "roll_deg": 0.06076479279027241,
+            "yaw_rad": -0.000166872183150012,
+            "residual_mm": 3.79677089767938e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              221.3778241430972,
+              205.15371288566627,
+              232.95413622549222
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 0,
+        "start_pose": [
+          0.0,
+          -3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 8,
+        "worst_tilt": {
+          "step_index": 7,
+          "lengths_mm": [
+            215.26523374492106,
+            213.19077329196782,
+            237.02335284770479
+          ],
+          "pose": {
+            "x_mm": -0.3892442481478393,
+            "y_mm": 0.2756252249514196,
+            "lift_mm": -3.2323549535108747,
+            "pitch_deg": -4.373798364236855,
+            "roll_deg": -2.4304176535686475,
+            "yaw_rad": 0.0015094170698616613,
+            "residual_mm": 3.932655090466142e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              215.26523374492106,
+              213.19077329196782,
+              237.02335284770479
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 7,
+          "lengths_mm": [
+            215.26523374492106,
+            213.19077329196782,
+            237.02335284770479
+          ],
+          "pose": {
+            "x_mm": -0.3892442481478393,
+            "y_mm": 0.2756252249514196,
+            "lift_mm": -3.2323549535108747,
+            "pitch_deg": -4.373798364236855,
+            "roll_deg": -2.4304176535686475,
+            "yaw_rad": 0.0015094170698616613,
+            "residual_mm": 3.932655090466142e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              215.26523374492106,
+              213.19077329196782,
+              237.02335284770479
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        3,
+        1,
+        2
+      ],
+      "common_pass": false,
+      "failed_start_count": 1726,
+      "evaluated_state_count": 50502,
+      "maximum_tilt_deg": 5.2055285819658765,
+      "maximum_phs_articulation_deg": 5.177356665217014,
+      "worst_tilt": {
+        "start_index": 537,
+        "start_pose": [
+          15.0,
+          -2.0,
+          -1.0
+        ],
+        "path_worst": {
+          "step_index": 36,
+          "lengths_mm": [
+            232.40687192781982,
+            230.8863174709189,
+            206.47682933116343
+          ],
+          "pose": {
+            "x_mm": -0.4856096346917789,
+            "y_mm": 0.17567844303060284,
+            "lift_mm": -1.1859488669839768,
+            "pitch_deg": 4.170958134936739,
+            "roll_deg": 3.117340482787491,
+            "yaw_rad": 0.001861872524410529,
+            "residual_mm": 3.778268364840187e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              232.40687192781982,
+              230.8863174709189,
+              206.47682933116343
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 582,
+        "start_pose": [
+          15.0,
+          -0.5,
+          2.0
+        ],
+        "path_worst": {
+          "step_index": 20,
+          "lengths_mm": [
+            241.85715855247068,
+            230.84112736808262,
+            213.0789105305053
+          ],
+          "pose": {
+            "x_mm": -0.47877380319633495,
+            "y_mm": -0.18195207953284284,
+            "lift_mm": 6.143699137121371,
+            "pitch_deg": 2.816181778384485,
+            "roll_deg": 4.3542997948433575,
+            "yaw_rad": 0.0017500901660385199,
+            "residual_mm": 3.5254004160378827e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              241.85715855247068,
+              230.84112736808262,
+              213.0789105305053
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 10,
+        "start_pose": [
+          0.0,
+          -3.0,
+          2.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 24,
+        "worst_tilt": {
+          "step_index": 23,
+          "lengths_mm": [
+            231.08780890291175,
+            212.65466312954177,
+            205.7467316827373
+          ],
+          "pose": {
+            "x_mm": -0.20929236475693985,
+            "y_mm": -0.4413467383428913,
+            "lift_mm": -10.781952478438322,
+            "pitch_deg": 0.9672873507854958,
+            "roll_deg": 4.969555701344497,
+            "yaw_rad": 0.0006192695339694541,
+            "residual_mm": 4.568931899484596e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              231.08780890291175,
+              212.65466312954177,
+              205.7467316827373
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 23,
+          "lengths_mm": [
+            231.08780890291175,
+            212.65466312954177,
+            205.7467316827373
+          ],
+          "pose": {
+            "x_mm": -0.20929236475693985,
+            "y_mm": -0.4413467383428913,
+            "lift_mm": -10.781952478438322,
+            "pitch_deg": 0.9672873507854958,
+            "roll_deg": 4.969555701344497,
+            "yaw_rad": 0.0006192695339694541,
+            "residual_mm": 4.568931899484596e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              231.08780890291175,
+              212.65466312954177,
+              205.7467316827373
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        3,
+        2,
+        1
+      ],
+      "common_pass": false,
+      "failed_start_count": 1721,
+      "evaluated_state_count": 50651,
+      "maximum_tilt_deg": 5.2055285819658765,
+      "maximum_phs_articulation_deg": 5.177356665217014,
+      "worst_tilt": {
+        "start_index": 537,
+        "start_pose": [
+          15.0,
+          -2.0,
+          -1.0
+        ],
+        "path_worst": {
+          "step_index": 36,
+          "lengths_mm": [
+            232.40687192781982,
+            230.8863174709189,
+            206.47682933116343
+          ],
+          "pose": {
+            "x_mm": -0.4856096346917789,
+            "y_mm": 0.17567844303060284,
+            "lift_mm": -1.1859488669839768,
+            "pitch_deg": 4.170958134936739,
+            "roll_deg": 3.117340482787491,
+            "yaw_rad": 0.001861872524410529,
+            "residual_mm": 3.778268364840187e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              232.40687192781982,
+              230.8863174709189,
+              206.47682933116343
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 582,
+        "start_pose": [
+          15.0,
+          -0.5,
+          2.0
+        ],
+        "path_worst": {
+          "step_index": 20,
+          "lengths_mm": [
+            241.85715855247068,
+            230.84112736808262,
+            213.0789105305053
+          ],
+          "pose": {
+            "x_mm": -0.47877380319633495,
+            "y_mm": -0.18195207953284284,
+            "lift_mm": 6.143699137121371,
+            "pitch_deg": 2.816181778384485,
+            "roll_deg": 4.3542997948433575,
+            "yaw_rad": 0.0017500901660385199,
+            "residual_mm": 3.5254004160378827e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              241.85715855247068,
+              230.84112736808262,
+              213.0789105305053
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 8,
+        "start_pose": [
+          0.0,
+          -3.0,
+          1.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 34,
+        "worst_tilt": {
+          "step_index": 33,
+          "lengths_mm": [
+            227.99979722881932,
+            207.14167007728147,
+            205.0
+          ],
+          "pose": {
+            "x_mm": -0.049407829649867036,
+            "y_mm": -0.47687100648732367,
+            "lift_mm": -15.29490144441095,
+            "pitch_deg": 0.11373786502607434,
+            "roll_deg": 5.014238735539761,
+            "yaw_rad": -2.4334526186815715e-05,
+            "residual_mm": 4.7907633415888995e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              227.99979722881932,
+              207.14167007728147,
+              205.0
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 33,
+          "lengths_mm": [
+            227.99979722881932,
+            207.14167007728147,
+            205.0
+          ],
+          "pose": {
+            "x_mm": -0.049407829649867036,
+            "y_mm": -0.47687100648732367,
+            "lift_mm": -15.29490144441095,
+            "pitch_deg": 0.11373786502607434,
+            "roll_deg": 5.014238735539761,
+            "yaw_rad": -2.4334526186815715e-05,
+            "residual_mm": 4.7907633415888995e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              227.99979722881932,
+              207.14167007728147,
+              205.0
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "alternating_orders": [
+    {
+      "order": [
+        1,
+        2,
+        3
+      ],
+      "common_pass": false,
+      "failed_start_count": 7,
+      "evaluated_state_count": 216647,
+      "maximum_tilt_deg": 5.006291290564317,
+      "maximum_phs_articulation_deg": 4.86308403748556,
+      "worst_tilt": {
+        "start_index": 1677,
+        "start_pose": [
+          45.0,
+          3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 121,
+          "lengths_mm": [
+            206.43333339057952,
+            232.36174408778822,
+            215.76159442344417
+          ],
+          "pose": {
+            "x_mm": 0.47517121164634596,
+            "y_mm": -0.04870822046816202,
+            "lift_mm": -8.364764132259005,
+            "pitch_deg": 3.4583613905533643,
+            "roll_deg": -3.621964772410562,
+            "yaw_rad": -0.0020198864004601085,
+            "residual_mm": 2.8418867259460967e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.43333339057952,
+              232.36174408778822,
+              215.76159442344417
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 1677,
+        "start_pose": [
+          45.0,
+          3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 121,
+          "lengths_mm": [
+            206.43333339057952,
+            232.36174408778822,
+            215.76159442344417
+          ],
+          "pose": {
+            "x_mm": 0.47517121164634596,
+            "y_mm": -0.04870822046816202,
+            "lift_mm": -8.364764132259005,
+            "pitch_deg": 3.4583613905533643,
+            "roll_deg": -3.621964772410562,
+            "yaw_rad": -0.0020198864004601085,
+            "residual_mm": 2.8418867259460967e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.43333339057952,
+              232.36174408778822,
+              215.76159442344417
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 1014,
+        "start_pose": [
+          30.0,
+          -3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 96,
+        "worst_tilt": {
+          "step_index": 95,
+          "lengths_mm": [
+            205.10902485287116,
+            210.39214127552086,
+            229.55426973766197
+          ],
+          "pose": {
+            "x_mm": -0.4756887151175424,
+            "y_mm": 0.04078818857254219,
+            "lift_mm": -12.912275954857202,
+            "pitch_deg": -3.585616647693555,
+            "roll_deg": -3.494329575143584,
+            "yaw_rad": 0.0017987494245134909,
+            "residual_mm": 5.028766736359103e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              205.10902485287116,
+              210.39214127552086,
+              229.55426973766197
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 95,
+          "lengths_mm": [
+            205.10902485287116,
+            210.39214127552086,
+            229.55426973766197
+          ],
+          "pose": {
+            "x_mm": -0.4756887151175424,
+            "y_mm": 0.04078818857254219,
+            "lift_mm": -12.912275954857202,
+            "pitch_deg": -3.585616647693555,
+            "roll_deg": -3.494329575143584,
+            "yaw_rad": 0.0017987494245134909,
+            "residual_mm": 5.028766736359103e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              205.10902485287116,
+              210.39214127552086,
+              229.55426973766197
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        1,
+        3,
+        2
+      ],
+      "common_pass": false,
+      "failed_start_count": 5,
+      "evaluated_state_count": 216731,
+      "maximum_tilt_deg": 5.022972282301321,
+      "maximum_phs_articulation_deg": 4.875329980866986,
+      "worst_tilt": {
+        "start_index": 1508,
+        "start_pose": [
+          40.0,
+          3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 110,
+          "lengths_mm": [
+            206.54979730131876,
+            232.2536995815001,
+            214.80670402644702
+          ],
+          "pose": {
+            "x_mm": 0.4807507868975339,
+            "y_mm": -0.009645965038721886,
+            "lift_mm": -8.815708402275575,
+            "pitch_deg": 3.6159685264773533,
+            "roll_deg": -3.488723190175921,
+            "yaw_rad": -0.002034207160563793,
+            "residual_mm": 5.047127160651144e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.54979730131876,
+              232.2536995815001,
+              214.80670402644702
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 1521,
+        "start_pose": [
+          45.0,
+          -3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 124,
+          "lengths_mm": [
+            206.66940718631122,
+            213.09434646748971,
+            231.7961809120606
+          ],
+          "pose": {
+            "x_mm": -0.4792035776484838,
+            "y_mm": 0.003051193175236496,
+            "lift_mm": -9.792232567823772,
+            "pitch_deg": -3.451023170783677,
+            "roll_deg": -3.6401809262401645,
+            "yaw_rad": 0.0018033731374521055,
+            "residual_mm": 1.7134880181401968e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.66940718631122,
+              213.09434646748971,
+              231.7961809120606
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 1508,
+        "start_pose": [
+          40.0,
+          3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 111,
+        "worst_tilt": {
+          "step_index": 110,
+          "lengths_mm": [
+            206.54979730131876,
+            232.2536995815001,
+            214.80670402644702
+          ],
+          "pose": {
+            "x_mm": 0.4807507868975339,
+            "y_mm": -0.009645965038721886,
+            "lift_mm": -8.815708402275575,
+            "pitch_deg": 3.6159685264773533,
+            "roll_deg": -3.488723190175921,
+            "yaw_rad": -0.002034207160563793,
+            "residual_mm": 5.047127160651144e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.54979730131876,
+              232.2536995815001,
+              214.80670402644702
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 110,
+          "lengths_mm": [
+            206.54979730131876,
+            232.2536995815001,
+            214.80670402644702
+          ],
+          "pose": {
+            "x_mm": 0.4807507868975339,
+            "y_mm": -0.009645965038721886,
+            "lift_mm": -8.815708402275575,
+            "pitch_deg": 3.6159685264773533,
+            "roll_deg": -3.488723190175921,
+            "yaw_rad": -0.002034207160563793,
+            "residual_mm": 5.047127160651144e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.54979730131876,
+              232.2536995815001,
+              214.80670402644702
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        2,
+        1,
+        3
+      ],
+      "common_pass": false,
+      "failed_start_count": 5,
+      "evaluated_state_count": 216735,
+      "maximum_tilt_deg": 5.006115793801062,
+      "maximum_phs_articulation_deg": 4.817148964625762,
+      "worst_tilt": {
+        "start_index": 1183,
+        "start_pose": [
+          35.0,
+          -3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 101,
+          "lengths_mm": [
+            206.92035572207286,
+            212.25314699241568,
+            231.60335805204636
+          ],
+          "pose": {
+            "x_mm": -0.47588523393669196,
+            "y_mm": 0.04076082277634551,
+            "lift_mm": -10.167683602740487,
+            "pitch_deg": -3.586181596314117,
+            "roll_deg": -3.49520500964284,
+            "yaw_rad": 0.00179948427664925,
+            "residual_mm": 1.7659260720392922e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.92035572207286,
+              212.25314699241568,
+              231.60335805204636
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 1183,
+        "start_pose": [
+          35.0,
+          -3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 101,
+          "lengths_mm": [
+            206.92035572207286,
+            212.25314699241568,
+            231.60335805204636
+          ],
+          "pose": {
+            "x_mm": -0.47588523393669196,
+            "y_mm": 0.04076082277634551,
+            "lift_mm": -10.167683602740487,
+            "pitch_deg": -3.586181596314117,
+            "roll_deg": -3.49520500964284,
+            "yaw_rad": 0.00179948427664925,
+            "residual_mm": 1.7659260720392922e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.92035572207286,
+              212.25314699241568,
+              231.60335805204636
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 1014,
+        "start_pose": [
+          30.0,
+          -3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 96,
+        "worst_tilt": {
+          "step_index": 95,
+          "lengths_mm": [
+            205.10902485287116,
+            210.39214127552086,
+            229.55426973766197
+          ],
+          "pose": {
+            "x_mm": -0.4756887156276913,
+            "y_mm": 0.040788189241009416,
+            "lift_mm": -12.912275955302132,
+            "pitch_deg": -3.5856166480703195,
+            "roll_deg": -3.4943295769803044,
+            "yaw_rad": 0.0017987494258123733,
+            "residual_mm": 1.8635262222232996e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              205.10902485287116,
+              210.39214127552086,
+              229.55426973766197
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 95,
+          "lengths_mm": [
+            205.10902485287116,
+            210.39214127552086,
+            229.55426973766197
+          ],
+          "pose": {
+            "x_mm": -0.4756887156276913,
+            "y_mm": 0.040788189241009416,
+            "lift_mm": -12.912275955302132,
+            "pitch_deg": -3.5856166480703195,
+            "roll_deg": -3.4943295769803044,
+            "yaw_rad": 0.0017987494258123733,
+            "residual_mm": 1.8635262222232996e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              205.10902485287116,
+              210.39214127552086,
+              229.55426973766197
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        2,
+        3,
+        1
+      ],
+      "common_pass": false,
+      "failed_start_count": 2,
+      "evaluated_state_count": 216884,
+      "maximum_tilt_deg": 5.018445240402433,
+      "maximum_phs_articulation_deg": 4.845235628733919,
+      "worst_tilt": {
+        "start_index": 1690,
+        "start_pose": [
+          50.0,
+          -3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 139,
+          "lengths_mm": [
+            206.60325058273122,
+            211.07091885425007,
+            230.93711548670905
+          ],
+          "pose": {
+            "x_mm": -0.47470369787862127,
+            "y_mm": 0.07098504465576974,
+            "lift_mm": -11.204281859780009,
+            "pitch_deg": -3.7034940581818376,
+            "roll_deg": -3.3889419598689434,
+            "yaw_rad": 0.0018014556021611558,
+            "residual_mm": 4.818161869479809e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.60325058273122,
+              211.07091885425007,
+              230.93711548670905
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 1702,
+        "start_pose": [
+          50.0,
+          -3.0,
+          3.0
+        ],
+        "path_worst": {
+          "step_index": 128,
+          "lengths_mm": [
+            231.68512053885644,
+            205.06817736115582,
+            222.8228761293572
+          ],
+          "pose": {
+            "x_mm": 0.4676520491217387,
+            "y_mm": -0.05949001478305837,
+            "lift_mm": -5.969919990056735,
+            "pitch_deg": -3.391627379941725,
+            "roll_deg": 3.6397329421209537,
+            "yaw_rad": -0.0019907666088489658,
+            "residual_mm": 4.911470341539825e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              231.68512053885644,
+              205.06817736115582,
+              222.8228761293572
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 1521,
+        "start_pose": [
+          45.0,
+          -3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 131,
+        "worst_tilt": {
+          "step_index": 130,
+          "lengths_mm": [
+            205.66940718631122,
+            210.09434646748971,
+            229.7961809120606
+          ],
+          "pose": {
+            "x_mm": -0.47142871470051895,
+            "y_mm": 0.07068369916660916,
+            "lift_mm": -12.670423793847695,
+            "pitch_deg": -3.6914696329466987,
+            "roll_deg": -3.3765710961025635,
+            "yaw_rad": 0.0017890402511425122,
+            "residual_mm": 4.97229279972089e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              205.66940718631122,
+              210.09434646748971,
+              229.7961809120606
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 130,
+          "lengths_mm": [
+            205.66940718631122,
+            210.09434646748971,
+            229.7961809120606
+          ],
+          "pose": {
+            "x_mm": -0.47142871470051895,
+            "y_mm": 0.07068369916660916,
+            "lift_mm": -12.670423793847695,
+            "pitch_deg": -3.6914696329466987,
+            "roll_deg": -3.3765710961025635,
+            "yaw_rad": 0.0017890402511425122,
+            "residual_mm": 4.97229279972089e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              205.66940718631122,
+              210.09434646748971,
+              229.7961809120606
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        3,
+        1,
+        2
+      ],
+      "common_pass": false,
+      "failed_start_count": 3,
+      "evaluated_state_count": 216813,
+      "maximum_tilt_deg": 5.022972283235561,
+      "maximum_phs_articulation_deg": 4.826217238432735,
+      "worst_tilt": {
+        "start_index": 1508,
+        "start_pose": [
+          40.0,
+          3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 110,
+          "lengths_mm": [
+            206.54979730131876,
+            232.2536995815001,
+            214.80670402644702
+          ],
+          "pose": {
+            "x_mm": 0.4807507867481688,
+            "y_mm": -0.009645964915898132,
+            "lift_mm": -8.815708402913613,
+            "pitch_deg": 3.615968526331113,
+            "roll_deg": -3.4887231916744237,
+            "yaw_rad": -0.0020342071596426313,
+            "residual_mm": 2.9122304567863466e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.54979730131876,
+              232.2536995815001,
+              214.80670402644702
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 1508,
+        "start_pose": [
+          40.0,
+          3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 110,
+          "lengths_mm": [
+            206.54979730131876,
+            232.2536995815001,
+            214.80670402644702
+          ],
+          "pose": {
+            "x_mm": 0.4807507867481688,
+            "y_mm": -0.009645964915898132,
+            "lift_mm": -8.815708402913613,
+            "pitch_deg": 3.615968526331113,
+            "roll_deg": -3.4887231916744237,
+            "yaw_rad": -0.0020342071596426313,
+            "residual_mm": 2.9122304567863466e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.54979730131876,
+              232.2536995815001,
+              214.80670402644702
+            ]
+          }
+        }
+      },
+      "first_failure": {
+        "start_index": 1508,
+        "start_pose": [
+          40.0,
+          3.0,
+          -3.0
+        ],
+        "failure_reasons": [
+          "TILT_LIMIT"
+        ],
+        "evaluated_state_count": 111,
+        "worst_tilt": {
+          "step_index": 110,
+          "lengths_mm": [
+            206.54979730131876,
+            232.2536995815001,
+            214.80670402644702
+          ],
+          "pose": {
+            "x_mm": 0.4807507867481688,
+            "y_mm": -0.009645964915898132,
+            "lift_mm": -8.815708402913613,
+            "pitch_deg": 3.615968526331113,
+            "roll_deg": -3.4887231916744237,
+            "yaw_rad": -0.0020342071596426313,
+            "residual_mm": 2.9122304567863466e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.54979730131876,
+              232.2536995815001,
+              214.80670402644702
+            ]
+          }
+        },
+        "worst_articulation": {
+          "step_index": 110,
+          "lengths_mm": [
+            206.54979730131876,
+            232.2536995815001,
+            214.80670402644702
+          ],
+          "pose": {
+            "x_mm": 0.4807507867481688,
+            "y_mm": -0.009645964915898132,
+            "lift_mm": -8.815708402913613,
+            "pitch_deg": 3.615968526331113,
+            "roll_deg": -3.4887231916744237,
+            "yaw_rad": -0.0020342071596426313,
+            "residual_mm": 2.9122304567863466e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              206.54979730131876,
+              232.2536995815001,
+              214.80670402644702
+            ]
+          }
+        }
+      }
+    },
+    {
+      "order": [
+        3,
+        2,
+        1
+      ],
+      "common_pass": true,
+      "failed_start_count": 0,
+      "evaluated_state_count": 216951,
+      "maximum_tilt_deg": 4.993698819952333,
+      "maximum_phs_articulation_deg": 4.845235628717351,
+      "worst_tilt": {
+        "start_index": 1846,
+        "start_pose": [
+          50.0,
+          3.0,
+          -3.0
+        ],
+        "path_worst": {
+          "step_index": 139,
+          "lengths_mm": [
+            205.35633109200546,
+            230.49917169120414,
+            212.75251716081982
+          ],
+          "pose": {
+            "x_mm": 0.474951096509438,
+            "y_mm": 0.017208328064877793,
+            "lift_mm": -11.204674137040033,
+            "pitch_deg": 3.691025551364776,
+            "roll_deg": -3.3658636466565994,
+            "yaw_rad": -0.002003689803117402,
+            "residual_mm": 5.241616918283398e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              205.35633109200546,
+              230.49917169120414,
+              212.75251716081982
+            ]
+          }
+        }
+      },
+      "worst_articulation": {
+        "start_index": 1702,
+        "start_pose": [
+          50.0,
+          -3.0,
+          3.0
+        ],
+        "path_worst": {
+          "step_index": 128,
+          "lengths_mm": [
+            231.68512053885644,
+            205.06817736115582,
+            222.8228761293572
+          ],
+          "pose": {
+            "x_mm": 0.4676520487589191,
+            "y_mm": -0.05949001522423218,
+            "lift_mm": -5.969919991090193,
+            "pitch_deg": -3.391627379963978,
+            "roll_deg": 3.6397329420880355,
+            "yaw_rad": -0.0019907666073316604,
+            "residual_mm": 3.76439857063815e-09,
+            "iterations": 2,
+            "converged": true,
+            "target_lengths_mm": [
+              231.68512053885644,
+              205.06817736115582,
+              222.8228761293572
+            ]
+          }
+        }
+      },
+      "first_failure": null
+    }
+  ],
+  "selected_method": "ALTERNATING",
+  "selected_order_summary": {
+    "order": [
+      3,
+      2,
+      1
+    ],
+    "common_pass": true,
+    "failed_start_count": 0,
+    "evaluated_state_count": 216951,
+    "maximum_tilt_deg": 4.993698819952333,
+    "maximum_phs_articulation_deg": 4.845235628717351,
+    "worst_tilt": {
+      "start_index": 1846,
+      "start_pose": [
+        50.0,
+        3.0,
+        -3.0
+      ],
+      "path_worst": {
+        "step_index": 139,
+        "lengths_mm": [
+          205.35633109200546,
+          230.49917169120414,
+          212.75251716081982
+        ],
+        "pose": {
+          "x_mm": 0.474951096509438,
+          "y_mm": 0.017208328064877793,
+          "lift_mm": -11.204674137040033,
+          "pitch_deg": 3.691025551364776,
+          "roll_deg": -3.3658636466565994,
+          "yaw_rad": -0.002003689803117402,
+          "residual_mm": 5.241616918283398e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            205.35633109200546,
+            230.49917169120414,
+            212.75251716081982
+          ]
+        }
+      }
+    },
+    "worst_articulation": {
+      "start_index": 1702,
+      "start_pose": [
+        50.0,
+        -3.0,
+        3.0
+      ],
+      "path_worst": {
+        "step_index": 128,
+        "lengths_mm": [
+          231.68512053885644,
+          205.06817736115582,
+          222.8228761293572
+        ],
+        "pose": {
+          "x_mm": 0.4676520487589191,
+          "y_mm": -0.05949001522423218,
+          "lift_mm": -5.969919991090193,
+          "pitch_deg": -3.391627379963978,
+          "roll_deg": 3.6397329420880355,
+          "yaw_rad": -0.0019907666073316604,
+          "residual_mm": 3.76439857063815e-09,
+          "iterations": 2,
+          "converged": true,
+          "target_lengths_mm": [
+            231.68512053885644,
+            205.06817736115582,
+            222.8228761293572
+          ]
+        }
+      }
+    },
+    "first_failure": null
+  },
+  "restart_closure_audited": false,
+  "all_allowed_command_and_jog_paths_included": false,
+  "full_path_cad_collision_audited": false,
+  "ldk_joint_limit_verified": false,
+  "release_ready": false,
+  "release_blockers": [
+    "Nominal 205 mm is not a verified built-in lower-limit trip point.",
+    "Full-path CAD collision audit is not yet complete.",
+    "Power-loss, MCU-reset, and E-stop automatic HOME resume are prohibited; HOME_START_UNVERIFIED recovery is required.",
+    "Arbitrary endpoint-to-endpoint command paths are prohibited by the preliminary HOME policy and are not audited.",
+    "Final LDK PHS 6 geometry and LMB-10 geometry are not yet included in the full-path CAD collision audit."
+  ],
+  "phase_reset_restart_witness": {
+    "source": "SELECTED_PATH_WORST_TILT_STATE",
+    "order": [
+      3,
+      2,
+      1
+    ],
+    "step_mm": 1.0,
+    "start_lengths_mm": [
+      205.35633109200546,
+      230.49917169120414,
+      212.75251716081982
+    ],
+    "phase_reset_restart_pass": false,
+    "maximum_tilt_deg": 5.0704061822032935,
+    "maximum_phs_articulation_deg": 4.763577859904032,
+    "failure_reasons": [
+      "TILT_LIMIT"
+    ],
+    "evaluated_state_count": 2,
+    "worst_tilt": {
+      "step_index": 1,
+      "lengths_mm": [
+        205.35633109200546,
+        230.49917169120414,
+        211.75251716081982
+      ],
+      "pose": {
+        "x_mm": 0.486582126176788,
+        "y_mm": 0.057486084558154904,
+        "lift_mm": -11.683946057050733,
+        "pitch_deg": 3.883503098735017,
+        "roll_deg": -3.262473074902388,
+        "yaw_rad": -0.0020446891470318734,
+        "residual_mm": 5.251422408036888e-09,
+        "iterations": 2,
+        "converged": true,
+        "target_lengths_mm": [
+          205.35633109200546,
+          230.49917169120414,
+          211.75251716081982
+        ]
+      }
+    },
+    "interpretation": "STATELESS_RESTART_REJECTED; PHASE-PRESERVING RESUME OR REDESIGN REQUIRED"
+  },
+  "selected_home_policy_status": "PRELIMINARY_LIVE_SESSION_RESUME_CLOSED_POWER_LOSS_BLOCKED",
+  "dense_grid_phase_preserving_resume_closed": true,
+  "phase_preserving_resume_closure": {
+    "restart_state_count": 216951,
+    "failed_restart_state_count": 0,
+    "power_loss_resume_allowed": false,
+    "power_loss_action": "HOME_START_UNVERIFIED"
+  },
+  "normal_window_escape_summary": {
+    "all_orders_pass": true,
+    "selection_basis": "SAME_AS_SELECTED_HOME_RETRACTION_ORDER",
+    "selected_order": [
+      3,
+      2,
+      1
+    ]
+  },
+  "power_loss_resume_allowed": false
+}

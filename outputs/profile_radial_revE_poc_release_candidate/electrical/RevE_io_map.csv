@@ -1,0 +1,17 @@
+﻿function,mega_pin,remote_ref,signal_type,gate
+ENC1_A,D2,A1 encoder A,5V pulse input,supplier level/color verify
+ENC1_B,D22,A1 encoder B,5V pulse input,supplier level/color verify
+MOTOR1_PWM,D5,D1,5V PWM output,locked
+MOTOR1_DIR,D30,D1,5V direction output,locked
+ENC2_A,D3,A2 encoder A,5V pulse input,supplier level/color verify
+ENC2_B,D23,A2 encoder B,5V pulse input,supplier level/color verify
+MOTOR2_PWM,D6,D1,5V PWM output,locked
+MOTOR2_DIR,D31,D1,5V direction output,locked
+ENC3_A,D18,A3 encoder A,5V pulse input,supplier level/color verify
+ENC3_B,D24,A3 encoder B,5V pulse input,supplier level/color verify
+MOTOR3_PWM,D7,D2,5V PWM output,locked
+MOTOR3_DIR,D32,D2,5V direction output,locked
+IMU_SDA,D20/SDA,GY-521 SDA,I2C,module logic-level bench verify
+IMU_SCL,D21/SCL,GY-521 SCL,I2C,module logic-level bench verify
+UNUSED_CH4_PWM,D8,D2 CH2 PWM,held 0,locked
+UNUSED_CH4_DIR,D33,D2 CH2 DIR,held low,locked

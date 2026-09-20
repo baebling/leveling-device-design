@@ -1,0 +1,48 @@
+[
+  {
+    "file": "M2R1_NEUTRAL_REVIEW.step",
+    "valid": true,
+    "solids": 169,
+    "sha256": "e0cc7c1a48b97b3df1e793d37ca6c2fca8da9fba2c99eb3b60d8c53dcf5fca59",
+    "bytes": 4159374,
+    "volume_delta_mm3": 4.4517219066619873e-07,
+    "bounds_max_delta_mm": 0.0,
+    "pass": true
+  },
+  {
+    "file": "M2R1_P3_R3_REVIEW.step",
+    "valid": true,
+    "solids": 169,
+    "sha256": "30c8951240d8b548f172c5211d1ff3fb6c4c522d8cd2502462b1d930045090f6",
+    "bytes": 4342190,
+    "volume_delta_mm3": 3.5278499126434326e-06,
+    "bounds_max_delta_mm": 6.713207767461427e-11,
+    "pass": true
+  },
+  {
+    "file": "M2R1_PM3_RM3_REVIEW.step",
+    "valid": true,
+    "solids": 169,
+    "sha256": "d6ceaf4ad64bb890f55721639eddd2584ef5e60039aed0cf572c5b1921a5f940",
+    "bytes": 4342930,
+    "volume_delta_mm3": 5.668029189109802e-06,
+    "bounds_max_delta_mm": 1.4836132322670892e-11,
+    "pass": true
+  },
+  {
+    "file": "M2R1_UPPER_JOINT_EXPLODED_REVIEW.step",
+    "valid": true,
+    "solids": 11,
+    "sha256": "f4bbe7be2be3b6ea2cd186c13cd1681c9d664e284cac87aa7deb3e05f1717681",
+    "bytes": 273250,
+    "pass": true
+  },
+  {
+    "file": "M2R1_UPPER_JOINT_REVIEW.step",
+    "valid": true,
+    "solids": 11,
+    "sha256": "f587aa00fc5384a26c369b833214aaafe9c7cccf60ba9bea7473a0a368c6fedd",
+    "bytes": 274852,
+    "pass": true
+  }
+]

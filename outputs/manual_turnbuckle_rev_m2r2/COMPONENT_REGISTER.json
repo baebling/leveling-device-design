@@ -1,0 +1,782 @@
+[
+  {
+    "name": "LOWER_SIDE_L",
+    "group": "LOWER_frame",
+    "basis": "HFS8-4040-700; cut only; slot section simplified"
+  },
+  {
+    "name": "LOWER_SIDE_R",
+    "group": "LOWER_frame",
+    "basis": "HFS8-4040-700; cut only; slot section simplified"
+  },
+  {
+    "name": "LOWER_FRONT",
+    "group": "LOWER_frame",
+    "basis": "HFS8-4040-620; cut only; slot section simplified"
+  },
+  {
+    "name": "LOWER_BACK",
+    "group": "LOWER_frame",
+    "basis": "HFS8-4040-620; cut only; slot section simplified"
+  },
+  {
+    "name": "LOWER_REAR_RAIL",
+    "group": "LOWER_frame",
+    "basis": "HFS8-4080-620; cut only; slot section simplified"
+  },
+  {
+    "name": "LOWER_FRONT_RAIL",
+    "group": "LOWER_frame",
+    "basis": "HFS8-4080-470; cut only; slot section simplified"
+  },
+  {
+    "name": "LOWER_BRACKET_1",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_2",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_3",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_4",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_5",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_6",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_7",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_8",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_9",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_10",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_11",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "LOWER_BRACKET_12",
+    "group": "LOWER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_SIDE_L",
+    "group": "UPPER_frame",
+    "basis": "HFS8-4040-700; cut only; slot section simplified"
+  },
+  {
+    "name": "UPPER_SIDE_R",
+    "group": "UPPER_frame",
+    "basis": "HFS8-4040-700; cut only; slot section simplified"
+  },
+  {
+    "name": "UPPER_FRONT",
+    "group": "UPPER_frame",
+    "basis": "HFS8-4040-620; cut only; slot section simplified"
+  },
+  {
+    "name": "UPPER_BACK",
+    "group": "UPPER_frame",
+    "basis": "HFS8-4040-620; cut only; slot section simplified"
+  },
+  {
+    "name": "UPPER_REAR_RAIL",
+    "group": "UPPER_frame",
+    "basis": "HFS8-4080-620; cut only; slot section simplified"
+  },
+  {
+    "name": "UPPER_FRONT_RAIL",
+    "group": "UPPER_frame",
+    "basis": "HFS8-4080-470; cut only; slot section simplified"
+  },
+  {
+    "name": "UPPER_BRACKET_1",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_2",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_3",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_4",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_5",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_6",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_7",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_8",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_9",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_10",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_11",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "UPPER_BRACKET_12",
+    "group": "UPPER_brackets",
+    "basis": "HBLSSB8-SET; exact bracket geometry/fasteners not modeled"
+  },
+  {
+    "name": "L1_SHAT12_L",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "L1_L_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L1_L_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L1_L_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L1_L_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L1_L_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L1_L_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L1_SHIM_STACK_L",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "L1_MCL12F_L",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "L1_SHAT12_R",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "L1_R_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L1_R_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L1_R_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L1_R_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L1_R_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L1_R_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L1_SHIM_STACK_R",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "L1_MCL12F_R",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "L1_SHAFT12X100",
+    "group": "shafts",
+    "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+  },
+  {
+    "name": "U1_SHAT12_L",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "U1_L_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U1_L_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U1_L_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U1_L_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U1_L_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U1_L_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U1_SHIM_STACK_L",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "U1_MCL12F_L",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "U1_SHAT12_R",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "U1_R_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U1_R_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U1_R_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U1_R_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U1_R_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U1_R_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U1_SHIM_STACK_R",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "U1_MCL12F_R",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "U1_SHAFT12X100",
+    "group": "shafts",
+    "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+  },
+  {
+    "name": "A1_TURNBUCKLE",
+    "group": "links",
+    "basis": "NBK STB-M12 + BJ761-12011N + DIN6334 M12x36 + THK PHS12L; threaded envelopes"
+  },
+  {
+    "name": "A1_PHS12L_INNER",
+    "group": "bearings",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L2_SHAT12_L",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "L2_L_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L2_L_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L2_L_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L2_L_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L2_L_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L2_L_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L2_SHIM_STACK_L",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "L2_MCL12F_L",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "L2_SHAT12_R",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "L2_R_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L2_R_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L2_R_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L2_R_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L2_R_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L2_R_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L2_SHIM_STACK_R",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "L2_MCL12F_R",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "L2_SHAFT12X100",
+    "group": "shafts",
+    "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+  },
+  {
+    "name": "U2_SHAT12_L",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "U2_L_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U2_L_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U2_L_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U2_L_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U2_L_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U2_L_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U2_SHIM_STACK_L",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "U2_MCL12F_L",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "U2_SHAT12_R",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "U2_R_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U2_R_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U2_R_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U2_R_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U2_R_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U2_R_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U2_SHIM_STACK_R",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "U2_MCL12F_R",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "U2_SHAFT12X100",
+    "group": "shafts",
+    "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+  },
+  {
+    "name": "A2_TURNBUCKLE",
+    "group": "links",
+    "basis": "NBK STB-M12 + BJ761-12011N + DIN6334 M12x36 + THK PHS12L; threaded envelopes"
+  },
+  {
+    "name": "A2_PHS12L_INNER",
+    "group": "bearings",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L3_SHAT12_L",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "L3_L_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L3_L_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L3_L_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L3_L_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L3_L_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L3_L_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L3_SHIM_STACK_L",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "L3_MCL12F_L",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "L3_SHAT12_R",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "L3_R_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L3_R_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L3_R_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L3_R_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "L3_R_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "L3_R_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "L3_SHIM_STACK_R",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "L3_MCL12F_R",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "L3_SHAFT12X100",
+    "group": "shafts",
+    "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+  },
+  {
+    "name": "U3_SHAT12_L",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "U3_L_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U3_L_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U3_L_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U3_L_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U3_L_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U3_L_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U3_SHIM_STACK_L",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "U3_MCL12F_L",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "U3_SHAT12_R",
+    "group": "supports",
+    "basis": "MISUMI SHAT12; bore12, H23, thickness14, mounting pitch32"
+  },
+  {
+    "name": "U3_R_M5X16_1",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U3_R_W5_1",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U3_R_HNTT8_5_1",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U3_R_M5X16_2",
+    "group": "fasteners",
+    "basis": "M5x16; final engagement check required"
+  },
+  {
+    "name": "U3_R_W5_2",
+    "group": "fasteners",
+    "basis": "catalogue component envelope"
+  },
+  {
+    "name": "U3_R_HNTT8_5_2",
+    "group": "fasteners",
+    "basis": "HNTT8-5 envelope"
+  },
+  {
+    "name": "U3_SHIM_STACK_R",
+    "group": "shims",
+    "basis": "K1151.1218100 plus .5/.2 shims; stack envelope, measured fit required"
+  },
+  {
+    "name": "U3_MCL12F_R",
+    "group": "collars",
+    "basis": "Ruland MCL-12-F; clamp screw envelope omitted"
+  },
+  {
+    "name": "U3_SHAFT12X100",
+    "group": "shafts",
+    "basis": "MISUMI SFU12-100 h5 catalogue configured shaft; no end machining"
+  },
+  {
+    "name": "A3_TURNBUCKLE",
+    "group": "links",
+    "basis": "NBK STB-M12 + BJ761-12011N + DIN6334 M12x36 + THK PHS12L; threaded envelopes"
+  },
+  {
+    "name": "A3_PHS12L_INNER",
+    "group": "bearings",
+    "basis": "catalogue component envelope"
+  }
+]

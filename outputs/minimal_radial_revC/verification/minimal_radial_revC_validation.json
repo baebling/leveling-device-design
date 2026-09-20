@@ -1,0 +1,814 @@
+{
+  "revision": "C",
+  "status": "DIGITAL_CORE_ASSEMBLY_PASS_EYE_WIDTH_AND_STOP_MOUNT_OPEN",
+  "fabrication_release": false,
+  "purchase_release": false,
+  "component_count": 85,
+  "structural_full_size_plate_count": 0,
+  "small_custom_hub_plate_count": 1,
+  "welding_required": false,
+  "workspace": {
+    "pose_count": 27,
+    "required_min_pin_mm": 217.93335162360356,
+    "required_max_pin_mm": 278.07976638189075,
+    "required_span_mm": 60.14641475828719,
+    "retract_margin_mm": 12.933351623603556,
+    "extend_margin_mm": 26.92023361810925,
+    "maximum_constraint_residual_mm": 6.536993168992922e-13,
+    "passes": true,
+    "rows": [
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": -0.3423812175157593,
+        "platform_y_mm": 0.0004695435264431218,
+        "platform_yaw_deg": 0.07857570486192493,
+        "constraint_residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          221.32249848839334,
+          226.9511580634423,
+          241.12641266489368
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": -4.7087309143363764e-15,
+        "platform_y_mm": 0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501901838e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          229.9695353758229,
+          222.39140454445703,
+          237.08912394557376
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": 0.3423812175157455,
+        "platform_y_mm": 0.00046954352646754095,
+        "platform_yaw_deg": -0.07857570486192812,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          238.26669689779365,
+          217.93335162360358,
+          233.1661612834091
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": -4.765172230694181e-15,
+        "platform_y_mm": -0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501812387e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          221.17538874055927,
+          234.13310757448457,
+          234.13310757448454
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": 0.0,
+        "platform_y_mm": 0.0,
+        "platform_yaw_deg": 0.0,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          229.83907413666634,
+          229.83907413666634,
+          229.83907413666634
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": -4.765172230694181e-15,
+        "platform_y_mm": -0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501812387e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          238.1524932994323,
+          225.65301531862107,
+          225.65301531862107
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": 0.3423812175157455,
+        "platform_y_mm": 0.00046954352646754095,
+        "platform_yaw_deg": -0.07857570486192812,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          221.32249848839336,
+          241.1264126648937,
+          226.95115806344228
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": -4.7087309143363764e-15,
+        "platform_y_mm": 0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501901838e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          229.9695353758229,
+          237.08912394557373,
+          222.39140454445703
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": -0.3423812175157593,
+        "platform_y_mm": 0.0004695435264431218,
+        "platform_yaw_deg": 0.07857570486192493,
+        "constraint_residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          238.26669689779362,
+          233.16616128340914,
+          217.93335162360356
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": -0.3423812175157593,
+        "platform_y_mm": 0.0004695435264431218,
+        "platform_yaw_deg": 0.07857570486192493,
+        "constraint_residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          237.49809565914848,
+          243.60198326076338,
+          259.05627125746975
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": -4.7087309143363764e-15,
+        "platform_y_mm": 0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501901838e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          246.90278896961016,
+          238.67631526773783,
+          254.66214096082555
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": 0.3423812175157455,
+        "platform_y_mm": 0.00046954352646754095,
+        "platform_yaw_deg": -0.07857570486192812,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          255.92835275914214,
+          233.83058173967336,
+          250.3624585783601
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": -4.765172230694181e-15,
+        "platform_y_mm": -0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501812387e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          237.35912270544966,
+          251.43669539071567,
+          251.43669539071567
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": 0.0,
+        "platform_y_mm": 0.0,
+        "platform_yaw_deg": 0.0,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          246.78127967899024,
+          246.78127967899024,
+          246.78127967899024
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": -4.765172230694181e-15,
+        "platform_y_mm": -0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501812387e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          255.82378606723213,
+          242.21309542604718,
+          242.21309542604718
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": 0.3423812175157455,
+        "platform_y_mm": 0.00046954352646754095,
+        "platform_yaw_deg": -0.07857570486192812,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          237.4980956591485,
+          259.0562712574698,
+          243.60198326076335
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": -4.7087309143363764e-15,
+        "platform_y_mm": 0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501901838e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          246.90278896961016,
+          254.66214096082555,
+          238.67631526773783
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": -0.3423812175157593,
+        "platform_y_mm": 0.0004695435264431218,
+        "platform_yaw_deg": 0.07857570486192493,
+        "constraint_residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          255.92835275914211,
+          250.36245857836013,
+          233.83058173967333
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": -0.3423812175157593,
+        "platform_y_mm": 0.0004695435264431218,
+        "platform_yaw_deg": 0.07857570486192493,
+        "constraint_residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          255.10202379890913,
+          261.58559660427966,
+          278.0797663818907
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": -4.7087309143363764e-15,
+        "platform_y_mm": 0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501901838e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          265.11504521805597,
+          256.3685435546117,
+          273.3941465800304
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": 0.3423812175157455,
+        "platform_y_mm": 0.00046954352646754095,
+        "platform_yaw_deg": -0.07857570486192812,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          274.73191412981265,
+          251.2141241322448,
+          268.78664878144787
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": -4.765172230694181e-15,
+        "platform_y_mm": -0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501812387e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          254.97088790382307,
+          269.9490905995461,
+          269.9490905995461
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": 0.0,
+        "platform_y_mm": 0.0,
+        "platform_yaw_deg": 0.0,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          265.0018867857359,
+          265.0018867857359,
+          265.0018867857359
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": -4.765172230694181e-15,
+        "platform_y_mm": -0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501812387e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          274.6361392293624,
+          260.1251311760343,
+          260.1251311760343
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "platform_x_mm": 0.3423812175157455,
+        "platform_y_mm": 0.00046954352646754095,
+        "platform_yaw_deg": -0.07857570486192812,
+        "constraint_residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          255.10202379890916,
+          278.07976638189075,
+          261.5855966042796
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "platform_x_mm": -4.7087309143363764e-15,
+        "platform_y_mm": 0.1713081556790188,
+        "platform_yaw_deg": -1.0863737501901838e-15,
+        "constraint_residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          265.11504521805597,
+          273.3941465800304,
+          256.3685435546117
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "platform_x_mm": -0.3423812175157593,
+        "platform_y_mm": 0.0004695435264431218,
+        "platform_yaw_deg": 0.07857570486192493,
+        "constraint_residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          274.7319141298126,
+          268.78664878144787,
+          251.2141241322448
+        ]
+      }
+    ]
+  },
+  "joint_axis_alignment": {
+    "maximum_perpendicular_error_deg": 1.5584717939171232e-13,
+    "maximum_phs_articulation_deg": 4.096322742530021,
+    "minimum_published_phs_allowance_deg": 8.0,
+    "passes": true,
+    "rows": [
+      {
+        "pose": "collapsed",
+        "actuator": 1,
+        "actuator_to_pin_perpendicular_error_deg": 1.433857490587882e-17,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "collapsed",
+        "actuator": 2,
+        "actuator_to_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "collapsed",
+        "actuator": 3,
+        "actuator_to_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "neutral",
+        "actuator": 1,
+        "actuator_to_pin_perpendicular_error_deg": 1.3354192769780556e-17,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "neutral",
+        "actuator": 2,
+        "actuator_to_pin_perpendicular_error_deg": 6.3611093629270335e-15,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "neutral",
+        "actuator": 3,
+        "actuator_to_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "raised",
+        "actuator": 1,
+        "actuator_to_pin_perpendicular_error_deg": 1.2436004968791103e-17,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "raised",
+        "actuator": 2,
+        "actuator_to_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "raised",
+        "actuator": 3,
+        "actuator_to_pin_perpendicular_error_deg": 0.0,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "max_pitch",
+        "actuator": 1,
+        "actuator_to_pin_perpendicular_error_deg": 1.5781816647360572e-17,
+        "phs_articulation_deg": 3.0000000000000444
+      },
+      {
+        "pose": "max_pitch",
+        "actuator": 2,
+        "actuator_to_pin_perpendicular_error_deg": 1.4630551534732177e-13,
+        "phs_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": "max_pitch",
+        "actuator": 3,
+        "actuator_to_pin_perpendicular_error_deg": 1.526666247102488e-13,
+        "phs_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": "max_roll",
+        "actuator": 1,
+        "actuator_to_pin_perpendicular_error_deg": 5.8342326585599955e-18,
+        "phs_articulation_deg": 0.0
+      },
+      {
+        "pose": "max_roll",
+        "actuator": 2,
+        "actuator_to_pin_perpendicular_error_deg": 1.5584717939171232e-13,
+        "phs_articulation_deg": 2.598002001173896
+      },
+      {
+        "pose": "max_roll",
+        "actuator": 3,
+        "actuator_to_pin_perpendicular_error_deg": 1.526666247102488e-13,
+        "phs_articulation_deg": 2.598002001174036
+      },
+      {
+        "pose": "max_pitch_roll",
+        "actuator": 1,
+        "actuator_to_pin_perpendicular_error_deg": 8.19629221519058e-18,
+        "phs_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": "max_pitch_roll",
+        "actuator": 2,
+        "actuator_to_pin_perpendicular_error_deg": 0.0,
+        "phs_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": "max_pitch_roll",
+        "actuator": 3,
+        "actuator_to_pin_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs_articulation_deg": 1.0947821600321377
+      }
+    ]
+  },
+  "support_azimuth": {
+    "azimuths_deg": [
+      90.0,
+      210.0,
+      330.0
+    ],
+    "circular_gaps_deg": [
+      120.0,
+      120.0,
+      120.0
+    ],
+    "passes": true
+  },
+  "connector_axes": {
+    "lower_4035_count": 8,
+    "upper_DCB3025_count": 8,
+    "fasteners_per_bracket": 2,
+    "modeled_axes_per_bracket": [
+      "horizontal_X",
+      "horizontal_Y"
+    ],
+    "bracket_orientation": "both legs vertical inside coplanar frame corner",
+    "passes": true
+  },
+  "mechanical_stop_sweep": {
+    "maximum_horizontal_sweep_mm": 14.544495669055918,
+    "allowed_center_sweep_mm": 20.0,
+    "minimum_clearance_mm": 5.455504330944082,
+    "passes": true,
+    "rows": [
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 14.059369280462436
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 12.974190107089939
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 14.05862567111092
+      },
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 10.11966820644722
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 9.352326664381696
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 9.735995090580621
+      },
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 14.544495669055918
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 13.459304651134296
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 13.460048250486832
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 9.905796016866567
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 9.905796016866578
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 10.289526285585907
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 0.0
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 0.0
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 0.0
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 9.563179705508539
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 9.563179705508528
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 9.179449436789241
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 12.97419010708991
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 14.059369280462429
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 14.058625671110882
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 9.352326664381696
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 10.11966820644722
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 9.735995090580621
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 13.459304651134289
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 14.544495669055888
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 13.460048250486793
+      }
+    ]
+  },
+  "bounds": {
+    "collapsed": {
+      "xmin": -350.00000000000006,
+      "xmax": 350.00000000000006,
+      "ymin": -350.0,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 300.0,
+      "xlen": 700.0000000000001,
+      "ylen": 700.0,
+      "zlen": 300.0
+    },
+    "neutral": {
+      "xmin": -350.00000000000006,
+      "xmax": 350.00000000000006,
+      "ymin": -350.0,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 325.0,
+      "xlen": 700.0000000000001,
+      "ylen": 700.0,
+      "zlen": 325.0
+    },
+    "raised": {
+      "xmin": -350.00000000000006,
+      "xmax": 350.00000000000006,
+      "ymin": -350.0,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 350.0,
+      "xlen": 700.0000000000001,
+      "ylen": 700.0,
+      "zlen": 350.0
+    },
+    "max_pitch": {
+      "xmin": -350.00000000000006,
+      "xmax": 352.92217431989224,
+      "ymin": -350.0,
+      "ymax": 350.171308155679,
+      "zmin": 0.0,
+      "zmax": 343.22850444407766,
+      "xlen": 702.9221743198923,
+      "ylen": 700.1713081556791,
+      "zlen": 343.22850444407766
+    },
+    "max_roll": {
+      "xmin": -350.00000000000006,
+      "xmax": 350.00000000000006,
+      "ymin": -353.0934824755712,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 343.22850444407766,
+      "xlen": 700.0000000000001,
+      "ylen": 703.0934824755711,
+      "zlen": 343.22850444407766
+    },
+    "max_pitch_roll": {
+      "xmin": -350.00000000000006,
+      "xmax": 353.0587981265845,
+      "ymin": -353.39736242285534,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 361.43202735633855,
+      "xlen": 703.0587981265846,
+      "ylen": 703.3973624228554,
+      "zlen": 361.43202735633855
+    }
+  },
+  "actuator_body_collision_volume_mm3": {
+    "collapsed": 0.0,
+    "neutral": 0.0,
+    "raised": 0.0,
+    "max_pitch": 0.0,
+    "max_roll": 0.0,
+    "max_pitch_roll": 0.0
+  },
+  "actuator_eye_collision_volume_mm3": {
+    "collapsed": 0.0,
+    "neutral": 0.0,
+    "raised": 0.0,
+    "max_pitch": 0.0,
+    "max_roll": 0.0,
+    "max_pitch_roll": 0.0
+  },
+  "digital_core_checks_pass": true,
+  "step_reverse_import": {
+    "file": "outputs/minimal_radial_revC/step/MINIMAL_3RPS_radial_collapsed_revC.step",
+    "solid_count": 224,
+    "volume_mm3": 9752180.163729785,
+    "passes": true
+  },
+  "step_file_count": 14,
+  "collapsed_pin_lengths_mm": [
+    229.83907413666634,
+    229.83907413666634,
+    229.83907413666634
+  ],
+  "open_items": [
+    "LM4075OE delivered eye axial width and vendor STEP",
+    "LMB-10 included pin and positive retainer",
+    "M6x50 upper joint measured washer/shim stack",
+    "independent stop catch mounting standoff and exact SKU",
+    "one lower hub first-article hole/tap and wrench-access check"
+  ]
+}

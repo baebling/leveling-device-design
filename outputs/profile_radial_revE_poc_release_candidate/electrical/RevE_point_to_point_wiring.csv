@@ -1,0 +1,58 @@
+﻿wire_id,from,to,net,wire_size,color,cut_length_mm,note
+W001,J1-L,Q1-L-IN,AC_L,1.5 mm2,brown,350,mains competent-person work
+W002,J1-N,Q1-N-IN,AC_N,1.5 mm2,blue,350,mains competent-person work
+W003,J1-PE,X1-3,PE,2.5 mm2,green/yellow,300,do not switch/fuse
+W004,Q1-L-OUT,X1-1,AC_L_SW,1.5 mm2,brown,250,ferrules both ends
+W005,Q1-N-OUT,X1-2,AC_N_SW,1.5 mm2,blue,250,ferrules both ends
+W006,X1-1,PS1-L,AC_L_SW,1.5 mm2,brown,350,route left zone
+W007,X1-2,PS1-N,AC_N_SW,1.5 mm2,blue,350,route left zone
+W008,X1-3,PS1-FG,PE,2.5 mm2,green/yellow,400,ring/fork to verified stud
+W009,X1-4,lower frame bond,PE,2.5 mm2,green/yellow,1500,star washer on dedicated bond point
+W010,PS1 +V,X2-1,+24V,14 AWG,red,550,polarity check
+W011,PS1 -V,X2-2,0V,14 AWG,black,550,single DC common
+W012,X2-1,F1,+24V_D1,14 AWG,red,300,10A candidate
+W013,F1,D1 V+,+24V_D1_FUSED,14 AWG,red,450,10A candidate
+W014,X2-2,D1 GND,0V,14 AWG,black,450,
+W015,X2-1,F2,+24V_D2,14 AWG,red,350,10A candidate
+W016,F2,D2 V+,+24V_D2_FUSED,14 AWG,red,450,10A candidate
+W017,X2-2,D2 GND,0V,14 AWG,black,450,
+W018,X2-1,F6-1A,+24V_LOGIC,24 AWG,red,300,1A
+W019,F6-1A,U1 IN+,+24V_LOGIC_FUSED,24 AWG,red,300,
+W020,X2-2,U1 IN-,0V,24 AWG,black,300,
+W021,U1 OUT+,X2-9,+5V,24 AWG,red,250,set/verify 5.00V before load
+W022,U1 OUT-,X2-10,LOGIC_GND,24 AWG,black,250,
+W023,D1-M1A,F-A1-5A,MOTOR_A1_A,14 AWG,red,1800,5A provisional; output fuse
+W024,F-A1-5A,ACT1-M1,MOTOR_A1_A_FUSED,14 AWG,red,1800,verify extension polarity
+W025,D1-M1B,ACT1-M2,MOTOR_A1_B,14 AWG,black,1800,verify extension polarity
+W026,D1-M2A,F-A2-5A,MOTOR_A2_A,14 AWG,red,1800,5A provisional; output fuse
+W027,F-A2-5A,ACT2-M1,MOTOR_A2_A_FUSED,14 AWG,red,1800,verify extension polarity
+W028,D1-M2B,ACT2-M2,MOTOR_A2_B,14 AWG,black,1800,verify extension polarity
+W029,D2-M1A,F-A3-5A,MOTOR_A3_A,14 AWG,red,1800,5A provisional; output fuse
+W030,F-A3-5A,ACT3-M1,MOTOR_A3_A_FUSED,14 AWG,red,1800,verify extension polarity
+W031,D2-M1B,ACT3-M2,MOTOR_A3_B,14 AWG,black,1800,verify extension polarity
+W032,X2-9,ACT1-ENC-V+,A1_V,24 AWG,red,2000,wire color at actuator remains supplier-TBC
+W033,X2-10,ACT1-ENC-GND,A1_G,24 AWG,black,2000,wire color at actuator remains supplier-TBC
+W034,ACT1-ENC-A,Mega-D2,A1_A,24 AWG,green,2000,wire color at actuator remains supplier-TBC
+W035,ACT1-ENC-B,Mega-D22,A1_B,24 AWG,white,2000,wire color at actuator remains supplier-TBC
+W036,Mega-D5,D1-CH1-PWM,A1_P,24 AWG,yellow,600,
+W037,Mega-D30,D1-CH1-DIR,A1_D,24 AWG,blue,600,
+W038,X2-9,ACT2-ENC-V+,A2_V,24 AWG,red,2000,wire color at actuator remains supplier-TBC
+W039,X2-10,ACT2-ENC-GND,A2_G,24 AWG,black,2000,wire color at actuator remains supplier-TBC
+W040,ACT2-ENC-A,Mega-D3,A2_A,24 AWG,green,2000,wire color at actuator remains supplier-TBC
+W041,ACT2-ENC-B,Mega-D23,A2_B,24 AWG,white,2000,wire color at actuator remains supplier-TBC
+W042,Mega-D6,D1-CH2-PWM,A2_P,24 AWG,yellow,600,
+W043,Mega-D31,D1-CH2-DIR,A2_D,24 AWG,blue,600,
+W044,X2-9,ACT3-ENC-V+,A3_V,24 AWG,red,2000,wire color at actuator remains supplier-TBC
+W045,X2-10,ACT3-ENC-GND,A3_G,24 AWG,black,2000,wire color at actuator remains supplier-TBC
+W046,ACT3-ENC-A,Mega-D18,A3_A,24 AWG,green,2000,wire color at actuator remains supplier-TBC
+W047,ACT3-ENC-B,Mega-D24,A3_B,24 AWG,white,2000,wire color at actuator remains supplier-TBC
+W048,Mega-D7,D2-CH1-PWM,A3_P,24 AWG,yellow,600,
+W049,Mega-D32,D2-CH1-DIR,A3_D,24 AWG,blue,600,
+W050,Mega-D20/SDA,GY521-SDA,I2C_SDA,24 AWG,green,500,keep away from motor wires
+W051,Mega-D21/SCL,GY521-SCL,I2C_SCL,24 AWG,white,500,keep away from motor wires
+W052,X2-9,GY521-VCC,+5V_IMU,24 AWG,red,500,module accepts 3-5V; bench logic check
+W053,X2-10,GY521-GND,IMU_GND,24 AWG,black,500,
+W054,X2-9,Mega-5V,+5V_MEGA,24 AWG,red,350,USB VBUS must be disconnected when externally powered
+W055,X2-10,Mega-GND,LOGIC_GND,24 AWG,black,350,
+W056,Mega-D8,D2-CH2-PWM,UNUSED_PWM,24 AWG,yellow,350,firmware holds 0
+W057,Mega-D33,D2-CH2-DIR,UNUSED_DIR,24 AWG,blue,350,firmware holds low

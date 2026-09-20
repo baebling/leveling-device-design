@@ -1,0 +1,10 @@
+{
+  "autodeskProduct": "Fusion360",
+  "type": "script",
+  "author": "OpenAI Codex",
+  "description": {
+    "": "Generate the detailed manual 3-RPS Rev M1 assembly and verification exports."
+  },
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}

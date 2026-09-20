@@ -1,0 +1,67 @@
+{
+  "status": "PROTOTYPE_FABRICATION_BASELINE",
+  "workspace": {
+    "minimum_pin_length_mm": 273.19636171353596,
+    "minimum_case": {
+      "lift_mm": 0.0,
+      "pitch_deg": -3.0,
+      "roll_deg": -3.0,
+      "actuator": 2,
+      "length_mm": 273.19636171353596
+    },
+    "maximum_pin_length_mm": 385.34916776029746,
+    "maximum_case": {
+      "lift_mm": 100.0,
+      "pitch_deg": 3.0,
+      "roll_deg": -3.0,
+      "actuator": 3,
+      "length_mm": 385.34916776029746
+    },
+    "retraction_margin_mm": 8.196361713535964,
+    "extension_margin_mm": 29.650832239702538
+  },
+  "loads": {
+    "service_moving_mass_kg": 38.0,
+    "service_weight_n": 372.6527,
+    "design_factor": 2.0,
+    "design_vertical_load_n": 745.3054,
+    "assumed_plan_eccentricity_mm": 100.0,
+    "worst_vertical_actuator_reaction_n": 372.6527,
+    "minimum_actuator_vertical_direction_cosine": 0.5725843010814644,
+    "governing_force_pose": [
+      0.0,
+      -3.0,
+      -3.0,
+      2
+    ],
+    "worst_estimated_actuator_axial_force_n": 650.8259120904204,
+    "actuator_rating_n": 2000.0,
+    "actuator_rating_utilization": 0.3254129560452102,
+    "factored_3deg_lateral_guide_force_n": 39.006270802029746
+  },
+  "envelope": {
+    "disconnected_overall_height_mm": 300.0,
+    "platform_length_mm": 900.0,
+    "platform_width_mm": 800.0,
+    "moving_shaft_bottom_at_collapse_mm": -5.0,
+    "module_top_at_collapse_mm": 295.0,
+    "cart_side_receiver_top_when_connected_mm": 310.0
+  },
+  "clearance": {
+    "actuator_inner_envelope_radius_at_lower_joint_mm": 150.0,
+    "central_guide_design_envelope_radius_mm": 120.0,
+    "minimum_nominal_radial_gap_mm": 30.0
+  },
+  "stock": {
+    "flatbar_cut_length_mm": 3900.0,
+    "flatbar_kerf_allowance_mm": 92.0,
+    "flatbar_reserve_mm": 8008.0
+  },
+  "unresolved_checks": [
+    "Confirm delivered DHLA2000 pin-centre minimum/maximum length and end accessory stack before drilling joint parts.",
+    "Transfer-drill LMF12UU, SK12 and CR-3001 holes from delivered parts; their page tables do not publish complete mounting patterns.",
+    "Measure actuator running and inrush current before final breaker and power-supply release.",
+    "Perform a manual no-power sweep and a 1.25x stationary proof-load test before powered operation.",
+    "No person-carrying, mobile or unattended use is evaluated."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "revision": "B",
+  "status": "REJECTED_ASSEMBLY_GEOMETRY_REDESIGN_REQUIRED",
+  "artifact_count": 28,
+  "component_count": 80,
+  "artifacts": [
+    {
+      "path": "outputs/minimal_profile_only_revB/documents/electrical_control_completeness_2026-08-28.md",
+      "bytes": 5417,
+      "sha256": "ff6bfa3bb23b2bccb73f1b8e40e42ec84f4f7344f39dfe818edc60e3f167fb5d"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/documents/minimal_profile_only_revB_2026-08-31.md",
+      "bytes": 7036,
+      "sha256": "86d48df9a1c736dbb9138327d9866f1a4838807b61a3f814a610cbf568aa1085"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/documents/profile_only_revB_structural_bom_2026-08-31.md",
+      "bytes": 6389,
+      "sha256": "cd156b708c1dcdec49ee48a88816137350265ccc9101f43fb2b1af4d549d054d"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/documents/vendor_dimension_interface_audit_2026-08-31.md",
+      "bytes": 9207,
+      "sha256": "68aec8868074c5f67bb48436f2f158eb8dbb002cbe2a5cd18b0665e93eef7a74"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/FUSION360_IMPORT_AND_ASSEMBLY_GUIDE.md",
+      "bytes": 3582,
+      "sha256": "97e42560cf57f55b3fb6005160826193577941c2a8f145d7dc8752c4f388fac5"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/renders/01_collapsed_iso.png",
+      "bytes": 75062,
+      "sha256": "b840e7e09dd19f35106d77bd33b369f932a592c203463461dcdf5ed1774ed20c"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/renders/02_raised_iso.png",
+      "bytes": 86045,
+      "sha256": "6ab898350f83c7b518e3e50874c7e526e1b0d9db2e7cbdb9048f182fcf0ddc51"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/renders/03_max_pitch_roll_iso.png",
+      "bytes": 94455,
+      "sha256": "938384c67b105a48710c42c83b3f1f1a713dc5c16def03ec44b7ebd31d63b8df"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/renders/04_top.png",
+      "bytes": 25425,
+      "sha256": "d4b7f873941dd7dfd2510f698ae9941b709133a78fa7b43ff59834a9876cac5d"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/renders/05_exploded.png",
+      "bytes": 81044,
+      "sha256": "434d951cd50688b5bbaedcc64cf4ade411352bd80de8130fcc33c3e8624bf167"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/renders/06_actuator_1_joint_detail.png",
+      "bytes": 47312,
+      "sha256": "c1f2c2a575bdbfc53186cab6c08617291d6e03fb4cbba66287c3da0e6c16ab2a"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/ACTUATOR_1_complete_joint_detail_revB.step",
+      "bytes": 482292,
+      "sha256": "a1b208a64a0a982dd20833a1ca29c6d5e95547627b98e0f193413b26f72af206"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/MINIMAL_3RPS_profile_only_collapsed_revB.step",
+      "bytes": 3266767,
+      "sha256": "1e41781f9f289b62e8d672a5d4a246e0800672776ef87538b6da8e0b9f21e77a"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/MINIMAL_3RPS_profile_only_exploded_revB.step",
+      "bytes": 3257169,
+      "sha256": "15c01a51bb8e4a114f0c2cfc02b204af1a5d477cd5ae7d70f1779c3d74492e28"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/MINIMAL_3RPS_profile_only_max_pitch_revB.step",
+      "bytes": 3370894,
+      "sha256": "dcf058181722b286025eec2453fed32a67baf874bac776bd101634ffb2b9f8d5"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/MINIMAL_3RPS_profile_only_max_pitch_roll_revB.step",
+      "bytes": 3455244,
+      "sha256": "ab33274265bd920965911e0228a6c20d66060af37a06a2d64272cf3a9ae345e6"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/MINIMAL_3RPS_profile_only_max_roll_revB.step",
+      "bytes": 3361483,
+      "sha256": "ff1e9826a549a917b555918f9e0f264e1c52c94bf6256b63e9bc9d09e909f8f8"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/MINIMAL_3RPS_profile_only_neutral_revB.step",
+      "bytes": 3266578,
+      "sha256": "47de9244410673f631aa5b30f68b627e69954289f9d4676268e75ebbe1f8ade2"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/MINIMAL_3RPS_profile_only_raised_revB.step",
+      "bytes": 3266877,
+      "sha256": "b2822617672a775ed93b534fef2bb9381bf9f4238f526ffb2ebd421124f2b63c"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/SUB_01_LOWER_PROFILE_FRAME_collapsed_revB.step",
+      "bytes": 1570281,
+      "sha256": "3de8e852dd1159346bc1b495ae1c789c8e556dc71883e7f078eaa47419ee8d11"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/SUB_02_UPPER_PROFILE_FRAME_collapsed_revB.step",
+      "bytes": 1350846,
+      "sha256": "b570c8c317ef847baf5587801f4d4986e17c28e61a3992a84750506b6b2875d5"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/SUB_03_THREE_ACTUATORS_collapsed_revB.step",
+      "bytes": 164740,
+      "sha256": "92f32d289360270d47b2c2b42da88d2ce7c2a47136433fff64cfe46a3f255c36"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/step/SUB_04_MECHANICAL_STOPS_collapsed_revB.step",
+      "bytes": 143732,
+      "sha256": "21e06a094b0dbb84d72bbf56e0a3346a0d1b4a15ddafd4907fa21156c66e26a3"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/tables/profile_cut_list.csv",
+      "bytes": 302,
+      "sha256": "b7e9a6500cad14c4330d057a2c0e197b2328c0b5fefe1d2f9bc2c2c4d67ffc9f"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/tables/profile_only_component_manifest.csv",
+      "bytes": 8819,
+      "sha256": "685df2fa8a54b5788db2cfddd0836a65cb7d5c38d424d93c9733cb3e372d98a5"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/tables/profile_only_fastener_schedule.csv",
+      "bytes": 1014,
+      "sha256": "e71047f3019cb2b0dfbc4dc550976d5f37e3aff297e1a8f4a2fb8efdf872c9a7"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/tables/profile_only_mechanical_BOM.csv",
+      "bytes": 805,
+      "sha256": "4b8c1f0203fec763c54a57bbc68b1efc5760e860813988248b83c29528ea1708"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revB/verification/profile_only_validation.json",
+      "bytes": 18642,
+      "sha256": "915f76be09dbb47aeef06baa927bc9ead46b77e6b39acd0ffa6b62427ba5d412"
+    }
+  ]
+}

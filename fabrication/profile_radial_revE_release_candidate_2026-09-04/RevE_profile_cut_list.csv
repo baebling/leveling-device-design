@@ -1,0 +1,6 @@
+﻿assembly,profile,length_mm,qty,cut,tolerance_mm,inspection
+lower,DNF4040/M8,700,2,square 90 deg,+/-0.2,match pair within 0.2
+lower,DNF4040/M8,620,4,square 90 deg,+/-0.2,match set within 0.2
+upper,DNF3030-6/M6,700,2,square 90 deg,+/-0.2,match pair within 0.2
+upper,DNF3030-6/M6,640,4,square 90 deg,+/-0.2,match set within 0.2
+electrical,DIN rail 35 mm,320,2,square 90 deg; deburr,+/-1.0,confirm enclosure backplate before cut

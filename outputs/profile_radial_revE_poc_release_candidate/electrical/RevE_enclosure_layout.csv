@@ -1,0 +1,10 @@
+﻿ref,description,x,y,width,height,z,depth,zone,dimension_basis,mounting_gate
+PS1,Mean Well LRS-350-24,25,250,115,215,3,30,AC/DC boundary,official 215x115x30,M4 hole pattern verify on receipt
+Q1,ABE32b 2P breaker,35,65,36,80,8,75,220 VAC,conservative envelope,vendor outline verify
+X1,AC terminal block,85,85,100,25,8,25,220 VAC,layout envelope,cut/cover verify
+F1-F2,MDD input fuse holders,155,280,60,80,8,25,24 VDC,layout envelope,actual lead bend verify
+D1,Cytron MDD10A axes 1-2,265,390,84.5,62,12,22,24 V power,official 84.5x62,PCB hole pattern verify
+D2,Cytron MDD10A axis 3,265,300,84.5,62,12,22,24 V power,official 84.5x62,PCB hole pattern verify
+A1,Mega2560 compatible,248,215,102,54,12,22,5 V logic,Mega full-size envelope,TS0481 holes verify
+U1,24 V to 5 V buck,275,160,55,35,12,25,5 V logic,conservative envelope,module outline verify
+X2,SELV terminal block,245,85,105,25,8,25,24/5 VDC,layout envelope,cut/cover verify

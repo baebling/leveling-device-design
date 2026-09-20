@@ -1,0 +1,12 @@
+{
+  "revision": "E-RC1",
+  "supplier_interface_count": 22,
+  "open_supplier_interfaces": 10,
+  "candidate_bom_rows": 61,
+  "known_subtotal_krw": 1278437,
+  "target_margin_krw": 2321563,
+  "absolute_budget_margin_krw": 2721563,
+  "enclosure_layout_pass": true,
+  "purchase_release": false,
+  "power_release": false
+}

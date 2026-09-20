@@ -1,0 +1,13 @@
+﻿part,feature,x_mm,y_mm,diameter_mm,quantity
+LOWER_ADAPTER,support clearance,0,0,13.5,3
+LOWER_ADAPTER,M8 clearance,-35,0,9.0,3
+LOWER_ADAPTER,M8 clearance,35,0,9.0,3
+UPPER_ADAPTER,support clearance,0,0,21.5,3
+UPPER_ADAPTER,M8 clearance,-35,0,9.0,3
+UPPER_ADAPTER,M8 clearance,35,0,9.0,3
+LOWER_PROFILE_A1,stud relief in adjacent profile wall,4.592425496802574e-15,75.0,13.5,1
+LOWER_PROFILE_A2,stud relief in adjacent profile wall,-64.9519052838329,-37.50000000000001,13.5,1
+LOWER_PROFILE_A3,stud relief in adjacent profile wall,64.95190528383287,-37.500000000000036,13.5,1
+UPPER_PROFILE_A1,stud relief in adjacent profile wall,1.9288187086570814e-14,315.0,21.5,1
+UPPER_PROFILE_A2,stud relief in adjacent profile wall,-272.7980021920982,-157.50000000000003,21.5,1
+UPPER_PROFILE_A3,stud relief in adjacent profile wall,272.79800219209807,-157.50000000000014,21.5,1

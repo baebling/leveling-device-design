@@ -1,0 +1,6 @@
+﻿profile,cut_length_mm,quantity,cut_tolerance_mm,operation
+4040,700,2,+/-0.5,square cut; deburr only
+4040,620,3,+/-0.5,square cut; deburr only
+4040,297,2,+/-0.5,square cut; deburr only
+3030,700,2,+/-0.5,square cut; deburr only
+3030,640,4,+/-0.5,square cut; deburr only

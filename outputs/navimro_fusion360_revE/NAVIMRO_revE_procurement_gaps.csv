@@ -1,0 +1,15 @@
+﻿missing_item,planning_spec,quantity,use,release_action
+M4 low-head socket screw,M4x16 provisional,16,LMF12UU flange to transfer plate,Confirm delivered flange counterbore and select exact NAVIMRO SKU
+M4 flat washer,M4,16,LMF12UU flange,Select exact NAVIMRO SKU after receipt check
+M4 nyloc nut,M4,16,LMF12UU flange,Use only if delivered flange has through holes
+M4 socket screw,M4x45 provisional,4,Side-mounted SK12 supports,Confirm delivered SK12 hole and exact grip stack
+M4 flat washer,M4,4,SK12 supports,Select exact NAVIMRO SKU
+M4 T-slot nut,40-series slot compatible,4,SK12 supports,Confirm profile slot compatibility and select exact NAVIMRO SKU
+M6 socket screw,M6x20 provisional,8,CR-3001 mounting,Confirm actual mounting-hole diameter
+M6 flat washer,M6,8,CR-3001 mounting,Add after vendor confirmation
+M6 T-slot nut,40-series slot compatible,8,CR-3001 mounting,Confirm profile slot compatibility
+Deck compression sleeve,ID 8.6 / OD 18 / L15 aluminium,16,Acrylic deck,Select commercial spacer or machine from tube; transfer-check deck holes
+Locator pin,Master round plus relieved secondary,2,Cart coupling,Turn locally after cart receiver dimensions are frozen
+Actuator pivot bolt,"M8 shoulder or partially threaded bolt, 36 mm grip stack",6,JFT-8R double-shear yokes,Select exact shoulder length and positive retention
+JFT-8R spacer pair,ID 8.2 / OD 12 / 4 mm each side,12,Rod-end spherical insert,Measure delivered ball width before turning or ordering
+Motor-terminal bidirectional TVS,Manufacturer example 1.5KE24CA; final part not selected,3,One short-lead clamp at each DMD-150 motor output,Obtain NAVIMRO SKU and verify stand-off clamp and pulse-energy ratings by loaded-lowering test

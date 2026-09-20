@@ -1,0 +1,13 @@
+﻿item,description,quantity,status,installation
+P01,"4040 M8-slot extrusion, cut 700 mm",2,CUT,lower outer sides
+P02,"4040 M8-slot extrusion, cut 620 mm",3,CUT,lower front/back plus A1 tangent rail
+P03,"4040 M8-slot extrusion, CAD cut 296.696 mm",2,BLOCKED,297 mm is not an orderable fixed length; 300 mm does not fit this geometry
+P04,"3030 M6-slot extrusion, cut 700 mm",2,CUT,upper outer sides
+P05,"3030 M6-slot extrusion, cut 640 mm",4,CUT,upper front/back and two joint rows
+J01,"LM4075OE-1075, 24 V, 100 mm stroke, 5 V encoder",3,PROVISIONAL_CAD,replace yellow envelope with vendor STEP
+J02,LMB-10 lower clevis bracket,3,BLOCKED,current side mount cannot capture both 36 mm-spaced base features
+J03,PHS6 spherical rod end,3,BLOCKED,CAD profile-to-ring offset is 15 mm too short
+C01,4040 catalog 4035 angle connector,10,BLOCKED,"four A2/A3 joints are 30/60 degrees, not 90 degrees"
+C02,3030 catalog internal/angle connector,8,CATALOG,four outer corners plus four crossbar ends
+S01,M10 adjustable two-collar mechanical stop set,3,PROVISIONAL,independent of actuator electrical limits
+S02,profile-mounted stop capture bracket pair,3,PROVISIONAL,50 mm clear slot

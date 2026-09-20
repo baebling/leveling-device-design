@@ -1,0 +1,179 @@
+{
+  "enclosure_external_mm": [
+    400,
+    500,
+    155
+  ],
+  "assumed_usable_backplate_mm": [
+    360,
+    460
+  ],
+  "assumed_usable_height_mm": 127,
+  "device_count": 9,
+  "component_overlap_pairs": [],
+  "all_devices_in_assumed_bounds": true,
+  "ac_to_logic_planar_segregation_mm": 60,
+  "minimum_required_ac_to_logic_mm": 50,
+  "din_rail_cut_mm": [
+    320,
+    320
+  ],
+  "gland_centers_bottom_wall_x_mm": [
+    30,
+    150,
+    190,
+    230,
+    280,
+    320,
+    360
+  ],
+  "passes_layout_envelope": true,
+  "mounting_release": false,
+  "mounting_release_reason": "SL902 backplate and all board mounting-hole patterns must be verified on receipt.",
+  "clearances": [
+    {
+      "pair": "PS1__Q1",
+      "planar_clearance_mm": 105.0
+    },
+    {
+      "pair": "PS1__X1",
+      "planar_clearance_mm": 140.0
+    },
+    {
+      "pair": "PS1__F1-F2",
+      "planar_clearance_mm": 15.0
+    },
+    {
+      "pair": "PS1__D1",
+      "planar_clearance_mm": 125.0
+    },
+    {
+      "pair": "PS1__D2",
+      "planar_clearance_mm": 125.0
+    },
+    {
+      "pair": "PS1__A1",
+      "planar_clearance_mm": 108.0
+    },
+    {
+      "pair": "PS1__U1",
+      "planar_clearance_mm": 145.774
+    },
+    {
+      "pair": "PS1__X2",
+      "planar_clearance_mm": 175.0
+    },
+    {
+      "pair": "Q1__X1",
+      "planar_clearance_mm": 14.0
+    },
+    {
+      "pair": "Q1__F1-F2",
+      "planar_clearance_mm": 159.0
+    },
+    {
+      "pair": "Q1__D1",
+      "planar_clearance_mm": 312.508
+    },
+    {
+      "pair": "Q1__D2",
+      "planar_clearance_mm": 248.316
+    },
+    {
+      "pair": "Q1__A1",
+      "planar_clearance_mm": 190.339
+    },
+    {
+      "pair": "Q1__U1",
+      "planar_clearance_mm": 204.551
+    },
+    {
+      "pair": "Q1__X2",
+      "planar_clearance_mm": 174.0
+    },
+    {
+      "pair": "X1__F1-F2",
+      "planar_clearance_mm": 170.0
+    },
+    {
+      "pair": "X1__D1",
+      "planar_clearance_mm": 291.204
+    },
+    {
+      "pair": "X1__D2",
+      "planar_clearance_mm": 206.155
+    },
+    {
+      "pair": "X1__A1",
+      "planar_clearance_mm": 122.45
+    },
+    {
+      "pair": "X1__U1",
+      "planar_clearance_mm": 102.956
+    },
+    {
+      "pair": "X1__X2",
+      "planar_clearance_mm": 60.0
+    },
+    {
+      "pair": "F1-F2__D1",
+      "planar_clearance_mm": 58.31
+    },
+    {
+      "pair": "F1-F2__D2",
+      "planar_clearance_mm": 50.0
+    },
+    {
+      "pair": "F1-F2__A1",
+      "planar_clearance_mm": 34.785
+    },
+    {
+      "pair": "F1-F2__U1",
+      "planar_clearance_mm": 104.043
+    },
+    {
+      "pair": "F1-F2__X2",
+      "planar_clearance_mm": 172.627
+    },
+    {
+      "pair": "D1__D2",
+      "planar_clearance_mm": 28.0
+    },
+    {
+      "pair": "D1__A1",
+      "planar_clearance_mm": 121.0
+    },
+    {
+      "pair": "D1__U1",
+      "planar_clearance_mm": 195.0
+    },
+    {
+      "pair": "D1__X2",
+      "planar_clearance_mm": 280.0
+    },
+    {
+      "pair": "D2__A1",
+      "planar_clearance_mm": 31.0
+    },
+    {
+      "pair": "D2__U1",
+      "planar_clearance_mm": 105.0
+    },
+    {
+      "pair": "D2__X2",
+      "planar_clearance_mm": 190.0
+    },
+    {
+      "pair": "A1__U1",
+      "planar_clearance_mm": 20.0
+    },
+    {
+      "pair": "A1__X2",
+      "planar_clearance_mm": 105.0
+    },
+    {
+      "pair": "U1__X2",
+      "planar_clearance_mm": 50.0
+    }
+  ]
+}

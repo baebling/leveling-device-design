@@ -1,0 +1,1668 @@
+{
+  "revision": "E_ACTUAL_VENDOR_STEP",
+  "pose_count": 27,
+  "vendor_step": "C:\\Users\\gangm\\Downloads\\LM4075OE-1075-100mm.stp",
+  "vendor_part_count": 6,
+  "collapsed_pin_center_mm": 205.0,
+  "minimum_pin_mm": 210.771741,
+  "maximum_pin_mm": 276.937115,
+  "maximum_unintended_collision_volume_mm3": 0.0,
+  "passes": true,
+  "rows": [
+    {
+      "pose": "L0_P-3_R-3",
+      "lift_mm": 0.0,
+      "pitch_deg": -3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        215.265234,
+        220.190773,
+        237.023353
+      ],
+      "minimum_retract_margin_mm": 10.265234,
+      "minimum_extend_margin_mm": 67.976647,
+      "collision": {
+        "pose": "L0_P-3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P-3_R0",
+      "lift_mm": 0.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        224.874201,
+        215.639379,
+        232.026538
+      ],
+      "minimum_retract_margin_mm": 10.639379,
+      "minimum_extend_margin_mm": 72.973462,
+      "collision": {
+        "pose": "L0_P-3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P-3_R3",
+      "lift_mm": 0.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        234.138959,
+        211.178938,
+        227.124572
+      ],
+      "minimum_retract_margin_mm": 6.178938,
+      "minimum_extend_margin_mm": 70.861041,
+      "collision": {
+        "pose": "L0_P-3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P0_R-3",
+      "lift_mm": 0.0,
+      "pitch_deg": 0.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        214.573408,
+        228.507016,
+        229.451212
+      ],
+      "minimum_retract_margin_mm": 9.573408,
+      "minimum_extend_margin_mm": 75.548788,
+      "collision": {
+        "pose": "L0_P0_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P0_R0",
+      "lift_mm": 0.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        224.207493,
+        224.207493,
+        224.207493
+      ],
+      "minimum_retract_margin_mm": 19.207493,
+      "minimum_extend_margin_mm": 80.792507,
+      "collision": {
+        "pose": "L0_P0_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P0_R3",
+      "lift_mm": 0.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        233.495551,
+        220.004798,
+        219.049719
+      ],
+      "minimum_retract_margin_mm": 14.049719,
+      "minimum_extend_margin_mm": 71.504449,
+      "collision": {
+        "pose": "L0_P0_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P3_R-3",
+      "lift_mm": 0.0,
+      "pitch_deg": 3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        214.155313,
+        236.628546,
+        221.692581
+      ],
+      "minimum_retract_margin_mm": 9.155313,
+      "minimum_extend_margin_mm": 68.371454,
+      "collision": {
+        "pose": "L0_P3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P3_R0",
+      "lift_mm": 0.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        223.778144,
+        232.569876,
+        216.193565
+      ],
+      "minimum_retract_margin_mm": 11.193565,
+      "minimum_extend_margin_mm": 72.430124,
+      "collision": {
+        "pose": "L0_P3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P3_R3",
+      "lift_mm": 0.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        233.054023,
+        228.613785,
+        210.771741
+      ],
+      "minimum_retract_margin_mm": 5.771741,
+      "minimum_extend_margin_mm": 71.945977,
+      "collision": {
+        "pose": "L0_P3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P-3_R-3",
+      "lift_mm": 25.0,
+      "pitch_deg": -3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        233.342584,
+        238.573443,
+        256.538726
+      ],
+      "minimum_retract_margin_mm": 28.342584,
+      "minimum_extend_margin_mm": 48.461274,
+      "collision": {
+        "pose": "L25_P-3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P-3_R0",
+      "lift_mm": 25.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        243.580274,
+        233.751613,
+        251.21484
+      ],
+      "minimum_retract_margin_mm": 28.751613,
+      "minimum_extend_margin_mm": 53.78516,
+      "collision": {
+        "pose": "L25_P-3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P-3_R3",
+      "lift_mm": 25.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        253.450782,
+        229.002581,
+        245.964807
+      ],
+      "minimum_retract_margin_mm": 24.002581,
+      "minimum_extend_margin_mm": 51.549218,
+      "collision": {
+        "pose": "L25_P-3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P0_R-3",
+      "lift_mm": 25.0,
+      "pitch_deg": 0.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        232.62104,
+        247.456453,
+        248.460899
+      ],
+      "minimum_retract_margin_mm": 27.62104,
+      "minimum_extend_margin_mm": 56.539101,
+      "collision": {
+        "pose": "L25_P0_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P0_R0",
+      "lift_mm": 25.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        242.886805,
+        242.886805,
+        242.886805
+      ],
+      "minimum_retract_margin_mm": 37.886805,
+      "minimum_extend_margin_mm": 62.113195,
+      "collision": {
+        "pose": "L25_P0_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P0_R3",
+      "lift_mm": 25.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        252.783251,
+        238.396458,
+        237.376956
+      ],
+      "minimum_retract_margin_mm": 32.376956,
+      "minimum_extend_margin_mm": 52.216749,
+      "collision": {
+        "pose": "L25_P0_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P3_R-3",
+      "lift_mm": 25.0,
+      "pitch_deg": 3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        232.155663,
+        256.119953,
+        240.175946
+      ],
+      "minimum_retract_margin_mm": 27.155663,
+      "minimum_extend_margin_mm": 48.880047,
+      "collision": {
+        "pose": "L25_P3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P3_R0",
+      "lift_mm": 25.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        242.412281,
+        251.792122,
+        234.343926
+      ],
+      "minimum_retract_margin_mm": 29.343926,
+      "minimum_extend_margin_mm": 53.207878,
+      "collision": {
+        "pose": "L25_P3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P3_R3",
+      "lift_mm": 25.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        252.298508,
+        247.549897,
+        228.566574
+      ],
+      "minimum_retract_margin_mm": 23.566574,
+      "minimum_extend_margin_mm": 52.701492,
+      "collision": {
+        "pose": "L25_P3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P-3_R-3",
+      "lift_mm": 50.0,
+      "pitch_deg": -3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        252.603251,
+        258.070919,
+        276.937115
+      ],
+      "minimum_retract_margin_mm": 47.603251,
+      "minimum_extend_margin_mm": 28.062885,
+      "collision": {
+        "pose": "L50_P-3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P-3_R0",
+      "lift_mm": 50.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        263.333047,
+        253.040099,
+        271.351207
+      ],
+      "minimum_retract_margin_mm": 48.040099,
+      "minimum_extend_margin_mm": 33.648793,
+      "collision": {
+        "pose": "L50_P-3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P-3_R3",
+      "lift_mm": 50.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        273.685121,
+        248.068177,
+        265.822876
+      ],
+      "minimum_retract_margin_mm": 43.068177,
+      "minimum_extend_margin_mm": 31.314879,
+      "collision": {
+        "pose": "L50_P-3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P0_R-3",
+      "lift_mm": 50.0,
+      "pitch_deg": 0.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        251.85978,
+        267.402199,
+        268.454425
+      ],
+      "minimum_retract_margin_mm": 46.85978,
+      "minimum_extend_margin_mm": 36.545575,
+      "collision": {
+        "pose": "L50_P0_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P0_R0",
+      "lift_mm": 50.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        262.619497,
+        262.619497,
+        262.619497
+      ],
+      "minimum_retract_margin_mm": 57.619497,
+      "minimum_extend_margin_mm": 42.380503,
+      "collision": {
+        "pose": "L50_P0_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P0_R3",
+      "lift_mm": 50.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        272.999215,
+        257.902368,
+        256.832357
+      ],
+      "minimum_retract_margin_mm": 51.832357,
+      "minimum_extend_margin_mm": 32.000785,
+      "collision": {
+        "pose": "L50_P0_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P3_R-3",
+      "lift_mm": 50.0,
+      "pitch_deg": 3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        251.356331,
+        276.499172,
+        259.752517
+      ],
+      "minimum_retract_margin_mm": 46.356331,
+      "minimum_extend_margin_mm": 28.500828,
+      "collision": {
+        "pose": "L50_P3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P3_R0",
+      "lift_mm": 50.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        262.108319,
+        271.955507,
+        253.662166
+      ],
+      "minimum_retract_margin_mm": 48.662166,
+      "minimum_extend_margin_mm": 33.044493,
+      "collision": {
+        "pose": "L50_P3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P3_R3",
+      "lift_mm": 50.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        272.479167,
+        267.483906,
+        247.609836
+      ],
+      "minimum_retract_margin_mm": 42.609836,
+      "minimum_extend_margin_mm": 32.520833,
+      "collision": {
+        "pose": "L50_P3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "vendor_step_sha256": "1BC86009BADDCF6458EEB63FB1FCAC349FD80B6B64F9A0DDFA7C4B824DF52F3B",
+  "vendor_rear_pin_center_mm": [
+    11.409449,
+    -228.951419,
+    -5.366741
+  ],
+  "vendor_front_pin_center_mm": [
+    -193.590551,
+    -228.951419,
+    -5.366741
+  ],
+  "vendor_collapsed_pin_center_distance_mm": 205.0,
+  "fusion_input_steps": [
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_UP.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_END.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_MOTER.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_WAIKE.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_FENGTOU.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_NEIGUAN.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_UP.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_END.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_MOTER.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_WAIKE.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_FENGTOU.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_NEIGUAN.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_UP.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_END.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_MOTER.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_WAIKE.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_FENGTOU.step",
+    "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_NEIGUAN.step"
+  ],
+  "note": "The collapsed master includes the positioned Rev D stop and fastener groups. Pose models include the complete structural groups and actual vendor actuator solids; mixed fixed/moving stop and fastener groups are excluded from moved poses.",
+  "purchase_release": false,
+  "fabrication_release": false
+}

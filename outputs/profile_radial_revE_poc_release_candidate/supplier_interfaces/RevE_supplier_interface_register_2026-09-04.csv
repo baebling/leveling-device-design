@@ -1,0 +1,23 @@
+﻿interface_id,part,parameter,value,unit,source,confidence,gate
+M01-01,LM4075OE-1075,motor_voltage,24,VDC,user-selected option,HIGH,LOCKED
+M01-02,LM4075OE-1075,stroke,100,mm,supplier listing/STEP,HIGH,LOCKED
+M01-03,LM4075OE-1075,speed,10,mm/s,supplier listing,HIGH,LOCKED
+M01-04,LM4075OE-1075,rated_force,750,N,supplier listing,HIGH,LOCKED
+M01-05,LM4075OE-1075,encoder_supply,5,VDC,selected option,MEDIUM,VERIFY_WRITTEN
+M01-06,LM4075OE-1075,encoder_resolution,6,ppr,supplier listing,MEDIUM,VERIFY_COUNTS_PER_MM
+M01-07,LM4075OE-1075,collapsed_pin_distance,205.0,mm,vendor STEP measurement,HIGH,LOCKED_CAD
+M01-08,LM4075OE-1075,rear_eye_width,18.0,mm,vendor STEP measurement,HIGH,LOCKED_CAD
+M01-09,LM4075OE-1075,front_eye_width_at_bore,19.0,mm,vendor STEP measurement,HIGH,LOCKED_CAD
+M01-10,LM4075OE-1075,pivot_bore,6.4,mm,vendor STEP measurement,HIGH,LOCKED_CAD
+M01-11,LM4075OE-1075,rated_current,,A,supplier response/measurement required,OPEN,BLOCKS_POWER_RELEASE
+M01-12,LM4075OE-1075,startup_current,,A,measurement required,OPEN,BLOCKS_POWER_RELEASE
+M01-13,LM4075OE-1075,stall_current,,A,supplier response/measurement required,OPEN,BLOCKS_POWER_RELEASE
+M01-14,LM4075OE-1075,encoder_wire_colors_levels,,text,supplier response required,OPEN,BLOCKS_HARNESS_RELEASE
+M01-15,LM4075OE-1075,internal_limit_behavior,,text,supplier response/bench test required,OPEN,BLOCKS_HOME_RELEASE
+M01-16,LM4075OE-1075,duty_cycle,,%/min,supplier response required,OPEN,BLOCKS_THERMAL_RELEASE
+M02-01,LMB-10,base_hole_pitch,36.0,mm,photograph-derived CAD assumption,LOW,BLOCKS_FABRICATION_RELEASE
+M02-02,LMB-10,base_envelope,56x26,mm,photograph-derived CAD assumption,LOW,BLOCKS_FABRICATION_RELEASE
+M02-03,LMB-10,inner_gap,,mm,supplier drawing/measurement required,OPEN,BLOCKS_PIN_STACK_RELEASE
+M02-04,LMB-10,pivot_center_from_base,,mm,supplier drawing/measurement required,OPEN,BLOCKS_CAD_FREEZE
+M02-05,LMB-10,pin_diameter_length,,mm,supplier drawing/measurement required,OPEN,BLOCKS_PIN_RELEASE
+M02-06,LMB-10,pin_retainers_included,,yes/no,supplier response required,OPEN,BLOCKS_BOM_RELEASE

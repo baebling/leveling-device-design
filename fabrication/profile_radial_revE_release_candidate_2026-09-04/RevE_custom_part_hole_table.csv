@@ -1,0 +1,27 @@
+﻿part_id,title,qty,material,thickness_or_length_mm,feature,x_mm,y_mm,diameter_mm,note,release_gate
+C01,A1 LMB radial adapter,1,A6061-T6,8.0,THRU,-48.000,12.000,9.000,M8 profile clearance,LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C01,A1 LMB radial adapter,1,A6061-T6,8.0,THRU,48.000,12.000,9.000,M8 profile clearance,LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C01,A1 LMB radial adapter,1,A6061-T6,8.0,TAP,14.500,-24.000,6.800,"DRILL D6.8, TAP M8x1.25-6H",LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C01,A1 LMB radial adapter,1,A6061-T6,8.0,TAP,14.500,12.000,6.800,"DRILL D6.8, TAP M8x1.25-6H",LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C02,A2 LMB radial adapter,1,A6061-T6,8.0,THRU,-48.000,-18.557,9.000,M8 profile clearance,LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C02,A2 LMB radial adapter,1,A6061-T6,8.0,THRU,48.000,-18.557,9.000,M8 profile clearance,LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C02,A2 LMB radial adapter,1,A6061-T6,8.0,TAP,23.927,12.000,6.800,"DRILL D6.8, TAP M8x1.25-6H",LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C02,A2 LMB radial adapter,1,A6061-T6,8.0,TAP,-7.250,-6.000,6.800,"DRILL D6.8, TAP M8x1.25-6H",LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C03,A3 LMB radial adapter,1,A6061-T6,8.0,THRU,-50.000,6.557,9.000,M8 profile clearance,LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C03,A3 LMB radial adapter,1,A6061-T6,8.0,THRU,50.000,6.557,9.000,M8 profile clearance,LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C03,A3 LMB radial adapter,1,A6061-T6,8.0,TAP,-18.427,12.000,6.800,"DRILL D6.8, TAP M8x1.25-6H",LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C03,A3 LMB radial adapter,1,A6061-T6,8.0,TAP,12.750,-6.000,6.800,"DRILL D6.8, TAP M8x1.25-6H",LMB-10 D36 pitch and base envelope are provisional pending supplier drawing/first article.
+C04,Lower stop catch FRONT,1,A6061-T6,8.0,OPEN,0.000,-9.500,50.000,Swept stop opening,
+C04,Lower stop catch FRONT,1,A6061-T6,8.0,THRU,-32.000,42.500,9.000,M8 clearance,
+C04,Lower stop catch FRONT,1,A6061-T6,8.0,THRU,32.000,42.500,9.000,M8 clearance,
+C05,Lower stop catch REAR,2,A6061-T6,8.0,OPEN,0.000,9.500,50.000,Swept stop opening,
+C05,Lower stop catch REAR,2,A6061-T6,8.0,THRU,-32.000,-42.500,9.000,M8 clearance,
+C05,Lower stop catch REAR,2,A6061-T6,8.0,THRU,32.000,-42.500,9.000,M8 clearance,
+C06,Upper stop anchor FRONT,1,A6061-T6,6.0,THRU,0.000,-29.500,10.500,M10 clearance,
+C06,Upper stop anchor FRONT,1,A6061-T6,6.0,THRU,-25.000,22.500,6.800,M6 clearance,
+C06,Upper stop anchor FRONT,1,A6061-T6,6.0,THRU,25.000,22.500,6.800,M6 clearance,
+C07,Upper stop anchor REAR,2,A6061-T6,6.0,THRU,0.000,29.500,10.500,M10 clearance,
+C07,Upper stop anchor REAR,2,A6061-T6,6.0,THRU,-25.000,-22.500,6.800,M6 clearance,
+C07,Upper stop anchor REAR,2,A6061-T6,6.0,THRU,25.000,-22.500,6.800,M6 clearance,
+C08,Stop contact bar,6,A6061-T6,4.0,THRU,0.000,0.000,10.500,M10 clearance,
+C09,Round through-bore standoff,6,A6061-T6,28.0,THRU,0.000,0.000,8.400,ID D8.4 +0.2/0 through,

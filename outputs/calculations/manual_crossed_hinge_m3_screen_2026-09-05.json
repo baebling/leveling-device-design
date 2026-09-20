@@ -1,0 +1,60 @@
+{
+  "status": "PRELIMINARY_NOT_APPROVED_FOR_FABRICATION",
+  "lever_cases": [
+    {
+      "lever_mm": 200,
+      "adjust_each_side_mm": 10.481555856608242,
+      "full_adjust_mm": 20.963111713216485,
+      "angle_per_turn_deg": 0.5013252767618416
+    },
+    {
+      "lever_mm": 250,
+      "adjust_each_side_mm": 13.101944820760302,
+      "full_adjust_mm": 26.203889641520604,
+      "angle_per_turn_deg": 0.4010639059667059
+    },
+    {
+      "lever_mm": 300,
+      "adjust_each_side_mm": 15.722333784912363,
+      "full_adjust_mm": 31.444667569824727,
+      "angle_per_turn_deg": 0.33422158958805254
+    }
+  ],
+  "illustrative_center_motion_mm": {
+    "x": 4.697697210232015,
+    "y": 2.264746405396029,
+    "z": 13.23940418704791
+  },
+  "assumptions": {
+    "a_mm": [
+      -125,
+      0,
+      0
+    ],
+    "b_mm": [
+      0,
+      -125,
+      40
+    ],
+    "p0_mm": [
+      0,
+      0,
+      80
+    ],
+    "order": "Ry(pitch)*Rx(roll)",
+    "sample_count": 169
+  },
+  "screening": {
+    "mass_cases_kg": [
+      15,
+      25
+    ],
+    "g": 9.80665,
+    "SF": 2,
+    "load_25kg_N": 245.16625,
+    "design_vertical_N": 490.3325,
+    "max_screw_N": 196.40216233761026,
+    "max_screw_factored_N": 392.8043246752205
+  }
+}
+

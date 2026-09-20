@@ -1,0 +1,32 @@
+[
+  {
+    "gate": "G-M01",
+    "check": "Actuator exact option/current/encoder wiring/internal limit/duty cycle",
+    "method": "written supplier data + first article",
+    "status": "OPEN"
+  },
+  {
+    "gate": "G-M02",
+    "check": "LMB-10 D36 pitch, inner gap, pin center, pin and retainer",
+    "method": "supplier drawing or caliper first article",
+    "status": "OPEN"
+  },
+  {
+    "gate": "G-C01",
+    "check": "Adapters C01-C03 updated after G-M02",
+    "method": "hole-table revision and CAD rerun",
+    "status": "OPEN"
+  },
+  {
+    "gate": "G-DXF",
+    "check": "Nine DXFs agree with PDF and hole table",
+    "method": "automated coordinate audit",
+    "status": "PASS_RC"
+  },
+  {
+    "gate": "G-CUT",
+    "check": "Profile cut quantities and lengths agree with CAD/BOM",
+    "method": "automated BOM audit",
+    "status": "PASS_RC"
+  }
+]

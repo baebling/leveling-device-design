@@ -1,0 +1,16 @@
+﻿part_no,name,stock,length_mm,quantity,feature,vendor_transfer_drill
+NVR-P01,universal_lower_mount_tab,SS400 50x6,120.0,4,two_24x11_slots,NO
+NVR-P03,upper_joint_spreader,SS400 50x6,100.0,3,two_24x9_slots,NO
+NVR-P04,lower_joint_spreader,SS400 50x6,100.0,3,two_24x9_slots,NO
+NVR-P06,shaft_support_riser,SS400 50x6,200.0,2,riser_base_and_LMF_transfer,YES
+NVR-P07,cardan_lug,SS400 50x6,70.0,4,pivot_8.5_root_8.5,NO
+NVR-P08,cardan_bridge,SS400 50x6,100.0,2,four_8.5_holes,NO
+NVR-P09,bushing_transfer_tab,SS400 50x6,80.0,4,transfer_drill_LMF12UU,YES
+NVR-P10,locator_plate,SS400 50x6,120.0,2,one_11_hole_two_9_slots,NO
+NVR-P11,latch_spreader,SS400 50x6,100.0,4,transfer_drill_CR3001,YES
+NVR-P12,latch_keeper,SS400 50x6,70.0,4,transfer_drill_CR3001,YES
+NVR-P13,rest_pad_and_Z_bumper,SS400 50x6,50.0,8,four_8.5_holes,NO
+NVR-P14,cardan_cross_laminate,SS400 50x6,50.0,6,four_8.5_holes,NO
+SUMMARY,cut_total,2 x 6000 mm stock,3900.0,,,
+SUMMARY,kerf_allowance,2 mm/cut,92.0,,,
+SUMMARY,remaining_reserve,,8008.0,,,

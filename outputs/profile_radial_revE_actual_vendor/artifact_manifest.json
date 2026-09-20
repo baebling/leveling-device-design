@@ -1,0 +1,191 @@
+{
+  "revision": "E_ACTUAL_VENDOR_STEP",
+  "artifact_count": 37,
+  "artifacts": [
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_COLLAPSED.step",
+      "bytes": 12515932,
+      "sha256": "6A6D8962CE0E0B037ADF19642C59D77253DD54F30E66E66CB1D392445E35D854"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_NEUTRAL.step",
+      "bytes": 10060860,
+      "sha256": "A1F9F9968C37275FD45E53D1B57AEC4941C8FB35021FC01F49218ED68358A898"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_RAISED.step",
+      "bytes": 10058367,
+      "sha256": "4DD96799E73D1334DE9E4F70067DCE234FB28FAD28855B17C46566878BBACC7B"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_PITCH_P3.step",
+      "bytes": 10207848,
+      "sha256": "167F3DC7033729C3CF25989BAC3C09ABBF37375E9C98FAB5B349758B56D4E079"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_PITCH_M3.step",
+      "bytes": 10255190,
+      "sha256": "2F7894332ED0ADD607A361EECACF96FAB45FF502E90C1B472F0AD9D862F58F46"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_ROLL_P3.step",
+      "bytes": 10210976,
+      "sha256": "A6D297366C09E2B565387256E59885E25AA8F423E99BFBCB0C1F5D41FCB47BA0"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_ROLL_M3.step",
+      "bytes": 10208508,
+      "sha256": "554DFD2987062A4B753233FE9B726FC93659CDEC142F07F7BACD92634F38D998"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_P3_R3.step",
+      "bytes": 10247198,
+      "sha256": "828187133342E4F86AA7CD46AA137A4DF281FB5F9BF74AA35281B22A7E03D469"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_P3_RM3.step",
+      "bytes": 10245890,
+      "sha256": "3AFAFFCDB2E0D7B46A29030820FC9A2696C5318F816E8095FCA4E88DC7520E65"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_PM3_R3.step",
+      "bytes": 10244268,
+      "sha256": "3CD85C6038369784F2D861367873C092940ADC37EBF42281171454896055D0DD"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\step\\Profile_Radial_3RPS_RevE_PM3_RM3.step",
+      "bytes": 10199130,
+      "sha256": "5C5B6924B8239CEA28C533EFF08AB95D28C110C42570CC580C191C4B0D6ADAFA"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_UP.step",
+      "bytes": 728217,
+      "sha256": "B977F28F03FA7EE241B2D6C3716EDE5FBCB65CF237120E372FF9906A90C99A66"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_END.step",
+      "bytes": 1085397,
+      "sha256": "F0C4F96A0AE4A7730E34F3E860410EFDC2BA87904117AE6138324D5502F46F31"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_MOTER.step",
+      "bytes": 271488,
+      "sha256": "F25A0966C76EA5357ED70A451FB411CDD1527AB1237DCC6F844AE1A2110CC5A2"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_WAIKE.step",
+      "bytes": 44030,
+      "sha256": "75D90EA592B3F5E91DD6183B0B72AC2E735C3AAF7A422F8F70AEAFF9B0FD268C"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_FENGTOU.step",
+      "bytes": 61943,
+      "sha256": "0C38ABB10F3F88DD527D515B485D543BE28C0FC8ED78DAECDC85B1BE5A416E0B"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A1_NEIGUAN.step",
+      "bytes": 164570,
+      "sha256": "3C287ADAFF679943F4966D9D0486DE661E6695FA8DDBD3584AC9C0C6A830A9DD"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_UP.step",
+      "bytes": 727053,
+      "sha256": "25671634F8FA2A60FA8CBBA06AD3C0446EA3DA510F9F272EC86C1879F2A0931C"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_END.step",
+      "bytes": 1085862,
+      "sha256": "4DD287C59AD9B4AED11179173121BCBE8FBF5E7795984B6A753926C3658C1753"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_MOTER.step",
+      "bytes": 272304,
+      "sha256": "A9860C9DA39C6A4E43EF6BF2D8E0FE92D6C69110F6D0E55A695B45F32D14E8B6"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_WAIKE.step",
+      "bytes": 44201,
+      "sha256": "A84B6A3CA1E7BE756B30DEAD0082380BD3C3298CC8F5D1E9CD2CED4CB118B73E"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_FENGTOU.step",
+      "bytes": 61928,
+      "sha256": "86F3EE850C7F31F6F932F5361D92528DD84497E8202618A3AE1E64FFBFE629E1"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A2_NEIGUAN.step",
+      "bytes": 164927,
+      "sha256": "1D32B464C912AEAF5916CBDB124035B1D7B5124750332063E78589A54BA1E009"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_UP.step",
+      "bytes": 727022,
+      "sha256": "D7ED7C29FC485FACE37C9DF2B5E39C32FD871BC683CDFD30DED222F1725D4C7F"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_END.step",
+      "bytes": 1085120,
+      "sha256": "1C708D1429631E53B4709A47C8D885618B2F99F4644A455383BB5CF800A4D9EB"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_MOTER.step",
+      "bytes": 270591,
+      "sha256": "D461045D3D6A525022FE1F195B8DBF41367E3AD214EF73D0CB45A234FB5CE038"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_WAIKE.step",
+      "bytes": 44196,
+      "sha256": "FEBE1CC7F2549A5AD03AA1133E9C2E917BB82E6B5CF7B667DEA2560F8DC274AC"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_FENGTOU.step",
+      "bytes": 61934,
+      "sha256": "A65277BA1CBB182AC631F9BBE2595A2FA669330EE2BD522929903C092D53F11C"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\fusion_inputs\\collapsed_actuator_parts\\A3_NEIGUAN.step",
+      "bytes": 164919,
+      "sha256": "83EEC1F002843DDCED1D1ADAB85DC6934B1352F444D157440CD5C7584AAB48D1"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\renders\\01_COLLAPSED_ACTUAL.png",
+      "bytes": 736185,
+      "sha256": "383575895F54D145A94E39258621A80A47627CF8BCE9E914F4F533C8DE8E3FF9"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\renders\\02_RAISED_ACTUAL.png",
+      "bytes": 704291,
+      "sha256": "7237A7C37A69B7B49787851454A148BBB96DBC5355C04A2E33B1DC26C47D3ED8"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\renders\\03_PITCH3_ROLL3_ACTUAL.png",
+      "bytes": 697958,
+      "sha256": "B755CA6D64DAE5F3DA9AE05AE4C54F7149E7B8C8FF5BA498BB873D03D719FBA0"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\renders\\04_TOP_ACTUAL.png",
+      "bytes": 714343,
+      "sha256": "026522BD869877CD2528A040F5A94BFAC187E768262D1E74949EB245225532FA"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\renders\\05_SIDE_ACTUAL.png",
+      "bytes": 775258,
+      "sha256": "F70A44E64C2229BEF20206FBDE9A410822E9244BF1A6411C799ED8076CC34A72"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\renders\\06_A1_JOINT_ACTUAL.png",
+      "bytes": 841762,
+      "sha256": "49A54B5FC0755278FB9F1EFDC69CC22A8894B5277CD3039DEA73D033CC53DDA2"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\renders\\Profile_Radial_3RPS_RevE_pitch_roll_motion.gif",
+      "bytes": 1918667,
+      "sha256": "7D830620B88D6EAAA3C5243E5073292FF7D56173EE55D637C9D836687639FF98"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_actual_step_validation.json",
+      "bytes": 46927,
+      "sha256": "B1177036E359EC214745F5ABF19DF4420DA9F4952204839C135BB75C71E2D1CA"
+    }
+  ]
+}

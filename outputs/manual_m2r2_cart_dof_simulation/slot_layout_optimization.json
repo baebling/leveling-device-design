@@ -1,0 +1,923 @@
+{
+  "status": "PHASE_1_PRELIMINARY_NOT_APPROVED_FOR_FABRICATION",
+  "optimization_scope": "Move lower SHAT12 joint centres in existing 4080 slots; retain every cart BOM item and profile cut length.",
+  "selection_rule": "Largest screened offset with at least 15 mm rear SHAT12 foot-to-foot clearance.",
+  "candidate_rows": [
+    {
+      "horizontal_joint_offset_mm": 160.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          90.0,
+          63.0
+        ],
+        [
+          -90.0,
+          -180.0,
+          63.0
+        ],
+        [
+          90.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 292.78250586152114,
+      "estimated_overall_top_z_mm": 355.78250586152114,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 260.93164026942094,
+      "maximum_pin_distance_mm": 297.9227760113539,
+      "minimum_length_margin_mm": 0.9316402694209387,
+      "maximum_turns_from_neutral": 5.4481027801654465,
+      "maximum_required_phs_angle_deg": 2.5319425166349796,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 3.5334898849094296,
+      "robust_common_z_interval_length_only_mm": [
+        -1.1739515010842183,
+        2.4497529801579674
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 138.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 165.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          85.0,
+          63.0
+        ],
+        [
+          -85.0,
+          -180.0,
+          63.0
+        ],
+        [
+          85.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 289.2189205172724,
+      "estimated_overall_top_z_mm": 352.2189205172724,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 261.2095287827329,
+      "maximum_pin_distance_mm": 297.6280821040934,
+      "minimum_length_margin_mm": 1.2095287827328889,
+      "maximum_turns_from_neutral": 5.368706062076318,
+      "maximum_required_phs_angle_deg": 2.4957173392907595,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 3.6237453008315272,
+      "robust_common_z_interval_length_only_mm": [
+        -1.5531299013127295,
+        2.8336068999554698
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 128.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 170.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          80.0,
+          63.0
+        ],
+        [
+          -80.0,
+          -180.0,
+          63.0
+        ],
+        [
+          80.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 285.4859546128699,
+      "estimated_overall_top_z_mm": 348.4859546128699,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 261.5016906695544,
+      "maximum_pin_distance_mm": 297.3202831706565,
+      "minimum_length_margin_mm": 1.5016906695544208,
+      "maximum_turns_from_neutral": 5.285231237270166,
+      "maximum_required_phs_angle_deg": 2.4576608301612546,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 3.7210443837418374,
+      "robust_common_z_interval_length_only_mm": [
+        -1.9675689303022637,
+        3.2454334423586886
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 118.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 175.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          75.0,
+          63.0
+        ],
+        [
+          -75.0,
+          -180.0,
+          63.0
+        ],
+        [
+          75.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 281.57492994394397,
+      "estimated_overall_top_z_mm": 344.57492994394397,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 261.8088236760798,
+      "maximum_pin_distance_mm": 296.99868127134596,
+      "minimum_length_margin_mm": 1.8088236760797827,
+      "maximum_turns_from_neutral": 5.197478949691491,
+      "maximum_required_phs_angle_deg": 2.4176806620002314,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 3.8262146782465094,
+      "robust_common_z_interval_length_only_mm": [
+        -2.421737557196451,
+        3.68815447607588
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 108.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 180.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          70.0,
+          63.0
+        ],
+        [
+          -70.0,
+          -180.0,
+          63.0
+        ],
+        [
+          70.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 277.47610589527216,
+      "estimated_overall_top_z_mm": 340.47610589527216,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 262.13171094858484,
+      "maximum_pin_distance_mm": 296.66249302969726,
+      "minimum_length_margin_mm": 2.131710948584839,
+      "maximum_turns_from_neutral": 5.1052254432614745,
+      "maximum_required_phs_angle_deg": 2.375673186364324,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 3.940231868703981,
+      "robust_common_z_interval_length_only_mm": [
+        -2.9209797811438136,
+        4.165160543339113
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 98.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 185.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          65.0,
+          63.0
+        ],
+        [
+          -65.0,
+          -180.0,
+          63.0
+        ],
+        [
+          65.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 273.178495569837,
+      "estimated_overall_top_z_mm": 336.178495569837,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 262.4712358302879,
+      "maximum_pin_distance_mm": 296.3108348356594,
+      "minimum_length_margin_mm": 2.471235830287924,
+      "maximum_turns_from_neutral": 5.00821833420345,
+      "maximum_required_phs_angle_deg": 2.3315214735235763,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 4.06425492194149,
+      "robust_common_z_interval_length_only_mm": [
+        -3.471745616588805,
+        4.68041104948108
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 88.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 190.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          60.0,
+          63.0
+        ],
+        [
+          -60.0,
+          -180.0,
+          63.0
+        ],
+        [
+          60.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 268.6696380120313,
+      "estimated_overall_top_z_mm": 331.6696380120313,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 262.82840019187836,
+      "maximum_pin_distance_mm": 295.942704515111,
+      "minimum_length_margin_mm": 2.828400191878359,
+      "maximum_turns_from_neutral": 4.90617137374904,
+      "maximum_required_phs_angle_deg": 2.2850928842387424,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 4.19967213307546,
+      "robust_common_z_interval_length_only_mm": [
+        -4.081901636779094,
+        5.238562098020822
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 78.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 195.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          55.0,
+          63.0
+        ],
+        [
+          -55.0,
+          -180.0,
+          63.0
+        ],
+        [
+          55.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 263.9353129741012,
+      "estimated_overall_top_z_mm": 326.9353129741012,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 263.20434738642,
+      "maximum_pin_distance_mm": 295.556958375007,
+      "minimum_length_margin_mm": 3.204347386420011,
+      "maximum_turns_from_neutral": 4.798757889594283,
+      "maximum_required_phs_angle_deg": 2.2362360289072183,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 4.348162316654539,
+      "robust_common_z_interval_length_only_mm": [
+        -4.761155744539309,
+        5.845131490416975
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 68.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 200.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          50.0,
+          63.0
+        ],
+        [
+          -50.0,
+          -180.0,
+          63.0
+        ],
+        [
+          50.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 258.95917942265424,
+      "estimated_overall_top_z_mm": 321.95917942265424,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 263.6003913421029,
+      "maximum_pin_distance_mm": 295.15228211068194,
+      "minimum_length_margin_mm": 3.6003913421029097,
+      "maximum_turns_from_neutral": 4.685602473684883,
+      "maximum_required_phs_angle_deg": 2.184776913568634,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 4.511777405397704,
+      "robust_common_z_interval_length_only_mm": [
+        -5.521649615247895,
+        6.506714420227411
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 58.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 205.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          45.0,
+          63.0
+        ],
+        [
+          -45.0,
+          -180.0,
+          63.0
+        ],
+        [
+          45.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 253.7223112276065,
+      "estimated_overall_top_z_mm": 316.7223112276065,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 264.0180539305002,
+      "maximum_pin_distance_mm": 294.7271534376521,
+      "minimum_length_margin_mm": 4.018053930500173,
+      "maximum_turns_from_neutral": 4.566270305571379,
+      "maximum_required_phs_angle_deg": 2.1305139895651957,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 4.693055899145113,
+      "robust_common_z_interval_length_only_mm": [
+        -6.378803524458277,
+        7.231269440337854
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 48.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 210.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          40.0,
+          63.0
+        ],
+        [
+          -40.0,
+          -180.0,
+          63.0
+        ],
+        [
+          40.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 248.20259177452135,
+      "estimated_overall_top_z_mm": 311.20259177452135,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 264.45911368988527,
+      "maximum_pin_distance_mm": 294.2797933683633,
+      "minimum_length_margin_mm": 4.459113689885271,
+      "maximum_turns_from_neutral": 4.440253231461351,
+      "maximum_required_phs_angle_deg": 2.0732116988620968,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 4.895181744979525,
+      "robust_common_z_interval_length_only_mm": [
+        -7.352552175109395,
+        8.028503607015125
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 38.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 215.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          35.0,
+          63.0
+        ],
+        [
+          -35.0,
+          -180.0,
+          63.0
+        ],
+        [
+          35.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 242.37391114652098,
+      "estimated_overall_top_z_mm": 305.373911146521,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 264.9256704397,
+      "maximum_pin_distance_mm": 293.8081015977915,
+      "minimum_length_margin_mm": 4.9256704397000135,
+      "maximum_turns_from_neutral": 4.306951302942854,
+      "maximum_required_phs_angle_deg": 2.0125919140584463,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 5.122211776428754,
+      "robust_common_z_interval_length_only_mm": [
+        -8.469206850153597,
+        8.910400436222488
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 28.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    {
+      "horizontal_joint_offset_mm": 220.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          30.0,
+          63.0
+        ],
+        [
+          -30.0,
+          -180.0,
+          63.0
+        ],
+        [
+          30.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 236.20508075688772,
+      "estimated_overall_top_z_mm": 299.2050807568877,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 265.4202326377276,
+      "maximum_pin_distance_mm": 293.3095691463436,
+      "minimum_length_margin_mm": 5.420232637727622,
+      "maximum_turns_from_neutral": 4.165647817792108,
+      "maximum_required_phs_angle_deg": 1.9483223653439192,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 5.379409532726066,
+      "robust_common_z_interval_length_only_mm": [
+        -9.764361036023018,
+        9.891958230562068
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 18.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    }
+  ],
+  "comparison": {
+    "current_M2R2F1": {
+      "horizontal_joint_offset_mm": 175.0,
+      "neutral_pin_distance_mm": 279.5514263959317,
+      "upper_pin_z_mm": 281.0,
+      "estimated_overall_top_z_mm": 344.0,
+      "minimum_pin_distance_mm": 261.3785038726062,
+      "maximum_pin_distance_mm": 296.53221502037377,
+      "minimum_length_margin_mm": 1.3785038726061885,
+      "maximum_turns_from_neutral": 5.192263578092999,
+      "maximum_required_phs_angle_deg": 2.415345589209901
+    },
+    "recommended_slot_only_revision": {
+      "horizontal_joint_offset_mm": 220.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          30.0,
+          63.0
+        ],
+        [
+          -30.0,
+          -180.0,
+          63.0
+        ],
+        [
+          30.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 236.20508075688772,
+      "estimated_overall_top_z_mm": 299.2050807568877,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 265.4202326377276,
+      "maximum_pin_distance_mm": 293.3095691463436,
+      "minimum_length_margin_mm": 5.420232637727622,
+      "maximum_turns_from_neutral": 4.165647817792108,
+      "maximum_required_phs_angle_deg": 1.9483223653439192,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 5.379409532726066,
+      "robust_common_z_interval_length_only_mm": [
+        -9.764361036023018,
+        9.891958230562068
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 18.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    }
+  },
+  "recommended_angle_sweeps": {
+    "3.0": {
+      "horizontal_joint_offset_mm": 220.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          30.0,
+          63.0
+        ],
+        [
+          -30.0,
+          -180.0,
+          63.0
+        ],
+        [
+          30.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 236.20508075688772,
+      "estimated_overall_top_z_mm": 299.2050807568877,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 3.0,
+      "minimum_pin_distance_mm": 265.4202326377276,
+      "maximum_pin_distance_mm": 293.3095691463436,
+      "minimum_length_margin_mm": 5.420232637727622,
+      "maximum_turns_from_neutral": 4.165647817792108,
+      "maximum_required_phs_angle_deg": 1.9483223653439192,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 5.379409532726066,
+      "robust_common_z_interval_length_only_mm": [
+        -9.764361036023018,
+        9.891958230562068
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 18.0,
+      "length_window_pass": true,
+      "mobility_pass": true
+    },
+    "5.0": {
+      "horizontal_joint_offset_mm": 220.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          30.0,
+          63.0
+        ],
+        [
+          -30.0,
+          -180.0,
+          63.0
+        ],
+        [
+          30.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 236.20508075688772,
+      "estimated_overall_top_z_mm": 299.2050807568877,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 5.0,
+      "minimum_pin_distance_mm": 254.95165809163194,
+      "maximum_pin_distance_mm": 301.5357262642329,
+      "minimum_length_margin_mm": -5.048341908368059,
+      "maximum_turns_from_neutral": 7.156669116676588,
+      "maximum_required_phs_angle_deg": 3.33815723852223,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 5.637882269305075,
+      "robust_common_z_interval_length_only_mm": [
+        9.256946533827914,
+        -2.2045481774227937
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 18.0,
+      "length_window_pass": false,
+      "mobility_pass": true
+    },
+    "8.0": {
+      "horizontal_joint_offset_mm": 220.0,
+      "lower_joint_points_mm": [
+        [
+          0.0,
+          30.0,
+          63.0
+        ],
+        [
+          -30.0,
+          -180.0,
+          63.0
+        ],
+        [
+          30.0,
+          -180.0,
+          63.0
+        ]
+      ],
+      "upper_pin_z_mm": 236.20508075688772,
+      "estimated_overall_top_z_mm": 299.2050807568877,
+      "neutral_pin_distance_mm": 280.0,
+      "angle_limit_deg": 8.0,
+      "minimum_pin_distance_mm": 238.08953810935208,
+      "maximum_pin_distance_mm": 313.0162310786817,
+      "minimum_length_margin_mm": -21.910461890647923,
+      "maximum_turns_from_neutral": 11.974417683042264,
+      "maximum_required_phs_angle_deg": 5.537493853667144,
+      "minimum_passive_rank": 3,
+      "minimum_locked_rank": 6,
+      "maximum_locked_condition_number": 6.0758325778751505,
+      "robust_common_z_interval_length_only_mm": [
+        40.73071589785883,
+        -17.81887790153931
+      ],
+      "rear_pair_shat12_foot_clearance_mm": 18.0,
+      "length_window_pass": false,
+      "mobility_pass": true
+    }
+  },
+  "recommended_standard_pose_commands": [
+    {
+      "pitch_deg": 0,
+      "roll_deg": 0,
+      "lengths_mm": [
+        280.0,
+        280.0,
+        280.0
+      ],
+      "turns_from_280mm_neutral": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "required_phs_angles_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dependent_translation_xy_mm": [
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "pitch_deg": 3,
+      "roll_deg": 0,
+      "lengths_mm": [
+        280.0,
+        288.0155963527937,
+        271.8237116494942
+      ],
+      "turns_from_280mm_neutral": [
+        0.0,
+        2.2901703865124836,
+        -2.336082385858796
+      ],
+      "required_phs_angles_deg": [
+        1.8552450681762545,
+        0.0,
+        0.0
+      ],
+      "dependent_translation_xy_mm": [
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "pitch_deg": -3,
+      "roll_deg": 0,
+      "lengths_mm": [
+        280.0,
+        271.8237116494942,
+        288.0155963527937
+      ],
+      "turns_from_280mm_neutral": [
+        0.0,
+        -2.336082385858796,
+        2.2901703865124836
+      ],
+      "required_phs_angles_deg": [
+        1.8552450681762545,
+        0.0,
+        0.0
+      ],
+      "dependent_translation_xy_mm": [
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "pitch_deg": 0,
+      "roll_deg": 3,
+      "lengths_mm": [
+        287.82750525902884,
+        274.27248864061573,
+        274.27248864061573
+      ],
+      "turns_from_280mm_neutral": [
+        2.23643007400824,
+        -1.6364318169669332,
+        -1.6364318169669332
+      ],
+      "required_phs_angles_deg": [
+        0.0,
+        1.7909537094744223,
+        1.7909537094744223
+      ],
+      "dependent_translation_xy_mm": [
+        -0.0,
+        -0.24668374417671002
+      ]
+    },
+    {
+      "pitch_deg": 0,
+      "roll_deg": -3,
+      "lengths_mm": [
+        271.6244084321,
+        285.9232284459436,
+        285.9232284459436
+      ],
+      "turns_from_280mm_neutral": [
+        -2.3930261622571476,
+        1.6923509845553164,
+        1.6923509845553164
+      ],
+      "required_phs_angles_deg": [
+        0.0,
+        1.915648470042751,
+        1.915648470042751
+      ],
+      "dependent_translation_xy_mm": [
+        -0.0,
+        -0.24668374417671002
+      ]
+    },
+    {
+      "pitch_deg": 3,
+      "roll_deg": 3,
+      "lengths_mm": [
+        287.8159000990126,
+        282.9403522944009,
+        265.4202326377276
+      ],
+      "turns_from_280mm_neutral": [
+        2.2331143140035983,
+        0.840100655543113,
+        -4.165647817792108
+      ],
+      "required_phs_angles_deg": [
+        1.9410497176715007,
+        1.749821579074531,
+        1.8298701767828347
+      ],
+      "dependent_translation_xy_mm": [
+        -0.6847630789658329,
+        -0.24668374417671002
+      ]
+    },
+    {
+      "pitch_deg": 3,
+      "roll_deg": -3,
+      "lengths_mm": [
+        271.63497913371015,
+        293.3095691463436,
+        278.40283648111756
+      ],
+      "turns_from_280mm_neutral": [
+        -2.390005961797101,
+        3.802734041812463,
+        -0.45633243396641127
+      ],
+      "required_phs_angles_deg": [
+        1.7680852689294184,
+        1.8813885803931227,
+        1.9483223653439192
+      ],
+      "dependent_translation_xy_mm": [
+        0.6847630789658329,
+        -0.24668374417671002
+      ]
+    },
+    {
+      "pitch_deg": -3,
+      "roll_deg": 3,
+      "lengths_mm": [
+        287.8159000990126,
+        265.4202326377276,
+        282.9403522944009
+      ],
+      "turns_from_280mm_neutral": [
+        2.2331143140035983,
+        -4.165647817792108,
+        0.840100655543113
+      ],
+      "required_phs_angles_deg": [
+        1.9410497176715007,
+        1.8298701767828347,
+        1.749821579074531
+      ],
+      "dependent_translation_xy_mm": [
+        0.6847630789658329,
+        -0.24668374417671002
+      ]
+    },
+    {
+      "pitch_deg": -3,
+      "roll_deg": -3,
+      "lengths_mm": [
+        271.63497913371015,
+        278.40283648111756,
+        293.3095691463436
+      ],
+      "turns_from_280mm_neutral": [
+        -2.390005961797101,
+        -0.45633243396641127,
+        3.802734041812463
+      ],
+      "required_phs_angles_deg": [
+        1.7680852689294184,
+        1.9483223653439192,
+        1.8813885803931227
+      ],
+      "dependent_translation_xy_mm": [
+        -0.6847630789658329,
+        -0.24668374417671002
+      ]
+    }
+  ],
+  "recommended_load_cases": {
+    "20kg_centered": {
+      "cg_offset_mm": 0.0,
+      "minimum_vertical_reaction_n": 57.01540697674416,
+      "all_reactions_compressive": true,
+      "maximum_absolute_equivalent_link_axial_n": 139.27557874876703,
+      "screen_load_ratio_to_600N": 4.308005792475026
+    },
+    "20kg_100mm_offset": {
+      "cg_offset_mm": 100.0,
+      "minimum_vertical_reaction_n": 11.524954813857583,
+      "all_reactions_compressive": true,
+      "maximum_absolute_equivalent_link_axial_n": 216.7570859886954,
+      "screen_load_ratio_to_600N": 2.768075596067443
+    },
+    "20kg_150mm_offset": {
+      "cg_offset_mm": 150.0,
+      "minimum_vertical_reaction_n": -11.220271267585701,
+      "all_reactions_compressive": false,
+      "maximum_absolute_equivalent_link_axial_n": 255.49783960865958,
+      "screen_load_ratio_to_600N": 2.348356451541848
+    }
+  },
+  "limitations": [
+    "The 18 mm rear support-foot clearance uses the 42 mm nominal SHAT12 foot length; casting fillets and tool access need detailed CAD/physical confirmation.",
+    "No solid interference result is claimed for the revised slot positions before concept approval.",
+    "STB-M12 compression rating and IKO PHS12L allowable articulation remain supplier-confirmation items.",
+    "Actual cart coupling geometry is unknown and is not inferred."
+  ]
+}

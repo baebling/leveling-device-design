@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-09-17",
+  "geometry_basis": "retained Rev E CAD with LM4075OE vendor STEP; LDK PHS 6 and LMB-10 geometry unverified",
+  "vendor_step": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\references\\vendor_cad\\LM4075OE-1075-100mm.stp",
+  "vendor_part_count": 6,
+  "scope": "REPRESENTATIVE_HOME_STATES_ONLY",
+  "full_path_cad_collision_audited": false,
+  "spotcheck_pass": true,
+  "release_ready": false,
+  "release_blockers": [
+    "Representative-state spot-check is not a full-path collision audit.",
+    "LDK PHS 6 and LMB-10 verified dimensions are not in this retained CAD.",
+    "Actual lower-limit trip lengths are not verified."
+  ],
+  "rows": [
+    {
+      "label": "HOME_WORST_TILT",
+      "lift_mm": -11.204674137040033,
+      "pitch_deg": 3.691025551364776,
+      "roll_deg": -3.3658636466565994,
+      "yaw_rad": -0.002003689803117402,
+      "lengths_mm": [
+        205.35633109200546,
+        230.49917169120414,
+        212.75251716081982
+      ],
+      "collision": {
+        "pose": "HOME_WORST_TILT",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "label": "HOME_WORST_ARTICULATION",
+      "lift_mm": -5.969919991090193,
+      "pitch_deg": -3.391627379963978,
+      "roll_deg": 3.6397329420880355,
+      "yaw_rad": -0.0019907666073316604,
+      "lengths_mm": [
+        231.68512053885644,
+        205.06817736115582,
+        222.8228761293572
+      ],
+      "collision": {
+        "pose": "HOME_WORST_ARTICULATION",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "label": "HOME_STATELESS_RESTART_FAILURE",
+      "lift_mm": -11.683946057050733,
+      "pitch_deg": 3.883503098735017,
+      "roll_deg": -3.262473074902388,
+      "yaw_rad": -0.0020446891470318734,
+      "lengths_mm": [
+        205.35633109200546,
+        230.49917169120414,
+        211.75251716081982
+      ],
+      "collision": {
+        "pose": "HOME_STATELESS_RESTART_FAILURE",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "label": "HOME_EQUAL_LOW_NOMINAL",
+      "lift_mm": -27.835921350003986,
+      "pitch_deg": 4.40848075834625e-15,
+      "roll_deg": -6.287124385959681e-15,
+      "yaw_rad": -6.843810938715581e-20,
+      "lengths_mm": [
+        205.0,
+        205.0,
+        205.0
+      ],
+      "collision": {
+        "pose": "HOME_EQUAL_LOW_NOMINAL",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    }
+  ]
+}

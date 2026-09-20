@@ -1,0 +1,741 @@
+{
+  "revision": "RevE_PoC_RC1",
+  "date": "2026-09-04",
+  "purpose": "Cross-PC powered Rev E PoC release-candidate handoff",
+  "file_count_excluding_manifest": 145,
+  "total_bytes_excluding_manifest": 157664744,
+  "release_state": {
+    "digital_package_pass": true,
+    "purchase_release": false,
+    "fabrication_release": false,
+    "power_release": false,
+    "poc_acceptance": false
+  },
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 1484,
+      "sha256": "8865CA36E1EFD88CC6AA5BBAF18BC7419AB3FF48D59A726A2A02E1CCC2FB874D"
+    },
+    {
+      "path": "cad/profile_radial_reve_actual_vendor.py",
+      "bytes": 12065,
+      "sha256": "B8C495D45811C788D4E3D5E54316D7DD7E6D255F0AEC8390BC3C3ADF831C307D"
+    },
+    {
+      "path": "design_basis/priority1_powered_control_architecture_2026-09-02.md",
+      "bytes": 3391,
+      "sha256": "1A1597381E35748741B22895E5F3EA86E6F9B35DB2071B981982677780E60CF9"
+    },
+    {
+      "path": "design_basis/Profile_Radial_3RPS_RevE_CAD_validation_2026-09-02.md",
+      "bytes": 7957,
+      "sha256": "33B8637AFCF01066F4E604A318B35E514BF48F06DEB4C64F41ED0F41E0BC84C9"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C01_A1_LMB_RADIAL_ADAPTER.dxf",
+      "bytes": 20432,
+      "sha256": "3D278CA6F0291FF00A344E85869544D53F7A5D3A1DD0DF51CEF1D46196D460C5"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C02_A2_LMB_RADIAL_ADAPTER.dxf",
+      "bytes": 20462,
+      "sha256": "71F9D6516410D1D3AC85BA82B56C4FBE840CEDE1B4D931736B31C0574DE4BEBD"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C03_A3_LMB_RADIAL_ADAPTER.dxf",
+      "bytes": 20487,
+      "sha256": "722506EBEC1D3A20C0032EBA79768671F7CAA6FD22107BCFB1406CCA8B1B3B30"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C04_LOWER_STOP_CATCH_FRONT.dxf",
+      "bytes": 20302,
+      "sha256": "A38F08DE9AABE51904B25BA5D41D4C4A9C9F0566C8F52A5CCA6960BC4047F07B"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C05_LOWER_STOP_CATCH_REAR.dxf",
+      "bytes": 20302,
+      "sha256": "51461F6D4D7999F16455D99B101549715A5B7EBAE4BA6F17903BEAE7F22BC3D9"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C06_UPPER_STOP_ANCHOR_FRONT.dxf",
+      "bytes": 20304,
+      "sha256": "887CD1F0FA6EC58D06917A4116AB98D5D41FD421AF201F8916F324C1E8FA8BA7"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C07_UPPER_STOP_ANCHOR_REAR.dxf",
+      "bytes": 20304,
+      "sha256": "9F6D9C2C8817CE53F7643A5FDD085FD97A3D51CA7E651652C8A662D5B032B604"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C08_STOP_CONTACT_BAR.dxf",
+      "bytes": 20058,
+      "sha256": "4515709B9B5FCAE0A7A2C5B5071FB158B3541A8FE23D29190AF4E06C3D16989B"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/C09_ROUND_THROUGH-BORE_STANDOFF.dxf",
+      "bytes": 20183,
+      "sha256": "73B022619BF67557D89D366BFC0A1B54FF795F93826E652C0807DE58B5642845"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/RevE_custom_part_hole_table.csv",
+      "bytes": 3475,
+      "sha256": "E3507B88437A2529D190C41EAC5221F043362299A9DBB24DCEEA4D90F9613593"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/RevE_fabrication_gate_register.json",
+      "bytes": 882,
+      "sha256": "72AC3473E143F4D9094EC955E1383048110E32FF46614CE92791EFB5901BB6F7"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/RevE_fabrication_summary.json",
+      "bytes": 355,
+      "sha256": "69E5253B7B035B9448EA09C466D8DBFA7388623BBA221B63D9C5CE8BB35EAD04"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/RevE_mechanical_assembly_sequence.md",
+      "bytes": 1383,
+      "sha256": "58DE4FEE42DC8A3687BEB111F4094A86C4DA1E3F5D65C939FAFC5709B61E17E5"
+    },
+    {
+      "path": "fabrication/profile_radial_revE_release_candidate_2026-09-04/RevE_profile_cut_list.csv",
+      "bytes": 434,
+      "sha256": "D8FBEE97EAB1661DB1DE8BB3E974CE7826FE2429A9D8515BBB67463FB2E9AE20"
+    },
+    {
+      "path": "firmware/reve_leveling_controller/README.md",
+      "bytes": 2373,
+      "sha256": "98773B51DF5B7DB5A9D82EC6FB15CF8464A84965F82D3AB463267DEAD3B34535"
+    },
+    {
+      "path": "firmware/reve_leveling_controller/reve_leveling_controller.ino",
+      "bytes": 14848,
+      "sha256": "A94A2B58B9FD9534E81AB4E9000FC600A07010574E4B538EA31CEAA37B8BBB0B"
+    },
+    {
+      "path": "fusion_scripts/ProfileRadialRevEActualVendor/__pycache__/ProfileRadialRevEActualVendor.cpython-312.pyc",
+      "bytes": 19439,
+      "sha256": "C8182E8C2641485A7883BF83FDDABD2399874AC8949F161E1245D28CCFD75F9E"
+    },
+    {
+      "path": "fusion_scripts/ProfileRadialRevEActualVendor/ProfileRadialRevEActualVendor.manifest",
+      "bytes": 263,
+      "sha256": "ECC201538973062722731C0946B7F4325EB8E5F8492AC824FB5587AA5E975951"
+    },
+    {
+      "path": "fusion_scripts/ProfileRadialRevEActualVendor/ProfileRadialRevEActualVendor.py",
+      "bytes": 12257,
+      "sha256": "59041CF68605C5BB6F3E73F6D28C96CED4F2DCD09152BE8C362D7783E0E79054"
+    },
+    {
+      "path": "logs/reve_poc_implementation_2026-09-04.md",
+      "bytes": 5161,
+      "sha256": "55B535C8CC8A0962BC015719A9F0597F15ECC8F2F63C6E6CEDAEC2E93D0F302F"
+    },
+    {
+      "path": "logs/work_history.md",
+      "bytes": 120951,
+      "sha256": "960C251C436815ACF07371122A0C5FB3E9E43C737E909F98ABD726EF53C73182"
+    },
+    {
+      "path": "output/pdf/Profile_Radial_3RPS_RevE_Electrical_Drawings_RC_2026-09-04.pdf",
+      "bytes": 5893,
+      "sha256": "09E399C658C592FA6A8F843CA0ACBD112CD172B145B2187EE6167A47D9055CDC"
+    },
+    {
+      "path": "output/pdf/Profile_Radial_3RPS_RevE_Fabrication_Drawings_RC_2026-09-04.pdf",
+      "bytes": 17643,
+      "sha256": "2848E79558B988295744DB8513692D11204FD47E6DA3F38B07D3E9B8A1005B5C"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/artifact_manifest.json",
+      "bytes": 8721,
+      "sha256": "9467F7C7F4EF1F0104495FE13F97F2A3611EA93AAFA268CE62A756D4048F260B"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/actuators.step",
+      "bytes": 3353016,
+      "sha256": "A10835FC2744434B895FA7B6B4C5D5F0309BAAF47E23C9A9799B76963CBF8363"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/fasteners.step",
+      "bytes": 875308,
+      "sha256": "63763AE1AF846D71EA8E3FC0BCB646AC7E34F8879A7ACB746044D5C48B0897DD"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/lower_adapters.step",
+      "bytes": 47871,
+      "sha256": "85E5456A9078B1E37FF6688B0D6D4D361473417914C6E155F4EB6208099778EE"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/lower_brackets.step",
+      "bytes": 113628,
+      "sha256": "04B6A383288CEEA7E34CDADB63D3E257284746DB2B7CDC3F9A43C39C2D283F95"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/lower_frame.step",
+      "bytes": 311302,
+      "sha256": "39ABF540F0B883FA0709A6C1E6B0F872AE487350CAE7EC6285C44301262EF4B5"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/lower_joints.step",
+      "bytes": 98494,
+      "sha256": "B3FA99D51EF1090454254AD4794437B7E71F2BADEA534B883C817D92E84E9EDC"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/mechanical_stops.step",
+      "bytes": 330097,
+      "sha256": "F12C929C225B92A1EA2A47D9D68B5B9DEBE0377DA4770519F45F8753422EBB57"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/upper_brackets.step",
+      "bytes": 113885,
+      "sha256": "D3DCB7A62DF536613EEC3666FCE066D055F075294107451F1F88ED819AC13ABB"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/upper_frame.step",
+      "bytes": 313329,
+      "sha256": "3692F540DCF3E3A38655F1E85E527DE7CCCE3DA41D95D911F01F0E0CC003D075"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_groups/upper_joints.step",
+      "bytes": 61806,
+      "sha256": "34BBE28BE113C2D48CD2C3CE3FE8E369DA8A46F9E3F20628F4B019A729040659"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A1_END.step",
+      "bytes": 1085397,
+      "sha256": "F0C4F96A0AE4A7730E34F3E860410EFDC2BA87904117AE6138324D5502F46F31"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A1_FENGTOU.step",
+      "bytes": 61943,
+      "sha256": "0C38ABB10F3F88DD527D515B485D543BE28C0FC8ED78DAECDC85B1BE5A416E0B"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A1_MOTER.step",
+      "bytes": 271488,
+      "sha256": "F25A0966C76EA5357ED70A451FB411CDD1527AB1237DCC6F844AE1A2110CC5A2"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A1_NEIGUAN.step",
+      "bytes": 164570,
+      "sha256": "3C287ADAFF679943F4966D9D0486DE661E6695FA8DDBD3584AC9C0C6A830A9DD"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A1_UP.step",
+      "bytes": 728217,
+      "sha256": "B977F28F03FA7EE241B2D6C3716EDE5FBCB65CF237120E372FF9906A90C99A66"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A1_WAIKE.step",
+      "bytes": 44030,
+      "sha256": "75D90EA592B3F5E91DD6183B0B72AC2E735C3AAF7A422F8F70AEAFF9B0FD268C"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A2_END.step",
+      "bytes": 1085862,
+      "sha256": "4DD287C59AD9B4AED11179173121BCBE8FBF5E7795984B6A753926C3658C1753"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A2_FENGTOU.step",
+      "bytes": 61928,
+      "sha256": "86F3EE850C7F31F6F932F5361D92528DD84497E8202618A3AE1E64FFBFE629E1"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A2_MOTER.step",
+      "bytes": 272304,
+      "sha256": "A9860C9DA39C6A4E43EF6BF2D8E0FE92D6C69110F6D0E55A695B45F32D14E8B6"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A2_NEIGUAN.step",
+      "bytes": 164927,
+      "sha256": "1D32B464C912AEAF5916CBDB124035B1D7B5124750332063E78589A54BA1E009"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A2_UP.step",
+      "bytes": 727053,
+      "sha256": "25671634F8FA2A60FA8CBBA06AD3C0446EA3DA510F9F272EC86C1879F2A0931C"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A2_WAIKE.step",
+      "bytes": 44201,
+      "sha256": "A84B6A3CA1E7BE756B30DEAD0082380BD3C3298CC8F5D1E9CD2CED4CB118B73E"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A3_END.step",
+      "bytes": 1085120,
+      "sha256": "1C708D1429631E53B4709A47C8D885618B2F99F4644A455383BB5CF800A4D9EB"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A3_FENGTOU.step",
+      "bytes": 61934,
+      "sha256": "A65277BA1CBB182AC631F9BBE2595A2FA669330EE2BD522929903C092D53F11C"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A3_MOTER.step",
+      "bytes": 270591,
+      "sha256": "D461045D3D6A525022FE1F195B8DBF41367E3AD214EF73D0CB45A234FB5CE038"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A3_NEIGUAN.step",
+      "bytes": 164919,
+      "sha256": "83EEC1F002843DDCED1D1ADAB85DC6934B1352F444D157440CD5C7584AAB48D1"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A3_UP.step",
+      "bytes": 727022,
+      "sha256": "D7ED7C29FC485FACE37C9DF2B5E39C32FD871BC683CDFD30DED222F1725D4C7F"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/fusion_inputs/collapsed_actuator_parts/A3_WAIKE.step",
+      "bytes": 44196,
+      "sha256": "FEBE1CC7F2549A5AD03AA1133E9C2E917BB82E6B5CF7B667DEA2560F8DC274AC"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/LM4075OE-1075-100mm_step_audit.json",
+      "bytes": 115402,
+      "sha256": "979DD98DB36030A7B6448DB55D83BF24FDA70504A3B1D8EC5A14EFE1A322836F"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/LM4075OE-1075-100mm_xcaf_tree.json",
+      "bytes": 3373,
+      "sha256": "EA68FFD754BE8E5ED8B38FA8542F70B5861819B277F3DC842EAA3CEB28E4B9AF"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_A1_JOINT_DETAIL.png",
+      "bytes": 447566,
+      "sha256": "0995A3CD87740C9DF744E7FBD34186C2A678E979719BE79EB8C929B86691A216"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_actual_step_validation.json",
+      "bytes": 46927,
+      "sha256": "B1177036E359EC214745F5ABF19DF4420DA9F4952204839C135BB75C71E2D1CA"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_ACTUAL_VENDOR.f3d",
+      "bytes": 3423676,
+      "sha256": "FD01552D2C2B141D7591A5510CD306460582E8D0808F118A7AB38F887C75D9A1"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_ACTUAL_VENDOR.step",
+      "bytes": 5726579,
+      "sha256": "52EC80A00F12815418891D9C86ED18B9E5376C714276732C1EABE5AC1419EB75"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_Domestic_BOM_2026-09-02.xlsx",
+      "bytes": 18318,
+      "sha256": "C07FB9B9D522FA467BE225AA14952CB8B729A3AD1D6D9CBA08DAA1BDE3716BD5"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_Domestic_BOM_2026-09-02.xlsx.inspect.ndjson",
+      "bytes": 315412,
+      "sha256": "DF983FD02D672C79236679D431D991FFF6F3040D57CF5EEFD8AC124B202E7213"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_Fusion.png",
+      "bytes": 718271,
+      "sha256": "E981E9F026D299C9CC0DCAB8A77999C999AE1055F69F246968050F364F623CAA"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_Fusion_interference.json",
+      "bytes": 4323,
+      "sha256": "0CC65FF8F12BCE2833DB05074893C901ACE7661946195B47A36C7E35C81C24B6"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_Fusion_validation.json",
+      "bytes": 49862,
+      "sha256": "98541F68E98267197D41F49603B69124E4D2451E3DB925C47738DDBC70A567D8"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_SECTION_PASS_1.png",
+      "bytes": 241864,
+      "sha256": "88B1E17FFF1CA273D089CD49A0B4BB5BCB6F345D9B075D6BE02BF84F8F1A7A0A"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_SECTION_PASS_2.png",
+      "bytes": 256419,
+      "sha256": "1FE79D2CD934A25F4942BCDE068FFEF89C0ED6BB1AC1393615CE0609234D0E4B"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_SECTION_PASS_3.png",
+      "bytes": 227324,
+      "sha256": "9A04A4E2E897DDC16E42E5DFAE6E6E39B3EE40EFCB1146220FD05B0B1C915221"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_SIDE.png",
+      "bytes": 266665,
+      "sha256": "382E7AFA3CC699E040B3A347072B8257D1C12AFA9AF0913DF1B324F54E705ABC"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/Profile_Radial_3RPS_RevE_TOP.png",
+      "bytes": 181450,
+      "sha256": "E1A93E775AA786475ED4CFFF84D5B0A46F08A5A24DD5D01B7159365DDCA9D4CF"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/01_COLLAPSED_ACTUAL.png",
+      "bytes": 736185,
+      "sha256": "383575895F54D145A94E39258621A80A47627CF8BCE9E914F4F533C8DE8E3FF9"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/02_RAISED_ACTUAL.png",
+      "bytes": 704291,
+      "sha256": "7237A7C37A69B7B49787851454A148BBB96DBC5355C04A2E33B1DC26C47D3ED8"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/03_PITCH3_ROLL3_ACTUAL.png",
+      "bytes": 697958,
+      "sha256": "B755CA6D64DAE5F3DA9AE05AE4C54F7149E7B8C8FF5BA498BB873D03D719FBA0"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/04_TOP_ACTUAL.png",
+      "bytes": 714343,
+      "sha256": "026522BD869877CD2528A040F5A94BFAC187E768262D1E74949EB245225532FA"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/05_SIDE_ACTUAL.png",
+      "bytes": 775258,
+      "sha256": "F70A44E64C2229BEF20206FBDE9A410822E9244BF1A6411C799ED8076CC34A72"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/06_A1_JOINT_ACTUAL.png",
+      "bytes": 841762,
+      "sha256": "49A54B5FC0755278FB9F1EFDC69CC22A8894B5277CD3039DEA73D033CC53DDA2"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_00.png",
+      "bytes": 698571,
+      "sha256": "468F12F8589A4004ED8AAF55EDC0BD84437E11FF105600A351B2BBD9FC8E6AFB"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_01.png",
+      "bytes": 702304,
+      "sha256": "92AAC3E9262BA2147AF17BCA2FB394F8944844A83FBF9C1089F9B63EF3ED07F6"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_02.png",
+      "bytes": 698048,
+      "sha256": "78E42F20B0DBB8958D5B279648CC3F369F9474483E5D34390307EDD9B772D036"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_03.png",
+      "bytes": 691574,
+      "sha256": "ADA3F067E1238C10B5638DDF8E58FD70F44FF1683FCA8134E2FA5E59AF88E872"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_04.png",
+      "bytes": 690510,
+      "sha256": "CA7DD6A8FB1E8170081D13CEFFB059F4F7752CD91F634058A009E25DB89354CF"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_05.png",
+      "bytes": 694279,
+      "sha256": "9716B80A0E4CB1CFB8915EC0EA1B0C4DC6E304D401F33F11FA671F6B084FAE39"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_06.png",
+      "bytes": 697258,
+      "sha256": "61E2765A6271A4E6FA31EFB395002DB74D6E19F0BCCABA6C6A8EAB86E2780A38"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_07.png",
+      "bytes": 694310,
+      "sha256": "ECDD4E4DA93E63BCF4C7D9EFE00B2E2466CC4640DAACDE2CD95BD5466978AE72"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_08.png",
+      "bytes": 690510,
+      "sha256": "27205FE4720FDE6AFA89AA3497B1CFF438512ECE419EFD96C3B1C4D9FBCE9962"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_09.png",
+      "bytes": 691577,
+      "sha256": "470732211ACDB4DB20FA23815CF712D2547DF666C6552E01874E283532BDEEF2"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_10.png",
+      "bytes": 698071,
+      "sha256": "C62F6FAAFAA67D52A43E14D9B39F8AB79F01BF409554D628A202726695D61CAF"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/animation_frames/frame_11.png",
+      "bytes": 702307,
+      "sha256": "3243284C2D0302E1390972BB3243C3BA0B780DEE7680FF3BCF5D86610025B15E"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/LM4075OE_VENDOR_ISO.png",
+      "bytes": 647668,
+      "sha256": "064D8CCABEDD643E6D94CCA9628D9ECCDEE1FF8EF64CA8D051D7CA962CA1F188"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/LM4075OE_VENDOR_SIDE.png",
+      "bytes": 606966,
+      "sha256": "71506F2E601CE3BFE63CF6FE5A729013E613A5236772AE93660F4B4F71D1A545"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/renders/Profile_Radial_3RPS_RevE_pitch_roll_motion.gif",
+      "bytes": 1918667,
+      "sha256": "7D830620B88D6EAAA3C5243E5073292FF7D56173EE55D637C9D836687639FF98"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_COLLAPSED.step",
+      "bytes": 12515932,
+      "sha256": "6A6D8962CE0E0B037ADF19642C59D77253DD54F30E66E66CB1D392445E35D854"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_NEUTRAL.step",
+      "bytes": 10060860,
+      "sha256": "A1F9F9968C37275FD45E53D1B57AEC4941C8FB35021FC01F49218ED68358A898"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_P3_R3.step",
+      "bytes": 10247198,
+      "sha256": "828187133342E4F86AA7CD46AA137A4DF281FB5F9BF74AA35281B22A7E03D469"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_P3_RM3.step",
+      "bytes": 10245890,
+      "sha256": "3AFAFFCDB2E0D7B46A29030820FC9A2696C5318F816E8095FCA4E88DC7520E65"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_PITCH_M3.step",
+      "bytes": 10255190,
+      "sha256": "2F7894332ED0ADD607A361EECACF96FAB45FF502E90C1B472F0AD9D862F58F46"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_PITCH_P3.step",
+      "bytes": 10207848,
+      "sha256": "167F3DC7033729C3CF25989BAC3C09ABBF37375E9C98FAB5B349758B56D4E079"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_PM3_R3.step",
+      "bytes": 10244268,
+      "sha256": "3CD85C6038369784F2D861367873C092940ADC37EBF42281171454896055D0DD"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_PM3_RM3.step",
+      "bytes": 10199130,
+      "sha256": "5C5B6924B8239CEA28C533EFF08AB95D28C110C42570CC580C191C4B0D6ADAFA"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_RAISED.step",
+      "bytes": 10058367,
+      "sha256": "4DD96799E73D1334DE9E4F70067DCE234FB28FAD28855B17C46566878BBACC7B"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_ROLL_M3.step",
+      "bytes": 10208508,
+      "sha256": "554DFD2987062A4B753233FE9B726FC93659CDEC142F07F7BACD92634F38D998"
+    },
+    {
+      "path": "outputs/profile_radial_revE_actual_vendor/step/Profile_Radial_3RPS_RevE_ROLL_P3.step",
+      "bytes": 10210976,
+      "sha256": "A6D297366C09E2B565387256E59885E25AA8F423E99BFBCB0C1F5D41FCB47BA0"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_electrical_detailed_design_RC_2026-09-04.md",
+      "bytes": 3085,
+      "sha256": "C8A325F4B103B72100F62CAF1A0ECC9B51FAB7B522670AEF48D9FEFB9837EEED"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_enclosure_layout.csv",
+      "bytes": 942,
+      "sha256": "4472D8810E065E4D7CC63C489EEB6501808001ACD7F18DA418167386B2C13D3C"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_enclosure_layout_validation.json",
+      "bytes": 3499,
+      "sha256": "748E9361FCDA7393277DCCC869987FFA5B38549ED51D82740A6756334E2670C6"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_harness_schedule.csv",
+      "bytes": 938,
+      "sha256": "7D175AB44CE7182B1681884AE1262F6D876BD9A794885876BD872023A3E9E1DA"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_io_map.csv",
+      "bytes": 930,
+      "sha256": "69966739ADF959808A7CF700DAAAF38BD88622A5FC0124E0552860CAACE99725"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_point_to_point_wiring.csv",
+      "bytes": 3998,
+      "sha256": "42810FED12D1B54221B9274AF7807B4609B0F05C8E494649063CE81090CCFAFA"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_SL902_enclosure_layout_RC.png",
+      "bytes": 81214,
+      "sha256": "E0C3589045AD70EF60FC09993DC32D5D1A8E2CB6D99EC63FF5CAE84A39E4439C"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_SL902_enclosure_layout_RC.step",
+      "bytes": 268166,
+      "sha256": "72CAB1F9B71EBD229B73FC73A81A15563EE497BB60CAD63B21BB92A1E9D116DB"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/electrical/RevE_terminal_map.csv",
+      "bytes": 776,
+      "sha256": "D744430B97A97E7F744C8512840B61CD3B2D81B4435FCA226FD6BD6F00769226"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/firmware_build/compile_record.txt",
+      "bytes": 526,
+      "sha256": "ED16B63EA1476F78D1AC96776086F3F3780B9BC29DA642EE081CC77630603FAC"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/firmware_build/reve_leveling_controller.ino.eep",
+      "bytes": 13,
+      "sha256": "788E5FFC44AE4EE912FE01F495951F96B0ACCD5705E184DCAEA197D8B64856A6"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/firmware_build/reve_leveling_controller.ino.elf",
+      "bytes": 88352,
+      "sha256": "C27A5D06FDF96554DE328C1CFB0F1F6423FD7D26CB9A0EE2C17191BF11759F4F"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/firmware_build/reve_leveling_controller.ino.hex",
+      "bytes": 43046,
+      "sha256": "40FB0605971629E4F22688CF6EE71BF30F2C02204DF296D9538A17DF71D49FD6"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/firmware_build/reve_leveling_controller.ino.with_bootloader.bin",
+      "bytes": 261406,
+      "sha256": "093CA6578AF3E7F9AF15C532A64FE376EFC5C47A64EF557CC06030E2AB8A661D"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/firmware_build/reve_leveling_controller.ino.with_bootloader.hex",
+      "bytes": 62608,
+      "sha256": "51BBB2BFC6ECD5DF7AF66083368B3BF56BDDEAF173270750806E456FF0668E9D"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/procurement/Profile_Radial_3RPS_RevE_PoC_candidate_BOM_2026-09-04.csv",
+      "bytes": 19107,
+      "sha256": "775A2E1482F57EB1C1AACBDC00D87ABD34F0F27C402AB2349E098119559DD278"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/RevE_electrical_artifact_manifest.json",
+      "bytes": 3847,
+      "sha256": "2013B4D9F0CA8827B56B0BF98C564FE89A2A7CDC3DE82ED4D7AC3241FC11E301"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/RevE_electrical_build_summary.json",
+      "bytes": 328,
+      "sha256": "64FD7001970C2C04FEA0BA37580C27476A591CE32481056D04C4153ED0430B02"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/RevE_PoC_package_manifest.json",
+      "bytes": 32084,
+      "sha256": "2EE659BE0ED997875339EFBF287F67EC0094EA27099D3B8C499C6AB8A83FDEF8"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/supplier_interfaces/RevE_supplier_interface_register_2026-09-04.csv",
+      "bytes": 2093,
+      "sha256": "FB60377084DF2A8853DA1C8E6D7E62C383BE5C87AFF745535E29BB00DC88AD80"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/supplier_interfaces/RFQ_MotionGearOn_LM4075OE_2026-09-04.md",
+      "bytes": 1138,
+      "sha256": "B2C29BB6AC28F5F534119F972B2160D5C374EC8E92593CD3DE7B77D8B372C08D"
+    },
+    {
+      "path": "outputs/profile_radial_revE_poc_release_candidate/supplier_interfaces/RFQ_Motorbank_LMB10_2026-09-04.md",
+      "bytes": 978,
+      "sha256": "FEF777379C0CD75632576447C9FC7AEA6B8099E232E7884C45DD92CFB2937C99"
+    },
+    {
+      "path": "procurement/profile_radial_reve_domestic_master_bom_2026-09-02.csv",
+      "bytes": 18665,
+      "sha256": "CF718589EE6F09CBA25605E8DB3032AA2D2E7CE30B46768102DC127F42EB88B7"
+    },
+    {
+      "path": "PROJECT_HANDOFF.md",
+      "bytes": 114384,
+      "sha256": "9949C6B45B20E191D1C82DA5EFF15AAF2C748C94EFD5204782D4FF06DE5F8EAC"
+    },
+    {
+      "path": "README.md",
+      "bytes": 37163,
+      "sha256": "578B9F7A0497453CB919D74CA31A440B3B8996988D042162E5B5679D89D174EB"
+    },
+    {
+      "path": "references/vendor_cad/LM4075OE-1075-100mm.stp",
+      "bytes": 891304,
+      "sha256": "1BC86009BADDCF6458EEB63FB1FCAC349FD80B6B64F9A0DDFA7C4B824DF52F3B"
+    },
+    {
+      "path": "references/수평유지장치 요구사항.txt",
+      "bytes": 25063,
+      "sha256": "993986A900ACA10D6606DB1B0E02669735423B2CE056A49CD20DB7571D801A2D"
+    },
+    {
+      "path": "requirements/current_variant_priority_2026-09-04.md",
+      "bytes": 1067,
+      "sha256": "AF7C3E500B3A749718D3CCEC639D4DB8EFC6C4D6D800D2418557672DFC62B30C"
+    },
+    {
+      "path": "scripts/audit_profile_radial_reve_poc.py",
+      "bytes": 12331,
+      "sha256": "D288655F01E5ED379C622A6F831CB5823AC2FD9F76FE09EEA10617EDB92B170F"
+    },
+    {
+      "path": "scripts/build_reve_electrical_package.py",
+      "bytes": 35734,
+      "sha256": "3F21FCD1F7A8BC28335E064402056131C0562041583BABDB58190017AECB4CBF"
+    },
+    {
+      "path": "scripts/export_profile_radial_reve_actual_vendor.py",
+      "bytes": 8888,
+      "sha256": "EAE3F67F040AB3B392A746BF8D8B737B7B6F06022C9B79F5C1DB661EEFC6B545"
+    },
+    {
+      "path": "scripts/export_profile_radial_reve_fabrication.py",
+      "bytes": 15494,
+      "sha256": "625C287C871EA8826BF7E1C65CCBF54C85B910F401294862B04212F3304EC2D9"
+    },
+    {
+      "path": "scripts/package_reve_poc_release_candidate.py",
+      "bytes": 6236,
+      "sha256": "2DB3680E3715BE37DB76EF3B684E8CB2305D7D5236EE1606ED204B2E6FCB6202"
+    },
+    {
+      "path": "scripts/setup_and_compile_reve_firmware.ps1",
+      "bytes": 2682,
+      "sha256": "4DD7B3D782E31AD5A9DC5F762FC7EEF89131D73C93FA7FCEF85BD564A1826A2E"
+    },
+    {
+      "path": "tests/test_profile_radial_reve_poc_release.py",
+      "bytes": 4796,
+      "sha256": "3812B0428B920D3ED813A299D2148ED4BD5C6FF91983C01DACC5BE8FD10B49B3"
+    },
+    {
+      "path": "tools/reve_commissioning_logger.py",
+      "bytes": 2196,
+      "sha256": "645AAB340F3B8DC32AF64D4A7BA17723D5BB6FFB0EA860DB365DE1805527F534"
+    },
+    {
+      "path": "verification/RevE_PoC_completion_matrix_2026-09-04.csv",
+      "bytes": 996,
+      "sha256": "36369659E965FF22723DB2295515CAE29D7790A2B702FDD1574B8DB8F881FFFC"
+    },
+    {
+      "path": "verification/RevE_PoC_release_candidate_audit_2026-09-04.json",
+      "bytes": 5349,
+      "sha256": "48C9DA39E0872750D09190F5D0C391DB20B8D4E5CDF4B07E4275CE7FEA54C007"
+    },
+    {
+      "path": "verification/RevE_PoC_release_candidate_audit_2026-09-04.md",
+      "bytes": 1413,
+      "sha256": "D1BA1F4FD5F3E62DBFCF708513EDB580BD16A235A19EE79DDDE98F1B81DDD818"
+    },
+    {
+      "path": "verification/RevE_PoC_test_log_template.csv",
+      "bytes": 590,
+      "sha256": "750FCDA5F0E8844E1AEEEC6485782C551B6A3161D21D7DADB7BC67A2F42031CF"
+    },
+    {
+      "path": "verification/RevE_PoC_test_protocol_2026-09-04.md",
+      "bytes": 5057,
+      "sha256": "F7481DE125BE01D3AD2E59061FEA687AAB202FB62A1C78ACADEFBF0D6191EB8E"
+    }
+  ]
+}

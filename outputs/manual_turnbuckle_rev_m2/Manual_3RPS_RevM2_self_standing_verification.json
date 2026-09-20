@@ -1,0 +1,249 @@
+{
+  "method": "two deterministic numerical audit cycles",
+  "cycles": [
+    {
+      "parameters": {
+        "total_supported_mass_kg": 20.0,
+        "gravity_m_s2": 9.80665,
+        "cg_offset_radius_mm": 150.0,
+        "pose_step_deg": 0.5,
+        "load_direction_step_deg": 5.0,
+        "jacobian_step_mm": 0.0001,
+        "rank_tolerance": 1e-08,
+        "metric_pitch_diameter_factor": 0.64951905,
+        "nominal_base_half_width_mm": 350.0,
+        "illustrative_cg_height_mm": 300.0
+      },
+      "constraint": {
+        "pose_count": 169,
+        "minimum_rank": 6,
+        "required_rank": 6,
+        "minimum_singular_value": 0.40181777708275,
+        "maximum_condition_number": 4.310538025617105,
+        "worst_pose": {
+          "pitch_deg": 3.0,
+          "roll_deg": -3.0,
+          "rank": 6,
+          "minimum_singular_value": 0.40181777708275,
+          "condition_number": 4.310538025617105
+        },
+        "neutral_three_locked_rps_rank": 6,
+        "neutral_two_rps_leg_rank": 4,
+        "neutral_three_sps_leg_rank": 3,
+        "passes": true
+      },
+      "gravity": {
+        "method": "vertical reaction distribution on projected upper support triangle",
+        "pose_count": 169,
+        "load_direction_count_per_pose": 72,
+        "case_count": 12168,
+        "supported_mass_kg": 20.0,
+        "weight_n": 196.13299999999998,
+        "cg_offset_radius_mm": 150.0,
+        "nominal_support_triangle_inradius_mm": 157.5,
+        "minimum_projected_inradius_mm": 157.09723971495498,
+        "minimum_reaction_n": 2.953605437447208,
+        "minimum_reaction_case": {
+          "pitch_deg": -3.0,
+          "roll_deg": 3.0,
+          "cg_direction_deg": 30.0,
+          "leg_index": 2,
+          "reaction_n": 2.953605437447208
+        },
+        "maximum_reaction_n": 127.80172789588615,
+        "maximum_reaction_case": {
+          "pitch_deg": -3.0,
+          "roll_deg": -3.0,
+          "cg_direction_deg": 330.0,
+          "leg_index": 3,
+          "reaction_n": 127.80172789588615
+        },
+        "maximum_equivalent_axial_n": 306.659548350526,
+        "maximum_equivalent_axial_case": {
+          "pitch_deg": -3.0,
+          "roll_deg": 3.0,
+          "cg_direction_deg": 210.0,
+          "leg_index": 2,
+          "reaction_n": 127.80172789588613,
+          "link_vertical_cosine": 0.41675443854043265,
+          "equivalent_axial_n": 306.659548350526
+        },
+        "design_leg_load_n": 600.0,
+        "axial_load_factor": 1.9565671547724721,
+        "all_reactions_compressive": true,
+        "passes": true,
+        "limitations": [
+          "Vertical-reaction screen only; joint friction, frame flexibility, and dynamic shock are excluded.",
+          "The 150 mm horizontal CG offset is an engineering assumption pending measured CG data."
+        ]
+      },
+      "thread_lock": {
+        "thread": "M12x1.75",
+        "basic_pitch_diameter_mm": 10.8633416625,
+        "lead_angle_deg": 2.935399151293921,
+        "minimum_friction_coefficient_for_ideal_self_lock": 0.051277251340122225,
+        "length_change_per_turn_mm": 3.5,
+        "supplier_self_lock_rating_published": false,
+        "jam_nuts_required": true,
+        "may_rely_on_thread_friction_alone": false,
+        "stb_supplied_sjn_lock_nuts_per_leg": 2,
+        "additional_external_jam_nuts_per_leg": 3,
+        "total_lock_nuts_per_leg": 5,
+        "external_interfaces": [
+          "BJ761-to-coupling M12x1.75 RH",
+          "coupling-to-STB M12x1.75 RH",
+          "STB-to-PHS12L M12x1.75 LH"
+        ],
+        "catalog_configuration": "Retain both STB-supplied SJN lock nuts and add one jam nut at each external female-thread interface.",
+        "passes_with_jam_nuts": true
+      },
+      "tipover": {
+        "calculation_status": "illustrative_not_verified",
+        "assumed_effective_half_base_mm": 350.0,
+        "assumed_cg_height_mm": 300.0,
+        "gravity_projection_margin_at_150mm_offset_mm": 200.0,
+        "illustrative_centered_lateral_tip_force_n": 228.8218333333333,
+        "illustrative_150mm_offset_lateral_tip_force_n": 130.75533333333334,
+        "whole_unit_external_tip_resistance_verified": false,
+        "open_inputs": [
+          "actual lower contact or cart-coupling polygon",
+          "measured complete-module mass and CG",
+          "required lateral disturbance and dynamic load case"
+        ]
+      },
+      "fully_assembled_three_leg_platform_self_stands_under_screened_gravity": true,
+      "central_post_required_after_all_three_links_are_locked": false,
+      "temporary_support_required_during_assembly_or_loaded_adjustment": true,
+      "two_leg_incomplete_assembly_self_standing": false,
+      "whole_unanchored_unit_against_external_lateral_load_verified": false,
+      "pass": true
+    },
+    {
+      "parameters": {
+        "total_supported_mass_kg": 20.0,
+        "gravity_m_s2": 9.80665,
+        "cg_offset_radius_mm": 150.0,
+        "pose_step_deg": 0.5,
+        "load_direction_step_deg": 5.0,
+        "jacobian_step_mm": 0.0001,
+        "rank_tolerance": 1e-08,
+        "metric_pitch_diameter_factor": 0.64951905,
+        "nominal_base_half_width_mm": 350.0,
+        "illustrative_cg_height_mm": 300.0
+      },
+      "constraint": {
+        "pose_count": 169,
+        "minimum_rank": 6,
+        "required_rank": 6,
+        "minimum_singular_value": 0.40181777708275,
+        "maximum_condition_number": 4.310538025617105,
+        "worst_pose": {
+          "pitch_deg": 3.0,
+          "roll_deg": -3.0,
+          "rank": 6,
+          "minimum_singular_value": 0.40181777708275,
+          "condition_number": 4.310538025617105
+        },
+        "neutral_three_locked_rps_rank": 6,
+        "neutral_two_rps_leg_rank": 4,
+        "neutral_three_sps_leg_rank": 3,
+        "passes": true
+      },
+      "gravity": {
+        "method": "vertical reaction distribution on projected upper support triangle",
+        "pose_count": 169,
+        "load_direction_count_per_pose": 72,
+        "case_count": 12168,
+        "supported_mass_kg": 20.0,
+        "weight_n": 196.13299999999998,
+        "cg_offset_radius_mm": 150.0,
+        "nominal_support_triangle_inradius_mm": 157.5,
+        "minimum_projected_inradius_mm": 157.09723971495498,
+        "minimum_reaction_n": 2.953605437447208,
+        "minimum_reaction_case": {
+          "pitch_deg": -3.0,
+          "roll_deg": 3.0,
+          "cg_direction_deg": 30.0,
+          "leg_index": 2,
+          "reaction_n": 2.953605437447208
+        },
+        "maximum_reaction_n": 127.80172789588615,
+        "maximum_reaction_case": {
+          "pitch_deg": -3.0,
+          "roll_deg": -3.0,
+          "cg_direction_deg": 330.0,
+          "leg_index": 3,
+          "reaction_n": 127.80172789588615
+        },
+        "maximum_equivalent_axial_n": 306.659548350526,
+        "maximum_equivalent_axial_case": {
+          "pitch_deg": -3.0,
+          "roll_deg": 3.0,
+          "cg_direction_deg": 210.0,
+          "leg_index": 2,
+          "reaction_n": 127.80172789588613,
+          "link_vertical_cosine": 0.41675443854043265,
+          "equivalent_axial_n": 306.659548350526
+        },
+        "design_leg_load_n": 600.0,
+        "axial_load_factor": 1.9565671547724721,
+        "all_reactions_compressive": true,
+        "passes": true,
+        "limitations": [
+          "Vertical-reaction screen only; joint friction, frame flexibility, and dynamic shock are excluded.",
+          "The 150 mm horizontal CG offset is an engineering assumption pending measured CG data."
+        ]
+      },
+      "thread_lock": {
+        "thread": "M12x1.75",
+        "basic_pitch_diameter_mm": 10.8633416625,
+        "lead_angle_deg": 2.935399151293921,
+        "minimum_friction_coefficient_for_ideal_self_lock": 0.051277251340122225,
+        "length_change_per_turn_mm": 3.5,
+        "supplier_self_lock_rating_published": false,
+        "jam_nuts_required": true,
+        "may_rely_on_thread_friction_alone": false,
+        "stb_supplied_sjn_lock_nuts_per_leg": 2,
+        "additional_external_jam_nuts_per_leg": 3,
+        "total_lock_nuts_per_leg": 5,
+        "external_interfaces": [
+          "BJ761-to-coupling M12x1.75 RH",
+          "coupling-to-STB M12x1.75 RH",
+          "STB-to-PHS12L M12x1.75 LH"
+        ],
+        "catalog_configuration": "Retain both STB-supplied SJN lock nuts and add one jam nut at each external female-thread interface.",
+        "passes_with_jam_nuts": true
+      },
+      "tipover": {
+        "calculation_status": "illustrative_not_verified",
+        "assumed_effective_half_base_mm": 350.0,
+        "assumed_cg_height_mm": 300.0,
+        "gravity_projection_margin_at_150mm_offset_mm": 200.0,
+        "illustrative_centered_lateral_tip_force_n": 228.8218333333333,
+        "illustrative_150mm_offset_lateral_tip_force_n": 130.75533333333334,
+        "whole_unit_external_tip_resistance_verified": false,
+        "open_inputs": [
+          "actual lower contact or cart-coupling polygon",
+          "measured complete-module mass and CG",
+          "required lateral disturbance and dynamic load case"
+        ]
+      },
+      "fully_assembled_three_leg_platform_self_stands_under_screened_gravity": true,
+      "central_post_required_after_all_three_links_are_locked": false,
+      "temporary_support_required_during_assembly_or_loaded_adjustment": true,
+      "two_leg_incomplete_assembly_self_standing": false,
+      "whole_unanchored_unit_against_external_lateral_load_verified": false,
+      "pass": true
+    }
+  ],
+  "cycle_sha256": [
+    "746c4524286dbe194c1667d5e3eb4a43102b15348ccd4ca0d9123d0ce75c9ac7",
+    "746c4524286dbe194c1667d5e3eb4a43102b15348ccd4ca0d9123d0ce75c9ac7"
+  ],
+  "repeated_results_identical": true,
+  "locked_static_self_standing_pass": true,
+  "whole_unit_external_tip_resistance_verified": false,
+  "purchase_release": false,
+  "fabrication_release": false,
+  "pass": true
+}

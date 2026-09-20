@@ -1,0 +1,133 @@
+{
+  "revision": "A",
+  "status": "FABRICATION_BLOCKED_VENDOR_INTERFACE_MISMATCH",
+  "artifact_count": 25,
+  "component_count": 91,
+  "artifacts": [
+    {
+      "path": "outputs/minimal_profile_only_revA/FUSION360_IMPORT_AND_ASSEMBLY_GUIDE.md",
+      "bytes": 3661,
+      "sha256": "38e19c86ae251c268dca16a013694f48d817a3b3bcc28d4dd8e3e2d664614579"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/renders/01_collapsed_iso.png",
+      "bytes": 74268,
+      "sha256": "681ba658a89d4dab56c9ea3ef464596b446ffb7c3c031f18717d1790fd012a3f"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/renders/02_raised_iso.png",
+      "bytes": 88762,
+      "sha256": "cee0d7a906f1e97613bb0df80246ddc019d656803bc1e7a2a1fe37d12939dbab"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/renders/03_max_pitch_roll_iso.png",
+      "bytes": 94607,
+      "sha256": "04005ede04308656400e668854c0de8ae832916a5a751e139324c080ab0fdf86"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/renders/04_top.png",
+      "bytes": 33021,
+      "sha256": "da4263f015f90b7cfe2b971f8431ab18ef17585ca6d8c9a8e1a41e1549f10d92"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/renders/05_exploded.png",
+      "bytes": 82301,
+      "sha256": "cfc0f60d40baa5c1c6e1013f0e2bf7e1e1448139f758161fbd09a8a5c0dea276"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/renders/06_actuator_1_joint_detail.png",
+      "bytes": 49874,
+      "sha256": "c9440fa036f985401ef232ec103b4b493b09ac36935fad5c65fe02e4b1238520"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/ACTUATOR_1_complete_joint_detail_revA.step",
+      "bytes": 372972,
+      "sha256": "e9fe977706627998a9ef060add7940335e85119871180b86eb965c9347ccd9b7"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/MINIMAL_3RPS_profile_only_collapsed_revA.step",
+      "bytes": 4620996,
+      "sha256": "f17165a93cf8318569ef78bfe8c476ff2966975fbbccfa4145edf45b8a8cbd36"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/MINIMAL_3RPS_profile_only_exploded_revA.step",
+      "bytes": 4613775,
+      "sha256": "304b2a2f3f5a561a5b12251fa61c3ce0e035a91fffc884af1d18e3312fbff3d4"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/MINIMAL_3RPS_profile_only_max_pitch_revA.step",
+      "bytes": 4762619,
+      "sha256": "9458bc639d6763260404b22b7c8b7bf5630e08ade2ce5af493c438c34e4bddd1"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/MINIMAL_3RPS_profile_only_max_pitch_roll_revA.step",
+      "bytes": 4870461,
+      "sha256": "e5082ad97069e4532f783cfefc443c20e06c74c837846e57647b90982251bdab"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/MINIMAL_3RPS_profile_only_max_roll_revA.step",
+      "bytes": 4747507,
+      "sha256": "ad7d73374ffc437946d0baf89c8b787be3a0c184491d79f64b5c6f092883cff2"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/MINIMAL_3RPS_profile_only_neutral_revA.step",
+      "bytes": 4621009,
+      "sha256": "8be47b029275be3d329c91b6c56df550f13e040bfb3a0f656f7da630907550fa"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/MINIMAL_3RPS_profile_only_raised_revA.step",
+      "bytes": 4621109,
+      "sha256": "52463b44e8751f189a8aa261e176e612c2be19c057141c4e7359aac457bf191b"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/SUB_01_LOWER_PROFILE_FRAME_collapsed_revA.step",
+      "bytes": 2206637,
+      "sha256": "29f0eb41718db264ab2ca20e2bcf4e29b7d130fd47431dc2907225b75b75ad16"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/SUB_02_UPPER_PROFILE_FRAME_collapsed_revA.step",
+      "bytes": 1765894,
+      "sha256": "f430d12bf506843a6dca32132fac8a4134ccc5fec1752b93bf473bbb6a22f021"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/SUB_03_THREE_ACTUATORS_collapsed_revA.step",
+      "bytes": 135146,
+      "sha256": "ca77e160227ab1ed82e0209938e74b895b12b688a40e2e10e9c1891596d6d771"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/step/SUB_04_MECHANICAL_STOPS_collapsed_revA.step",
+      "bytes": 463295,
+      "sha256": "d55bbbeb9cb4e0c9ee98cc6d072e18e2ced5cb241a1241377836f5593911a9f7"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/tables/profile_cut_list.csv",
+      "bytes": 277,
+      "sha256": "78e002eba96234df2703e2c0bd4d7f3ff7d23fff3bf4e091d033148dd5613bb8"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/tables/profile_only_component_manifest.csv",
+      "bytes": 10143,
+      "sha256": "a7d05b654e13dc0c057c91699498f9007fddd0e3bc34ef49a9af25ab7a6949c7"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/tables/profile_only_fastener_schedule.csv",
+      "bytes": 937,
+      "sha256": "382a3f82fb63d02ecad2c57d1260e3075e36e4286ed46d934f344fd275cbfebe"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/tables/profile_only_mechanical_BOM.csv",
+      "bytes": 1179,
+      "sha256": "e2c2efe2ecc3def94d07658ac736ccd9e3b057d0fbfeb101e1b931fcfb952325"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/verification/profile_only_validation.json",
+      "bytes": 25078,
+      "sha256": "192782047995e13a15efd1a469398dbb744bd29dea96768ae815ab30d675bc35"
+    },
+    {
+      "path": "outputs/minimal_profile_only_revA/verification/vendor_interface_audit_2026-08-31.json",
+      "bytes": 6113,
+      "sha256": "669a62b99902fb7eab85c18a193f37c824b95c12d4dad709d433200fd3ee7d27"
+    }
+  ]
+}

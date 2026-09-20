@@ -1,0 +1,86 @@
+﻿component_name,group,bom_key,material,status,notes
+lower_outer_side_L,lower_frame,4040_700,DNF4040 black extrusion,RELEASED,
+lower_outer_side_R,lower_frame,4040_700,DNF4040 black extrusion,RELEASED,
+lower_cross_F,lower_frame,4040_620,DNF4040 black extrusion,RELEASED,
+lower_cross_B,lower_frame,4040_620,DNF4040 black extrusion,RELEASED,
+lower_cross_HUB_F,lower_frame,4040_620,DNF4040 black extrusion,RELEASED,
+lower_cross_HUB_B,lower_frame,4040_620,DNF4040 black extrusion,RELEASED,
+lower_4035_1_L,lower_connectors,K92782553_4035,4035 40-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+lower_4035_1_L_2axis_fasteners,lower_fasteners,K92782553_4035_2AXIS_FASTENERS,two orthogonal M8 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+lower_4035_1_R,lower_connectors,K92782553_4035,4035 40-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+lower_4035_1_R_2axis_fasteners,lower_fasteners,K92782553_4035_2AXIS_FASTENERS,two orthogonal M8 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+lower_4035_2_L,lower_connectors,K92782553_4035,4035 40-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+lower_4035_2_L_2axis_fasteners,lower_fasteners,K92782553_4035_2AXIS_FASTENERS,two orthogonal M8 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+lower_4035_2_R,lower_connectors,K92782553_4035,4035 40-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+lower_4035_2_R_2axis_fasteners,lower_fasteners,K92782553_4035_2AXIS_FASTENERS,two orthogonal M8 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+lower_4035_3_L,lower_connectors,K92782553_4035,4035 40-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+lower_4035_3_L_2axis_fasteners,lower_fasteners,K92782553_4035_2AXIS_FASTENERS,two orthogonal M8 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+lower_4035_3_R,lower_connectors,K92782553_4035,4035 40-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+lower_4035_3_R_2axis_fasteners,lower_fasteners,K92782553_4035_2AXIS_FASTENERS,two orthogonal M8 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+lower_4035_4_L,lower_connectors,K92782553_4035,4035 40-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+lower_4035_4_L_2axis_fasteners,lower_fasteners,K92782553_4035_2AXIS_FASTENERS,two orthogonal M8 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+lower_4035_4_R,lower_connectors,K92782553_4035,4035 40-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+lower_4035_4_R_2axis_fasteners,lower_fasteners,K92782553_4035_2AXIS_FASTENERS,two orthogonal M8 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+lower_hub_plate_280x220x10,lower_hub,CUSTOM_HUB_280X220X10,"A6061-T6 laser-cut aluminum, clear anodized",CUSTOM_LASER_CUT_AND_TAP,Eight M8 clearance holes and six M8 tapped LMB holes
+lower_hub_8x_M8_profile_fasteners,lower_fasteners,HUB_M8_PROFILE_SET_8,"8x M8x25 bolt, washer and SP408 spring nut",RELEASED,
+LMB10_A1,lower_joints,LMB10,LMB-10 56x26x44 clevis bracket,RELEASED,Top-mounted to the tapped hub; second M8 hole is 36 mm inward
+LMB10_A1_included_pin,lower_joints,LMB10_INCLUDED_PIN,6 mm retained clevis pin,VENDOR_INCLUDED_CONFIRM_AT_ORDER,
+LMB10_A1_2x_M8x16_tapped_hub,lower_fasteners,LMB_HUB_M8X16_2SET,"2x M8x16 class 8.8 screw, washer and medium threadlocker",RELEASED,
+LMB10_A2,lower_joints,LMB10,LMB-10 56x26x44 clevis bracket,RELEASED,Top-mounted to the tapped hub; second M8 hole is 36 mm inward
+LMB10_A2_included_pin,lower_joints,LMB10_INCLUDED_PIN,6 mm retained clevis pin,VENDOR_INCLUDED_CONFIRM_AT_ORDER,
+LMB10_A2_2x_M8x16_tapped_hub,lower_fasteners,LMB_HUB_M8X16_2SET,"2x M8x16 class 8.8 screw, washer and medium threadlocker",RELEASED,
+LMB10_A3,lower_joints,LMB10,LMB-10 56x26x44 clevis bracket,RELEASED,Top-mounted to the tapped hub; second M8 hole is 36 mm inward
+LMB10_A3_included_pin,lower_joints,LMB10_INCLUDED_PIN,6 mm retained clevis pin,VENDOR_INCLUDED_CONFIRM_AT_ORDER,
+LMB10_A3_2x_M8x16_tapped_hub,lower_fasteners,LMB_HUB_M8X16_2SET,"2x M8x16 class 8.8 screw, washer and medium threadlocker",RELEASED,
+upper_outer_side_L,upper_frame,3030_700,DNF3030-6 extrusion,RELEASED,
+upper_outer_side_R,upper_frame,3030_700,DNF3030-6 extrusion,RELEASED,
+upper_cross_F,upper_frame,3030_640,DNF3030-6 extrusion,RELEASED,
+upper_cross_B,upper_frame,3030_640,DNF3030-6 extrusion,RELEASED,
+upper_cross_A1,upper_frame,3030_640,DNF3030-6 extrusion,RELEASED,
+upper_cross_A23,upper_frame,3030_640,DNF3030-6 extrusion,RELEASED,
+upper_DCB3025_1_L,upper_connectors,K56842696_DCB3025,DCB3025 30-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+upper_DCB3025_1_L_2axis_fasteners,upper_fasteners,K56842696_DCB3025_2AXIS_FASTENERS,two orthogonal M6 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+upper_DCB3025_1_R,upper_connectors,K56842696_DCB3025,DCB3025 30-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+upper_DCB3025_1_R_2axis_fasteners,upper_fasteners,K56842696_DCB3025_2AXIS_FASTENERS,two orthogonal M6 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+upper_DCB3025_2_L,upper_connectors,K56842696_DCB3025,DCB3025 30-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+upper_DCB3025_2_L_2axis_fasteners,upper_fasteners,K56842696_DCB3025_2AXIS_FASTENERS,two orthogonal M6 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+upper_DCB3025_2_R,upper_connectors,K56842696_DCB3025,DCB3025 30-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+upper_DCB3025_2_R_2axis_fasteners,upper_fasteners,K56842696_DCB3025_2AXIS_FASTENERS,two orthogonal M6 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+upper_DCB3025_3_L,upper_connectors,K56842696_DCB3025,DCB3025 30-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+upper_DCB3025_3_L_2axis_fasteners,upper_fasteners,K56842696_DCB3025_2AXIS_FASTENERS,two orthogonal M6 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+upper_DCB3025_3_R,upper_connectors,K56842696_DCB3025,DCB3025 30-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+upper_DCB3025_3_R_2axis_fasteners,upper_fasteners,K56842696_DCB3025_2AXIS_FASTENERS,two orthogonal M6 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+upper_DCB3025_4_L,upper_connectors,K56842696_DCB3025,DCB3025 30-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+upper_DCB3025_4_L_2axis_fasteners,upper_fasteners,K56842696_DCB3025_2AXIS_FASTENERS,two orthogonal M6 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+upper_DCB3025_4_R,upper_connectors,K56842696_DCB3025,DCB3025 30-series bracket,RELEASED,Both bracket legs are vertical inside the coplanar frame corner
+upper_DCB3025_4_R_2axis_fasteners,upper_fasteners,K56842696_DCB3025_2AXIS_FASTENERS,two orthogonal M6 T-slot fastener sets,RELEASED,One horizontal X-axis bolt and one horizontal Y-axis bolt
+PHS6_A1_outer,upper_joints,PHS6,THK PHS6 published envelope,RELEASED,Outer housing follows the upper frame; inner ball follows the joint bolt
+PHS6_A1_TB306_M6x20,upper_fasteners,K55868014_TB306_M6X20,TB306 M6x20 T-bolt and 5 mm jam nut,RELEASED,
+PHS6_A2_outer,upper_joints,PHS6,THK PHS6 published envelope,RELEASED,Outer housing follows the upper frame; inner ball follows the joint bolt
+PHS6_A2_TB306_M6x20,upper_fasteners,K55868014_TB306_M6X20,TB306 M6x20 T-bolt and 5 mm jam nut,RELEASED,
+PHS6_A3_outer,upper_joints,PHS6,THK PHS6 published envelope,RELEASED,Outer housing follows the upper frame; inner ball follows the joint bolt
+PHS6_A3_TB306_M6x20,upper_fasteners,K55868014_TB306_M6X20,TB306 M6x20 T-bolt and 5 mm jam nut,RELEASED,
+LM4075OE_A1_body,actuators,LM4075OE_100,LM4075OE published 40x75x100 motor envelope,PROVISIONAL_VENDOR_STEP,Pin length 229.839 mm
+LM4075OE_A1_rod,actuators,LM4075OE_100,20 mm actuator rod envelope,PROVISIONAL_VENDOR_STEP,
+LM4075OE_A1_lower_eye,actuator_eyes,LM4075OE_100,provisional 18 mm actuator eye,PROVISIONAL_EYE_WIDTH,
+LM4075OE_A1_upper_eye,actuator_eyes,LM4075OE_100,provisional 18 mm actuator eye,PROVISIONAL_EYE_WIDTH,
+PHS6_A1_spherical_inner_ring,upper_joints,PHS6,PHS6 spherical inner ring,RELEASED,Articulation 0.000 deg
+PHS6_A1_M6x50_joint_bolt,upper_fasteners,M6X50_PARTIAL_STACK,"M6x50 partial-thread bolt, washers, measured shim and prevailing nut",CONDITIONAL_EYE_WIDTH,
+LM4075OE_A2_body,actuators,LM4075OE_100,LM4075OE published 40x75x100 motor envelope,PROVISIONAL_VENDOR_STEP,Pin length 229.839 mm
+LM4075OE_A2_rod,actuators,LM4075OE_100,20 mm actuator rod envelope,PROVISIONAL_VENDOR_STEP,
+LM4075OE_A2_lower_eye,actuator_eyes,LM4075OE_100,provisional 18 mm actuator eye,PROVISIONAL_EYE_WIDTH,
+LM4075OE_A2_upper_eye,actuator_eyes,LM4075OE_100,provisional 18 mm actuator eye,PROVISIONAL_EYE_WIDTH,
+PHS6_A2_spherical_inner_ring,upper_joints,PHS6,PHS6 spherical inner ring,RELEASED,Articulation 0.000 deg
+PHS6_A2_M6x50_joint_bolt,upper_fasteners,M6X50_PARTIAL_STACK,"M6x50 partial-thread bolt, washers, measured shim and prevailing nut",CONDITIONAL_EYE_WIDTH,
+LM4075OE_A3_body,actuators,LM4075OE_100,LM4075OE published 40x75x100 motor envelope,PROVISIONAL_VENDOR_STEP,Pin length 229.839 mm
+LM4075OE_A3_rod,actuators,LM4075OE_100,20 mm actuator rod envelope,PROVISIONAL_VENDOR_STEP,
+LM4075OE_A3_lower_eye,actuator_eyes,LM4075OE_100,provisional 18 mm actuator eye,PROVISIONAL_EYE_WIDTH,
+LM4075OE_A3_upper_eye,actuator_eyes,LM4075OE_100,provisional 18 mm actuator eye,PROVISIONAL_EYE_WIDTH,
+PHS6_A3_spherical_inner_ring,upper_joints,PHS6,PHS6 spherical inner ring,RELEASED,Articulation 0.000 deg
+PHS6_A3_M6x50_joint_bolt,upper_fasteners,M6X50_PARTIAL_STACK,"M6x50 partial-thread bolt, washers, measured shim and prevailing nut",CONDITIONAL_EYE_WIDTH,
+mechanical_stop_1_moving,mechanical_stops,M10_STOP_SET,M10 threaded rod with two OD64 stop-washer stacks,PROVISIONAL_STOP_DETAIL,
+mechanical_stop_1_fixed_catch,mechanical_stops,CUSTOM_STOP_CATCH,A6061-T6 90x80x8 catch plate with 50 mm opening,PROVISIONAL_STOP_DETAIL,Mounting standoff detail remains to be catalog-matched
+mechanical_stop_2_moving,mechanical_stops,M10_STOP_SET,M10 threaded rod with two OD64 stop-washer stacks,PROVISIONAL_STOP_DETAIL,
+mechanical_stop_2_fixed_catch,mechanical_stops,CUSTOM_STOP_CATCH,A6061-T6 90x80x8 catch plate with 50 mm opening,PROVISIONAL_STOP_DETAIL,Mounting standoff detail remains to be catalog-matched
+mechanical_stop_3_moving,mechanical_stops,M10_STOP_SET,M10 threaded rod with two OD64 stop-washer stacks,PROVISIONAL_STOP_DETAIL,
+mechanical_stop_3_fixed_catch,mechanical_stops,CUSTOM_STOP_CATCH,A6061-T6 90x80x8 catch plate with 50 mm opening,PROVISIONAL_STOP_DETAIL,Mounting standoff detail remains to be catalog-matched

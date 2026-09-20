@@ -1,0 +1,15 @@
+﻿id,check,criterion,pass,evidence
+D01,27-pose stroke,205-305 mm,True,digital
+D02,PHS6 articulation,<=8 deg,True,digital
+D03,OpenCascade interference 3x,0 unexpected,True,digital
+D04,Fusion interference 3x,0 unexpected,True,existing Fusion evidence
+D05,Fusion section inspection 3x,3 images,True,existing Fusion evidence
+F01,Nine custom-part drawings,9 DXF + PDF,True,release candidate
+E01,Enclosure envelope,"no overlap, >=50 mm AC/logic",True,digital
+E02,Wiring package,terminal/wire/harness/io tables,True,digital
+C01,Firmware static interface,all commands/pins/faults,True,static only
+P01,Known-price budget,"<=4,000,000 KRW",True,quotes/freight remain
+G01,LMB-10 interface,supplier/first article,False,physical evidence required
+G02,Actuator current/pinout,supplier/first article,False,physical evidence required
+G03,One-axis commissioning,current/counts/bus,False,physical hardware required
+G04,10 kg 27-trial acceptance,+/-0.5 deg for 10 s,False,physical hardware required

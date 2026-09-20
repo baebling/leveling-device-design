@@ -1,0 +1,256 @@
+{
+  "generated_utc": "2026-08-27T04:52:19.992613+00:00",
+  "status": "PRELIMINARY_NOT_APPROVED_FOR_FABRICATION",
+  "artifacts": [
+    {
+      "path": "outputs\\cad\\dxf\\lower_interface_plate_profile.dxf",
+      "bytes": 19740,
+      "sha256": "ec9ae14572a24a5f39f9bc7e462920c4cf900c5b3f9fb9162818719994c48382"
+    },
+    {
+      "path": "outputs\\cad\\dxf\\upper_acrylic_panel_profile.dxf",
+      "bytes": 21882,
+      "sha256": "f0b265c227a3bd07b10aaae5ccec5e985da4a592b42b84d609bd30b9e0bfcc9b"
+    },
+    {
+      "path": "outputs\\cad\\glb\\leveling_module_neutral.glb",
+      "bytes": 4432184,
+      "sha256": "4957ef501fb64f69e6c4deaad6f2266552063fdad26d16a875226d86a65343c3"
+    },
+    {
+      "path": "outputs\\cad\\step\\guide_gimbal_max_pitch_roll.step",
+      "bytes": 333533,
+      "sha256": "ba240934ba9a7118802cc576de5ce8ee877a8274e2a7ce7f82df6ad8190459f8"
+    },
+    {
+      "path": "outputs\\cad\\step\\guide_gimbal_neutral.step",
+      "bytes": 319290,
+      "sha256": "4964ed72116f4ab0aec8dfe055d00b9a7c70721cbe8354d05442194f524ce725"
+    },
+    {
+      "path": "outputs\\cad\\step\\jnt_cg01_factory_clevis_gimbal_seed.step",
+      "bytes": 158213,
+      "sha256": "997c5dcfc14ca70612e3ad64c8e7913fc7c843d699b1b8e88f946d88085056e3"
+    },
+    {
+      "path": "outputs\\cad\\step\\leveling_module_cart_disengaged.step",
+      "bytes": 3432962,
+      "sha256": "a548b65b67662a9e8d233bae418bb2ccb24c77a346d8b1ac01eada55b14dc4ac"
+    },
+    {
+      "path": "outputs\\cad\\step\\leveling_module_collapsed.step",
+      "bytes": 3432937,
+      "sha256": "8491b174fcd803cf0ffa0b7b44c130265c12814177dd7e0c029daa7f74faaaa7"
+    },
+    {
+      "path": "outputs\\cad\\step\\leveling_module_max_pitch.step",
+      "bytes": 3502001,
+      "sha256": "7f05d519f4344ed5117b7405a6f525e8f212762de1e8d1b25974f1c9ee521b8f"
+    },
+    {
+      "path": "outputs\\cad\\step\\leveling_module_max_pitch_roll.step",
+      "bytes": 3540831,
+      "sha256": "638f376eafc278f812d5ea1f5d9a85d3211bb8f2c0c072e3c0947f492ae7fa72"
+    },
+    {
+      "path": "outputs\\cad\\step\\leveling_module_max_roll.step",
+      "bytes": 3489549,
+      "sha256": "2fc85527db76c29e32236b61b9dad1a29ccc568c73b39400dbffd8ad608f6dba"
+    },
+    {
+      "path": "outputs\\cad\\step\\leveling_module_neutral.step",
+      "bytes": 3433228,
+      "sha256": "f108b50392b8bc0fafd26e6c0db4cb1d4c1d4ea732b8e0b68a73f8ed89043d0f"
+    },
+    {
+      "path": "outputs\\cad\\step\\leveling_module_raised.step",
+      "bytes": 3434331,
+      "sha256": "885853ccd7210f48ffc8ae86572f30f30ea26a58e60be266b69ce503e7c8072f"
+    },
+    {
+      "path": "outputs\\cad\\step\\ls01_actuator_limit_package_neutral.step",
+      "bytes": 392583,
+      "sha256": "415087aae0f2bfd108cb513edbfcade2f0231c6d5321a5418123efec9e167ff9"
+    },
+    {
+      "path": "outputs\\cad\\step\\radial_actuator_joint_packages_neutral.step",
+      "bytes": 1050428,
+      "sha256": "90548448b6456ed98715f0d9dead836fcd62fcb4ae05a447ebeab7b8fe29369a"
+    },
+    {
+      "path": "outputs\\cad\\stl\\cable_guide.stl",
+      "bytes": 44884,
+      "sha256": "f5b68ac7287155774c47115fdede223504817ea26cc59421d7dcc9b6eabe9b75"
+    },
+    {
+      "path": "outputs\\cad\\stl\\imu_bracket.stl",
+      "bytes": 102284,
+      "sha256": "45919e826b39793a6f4cfc50e3d73b568bc1e0bd2f98e40a9dff9ec0901168cd"
+    },
+    {
+      "path": "outputs\\calculations\\phase2_results.json",
+      "bytes": 11816,
+      "sha256": "65e319b057071ea740a5a83eb1446b92d93005b89ed1e9f19d6627ca7683d27c"
+    },
+    {
+      "path": "outputs\\phase2\\acrylic_feasibility.md",
+      "bytes": 1694,
+      "sha256": "d7db56e5e35f5f8f3ca3be9ae0d2761131eb436721624e02699004db5c6f0ba2"
+    },
+    {
+      "path": "outputs\\phase2\\actuator_limit_package_summary.md",
+      "bytes": 2053,
+      "sha256": "3a957ef665a6c534311998f9273f9bd50d750fe92792fe04647269e643fd158f"
+    },
+    {
+      "path": "outputs\\phase2\\diagonal_design_decision.md",
+      "bytes": 2005,
+      "sha256": "62319f4ebb6397fca943fac1917c1aff456b79292b168409b1bac9372f9b2d52"
+    },
+    {
+      "path": "outputs\\phase2\\factory_clevis_gimbal_summary.md",
+      "bytes": 1615,
+      "sha256": "7eb6d0f430be575f1dcbcc701e01f2818306deefdda4a532f8db3c31772a7d9b"
+    },
+    {
+      "path": "outputs\\phase2\\phase2_bom.csv",
+      "bytes": 3248,
+      "sha256": "3e8a8a96b9af2c1bfcf4f3ff3e65e648ed09f563bf3f8c2bbba0f60640e5ab9d"
+    },
+    {
+      "path": "outputs\\phase2\\phase2_bom.md",
+      "bytes": 2477,
+      "sha256": "e3bb0ed7470316cab0a6a618ef8d3cc7eea139ae48e2538564affc1266f4bfc4"
+    },
+    {
+      "path": "outputs\\phase2\\phase2_engineering_report.md",
+      "bytes": 4080,
+      "sha256": "cab6325f283bd78ed48291bccdbd89d533ee2c9f5135d202b69b5a8a53197af9"
+    },
+    {
+      "path": "outputs\\phase2\\purchase_research.md",
+      "bytes": 2597,
+      "sha256": "6c2315fdd6c5f2205e13ab7425028ac313aee3535b2ff5162db41459eeb60a2a"
+    },
+    {
+      "path": "outputs\\renders\\jnt_cg01_factory_clevis_gimbal.png",
+      "bytes": 758015,
+      "sha256": "1b7387bf387870ad92c1ef4887e9811433c9bb9a37a1a1948a5ef8929ad5f09e"
+    },
+    {
+      "path": "outputs\\renders\\phase2_actuator_joint_detail.png",
+      "bytes": 656326,
+      "sha256": "5ac58b20456da6282e874a475d1dc29faccc74421342ea07ab377e1a0179a28b"
+    },
+    {
+      "path": "outputs\\renders\\phase2_actuator_limit_detail.png",
+      "bytes": 856319,
+      "sha256": "a4a39d03a38f71ff05ba54d4bf2f2b66bf1d1d2a2b7c5f94c72253b76b018794"
+    },
+    {
+      "path": "outputs\\renders\\phase2_actuator_limit_end_view.png",
+      "bytes": 840170,
+      "sha256": "37113d062191636f31c04038aab0d49cf0bc166bc7447a3152958eacc7bfab18"
+    },
+    {
+      "path": "outputs\\renders\\phase2_annotated_assembly.png",
+      "bytes": 1006622,
+      "sha256": "06de82c56bfcf31378e5c5cf5a3f50f1e68aa3d8c5553b9a1f3eb7961e08db29"
+    },
+    {
+      "path": "outputs\\renders\\phase2_assembly_front.png",
+      "bytes": 796693,
+      "sha256": "b1ccdcb2c1e7ea849a6025863876043728c6710843ec89cbcd34710bb1381e17"
+    },
+    {
+      "path": "outputs\\renders\\phase2_assembly_side.png",
+      "bytes": 777115,
+      "sha256": "6171ec579ad954009eb4e886d0e69c10f39d5e180f94a7d8694fc081c965e66b"
+    },
+    {
+      "path": "outputs\\renders\\phase2_assembly_top.png",
+      "bytes": 678348,
+      "sha256": "5d1574285f1bcf4a8f49d968688f25232fb8155b81543c85fa5a8ba109569412"
+    },
+    {
+      "path": "outputs\\renders\\phase2_cart_disengaged.png",
+      "bytes": 701241,
+      "sha256": "20fdfbc1104dcf29b9026af07de36c677cedfb9e118c759ec76eabdc0ae3a01a"
+    },
+    {
+      "path": "outputs\\renders\\phase2_cart_engaged.png",
+      "bytes": 639993,
+      "sha256": "be2e22396e01c4b27589f96e3ac93fffc5fc5587747de33c99fdac99b2a1a09e"
+    },
+    {
+      "path": "outputs\\renders\\phase2_collapsed.png",
+      "bytes": 698845,
+      "sha256": "450aa3564fe5e1a39f755b7248b79954bf906de3063e8ca8d5d8b9513bf8364a"
+    },
+    {
+      "path": "outputs\\renders\\phase2_diagonal_layout.png",
+      "bytes": 764387,
+      "sha256": "9d49c68cff01e628983598bbfd46d4f1c59911a5b91174d10343205d4de00a84"
+    },
+    {
+      "path": "outputs\\renders\\phase2_exploded.png",
+      "bytes": 840651,
+      "sha256": "841554e598cb0a2a9089cbe3a4a1de6f833a0dddd912571c7fa85ad53aecb4b7"
+    },
+    {
+      "path": "outputs\\renders\\phase2_gimbal_detail.png",
+      "bytes": 678866,
+      "sha256": "0da809c02d7f93bacf1afc5798c79916883e6f125dadf9e04ad67afb3b9e615b"
+    },
+    {
+      "path": "outputs\\renders\\phase2_gimbal_limit.png",
+      "bytes": 674354,
+      "sha256": "a9b26c852ff58e9b33128eb1c2fba5a1bbb2f06e90a5f77fde24566fb6098617"
+    },
+    {
+      "path": "outputs\\renders\\phase2_internal_top_off.png",
+      "bytes": 683752,
+      "sha256": "9e0069f0f6f220310c11acdab8b3b5ae07a9dca35f0bca48de2361f32447aba4"
+    },
+    {
+      "path": "outputs\\renders\\phase2_max_pitch.png",
+      "bytes": 685689,
+      "sha256": "3c16aa266051ecb4d90b1c368e14c590a277f2a36712dfe2050cc73c205c658e"
+    },
+    {
+      "path": "outputs\\renders\\phase2_max_pitch_roll.png",
+      "bytes": 682426,
+      "sha256": "c4db6fc32c7aa56a268f9d39dfe9de8ab11986524758e9261485895e4140b047"
+    },
+    {
+      "path": "outputs\\renders\\phase2_max_roll.png",
+      "bytes": 685874,
+      "sha256": "d87c5e26852a9463d23143d494c5cdb1b2077eac3818fb40303658ab78b045fd"
+    },
+    {
+      "path": "outputs\\renders\\phase2_neutral.png",
+      "bytes": 692753,
+      "sha256": "de95aec1319a916b83016214b2ebd71f9a2831f30377c691064a9728e88767ec"
+    },
+    {
+      "path": "outputs\\renders\\phase2_radial_tripod_detail.png",
+      "bytes": 709377,
+      "sha256": "61273ac1466db98f86ea1fbae5369a347dfceab25531c2c3a63d1e42f35f61db"
+    },
+    {
+      "path": "outputs\\renders\\phase2_raised.png",
+      "bytes": 696722,
+      "sha256": "3778d79fd09257f23045eae71312ea3bbb7497547b3d21c1e89b98d19b171ef4"
+    },
+    {
+      "path": "outputs\\renders\\vendor_firgelli_step_front.png",
+      "bytes": 864441,
+      "sha256": "45c35832fe68e27cc2f7655bb0f5aadb87fc2654042eb9d606b0dd2fe59d937a"
+    },
+    {
+      "path": "outputs\\renders\\vendor_firgelli_step_side.png",
+      "bytes": 814927,
+      "sha256": "0cbef8ba2f785aec711e7f3772249576ccc481b5e1634f84fd44d7074d713b76"
+    }
+  ]
+}

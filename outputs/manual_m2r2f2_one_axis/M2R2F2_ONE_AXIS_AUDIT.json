@@ -1,0 +1,268 @@
+{
+  "revision": "M2R2F2",
+  "dimension_status": {
+    "confirmed_catalogue_interfaces": {
+      "SHAT12_mm": {
+        "bore": 12,
+        "axis_height": 23,
+        "foot_length": 42,
+        "axis_width": 14,
+        "mount_pitch": 32,
+        "mount_hole": 5.5,
+        "foot_thickness": 6,
+        "clamp_screw": "M4"
+      },
+      "HFS8_4080_mm": {
+        "face": [
+          40,
+          80
+        ],
+        "slot_width": 10,
+        "slot_pitch": 40,
+        "slot_lip_depth": 5.5,
+        "slot_floor_depth": 12.5
+      },
+      "HNTT8_mm": {
+        "plan": [
+          17,
+          17
+        ],
+        "overall_height": 9,
+        "boss_height": 3,
+        "threads": [
+          "M5",
+          "M8"
+        ]
+      },
+      "BJ761_12011N_mm": {
+        "bore": "12 +0.2/0",
+        "width": "14 0/-0.2",
+        "eye_od": 25,
+        "eye_center_to_tip": 50,
+        "thread": "M12x1.75",
+        "thread_length": 30
+      },
+      "PHS12L_mm": {
+        "bore": "12 H7",
+        "inner_width": 16,
+        "holder_width": 12,
+        "holder_od": 30,
+        "ball_od": 22.225,
+        "thread": "M12x1.75 LH"
+      },
+      "MCL12F_mm": {
+        "bore": "12 +0.050/+0.012",
+        "od": 28,
+        "width": "11 +0.076/-0.254",
+        "clamp_screw": "M4x12",
+        "screw_location": 10.01,
+        "tool": "3 mm hex"
+      },
+      "axis_stack_mm": {
+        "support_inner_gap": 26,
+        "upper": "5 + 16 + 5",
+        "lower_nominal": "5.9 + 14 + 5.9 + 0.2 clearance",
+        "shaft_length": 100
+      }
+    },
+    "schematic_or_unconfirmed": [
+      "SHAT12 casting fillets, draft and proprietary clamp slit details",
+      "HFS8 internal cavities away from the mounting face",
+      "HNTT8 underside taper and exact thread lead-in",
+      "BJ761 eye-to-stem blend and thread helix",
+      "PHS12L grease nipple, copper bush/socket detail and thread helix",
+      "MCL-12-F slit and clamp screw are not yet represented in the complete-axis CAD",
+      "actual delivered widths and the final DIN988 shim combination",
+      "supplier-approved compression, slot-lip bending, clamp holding and slip ratings"
+    ]
+  },
+  "sets": {
+    "A1_COMPLETE_ASSEMBLED": {
+      "components": 46,
+      "invalid": [],
+      "unexpected": [],
+      "intentional": []
+    },
+    "A1_LOWER_ASSEMBLED": {
+      "components": 23,
+      "invalid": [],
+      "unexpected": [],
+      "intentional": []
+    },
+    "A1_UPPER_ASSEMBLED": {
+      "components": 24,
+      "invalid": [],
+      "unexpected": [],
+      "intentional": []
+    },
+    "A1_LOWER_EXPLODED": {
+      "components": 23,
+      "invalid": [],
+      "unexpected": [],
+      "intentional": []
+    },
+    "A1_UPPER_EXPLODED": {
+      "components": 24,
+      "invalid": [],
+      "unexpected": [],
+      "intentional": []
+    }
+  },
+  "step": [
+    {
+      "file": "A1_COMPLETE_ASSEMBLED_REVIEW.step",
+      "sha256": "794fe28d2d163e8e32cfcf17bec86502f0ab1149cdef2b7cf5756da8860c3519",
+      "valid": true,
+      "solids": 68,
+      "volume_delta_mm3": 5.8906152844429016e-08
+    },
+    {
+      "file": "A1_LOWER_ASSEMBLED_REVIEW.step",
+      "sha256": "5f4b392c73e0634d574ca11c490db2f9ca723c6d9fb7a693dbb56de91ee977ec",
+      "valid": true,
+      "solids": 29,
+      "volume_delta_mm3": 5.704350769519806e-09
+    },
+    {
+      "file": "A1_UPPER_ASSEMBLED_REVIEW.step",
+      "sha256": "e37fd22abc3581d626cc1b1b11413e5e55664e62eff5c42bc2503430d067adaa",
+      "valid": true,
+      "solids": 30,
+      "volume_delta_mm3": 8.731149137020111e-09
+    },
+    {
+      "file": "A1_LOWER_EXPLODED_REVIEW.step",
+      "sha256": "6547ab0d4e9f70b81717094ee520b1626a5d9d46cf98f18801e85a619fea9336",
+      "valid": true,
+      "solids": 29,
+      "volume_delta_mm3": 5.878973752260208e-09
+    },
+    {
+      "file": "A1_UPPER_EXPLODED_REVIEW.step",
+      "sha256": "83ca358b140fbca796b72bdb225b18249322c41ee63e2341305a2d64355f8624",
+      "valid": true,
+      "solids": 30,
+      "volume_delta_mm3": 8.614733815193176e-09
+    }
+  ],
+  "purchase_release": false,
+  "fabrication_release": false,
+  "physical_fit_test": false,
+  "lower_contact_distances": [
+    {
+      "pair": [
+        "L1_SHAT12_L",
+        "L1_SHIM_STACK_L"
+      ],
+      "distance_mm": 0.09999999999999964
+    },
+    {
+      "pair": [
+        "L1_SHIM_STACK_L",
+        "BJ761_12011N"
+      ],
+      "distance_mm": 1.7763568394002505e-15
+    },
+    {
+      "pair": [
+        "L1_SHAT12_L",
+        "L1_MCL12F_L"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "L1_SHAFT12X100",
+        "L1_SHAT12_L"
+      ],
+      "distance_mm": 0.0019999999999905506
+    },
+    {
+      "pair": [
+        "L1_SHAT12_R",
+        "L1_SHIM_STACK_R"
+      ],
+      "distance_mm": 0.10000000000000142
+    },
+    {
+      "pair": [
+        "L1_SHIM_STACK_R",
+        "BJ761_12011N"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "L1_SHAT12_R",
+        "L1_MCL12F_R"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "L1_SHAFT12X100",
+        "L1_SHAT12_R"
+      ],
+      "distance_mm": 0.001999999999985668
+    }
+  ],
+  "upper_contact_distances": [
+    {
+      "pair": [
+        "U1_SHAT12_L",
+        "U1_SHIM_STACK_L"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "U1_SHIM_STACK_L",
+        "PHS12L_INNER_RING"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "U1_SHAT12_L",
+        "U1_MCL12F_L"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "U1_SHAFT12X100",
+        "U1_SHAT12_L"
+      ],
+      "distance_mm": 0.001999999999961795
+    },
+    {
+      "pair": [
+        "U1_SHAT12_R",
+        "U1_SHIM_STACK_R"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "U1_SHIM_STACK_R",
+        "PHS12L_INNER_RING"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "U1_SHAT12_R",
+        "U1_MCL12F_R"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "U1_SHAFT12X100",
+        "U1_SHAT12_R"
+      ],
+      "distance_mm": 0.001999999999976604
+    }
+  ],
+  "digital_pass": true
+}

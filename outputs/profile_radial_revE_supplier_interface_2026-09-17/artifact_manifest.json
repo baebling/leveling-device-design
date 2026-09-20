@@ -1,0 +1,86 @@
+{
+  "revision": "E_ACTUAL_VENDOR_STEP_SUPPLIER_INTERFACES",
+  "artifact_count": 16,
+  "artifacts": [
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\Profile_Radial_3RPS_RevE_supplier_interface_validation.json",
+      "bytes": 104922,
+      "sha256": "D14B145A8CDB2C23459A71B8290D0FE49C0D85289C6DA95183E0E1EC1E965E9B"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\README_KO.md",
+      "bytes": 3092,
+      "sha256": "DDC9DD56C5504328A7C82F88161B97BAF08F6D0A4C571FF51A775313B0A6C829"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\renders\\01_COLLAPSED_SUPPLIER.png",
+      "bytes": 706222,
+      "sha256": "7849BFD7BB5AD802FF5B75D19683DFA51E410DBD26F269B1A622A339B3FE2851"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\renders\\02_NEUTRAL_SUPPLIER.png",
+      "bytes": 706352,
+      "sha256": "E19186CCCE8E27F71469A41B9586A1B39AC2F1CD35782D10A982E09E374FC7C6"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\renders\\03_RAISED_SUPPLIER.png",
+      "bytes": 705455,
+      "sha256": "CC3D12F9410DDF49C3B91CD4B98AC16B37E6A72634E9DC9A83CFC0E73A697811"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\renders\\04_PITCH3_ROLL3_SUPPLIER.png",
+      "bytes": 699476,
+      "sha256": "25B1D782D75D5D794E41DE256CFEA69FFC1793F3DDAF4C308CEDE97DE0A82199"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\renders\\05_PITCH3_ROLLM3_SUPPLIER.png",
+      "bytes": 711980,
+      "sha256": "CCCE7CC4179130F0C0C7C08D6825004BAC523A7A25AB79F32BD42F40D944327E"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\renders\\06_SIDE_SUPPLIER.png",
+      "bytes": 768046,
+      "sha256": "375ED69A8011DDC779480ADC149ACC86E6298123E785B05E003926F3EB39B230"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\renders\\07_UNDERSIDE_SUPPLIER.png",
+      "bytes": 705854,
+      "sha256": "218ECA41D136BF175E6D0D5D1DB316583D6E9B3C84602C84D25746420B974FC9"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\renders\\08_A1_JOINT_SUPPLIER.png",
+      "bytes": 839606,
+      "sha256": "5E91EB3BFB4278449F2D354948F42258ECE6F3179B3F060F1C35BC2E46E6FFB1"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\step\\A1_LM4075OE_LMB10_TRUSCO_PHS6_INTERFACE_DETAIL.step",
+      "bytes": 2575232,
+      "sha256": "9B8A99C51E4E98191232EE33F340494262536E427DEC5B68403D016C0762E24A"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_COLLAPSED.step",
+      "bytes": 10193534,
+      "sha256": "BAA1495E35C76A7275F6233558CD9B65EA62C8B357622E5956028DDC7C6FCEB0"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_NEUTRAL.step",
+      "bytes": 10239418,
+      "sha256": "03A92DCCA627F076D653E185F87C18B4117B401B3AF775F141045432643E6265"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_P3_R3.step",
+      "bytes": 10419003,
+      "sha256": "B5F270BBA0153D84BDCC36CB515458C4464E7E1380AAF9977D690350995E4B72"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_P3_RM3.step",
+      "bytes": 10417543,
+      "sha256": "83947B867975F2A346B22F581F6FCB0738DEA62EE7154E4CB9389655A51BCACC"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_supplier_interface_2026-09-17\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_RAISED.step",
+      "bytes": 10236975,
+      "sha256": "7111EFBC7E4CBD8FFC8A8E11784FD2A37E7A912A5684D717ADF8BD3896A0B337"
+    }
+  ]
+}

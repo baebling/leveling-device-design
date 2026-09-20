@@ -1,0 +1,85 @@
+{
+  "revision": "E-RC1",
+  "artifacts": [
+    {
+      "path": "output\\pdf\\Profile_Radial_3RPS_RevE_Electrical_Drawings_RC_2026-09-04.pdf",
+      "bytes": 5893,
+      "sha256": "09E399C658C592FA6A8F843CA0ACBD112CD172B145B2187EE6167A47D9055CDC"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_electrical_detailed_design_RC_2026-09-04.md",
+      "bytes": 3085,
+      "sha256": "C8A325F4B103B72100F62CAF1A0ECC9B51FAB7B522670AEF48D9FEFB9837EEED"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_enclosure_layout.csv",
+      "bytes": 942,
+      "sha256": "4472D8810E065E4D7CC63C489EEB6501808001ACD7F18DA418167386B2C13D3C"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_enclosure_layout_validation.json",
+      "bytes": 3499,
+      "sha256": "748E9361FCDA7393277DCCC869987FFA5B38549ED51D82740A6756334E2670C6"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_harness_schedule.csv",
+      "bytes": 938,
+      "sha256": "7D175AB44CE7182B1681884AE1262F6D876BD9A794885876BD872023A3E9E1DA"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_io_map.csv",
+      "bytes": 930,
+      "sha256": "69966739ADF959808A7CF700DAAAF38BD88622A5FC0124E0552860CAACE99725"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_point_to_point_wiring.csv",
+      "bytes": 3998,
+      "sha256": "42810FED12D1B54221B9274AF7807B4609B0F05C8E494649063CE81090CCFAFA"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_SL902_enclosure_layout_RC.png",
+      "bytes": 81214,
+      "sha256": "E0C3589045AD70EF60FC09993DC32D5D1A8E2CB6D99EC63FF5CAE84A39E4439C"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_SL902_enclosure_layout_RC.step",
+      "bytes": 268166,
+      "sha256": "72CAB1F9B71EBD229B73FC73A81A15563EE497BB60CAD63B21BB92A1E9D116DB"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\electrical\\RevE_terminal_map.csv",
+      "bytes": 776,
+      "sha256": "D744430B97A97E7F744C8512840B61CD3B2D81B4435FCA226FD6BD6F00769226"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\procurement\\Profile_Radial_3RPS_RevE_PoC_candidate_BOM_2026-09-04.csv",
+      "bytes": 19107,
+      "sha256": "775A2E1482F57EB1C1AACBDC00D87ABD34F0F27C402AB2349E098119559DD278"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\RevE_electrical_artifact_manifest.json",
+      "bytes": 3617,
+      "sha256": "EE6DDACBD969DA653C6922FDA3E716B8455A3B5B00E93CDCAC6D35FB54784933"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\RevE_electrical_build_summary.json",
+      "bytes": 328,
+      "sha256": "64FD7001970C2C04FEA0BA37580C27476A591CE32481056D04C4153ED0430B02"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\supplier_interfaces\\RevE_supplier_interface_register_2026-09-04.csv",
+      "bytes": 2093,
+      "sha256": "FB60377084DF2A8853DA1C8E6D7E62C383BE5C87AFF745535E29BB00DC88AD80"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\supplier_interfaces\\RFQ_MotionGearOn_LM4075OE_2026-09-04.md",
+      "bytes": 1138,
+      "sha256": "B2C29BB6AC28F5F534119F972B2160D5C374EC8E92593CD3DE7B77D8B372C08D"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_poc_release_candidate\\supplier_interfaces\\RFQ_Motorbank_LMB10_2026-09-04.md",
+      "bytes": 978,
+      "sha256": "FEF777379C0CD75632576447C9FC7AEA6B8099E232E7884C45DD92CFB2937C99"
+    }
+  ]
+}

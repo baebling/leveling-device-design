@@ -1,0 +1,10 @@
+﻿budget_item,amount_krw_vat_included_or_reserved,basis
+NAVIMRO_BOM_49_LINES,2799522,verified product-page prices 2026-08-27
+freight_and_long_item_surcharge,150000,NAVIMRO/forwarder provisional allowance
+outsourced_cut_drill_acrylic_work,300000,Local shop quote allowance; DXF supplied
+missing_drill_crimp_measurement_tools,100000,Use only if the laboratory lacks the listed tools
+misc_labels_spacers_small_consumables,50000,Non-catalogue fit-up allowance
+price_change_and_rework_contingency,400000,Do not spend before technical hold items close
+PLANNED_TOTAL,3799522,
+BUDGET_CAP,4000000,user confirmed
+HEADROOM,200478,must remain non-negative at purchase release

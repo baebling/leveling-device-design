@@ -1,0 +1,758 @@
+{
+  "revision": "B",
+  "status": "REJECTED_ASSEMBLY_GEOMETRY_REDESIGN_REQUIRED",
+  "fabrication_release": false,
+  "component_count": 80,
+  "structural_plate_count": 0,
+  "welding_required": false,
+  "drilling_or_tapping_required": false,
+  "profile_square_cutting_required": true,
+  "workspace": {
+    "pose_count": 27,
+    "required_min_pin_mm": 225.0020319280914,
+    "required_max_pin_mm": 280.3439784576357,
+    "required_span_mm": 55.341946529544316,
+    "retract_margin_mm": 20.002031928091412,
+    "extend_margin_mm": 24.65602154236427,
+    "passes_stroke": true,
+    "rows": [
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          226.04516057282433,
+          225.003634538352,
+          243.3280999299355
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          234.7243066308047,
+          225.51187515932574,
+          242.83261530431128
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          243.30509760717524,
+          226.01897292104124,
+          242.33611760435252
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          225.51187515932574,
+          233.71991758660187,
+          234.7243066308047
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          234.22265048453363,
+          234.22265048453363,
+          234.22265048453363
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          242.83261530431128,
+          234.7243066308047,
+          233.71991758660187
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          225.0020319280914,
+          242.33611760435252,
+          226.01897292104124
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          233.71991758660187,
+          242.83261530431128,
+          225.51187515932574
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          242.33627519422885,
+          243.3280999299355,
+          225.003634538352
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          242.60266958804726,
+          241.4736932555945,
+          261.29610643192524
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          252.00881669415492,
+          242.0256316691241,
+          260.7621109528154
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          261.2730697667405,
+          242.5763142501347,
+          260.2270196975188
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          242.0256316691241,
+          250.92241093296516,
+          252.00881669415492
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          251.46620051211653,
+          251.46620051211653,
+          251.46620051211653
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          260.7621109528154,
+          252.00881669415492,
+          250.92241093296516
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          241.47394871511688,
+          260.2270196975188,
+          242.5763142501347
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          250.92241093296516,
+          260.7621109528154,
+          242.0256316691241
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          260.22534388902193,
+          261.29610643192524,
+          241.4736932555945
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          260.5104526964331,
+          259.3114989998045,
+          280.3439784576357
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          270.50210213575843,
+          259.8984550392744,
+          279.77862313194197
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          280.32100072779957,
+          260.4840884777376,
+          279.2121230637293
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          259.8984550392744,
+          269.3494249857157,
+          270.50210213575843
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          269.9263788517158,
+          269.9263788517158,
+          269.9263788517158
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          279.77862313194197,
+          270.50210213575843,
+          269.3494249857157
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "pin_lengths_mm": [
+          259.3133653408014,
+          279.2121230637293,
+          260.4840884777376
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "pin_lengths_mm": [
+          269.3494249857157,
+          279.77862313194197,
+          259.8984550392744
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "pin_lengths_mm": [
+          279.2088625550887,
+          280.3439784576357,
+          259.3114989998045
+        ]
+      }
+    ]
+  },
+  "mechanical_stop_sweep": {
+    "maximum_horizontal_sweep_mm": 12.182305100187886,
+    "allowed_center_sweep_mm": 20.0,
+    "minimum_clearance_mm": 7.817694899812114,
+    "passes": true,
+    "rows": [
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 12.182305100187886
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 11.90812664745683
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 11.640141785560099
+      },
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 8.809819223833301
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 8.426088955113958
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 8.042358686394664
+      },
+      {
+        "stop": 1,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 12.182305100187886
+      },
+      {
+        "stop": 2,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 11.90812664745683
+      },
+      {
+        "stop": 3,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 11.640141785560099
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 8.426088955113958
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 8.426088955113958
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 8.426088955113958
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 0.0
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 0.0
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 0.0
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 8.426088955113958
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 8.426088955113958
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 8.426088955113958
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 11.640141785560099
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 11.90812664745683
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "sweep_mm": 12.182305100187886
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 8.042358686394664
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 8.426088955113958
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "sweep_mm": 8.809819223833301
+      },
+      {
+        "stop": 1,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 11.640141785560099
+      },
+      {
+        "stop": 2,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 11.90812664745683
+      },
+      {
+        "stop": 3,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "sweep_mm": 12.182305100187886
+      }
+    ]
+  },
+  "actuation_jacobian": {
+    "matrix": [
+      [
+        0.7158116585912921,
+        -10.37913220303439,
+        178.95003016963213
+      ],
+      [
+        0.7158116585912921,
+        178.95003016963213,
+        10.379124728476445
+      ],
+      [
+        0.7158116585912921,
+        -178.9509514145985,
+        -10.37913220303439
+      ]
+    ],
+    "determinant": -45999.371354798124,
+    "full_rank": true
+  },
+  "joint_axis_alignment": {
+    "neutral_maximum_error_deg": 3.5492740775875036,
+    "all_pose_maximum_error_deg": 5.446668578969096,
+    "tolerance_deg": 0.1,
+    "passes": false,
+    "rows": [
+      {
+        "pose": "collapsed",
+        "actuator": 1,
+        "lower_perpendicular_error_deg": 3.5492740775875036,
+        "upper_perpendicular_error_deg": 3.5492740775875036
+      },
+      {
+        "pose": "collapsed",
+        "actuator": 2,
+        "lower_perpendicular_error_deg": 3.5492740775875036,
+        "upper_perpendicular_error_deg": 3.5492740775875036
+      },
+      {
+        "pose": "collapsed",
+        "actuator": 3,
+        "lower_perpendicular_error_deg": 3.5492740775875036,
+        "upper_perpendicular_error_deg": 3.5492740775875036
+      },
+      {
+        "pose": "neutral",
+        "actuator": 1,
+        "lower_perpendicular_error_deg": 3.3056127269387514,
+        "upper_perpendicular_error_deg": 3.3056127269387514
+      },
+      {
+        "pose": "neutral",
+        "actuator": 2,
+        "lower_perpendicular_error_deg": 3.3056127269387514,
+        "upper_perpendicular_error_deg": 3.3056127269387514
+      },
+      {
+        "pose": "neutral",
+        "actuator": 3,
+        "lower_perpendicular_error_deg": 3.3056127269387514,
+        "upper_perpendicular_error_deg": 3.3056127269387514
+      },
+      {
+        "pose": "raised",
+        "actuator": 1,
+        "lower_perpendicular_error_deg": 3.0793169927615036,
+        "upper_perpendicular_error_deg": 3.0793169927615036
+      },
+      {
+        "pose": "raised",
+        "actuator": 2,
+        "lower_perpendicular_error_deg": 3.0793169927615036,
+        "upper_perpendicular_error_deg": 3.0793169927615036
+      },
+      {
+        "pose": "raised",
+        "actuator": 3,
+        "lower_perpendicular_error_deg": 3.0793169927615036,
+        "upper_perpendicular_error_deg": 3.0793169927615036
+      },
+      {
+        "pose": "max_pitch",
+        "actuator": 1,
+        "lower_perpendicular_error_deg": 3.3082393994743207,
+        "upper_perpendicular_error_deg": 1.1599417897685285
+      },
+      {
+        "pose": "max_pitch",
+        "actuator": 2,
+        "lower_perpendicular_error_deg": 3.1876469220374894,
+        "upper_perpendicular_error_deg": 3.1876469220374894
+      },
+      {
+        "pose": "max_pitch",
+        "actuator": 3,
+        "lower_perpendicular_error_deg": 3.434704817875223,
+        "upper_perpendicular_error_deg": 3.434704817875223
+      },
+      {
+        "pose": "max_roll",
+        "actuator": 1,
+        "lower_perpendicular_error_deg": 3.1876469220374894,
+        "upper_perpendicular_error_deg": 3.1876469220374894
+      },
+      {
+        "pose": "max_roll",
+        "actuator": 2,
+        "lower_perpendicular_error_deg": 3.2939618677458014,
+        "upper_perpendicular_error_deg": 5.446668578969096
+      },
+      {
+        "pose": "max_roll",
+        "actuator": 3,
+        "lower_perpendicular_error_deg": 3.3082393994743207,
+        "upper_perpendicular_error_deg": 1.1599417897685285
+      },
+      {
+        "pose": "max_pitch_roll",
+        "actuator": 1,
+        "lower_perpendicular_error_deg": 3.3408614705431563,
+        "upper_perpendicular_error_deg": 1.1184690536405475
+      },
+      {
+        "pose": "max_pitch_roll",
+        "actuator": 2,
+        "lower_perpendicular_error_deg": 3.1767617083561834,
+        "upper_perpendicular_error_deg": 5.294916485855768
+      },
+      {
+        "pose": "max_pitch_roll",
+        "actuator": 3,
+        "lower_perpendicular_error_deg": 3.4378414115885576,
+        "upper_perpendicular_error_deg": 1.2571547064927386
+      }
+    ]
+  },
+  "support_azimuth": {
+    "lower": {
+      "azimuths_deg": [
+        0.0,
+        90.0,
+        180.0
+      ],
+      "circular_gaps_deg": [
+        90.0,
+        90.0,
+        180.0
+      ],
+      "is_120_degree_radial": false
+    },
+    "upper": {
+      "azimuths_deg": [
+        0.0,
+        90.0,
+        180.0
+      ],
+      "circular_gaps_deg": [
+        90.0,
+        90.0,
+        180.0
+      ],
+      "is_120_degree_radial": false
+    },
+    "passes": false
+  },
+  "connector_fastener_axes": {
+    "lower_4035": {
+      "modeled_fastener_axes": [
+        "vertical",
+        "vertical"
+      ],
+      "required_fastener_axes": [
+        "vertical",
+        "horizontal"
+      ],
+      "passes": false
+    },
+    "upper_DCB3025": {
+      "modeled_fastener_axes": [
+        "vertical",
+        "vertical"
+      ],
+      "required_fastener_axes": [
+        "vertical",
+        "horizontal"
+      ],
+      "passes": false
+    },
+    "passes": false
+  },
+  "bounds": {
+    "collapsed": {
+      "xmin": -350.00000000000006,
+      "xmax": 350.00000000000006,
+      "ymin": -350.0,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 296.0,
+      "xlen": 700.0000000000001,
+      "ylen": 700.0,
+      "zlen": 296.0
+    },
+    "neutral": {
+      "xmin": -350.00000000000006,
+      "xmax": 350.00000000000006,
+      "ymin": -350.0,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 321.0,
+      "xlen": 700.0000000000001,
+      "ylen": 700.0,
+      "zlen": 321.0
+    },
+    "raised": {
+      "xmin": -350.00000000000006,
+      "xmax": 350.00000000000006,
+      "ymin": -350.0,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 346.0,
+      "xlen": 700.0000000000001,
+      "ylen": 700.0,
+      "zlen": 346.0
+    },
+    "max_pitch": {
+      "xmin": -350.00000000000006,
+      "xmax": 352.92217431989224,
+      "ymin": -350.0,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 339.22850444407766,
+      "xlen": 702.9221743198923,
+      "ylen": 700.0,
+      "zlen": 339.22850444407766
+    },
+    "max_roll": {
+      "xmin": -350.00000000000006,
+      "xmax": 350.00000000000006,
+      "ymin": -352.9358789723464,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 339.7518640065071,
+      "xlen": 700.0000000000001,
+      "ylen": 702.9358789723465,
+      "zlen": 339.7518640065071
+    },
+    "max_pitch_roll": {
+      "xmin": -350.00000000000006,
+      "xmax": 353.90357105401046,
+      "ymin": -352.9358789723464,
+      "ymax": 350.0,
+      "zmin": 0.0,
+      "zmax": 357.9546696726768,
+      "xlen": 703.9035710540105,
+      "ylen": 702.9358789723465,
+      "zlen": 357.9546696726768
+    }
+  },
+  "actuator_body_collision_volume_mm3": {
+    "collapsed": 0.0,
+    "neutral": 0.0,
+    "raised": 0.0,
+    "max_pitch": 0.0,
+    "max_roll": 0.0,
+    "max_pitch_roll": 0.0
+  },
+  "actuator_eye_collision_volume_mm3": {
+    "collapsed": 0.0,
+    "neutral": 0.0,
+    "raised": 0.0,
+    "max_pitch": 0.0,
+    "max_roll": 0.0,
+    "max_pitch_roll": 0.0
+  },
+  "digital_checks_pass": false,
+  "step_reverse_import": {
+    "file": "outputs/minimal_profile_only_revB/step/MINIMAL_3RPS_profile_only_collapsed_revB.step",
+    "solid_count": 205,
+    "volume_mm3": 8554832.429044968,
+    "passes": true
+  },
+  "step_file_count": 12,
+  "collapsed_actuator_pin_lengths_mm": [
+    234.22265048453363,
+    234.22265048453363,
+    234.22265048453363
+  ],
+  "open_items": [
+    "REDESIGN: 4035/DCB connector second-leg fastener axes",
+    "REDESIGN: actuator eye/pin-axis alignment",
+    "REDESIGN: requested 120-degree radial support layout",
+    "LM4075OE eye axial width and matching vendor STEP",
+    "LMB-10 pin and positive retainer inclusion",
+    "M6 prevailing-torque nut and shim thickness after one-axis fit",
+    "independent M10 mechanical stop catalog combination"
+  ]
+}

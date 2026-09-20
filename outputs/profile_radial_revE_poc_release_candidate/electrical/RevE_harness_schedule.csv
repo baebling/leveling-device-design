@@ -1,0 +1,9 @@
+﻿harness,qty,conductors,cut_length_mm_each,service_loop_mm,termination,gate
+H-A1-MOTOR,1,2 x 14 AWG,1800,300,ferrule/actuator supplier termination TBC,motor colors and final enclosure position
+H-A2-MOTOR,1,2 x 14 AWG,1800,300,ferrule/actuator supplier termination TBC,motor colors and final enclosure position
+H-A3-MOTOR,1,2 x 14 AWG,1800,300,ferrule/actuator supplier termination TBC,motor colors and final enclosure position
+H-A1-ENC,1,4 x 24 AWG,2000,300,Mega terminal/actuator supplier termination TBC,encoder colors and levels
+H-A2-ENC,1,4 x 24 AWG,2000,300,Mega terminal/actuator supplier termination TBC,encoder colors and levels
+H-A3-ENC,1,4 x 24 AWG,2000,300,Mega terminal/actuator supplier termination TBC,encoder colors and levels
+H-IMU,1,4 x 24 AWG,500,100,2.54 mm headers,route and logic-level bench check
+H-USB-DATA,1,USB data only,1500,100,Type-C to PC,VBUS red conductor disconnected when external 5V is active

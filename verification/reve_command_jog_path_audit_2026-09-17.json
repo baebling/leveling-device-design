@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-09-17",
+  "geometry_basis": "ProfileRadialRevD retained geometry",
+  "fabrication_status": "NOT APPROVED FOR FABRICATION",
+  "scope": "DENSE_GRID_TO_HOME_PARK_AND_DENSE_ADJACENT_JOG_SEGMENTS",
+  "dense_pose_count": 1859,
+  "park_pose": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "park_segment_count": 1859,
+  "jog_segment_count": 5122,
+  "sampled_state_count": 89707,
+  "sampling_step": {
+    "lift_mm": 1.0,
+    "angle_deg": 0.1
+  },
+  "software_pin_window_mm": [
+    210.0,
+    280.0
+  ],
+  "minimum_pin_mm": 210.77174102543512,
+  "maximum_pin_mm": 276.93711548670905,
+  "maximum_tilt_deg": 4.241670935281773,
+  "tilt_limit_deg": 5.0,
+  "maximum_phs_articulation_deg": 4.096369064245487,
+  "phs_limit_deg": 13.0,
+  "phs_limit_source": "LDK_PHS6_DATASHEET",
+  "finite_screen_pass": true,
+  "continuous_workspace_proven": false,
+  "full_path_cad_collision_audited": false,
+  "release_ready": false,
+  "worst_minimum_pin": {
+    "kind": "DENSE_TO_HOME_PARK",
+    "segment_index": 168,
+    "sample_index": 0,
+    "pose": [
+      0.0,
+      3.0,
+      3.0
+    ],
+    "pin_lengths_mm": [
+      233.05402322010394,
+      228.61378511228935,
+      210.77174102543512
+    ]
+  },
+  "worst_maximum_pin": {
+    "kind": "DENSE_TO_HOME_PARK",
+    "segment_index": 1690,
+    "sample_index": 0,
+    "pose": [
+      50.0,
+      -3.0,
+      -3.0
+    ],
+    "pin_lengths_mm": [
+      252.60325058273122,
+      258.07091885425007,
+      276.93711548670905
+    ]
+  },
+  "worst_tilt": {
+    "kind": "DENSE_TO_HOME_PARK",
+    "segment_index": 0,
+    "sample_index": 0,
+    "pose": [
+      0.0,
+      -3.0,
+      -3.0
+    ],
+    "tilt_deg": 4.241670935281773
+  },
+  "worst_articulation": {
+    "kind": "DENSE_TO_HOME_PARK",
+    "segment_index": 0,
+    "sample_index": 0,
+    "pose": [
+      0.0,
+      -3.0,
+      -3.0
+    ],
+    "maximum_phs_articulation_deg": 4.096369064245487
+  },
+  "release_blockers": [
+    "This finite policy screen does not cover arbitrary endpoint-to-endpoint commands.",
+    "Final LMB/PHS/independent-stop geometry is not included in a full-path CAD collision audit.",
+    "Supplier switch trip lengths, overtravel, current, and encoder counts/mm remain unverified."
+  ]
+}

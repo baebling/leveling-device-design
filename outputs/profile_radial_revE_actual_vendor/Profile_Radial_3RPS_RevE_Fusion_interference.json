@@ -1,0 +1,140 @@
+{
+  "method": "Fusion Design.analyzeInterference; coincident faces excluded",
+  "pass_count": 3,
+  "repeatable": true,
+  "all_zero_unexpected": true,
+  "passes": [
+    {
+      "pass": 1,
+      "checked_leaf_occurrences": 150,
+      "interference_count": 3,
+      "signature": [
+        [
+          "A1_LM4075OE_NEIGUAN_BODY",
+          "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.000116
+        ],
+        [
+          "A2_LM4075OE_NEIGUAN_BODY",
+          "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.001377
+        ],
+        [
+          "A3_LM4075OE_NEIGUAN_BODY",
+          "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.001377
+        ]
+      ],
+      "rows": [
+        {
+          "entity_one": "A1_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.00011598128452827597,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        },
+        {
+          "entity_one": "A2_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.0013769159431437311,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        },
+        {
+          "entity_one": "A3_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.0013769186166882586,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        }
+      ],
+      "unexpected_count": 0,
+      "passes": true
+    },
+    {
+      "pass": 2,
+      "checked_leaf_occurrences": 150,
+      "interference_count": 3,
+      "signature": [
+        [
+          "A1_LM4075OE_NEIGUAN_BODY",
+          "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.000116
+        ],
+        [
+          "A2_LM4075OE_NEIGUAN_BODY",
+          "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.001377
+        ],
+        [
+          "A3_LM4075OE_NEIGUAN_BODY",
+          "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.001377
+        ]
+      ],
+      "rows": [
+        {
+          "entity_one": "A1_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.00011598128452827597,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        },
+        {
+          "entity_one": "A2_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.0013769159431437311,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        },
+        {
+          "entity_one": "A3_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.0013769186166882586,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        }
+      ],
+      "unexpected_count": 0,
+      "passes": true
+    },
+    {
+      "pass": 3,
+      "checked_leaf_occurrences": 150,
+      "interference_count": 3,
+      "signature": [
+        [
+          "A1_LM4075OE_NEIGUAN_BODY",
+          "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.000116
+        ],
+        [
+          "A2_LM4075OE_NEIGUAN_BODY",
+          "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.001377
+        ],
+        [
+          "A3_LM4075OE_NEIGUAN_BODY",
+          "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          0.001377
+        ]
+      ],
+      "rows": [
+        {
+          "entity_one": "A1_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A1_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.00011598128452827597,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        },
+        {
+          "entity_one": "A2_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A2_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.0013769159431437311,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        },
+        {
+          "entity_one": "A3_LM4075OE_NEIGUAN_BODY",
+          "entity_two": "A3_UPPER_M6x50_PART_THREAD_PIVOT_BODY_01",
+          "volume_mm3": 0.0013769186166882586,
+          "classification": "NUMERICAL_TOLERANCE_CONTACT"
+        }
+      ],
+      "unexpected_count": 0,
+      "passes": true
+    }
+  ]
+}

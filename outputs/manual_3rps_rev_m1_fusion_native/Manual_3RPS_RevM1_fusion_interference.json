@@ -1,0 +1,32 @@
+{
+  "method": "Fusion Design.analyzeInterference; coincident faces excluded",
+  "pass_count": 3,
+  "repeatable": true,
+  "all_zero": true,
+  "passes": [
+    {
+      "pass": 1,
+      "checked_leaf_occurrences": 129,
+      "interference_count": 0,
+      "signature": [],
+      "rows": [],
+      "passes": true
+    },
+    {
+      "pass": 2,
+      "checked_leaf_occurrences": 129,
+      "interference_count": 0,
+      "signature": [],
+      "rows": [],
+      "passes": true
+    },
+    {
+      "pass": 3,
+      "checked_leaf_occurrences": 129,
+      "interference_count": 0,
+      "signature": [],
+      "rows": [],
+      "passes": true
+    }
+  ]
+}

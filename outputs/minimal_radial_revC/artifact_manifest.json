@@ -1,0 +1,183 @@
+{
+  "revision": "C",
+  "status": "DIGITAL_CORE_ASSEMBLY_PASS_EYE_WIDTH_AND_STOP_MOUNT_OPEN",
+  "artifact_count": 35,
+  "component_count": 85,
+  "artifacts": [
+    {
+      "path": "outputs/minimal_radial_revC/documents/electrical_control_completeness_2026-08-28.md",
+      "bytes": 5417,
+      "sha256": "ff6bfa3bb23b2bccb73f1b8e40e42ec84f4f7344f39dfe818edc60e3f167fb5d"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/documents/minimal_radial_revC_2026-08-31.md",
+      "bytes": 4212,
+      "sha256": "f77714135cd46af09ce1a71f0ce148ab704f725d4d9502855a7cbf4d5889c318"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/documents/minimal_radial_revC_structural_bom_2026-08-31.md",
+      "bytes": 3647,
+      "sha256": "9b8e61ed949069c539867560fac7bb729957d01bab9717656f5b12d8778d72ce"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/documents/revB_assembly_reaudit_2026-08-31.md",
+      "bytes": 4004,
+      "sha256": "296a4102c10d20f4a7e9076ab85963d7bbc83a914e815cd11cbd6bfb053c8755"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/fabrication/LOWER_HUB_280x220x10_revC.dxf",
+      "bytes": 20972,
+      "sha256": "810dbc420b8c588e74294400bdf0815aeaf4fd78f2fccf80364ed8ca9dde336f"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/FUSION360_IMPORT_AND_ASSEMBLY_GUIDE.md",
+      "bytes": 2872,
+      "sha256": "253f32aba3a460561db786174296209d066d9d961cf6ccd913e5d8e0352a0221"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/01_collapsed_iso.png",
+      "bytes": 68625,
+      "sha256": "fd3b026f8e17c0ea05f68708b96269f5bfdc52839a65eaf8a0f032fd2213b56c"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/02_raised_iso.png",
+      "bytes": 76678,
+      "sha256": "ee431db22ad4324686f159fd2a78be6820ae17d7783b8fe1b46c1f902b818534"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/03_max_pitch_roll_iso.png",
+      "bytes": 84039,
+      "sha256": "23877962dc9758302437a2b654ebb7b770fed43651953dad09d8e1f8e6ec13fc"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/04_top_120deg_layout.png",
+      "bytes": 38257,
+      "sha256": "61925cfc359399294964c15ea75a6983b13ea583b664c4db8a27a71904ef0688"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/05_front.png",
+      "bytes": 50001,
+      "sha256": "ed314889acf13f179331bde9048a5e67f86ed3f462278ef099eca1dd9837fdf4"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/06_exploded.png",
+      "bytes": 81945,
+      "sha256": "c96c0333d6ad9cab51a19f9ec66f31331f78ce0801e6c7c224cbe8fc84d13915"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/07_A1_joint_detail.png",
+      "bytes": 49587,
+      "sha256": "da927c918095b46d4d1ddf9eeb869f956e683f722b25cc63450ee1e22879dbf3"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/08_4035_connector_detail.png",
+      "bytes": 33143,
+      "sha256": "b29350380fb95b96dce89b6cbe185074fadb915a8085bff04266bf025b25ca8f"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/renders/09_lower_hub_detail.png",
+      "bytes": 34631,
+      "sha256": "afc3dad15999a82b71a879e5c92efdc502c34ab30c0f86edd400e4918afcf051"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/DETAIL_4035_COPLANAR_CORNER_revC.step",
+      "bytes": 250460,
+      "sha256": "12bbfec5863a794137333c5cbaa8016e61de791721fe1da10d39b99e8fa39731"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/DETAIL_A1_COMPLETE_JOINT_revC.step",
+      "bytes": 436210,
+      "sha256": "addac670f9270c3ba702181b08280654845433460a790b9e23bda1624ccb5299"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/DETAIL_LOWER_HUB_AND_LMB_revC.step",
+      "bytes": 441932,
+      "sha256": "b9f96743f03a28ee028c30cd86817913b66f81e46890219f24a316a3212580d8"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/MINIMAL_3RPS_radial_collapsed_revC.step",
+      "bytes": 3684320,
+      "sha256": "abb048167dbae4b1d621a509afb5dddb011996fe26589c6093ffa358914f364d"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/MINIMAL_3RPS_radial_exploded_revC.step",
+      "bytes": 3667862,
+      "sha256": "f3bdd0be26d15eaf10a1710cd8e66a4a26bc2f32022a336a270f63e805b0eefe"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/MINIMAL_3RPS_radial_max_pitch_revC.step",
+      "bytes": 3859884,
+      "sha256": "5a094c8c35c6b2f8a3b991c40b1a4ebe27f65bce3a894955da24c132a4e844ac"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/MINIMAL_3RPS_radial_max_pitch_roll_revC.step",
+      "bytes": 3882728,
+      "sha256": "4afe2f0b0ae034a9c82b0d02fde672e84df5f568ffe2eb3ab1a277d2bc9f08f9"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/MINIMAL_3RPS_radial_max_roll_revC.step",
+      "bytes": 3819251,
+      "sha256": "abc4e8347f316f17bdb2eddd6fda0e57052263a5ce8b2169d3fae92e0b79154d"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/MINIMAL_3RPS_radial_neutral_revC.step",
+      "bytes": 3684454,
+      "sha256": "e1a221deb5771e26ad8f4a624ce44d7819fe717aa58b2710811fc75029a9c29d"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/MINIMAL_3RPS_radial_raised_revC.step",
+      "bytes": 3684600,
+      "sha256": "3954298afe07af8482a89081daa7af3c8eb713995070d82b71f14e4fe9d19f20"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/SUB_01_LOWER_FRAME_HUB_collapsed_revC.step",
+      "bytes": 1863125,
+      "sha256": "98fb0a51643b26bdf36bb0b4076b1a7a182531532ae36519f43f402800796055"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/SUB_02_UPPER_PROFILE_FRAME_collapsed_revC.step",
+      "bytes": 1472199,
+      "sha256": "6988f6fdcbc235cac2232c7d10359a0896ebbb8843bc6a217c96e29d00b70ac8"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/SUB_03_THREE_ACTUATORS_collapsed_revC.step",
+      "bytes": 166922,
+      "sha256": "0800bbd74656d63896f3c2da9400121661ffcb289b69c9bbed850f6d5106e415"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/step/SUB_04_MECHANICAL_STOPS_collapsed_revC.step",
+      "bytes": 145109,
+      "sha256": "11e078397922e78a232d42045240a91da4216f1eb39e26c5461c246641a72ee1"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/tables/component_manifest.csv",
+      "bytes": 11532,
+      "sha256": "b4e15f7d215b347689c6b7fb8cdfdecd2b7f5331a8431f2c7b989a86b45625b2"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/tables/fastener_schedule.csv",
+      "bytes": 541,
+      "sha256": "a433316b8fe5e8abe061096867d86ea7e33f7056121f74c5fa218d71a01c6cbb"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/tables/lower_hub_hole_table.csv",
+      "bytes": 766,
+      "sha256": "1fa2e63c2ed7ce9d8bae4842cbcbc5b646ceea6a04f9638e3fbeb5ea74230e11"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/tables/mechanical_BOM.csv",
+      "bytes": 803,
+      "sha256": "eb13b8686cfa1b34a47551fb0fa3ddb11c33bd0adca711ca6568f96a6f539cd2"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/tables/profile_cut_list.csv",
+      "bytes": 229,
+      "sha256": "5bc9e523bf5754ced90d74ec8499dfd4ab7888a1ac8896c0176db95f2002ecc0"
+    },
+    {
+      "path": "outputs/minimal_radial_revC/verification/minimal_radial_revC_validation.json",
+      "bytes": 23034,
+      "sha256": "d3168315f5805f8ed8d5761b0a44403579fab48359dc91b8d0fa5b45ca889682"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+ARCHIVED - DO NOT ORDER
+
+The CSV with the matching base name is the last powered Rev D bill of
+materials. On 2026-09-01 the active project direction changed to a manually
+adjustable three-strut 3-RPS mock-up.
+
+Active references:
+- requirements/current_manual_scope_2026-09-01.md
+- design_basis/manual_adjustable_3rps_baseline_2026-09-01.md
+- procurement/manual_3rps_bom_delta_2026-09-01.csv
+
+The powered BOM is retained only for design history and possible future
+electrification. purchase_release=false and fabrication_release=false.

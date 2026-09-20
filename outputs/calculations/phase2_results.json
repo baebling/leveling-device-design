@@ -1,0 +1,335 @@
+{
+  "kinematics": {
+    "angle_deg": 3.0,
+    "minimum_length_mm": 345.14285499760456,
+    "maximum_length_mm": 439.29639128490254,
+    "required_span_mm": 94.15353628729798,
+    "retracted_margin_mm": 26.14285499760456,
+    "extended_margin_mm": 83.70360871509746,
+    "passes_commercial_actuator": true
+  },
+  "force": {
+    "worst_case": {
+      "payload_kg": 10.0,
+      "structure_kg": 22.0,
+      "cg_x_mm": 0.0,
+      "cg_y_mm": 0.0,
+      "lift_mm": 0.0,
+      "pitch_deg": -3.0,
+      "roll_deg": -3.0,
+      "a1_n": 564.7587386165675,
+      "a2_n": 692.3970251446185,
+      "a3_n": 592.6358957360102,
+      "max_compression_n": 692.3970251446185,
+      "min_reaction_n": 564.7587386165675,
+      "minimum_vertical_direction_cosine": 0.4532266728535626
+    },
+    "minimum_reaction_case": {
+      "payload_kg": 5.0,
+      "structure_kg": 15.0,
+      "cg_x_mm": 0.0,
+      "cg_y_mm": 0.0,
+      "lift_mm": 100.0,
+      "pitch_deg": 3.0,
+      "roll_deg": -3.0,
+      "a1_n": 301.40744366901475,
+      "a2_n": 293.41345156735076,
+      "a3_n": 274.7710407083739,
+      "max_compression_n": 301.40744366901475,
+      "min_reaction_n": 274.7710407083739,
+      "minimum_vertical_direction_cosine": 0.6507238096461212
+    },
+    "selected_dynamic_rating_n": 2001.7,
+    "rating_margin_n": 1309.3029748553815,
+    "maximum_required_tension_n": 0.0,
+    "passes_preliminary_force_check": true,
+    "eccentricity_sensitivity": [
+      {
+        "cg_x_mm": 0.0,
+        "cg_y_mm": 0.0,
+        "vertical_reactions_n": [
+          313.8128,
+          313.8128,
+          313.8128
+        ],
+        "estimated_axial_forces_n": [
+          610.4470952654162,
+          610.4470952654162,
+          610.4470952654162
+        ]
+      },
+      {
+        "cg_x_mm": 50.0,
+        "cg_y_mm": 0.0,
+        "vertical_reactions_n": [
+          392.26599999999996,
+          274.5862,
+          274.5862
+        ],
+        "estimated_axial_forces_n": [
+          763.0588690817702,
+          534.1412083572393,
+          534.1412083572393
+        ]
+      },
+      {
+        "cg_x_mm": 0.0,
+        "cg_y_mm": 50.0,
+        "vertical_reactions_n": [
+          313.8128,
+          381.7552642081813,
+          245.8703357918187
+        ],
+        "estimated_axial_forces_n": [
+          610.4470952654162,
+          742.6127683069836,
+          478.28142222384884
+        ]
+      },
+      {
+        "cg_x_mm": 50.0,
+        "cg_y_mm": 50.0,
+        "vertical_reactions_n": [
+          392.26599999999996,
+          342.5286642081813,
+          206.6437357918187
+        ],
+        "estimated_axial_forces_n": [
+          763.0588690817702,
+          666.3068813988066,
+          401.97553531567183
+        ]
+      },
+      {
+        "cg_x_mm": 100.0,
+        "cg_y_mm": 0.0,
+        "vertical_reactions_n": [
+          470.71920000000006,
+          235.35960000000003,
+          235.3596
+        ],
+        "estimated_axial_forces_n": [
+          915.6706428981246,
+          457.8353214490623,
+          457.83532144906223
+        ]
+      },
+      {
+        "cg_x_mm": 0.0,
+        "cg_y_mm": 100.0,
+        "vertical_reactions_n": [
+          313.8128,
+          449.6977284163626,
+          177.92787158363737
+        ],
+        "estimated_axial_forces_n": [
+          610.4470952654162,
+          874.7784413485512,
+          346.1157491822814
+        ]
+      },
+      {
+        "cg_x_mm": 100.0,
+        "cg_y_mm": 100.0,
+        "vertical_reactions_n": [
+          470.7192,
+          371.2445284163626,
+          99.47467158363736
+        ],
+        "estimated_axial_forces_n": [
+          915.6706428981245,
+          722.166667532197,
+          193.50397536592732
+        ]
+      }
+    ],
+    "note": "Inclination is included through each actuator's vertical direction cosine. The central keyed guide reacts the balanced lateral components. Pin, bracket, buckling and transient FEA remain required before fabrication."
+  },
+  "angle_sensitivity": [
+    {
+      "angle_deg": 3.0,
+      "minimum_length_mm": 345.14285499760456,
+      "maximum_length_mm": 439.29639128490254,
+      "required_span_mm": 94.15353628729798,
+      "retracted_margin_mm": 26.14285499760456,
+      "extended_margin_mm": 83.70360871509746,
+      "passes_commercial_actuator": true
+    },
+    {
+      "angle_deg": 5.0,
+      "minimum_length_mm": 335.33394771817103,
+      "maximum_length_mm": 451.7812279928579,
+      "required_span_mm": 116.44728027468688,
+      "retracted_margin_mm": 16.333947718171032,
+      "extended_margin_mm": 71.21877200714209,
+      "passes_commercial_actuator": true
+    },
+    {
+      "angle_deg": 8.0,
+      "minimum_length_mm": 320.7318345032395,
+      "maximum_length_mm": 470.0114208078036,
+      "required_span_mm": 149.27958630456408,
+      "retracted_margin_mm": 1.7318345032394973,
+      "extended_margin_mm": 52.988579192196426,
+      "passes_commercial_actuator": false
+    }
+  ],
+  "latch_interface": {
+    "mass_kg": 75.0,
+    "horizontal_accel_g": 0.5,
+    "design_shear_n": 735.49875,
+    "four_latch_nominal_capacity_n": 6405.6,
+    "latch_capacity_ratio": 8.70919223180189,
+    "rule": "Guide pins/conical seats take shear and locate X/Y/yaw; latches supply clamp/preload."
+  },
+  "acrylic_250N_240mm": {
+    "load_n": 250,
+    "width_mm": 100,
+    "thickness_mm": 15,
+    "span_mm": 240,
+    "second_moment_mm4": 28125.0,
+    "stress_mpa": 4.0,
+    "deflection_mm": 0.7757575757575758,
+    "allowable_mpa": 5.0,
+    "passes_stress_only": true
+  },
+  "acrylic_500N_240mm": {
+    "load_n": 500,
+    "width_mm": 100,
+    "thickness_mm": 15,
+    "span_mm": 240,
+    "second_moment_mm4": 28125.0,
+    "stress_mpa": 8.0,
+    "deflection_mm": 1.5515151515151515,
+    "allowable_mpa": 5.0,
+    "passes_stress_only": false
+  },
+  "acrylic_250N_800mm": {
+    "load_n": 250,
+    "width_mm": 100,
+    "thickness_mm": 15,
+    "span_mm": 800,
+    "second_moment_mm4": 28125.0,
+    "stress_mpa": 13.333333333333334,
+    "deflection_mm": 28.7317620650954,
+    "allowable_mpa": 5.0,
+    "passes_stress_only": false
+  },
+  "inclined_tripod_geometry": {
+    "upper_joint_radius_mm": 400.0,
+    "lower_joint_radius_mm": 91.31977428305248,
+    "horizontal_offset_mm": 308.6802257169475,
+    "collapsed_vertical_separation_mm": 185.0,
+    "collapsed_incline_from_horizontal_deg": 30.93534137213185
+  },
+  "guide_overlap_collapsed_mm": 188.0,
+  "guide_overlap_raised_mm": 88.0,
+  "max_pitch_roll_corner_height_range_mm": [
+    325.44726020608937,
+    414.3610061318002
+  ],
+  "actuator_limit_package": {
+    "positions": {
+      "package_code": "LS-01",
+      "active_variant": "LS-01M_STATIC_BENCH_MINIMAL",
+      "external_electrical_limit_package_enabled": false,
+      "electrical_limit_path": "actuator internal non-adjustable limit switches",
+      "mechanical_limit_path": "independent external twin-rod stop collars",
+      "fixed_guide_station_from_base_pin_mm": 220.0,
+      "moving_crosshead_offset_from_top_pin_mm": 0.0,
+      "lower_mechanical_collar_offset_from_crosshead_mm": 104.0,
+      "lower_electrical_cam_offset_from_crosshead_mm": 109.0,
+      "upper_electrical_cam_offset_from_crosshead_mm": 293.0,
+      "upper_mechanical_collar_offset_from_crosshead_mm": 298.0,
+      "electrical_to_mechanical_allowance_lower_mm": 5.0,
+      "electrical_to_mechanical_allowance_upper_mm": 5.0,
+      "rod_length_mm": 320.0,
+      "upper_collar_fits_on_rod": true,
+      "sequence": "lower command -> lower electrical cam -> lower mechanical collars -> actuator retracted endpoint; upper command -> upper electrical cam -> upper mechanical collars -> actuator extended endpoint"
+    },
+    "vendor_mount_datum": {
+      "source_step_pin_span_mm": 318.017,
+      "official_nominal_retracted_pin_span_mm": 319.0,
+      "source_step_fixed_body_zone_from_rear_pin_mm": [
+        45.17,
+        288.73
+      ],
+      "mb21_envelope_mm": [
+        50.0,
+        82.854,
+        100.0
+      ],
+      "mb21_axial_range_from_rear_pin_mm": [
+        170.0,
+        270.0
+      ],
+      "mb21_inside_source_step_body_zone": true,
+      "near_end_reserve_mm": 124.83,
+      "far_end_reserve_mm": 18.730000000000018,
+      "moving_datum": "official front clevis pin centre",
+      "moving_adapter_rule": "Capture the clevis adapter or clevis shoulder with keyed faces; do not clamp or side-load the chrome rod.",
+      "limitation": "STEP-derived body limits and MB21 envelope are layout evidence only. Firgelli has not yet accepted external stop reaction through MB21."
+    },
+    "static_screen": {
+      "design_package_static_load_n": 823.7586,
+      "stop_rod_count": 2,
+      "equal_share_load_per_rod_n": 411.8793,
+      "guide_rod_axial_stress_mpa": 3.6418125862349826,
+      "collar_face_contact_pressure_mpa": 0.8194078319028711,
+      "minimum_verified_axial_holding_per_collar_n": 823.7586,
+      "warning": "Static axial stress and face pressure are only geometry screens. Purchased collar push-off, fixed-carrier attachment, one-rod load concentration, impact energy, fatigue, and actuator-housing load acceptance remain unverified."
+    },
+    "switch_candidate": {
+      "family": "Omron D4N",
+      "active_in_current_variant": false,
+      "layout_seed": "roller-plunger, slow-action direct-opening contact candidate",
+      "envelope_mm": [
+        31.0,
+        30.0,
+        65.0
+      ],
+      "roller_diameter_mm": 9.5,
+      "catalogue_pretravel_max_mm": 2.0,
+      "catalogue_overtravel_min_mm": 4.0,
+      "bracket_adjustment_each_direction_mm": 8.0,
+      "selection_note": "D4N-4D32 is archived from the active static-bench prototype. Retain this reference only if the module later becomes mobile, unattended, higher-speed, or safety-reviewed."
+    },
+    "phase_gate": "PHASE_2_PRELIMINARY_NOT_FOR_FABRICATION"
+  },
+  "factory_clevis_gimbal": {
+    "serial_adapter": {
+      "topology": "factory-eye to serial HRT8E adapter at both ends",
+      "minimum_existing_joint_distance_mm": 345.14285499760456,
+      "assumed_extension_each_end_mm": 32.0,
+      "effective_minimum_actuator_pin_length_mm": 281.14285499760456,
+      "catalog_retracted_length_mm": 319.0,
+      "passes_catalog_endpoint": false,
+      "selection_status": "reject_for_current_geometry",
+      "reason": "Serial adapters consume the current lower-stroke workspace reserve."
+    },
+    "nested_gimbal": {
+      "joint_code": "JNT-CG-01",
+      "design_force_n": 876.3712233792451,
+      "factory_hole_mm": 8.2,
+      "factory_eye_width_mockup_range_mm": [
+        9.0,
+        11.0
+      ],
+      "factory_eye_outer_diameter_mm": 20.0,
+      "inner_cradle_gap_mm": 12.0,
+      "plate_thickness_mm": 6.0,
+      "pin_diameter_mm": 8.0,
+      "trunnion_supported_span_mm": 22.0,
+      "pin_double_shear_mpa": 8.717425761518653,
+      "pin_bending_mpa": 95.89168337670517,
+      "lug_bearing_mpa": 18.25773382040094,
+      "passes_preliminary_static_screen": true,
+      "kinematic_center_offset_mm": 0.0,
+      "allowed_rotations": "factory pin axis plus orthogonal trunnion axis",
+      "selection_status": "preferred_measured_mockup_seed",
+      "fabrication_note": "Use an inner cradle around the factory eye and two opposed M8 shoulder-screw trunnions. Do not run a second full through-pin across the factory pin.",
+      "open_measurements": "selected 450 lbf 8-inch front/rear eye thickness, side-face flatness, pin shoulder stack, available sweep around the actuator housing, shoulder-screw engagement and retention"
+    },
+    "phase_gate": "STATIC_BENCH_POC_MEASURED_MOCKUP_REQUIRED"
+  }
+}

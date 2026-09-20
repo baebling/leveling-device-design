@@ -1,0 +1,9 @@
+﻿missing_item,planning_spec,quantity,use,release_action
+M5 socket screw,M5x16 provisional,8,LMF12UU flange to transfer plate,Confirm delivered flange thread/through-hole
+M5 flat washer,M5,8,LMF12UU flange,Add after vendor confirmation
+M5 nyloc nut,M5,8,LMF12UU flange,Only if flange uses through holes
+M6 socket screw,M6x20 provisional,16,SK12 and CR-3001 mounting,Confirm actual mounting-hole diameter
+M6 flat washer,M6,16,SK12 and CR-3001 mounting,Add after vendor confirmation
+M6 T-slot nut,40-series slot compatible,16,SK12 and CR-3001 mounting,Confirm profile slot compatibility
+Deck compression spacer,ID 8.6 / OD 18 / L5 nylon,16,Acrylic deck,Select commercial spacer or machine from tube
+Locator pin,Master round plus relieved secondary,2,Cart coupling,Turn locally after cart receiver dimensions are frozen

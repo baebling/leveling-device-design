@@ -1,0 +1,277 @@
+{
+  "source": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\profile_radial_revD_fusion_native\\Profile_Radial_3RPS_RevD_COLLAPSED.step",
+  "main_step_solid_count": 289,
+  "main_bounds_mm": {
+    "xmin": -350.0,
+    "xmax": 350.0,
+    "ymin": -350.0,
+    "ymax": 350.0,
+    "zmin": 0.0,
+    "zmax": 300.0,
+    "xlen": 700.0,
+    "ylen": 700.0,
+    "zlen": 300.0
+  },
+  "group_summary": {
+    "lower_frame": {
+      "solid_count": 6,
+      "bounds_mm": {
+        "xmin": -350.0,
+        "xmax": 350.0,
+        "ymin": -350.0,
+        "ymax": 350.0,
+        "zmin": 0.0,
+        "zmax": 40.0,
+        "xlen": 700.0,
+        "ylen": 700.0,
+        "zlen": 40.0
+      }
+    },
+    "lower_brackets": {
+      "solid_count": 8,
+      "bounds_mm": {
+        "xmin": -310.0,
+        "xmax": 310.0,
+        "ymin": -310.0,
+        "ymax": 310.0,
+        "zmin": 2.5,
+        "zmax": 37.5,
+        "xlen": 620.0,
+        "ylen": 620.0,
+        "zlen": 35.0
+      }
+    },
+    "lower_adapters": {
+      "solid_count": 3,
+      "bounds_mm": {
+        "xmin": -124.951905283833,
+        "xmax": 124.951905283833,
+        "ymin": -72.5,
+        "ymax": 110.0,
+        "zmin": 40.0,
+        "zmax": 48.0,
+        "xlen": 249.903810567666,
+        "ylen": 182.5,
+        "zlen": 8.0
+      }
+    },
+    "lower_joints": {
+      "solid_count": 9,
+      "bounds_mm": {
+        "xmin": -102.95061658979719,
+        "xmax": 88.45061658979711,
+        "ymin": -75.3156986040721,
+        "ymax": 103.0,
+        "zmin": 48.0,
+        "zmax": 92.0,
+        "xlen": 191.4012331795943,
+        "ylen": 178.3156986040721,
+        "zlen": 44.0
+      }
+    },
+    "actuators": {
+      "solid_count": 6,
+      "bounds_mm": {
+        "xmin": -236.91660498395436,
+        "xmax": 222.41660498395436,
+        "ymin": -150.351596988934,
+        "ymax": 260.0,
+        "zmin": 68.02055197625742,
+        "zmax": 245.0,
+        "xlen": 459.3332099679087,
+        "ylen": 410.35159698893403,
+        "zlen": 176.97944802374258
+      }
+    },
+    "upper_frame": {
+      "solid_count": 6,
+      "bounds_mm": {
+        "xmin": -350.0,
+        "xmax": 350.0,
+        "ymin": -350.0,
+        "ymax": 350.0,
+        "zmin": 270.0,
+        "zmax": 300.0,
+        "xlen": 700.0,
+        "ylen": 700.0,
+        "zlen": 30.0
+      }
+    },
+    "upper_brackets": {
+      "solid_count": 8,
+      "bounds_mm": {
+        "xmin": -320.0,
+        "xmax": 320.0,
+        "ymin": -315.0,
+        "ymax": 315.0,
+        "zmin": 272.5,
+        "zmax": 297.5,
+        "xlen": 640.0,
+        "ylen": 630.0,
+        "zlen": 25.0
+      }
+    },
+    "upper_joints": {
+      "solid_count": 9,
+      "bounds_mm": {
+        "xmin": -226.55057958017,
+        "xmax": 226.55057958016994,
+        "ymin": -133.39711431703,
+        "ymax": 259.0,
+        "zmin": 226.0,
+        "zmax": 270.0,
+        "xlen": 453.10115916033993,
+        "ylen": 392.39711431703,
+        "zlen": 44.0
+      }
+    },
+    "mechanical_stops": {
+      "solid_count": 39,
+      "bounds_mm": {
+        "xmin": -285.0,
+        "xmax": 285.0,
+        "ymin": -350.0,
+        "ymax": 350.0,
+        "zmin": 0.0,
+        "zmax": 278.0,
+        "xlen": 570.0,
+        "ylen": 700.0,
+        "zlen": 278.0
+      }
+    },
+    "fasteners": {
+      "solid_count": 195,
+      "bounds_mm": {
+        "xmin": -326.5,
+        "xmax": 326.5,
+        "ymin": -337.0,
+        "ymax": 337.0,
+        "zmin": 13.2,
+        "zmax": 290.1,
+        "xlen": 653.0,
+        "ylen": 674.0,
+        "zlen": 276.90000000000003
+      }
+    }
+  },
+  "intersection_tolerance_mm3": 0.01,
+  "intersections": [
+    {
+      "pair": "lower_frame::lower_brackets",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_frame::upper_brackets",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_adapters::lower_joints",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "lower_joints::actuators",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "actuators::upper_joints",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "actuators::lower_frame",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "actuators::lower_brackets",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "actuators::upper_frame",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "actuators::upper_brackets",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "actuators::mechanical_stops",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "mechanical_stops::lower_frame",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "mechanical_stops::upper_frame",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_joints::mechanical_stops",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    },
+    {
+      "pair": "upper_joints::upper_frame",
+      "total_intersection_volume_mm3": 0.0,
+      "max_pair_intersection_volume_mm3": 0.0,
+      "collision_count": 0,
+      "collisions": [],
+      "pass": true
+    }
+  ],
+  "checks": {
+    "700x700x300_envelope": true,
+    "audited_non_mating_pairs_have_no_positive_volume_overlap": true
+  },
+  "pass": true
+}

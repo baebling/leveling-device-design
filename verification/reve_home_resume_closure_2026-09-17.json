@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-09-17",
+  "geometry_basis": "ProfileRadialRevD retained geometry",
+  "fabrication_status": "NOT APPROVED FOR FABRICATION",
+  "start_pose_count": 1859,
+  "start_set_scope": "DENSE_GRID_ONLY",
+  "order": [
+    3,
+    2,
+    1
+  ],
+  "low_limit_mm": 205.0,
+  "low_limit_status": "NOMINAL_UNVERIFIED",
+  "step_mm": 1.0,
+  "restart_state_count": 216951,
+  "failed_restart_state_count": 0,
+  "common_pass": true,
+  "first_failure": null,
+  "resume_scope": "SAME_POWER_SESSION_WITH_LIVE_ENCODER_COUNTS_ONLY",
+  "power_loss_resume_allowed": false,
+  "power_loss_action": "HOME_START_UNVERIFIED",
+  "command_jog_finite_audit_recorded_separately": true,
+  "continuous_workspace_proven": false,
+  "release_ready": false,
+  "release_blockers": [
+    "The separate finite command/JOG audit does not prove continuous or arbitrary endpoint-to-endpoint paths.",
+    "Power-loss or MCU-reset resume is prohibited because encoder position cannot be revalidated automatically.",
+    "Actual lower-limit trip lengths and final CAD collision path remain unverified."
+  ]
+}

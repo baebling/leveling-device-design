@@ -1,0 +1,10 @@
+{
+  "revision": "E-RC1",
+  "date": "2026-09-04",
+  "unique_custom_parts": 9,
+  "dxf_count": 9,
+  "drawing_pdf": "output\\pdf\\Profile_Radial_3RPS_RevE_Fabrication_Drawings_RC_2026-09-04.pdf",
+  "lmb_interface_frozen": false,
+  "fabrication_release": false,
+  "reason": "LMB-10 supplier drawing or first-article measurement is still required."
+}

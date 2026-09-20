@@ -1,0 +1,176 @@
+{
+  "revision": "E-RC1",
+  "date": "2026-09-04",
+  "occ": {
+    "method": "CadQuery/OpenCascade full 27-pose B-rep audit repeated three times",
+    "passes": [
+      {
+        "pass": 1,
+        "signature": "5F92C577B4FCB4510744F1C75C2C18D6A5F58A1D6CFD99FB0C450E12044D4A9E",
+        "pose_count": 27,
+        "minimum_pin_mm": 210.771741,
+        "maximum_pin_mm": 276.937115,
+        "max_collision_mm3": 0.0,
+        "passes": true
+      },
+      {
+        "pass": 2,
+        "signature": "5F92C577B4FCB4510744F1C75C2C18D6A5F58A1D6CFD99FB0C450E12044D4A9E",
+        "pose_count": 27,
+        "minimum_pin_mm": 210.771741,
+        "maximum_pin_mm": 276.937115,
+        "max_collision_mm3": 0.0,
+        "passes": true
+      },
+      {
+        "pass": 3,
+        "signature": "5F92C577B4FCB4510744F1C75C2C18D6A5F58A1D6CFD99FB0C450E12044D4A9E",
+        "pose_count": 27,
+        "minimum_pin_mm": 210.771741,
+        "maximum_pin_mm": 276.937115,
+        "max_collision_mm3": 0.0,
+        "passes": true
+      }
+    ],
+    "repeatable": true,
+    "all_pass": true
+  },
+  "joint": {
+    "max_phs6_articulation_deg": 4.096369064245487,
+    "limit_deg": 8.0,
+    "passes": true
+  },
+  "fusion": {
+    "method": "Fusion Design.analyzeInterference; coincident faces excluded",
+    "pass_count": 3,
+    "repeatable": true,
+    "all_zero_unexpected": true,
+    "section_images": [
+      {
+        "path": "outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_SECTION_PASS_1.png",
+        "bytes": 241864,
+        "sha256": "88B1E17FFF1CA273D089CD49A0B4BB5BCB6F345D9B075D6BE02BF84F8F1A7A0A"
+      },
+      {
+        "path": "outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_SECTION_PASS_2.png",
+        "bytes": 256419,
+        "sha256": "1FE79D2CD934A25F4942BCDE068FFEF89C0ED6BB1AC1393615CE0609234D0E4B"
+      },
+      {
+        "path": "outputs\\profile_radial_revE_actual_vendor\\Profile_Radial_3RPS_RevE_SECTION_PASS_3.png",
+        "bytes": 227324,
+        "sha256": "9A04A4E2E897DDC16E42E5DFAE6E6E39B3EE40EFCB1146220FD05B0B1C915221"
+      }
+    ],
+    "passes": true,
+    "note": "Evidence is the existing Fusion-native Rev E baseline. Fusion must be rerun after any supplier-interface geometry change."
+  },
+  "fabrication": {
+    "dxf_count": 9,
+    "unique_part_ids": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09"
+    ],
+    "entity_counts": {
+      "C01_A1_LMB_RADIAL_ADAPTER.dxf": 8,
+      "C02_A2_LMB_RADIAL_ADAPTER.dxf": 8,
+      "C03_A3_LMB_RADIAL_ADAPTER.dxf": 8,
+      "C04_LOWER_STOP_CATCH_FRONT.dxf": 7,
+      "C05_LOWER_STOP_CATCH_REAR.dxf": 7,
+      "C06_UPPER_STOP_ANCHOR_FRONT.dxf": 7,
+      "C07_UPPER_STOP_ANCHOR_REAR.dxf": 7,
+      "C08_STOP_CONTACT_BAR.dxf": 5,
+      "C09_ROUND_THROUGH-BORE_STANDOFF.dxf": 6
+    },
+    "a3_profile_hole_local_x_mm": [
+      -50.0,
+      50.0
+    ],
+    "passes": true,
+    "fabrication_release": false,
+    "open_gate": "LMB-10 supplier drawing/first-article measurement"
+  },
+  "electrical": {
+    "candidate_bom_rows": 61,
+    "known_subtotal_krw": 1278437,
+    "under_target_before_open_quotes": true,
+    "under_absolute_budget_before_open_quotes": true,
+    "required_tables_present": true,
+    "enclosure_layout_envelope_pass": true,
+    "open_bom_rows": [
+      "M01",
+      "M02",
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "F08",
+      "F09",
+      "F11",
+      "F13",
+      "E01",
+      "E04",
+      "E09D",
+      "E09B",
+      "E12",
+      "E22"
+    ],
+    "passes_detail_design": true,
+    "purchase_release": false,
+    "power_release": false
+  },
+  "firmware": {
+    "required_commands": {
+      "STATUS": true,
+      "HOME": true,
+      "JOG": true,
+      "LIFT": true,
+      "LEVEL": true,
+      "STOP": true,
+      "ZERO_IMU": true,
+      "SAVE_CAL": true
+    },
+    "required_safety_fragments": {
+      "ENC_A[AXES] = {2, 3, 18}": true,
+      "ENC_B[AXES] = {22, 23, 24}": true,
+      "MOTOR_PWM[AXES] = {5, 6, 7}": true,
+      "MOTOR_DIR[AXES] = {30, 31, 32}": true,
+      "REVERSE_PAUSE_MS = 100": true,
+      "NO_PULSE_MS = 500": true,
+      "IMU_STALE_MS = 200": true,
+      "TILT_FAULT_DEG = 5.0f": true,
+      "MOTION_TIMEOUT_MS = 30000": true,
+      "LEVEL_STEP_MM = 0.25f": true,
+      "LEVEL_TOLERANCE_DEG = 0.5f": true,
+      "LEVEL_HOLD_MS = 10000": true,
+      "EEPROM.put": true
+    },
+    "brace_balance": 0,
+    "passes_static_audit": true,
+    "compile_test": "PASS_ARDUINO_AVR_MEGA",
+    "compile_record": "outputs\\profile_radial_revE_poc_release_candidate\\firmware_build\\compile_record.txt",
+    "firmware_binaries": [
+      "outputs\\profile_radial_revE_poc_release_candidate\\firmware_build\\reve_leveling_controller.ino.hex",
+      "outputs\\profile_radial_revE_poc_release_candidate\\firmware_build\\reve_leveling_controller.ino.with_bootloader.hex"
+    ],
+    "bench_test": "NOT_RUN_HARDWARE_REQUIRED"
+  },
+  "physical_tests_executed": false,
+  "purchase_release": false,
+  "fabrication_release": false,
+  "power_release": false,
+  "poc_acceptance": false,
+  "digital_package_pass": true
+}

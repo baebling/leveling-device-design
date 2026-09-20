@@ -1,0 +1,2298 @@
+{
+  "engine": "CadQuery 2.8 / OpenCascade 7.9",
+  "intersection_tolerance_mm3": 0.01,
+  "cycles": [
+    {
+      "cycle": 1,
+      "pass_1_kinematics_and_strength": true,
+      "pass_2_occ_assembly_and_interference": true,
+      "pass_3_section_fit_and_bom_reconstruction": true,
+      "workspace_summary": {
+        "required_minimum_pin_mm": 262.7236307194399,
+        "required_maximum_pin_mm": 284.44389927467705,
+        "required_adjustment_mm": 21.72026855523717,
+        "minimum_internal_engagement_mm": 25.778050362661475,
+        "lower_length_margin_mm": 2.723630719439882,
+        "upper_length_margin_mm": 15.556100725322949
+      },
+      "strength": {
+        "design_leg_load_n": 600.0,
+        "conservative_m12_euler_buckling_n": 11555.139161058609,
+        "buckling_factor": 19.258565268431013,
+        "m12_direct_thread_stress_mpa": 7.117437722419929,
+        "five_mm_adapter_plate_bending_stress_mpa": 42.0,
+        "adapter_plate_yield_factor": 6.571428571428571,
+        "passes_preliminary_screen": true,
+        "limitations": "Turnbuckle and hinge-support compression capacity is not published; supplier confirmation and a one-leg proof test remain mandatory."
+      },
+      "poses": [
+        {
+          "pose": "NEUTRAL",
+          "pitch_deg": 0.0,
+          "roll_deg": 0.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 700.0,
+            "ylen": 700.0,
+            "zmin": 0.0,
+            "zmax": 300.0
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "PITCH_P3",
+          "pitch_deg": 3.0,
+          "roll_deg": 0.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.0735653572369,
+            "ylen": 700.2158482761556,
+            "zmin": 0.0,
+            "zmax": 318.19835420867827
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "PITCH_M3",
+          "pitch_deg": -3.0,
+          "roll_deg": 0.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.0735653572369,
+            "ylen": 700.2158482761556,
+            "zmin": 0.0,
+            "zmax": 318.19835420867827
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "ROLL_P3",
+          "pitch_deg": 0.0,
+          "roll_deg": 3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 700.0,
+            "ylen": 704.2894136333925,
+            "zmin": 0.0,
+            "zmax": 318.19835420867827
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "ROLL_M3",
+          "pitch_deg": 0.0,
+          "roll_deg": -3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 700.0,
+            "ylen": 703.8577170810815,
+            "zmin": 0.0,
+            "zmax": 318.19835420867827
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "P3_R3",
+          "pitch_deg": 3.0,
+          "roll_deg": 3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.1211700473751,
+            "ylen": 704.5470534374826,
+            "zmin": 0.0,
+            "zmax": 336.37176820538957
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "P3_RM3",
+          "pitch_deg": 3.0,
+          "roll_deg": -3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.9839707155149,
+            "ylen": 704.5482366871694,
+            "zmin": 0.0,
+            "zmax": 336.37176820538957
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "PM3_R3",
+          "pitch_deg": -3.0,
+          "roll_deg": 3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.1211700473752,
+            "ylen": 704.5470534374826,
+            "zmin": 0.0,
+            "zmax": 336.37176820538957
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "PM3_RM3",
+          "pitch_deg": -3.0,
+          "roll_deg": -3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.9839707155148,
+            "ylen": 704.5482366871695,
+            "zmin": 0.0,
+            "zmax": 336.37176820538957
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        }
+      ],
+      "section_fit": {
+        "checks": {
+          "lower_eye_width_inside_BJ762_12001_gap": true,
+          "upper_PHS12L_ring_width_inside_BJ762_20001_gap": true,
+          "upper_PHS12L_neck_width_inside_BJ762_20001_gap": true,
+          "upper_reducing_bush_pair_matches_pin_and_support": true,
+          "lower_nut_space_inside_15mm_standoff_gap": true,
+          "upper_nut_space_inside_20mm_standoff_gap": true,
+          "lower_adapter_edge_margin": true,
+          "upper_support_body_fits_60mm_plate_width": true
+        },
+        "clearances_mm": {
+          "lower_eye_side_total": 0.3999999999999986,
+          "upper_ring_side_total": 6.399999999999999,
+          "upper_neck_side_total": 3.1999999999999993,
+          "lower_nut_vertical": 3.0,
+          "upper_nut_vertical": 2.0
+        },
+        "pass": true
+      },
+      "bom": {
+        "bom_row_count": 26,
+        "quantity_checks": {
+          "S01": true,
+          "S02": true,
+          "S03": true,
+          "S04": true,
+          "S05": true,
+          "S06": true,
+          "M01": true,
+          "M02": true,
+          "M03": true,
+          "M04": true,
+          "M05": true,
+          "M06": true,
+          "M07": true,
+          "M08": true,
+          "F01": true,
+          "F02": true,
+          "F03": true,
+          "F04": true,
+          "F05": true,
+          "F06": true,
+          "F07": true,
+          "F08": true,
+          "F09": true,
+          "F10": true,
+          "F11": true,
+          "F12": true
+        },
+        "model_group_counts": {
+          "lower_frame": 6,
+          "frame_brackets": 14,
+          "lower_adapters": 9,
+          "adapter_fasteners": 12,
+          "lower_supports": 3,
+          "fasteners": 6,
+          "upper_frame": 5,
+          "upper_adapters": 9,
+          "upper_supports": 3,
+          "links": 3,
+          "joint_pins": 6
+        },
+        "model_checks": {
+          "three_links": true,
+          "sixteen_modeled_solids_per_link_including_five_lock_nuts": true,
+          "three_lower_supports": true,
+          "three_upper_supports": true,
+          "six_lower_frame_profiles": true,
+          "five_upper_frame_profiles": true,
+          "fourteen_frame_brackets": true,
+          "six_adapter_plates_plus_twelve_standoffs": true,
+          "twelve_adapter_bolts": true,
+          "six_joint_pins": true
+        },
+        "pass": true
+      },
+      "pass": true,
+      "result_sha256": "968a6b6d6621bbdc237c86ccedcfa74f9d49bf2f96357c1fc14fcbdf5276e7fa"
+    },
+    {
+      "cycle": 2,
+      "pass_1_kinematics_and_strength": true,
+      "pass_2_occ_assembly_and_interference": true,
+      "pass_3_section_fit_and_bom_reconstruction": true,
+      "workspace_summary": {
+        "required_minimum_pin_mm": 262.7236307194399,
+        "required_maximum_pin_mm": 284.44389927467705,
+        "required_adjustment_mm": 21.72026855523717,
+        "minimum_internal_engagement_mm": 25.778050362661475,
+        "lower_length_margin_mm": 2.723630719439882,
+        "upper_length_margin_mm": 15.556100725322949
+      },
+      "strength": {
+        "design_leg_load_n": 600.0,
+        "conservative_m12_euler_buckling_n": 11555.139161058609,
+        "buckling_factor": 19.258565268431013,
+        "m12_direct_thread_stress_mpa": 7.117437722419929,
+        "five_mm_adapter_plate_bending_stress_mpa": 42.0,
+        "adapter_plate_yield_factor": 6.571428571428571,
+        "passes_preliminary_screen": true,
+        "limitations": "Turnbuckle and hinge-support compression capacity is not published; supplier confirmation and a one-leg proof test remain mandatory."
+      },
+      "poses": [
+        {
+          "pose": "NEUTRAL",
+          "pitch_deg": 0.0,
+          "roll_deg": 0.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 700.0,
+            "ylen": 700.0,
+            "zmin": 0.0,
+            "zmax": 300.0
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "PITCH_P3",
+          "pitch_deg": 3.0,
+          "roll_deg": 0.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.0735653572369,
+            "ylen": 700.2158482761556,
+            "zmin": 0.0,
+            "zmax": 318.19835420867827
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "PITCH_M3",
+          "pitch_deg": -3.0,
+          "roll_deg": 0.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.0735653572369,
+            "ylen": 700.2158482761556,
+            "zmin": 0.0,
+            "zmax": 318.19835420867827
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "ROLL_P3",
+          "pitch_deg": 0.0,
+          "roll_deg": 3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 700.0,
+            "ylen": 704.2894136333925,
+            "zmin": 0.0,
+            "zmax": 318.19835420867827
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "ROLL_M3",
+          "pitch_deg": 0.0,
+          "roll_deg": -3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 700.0,
+            "ylen": 703.8577170810815,
+            "zmin": 0.0,
+            "zmax": 318.19835420867827
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "P3_R3",
+          "pitch_deg": 3.0,
+          "roll_deg": 3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.1211700473751,
+            "ylen": 704.5470534374826,
+            "zmin": 0.0,
+            "zmax": 336.37176820538957
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "P3_RM3",
+          "pitch_deg": 3.0,
+          "roll_deg": -3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.9839707155149,
+            "ylen": 704.5482366871694,
+            "zmin": 0.0,
+            "zmax": 336.37176820538957
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "PM3_R3",
+          "pitch_deg": -3.0,
+          "roll_deg": 3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.1211700473752,
+            "ylen": 704.5470534374826,
+            "zmin": 0.0,
+            "zmax": 336.37176820538957
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        },
+        {
+          "pose": "PM3_RM3",
+          "pitch_deg": -3.0,
+          "roll_deg": -3.0,
+          "component_count": 76,
+          "all_shapes_valid": true,
+          "bounds_mm": {
+            "xlen": 704.9839707155148,
+            "ylen": 704.5482366871695,
+            "zmin": 0.0,
+            "zmax": 336.37176820538957
+          },
+          "intersections": [
+            {
+              "pair": "links::lower_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_frame",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::frame_brackets",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_adapters",
+              "broad_phase_candidates": 0,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "links::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "lower_supports::lower_adapters",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_frame",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "upper_supports::upper_adapters",
+              "broad_phase_candidates": 7,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::lower_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::upper_supports",
+              "broad_phase_candidates": 3,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            },
+            {
+              "pair": "joint_pins::links",
+              "broad_phase_candidates": 6,
+              "collision_count": 0,
+              "collisions": [],
+              "pass": true
+            }
+          ],
+          "collision_count": 0,
+          "pass": true
+        }
+      ],
+      "section_fit": {
+        "checks": {
+          "lower_eye_width_inside_BJ762_12001_gap": true,
+          "upper_PHS12L_ring_width_inside_BJ762_20001_gap": true,
+          "upper_PHS12L_neck_width_inside_BJ762_20001_gap": true,
+          "upper_reducing_bush_pair_matches_pin_and_support": true,
+          "lower_nut_space_inside_15mm_standoff_gap": true,
+          "upper_nut_space_inside_20mm_standoff_gap": true,
+          "lower_adapter_edge_margin": true,
+          "upper_support_body_fits_60mm_plate_width": true
+        },
+        "clearances_mm": {
+          "lower_eye_side_total": 0.3999999999999986,
+          "upper_ring_side_total": 6.399999999999999,
+          "upper_neck_side_total": 3.1999999999999993,
+          "lower_nut_vertical": 3.0,
+          "upper_nut_vertical": 2.0
+        },
+        "pass": true
+      },
+      "bom": {
+        "bom_row_count": 26,
+        "quantity_checks": {
+          "S01": true,
+          "S02": true,
+          "S03": true,
+          "S04": true,
+          "S05": true,
+          "S06": true,
+          "M01": true,
+          "M02": true,
+          "M03": true,
+          "M04": true,
+          "M05": true,
+          "M06": true,
+          "M07": true,
+          "M08": true,
+          "F01": true,
+          "F02": true,
+          "F03": true,
+          "F04": true,
+          "F05": true,
+          "F06": true,
+          "F07": true,
+          "F08": true,
+          "F09": true,
+          "F10": true,
+          "F11": true,
+          "F12": true
+        },
+        "model_group_counts": {
+          "lower_frame": 6,
+          "frame_brackets": 14,
+          "lower_adapters": 9,
+          "adapter_fasteners": 12,
+          "lower_supports": 3,
+          "fasteners": 6,
+          "upper_frame": 5,
+          "upper_adapters": 9,
+          "upper_supports": 3,
+          "links": 3,
+          "joint_pins": 6
+        },
+        "model_checks": {
+          "three_links": true,
+          "sixteen_modeled_solids_per_link_including_five_lock_nuts": true,
+          "three_lower_supports": true,
+          "three_upper_supports": true,
+          "six_lower_frame_profiles": true,
+          "five_upper_frame_profiles": true,
+          "fourteen_frame_brackets": true,
+          "six_adapter_plates_plus_twelve_standoffs": true,
+          "twelve_adapter_bolts": true,
+          "six_joint_pins": true
+        },
+        "pass": true
+      },
+      "pass": true,
+      "result_sha256": "1bed49771a937a7b5d17e538aa6654386ea196a9ee08c4b60fbb1b3f1891e64b"
+    }
+  ],
+  "repeated_results_identical": true,
+  "purchase_release": false,
+  "fabrication_release": false,
+  "open_gates": [
+    "Source an exact PHS12L M12x1.75 left-hand rod end with the audited dimensions.",
+    "Source an exact M12x1.75 left-hand jam nut for each PHS12L interface.",
+    "Source exact ID12/OD20/L11 flanged bushes and verify the delivered BJ762-20001 fork.",
+    "Obtain supplier compression-use confirmation for STB-M12 or complete a one-leg proof test.",
+    "Confirm tool access and stud-relief holes on one profile/adapter first article.",
+    "Measure the complete-module CG and actual lower contact/coupling polygon before claiming whole-unit tip resistance."
+  ],
+  "pass": true
+}

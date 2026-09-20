@@ -1,0 +1,15 @@
+﻿terminal,net,from,to,wire,color
+X1-1,AC L switched,Q1-L-OUT,PS1-L,1.5 mm2,black/brown
+X1-2,AC N switched,Q1-N-OUT,PS1-N,1.5 mm2,blue
+X1-3,Protective earth,J1-PE,PS1-FG,2.5 mm2,green/yellow
+X1-4,Protective earth bond,X1-3,DIN rail/lower frame,2.5 mm2,green/yellow
+X2-1,+24 V source,PS1 +V,F1/F2/F6 inputs,14 AWG,red
+X2-2,0 V power,PS1 -V,D1/D2/U1 inputs,14 AWG,black
+X2-3,+24 V D1 fused,F1 output,D1 Vmotor+,14 AWG,red
+X2-4,0 V D1,X2-2,D1 GND,14 AWG,black
+X2-5,+24 V D2 fused,F2 output,D2 Vmotor+,14 AWG,red
+X2-6,0 V D2,X2-2,D2 GND,14 AWG,black
+X2-7,+24 V logic fused,F6 output,U1 IN+,24 AWG,red
+X2-8,0 V logic input,X2-2,U1 IN-,24 AWG,black
+X2-9,+5 V logic,U1 OUT+,Mega/encoders/IMU,24 AWG,red
+X2-10,Logic common,U1 OUT-,Mega/D1/D2/encoders/IMU,24 AWG,black

@@ -1,0 +1,139 @@
+{
+  "source": "C:\\Users\\gangm\\Downloads\\LM4075OE-1075-100mm.stp",
+  "root_count": 1,
+  "labels": [
+    {
+      "depth": 0,
+      "entry": "0:1:1:1",
+      "name": "TGA-100_ASM",
+      "is_reference": false,
+      "is_assembly": true,
+      "is_simple_shape": false,
+      "bounds_mm": {
+        "xmin": -202.595489,
+        "xmax": 20.415258,
+        "ymin": -250.395703,
+        "ymax": -207.507134,
+        "zmin": -61.811026,
+        "zmax": 14.650719,
+        "xlen": 223.010746,
+        "ylen": 42.88857,
+        "zlen": 76.461745
+      }
+    },
+    {
+      "depth": 1,
+      "entry": "0:1:1:1:1",
+      "name": "UP",
+      "is_reference": true,
+      "is_assembly": false,
+      "is_simple_shape": true,
+      "bounds_mm": {
+        "xmin": -34.394113,
+        "xmax": -14.886988,
+        "ymin": -250.394264,
+        "ymax": -207.508573,
+        "zmin": -61.809587,
+        "zmax": 14.649279,
+        "xlen": 19.507126,
+        "ylen": 42.885691,
+        "zlen": 76.458866
+      }
+    },
+    {
+      "depth": 1,
+      "entry": "0:1:1:1:2",
+      "name": "END",
+      "is_reference": true,
+      "is_assembly": false,
+      "is_simple_shape": true,
+      "bounds_mm": {
+        "xmin": -14.895554,
+        "xmax": 20.415258,
+        "ymin": -250.156252,
+        "ymax": -207.746585,
+        "zmin": -60.777201,
+        "zmax": 14.63826,
+        "xlen": 35.310811,
+        "ylen": 42.409667,
+        "zlen": 75.415461
+      }
+    },
+    {
+      "depth": 1,
+      "entry": "0:1:1:1:3",
+      "name": "MOTER",
+      "is_reference": true,
+      "is_assembly": false,
+      "is_simple_shape": true,
+      "bounds_mm": {
+        "xmin": -124.89057,
+        "xmax": -21.390505,
+        "ymin": -247.951472,
+        "ymax": -209.951365,
+        "zmin": -59.366795,
+        "zmax": -21.366688,
+        "xlen": 103.500064,
+        "ylen": 38.000107,
+        "zlen": 38.000107
+      }
+    },
+    {
+      "depth": 1,
+      "entry": "0:1:1:1:4",
+      "name": "WAIKE",
+      "is_reference": true,
+      "is_assembly": false,
+      "is_simple_shape": true,
+      "bounds_mm": {
+        "xmin": -170.590551,
+        "xmax": -21.590551,
+        "ymin": -243.978446,
+        "ymax": -213.998446,
+        "zmin": -20.356715,
+        "zmax": 14.128136,
+        "xlen": 149.0,
+        "ylen": 29.98,
+        "zlen": 34.484851
+      }
+    },
+    {
+      "depth": 1,
+      "entry": "0:1:1:1:5",
+      "name": "FENGTOU",
+      "is_reference": true,
+      "is_assembly": false,
+      "is_simple_shape": true,
+      "bounds_mm": {
+        "xmin": -181.590654,
+        "xmax": -170.590449,
+        "ymin": -244.442177,
+        "ymax": -213.541001,
+        "zmin": -20.789362,
+        "zmax": 14.127647,
+        "xlen": 11.000205,
+        "ylen": 30.901176,
+        "zlen": 34.91701
+      }
+    },
+    {
+      "depth": 1,
+      "entry": "0:1:1:1:6",
+      "name": "NEIGUAN",
+      "is_reference": true,
+      "is_assembly": false,
+      "is_simple_shape": true,
+      "bounds_mm": {
+        "xmin": -202.590551,
+        "xmax": -47.590487,
+        "ymin": -239.12522,
+        "ymax": -218.851684,
+        "zmin": -15.366778,
+        "zmax": 4.63335,
+        "xlen": 155.000064,
+        "ylen": 20.273535,
+        "zlen": 20.000128
+      }
+    }
+  ]
+}

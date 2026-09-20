@@ -1,0 +1,11 @@
+gate_id,area,active_item,current_navimro_evidence,status,required_close_action,cad_or_bom_impact
+G01,Actuator,"LM4075OE-1075 24 V 100 mm 5 V encoder x3","Exact active SKU not found; LM4075E / 24V family shown discontinued",HOLD,"Obtain exact-product special quote or documented substitute","Actuator envelope, stroke, feedback, power"
+G02,Actuator interface,"Eye width, pin centers, cable envelope, supplier STEP","Not closed",HOLD,"Receive drawing, matching STEP and wiring/current data before quote release","Joint stack and interference"
+G03,Lower joint,"LMB-10 x3","K47449076 option row shows 1SET(2EA), but group header also shows discontinued/order unavailable",HOLD_VENDOR_CONFIRM,"Quote 2 sets/4 pieces and confirm supplied pins/retainers","BOM pack quantity and joint hardware"
+G04,Upper joint,"THK PHS6 x3","K02020042 JMC JFT-6R is a dimensional candidate",HOLD_CAD_SUBSTITUTION,"Confirm supplier drawing, replace component and rerun Fusion interference","Upper joint geometry"
+G05,Custom aluminum,"C01-C08 A6061 6/8 mm parts","No raw-stock SKU or nesting in active BOM",HOLD,"Select NAVIMRO A6061 stock, nesting and quantity; include machining quote","Material BOM and total cost"
+G06,Fasteners,"F01-F15 complete fastener set","F05/F07 lengths, F09 shim stack, F13-F15 SKU and F01/F02 included hardware open",HOLD,"Freeze exact SKU, pack count, used quantity and contingency assortment","Assembly completion"
+G07,Electrical,"Complete 24 V controls and wiring","DMD-150 K63669714 and WT901C K28261729 found; remaining active 24 V list not consolidated",HOLD,"Map PSU, branch protection, Mega, enclosure, terminals, wire, glands, fuses and AC cord to NAVIMRO SKUs","Electrical BOM"
+G08,Power sizing,"Start/stall current and regeneration protection","Supplier release data unavailable",HOLD,"Obtain current data and select 24 V supply, fuses and TVS/clamp","Power and protection ratings"
+G09,Budget,"VAT, freight, machining and all spares <= 4,000,000 KRW","Only mixed-supplier/old-design estimates exist",HOLD,"Obtain consolidated current quote and total landed/fabricated cost","Purchase approval"
+G10,Process,"Single purchase only","Old one-axis-first purchase strategy conflicts",HOLD,"Use supplier CAD first and include adjustment/backup hardware in the same order","Release workflow"

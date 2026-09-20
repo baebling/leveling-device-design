@@ -1,0 +1,11 @@
+﻿part_no,name,material,finished_length_mm,quantity,end_finish
+NVR-F01,upper_long_rail,4040 aluminium profile,840.0,2,square
+NVR-F02,upper_end_rail,4040 aluminium profile,660.0,2,square
+NVR-F03,upper_crossmember,4040 aluminium profile,560.0,2,square
+NVR-F04,upper_center_spreader,4040 aluminium profile,420.0,2,square
+NVR-F05,lower_long_rail,4040 aluminium profile,820.0,2,square
+NVR-F06,lower_end_rail,4040 aluminium profile,640.0,2,square
+NVR-F07,lower_crossmember,4040 aluminium profile,560.0,2,square
+NVR-F08,vertical_guide_carriage,4040 aluminium profile,240.0,2,square
+NVR-C01,cart_side_receiver_rail,4040 aluminium profile,760.0,2,square
+NVR-S01,moving_vertical_guide_shaft,12 mm linear shaft,240.0,2,deburr

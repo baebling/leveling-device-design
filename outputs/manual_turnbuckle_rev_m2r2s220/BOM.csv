@@ -1,0 +1,24 @@
+category,part_number,description,quantity,procurement_status,design_note
+profile,HFS8-4040-700,40x40 extrusion cut to 700 mm,4,verified MISUMI candidate,cut length only
+profile,HFS8-4040-620,40x40 extrusion cut to 620 mm,4,verified MISUMI candidate,cut length only
+profile,HFS8-4080-620,40x80 rear joint rail cut to 620 mm,2,verified MISUMI candidate,cut length only
+profile,HFS8-4080-450,40x80 front joint rail cut to 450 mm,2,verified MISUMI candidate,cut length only
+frame joint,HBLSSB8-SET,40-series angle bracket set,24,verified MISUMI candidate,set supplies 48 M8 bolts and 48 T-nuts
+joint support,SHAT12,12 mm shaft support,12,in cart,orient A2 lower pair outward
+joint shaft,SFU12-100,12 mm h5 shaft x 100 mm,6,verified MISUMI candidate,no end machining
+shaft collar,SCSJ12-6,12 mm bore OD25 W6 split collar,12,in cart,holding capacity requires proof test
+support T-nut,HNTT8-5,M5 pre-assembly T-nut for series 8,24,verified MISUMI candidate,
+support bolt,CB5-16,M5x16 socket head screw,24,verified MISUMI candidate,
+support washer,FWSSB-D9-V5.5-T1,OD9 ID5.5 T1 washer,24,verified MISUMI candidate,
+shim,PCIMR12-18-1.0,12x18x1.0 shim pack of 30,2 packs,in cart,60 pieces total
+shim,CIMR12-18-0.5,12x18x0.5 shim,6,in cart,lower joints
+shim,CIMR12-18-0.2,12x18x0.2 shim,12,in cart,lower joints
+turnbuckle,STB-M12,M12 RH/LH turnbuckle,3,in cart,no external payload; supported assembly and self-weight hold test required before free-standing demo
+lower eye,BJ761-12011N,12 mm eye M12 RH male thread,3,in cart,
+coupling nut,NTFL12-36,M12x1.75 RH coupling nut L36,3,in cart,
+upper rod end,IKO PHS12L,12 mm bore M12x1.75 LH female rod end,3,in cart,IKO catalogue alpha1 8 degrees exceeds 1.95 degree requirement
+jam nut,HNT1-ST-M12,M12x1.75 RH jam nut,6,in cart,
+jam nut,HNT1A-STAY-M12,M12x1.75 LH jam nut,3,in cart,
+safety addition,NOT PURCHASED - PROCEDURAL LIMITS ONLY,independent over-adjustment restraint and dedicated removable support,0,excluded from current purchase,user omitted for no-cart no-payload supervised demo; use existing temporary blocks during adjustment; not equivalent to a mechanical stop
+bench fixture,NOT PURCHASED - USE EXISTING TEMPORARY RESTRAINT,positive lower-frame fixation to the test bench,0,excluded from current purchase,use existing C or F clamps or anti-slip pads only if the frame moves during adjustment
+cart interface,NOT REQUIRED - NO CART DEMO,mechanical locating and positive latching set,0,excluded from current purchase,reopen only if a cart will be mounted

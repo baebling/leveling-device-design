@@ -1,0 +1,2248 @@
+{
+  "revision": "M1",
+  "status": "MANUAL_DETAILED_CAD_IN_PROGRESS_NOT_FOR_ORDER",
+  "parameters": {
+    "outer_length_mm": 700.0,
+    "lower_profile_mm": 40.0,
+    "upper_profile_mm": 30.0,
+    "lower_cross_length_mm": 620.0,
+    "upper_cross_length_mm": 640.0,
+    "lower_support_radius_mm": 75.0,
+    "upper_support_radius_mm": 250.0,
+    "lower_pin_z_mm": 84.0,
+    "upper_ring_z_collapsed_mm": 235.0,
+    "upper_profile_bottom_z_collapsed_mm": 270.0,
+    "upper_profile_top_z_collapsed_mm": 300.0,
+    "lift_mm": 50.0,
+    "angle_deg": 3.0,
+    "adapter_length_x_mm": 120.0,
+    "adapter_width_y_mm": 80.0,
+    "adapter_thickness_mm": 8.0,
+    "adapter_profile_hole_pitch_mm": 96.0,
+    "outer_tube_od_mm": 32.0,
+    "outer_tube_wall_mm": 2.0,
+    "outer_tube_length_mm": 160.0,
+    "outer_tube_s_start_mm": -16.0,
+    "inner_tube_od_mm": 25.0,
+    "inner_tube_wall_mm": 2.0,
+    "inner_tube_length_mm": 150.0,
+    "inner_tube_s_start_zero_mm": 8.0,
+    "neutral_coarse_mm": 15.0,
+    "coarse_pitch_mm": 15.0,
+    "coarse_position_count": 6,
+    "coarse_pin_s_mm": 115.0,
+    "coarse_pin_diameter_mm": 8.0,
+    "coarse_hole_diameter_max_mm": 8.1,
+    "coarse_pin_grip_mm": 40.0,
+    "bushing_id_mm": 25.0,
+    "bushing_od_mm": 28.0,
+    "bushing_flange_od_mm": 35.0,
+    "bushing_length_mm": 21.0,
+    "bushing_flange_thickness_mm": 1.5,
+    "bushing_housing_min_mm": 28.0,
+    "bushing_housing_max_mm": 28.021,
+    "bushing_installed_id_min_mm": 25.04,
+    "bushing_installed_id_max_mm": 25.124,
+    "bushing_shaft_min_mm": 24.948,
+    "bushing_shaft_max_mm": 25.0,
+    "guide_ring_od_mm": 27.6,
+    "guide_ring_id_mm": 25.1,
+    "guide_ring_length_mm": 12.0,
+    "threaded_plug_od_mm": 20.8,
+    "threaded_plug_length_mm": 30.0,
+    "threaded_plug_retainer_diameter_mm": 4.0,
+    "threaded_plug_retainer_offset_mm": 22.5,
+    "fine_stud_diameter_mm": 10.0,
+    "fine_stud_pitch_mm": 1.5,
+    "fine_stud_projection_mm": 33.0,
+    "fine_stud_bottom_engagement_mm": 20.0,
+    "phs_bore_mm": 10.0,
+    "phs_outer_diameter_mm": 26.0,
+    "phs_ring_width_mm": 14.0,
+    "phs_holder_width_mm": 17.0,
+    "phs_overall_length_mm": 56.0,
+    "phs_center_to_thread_end_mm": 43.0,
+    "phs_thread_depth_mm": 21.0,
+    "phs_thread_engagement_min_mm": 6.0,
+    "phs_thread_engagement_max_mm": 21.0,
+    "phs_static_radial_capacity_n": 13200.0,
+    "phs_min_permissible_tilt_deg": 8.0,
+    "lower_clevis_gap_mm": 34.0,
+    "lower_clevis_ear_thickness_mm": 6.0,
+    "lower_clevis_base_length_mm": 60.0,
+    "lower_clevis_base_width_mm": 50.0,
+    "lower_clevis_base_thickness_mm": 8.0,
+    "lower_pivot_diameter_mm": 8.0,
+    "lower_pivot_grip_mm": 46.0,
+    "upper_clevis_gap_mm": 20.0,
+    "upper_clevis_ear_thickness_mm": 6.0,
+    "upper_clevis_base_length_mm": 100.0,
+    "upper_clevis_base_width_mm": 60.0,
+    "upper_clevis_base_thickness_mm": 8.0,
+    "upper_pivot_diameter_mm": 10.0,
+    "upper_pivot_grip_mm": 32.0,
+    "upper_side_shim_thickness_mm": 3.0,
+    "design_leg_load_n": 600.0,
+    "aluminium_elastic_modulus_mpa": 69000.0,
+    "aluminium_6063_t5_yield_mpa": 145.0
+  },
+  "support_azimuths_deg": [
+    90.0,
+    210.0,
+    330.0
+  ],
+  "lower_profile_cuts": [
+    [
+      "LOWER_SIDE_L",
+      "DNF4040",
+      700.0
+    ],
+    [
+      "LOWER_SIDE_R",
+      "DNF4040",
+      700.0
+    ],
+    [
+      "LOWER_CROSS_FRONT",
+      "DNF4040",
+      620.0
+    ],
+    [
+      "LOWER_CROSS_A1",
+      "DNF4040",
+      620.0
+    ],
+    [
+      "LOWER_CROSS_A23",
+      "DNF4040",
+      620.0
+    ],
+    [
+      "LOWER_CROSS_REAR",
+      "DNF4040",
+      620.0
+    ]
+  ],
+  "upper_profile_cuts": [
+    [
+      "UPPER_SIDE_L",
+      "DNF3030",
+      700.0
+    ],
+    [
+      "UPPER_SIDE_R",
+      "DNF3030",
+      700.0
+    ],
+    [
+      "UPPER_CROSS_FRONT",
+      "DNF3030",
+      640.0
+    ],
+    [
+      "UPPER_CROSS_A1",
+      "DNF3030",
+      640.0
+    ],
+    [
+      "UPPER_CROSS_A23",
+      "DNF3030",
+      640.0
+    ],
+    [
+      "UPPER_CROSS_REAR",
+      "DNF3030",
+      640.0
+    ]
+  ],
+  "workspace": {
+    "pose_count": 27,
+    "minimum_required_pin_mm": 219.14262334480387,
+    "maximum_required_pin_mm": 279.6422944664515,
+    "manual_minimum_pin_mm": 213.0,
+    "manual_maximum_pin_mm": 303.0,
+    "lower_margin_mm": 6.142623344803866,
+    "upper_margin_mm": 23.357705533548483,
+    "maximum_constraint_residual_mm": 6.536993168992922e-13,
+    "passes": true,
+    "rows": [
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.3423812175157593,
+        "y_mm": 0.0004695435264431218,
+        "yaw_rad": 0.0013714047619159063,
+        "residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          222.55647396899295,
+          228.22715875749046,
+          242.5147485578872
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 9.556473968992947,
+            "phs_thread_engagement_mm": 11.443526031007053,
+            "turns_from_minimum": 6.370982645995298
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 0.22715875749045722,
+            "phs_thread_engagement_mm": 20.772841242509543,
+            "turns_from_minimum": 0.15143917166030482
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 14.514748557887202,
+            "phs_thread_engagement_mm": 6.485251442112798,
+            "turns_from_minimum": 9.676499038591468
+          }
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "x_mm": -4.7087309143363764e-15,
+        "y_mm": 0.1713081556790188,
+        "yaw_rad": -1.896079884805708e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          231.2703768340681,
+          223.63499848552016,
+          238.4461720408138
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 3.270376834068088,
+            "phs_thread_engagement_mm": 17.729623165931912,
+            "turns_from_minimum": 2.1802512227120587
+          },
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 10.634998485520157,
+            "phs_thread_engagement_mm": 10.365001514479843,
+            "turns_from_minimum": 7.089998990346771
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 10.446172040813792,
+            "phs_thread_engagement_mm": 10.553827959186208,
+            "turns_from_minimum": 6.964114693875861
+          }
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "x_mm": 0.3423812175157455,
+        "y_mm": 0.00046954352646754095,
+        "yaw_rad": -0.001371404761915962,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          239.63155694152408,
+          219.14262334480387,
+          234.49019365308558
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 11.631556941524082,
+            "phs_thread_engagement_mm": 9.368443058475918,
+            "turns_from_minimum": 7.754371294349387
+          },
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 6.142623344803866,
+            "phs_thread_engagement_mm": 14.857376655196134,
+            "turns_from_minimum": 4.095082229869244
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 6.4901936530855835,
+            "phs_thread_engagement_mm": 14.509806346914417,
+            "turns_from_minimum": 4.326795768723723
+          }
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "x_mm": -4.765172230694181e-15,
+        "y_mm": -0.1713081556790188,
+        "yaw_rad": -1.896079884790096e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          222.41001917246123,
+          235.46651575246665,
+          235.46651575246665
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 9.410019172461233,
+            "phs_thread_engagement_mm": 11.589980827538767,
+            "turns_from_minimum": 6.273346114974156
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 7.466515752466648,
+            "phs_thread_engagement_mm": 13.533484247533352,
+            "turns_from_minimum": 4.977677168311099
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 7.466515752466648,
+            "phs_thread_engagement_mm": 13.533484247533352,
+            "turns_from_minimum": 4.977677168311099
+          }
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "yaw_rad": 0.0,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          231.14064982170487,
+          231.14064982170487,
+          231.14064982170487
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 3.1406498217048693,
+            "phs_thread_engagement_mm": 17.85935017829513,
+            "turns_from_minimum": 2.0937665478032463
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 3.1406498217048693,
+            "phs_thread_engagement_mm": 17.85935017829513,
+            "turns_from_minimum": 2.0937665478032463
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 3.1406498217048693,
+            "phs_thread_engagement_mm": 17.85935017829513,
+            "turns_from_minimum": 2.0937665478032463
+          }
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "x_mm": -4.765172230694181e-15,
+        "y_mm": -0.1713081556790188,
+        "yaw_rad": -1.896079884790096e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          239.51815384429443,
+          226.92094514227716,
+          226.92094514227716
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 11.518153844294432,
+            "phs_thread_engagement_mm": 9.481846155705568,
+            "turns_from_minimum": 7.678769229529621
+          },
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 13.920945142277162,
+            "phs_thread_engagement_mm": 7.079054857722838,
+            "turns_from_minimum": 9.28063009485144
+          },
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 13.920945142277162,
+            "phs_thread_engagement_mm": 7.079054857722838,
+            "turns_from_minimum": 9.28063009485144
+          }
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "x_mm": 0.3423812175157455,
+        "y_mm": 0.00046954352646754095,
+        "yaw_rad": -0.001371404761915962,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          222.55647396899298,
+          242.51474855788723,
+          228.22715875749043
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 9.556473968992975,
+            "phs_thread_engagement_mm": 11.443526031007025,
+            "turns_from_minimum": 6.3709826459953165
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 14.51474855788723,
+            "phs_thread_engagement_mm": 6.485251442112769,
+            "turns_from_minimum": 9.676499038591487
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 0.2271587574904288,
+            "phs_thread_engagement_mm": 20.77284124250957,
+            "turns_from_minimum": 0.15143917166028587
+          }
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "x_mm": -4.7087309143363764e-15,
+        "y_mm": 0.1713081556790188,
+        "yaw_rad": -1.896079884805708e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          231.2703768340681,
+          238.4461720408138,
+          223.63499848552016
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 3.270376834068088,
+            "phs_thread_engagement_mm": 17.729623165931912,
+            "turns_from_minimum": 2.1802512227120587
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 10.446172040813792,
+            "phs_thread_engagement_mm": 10.553827959186208,
+            "turns_from_minimum": 6.964114693875861
+          },
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 10.634998485520157,
+            "phs_thread_engagement_mm": 10.365001514479843,
+            "turns_from_minimum": 7.089998990346771
+          }
+        ]
+      },
+      {
+        "lift_mm": 0.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.3423812175157593,
+        "y_mm": 0.0004695435264431218,
+        "yaw_rad": 0.0013714047619159063,
+        "residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          239.63155694152405,
+          234.4901936530856,
+          219.14262334480387
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 11.631556941524053,
+            "phs_thread_engagement_mm": 9.368443058475947,
+            "turns_from_minimum": 7.754371294349369
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 6.490193653085612,
+            "phs_thread_engagement_mm": 14.509806346914388,
+            "turns_from_minimum": 4.326795768723741
+          },
+          {
+            "coarse_mm": 0.0,
+            "fine_extension_mm": 6.142623344803866,
+            "phs_thread_engagement_mm": 14.857376655196134,
+            "turns_from_minimum": 4.095082229869244
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.3423812175157593,
+        "y_mm": 0.0004695435264431218,
+        "yaw_rad": 0.0013714047619159063,
+        "residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          238.85786821892262,
+          244.99537566402435,
+          260.54099113436723
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 10.857868218922619,
+            "phs_thread_engagement_mm": 10.142131781077381,
+            "turns_from_minimum": 7.238578812615079
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 1.9953756640243512,
+            "phs_thread_engagement_mm": 19.00462433597565,
+            "turns_from_minimum": 1.3302504426829007
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 2.540991134367232,
+            "phs_thread_engagement_mm": 18.459008865632768,
+            "turns_from_minimum": 1.6939940895781547
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "x_mm": -4.7087309143363764e-15,
+        "y_mm": 0.1713081556790188,
+        "yaw_rad": -1.896079884805708e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          248.31630474250346,
+          240.0438693283935,
+          256.1213195077464
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 5.316304742503462,
+            "phs_thread_engagement_mm": 15.683695257496538,
+            "turns_from_minimum": 3.5442031616689746
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 12.043869328393498,
+            "phs_thread_engagement_mm": 8.956130671606502,
+            "turns_from_minimum": 8.029246218928998
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 13.12131950774642,
+            "phs_thread_engagement_mm": 7.878680492253579,
+            "turns_from_minimum": 8.747546338497614
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "x_mm": 0.3423812175157455,
+        "y_mm": 0.00046954352646754095,
+        "yaw_rad": -0.001371404761915962,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          257.3938343815596,
+          235.17075620335837,
+          251.79466399672157
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 14.3938343815596,
+            "phs_thread_engagement_mm": 6.6061656184404,
+            "turns_from_minimum": 9.5958895877064
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 7.170756203358366,
+            "phs_thread_engagement_mm": 13.829243796641634,
+            "turns_from_minimum": 4.780504135572244
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 8.794663996721567,
+            "phs_thread_engagement_mm": 12.205336003278433,
+            "turns_from_minimum": 5.863109331147712
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "x_mm": -4.765172230694181e-15,
+        "y_mm": -0.1713081556790188,
+        "yaw_rad": -1.896079884790096e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          238.71953664343806,
+          252.8766097667497,
+          252.8766097667497
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 10.719536643438062,
+            "phs_thread_engagement_mm": 10.280463356561938,
+            "turns_from_minimum": 7.146357762292041
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 9.87660976674971,
+            "phs_thread_engagement_mm": 11.12339023325029,
+            "turns_from_minimum": 6.584406511166473
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 9.87660976674971,
+            "phs_thread_engagement_mm": 11.12339023325029,
+            "turns_from_minimum": 6.584406511166473
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "yaw_rad": 0.0,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          248.1954874690513,
+          248.1954874690513,
+          248.1954874690513
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 5.195487469051301,
+            "phs_thread_engagement_mm": 15.8045125309487,
+            "turns_from_minimum": 3.463658312700867
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 5.195487469051301,
+            "phs_thread_engagement_mm": 15.8045125309487,
+            "turns_from_minimum": 3.463658312700867
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 5.195487469051301,
+            "phs_thread_engagement_mm": 15.8045125309487,
+            "turns_from_minimum": 3.463658312700867
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "x_mm": -4.765172230694181e-15,
+        "y_mm": -0.1713081556790188,
+        "yaw_rad": -1.896079884790096e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          257.2900026701696,
+          243.6001141579083,
+          243.6001141579083
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 14.2900026701696,
+            "phs_thread_engagement_mm": 6.709997329830401,
+            "turns_from_minimum": 9.526668446779732
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 0.6001141579083082,
+            "phs_thread_engagement_mm": 20.39988584209169,
+            "turns_from_minimum": 0.4000761052722055
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 0.6001141579083082,
+            "phs_thread_engagement_mm": 20.39988584209169,
+            "turns_from_minimum": 0.4000761052722055
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "x_mm": 0.3423812175157455,
+        "y_mm": 0.00046954352646754095,
+        "yaw_rad": -0.001371404761915962,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          238.85786821892265,
+          260.54099113436723,
+          244.99537566402435
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 10.857868218922647,
+            "phs_thread_engagement_mm": 10.142131781077353,
+            "turns_from_minimum": 7.238578812615098
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 2.540991134367232,
+            "phs_thread_engagement_mm": 18.459008865632768,
+            "turns_from_minimum": 1.6939940895781547
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 1.9953756640243512,
+            "phs_thread_engagement_mm": 19.00462433597565,
+            "turns_from_minimum": 1.3302504426829007
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "x_mm": -4.7087309143363764e-15,
+        "y_mm": 0.1713081556790188,
+        "yaw_rad": -1.896079884805708e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          248.31630474250346,
+          256.12131950774636,
+          240.0438693283935
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 5.316304742503462,
+            "phs_thread_engagement_mm": 15.683695257496538,
+            "turns_from_minimum": 3.5442031616689746
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 13.121319507746364,
+            "phs_thread_engagement_mm": 7.878680492253636,
+            "turns_from_minimum": 8.747546338497576
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 12.043869328393498,
+            "phs_thread_engagement_mm": 8.956130671606502,
+            "turns_from_minimum": 8.029246218928998
+          }
+        ]
+      },
+      {
+        "lift_mm": 25.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.3423812175157593,
+        "y_mm": 0.0004695435264431218,
+        "yaw_rad": 0.0013714047619159063,
+        "residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          257.3938343815596,
+          251.7946639967216,
+          235.17075620335834
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 14.3938343815596,
+            "phs_thread_engagement_mm": 6.6061656184404,
+            "turns_from_minimum": 9.5958895877064
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 8.794663996721596,
+            "phs_thread_engagement_mm": 12.205336003278404,
+            "turns_from_minimum": 5.86310933114773
+          },
+          {
+            "coarse_mm": 15.0,
+            "fine_extension_mm": 7.170756203358337,
+            "phs_thread_engagement_mm": 13.829243796641663,
+            "turns_from_minimum": 4.780504135572225
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": -3.0,
+        "x_mm": -0.3423812175157593,
+        "y_mm": 0.0004695435264431218,
+        "yaw_rad": 0.0013714047619159063,
+        "residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          256.5634001853448,
+          263.0738151146862,
+          279.6422944664515
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 13.56340018534479,
+            "phs_thread_engagement_mm": 7.43659981465521,
+            "turns_from_minimum": 9.04226679022986
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 5.0738151146862265,
+            "phs_thread_engagement_mm": 15.926184885313774,
+            "turns_from_minimum": 3.382543409790818
+          },
+          {
+            "coarse_mm": 60.0,
+            "fine_extension_mm": 6.642294466451517,
+            "phs_thread_engagement_mm": 14.357705533548483,
+            "turns_from_minimum": 4.428196310967678
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 0.0,
+        "x_mm": -4.7087309143363764e-15,
+        "y_mm": 0.1713081556790188,
+        "yaw_rad": -1.896079884805708e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          266.6195551736066,
+          257.83619966303235,
+          274.9357809595922
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 8.619555173606614,
+            "phs_thread_engagement_mm": 12.380444826393386,
+            "turns_from_minimum": 5.746370115737743
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 14.836199663032346,
+            "phs_thread_engagement_mm": 6.163800336967654,
+            "turns_from_minimum": 9.890799775354898
+          },
+          {
+            "coarse_mm": 60.0,
+            "fine_extension_mm": 1.9357809595921935,
+            "phs_thread_engagement_mm": 19.064219040407806,
+            "turns_from_minimum": 1.290520639728129
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": -3.0,
+        "roll_deg": 3.0,
+        "x_mm": 0.3423812175157455,
+        "y_mm": 0.00046954352646754095,
+        "yaw_rad": -0.001371404761915962,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          276.27864353414026,
+          252.66000827213682,
+          270.306223966416
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 60.0,
+            "fine_extension_mm": 3.278643534140258,
+            "phs_thread_engagement_mm": 17.721356465859742,
+            "turns_from_minimum": 2.1857623560935053
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 9.660008272136821,
+            "phs_thread_engagement_mm": 11.339991727863179,
+            "turns_from_minimum": 6.440005514757881
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 12.306223966415985,
+            "phs_thread_engagement_mm": 8.693776033584015,
+            "turns_from_minimum": 8.20414931094399
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": -3.0,
+        "x_mm": -4.765172230694181e-15,
+        "y_mm": -0.1713081556790188,
+        "yaw_rad": -1.896079884790096e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          256.4328717661232,
+          271.4750071252295,
+          271.4750071252295
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 13.432871766123185,
+            "phs_thread_engagement_mm": 7.567128233876815,
+            "turns_from_minimum": 8.955247844082123
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 13.475007125229524,
+            "phs_thread_engagement_mm": 7.524992874770476,
+            "turns_from_minimum": 8.98333808348635
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 13.475007125229524,
+            "phs_thread_engagement_mm": 7.524992874770476,
+            "turns_from_minimum": 8.98333808348635
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 0.0,
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "yaw_rad": 0.0,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          266.50703555441083,
+          266.50703555441083,
+          266.50703555441083
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 8.507035554410834,
+            "phs_thread_engagement_mm": 12.492964445589166,
+            "turns_from_minimum": 5.671357036273889
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 8.507035554410834,
+            "phs_thread_engagement_mm": 12.492964445589166,
+            "turns_from_minimum": 5.671357036273889
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 8.507035554410834,
+            "phs_thread_engagement_mm": 12.492964445589166,
+            "turns_from_minimum": 5.671357036273889
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 0.0,
+        "roll_deg": 3.0,
+        "x_mm": -4.765172230694181e-15,
+        "y_mm": -0.1713081556790188,
+        "yaw_rad": -1.896079884790096e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          276.18353485871074,
+          261.60832534769906,
+          261.60832534769906
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 60.0,
+            "fine_extension_mm": 3.1835348587107433,
+            "phs_thread_engagement_mm": 17.816465141289257,
+            "turns_from_minimum": 2.1223565724738287
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 3.608325347699065,
+            "phs_thread_engagement_mm": 17.391674652300935,
+            "turns_from_minimum": 2.4055502317993764
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 3.608325347699065,
+            "phs_thread_engagement_mm": 17.391674652300935,
+            "turns_from_minimum": 2.4055502317993764
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": -3.0,
+        "x_mm": 0.3423812175157455,
+        "y_mm": 0.00046954352646754095,
+        "yaw_rad": -0.001371404761915962,
+        "residual_mm": 1.4210854715202004e-14,
+        "pin_lengths_mm": [
+          256.5634001853448,
+          279.6422944664515,
+          263.07381511468617
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 13.56340018534479,
+            "phs_thread_engagement_mm": 7.43659981465521,
+            "turns_from_minimum": 9.04226679022986
+          },
+          {
+            "coarse_mm": 60.0,
+            "fine_extension_mm": 6.642294466451517,
+            "phs_thread_engagement_mm": 14.357705533548483,
+            "turns_from_minimum": 4.428196310967678
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 5.07381511468617,
+            "phs_thread_engagement_mm": 15.92618488531383,
+            "turns_from_minimum": 3.3825434097907796
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 0.0,
+        "x_mm": -4.7087309143363764e-15,
+        "y_mm": 0.1713081556790188,
+        "yaw_rad": -1.896079884805708e-17,
+        "residual_mm": 6.536993168992922e-13,
+        "pin_lengths_mm": [
+          266.6195551736066,
+          274.9357809595922,
+          257.83619966303235
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 8.619555173606614,
+            "phs_thread_engagement_mm": 12.380444826393386,
+            "turns_from_minimum": 5.746370115737743
+          },
+          {
+            "coarse_mm": 60.0,
+            "fine_extension_mm": 1.9357809595921935,
+            "phs_thread_engagement_mm": 19.064219040407806,
+            "turns_from_minimum": 1.290520639728129
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 14.836199663032346,
+            "phs_thread_engagement_mm": 6.163800336967654,
+            "turns_from_minimum": 9.890799775354898
+          }
+        ]
+      },
+      {
+        "lift_mm": 50.0,
+        "pitch_deg": 3.0,
+        "roll_deg": 3.0,
+        "x_mm": -0.3423812175157593,
+        "y_mm": 0.0004695435264431218,
+        "yaw_rad": 0.0013714047619159063,
+        "residual_mm": 2.842170943040401e-14,
+        "pin_lengths_mm": [
+          276.27864353414026,
+          270.306223966416,
+          252.66000827213682
+        ],
+        "manual_settings": [
+          {
+            "coarse_mm": 60.0,
+            "fine_extension_mm": 3.278643534140258,
+            "phs_thread_engagement_mm": 17.721356465859742,
+            "turns_from_minimum": 2.1857623560935053
+          },
+          {
+            "coarse_mm": 45.0,
+            "fine_extension_mm": 12.306223966415985,
+            "phs_thread_engagement_mm": 8.693776033584015,
+            "turns_from_minimum": 8.20414931094399
+          },
+          {
+            "coarse_mm": 30.0,
+            "fine_extension_mm": 9.660008272136821,
+            "phs_thread_engagement_mm": 11.339991727863179,
+            "turns_from_minimum": 6.440005514757881
+          }
+        ]
+      }
+    ]
+  },
+  "joint_axes": {
+    "maximum_lower_axis_perpendicular_error_deg": 1.6538884343610288e-13,
+    "maximum_phs10_articulation_deg": 4.096322742530021,
+    "published_phs10_allowance_deg": 8.0,
+    "passes": true,
+    "rows": [
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 8.727362308866823e-18,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 9.54166404439055e-15,
+        "phs10_articulation_deg": 1.0947821600321377
+      },
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 9.534037603788342e-30,
+        "phs10_articulation_deg": 3.0000000000000444
+      },
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.6220828875463936e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.526666247102488e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 2.137817626926633e-17,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 1.0947821600318048
+      },
+      {
+        "pose": [
+          0.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 6.832726949381645e-28,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.5902773407317584e-13,
+        "phs10_articulation_deg": 2.598002001173896
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.5902773407317584e-13,
+        "phs10_articulation_deg": 2.598002001174036
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 3.531125038440127e-31,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 6.341900569038468e-28,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.6538884343610288e-13,
+        "phs10_articulation_deg": 2.598002001173896
+      },
+      {
+        "pose": [
+          0.0,
+          0.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.6220828875463936e-13,
+        "phs10_articulation_deg": 2.598002001174036
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 2.3018362811986357e-17,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 1.0947821600318048
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 9.534037603788342e-30,
+        "phs10_articulation_deg": 3.0000000000000444
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.526666247102488e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.6538884343610288e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 8.105489140502219e-18,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          0.0,
+          3.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 9.54166404439055e-15,
+        "phs10_articulation_deg": 1.0947821600321377
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 8.131743772957761e-18,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 6.3611093629270335e-15,
+        "phs10_articulation_deg": 1.0947821600321377
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 8.827812596100318e-30,
+        "phs10_articulation_deg": 3.0000000000000444
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.526666247102488e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.4630551534732177e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 1.9902907450302583e-17,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 1.0947821600318048
+      },
+      {
+        "pose": [
+          25.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 6.366618444307549e-28,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.4948607002878528e-13,
+        "phs10_articulation_deg": 2.598002001173896
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.4630551534732177e-13,
+        "phs10_articulation_deg": 2.598002001174036
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 5.904041064271892e-28,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.526666247102488e-13,
+        "phs10_articulation_deg": 2.598002001173896
+      },
+      {
+        "pose": [
+          25.0,
+          0.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.526666247102488e-13,
+        "phs10_articulation_deg": 2.598002001174036
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 2.1447422696074892e-17,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 1.0947821600318048
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 8.827812596100318e-30,
+        "phs10_articulation_deg": 3.0000000000000444
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.4312496066585825e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.5584717939171232e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 7.54614416921876e-18,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          25.0,
+          3.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 9.54166404439055e-15,
+        "phs10_articulation_deg": 1.0947821600321377
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 7.570569228144273e-18,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 6.3611093629270335e-15,
+        "phs10_articulation_deg": 1.0947821600321377
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 8.474700092256305e-30,
+        "phs10_articulation_deg": 3.0000000000000444
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.3994440598439473e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.335832966214677e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 1.854245988196162e-17,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 1.0947821600318048
+      },
+      {
+        "pose": [
+          50.0,
+          -3.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 5.925227814502533e-28,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.3994440598439473e-13,
+        "phs10_articulation_deg": 2.598002001173896
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.3676385130293123e-13,
+        "phs10_articulation_deg": 2.598002001174036
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 5.501492809889717e-28,
+        "phs10_articulation_deg": 0.0
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.4312496066585825e-13,
+        "phs10_articulation_deg": 2.598002001173896
+      },
+      {
+        "pose": [
+          50.0,
+          0.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.3994440598439473e-13,
+        "phs10_articulation_deg": 2.598002001174036
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 1.9967328388514645e-17,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 1.0947821600318048
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          -3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 3.1805546814635168e-15,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          0.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 8.474700092256305e-30,
+        "phs10_articulation_deg": 3.0000000000000444
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          0.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 1.335832966214677e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          0.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 1.4312496066585825e-13,
+        "phs10_articulation_deg": 1.4998714840216645
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          3.0
+        ],
+        "strut": 1,
+        "lower_axis_perpendicular_error_deg": 7.030333425938926e-18,
+        "phs10_articulation_deg": 3.0010279069194805
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          3.0
+        ],
+        "strut": 2,
+        "lower_axis_perpendicular_error_deg": 0.0,
+        "phs10_articulation_deg": 4.096322742530021
+      },
+      {
+        "pose": [
+          50.0,
+          3.0,
+          3.0
+        ],
+        "strut": 3,
+        "lower_axis_perpendicular_error_deg": 6.3611093629270335e-15,
+        "phs10_articulation_deg": 1.0947821600321377
+      }
+    ]
+  },
+  "axial_stack": {
+    "outer_top_s_mm": 144.0,
+    "bushing_bottom_s_mm": 123.0,
+    "coarse_positions_mm": [
+      0.0,
+      15.0,
+      30.0,
+      45.0,
+      60.0,
+      75.0
+    ],
+    "inner_hole_offsets_mm": [
+      107.0,
+      92.0,
+      77.0,
+      62.0,
+      47.0,
+      32.0
+    ],
+    "hole_edge_ligament_mm": 7.0,
+    "minimum_telescopic_overlap_mm": 61.0,
+    "minimum_guide_to_bushing_clearance_mm": 28.0,
+    "outer_wall_after_28H7_ream_mm": 2.0,
+    "plug_retainer_to_stud_axial_clearance_mm": 0.5,
+    "rows": [
+      {
+        "coarse_mm": 0.0,
+        "inner_bottom_s_mm": 8.0,
+        "inner_top_s_mm": 158.0,
+        "overlap_mm": 136.0,
+        "inner_hole_offset_mm": 107.0,
+        "guide_ring_top_s_mm": 20.0,
+        "guide_to_bushing_clearance_mm": 103.0
+      },
+      {
+        "coarse_mm": 15.0,
+        "inner_bottom_s_mm": 23.0,
+        "inner_top_s_mm": 173.0,
+        "overlap_mm": 121.0,
+        "inner_hole_offset_mm": 92.0,
+        "guide_ring_top_s_mm": 35.0,
+        "guide_to_bushing_clearance_mm": 88.0
+      },
+      {
+        "coarse_mm": 30.0,
+        "inner_bottom_s_mm": 38.0,
+        "inner_top_s_mm": 188.0,
+        "overlap_mm": 106.0,
+        "inner_hole_offset_mm": 77.0,
+        "guide_ring_top_s_mm": 50.0,
+        "guide_to_bushing_clearance_mm": 73.0
+      },
+      {
+        "coarse_mm": 45.0,
+        "inner_bottom_s_mm": 53.0,
+        "inner_top_s_mm": 203.0,
+        "overlap_mm": 91.0,
+        "inner_hole_offset_mm": 62.0,
+        "guide_ring_top_s_mm": 65.0,
+        "guide_to_bushing_clearance_mm": 58.0
+      },
+      {
+        "coarse_mm": 60.0,
+        "inner_bottom_s_mm": 68.0,
+        "inner_top_s_mm": 218.0,
+        "overlap_mm": 76.0,
+        "inner_hole_offset_mm": 47.0,
+        "guide_ring_top_s_mm": 80.0,
+        "guide_to_bushing_clearance_mm": 43.0
+      },
+      {
+        "coarse_mm": 75.0,
+        "inner_bottom_s_mm": 83.0,
+        "inner_top_s_mm": 233.0,
+        "overlap_mm": 61.0,
+        "inner_hole_offset_mm": 32.0,
+        "guide_ring_top_s_mm": 95.0,
+        "guide_to_bushing_clearance_mm": 28.0
+      }
+    ],
+    "passes": true
+  },
+  "clevis_stacks": {
+    "lower": {
+      "outer_tube_od_mm": 32.0,
+      "gap_mm": 34.0,
+      "diametral_clearance_mm": 2.0,
+      "outer_width_mm": 46.0,
+      "pivot_grip_mm": 46.0,
+      "axial_stack_clearance_mm": 0.0
+    },
+    "upper": {
+      "phs_ring_width_mm": 14.0,
+      "phs_holder_width_mm": 17.0,
+      "gap_mm": 20.0,
+      "side_shim_total_mm": 6.0,
+      "holder_clearance_mm": 3.0,
+      "outer_width_mm": 32.0,
+      "pivot_grip_mm": 32.0,
+      "axial_stack_clearance_mm": 0.0
+    },
+    "passes": true
+  },
+  "structural_screen": {
+    "design_leg_load_n": 600.0,
+    "outer_tube_hole_bearing_stress_mpa": 18.75,
+    "outer_tube_hole_bearing_yield_ratio": 7.733333333333333,
+    "inner_tube_second_moment_mm4": 9628.19608508932,
+    "inner_tube_euler_load_n": 71418.13510070334,
+    "inner_tube_euler_factor": 119.03022516783889,
+    "phs10_static_capacity_n": 13200.0,
+    "phs10_static_factor": 22.0,
+    "minimum_phs_thread_engagement_mm": 6.0,
+    "conservative_m10_female_thread_capacity_n": 7894.194019940432,
+    "conservative_m10_thread_factor": 13.156990033234052,
+    "passes": true
+  },
+  "component_count_basis": {
+    "lower_dnf4040_profiles": 6,
+    "upper_dnf3030_profiles": 6,
+    "lower_4035_brackets": 8,
+    "upper_dcb3025_brackets": 8,
+    "lower_adapter_plates": 3,
+    "lower_clevis_bases": 3,
+    "lower_clevis_ears": 6,
+    "outer_tubes": 3,
+    "inner_tubes": 3,
+    "jfm_2528_21_bushings": 3,
+    "pom_guide_rings": 3,
+    "threaded_plugs": 3,
+    "m10_fine_studs": 3,
+    "phs10_rod_ends": 3,
+    "bj775_08040_sus_pins": 3,
+    "upper_clevis_bases": 3,
+    "upper_clevis_ears": 6,
+    "lower_m8_pivot_bolts": 3,
+    "upper_m10_pivot_bolts": 3,
+    "upper_side_shims_3mm": 6,
+    "fine_adjuster_thin_nuts_m10": 6
+  },
+  "collapsed_height_mm": 300.0,
+  "digital_layout_passes": true,
+  "fabrication_release": false,
+  "purchase_release": false,
+  "fusion_native_component_count": 129,
+  "fusion_component_names": [
+    "LOWER_SIDE_L_DNF4040_700",
+    "LOWER_SIDE_R_DNF4040_700",
+    "LOWER_CROSS_FRONT_DNF4040_620",
+    "LOWER_CROSS_A1_DNF4040_620",
+    "LOWER_CROSS_A23_DNF4040_620",
+    "LOWER_CROSS_REAR_DNF4040_620",
+    "BRACKET4035_1_L",
+    "BRACKET4035_1_L_BOLT_X",
+    "BRACKET4035_1_L_BOLT_Y",
+    "BRACKET4035_1_R",
+    "BRACKET4035_1_R_BOLT_X",
+    "BRACKET4035_1_R_BOLT_Y",
+    "BRACKET4035_2_L",
+    "BRACKET4035_2_L_BOLT_X",
+    "BRACKET4035_2_L_BOLT_Y",
+    "BRACKET4035_2_R",
+    "BRACKET4035_2_R_BOLT_X",
+    "BRACKET4035_2_R_BOLT_Y",
+    "BRACKET4035_3_L",
+    "BRACKET4035_3_L_BOLT_X",
+    "BRACKET4035_3_L_BOLT_Y",
+    "BRACKET4035_3_R",
+    "BRACKET4035_3_R_BOLT_X",
+    "BRACKET4035_3_R_BOLT_Y",
+    "BRACKET4035_4_L",
+    "BRACKET4035_4_L_BOLT_X",
+    "BRACKET4035_4_L_BOLT_Y",
+    "BRACKET4035_4_R",
+    "BRACKET4035_4_R_BOLT_X",
+    "BRACKET4035_4_R_BOLT_Y",
+    "A1_LOWER_ADAPTER_A6061_120x80x8",
+    "A1_ADAPTER_TO_PROFILE_M8x20_1",
+    "A1_ADAPTER_TO_PROFILE_M8x20_2",
+    "A1_LOWER_ONE_PIECE_CLEVIS_A6061",
+    "A1_CLEVIS_TO_ADAPTER_M8x16_1",
+    "A1_CLEVIS_TO_ADAPTER_M8x16_2",
+    "A2_LOWER_ADAPTER_A6061_120x80x8",
+    "A2_ADAPTER_TO_PROFILE_M8x20_1",
+    "A2_ADAPTER_TO_PROFILE_M8x20_2",
+    "A2_LOWER_ONE_PIECE_CLEVIS_A6061",
+    "A2_CLEVIS_TO_ADAPTER_M8x16_1",
+    "A2_CLEVIS_TO_ADAPTER_M8x16_2",
+    "A3_LOWER_ADAPTER_A6061_120x80x8",
+    "A3_ADAPTER_TO_PROFILE_M8x20_1",
+    "A3_ADAPTER_TO_PROFILE_M8x20_2",
+    "A3_LOWER_ONE_PIECE_CLEVIS_A6061",
+    "A3_CLEVIS_TO_ADAPTER_M8x16_1",
+    "A3_CLEVIS_TO_ADAPTER_M8x16_2",
+    "UPPER_SIDE_L_DNF3030_700",
+    "UPPER_SIDE_R_DNF3030_700",
+    "UPPER_CROSS_FRONT_DNF3030_640",
+    "UPPER_CROSS_A1_DNF3030_640",
+    "UPPER_CROSS_A23_DNF3030_640",
+    "UPPER_CROSS_REAR_DNF3030_640",
+    "DCB3025_1_L",
+    "DCB3025_1_L_BOLT_X",
+    "DCB3025_1_L_BOLT_Y",
+    "DCB3025_1_R",
+    "DCB3025_1_R_BOLT_X",
+    "DCB3025_1_R_BOLT_Y",
+    "DCB3025_2_L",
+    "DCB3025_2_L_BOLT_X",
+    "DCB3025_2_L_BOLT_Y",
+    "DCB3025_2_R",
+    "DCB3025_2_R_BOLT_X",
+    "DCB3025_2_R_BOLT_Y",
+    "DCB3025_3_L",
+    "DCB3025_3_L_BOLT_X",
+    "DCB3025_3_L_BOLT_Y",
+    "DCB3025_3_R",
+    "DCB3025_3_R_BOLT_X",
+    "DCB3025_3_R_BOLT_Y",
+    "DCB3025_4_L",
+    "DCB3025_4_L_BOLT_X",
+    "DCB3025_4_L_BOLT_Y",
+    "DCB3025_4_R",
+    "DCB3025_4_R_BOLT_X",
+    "DCB3025_4_R_BOLT_Y",
+    "A1_UPPER_ONE_PIECE_CLEVIS_A6061",
+    "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+    "A1_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+    "A1_OUTER_TUBE_OD32x2_L160_REAM28H7",
+    "A1_INNER_TUBE_OD25x2_L150_6POS",
+    "A1_IGUS_JFM_2528_21",
+    "A1_POM_LOWER_GUIDE_RING",
+    "A1_A6061_M10_THREADED_PLUG",
+    "A1_M10x1p5_FINE_STUD_L53",
+    "A1_2x_M10_DIN439_THIN_JAM_NUTS",
+    "A1_THK_PHS10_RH",
+    "A1_UPPER_ID10_OD18_SHIM_3MM_1",
+    "A1_UPPER_ID10_OD18_SHIM_3MM_2",
+    "A1_UPPER_M10_SHOULDER_BOLT_GRIP32",
+    "A1_LOWER_M8_SHOULDER_BOLT_GRIP46",
+    "A1_IMAO_BJ775_08040_SUS_COARSE_PIN",
+    "A1_PLUG_RETAINER_M4_GRIP32",
+    "A2_UPPER_ONE_PIECE_CLEVIS_A6061",
+    "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+    "A2_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+    "A2_OUTER_TUBE_OD32x2_L160_REAM28H7",
+    "A2_INNER_TUBE_OD25x2_L150_6POS",
+    "A2_IGUS_JFM_2528_21",
+    "A2_POM_LOWER_GUIDE_RING",
+    "A2_A6061_M10_THREADED_PLUG",
+    "A2_M10x1p5_FINE_STUD_L53",
+    "A2_2x_M10_DIN439_THIN_JAM_NUTS",
+    "A2_THK_PHS10_RH",
+    "A2_UPPER_ID10_OD18_SHIM_3MM_1",
+    "A2_UPPER_ID10_OD18_SHIM_3MM_2",
+    "A2_UPPER_M10_SHOULDER_BOLT_GRIP32",
+    "A2_LOWER_M8_SHOULDER_BOLT_GRIP46",
+    "A2_IMAO_BJ775_08040_SUS_COARSE_PIN",
+    "A2_PLUG_RETAINER_M4_GRIP32",
+    "A3_UPPER_ONE_PIECE_CLEVIS_A6061",
+    "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_1",
+    "A3_UPPER_CLEVIS_TO_PROFILE_M6x15_2",
+    "A3_OUTER_TUBE_OD32x2_L160_REAM28H7",
+    "A3_INNER_TUBE_OD25x2_L150_6POS",
+    "A3_IGUS_JFM_2528_21",
+    "A3_POM_LOWER_GUIDE_RING",
+    "A3_A6061_M10_THREADED_PLUG",
+    "A3_M10x1p5_FINE_STUD_L53",
+    "A3_2x_M10_DIN439_THIN_JAM_NUTS",
+    "A3_THK_PHS10_RH",
+    "A3_UPPER_ID10_OD18_SHIM_3MM_1",
+    "A3_UPPER_ID10_OD18_SHIM_3MM_2",
+    "A3_UPPER_M10_SHOULDER_BOLT_GRIP32",
+    "A3_LOWER_M8_SHOULDER_BOLT_GRIP46",
+    "A3_IMAO_BJ775_08040_SUS_COARSE_PIN",
+    "A3_PLUG_RETAINER_M4_GRIP32"
+  ],
+  "fusion_document_name": "Manual_3RPS_RevM1_NATIVE",
+  "fusion_f3d_path": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\Manual_3RPS_RevM1_NATIVE.f3d",
+  "fusion_step_path": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\Manual_3RPS_RevM1_NEUTRAL.step",
+  "manual_strut_basis": "OD32x2 outer and OD25x2 inner aluminium tubes; neutral coarse position 15 mm; JFM-2528-21 guide; PHS10 upper rod end",
+  "manual_positive_limits": "Six discrete coarse holes plus PHS10 thread engagement marks; adjustment only while the upper frame is independently supported",
+  "fusion_interference_checks": {
+    "method": "Fusion Design.analyzeInterference; coincident faces excluded",
+    "pass_count": 3,
+    "repeatable": true,
+    "all_zero": true,
+    "passes": [
+      {
+        "pass": 1,
+        "checked_leaf_occurrences": 129,
+        "interference_count": 0,
+        "signature": [],
+        "rows": [],
+        "passes": true
+      },
+      {
+        "pass": 2,
+        "checked_leaf_occurrences": 129,
+        "interference_count": 0,
+        "signature": [],
+        "rows": [],
+        "passes": true
+      },
+      {
+        "pass": 3,
+        "checked_leaf_occurrences": 129,
+        "interference_count": 0,
+        "signature": [],
+        "rows": [],
+        "passes": true
+      }
+    ]
+  },
+  "fusion_group_step_paths": {
+    "lower_frame": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\lower_frame.step",
+    "lower_brackets": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\lower_brackets.step",
+    "lower_adapters": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\lower_adapters.step",
+    "manual_struts": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\manual_struts.step",
+    "upper_frame": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\upper_frame.step",
+    "upper_brackets": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\upper_brackets.step",
+    "lower_joints": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\lower_joints.step",
+    "upper_joints": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\upper_joints.step",
+    "fasteners": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\groups\\fasteners.step"
+  },
+  "fusion_section_checks": [
+    {
+      "pass": 1,
+      "x_offset_mm": 0.0,
+      "image": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\Manual_3RPS_RevM1_A1_SECTION_PASS_1.png"
+    },
+    {
+      "pass": 2,
+      "x_offset_mm": 3.0,
+      "image": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\Manual_3RPS_RevM1_A1_SECTION_PASS_2.png"
+    },
+    {
+      "pass": 3,
+      "x_offset_mm": -3.0,
+      "image": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\manual_3rps_rev_m1_fusion_native\\Manual_3RPS_RevM1_A1_SECTION_PASS_3.png"
+    }
+  ]
+}
