@@ -27,6 +27,8 @@ sheet.getRange('B1').format.font.bold = true;
 sheet.getRange('D56').values = [['LM4075OE-1075 광학엔코더 액추에이터']];
 sheet.getRange('E56').values = [['LM4075OE-1075 / 24 V / 100 mm / 5 V / 6 ppr']];
 sheet.getRange('I56').values = [['M01. 모터뱅크 1000035578은 LM4075OE-1075. 결제 전 24 V·100 mm·5 V 옵션 3개 재확인. 내장 리미트 위치 미검증.']];
+sheet.getRange('D61').values = [['상부 로드엔드 (PHS6 2개입/포장)']];
+sheet.getRange('I61').values = [['M03. 수량 2포장×2개입=4개, 3축에 3개 사용·1개 잔여. 한국미스미 결제 화면에서 실제 포장 단위·재고·납기 재확인.']];
 sheet.getRange('H66').values = [[600]];
 sheet.getRange('I66').values = [['F11. 미스미 M6×25 3개×200원(공급가). 명목 적층 25 mm가 정확히 소진되어 PHS 암나사 깊이·물림·공차 검증 전 사용 보류.']];
 

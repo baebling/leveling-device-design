@@ -13,7 +13,7 @@ from openpyxl import load_workbook
 INTENDED_VALUE_EDITS = {
     "B1", "D18", "I17", "I18", "I24", "D38", "I38", "D43", "I43",
     "D44", "I44", "I47", "I52", "I53", "D56", "E56", "I56", "I58",
-    "I59", "I60", "H66", "I66", "B71", "B73", "B74", "I74",
+    "I59", "I60", "D61", "I61", "H66", "I66", "B71", "B73", "B74", "I74",
 }
 
 
@@ -74,6 +74,9 @@ def check(path: Path, source: Path | None = None) -> None:
         "Budget balance cache error"
     )
     assert sheet["H66"].value == 600, "Three M6x25 studs must have priced 600 KRW supply"
+    assert sheet["F61"].value == 2, "PHS6 order quantity must be two packages"
+    assert "2개입" in str(sheet["D61"].value), "PHS6 package unit is not buyer-visible"
+    assert "2포장" in str(sheet["I61"].value), "PHS6 note must distinguish packages from pieces"
     assert "발주 보류" in str(sheet["B1"].value), "Purchase-hold banner missing"
     assert "LM4075OE-1075" in str(sheet["E56"].value), "Actuator model mismatch"
     assert "1000035578" in str(sheet["G56"].value), "Actuator SKU mismatch"
