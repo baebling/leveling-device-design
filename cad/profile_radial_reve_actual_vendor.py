@@ -1,13 +1,13 @@
 """Rev E radial 3-RPS model using the supplied LM4075OE STEP geometry.
 
-The detailed profile, frame bracket, stop, and fastener groups come from the
-Fusion-native Rev D export.  The provisional actuator envelopes are replaced
+The detailed profile and frame-bracket groups come from the Fusion-native
+Rev D export.  The provisional actuator envelopes are replaced
 with the six named solids from the vendor STEP.  LMB-10 and the selected MISUMI
 TRUSCO PHS6 are rebuilt as conservative supplier-interface envelopes from the
 published dimensions.  These joint solids are for assembly/interference review,
-not for manufacturing.  Pose models deliberately omit the mixed stop/fastener
-groups because those groups contain both fixed and moving hardware; the
-collapsed master includes them in their validated Rev D positions.
+not for manufacturing.  The upper frame is raised relative to the unchanged
+actuator pin geometry to clear the full-length PHS6 body.  The legacy mixed
+stop/fastener groups are invalid after this revision.
 """
 
 from __future__ import annotations
@@ -54,6 +54,25 @@ GROUP_COLORS = {
     "fasteners": (0.20, 0.21, 0.23, 1.0),
 }
 
+# Rev E correction; the legacy Rev D STEP groups remain historical geometry.
+UPPER_FRAME_RISE_MM = 15.0
+UPPER_PHS_FASTENER_STACK = {
+    "stud_length_mm": 25.0,
+    "phs_thread_engagement_mm": 10.0,
+    "slot_nut_thread_engagement_mm": 6.0,
+    "jam_nut_thickness_mm": 5.0,
+    "exposed_stud_gap_mm": 4.0,
+}
+LOWER_LMB_FASTENER_STACK = {
+    "bolt_length_mm": 12.0,
+    "bracket_base_mm": 3.0,
+    "flat_washer_count_per_bolt": 3,
+    "flat_washer_thickness_mm": 1.0,
+    "adapter_plate_mm": 8.0,
+    "thread_engagement_mm": 6.0,
+    "nominal_tip_recess_mm": 2.0,
+}
+
 LMB10_DIMENSIONS = {
     "base_length_mm": 56.0,
     "outside_width_mm": 26.0,
@@ -80,9 +99,10 @@ TRUSCO_PHS6_DIMENSIONS = {
     # conservative envelope is used for clash checking and is not a drawing.
     "axial_envelope_mm": 10.0,
     "stem_envelope_diameter_mm": 10.0,
-    # Move the rod end outboard along the common pivot-pin axis.  The 1.5 mm
-    # washer gap removes the small eye-to-body clash seen at combined +/-3 deg.
-    "assembly_tangent_offset_mm": 1.5,
+    # Keep the rod-end stud on the 3030 slot centerline.  The upper actuator
+    # clevis, not this rod end, is shifted 1.5 mm along the pivot pin with
+    # three 0.5 mm shims (see revd_data.upper_joint_side_offset_mm).
+    "assembly_tangent_offset_mm": 0.0,
 }
 
 STATIC_GROUPS = ("lower_frame", "lower_brackets", "lower_adapters")
@@ -211,6 +231,11 @@ def platform_transform(pose: Pose):
 def transform_upper_shape(shape, pose: Pose):
     rotation, translation, _ = platform_transform(pose)
     return _rigid_transform(shape, rotation, translation)
+
+
+def transform_upper_frame_shape(shape, pose: Pose):
+    shifted = _shape(shape).translate((0.0, 0.0, UPPER_FRAME_RISE_MM))
+    return transform_upper_shape(shifted, pose)
 
 
 def _local_lmb10_shape() -> cq.Shape:
@@ -344,6 +369,41 @@ def supplier_joint_parts(pose: Pose) -> list[Part]:
     return rows
 
 
+@lru_cache(maxsize=1)
+def lower_lmb_bolt_shapes() -> tuple[cq.Shape, ...]:
+    """Six M8x12 shanks and three 1 mm flat washers per bolt."""
+
+    rows = []
+    tip_z = 40.0 + LOWER_LMB_FASTENER_STACK["nominal_tip_recess_mm"]
+    bearing_z = tip_z + LOWER_LMB_FASTENER_STACK["bolt_length_mm"]
+    for adapter in revd_data.adapter_rows():
+        for x, y in adapter["lmb_tapped_holes_mm"]:
+            shank = cq.Solid.makeCylinder(4.0, bearing_z - tip_z, cq.Vector(x, y, tip_z))
+            washers = cq.Solid.makeCylinder(8.5, 3.0, cq.Vector(x, y, 51.0)).cut(
+                cq.Solid.makeCylinder(4.25, 3.0, cq.Vector(x, y, 51.0))
+            )
+            head = cq.Solid.makeCylinder(6.5, 8.0, cq.Vector(x, y, bearing_z))
+            rows.append(cq.Compound.makeCompound((shank, washers, head)))
+    return tuple(rows)
+
+
+@lru_cache(maxsize=1)
+def upper_phs_fastener_local_shapes() -> tuple[cq.Shape, ...]:
+    """M6x25 stud with a jam nut against each PHS6 shank end."""
+
+    rows = []
+    for support, (_, tangent) in zip(revd_data.upper_support_points(), revd_data.support_basis()):
+        x = support[0] + tangent[0] * TRUSCO_PHS6_DIMENSIONS["assembly_tangent_offset_mm"]
+        y = support[1] + tangent[1] * TRUSCO_PHS6_DIMENSIONS["assembly_tangent_offset_mm"]
+        z = revd_data.P.upper_ring_z_collapsed_mm
+        stud = cq.Solid.makeCylinder(3.0, 25.0, cq.Vector(x, y, z + 20.0))
+        nut = cq.Solid.makeCylinder(5.5, 5.0, cq.Vector(x, y, z + 30.0)).cut(
+            cq.Solid.makeCylinder(3.0, 5.0, cq.Vector(x, y, z + 30.0))
+        )
+        rows.append(cq.Compound.makeCompound((stud, nut)))
+    return tuple(rows)
+
+
 def upper_eye_points(pose: Pose):
     return revd_data._upper_world_points(
         pose.lift_mm, pose.pitch_deg, pose.roll_deg
@@ -397,19 +457,20 @@ def components_for_pose(pose: Pose, include_collapsed_hardware=False) -> list[Pa
         rows.append(
             Part(
                 name.upper(),
-                transform_upper_shape(group_shape(name), pose),
+                transform_upper_frame_shape(group_shape(name), pose),
                 GROUP_COLORS[name],
                 name,
             )
         )
     rows.extend(supplier_joint_parts(pose))
+    for index, shape in enumerate(lower_lmb_bolt_shapes(), start=1):
+        rows.append(Part(f"LMB_M8x12_{index}", shape, GROUP_COLORS["fasteners"], "lower_fasteners"))
+    for index, shape in enumerate(upper_phs_fastener_local_shapes(), start=1):
+        rows.append(Part(f"PHS_M6x25_{index}", transform_upper_shape(shape, pose), GROUP_COLORS["fasteners"], "upper_fasteners"))
     for index in range(1, 4):
         rows.extend(actuator_parts(index, pose))
     if include_collapsed_hardware:
-        if any(abs(value) > 1e-9 for value in (pose.lift_mm, pose.pitch_deg, pose.roll_deg)):
-            raise ValueError("Mixed stop/fastener groups are valid only in collapsed pose")
-        for name in COLLAPSED_ONLY_GROUPS:
-            rows.append(Part(name.upper(), group_shape(name), GROUP_COLORS[name], name))
+        raise ValueError("Legacy Rev D stop/fastener groups are invalid after the Rev E frame raise")
     return rows
 
 
@@ -455,7 +516,7 @@ def _screened_intersection_volume(first, second):
 def collision_audit(pose: Pose):
     static_structure = _compound(group_shape(name) for name in STRUCTURAL_STATIC_GROUPS)
     moving_structure = _compound(
-        transform_upper_shape(group_shape(name), pose)
+        transform_upper_frame_shape(group_shape(name), pose)
         for name in STRUCTURAL_MOVING_GROUPS
     )
     lower_joint_rows = list(lower_joint_shapes())
@@ -464,6 +525,9 @@ def collision_audit(pose: Pose):
     ]
     lower_joints = _compound(lower_joint_rows)
     upper_joints = _compound(upper_joint_rows)
+    upper_phs_fasteners = _compound(
+        transform_upper_shape(shape, pose) for shape in upper_phs_fastener_local_shapes()
+    )
     lower_assembly = _compound((static_structure, lower_joints))
     upper_assembly = _compound((moving_structure, upper_joints))
     actuators = [
@@ -478,6 +542,20 @@ def collision_audit(pose: Pose):
         {
             "pair": "lower_joints__upper_assembly",
             "volume_mm3": _intersection_volume(lower_joints, upper_assembly),
+        },
+        {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": _intersection_volume(upper_joints, moving_structure),
+        },
+        {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": _intersection_volume(upper_phs_fasteners, moving_structure),
+        },
+        {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": _intersection_volume(
+                _compound(lower_lmb_bolt_shapes()), group_shape("lower_frame")
+            ),
         },
         {
             "pair": "upper_joints__lower_assembly",
@@ -557,6 +635,12 @@ def full_pose_audit():
         "vendor_part_count": len(vendor_shapes()),
         "lower_joint_model": "LMB-10",
         "upper_joint_model": "TRUSCO PHS6 / 280-7599",
+        "upper_frame_rise_mm": UPPER_FRAME_RISE_MM,
+        "collapsed_upper_frame_top_mm": revd_data.P.upper_profile_top_z_collapsed_mm + UPPER_FRAME_RISE_MM,
+        "lower_lmb_fastener_stack": LOWER_LMB_FASTENER_STACK,
+        "upper_phs_fastener_stack": UPPER_PHS_FASTENER_STACK,
+        "upper_clevis_shim_count_per_axis": 3,
+        "upper_clevis_shim_thickness_mm": 0.5,
         "supplier_joint_envelopes_in_collision_audit": True,
         "joint_model_note": (
             "Supplier-interface envelopes from public dimensions; not fabrication drawings. "

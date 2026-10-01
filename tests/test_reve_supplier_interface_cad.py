@@ -3,11 +3,14 @@ import unittest
 from cad.profile_radial_reve_actual_vendor import (
     LMB10_DIMENSIONS,
     TRUSCO_PHS6_DIMENSIONS,
+    UPPER_FRAME_RISE_MM,
+    LOWER_LMB_FASTENER_STACK,
     POSES,
     collision_audit,
     components_for_pose,
     full_pose_audit,
 )
+from fusion_scripts.ProfileRadialRevD import revd_data
 
 
 class RevESupplierInterfaceCadTests(unittest.TestCase):
@@ -37,7 +40,7 @@ class RevESupplierInterfaceCadTests(unittest.TestCase):
         self.assertEqual(20.0, TRUSCO_PHS6_DIMENSIONS["overall_width_mm"])
         self.assertEqual(30.0, TRUSCO_PHS6_DIMENSIONS["center_distance_mm"])
         self.assertEqual(40.0, TRUSCO_PHS6_DIMENSIONS["overall_height_mm"])
-        self.assertEqual(1.5, TRUSCO_PHS6_DIMENSIONS["assembly_tangent_offset_mm"])
+        self.assertEqual(0.0, TRUSCO_PHS6_DIMENSIONS["assembly_tangent_offset_mm"])
 
     def test_three_supplier_joint_parts_replace_provisional_joint_groups(self):
         parts = components_for_pose(POSES["collapsed"])
@@ -50,11 +53,34 @@ class RevESupplierInterfaceCadTests(unittest.TestCase):
 
     def test_collision_audit_includes_supplier_joint_envelopes(self):
         pairs = {row["pair"] for row in collision_audit(POSES["neutral"])["pairs"]}
+        self.assertIn("upper_joints__upper_structure", pairs)
+        self.assertIn("lower_lmb_bolts__lower_frame", pairs)
+        self.assertIn("upper_phs_fasteners__upper_structure", pairs)
         self.assertIn("lower_joints__upper_assembly", pairs)
         self.assertIn("upper_joints__lower_assembly", pairs)
         self.assertIn("lower_joints__upper_joints", pairs)
         self.assertIn("actuator_1__lower_joint_1", pairs)
         self.assertIn("actuator_1__upper_joint_1", pairs)
+
+    def test_upper_frame_rise_clears_actual_phs6_envelope(self):
+        self.assertEqual(15.0, UPPER_FRAME_RISE_MM)
+        parts = components_for_pose(POSES["neutral"])
+        frame = next(part.shape for part in parts if part.group == "upper_frame")
+        joints = [part.shape for part in parts if part.group == "upper_joints"]
+        self.assertTrue(all(joint.intersect(frame).Volume() < 0.1 for joint in joints))
+
+    def test_upper_clevis_shims_preserve_slot_centered_phs_stud(self):
+        self.assertEqual(14.5, revd_data.P.joint_side_offset_mm)
+        self.assertEqual(16.0, revd_data.P.upper_joint_side_offset_mm)
+        self.assertEqual(1.5, revd_data.P.upper_joint_side_offset_mm - revd_data.P.joint_side_offset_mm)
+        audit = collision_audit(POSES["collapsed"])
+        stud_row = next(row for row in audit["pairs"] if row["pair"] == "upper_phs_fasteners__upper_structure")
+        self.assertLess(stud_row["volume_mm3"], 0.1)
+
+    def test_lower_lmb_bolt_has_recess_and_thread_engagement(self):
+        self.assertEqual(12.0, LOWER_LMB_FASTENER_STACK["bolt_length_mm"])
+        self.assertGreaterEqual(LOWER_LMB_FASTENER_STACK["thread_engagement_mm"], 6.0)
+        self.assertGreaterEqual(LOWER_LMB_FASTENER_STACK["nominal_tip_recess_mm"], 2.0)
 
     def test_full_pose_audit_declares_supplier_interfaces(self):
         audit = full_pose_audit()

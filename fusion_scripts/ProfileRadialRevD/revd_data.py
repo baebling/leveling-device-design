@@ -33,6 +33,11 @@ class Parameters:
     actuator_eye_outer_radius_mm: float = 10.0
     upper_rod_eye_overlap_mm: float = 2.0
     joint_side_offset_mm: float = 14.5
+    # Rev E supplier interface: move only the upper actuator clevis 1.5 mm
+    # farther along the pin axis.  Three existing 0.5 mm shims per upper pin
+    # recover the PHS6/actuator clearance without shifting the PHS6 stud out
+    # of the 3030 profile slot.  Lower LMB10 coordinates stay unchanged.
+    upper_joint_side_offset_mm: float = 16.0
     adapter_length_x_mm: float = 120.0
     adapter_width_y_mm: float = 70.0
     adapter_thickness_mm: float = 8.0
@@ -169,8 +174,8 @@ def upper_eye_local_points():
     for (x, y), (_, tangent) in zip(upper_support_points(), support_basis()):
         rows.append(
             (
-                x - P.joint_side_offset_mm * tangent[0],
-                y - P.joint_side_offset_mm * tangent[1],
+                x - P.upper_joint_side_offset_mm * tangent[0],
+                y - P.upper_joint_side_offset_mm * tangent[1],
                 0.0,
             )
         )

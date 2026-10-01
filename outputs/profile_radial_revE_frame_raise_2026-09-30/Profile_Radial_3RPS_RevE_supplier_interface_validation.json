@@ -1,0 +1,4264 @@
+{
+  "revision": "E_ACTUAL_VENDOR_STEP_SUPPLIER_INTERFACES",
+  "pose_count": 27,
+  "vendor_step": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\references\\vendor_cad\\LM4075OE-1075-100mm.stp",
+  "vendor_part_count": 6,
+  "lower_joint_model": "LMB-10",
+  "upper_joint_model": "TRUSCO PHS6 / 280-7599",
+  "upper_frame_rise_mm": 15.0,
+  "collapsed_upper_frame_top_mm": 315.0,
+  "lower_lmb_fastener_stack": {
+    "bolt_length_mm": 12.0,
+    "bracket_base_mm": 3.0,
+    "flat_washer_count_per_bolt": 3,
+    "flat_washer_thickness_mm": 1.0,
+    "adapter_plate_mm": 8.0,
+    "thread_engagement_mm": 6.0,
+    "nominal_tip_recess_mm": 2.0
+  },
+  "upper_phs_fastener_stack": {
+    "stud_length_mm": 25.0,
+    "phs_thread_engagement_mm": 10.0,
+    "slot_nut_thread_engagement_mm": 6.0,
+    "jam_nut_thickness_mm": 5.0,
+    "exposed_stud_gap_mm": 4.0
+  },
+  "upper_clevis_shim_count_per_axis": 3,
+  "upper_clevis_shim_thickness_mm": 0.5,
+  "supplier_joint_envelopes_in_collision_audit": true,
+  "joint_model_note": "Supplier-interface envelopes from public dimensions; not fabrication drawings. TRUSCO PHS6 axial width is a conservative 10 mm envelope because MISUMI does not publish it on the order page.",
+  "collapsed_pin_center_mm": 205.0,
+  "minimum_pin_mm": 210.816156,
+  "maximum_pin_mm": 277.009593,
+  "maximum_unintended_collision_volume_mm3": 0.0,
+  "passes": true,
+  "rows": [
+    {
+      "pose": "L0_P-3_R-3",
+      "lift_mm": 0.0,
+      "pitch_deg": -3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        215.391382,
+        220.17616,
+        237.101991
+      ],
+      "minimum_retract_margin_mm": 10.391382,
+      "minimum_extend_margin_mm": 67.898009,
+      "collision": {
+        "pose": "L0_P-3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P-3_R0",
+      "lift_mm": 0.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        224.99401,
+        215.675097,
+        232.060662
+      ],
+      "minimum_retract_margin_mm": 10.675097,
+      "minimum_extend_margin_mm": 72.939338,
+      "collision": {
+        "pose": "L0_P-3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P-3_R3",
+      "lift_mm": 0.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        234.252816,
+        211.26835,
+        227.111527
+      ],
+      "minimum_retract_margin_mm": 6.26835,
+      "minimum_extend_margin_mm": 70.747184,
+      "collision": {
+        "pose": "L0_P-3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P0_R-3",
+      "lift_mm": 0.0,
+      "pitch_deg": 0.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        214.639336,
+        228.521483,
+        229.560645
+      ],
+      "minimum_retract_margin_mm": 9.639336,
+      "minimum_extend_margin_mm": 75.439355,
+      "collision": {
+        "pose": "L0_P0_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P0_R0",
+      "lift_mm": 0.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        224.270747,
+        224.270747,
+        224.270747
+      ],
+      "minimum_retract_margin_mm": 19.270747,
+      "minimum_extend_margin_mm": 80.729253,
+      "collision": {
+        "pose": "L0_P0_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P0_R3",
+      "lift_mm": 0.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        233.556138,
+        220.119917,
+        219.063816
+      ],
+      "minimum_retract_margin_mm": 14.063816,
+      "minimum_extend_margin_mm": 71.443862,
+      "collision": {
+        "pose": "L0_P0_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P3_R-3",
+      "lift_mm": 0.0,
+      "pitch_deg": 3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        214.161054,
+        236.669139,
+        221.835761
+      ],
+      "minimum_retract_margin_mm": 9.161054,
+      "minimum_extend_margin_mm": 68.330861,
+      "collision": {
+        "pose": "L0_P3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P3_R0",
+      "lift_mm": 0.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        223.784908,
+        232.657664,
+        216.288995
+      ],
+      "minimum_retract_margin_mm": 11.288995,
+      "minimum_extend_margin_mm": 72.342336,
+      "collision": {
+        "pose": "L0_P3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L0_P3_R3",
+      "lift_mm": 0.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        233.061438,
+        228.75152,
+        210.816156
+      ],
+      "minimum_retract_margin_mm": 5.816156,
+      "minimum_extend_margin_mm": 71.938562,
+      "collision": {
+        "pose": "L0_P3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P-3_R-3",
+      "lift_mm": 25.0,
+      "pitch_deg": -3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        233.467371,
+        238.548728,
+        256.614174
+      ],
+      "minimum_retract_margin_mm": 28.467371,
+      "minimum_extend_margin_mm": 48.385826,
+      "collision": {
+        "pose": "L25_P-3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P-3_R0",
+      "lift_mm": 25.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        243.698939,
+        233.780367,
+        251.242452
+      ],
+      "minimum_retract_margin_mm": 28.780367,
+      "minimum_extend_margin_mm": 53.757548,
+      "collision": {
+        "pose": "L25_P-3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P-3_R3",
+      "lift_mm": 25.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        253.563707,
+        229.088163,
+        245.94187
+      ],
+      "minimum_retract_margin_mm": 24.088163,
+      "minimum_extend_margin_mm": 51.436293,
+      "collision": {
+        "pose": "L25_P-3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P0_R-3",
+      "lift_mm": 25.0,
+      "pitch_deg": 0.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        232.681854,
+        247.462944,
+        248.568801
+      ],
+      "minimum_retract_margin_mm": 27.681854,
+      "minimum_extend_margin_mm": 56.431199,
+      "collision": {
+        "pose": "L25_P0_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P0_R0",
+      "lift_mm": 25.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        242.945196,
+        242.945196,
+        242.945196
+      ],
+      "minimum_retract_margin_mm": 37.945196,
+      "minimum_extend_margin_mm": 62.054804,
+      "collision": {
+        "pose": "L25_P0_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P0_R3",
+      "lift_mm": 25.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        252.839216,
+        238.509827,
+        237.382805
+      ],
+      "minimum_retract_margin_mm": 32.382805,
+      "minimum_extend_margin_mm": 52.160784,
+      "collision": {
+        "pose": "L25_P0_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P3_R-3",
+      "lift_mm": 25.0,
+      "pitch_deg": 3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        232.152505,
+        256.154662,
+        240.31926
+      ],
+      "minimum_retract_margin_mm": 27.152505,
+      "minimum_extend_margin_mm": 48.845338,
+      "collision": {
+        "pose": "L25_P3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P3_R0",
+      "lift_mm": 25.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        242.41043,
+        251.877105,
+        234.436154
+      ],
+      "minimum_retract_margin_mm": 29.436154,
+      "minimum_extend_margin_mm": 53.122895,
+      "collision": {
+        "pose": "L25_P3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L25_P3_R3",
+      "lift_mm": 25.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        252.297578,
+        247.687916,
+        228.6044
+      ],
+      "minimum_retract_margin_mm": 23.6044,
+      "minimum_extend_margin_mm": 52.702422,
+      "collision": {
+        "pose": "L25_P3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P-3_R-3",
+      "lift_mm": 50.0,
+      "pitch_deg": -3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        252.726293,
+        258.03769,
+        277.009593
+      ],
+      "minimum_retract_margin_mm": 47.726293,
+      "minimum_extend_margin_mm": 27.990407,
+      "collision": {
+        "pose": "L50_P-3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P-3_R0",
+      "lift_mm": 50.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        263.450264,
+        253.062783,
+        271.373154
+      ],
+      "minimum_retract_margin_mm": 48.062783,
+      "minimum_extend_margin_mm": 33.626846,
+      "collision": {
+        "pose": "L50_P-3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P-3_R3",
+      "lift_mm": 50.0,
+      "pitch_deg": -3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        273.796868,
+        248.150069,
+        265.791575
+      ],
+      "minimum_retract_margin_mm": 43.150069,
+      "minimum_extend_margin_mm": 31.203132,
+      "collision": {
+        "pose": "L50_P-3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P0_R-3",
+      "lift_mm": 50.0,
+      "pitch_deg": 0.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        251.91595,
+        267.401849,
+        268.560623
+      ],
+      "minimum_retract_margin_mm": 46.91595,
+      "minimum_extend_margin_mm": 36.439377,
+      "collision": {
+        "pose": "L50_P0_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P0_R0",
+      "lift_mm": 50.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        262.673501,
+        262.673501,
+        262.673501
+      ],
+      "minimum_retract_margin_mm": 57.673501,
+      "minimum_extend_margin_mm": 42.326499,
+      "collision": {
+        "pose": "L50_P0_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P0_R3",
+      "lift_mm": 50.0,
+      "pitch_deg": 0.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        273.051037,
+        258.013754,
+        256.831145
+      ],
+      "minimum_retract_margin_mm": 51.831145,
+      "minimum_extend_margin_mm": 31.948963,
+      "collision": {
+        "pose": "L50_P0_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P3_R-3",
+      "lift_mm": 50.0,
+      "pitch_deg": 3.0,
+      "roll_deg": -3.0,
+      "pin_lengths_mm": [
+        251.345606,
+        276.528733,
+        259.895343
+      ],
+      "minimum_retract_margin_mm": 46.345606,
+      "minimum_extend_margin_mm": 28.471267,
+      "collision": {
+        "pose": "L50_P3_R-3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P3_R0",
+      "lift_mm": 50.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 0.0,
+      "pin_lengths_mm": [
+        262.099118,
+        272.037799,
+        253.751239
+      ],
+      "minimum_retract_margin_mm": 48.751239,
+      "minimum_extend_margin_mm": 32.962201,
+      "collision": {
+        "pose": "L50_P3_R0",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "pose": "L50_P3_R3",
+      "lift_mm": 50.0,
+      "pitch_deg": 3.0,
+      "roll_deg": 3.0,
+      "pin_lengths_mm": [
+        272.471103,
+        267.621654,
+        247.641861
+      ],
+      "minimum_retract_margin_mm": 42.641861,
+      "minimum_extend_margin_mm": 32.528897,
+      "collision": {
+        "pose": "L50_P3_R3",
+        "maximum_volume_mm3": 0.0,
+        "passes": true,
+        "pairs": [
+          {
+            "pair": "lower_structure__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_phs_fasteners__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_lmb_bolts__lower_frame",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "upper_joints__lower_assembly",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "lower_joints__upper_joints",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_structure",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__lower_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_1",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_3__upper_joint_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_2",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_1__actuator_3",
+            "volume_mm3": 0.0
+          },
+          {
+            "pair": "actuator_2__actuator_3",
+            "volume_mm3": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "vendor_step_sha256": "1BC86009BADDCF6458EEB63FB1FCAC349FD80B6B64F9A0DDFA7C4B824DF52F3B",
+  "vendor_rear_pin_center_mm": [
+    11.409449,
+    -228.951419,
+    -5.366741
+  ],
+  "vendor_front_pin_center_mm": [
+    -193.590551,
+    -228.951419,
+    -5.366741
+  ],
+  "vendor_collapsed_pin_center_distance_mm": 205.0,
+  "note": "Pose models use the actual LM4075OE STEP plus public-dimension LMB-10 and TRUSCO PHS6 supplier envelopes. The earlier mechanical-stop group is omitted from this simplified prototype package per the selected internal-limit-only scope. The stale mixed Rev D fastener group is replaced with the corrected six LMB bolts and three PHS studs. Upper frame rises 15 mm; upper actuator eyes shift 1.5 mm on three existing 0.5 mm shims per axis so PHS studs stay in the 3030 slot center. Supplier envelopes are not fabrication drawings. Electrical parts are not modeled.",
+  "purchase_release": false,
+  "fabrication_release": false
+}

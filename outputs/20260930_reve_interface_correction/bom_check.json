@@ -1,0 +1,36 @@
+{
+  "lineCount": 67,
+  "expected": 2846385,
+  "actual": 2846385,
+  "summaryRows": [
+    71,
+    72,
+    73,
+    74
+  ],
+  "inspection": {
+    "recordCount": 1,
+    "truncated": false,
+    "metadata": {
+      "revision": "h1ffa7",
+      "target": {
+        "id": "wb/4d3ci8",
+        "beforeLines": 0,
+        "afterLines": 0
+      },
+      "kind": {
+        "requested": "region",
+        "tokens": [
+          "region"
+        ]
+      },
+      "include": {
+        "tokens": []
+      },
+      "exclude": {
+        "tokens": []
+      },
+      "notices": []
+    }
+  }
+}
