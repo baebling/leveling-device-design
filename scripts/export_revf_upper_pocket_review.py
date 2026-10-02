@@ -11,9 +11,10 @@ sys.path.insert(0,str(ROOT))
 import cadquery as cq
 import vtk
 from cad.revf_upper_pocket_inputs import load_inputs
-from cad.revf_upper_pocket_pose_audit import audit_all, bounded_followup, refresh_worst_interference
+from cad.revf_upper_pocket_pose_audit import audit_all, bounded_followup, refresh_worst_interference, RELEASES
 from cad.profile_radial_reve_actual_vendor import Pose
-from cad.profile_radial_revf_upper_pocket_review import revf_components_for_pose
+from cad.profile_radial_revf_upper_pocket_review import revf_components_for_pose, local_review_geometry, _basis
+from math import atan2, degrees
 from scripts.export_profile_radial_reve_actual_vendor import actor_for
 
 OUTPUT=ROOT/'outputs/profile_radial_revF_upper_pocket_review_2026-10-02'
@@ -102,6 +103,33 @@ def export_pose(pose, *, destination=OUTPUT, part_indices=None):
     capture=vtk.vtkWindowToImageFilter();capture.SetInput(window);capture.Update()
     writer=vtk.vtkPNGWriter();writer.SetFileName(str(destination/f'{pose.label}.png'));writer.SetInputConnection(capture.GetOutputPort());writer.Write();window.Finalize()
 
+def export_bracket_parts(inputs, destination, provenance):
+    """Local single-part quotation review candidates; verify STEP round trip."""
+    def bounds(shape):
+        b=shape.BoundingBox()
+        return [b.xmin,b.xmax,b.ymin,b.ymax,b.zmin,b.zmax]
+    records=[]
+    for axis in (1,2,3):
+        shape=local_review_geometry(inputs,axis)['bracket']
+        path=destination/f'A{axis}_bracket_local_REVIEW_ONLY.stp'
+        assert shape.isValid() and len(shape.Solids())==1
+        cq.exporters.export(shape,str(path),exportType='STEP')
+        restored=cq.importers.importStep(str(path)).val()
+        assert restored.isValid() and len(restored.Solids())==1
+        assert path.stat().st_size<10_000_000
+        assert abs(restored.Volume()-shape.Volume())<1e-4
+        assert all(abs(a-b)<1e-5 for a,b in zip(bounds(shape),bounds(restored)))
+        records.append(dict(axis=axis,path=path.name,label=LABEL,review_only=True,solid_count=1,
+            bytes=path.stat().st_size,sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+            coordinate_system='local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm',
+            mount_pad_rotation_about_local_z_deg=degrees(atan2(_basis(axis)[0][1],_basis(axis)[0][0])),
+            source_volume_mm3=shape.Volume(),reimport_volume_mm3=restored.Volume(),
+            source_bbox_mm=bounds(shape),reimport_bbox_mm=bounds(restored),
+            geometry_sha256=provenance['source_hashes']['cad/profile_radial_revf_upper_pocket_review.py'],
+            measurement_fingerprint=provenance['fingerprint'],**RELEASES))
+    return records
+
+
 def main():
     inputs=load_inputs();provenance=measurement_provenance(inputs)
     if '--repackage-existing' in sys.argv or '--continue-followup' in sys.argv:
@@ -121,6 +149,8 @@ def main():
         audit['invalid_boolean_count']=sum(row['invalid_boolean_count'] for row in audit['representatives'])+audit['exact_followup']['invalid_completed_count']
         validate_reuse(audit,measurement_provenance(inputs))
     poses=review_export_poses(audit)
+    bracket_parts=export_bracket_parts(inputs,OUTPUT,provenance)
+    audit['bracket_part_exports']=bracket_parts
     write_audit(audit,OUTPUT)
     for pose in poses: export_pose(pose)
     witness=audit['worst_interference']
@@ -143,7 +173,11 @@ Measurement ID: {audit['measurement_id']}. Source fingerprint: {audit['measureme
 
 Run the exporter with --continue-followup to execute the next bounded 24 distinct near-pair keys under the same validated measurement identity. --repackage-existing only repackages; it never silently substitutes fresh source hashes for old measurements.
 
-Mount status: {audit['mount_attachment_status']}. Measurements and per-bolt findings are in audit.json. Empty-space clearance alone is not attachment. Actual DNF3030 slot fit remains unverified. Total invalid Boolean count including supplemental checks: {audit['invalid_boolean_count']}; invalid pin-head/eye results leave seating unresolved (not proven physical penetration). Open housing insertion requires unverified M6 retainer engagement/preload/locking for axial capture. Task 3 profile_attachment omits installed frame/T-nut/full tool context.
+Mount status: {audit['mount_attachment_status']}; centering {audit['crossmember_centering_status']}. Measurements and per-bolt findings are in audit.json. Empty-space clearance alone is not attachment. Corrected pads follow platform X. Retained shallow slot depth 6.9 mm versus 7.5 mm insertion creates 0.6 mm nominal floor overlap, not proof of delivered DNF3030 interference. Seller DNF diagram https://shap.co.kr/web/pic_ver1/PROFILE_DRAFT_PIC/DNF%203030_5.gif suggests 10.5 mm center floor, but delivered NAVIMRO page image says DNP3030: actual section, tolerance and strength remain UNKNOWN/HOLD. Total invalid Boolean count including supplemental checks: {audit['invalid_boolean_count']}; invalid pin-head/eye results leave seating unresolved (not proven physical penetration). Open housing insertion requires unverified M6 retainer engagement/preload/locking for axial capture. Staged three-axis frame/T-nut/tool context is now included; finite nominal checks do not prove complete assembly.
+
+Three local bracket-only quotation-review candidates (not purchase/fabrication authorization) are listed below. Each reimport is one valid solid, under 10 MB, with volume/bounds checked. Local origin is PHS ball, X radial, Y tangent/pin, Z platform up, units mm. Full assembly STEP files (~11 MB) are NOT meviy upload candidates. No upload has been performed.
+
+{chr(10).join(f"- {r['path']}: {r['bytes']} bytes; local pad Z rotation {r['mount_pad_rotation_about_local_z_deg']:.6f} deg; geometry SHA256 {r['geometry_sha256']}; STEP SHA256 {r['sha256']}; {LABEL}." for r in bracket_parts)}
 
 Command policy: grid-to-PARK and adjacent JOG; HOME starts at PARK, retracting order 3,2,1. Arbitrary HOME starts/restart/escape remain HOLD. Manufacturer capacities, tolerances, pin transitions and complete wrench/assembly paths remain unresolved. Nominal assembly sample-clear flags do not establish valid Boolean or assembly success. No cart, payload or people validation.
 
@@ -151,7 +185,7 @@ Review loads +/-750 N per axis, conditional static target 1.5; see Task 2 load s
 '''
     (OUTPUT/'README.md').write_text(readme,encoding='utf-8')
     files=sorted(p for p in OUTPUT.iterdir() if p.is_file() and p.name!='manifest.json')
-    manifest={'review_only':True,'purchase_release':False,'fabrication_release':False,'artifacts':[{'path':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]}
+    manifest={'review_only':True,**RELEASES,'bracket_part_exports':bracket_parts,'artifacts':[{'path':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]}
     manifest['measurement_id']=audit['measurement_id']
     manifest['measurement_provenance']=audit['measurement_provenance']
     manifest['source_artifacts']=[{'path':name,'sha256':digest} for name,digest in audit['measurement_provenance']['source_hashes'].items()]

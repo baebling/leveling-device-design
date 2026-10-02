@@ -42,21 +42,30 @@ def boolean_measure(first, second):
         return dict(valid=False,volume_mm3=None,error=str(error))
 
 def mount_attachment_review(inputs):
-    """A missing frame engagement is a failure even when Boolean volume is zero."""
-    parts=revf_components_for_pose(Pose('mount_neutral',25,0,0),inputs)
+    """Separate nominal mounting-axis alignment from unverified real slot fit."""
+    pose=Pose('mount_neutral',25,0,0)
+    parts=revf_components_for_pose(pose,inputs)
     frame=next(p.shape for p in parts if p.group=='upper_frame')
     measurements=[]
     for part in parts:
         if 'mount_bolt_' not in part.name: continue
         row=boolean_measure(part.shape,frame)
         row.update(part=part.name,gap_mm=float(part.shape.distance(frame)))
+        axis=int(part.name[1]);centre=part.shape.Center()
+        relative=np.array([centre.x,centre.y,centre.z])-np.array(joint_reference(axis,pose)['ball_center'])
+        platform=np.array(platform_transform(pose)[0]).T@relative
+        centered=abs(platform[1])<1e-5 and abs(abs(platform[0])-22.)<1e-5
+        row.update(platform_center_x_mm=float(platform[0]),platform_center_y_mm=float(platform[1]),nominal_crossmember_centered=bool(centered))
         measurements.append(row)
-    invalid=any(not r['valid'] or r['volume_mm3']>1e-6 or r['gap_mm']>.25 for r in measurements)
-    return dict(mount_attachment_status='INVALID_NOMINAL_PLACEMENT_ACTUAL_SLOT_UNVERIFIED' if invalid else 'UNVERIFIED',
+    aligned=len(measurements)==6 and all(r['nominal_crossmember_centered'] for r in measurements)
+    return dict(mount_attachment_status='UNKNOWN/HOLD' if aligned else 'INVALID_NOMINAL_CENTERING/HOLD',
+        crossmember_centering_status='ALIGNED_NOMINAL' if aligned else 'INVALID',actual_slot_fit_status='UNKNOWN',
+        legacy_slot_depth_mm=6.9,candidate_insertion_mm=7.5,legacy_slot_floor_overlap_mm=.6,
+        actual_dnf3030_interference_proven=False,
         mount_attachment_measurements=measurements,
-        mount_attachment_findings=[f"{r['part']}: " + ('invalid Boolean' if not r['valid'] else 'no frame engagement' if r['gap_mm']>.25 else 'frame-wall intersection' if r['volume_mm3']>1e-6 else 'nominal contact; actual slot unverified') for r in measurements],
-        additional_mechanical_blockers=['Open +local Y housing insertion channel provides no independent axial capture; M6 retainer engagement/preload/locking under reversal unverified', 'Task 3 profile_attachment checks bracket-only approach, omitting installed frame/T-nut/full tool context', 'Invalid pin-head/eye Boolean is unresolved seating, not proven physical penetration'],
-        mount_attachment_blocker='Bolt gaps/volumes must be resolved against real slot evidence. Congruent rotated bases do not establish attachment. Base/hole orientation may need redesign; no automatic whole-bracket rotation.')
+        mount_attachment_findings=[f"{r['part']}: nominal centering {'aligned' if r['nominal_crossmember_centered'] else 'invalid'}; " + ('invalid Boolean unresolved' if not r['valid'] else 'retained shallow-model intersection; actual slot unknown' if r['volume_mm3']>1e-6 else 'actual slot engagement unverified') for r in measurements],
+        additional_mechanical_blockers=['Open +local Y housing insertion channel provides no independent axial capture; M6 retainer engagement/preload/locking under reversal unverified', 'Staged three-axis frame/T-nut/tool paths are finite nominal checks, not delivered assembly proof', 'Invalid pin-head/eye Boolean is unresolved seating, not proven physical penetration'],
+        mount_attachment_blocker='Legacy slot floor 6.9 mm versus 7.5 mm insertion creates nominal 0.6 mm overlap. Seller DNF diagram suggests 10.5 mm floor, but delivered-page DNP3030 image mismatch leaves actual DNF fit/tolerance/strength UNKNOWN; no physical-interference or fit clearance claim.',**RELEASES)
 
 def _motion(part, pose):
     axis=int(part.name[1]) if part.name.startswith(('A1_','A2_','A3_')) else None
@@ -243,7 +252,7 @@ def audit_all(inputs):
         row['commanded_lengths_mm']=list(lengths);home.append(row)
     parts,_,pairs,exemptions=_templates(inputs)
     all_rows=representatives+dense+list(states.values())+home
-    result=dict(review_only=True,status='HOLD',bracket_count=3,**mount_attachment_review(inputs),coordinate_system='lower centre; +X right,+Y front,+Z up; pitch Y,roll X; dependent X/Y/yaw closure',
+    result=dict(review_only=True,status='HOLD',bracket_count=3,coordinate_system='lower centre; +X right,+Y front,+Z up; pitch Y,roll X; dependent X/Y/yaw closure',
         unchanged_S_centers=True,continuous_workspace_proven=False,profile_slot_status='UNVERIFIED',
         representative_count=len(representatives),dense_count=len(dense),representatives=representatives,dense=dense,
         path_states=list(states.values()),command_segments=segments,park_segment_count=1859,jog_segment_count=5122,home=home,
@@ -255,6 +264,7 @@ def audit_all(inputs):
         worst_articulation=max((r for r in all_rows if 'articulation_deg' in r),key=lambda r:max(r['articulation_deg']))['pose'],
         assembly_path=assembly_path_review(inputs),assembly_status='HOLD; nominal_sample_clear never proves valid Boolean or assembly',
         blockers=list(inputs.unresolved_evidence)+['Near contacts outside representatives await exact Boolean; no full-path clearance claim','Retained lower and intentional interfaces unverified','Manufacturer capacities and delivered tolerances missing','Independent mechanical stops omitted by approved deviation; electrical limits not physical stops','Pin transitions, wrench handle sweep and full assembly access unresolved'],**RELEASES)
+    result.update(mount_attachment_review(inputs))
     result['exact_followup']=bounded_followup(result,inputs)
     result['invalid_boolean_count']+=result['exact_followup']['invalid_completed_count']
     result['unknown_pair_count_note']='Baseline broad-phase occurrence count retained for traceability; consult exact_followup distinct-key ledger/backlog for supplemental resolved measurements'

@@ -12,6 +12,24 @@ from cad.revf_upper_pocket_pose_audit import review_poses, audit_pose, represent
 
 
 class PoseAuditTests(unittest.TestCase):
+    def test_audit_all_merges_mount_review_without_duplicate_release_keys(self):
+        from unittest.mock import patch
+        from contextlib import ExitStack
+        from cad import revf_upper_pocket_pose_audit as module
+        inputs=load_inputs();pose=Pose('merge_fixture',25,0,0)
+        row=audit_pose(pose,inputs)
+        # Reduce only sampling/expensive assembly boundaries; exercise the real
+        # result construction and real mount subreport with its release flags.
+        replacements={'representative_poses':(pose,),'review_poses':(pose,),
+            'dense_pose_grid':(), '_dense_adjacent_jog_segments':(),
+            'alternating_length_path':(), 'assembly_path_review':{}, 'audit_pose':row}
+        with ExitStack() as stack:
+            for name,value in replacements.items(): stack.enter_context(patch.object(module,name,return_value=value))
+            result=module.audit_all(inputs)
+        self.assertEqual(result['crossmember_centering_status'],'ALIGNED_NOMINAL')
+        self.assertEqual(result['mount_attachment_status'],'UNKNOWN/HOLD')
+        for key in module.RELEASES: self.assertIs(result[key],False)
+
     def test_grid_has_all_boundaries_without_duplicates(self):
         poses = review_poses()
         self.assertEqual(len(poses), 1859)
@@ -82,13 +100,36 @@ class PoseAuditTests(unittest.TestCase):
             self.assertTrue(np.all(low<=np.array([bb.xmin,bb.ymin,bb.zmin])+1e-5),part.name)
             self.assertTrue(np.all(high>=np.array([bb.xmax,bb.ymax,bb.zmax])-1e-5),part.name)
 
-    def test_mounts_require_material_engagement_not_merely_no_collision(self):
+    def test_corrected_mount_centering_does_not_verify_actual_slot(self):
         from cad.revf_upper_pocket_pose_audit import mount_attachment_review
         result=mount_attachment_review(load_inputs())
-        self.assertEqual(result['mount_attachment_status'],'INVALID_NOMINAL_PLACEMENT_ACTUAL_SLOT_UNVERIFIED')
+        self.assertEqual(result['mount_attachment_status'],'UNKNOWN/HOLD')
+        self.assertEqual(result['crossmember_centering_status'],'ALIGNED_NOMINAL')
+        self.assertEqual(result['actual_slot_fit_status'],'UNKNOWN')
+        self.assertAlmostEqual(result['legacy_slot_floor_overlap_mm'],.6)
         self.assertEqual(len(result['mount_attachment_measurements']),6)
-        self.assertGreater(result['mount_attachment_measurements'][0]['gap_mm'],3.9)
-        self.assertGreater(result['mount_attachment_measurements'][2]['volume_mm3'],200)
+        for row in result['mount_attachment_measurements']:
+            self.assertTrue(row['nominal_crossmember_centered'])
+            self.assertAlmostEqual(row['platform_center_y_mm'],0.,places=5)
+            self.assertAlmostEqual(abs(row['platform_center_x_mm']),22.,places=5)
+        self.assertFalse(result['purchase_release'])
+
+    def test_three_local_bracket_exports_are_reimported_with_provenance(self):
+        from scripts.export_revf_upper_pocket_review import export_bracket_parts, measurement_provenance
+        provenance=measurement_provenance(load_inputs())
+        with tempfile.TemporaryDirectory() as folder:
+            records=export_bracket_parts(load_inputs(),Path(folder),provenance)
+            self.assertEqual([r['axis'] for r in records],[1,2,3])
+            for row in records:
+                path=Path(folder)/row['path'];shape=cq.importers.importStep(str(path)).val()
+                self.assertTrue(shape.isValid());self.assertEqual(len(shape.Solids()),1)
+                self.assertLess(path.stat().st_size,10_000_000)
+                self.assertAlmostEqual(shape.Volume(),row['source_volume_mm3'],places=4)
+                self.assertEqual(row['measurement_fingerprint'],provenance['fingerprint'])
+                self.assertEqual(row['geometry_sha256'],provenance['source_hashes']['cad/profile_radial_revf_upper_pocket_review.py'])
+                self.assertIn('local',row['coordinate_system'])
+                self.assertFalse(row['fabrication_release']);self.assertFalse(row['purchase_release'])
+                self.assertEqual(len(row['reimport_bbox_mm']),6)
 
     def test_bounded_followup_executes_and_resumes_distinct_real_pairs(self):
         from cad.revf_upper_pocket_pose_audit import bounded_followup

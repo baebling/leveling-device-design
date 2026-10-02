@@ -2,11 +2,135 @@
   "review_only": true,
   "purchase_release": false,
   "fabrication_release": false,
+  "control_power_test_release": false,
+  "motor_power_release": false,
+  "bracket_part_exports": [
+    {
+      "axis": 1,
+      "path": "A1_bracket_local_REVIEW_ONLY.stp",
+      "label": "REVIEW ONLY / NOT APPROVED FOR FABRICATION",
+      "review_only": true,
+      "solid_count": 1,
+      "bytes": 75823,
+      "sha256": "543e990a081de0482badd425cd7904d1ca26670074e9ffd99f9b85ecbd86ee33",
+      "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
+      "mount_pad_rotation_about_local_z_deg": -90.0,
+      "source_volume_mm3": 17924.08862211752,
+      "reimport_volume_mm3": 17924.088622117615,
+      "source_bbox_mm": [
+        -15.000000000000004,
+        15.000000000000004,
+        -30.0,
+        30.000000000000004,
+        -14.0,
+        39.0
+      ],
+      "reimport_bbox_mm": [
+        -15.0,
+        15.000000000000007,
+        -30.0,
+        30.000000000000004,
+        -14.0,
+        39.0
+      ],
+      "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
+      "measurement_fingerprint": "7478db2fad7e992ac4861675354555541c79af3a36491cc9013b8ac7af3f908d",
+      "purchase_release": false,
+      "fabrication_release": false,
+      "control_power_test_release": false,
+      "motor_power_release": false
+    },
+    {
+      "axis": 2,
+      "path": "A2_bracket_local_REVIEW_ONLY.stp",
+      "label": "REVIEW ONLY / NOT APPROVED FOR FABRICATION",
+      "review_only": true,
+      "solid_count": 1,
+      "bytes": 76645,
+      "sha256": "6495046556b4e4ae800b1c96e33968d5fab15c0c49a9d50032cc9931d48da92e",
+      "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
+      "mount_pad_rotation_about_local_z_deg": 150.0,
+      "source_volume_mm3": 17924.088622117524,
+      "reimport_volume_mm3": 17924.08862211543,
+      "source_bbox_mm": [
+        -33.48076211353316,
+        33.48076211353316,
+        -27.99038105676658,
+        27.99038105676658,
+        -14.0,
+        39.0
+      ],
+      "reimport_bbox_mm": [
+        -33.48076211353606,
+        33.480762113533,
+        -27.99038105676,
+        27.990381056776958,
+        -14.0,
+        39.0
+      ],
+      "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
+      "measurement_fingerprint": "7478db2fad7e992ac4861675354555541c79af3a36491cc9013b8ac7af3f908d",
+      "purchase_release": false,
+      "fabrication_release": false,
+      "control_power_test_release": false,
+      "motor_power_release": false
+    },
+    {
+      "axis": 3,
+      "path": "A3_bracket_local_REVIEW_ONLY.stp",
+      "label": "REVIEW ONLY / NOT APPROVED FOR FABRICATION",
+      "review_only": true,
+      "solid_count": 1,
+      "bytes": 76562,
+      "sha256": "6cbf53cbbb61e6d2f3d60ad983f7c353fd38de31ac5d678e1031c8f03edd2487",
+      "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
+      "mount_pad_rotation_about_local_z_deg": 30.00000000000003,
+      "source_volume_mm3": 17924.08862211752,
+      "reimport_volume_mm3": 17924.088622114803,
+      "source_bbox_mm": [
+        -33.48076211353316,
+        33.48076211353316,
+        -27.99038105676659,
+        27.990381056766594,
+        -14.0,
+        39.0
+      ],
+      "reimport_bbox_mm": [
+        -33.48076211353303,
+        33.480762113533,
+        -27.99038105676,
+        27.990381056776958,
+        -14.0,
+        39.0
+      ],
+      "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
+      "measurement_fingerprint": "7478db2fad7e992ac4861675354555541c79af3a36491cc9013b8ac7af3f908d",
+      "purchase_release": false,
+      "fabrication_release": false,
+      "control_power_test_release": false,
+      "motor_power_release": false
+    }
+  ],
   "artifacts": [
     {
+      "path": "A1_bracket_local_REVIEW_ONLY.stp",
+      "bytes": 75823,
+      "sha256": "543e990a081de0482badd425cd7904d1ca26670074e9ffd99f9b85ecbd86ee33"
+    },
+    {
+      "path": "A2_bracket_local_REVIEW_ONLY.stp",
+      "bytes": 76645,
+      "sha256": "6495046556b4e4ae800b1c96e33968d5fab15c0c49a9d50032cc9931d48da92e"
+    },
+    {
+      "path": "A3_bracket_local_REVIEW_ONLY.stp",
+      "bytes": 76562,
+      "sha256": "6cbf53cbbb61e6d2f3d60ad983f7c353fd38de31ac5d678e1031c8f03edd2487"
+    },
+    {
       "path": "audit.json",
-      "bytes": 6435358,
-      "sha256": "b2be5cf43b9de567f25292bf55c228ac215c8a8222d4c19c442bd30a893ec1bc"
+      "bytes": 6422774,
+      "sha256": "0854cf18e8dd547e4c6cd7f3ac5e078d8e06c26094912a1464d99a109c7d0ef2"
     },
     {
       "path": "load_screen.json",
@@ -15,131 +139,131 @@
     },
     {
       "path": "neutral.png",
-      "bytes": 82235,
-      "sha256": "03aed657c79bdeaa53403fca251702008379853f3e1e605873488564271d157d"
+      "bytes": 81500,
+      "sha256": "73ee7ab593a671c820e59009d0539b9c56cf75c08da5bcb2bff83e9cfb347274"
     },
     {
       "path": "neutral.step",
-      "bytes": 11196107,
-      "sha256": "d96802fe6e5f9a79b0de0559d62d909143e32136dad92861f71dae83c2c0d2d3"
+      "bytes": 11196306,
+      "sha256": "2a2c4ffa14fcaa379dffe840ea573f2d49254d0d5ad7abb3c2ce7f06c28587ba"
     },
     {
       "path": "path_states_000000.json.gz",
-      "bytes": 538332,
-      "sha256": "27efe1ddae1f2d6cf623e474599ec6e96be4a8083b74068cb59d64e29dc77efd"
+      "bytes": 535821,
+      "sha256": "d6c14ddf63e230b84186e9ef2daff4d4a50395bdac4e19b75e8f29c3034b0f42"
     },
     {
       "path": "path_states_005000.json.gz",
-      "bytes": 543713,
-      "sha256": "c4430449583f402f931263d156fd7bbf5268137c02a8c103cafff5c2b69b1866"
+      "bytes": 541114,
+      "sha256": "46176a9385e3ee19b72b03e39cf96a1eda3f15be73938402963da98d075b540a"
     },
     {
       "path": "path_states_010000.json.gz",
-      "bytes": 541099,
-      "sha256": "302d2ad81db96305787cc93cae3da2692a77ee71f188a3ee576e6348f6a82b11"
+      "bytes": 538546,
+      "sha256": "887a55468be5220c11fb1c0cd3080a8dfc81ea0afd5c8cacaa4445db5ca7a8d4"
     },
     {
       "path": "path_states_015000.json.gz",
-      "bytes": 552430,
-      "sha256": "1893a7983152d63d2467d79a998ea71b26ae03c278e045756a539fa5b719b3c9"
+      "bytes": 549991,
+      "sha256": "596cce8050979cc5ff83e23a66299ecd4c555b47a3c69dcbf556009d7102ed58"
     },
     {
       "path": "path_states_020000.json.gz",
-      "bytes": 551141,
-      "sha256": "57bd51b035e10c78b9cf7cf20d7e40bc7a58410ecb1d123206fe23992ff40da2"
+      "bytes": 548876,
+      "sha256": "1d0acdc1bf395f7335d7849f3a02da0f712ab04be303990c50b1e169d3068720"
     },
     {
       "path": "path_states_025000.json.gz",
-      "bytes": 552410,
-      "sha256": "0c6bde7b7f70892ff59996ea3d2e6b15ca5407f713775a890fed222c2cae334a"
+      "bytes": 550429,
+      "sha256": "76f3ddcc0ad3b8914186f48c3f7c6ef91ddf8ba88c1a817db6edd949507a6960"
     },
     {
       "path": "path_states_030000.json.gz",
-      "bytes": 543598,
-      "sha256": "5929d031f4bbb51207d6cb1c6d654d8961100a1428b96978ba89b95f97c539f6"
+      "bytes": 541691,
+      "sha256": "7ddae6b50ebb8727679a014c82ca1f7b6f3f553d2a3beab455a27c5dfc4e3b7c"
     },
     {
       "path": "path_states_035000.json.gz",
-      "bytes": 547574,
-      "sha256": "1aeb57dfb169f6c123ae2b2472ee6f9e2b2ebff22c1b8e8c8d2eb5f718b353fa"
+      "bytes": 545747,
+      "sha256": "d3a15bdfddfcbd2c0aa154b79fbcd67970c7f00350fcb6e947da2c489134cb78"
     },
     {
       "path": "path_states_040000.json.gz",
-      "bytes": 551256,
-      "sha256": "87306b5e5a78e2c0d24b4d8f78244cbe34821052a7724e3c701c40d834d04dfd"
+      "bytes": 549138,
+      "sha256": "8847d1e870c43d6f39be9d7866e7d3375cdff6d15d7b52c2caaa539b7c481ccf"
     },
     {
       "path": "path_states_045000.json.gz",
-      "bytes": 534819,
-      "sha256": "6efe328903dca8d4964a6e1023b6acc0f04aee531575ab549cc7e715d192723f"
+      "bytes": 533042,
+      "sha256": "a8787a6c8d8ff3eb5d11f0cd010c51d901b303d9598868de562a0cbfda99440b"
     },
     {
       "path": "path_states_050000.json.gz",
-      "bytes": 466246,
-      "sha256": "639ff01f0c873ef1be7f631135406b5a3548997cdc39ae689634ffaa732a938d"
+      "bytes": 464022,
+      "sha256": "86574f63884391d6e40b83bc5d15eccc0dafa780dcec28b06d9d0a4e2a8d9fa0"
     },
     {
       "path": "path_states_055000.json.gz",
-      "bytes": 455812,
-      "sha256": "2890e10305956b879fe48d426dba19a8e3d0e9db93f5e4fe5e4efd0c933abb45"
+      "bytes": 453137,
+      "sha256": "dd34767b6e2a18a0fb74542a78d659045e79ed3366440aad7449995f765049d1"
     },
     {
       "path": "path_states_060000.json.gz",
-      "bytes": 451167,
-      "sha256": "0cce40bd1719ae76ff7328baefd6a04c62492e0f601677975b885f221ddc7c56"
+      "bytes": 448831,
+      "sha256": "4a1d6e3f489ddca40076a61a941fe714042202f69c5a55a07b3cfc9dabf98795"
     },
     {
       "path": "path_states_065000.json.gz",
-      "bytes": 380388,
-      "sha256": "3561f9c36ac8eba1592cdbdac9621d5d532c29c3959328613419ad4d3b6db492"
+      "bytes": 378401,
+      "sha256": "0046143befecdd2011b3ca25c424b7bbcc546d953ed9809a95b0eada813ff1e9"
     },
     {
       "path": "raised.png",
-      "bytes": 83752,
-      "sha256": "14316bd4aef1d6cbbba96295d3f6db029caea358649529f1c892004c2654843e"
+      "bytes": 83193,
+      "sha256": "f373a29fd767d0a5cf559cce0251e07f08db1a1e9cc3b8cf389a45907c737d3c"
     },
     {
       "path": "raised.step",
-      "bytes": 11198439,
-      "sha256": "236b5d23a8a847353611f4c2df043c641f6bbac7b3cf88589d6d9fb0a4953f6e"
+      "bytes": 11198638,
+      "sha256": "1930d2fc60d7e668c09d5ad8785162c4d8b37b647012c7b79ce8bc34869c3136"
     },
     {
       "path": "README.md",
-      "bytes": 3477,
-      "sha256": "5f0a47be948e0ad41ec9f10d0f39f8e45c59c6697c4f2bdbfe1eb3e4d3bfe787"
+      "bytes": 5101,
+      "sha256": "f6662353527bb61f1bece44ded85c2f78be24aa8f06b098e227fa9920f16742f"
     },
     {
       "path": "worst_articulation.png",
-      "bytes": 82072,
-      "sha256": "20d67fefde2bb890dc42468faf9b902258d6422b7f6740e0b960cd9df440c163"
+      "bytes": 81499,
+      "sha256": "e32251c33f2655aba416df94909e212c10954455bcfbcbfcb5a1bbd58f86a6ff"
     },
     {
       "path": "worst_articulation.step",
-      "bytes": 11390903,
-      "sha256": "0b4bc6243c804373d4238829f6a14fa459bcb78ec20869846f67053ce29ced6a"
+      "bytes": 11391206,
+      "sha256": "7a23228b2f816cd17a5523f7d483881d54f7e70101727edcf2c21afdad9ea9a0"
     },
     {
       "path": "worst_interference.png",
-      "bytes": 85047,
-      "sha256": "a60862b1e6d77ca091621ea2f2de1d59f744bfa0d72e59f08f5bf8327000ab94"
+      "bytes": 89530,
+      "sha256": "bdee680c1be68eb6b00da2d8bd0b0f1e9d147e8134b48bac212e3c04df9b2e87"
     },
     {
       "path": "worst_interference.step",
-      "bytes": 11430063,
-      "sha256": "1bea9133c499abc7952873a840533b1e3cc1bae590a308c9cc15906d28789971"
+      "bytes": 11458814,
+      "sha256": "82bcb702dbdd99cc8e7d95477e44af20ac6aedeb4b99a53dd968cb7ba4ecdb16"
     },
     {
       "path": "worst_interference_pair.png",
-      "bytes": 72445,
-      "sha256": "d769dc2716be1043835a8ef070f10fa1ee3ecc742d3a4452dc0cfe35c94afd3c"
+      "bytes": 75535,
+      "sha256": "8c93d12872721357a7c15350c2d428dfdb744fe78bf48d8174831e662639328f"
     },
     {
       "path": "worst_interference_pair.step",
-      "bytes": 979537,
-      "sha256": "bee9d15a8ef0a5f2fe760dd37781e9730538fdd546371a27458e9c3a68bac4fe"
+      "bytes": 982522,
+      "sha256": "269a224434952fe89236d1c2471ae9a5ee0783a4d5d2425499303e11cff303aa"
     }
   ],
-  "measurement_id": "4eca813b-f682-487a-9ce3-3ffa05f9a8aa",
+  "measurement_id": "a48856ba-5156-4443-b48d-9bdef3545f9d",
   "measurement_provenance": {
     "inputs": {
       "bracket_count": 3,
@@ -172,9 +296,9 @@
     "schema": 1,
     "source_hashes": {
       "cad/profile_radial_reve_actual_vendor.py": "ce33fea355591c9f96731460da428bff86043283d0cc124b089cd10f334534ed",
-      "cad/profile_radial_revf_upper_pocket_review.py": "4720b265e0cb51486c206ab505b7ed9a7d47372bcba4d5f79389786be9089705",
+      "cad/profile_radial_revf_upper_pocket_review.py": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
       "cad/revf_upper_pocket_inputs.py": "3922308e83144ed20aa784e789bdcd5362511c40ec3763e20ec28094c9f894c5",
-      "cad/revf_upper_pocket_pose_audit.py": "142121952b08a7ac2a618aad54fff6a19c9eb303d475c88ef0dccd61d0ccddce",
+      "cad/revf_upper_pocket_pose_audit.py": "6e4cbf640c808cac177d2a5a2393c9d48434f0ca6789ead76acc6904478ec828",
       "calculations/reve_approved_workspace.py": "3354df3a45af6c3d0835271238d4058228732a5eea95b2d0691b7e7989382911",
       "calculations/reve_command_jog_path_audit.py": "fe60a1b523f59ddd2a49d71de8957c0f6616a6ccae5442a5ab5fc0e380526f20",
       "calculations/reve_forward_kinematics.py": "d668bc1b9c267362729eaae296564a5102cc982916b5d917b53c481e17e65717",
@@ -186,10 +310,10 @@
       "outputs/profile_radial_revD_fusion_native/groups/upper_brackets.step": "7087cedc1b59a8e4eaea771d406a895de06852c9fe4f4925bf4dbfe4d8cbc71c",
       "outputs/profile_radial_revD_fusion_native/groups/upper_frame.step": "c070c60183379345b35d1ae7d7e946276013f57e595e35c82c43847ab2db8651",
       "references/vendor_cad/LM4075OE-1075-100mm.stp": "1bc86009baddcf6458eeb63fb1fcac349fd80b6b64f9a0ddfa7c4b824df52f3b",
-      "scripts/export_revf_upper_pocket_review.py": "63ee7e33c04bfaa1d4600ed508096f395d04937f7d7b4dbf48f09df2841d294e",
+      "scripts/export_revf_upper_pocket_review.py": "a2593be6b590fa503ac26b61b88e021a1c737562a734125c224a066b750f9e60",
       "scripts/render_lm4075oe_vendor_step.py": "26e4425ad1f3c39f88d10ef92be9116fc2aaaa9a35348e579e8fbb803d1604b9"
     },
-    "fingerprint": "30821473239b833b41b302f1e3fe7a2fb0ee0380d25f20a4df605c13f0c4c890"
+    "fingerprint": "7478db2fad7e992ac4861675354555541c79af3a36491cc9013b8ac7af3f908d"
   },
   "source_artifacts": [
     {
@@ -198,7 +322,7 @@
     },
     {
       "path": "cad/profile_radial_revf_upper_pocket_review.py",
-      "sha256": "4720b265e0cb51486c206ab505b7ed9a7d47372bcba4d5f79389786be9089705"
+      "sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92"
     },
     {
       "path": "cad/revf_upper_pocket_inputs.py",
@@ -206,7 +330,7 @@
     },
     {
       "path": "cad/revf_upper_pocket_pose_audit.py",
-      "sha256": "142121952b08a7ac2a618aad54fff6a19c9eb303d475c88ef0dccd61d0ccddce"
+      "sha256": "6e4cbf640c808cac177d2a5a2393c9d48434f0ca6789ead76acc6904478ec828"
     },
     {
       "path": "calculations/reve_approved_workspace.py",
@@ -254,7 +378,7 @@
     },
     {
       "path": "scripts/export_revf_upper_pocket_review.py",
-      "sha256": "63ee7e33c04bfaa1d4600ed508096f395d04937f7d7b4dbf48f09df2841d294e"
+      "sha256": "a2593be6b590fa503ac26b61b88e021a1c737562a734125c224a066b750f9e60"
     },
     {
       "path": "scripts/render_lm4075oe_vendor_step.py",
