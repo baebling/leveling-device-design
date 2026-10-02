@@ -12,7 +12,7 @@
       "review_only": true,
       "solid_count": 1,
       "bytes": 75823,
-      "sha256": "d54a911fd1a185e3accfe9d9c5cff6341b6ff853b0a84fab78948f7bbcbdbad7",
+      "sha256": "b8bab0d1732d6b5d6c82ced48305b7b5dd3931a2f6f555daca73ff5a78415eda",
       "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
       "mount_pad_rotation_about_local_z_deg": -90.0,
       "source_volume_mm3": 17924.08862211752,
@@ -34,7 +34,7 @@
         39.0
       ],
       "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
-      "measurement_fingerprint": "3f3e58e5130e336060d072c67804de860b70374b44d87c77b99fa2f9dd7b3943",
+      "measurement_fingerprint": "463880e60d6720ba284f4295fcf69649711f2f18aa23d02f83e917ae043e03b7",
       "purchase_release": false,
       "fabrication_release": false,
       "control_power_test_release": false,
@@ -47,7 +47,7 @@
       "review_only": true,
       "solid_count": 1,
       "bytes": 76645,
-      "sha256": "3cf745515f288174921ab34fd2151b1f0e64d7388a18088ca16b1a04722b804c",
+      "sha256": "2e85435cc87841510438f363a81a864d07e478bd47ee03bc84434490ea871323",
       "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
       "mount_pad_rotation_about_local_z_deg": 150.0,
       "source_volume_mm3": 17924.088622117524,
@@ -69,7 +69,7 @@
         39.0
       ],
       "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
-      "measurement_fingerprint": "3f3e58e5130e336060d072c67804de860b70374b44d87c77b99fa2f9dd7b3943",
+      "measurement_fingerprint": "463880e60d6720ba284f4295fcf69649711f2f18aa23d02f83e917ae043e03b7",
       "purchase_release": false,
       "fabrication_release": false,
       "control_power_test_release": false,
@@ -82,7 +82,7 @@
       "review_only": true,
       "solid_count": 1,
       "bytes": 76562,
-      "sha256": "6eb1ed84216ec37358f4c476b3241036b9bc106289c12227b7432676949788fa",
+      "sha256": "489f8972538d4e79c447a0b955a2131ca15f1586185d47d1210cfe1bf8fdd96f",
       "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
       "mount_pad_rotation_about_local_z_deg": 30.00000000000003,
       "source_volume_mm3": 17924.08862211752,
@@ -104,7 +104,7 @@
         39.0
       ],
       "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
-      "measurement_fingerprint": "3f3e58e5130e336060d072c67804de860b70374b44d87c77b99fa2f9dd7b3943",
+      "measurement_fingerprint": "463880e60d6720ba284f4295fcf69649711f2f18aa23d02f83e917ae043e03b7",
       "purchase_release": false,
       "fabrication_release": false,
       "control_power_test_release": false,
@@ -115,22 +115,22 @@
     {
       "path": "A1_bracket_local_REVIEW_ONLY.stp",
       "bytes": 75823,
-      "sha256": "d54a911fd1a185e3accfe9d9c5cff6341b6ff853b0a84fab78948f7bbcbdbad7"
+      "sha256": "b8bab0d1732d6b5d6c82ced48305b7b5dd3931a2f6f555daca73ff5a78415eda"
     },
     {
       "path": "A2_bracket_local_REVIEW_ONLY.stp",
       "bytes": 76645,
-      "sha256": "3cf745515f288174921ab34fd2151b1f0e64d7388a18088ca16b1a04722b804c"
+      "sha256": "2e85435cc87841510438f363a81a864d07e478bd47ee03bc84434490ea871323"
     },
     {
       "path": "A3_bracket_local_REVIEW_ONLY.stp",
       "bytes": 76562,
-      "sha256": "6eb1ed84216ec37358f4c476b3241036b9bc106289c12227b7432676949788fa"
+      "sha256": "489f8972538d4e79c447a0b955a2131ca15f1586185d47d1210cfe1bf8fdd96f"
     },
     {
       "path": "audit.json",
-      "bytes": 6691473,
-      "sha256": "eb77ece0b87e4ff7ab6d76082edcdad932f84c1c987cfbd95157672b58c1111f"
+      "bytes": 6691758,
+      "sha256": "0251754546c795b77cba76f17dfc9020094bb275b0426c2a6c294fa695d1c7ad"
     },
     {
       "path": "load_screen.json",
@@ -145,7 +145,7 @@
     {
       "path": "neutral.step",
       "bytes": 11196306,
-      "sha256": "73111f0596a9b52024f8226ddfe67f1de0afb43703d65644abbdbd5733e37b57"
+      "sha256": "89a2ca235d0df8855de7979d5dc1f727742fe490447fcaf4c733126d56ffb4c6"
     },
     {
       "path": "path_states_000000.json.gz",
@@ -219,18 +219,18 @@
     },
     {
       "path": "raised.png",
-      "bytes": 83189,
-      "sha256": "4c7be5b6fd46e5e9150851360c20afead8b4067a111fec348f822558cd59f208"
+      "bytes": 83190,
+      "sha256": "f4c4cb3ba90106f3b82f32bead7e72e6e78136ef617774df58b93fd43c879aaa"
     },
     {
       "path": "raised.step",
       "bytes": 11198638,
-      "sha256": "9b2d849e338983c1cae16a9433dafb21d4ed4d5fa85c6b2502380f808c2c7751"
+      "sha256": "e52f97680145c380096c7d756768c09279822f5e87d3d6ffab2f68a23db4491d"
     },
     {
       "path": "README.md",
-      "bytes": 5800,
-      "sha256": "b97dd52e4eae8b26d43a50ca84dc4e1761e5c32029431641dc17fc15219f02fb"
+      "bytes": 6104,
+      "sha256": "6681e405a6bbb822e3e5b970f19cc712309d65ee83326fce85100de1c91ad112"
     },
     {
       "path": "worst_articulation.png",
@@ -240,7 +240,7 @@
     {
       "path": "worst_articulation.step",
       "bytes": 11391206,
-      "sha256": "3b2ff6707d1a6ce73a69c75ff304e20880ba57122140409445077533a49dc6d9"
+      "sha256": "12ebb4f0ddfec9eae6df68335ccd3b0d32df38ac3ffb600b342beebc1c66b4e3"
     },
     {
       "path": "worst_interference.png",
@@ -250,7 +250,7 @@
     {
       "path": "worst_interference.step",
       "bytes": 11458814,
-      "sha256": "038e75216dc0f996fd1b5ce52c5a355d3fe96b637b91d065bb17a0b4a28b29b1"
+      "sha256": "f07d8d87a12993950f7f4e8d741201129b49df07b5d166cb85eff2d3066f641e"
     },
     {
       "path": "worst_interference_pair.png",
@@ -260,10 +260,10 @@
     {
       "path": "worst_interference_pair.step",
       "bytes": 982522,
-      "sha256": "00e74e3a4efedf85c98ed52f7b972e852d41d339a63cbc5b306bc9e934fb2917"
+      "sha256": "e211ac176c554c2ed9602201b6e0500c635ddbe8acc31e8370d86d764b291324"
     }
   ],
-  "measurement_id": "398d4db9-328b-4959-9795-abb3bcc321ca",
+  "measurement_id": "ea4ae2a4-98bc-478b-8582-0ab37b7569d0",
   "measurement_provenance": {
     "inputs": {
       "bracket_count": 3,
@@ -298,7 +298,7 @@
       "cad/profile_radial_reve_actual_vendor.py": "ce33fea355591c9f96731460da428bff86043283d0cc124b089cd10f334534ed",
       "cad/profile_radial_revf_upper_pocket_review.py": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
       "cad/revf_upper_pocket_inputs.py": "5b570a1c9208460f1eb3e17feb71b510df6388331badf82597d22d975ec50978",
-      "cad/revf_upper_pocket_pose_audit.py": "efc4d63a67000f3861e034a37378c89146be24cfe6961d66b5058f9d300ffa0f",
+      "cad/revf_upper_pocket_pose_audit.py": "a0e4d88d5cb3e4fdd789b3211c064295baeda2a8dc0fb5df25f27aac246400bf",
       "calculations/reve_approved_workspace.py": "3354df3a45af6c3d0835271238d4058228732a5eea95b2d0691b7e7989382911",
       "calculations/reve_command_jog_path_audit.py": "fe60a1b523f59ddd2a49d71de8957c0f6616a6ccae5442a5ab5fc0e380526f20",
       "calculations/reve_forward_kinematics.py": "d668bc1b9c267362729eaae296564a5102cc982916b5d917b53c481e17e65717",
@@ -312,10 +312,10 @@
       "outputs/profile_radial_revD_fusion_native/groups/upper_frame.step": "c070c60183379345b35d1ae7d7e946276013f57e595e35c82c43847ab2db8651",
       "references/revf_upper_pocket_source_register_2026-10-02.md": "d4f531fdcef8cf019048f19c5e4b4ace14daf0579f8b022155df98ffc428db67",
       "references/vendor_cad/LM4075OE-1075-100mm.stp": "1bc86009baddcf6458eeb63fb1fcac349fd80b6b64f9a0ddfa7c4b824df52f3b",
-      "scripts/export_revf_upper_pocket_review.py": "ce322d3b269d4e572b43e90bb6c0371004563f01d055ab862e1b063037cd953d",
+      "scripts/export_revf_upper_pocket_review.py": "b8512b0aa861f936bdf386683e40d7d056017aad5c091f18b0347aa2ebce34ee",
       "scripts/render_lm4075oe_vendor_step.py": "26e4425ad1f3c39f88d10ef92be9116fc2aaaa9a35348e579e8fbb803d1604b9"
     },
-    "fingerprint": "3f3e58e5130e336060d072c67804de860b70374b44d87c77b99fa2f9dd7b3943"
+    "fingerprint": "463880e60d6720ba284f4295fcf69649711f2f18aa23d02f83e917ae043e03b7"
   },
   "source_artifacts": [
     {
@@ -332,7 +332,7 @@
     },
     {
       "path": "cad/revf_upper_pocket_pose_audit.py",
-      "sha256": "efc4d63a67000f3861e034a37378c89146be24cfe6961d66b5058f9d300ffa0f"
+      "sha256": "a0e4d88d5cb3e4fdd789b3211c064295baeda2a8dc0fb5df25f27aac246400bf"
     },
     {
       "path": "calculations/reve_approved_workspace.py",
@@ -388,7 +388,7 @@
     },
     {
       "path": "scripts/export_revf_upper_pocket_review.py",
-      "sha256": "ce322d3b269d4e572b43e90bb6c0371004563f01d055ab862e1b063037cd953d"
+      "sha256": "b8512b0aa861f936bdf386683e40d7d056017aad5c091f18b0347aa2ebce34ee"
     },
     {
       "path": "scripts/render_lm4075oe_vendor_step.py",

@@ -12,6 +12,24 @@ from cad.revf_upper_pocket_pose_audit import review_poses, audit_pose, represent
 
 
 class PoseAuditTests(unittest.TestCase):
+    def test_invalid_counts_include_assembly_once_and_refresh_after_followup(self):
+        from cad.revf_upper_pocket_pose_audit import refresh_invalid_boolean_counts
+        audit={'representatives':[{'invalid_boolean_count':81}],
+            'exact_followup':{'completed':[]},
+            'assembly_path':{'stages':[{'invalid_boolean_count':1},
+                {'invalid_boolean_count':2,'paths':[{'invalid_boolean_count':1},{'invalid_boolean_count':1}]}]}}
+        refresh_invalid_boolean_counts(audit)
+        self.assertEqual(audit['invalid_boolean_count'],81)  # legacy pose-only alias
+        self.assertEqual(audit['pose_invalid_boolean_count'],81)
+        self.assertEqual(audit['assembly_invalid_boolean_count'],3)
+        self.assertEqual(audit['combined_invalid_boolean_count'],84)
+        audit['exact_followup']['completed'].append({'valid':False,'volume_mm3':None})
+        repackaged=json.loads(json.dumps(audit))
+        refresh_invalid_boolean_counts(repackaged)
+        self.assertEqual(repackaged['pose_invalid_boolean_count'],82)
+        self.assertEqual(repackaged['assembly_invalid_boolean_count'],3)
+        self.assertEqual(repackaged['combined_invalid_boolean_count'],85)
+
     def test_forward_solver_matches_corrected_cad_park_and_home_lengths(self):
         from cad.revf_upper_pocket_pose_audit import solve_pose_from_lengths
         from cad.profile_radial_reve_actual_vendor import actuator_pin_lengths
@@ -24,6 +42,7 @@ class PoseAuditTests(unittest.TestCase):
 
     def test_home_validates_command_lengths_and_distinguishes_normal_window(self):
         from cad.revf_upper_pocket_pose_audit import audit_home
+        from cad.profile_radial_reve_actual_vendor import platform_transform
         rows=audit_home(load_inputs())
         self.assertEqual(len(rows),61)
         for row in rows:
@@ -32,6 +51,10 @@ class PoseAuditTests(unittest.TestCase):
             self.assertEqual(row['length_window_policy'],'INTENTIONAL_HOME_205_TO_PARK')
             self.assertTrue(row['home_length_window_pass'])
             self.assertEqual(row['status'],'HOLD')
+            p=row['pose'];_,_,branch=platform_transform(Pose('branch',p['lift_mm'],p['pitch_deg'],p['roll_deg']))
+            for key in ('x_mm','y_mm','yaw_rad'):
+                self.assertLess(abs(branch[key]-row['forward_solution'][key]),1e-7)
+        self.assertTrue(any(max(r['commanded_lengths_mm'])-min(r['commanded_lengths_mm'])>.5 for r in rows))
         self.assertFalse(rows[-1]['normal_window_pass'])
         self.assertTrue(rows[-1]['kinematic_sample_pass'])
 

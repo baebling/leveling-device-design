@@ -11,7 +11,7 @@ sys.path.insert(0,str(ROOT))
 import cadquery as cq
 import vtk
 from cad.revf_upper_pocket_inputs import load_inputs
-from cad.revf_upper_pocket_pose_audit import audit_all, bounded_followup, refresh_worst_interference, RELEASES
+from cad.revf_upper_pocket_pose_audit import audit_all, bounded_followup, refresh_worst_interference, refresh_invalid_boolean_counts, RELEASES
 from cad.profile_radial_reve_actual_vendor import Pose
 from cad.profile_radial_revf_upper_pocket_review import revf_components_for_pose, local_review_geometry, _basis
 from math import atan2, degrees
@@ -71,6 +71,7 @@ def write_audit(audit, destination, chunk_size=5000):
 
 def review_export_poses(audit):
     """Refresh derived global witness for fresh, continued and repackaged runs."""
+    refresh_invalid_boolean_counts(audit)
     refresh_worst_interference(audit)
     poses=[Pose('neutral',25,0,0),Pose('raised',50,0,0)]
     for key in ('worst_interference','worst_articulation'):
@@ -148,7 +149,6 @@ def main():
         audit['path_states']=[row for name in audit['path_state_files'] for row in json.loads(gzip.decompress((OUTPUT/name).read_bytes()) if name.endswith('.gz') else (OUTPUT/name).read_bytes())]
     if '--continue-followup' in sys.argv:
         audit['exact_followup']=bounded_followup(audit,inputs,previous=audit['exact_followup'])
-        audit['invalid_boolean_count']=sum(row['invalid_boolean_count'] for row in audit['representatives'])+audit['exact_followup']['invalid_completed_count']
         validate_reuse(audit,measurement_provenance(inputs))
     poses=review_export_poses(audit)
     bracket_parts=export_bracket_parts(inputs,OUTPUT,provenance)
@@ -165,7 +165,7 @@ Three upper pocket candidates. All release flags FALSE. Finite sampled review on
 
 27 representatives use exact B-rep Booleans after conservative broad phase. 1859 grid poses and all recorded command/HOME samples use transformed enclosing AABBs. Remaining near-contact pairs are UNKNOWN/HOLD; this is an incomplete clearance audit, not a continuous workspace proof. audit.json indexes deterministic gzip-compressed path_states_*.json.gz files; decompress to UTF-8 JSON arrays.
 
-Recorded counts: {sum(r['exact_pair_count'] for r in audit['representatives'])} exact pair checks, {sum(r['interference_count'] for r in audit['representatives'])} valid positive nominal intersections, {audit['invalid_boolean_count']} invalid Booleans, {len(audit['path_states'])} unique command states, {len(audit['command_segments'])} command segments / {sum(len(s['samples']) for s in audit['command_segments'])} sampled state occurrences, {len(audit['home'])} HOME states. Unknown near-pair occurrences: {audit['unknown_pair_count']}. All failure/unknown records are retained; no representative is released.
+Recorded counts: {sum(r['exact_pair_count'] for r in audit['representatives'])} representative exact pair checks, {sum(r['interference_count'] for r in audit['representatives'])} representative valid positive nominal intersections. Invalid Boolean counts: pose {audit['pose_invalid_boolean_count']} (including supplemental exact), assembly {audit['assembly_invalid_boolean_count']}, combined {audit['combined_invalid_boolean_count']}. These count attempts across scopes, not unique physical contacts. Assembly stages already aggregate child paths and are counted once. Legacy invalid_boolean_count remains a pose-only alias, not the combined total. {len(audit['path_states'])} unique command states, {len(audit['command_segments'])} command segments / {sum(len(s['samples']) for s in audit['command_segments'])} sampled state occurrences, {len(audit['home'])} HOME states. Unknown near-pair occurrences: {audit['unknown_pair_count']}. All failure/unknown records are retained; no representative is released.
 
 Supplemental bounded exact follow-up: {len(audit['exact_followup']['completed'])} distinct state/pair checks completed; {audit['exact_followup']['backlog_distinct_keys']} distinct keys remain uncomputed. Invalid completed results remain unresolved separately. The original broad occurrence count above is retained for traceability; exact_followup is the authoritative supplemental ledger. Scope queues prioritize representative-uncovered pairs and worst articulation/switch-margin states. All remainder stays UNKNOWN/HOLD.
 
@@ -175,7 +175,7 @@ Measurement ID: {audit['measurement_id']}. Source fingerprint: {audit['measureme
 
 Run the exporter with --continue-followup to execute the next bounded 24 distinct near-pair keys under the same validated measurement identity. --repackage-existing only repackages; it never silently substitutes fresh source hashes for old measurements.
 
-Mount status: {audit['mount_attachment_status']}; centering {audit['crossmember_centering_status']}. Measurements and per-bolt findings are in audit.json. Empty-space clearance alone is not attachment. Corrected pads follow platform X. Retained shallow slot depth 6.9 mm versus 7.5 mm insertion creates 0.6 mm nominal floor overlap, not proof of delivered DNF3030 interference. Historical Daeyoung DY5155 nominal floor 10.5 mm differs from the DYC section nominal floor 11.1 mm (2.5+8.6); neither establishes current NAVIMRO delivery, whose page image says DNP3030. See the source register for separate identities. Actual section, tolerance and strength remain UNKNOWN/HOLD. Current BOM PHS6 is TRUSCO 280-7599, not historical THK; delivered capacity/tolerances remain unverified. Total invalid Boolean count including supplemental checks: {audit['invalid_boolean_count']}; invalid pin-head/eye results leave seating unresolved (not proven physical penetration). Open housing insertion requires unverified M6 retainer engagement/preload/locking for axial capture. Staged three-axis frame/T-nut/tool context is now included; finite nominal checks do not prove complete assembly.
+Mount status: {audit['mount_attachment_status']}; centering {audit['crossmember_centering_status']}. Measurements and per-bolt findings are in audit.json. Empty-space clearance alone is not attachment. Corrected pads follow platform X. Retained shallow slot depth 6.9 mm versus 7.5 mm insertion creates 0.6 mm nominal floor overlap, not proof of delivered DNF3030 interference. Historical Daeyoung DY5155 nominal floor 10.5 mm differs from the DYC section nominal floor 11.1 mm (2.5+8.6); neither establishes current NAVIMRO delivery, whose page image says DNP3030. See the source register for separate identities. Actual section, tolerance and strength remain UNKNOWN/HOLD. Current BOM PHS6 is TRUSCO 280-7599, not historical THK; delivered capacity/tolerances remain unverified. Combined pose-plus-assembly invalid Boolean count: {audit['combined_invalid_boolean_count']}; invalid pin-head/eye results leave seating unresolved (not proven physical penetration). Open housing insertion requires unverified M6 retainer engagement/preload/locking for axial capture. Staged three-axis frame/T-nut/tool context is now included; finite nominal checks do not prove complete assembly.
 
 Three local bracket-only quotation-review candidates (not purchase/fabrication authorization) are listed below. Each reimport is one valid solid, under 10 MB, with volume/bounds checked. Local origin is PHS ball, X radial, Y tangent/pin, Z platform up, units mm. Full assembly STEP files (~11 MB) are NOT meviy upload candidates. No upload has been performed.
 

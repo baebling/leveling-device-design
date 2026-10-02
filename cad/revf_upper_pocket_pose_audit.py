@@ -211,6 +211,23 @@ def bounded_followup(audit, inputs, *, budget=24, previous=None):
         priority_policy='Per-scope/per-pair worst pending state; representative-uncovered first, known invalid/interfering pair next, maximum articulation then minimum switch margin; deterministic dense/command/HOME round-robin',
         full_near_contact_clearance=False,**RELEASES)
 
+def refresh_invalid_boolean_counts(audit):
+    """Separate scope counts; assembly stages already aggregate child paths.
+
+    Counts are Boolean attempts, not unique physical contacts across scopes.
+    Preserve the historical invalid_boolean_count as a pose-only alias.
+    """
+    pose=sum(row.get('invalid_boolean_count',0) for scope in ('representatives','dense','path_states','home')
+        for row in audit.get(scope,()))
+    pose+=sum(not row['valid'] for row in audit.get('exact_followup',{}).get('completed',()))
+    stages=audit.get('assembly_path',{}).get('stages')
+    assembly=sum(row['invalid_boolean_count'] for row in stages) if stages is not None else None
+    audit.update(invalid_boolean_count=pose,pose_invalid_boolean_count=pose,
+        assembly_invalid_boolean_count=assembly,
+        combined_invalid_boolean_count=pose+assembly if assembly is not None else None,
+        invalid_boolean_count_scope='Legacy alias: pose checks including supplemental exact only; combined count adds top-level assembly stages once, not their duplicated child summaries')
+
+
 def refresh_worst_interference(audit):
     """Derived global witness over every valid measured intersection, not backlog."""
     candidates=[]
@@ -292,7 +309,7 @@ def audit_all(inputs):
         blockers=list(inputs.unresolved_evidence)+['Near contacts outside representatives await exact Boolean; no full-path clearance claim','Retained lower and intentional interfaces unverified','Manufacturer capacities and delivered tolerances missing','Independent mechanical stops omitted by approved deviation; electrical limits not physical stops','Pin transitions, wrench handle sweep and full assembly access unresolved'],**RELEASES)
     result.update(mount_attachment_review(inputs))
     result['exact_followup']=bounded_followup(result,inputs)
-    result['invalid_boolean_count']+=result['exact_followup']['invalid_completed_count']
+    refresh_invalid_boolean_counts(result)
     result['unknown_pair_count_note']='Baseline broad-phase occurrence count retained for traceability; consult exact_followup distinct-key ledger/backlog for supplemental resolved measurements'
     refresh_worst_interference(result)
     return result
