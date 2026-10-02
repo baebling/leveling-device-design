@@ -214,6 +214,9 @@ def main() -> int:
                 "The stale mixed Rev D fastener group is replaced with the corrected six LMB bolts "
                 "and three PHS studs. Upper frame rises 15 mm; upper actuator eyes shift 1.5 mm "
                 "on three existing 0.5 mm shims per axis so PHS studs stay in the 3030 slot center. "
+                "The F07 SP306 spring-nut body is 5 mm, not the old 6 mm assumption; the F11 stud "
+                "nominally projects 1 mm past its body, and the actual T-slot floor and effective "
+                "cup-point thread engagement remain unverified. F07 is not explicitly modeled. "
                 "Supplier envelopes are not fabrication drawings. Electrical parts are not modeled."
             ),
             "purchase_release": False,

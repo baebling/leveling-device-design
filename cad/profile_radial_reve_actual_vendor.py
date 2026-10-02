@@ -59,9 +59,14 @@ UPPER_FRAME_RISE_MM = 15.0
 UPPER_PHS_FASTENER_STACK = {
     "stud_length_mm": 25.0,
     "phs_thread_engagement_mm": 10.0,
-    "slot_nut_thread_engagement_mm": 6.0,
+    # F07 K14671215 is the 30-series SP306: 23 x 10 x 5 mm body.
+    # The 5 mm body is only a geometric upper bound on effective M6 thread
+    # engagement; the F11 cup point and incomplete end threads are not modeled.
+    "slot_nut_body_thickness_mm": 5.0,
+    "slot_nut_thread_engagement_mm": 5.0,
     "jam_nut_thickness_mm": 5.0,
     "exposed_stud_gap_mm": 4.0,
+    "nominal_tip_projection_mm": 1.0,
 }
 LOWER_LMB_FASTENER_STACK = {
     "bolt_length_mm": 12.0,

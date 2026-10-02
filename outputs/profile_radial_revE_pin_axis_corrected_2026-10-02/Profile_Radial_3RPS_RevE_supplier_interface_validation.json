@@ -19,9 +19,11 @@
   "upper_phs_fastener_stack": {
     "stud_length_mm": 25.0,
     "phs_thread_engagement_mm": 10.0,
-    "slot_nut_thread_engagement_mm": 6.0,
+    "slot_nut_body_thickness_mm": 5.0,
+    "slot_nut_thread_engagement_mm": 5.0,
     "jam_nut_thickness_mm": 5.0,
-    "exposed_stud_gap_mm": 4.0
+    "exposed_stud_gap_mm": 4.0,
+    "nominal_tip_projection_mm": 1.0
   },
   "upper_clevis_shim_count_per_axis": 3,
   "upper_clevis_shim_thickness_mm": 0.5,
@@ -4258,7 +4260,7 @@
     -5.366741
   ],
   "vendor_collapsed_pin_center_distance_mm": 205.0,
-  "note": "Pose models use the actual LM4075OE STEP plus public-dimension LMB-10 and TRUSCO PHS6 supplier envelopes. Rev E upper eye centers and platform X/Y/yaw are corrected for world-fixed lower hinge pin axes. Actual upper pivot pins, independent mechanical stops, moving cables, and enclosure are not modeled; this package does not establish final assembly or purchase readiness. The stale mixed Rev D fastener group is replaced with the corrected six LMB bolts and three PHS studs. Upper frame rises 15 mm; upper actuator eyes shift 1.5 mm on three existing 0.5 mm shims per axis so PHS studs stay in the 3030 slot center. Supplier envelopes are not fabrication drawings. Electrical parts are not modeled.",
+  "note": "Pose models use the actual LM4075OE STEP plus public-dimension LMB-10 and TRUSCO PHS6 supplier envelopes. Rev E upper eye centers and platform X/Y/yaw are corrected for world-fixed lower hinge pin axes. Actual upper pivot pins, independent mechanical stops, moving cables, and enclosure are not modeled; this package does not establish final assembly or purchase readiness. The stale mixed Rev D fastener group is replaced with the corrected six LMB bolts and three PHS studs. Upper frame rises 15 mm; upper actuator eyes shift 1.5 mm on three existing 0.5 mm shims per axis so PHS studs stay in the 3030 slot center. The F07 SP306 spring-nut body is 5 mm, not the old 6 mm assumption; the F11 stud nominally projects 1 mm past its body, and the actual T-slot floor and effective cup-point thread engagement remain unverified. F07 is not explicitly modeled. Supplier envelopes are not fabrication drawings. Electrical parts are not modeled.",
   "purchase_release": false,
   "fabrication_release": false
 }

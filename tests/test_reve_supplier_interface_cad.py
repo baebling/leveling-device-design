@@ -5,6 +5,7 @@ from cad.profile_radial_reve_actual_vendor import (
     TRUSCO_PHS6_DIMENSIONS,
     UPPER_FRAME_RISE_MM,
     LOWER_LMB_FASTENER_STACK,
+    UPPER_PHS_FASTENER_STACK,
     POSES,
     collision_audit,
     components_for_pose,
@@ -81,6 +82,20 @@ class RevESupplierInterfaceCadTests(unittest.TestCase):
         self.assertEqual(12.0, LOWER_LMB_FASTENER_STACK["bolt_length_mm"])
         self.assertGreaterEqual(LOWER_LMB_FASTENER_STACK["thread_engagement_mm"], 6.0)
         self.assertGreaterEqual(LOWER_LMB_FASTENER_STACK["nominal_tip_recess_mm"], 2.0)
+
+    def test_f07_spring_nut_thickness_and_stud_tip_projection_are_explicit(self):
+        """The purchased SP306 body is 5 mm, not the old assumed 6 mm."""
+        stack = UPPER_PHS_FASTENER_STACK
+        self.assertEqual(5.0, stack["slot_nut_body_thickness_mm"])
+        self.assertEqual(1.0, stack["nominal_tip_projection_mm"])
+        self.assertAlmostEqual(
+            stack["stud_length_mm"],
+            stack["phs_thread_engagement_mm"]
+            + stack["jam_nut_thickness_mm"]
+            + stack["exposed_stud_gap_mm"]
+            + stack["slot_nut_body_thickness_mm"]
+            + stack["nominal_tip_projection_mm"],
+        )
 
     def test_full_pose_audit_declares_supplier_interfaces(self):
         audit = full_pose_audit()
