@@ -53,9 +53,9 @@ class RevFBomCheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "missing_capture.xlsx"
             book = load_workbook(REV_F)
-            for row in book["Sheet1"]["B81:I81"]:
-                for cell in row:
-                    cell.value = None
+            # Keep the seller group intact so this isolates the missing M6 row.
+            for address in ("B80", "C80", "D80", "E80", "G80", "H80", "I80"):
+                book["Sheet1"][address].value = None
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "PHS6 housing M6"):
@@ -65,7 +65,7 @@ class RevFBomCheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "zero_capture.xlsx"
             book = load_workbook(REV_F)
-            book["Sheet1"]["H81"] = 0
+            book["Sheet1"]["H80"] = 0
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "price must stay unquoted"):
@@ -75,7 +75,7 @@ class RevFBomCheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "no_lock_gate.xlsx"
             book = load_workbook(REV_F)
-            book["Sheet1"]["C81"] = "PHS6 housing fastener"
+            book["Sheet1"]["C80"] = "PHS6 housing fastener"
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "engagement/locking"):
@@ -85,7 +85,7 @@ class RevFBomCheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "no_quantity_gate.xlsx"
             book = load_workbook(REV_F)
-            book["Sheet1"]["E81"] = "미확정"
+            book["Sheet1"]["E80"] = "미확정"
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "3-axis quantity"):
@@ -95,7 +95,7 @@ class RevFBomCheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "no_sku_gate.xlsx"
             book = load_workbook(REV_F)
-            book["Sheet1"]["D81"] = "M6 후보"
+            book["Sheet1"]["D80"] = "M6 후보"
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "exact SKU"):
