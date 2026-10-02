@@ -58,6 +58,19 @@ class StopCenterlineRecheck(unittest.TestCase):
         self.assertAlmostEqual(post.distance(upper), 0.0691183966170902, places=5)
         self.assertEqual(_screened_intersection_volume(post, upper), 0.0)
 
+    def test_four_perimeter_posts_at_224_mm_have_tight_z0_clearance(self):
+        post = (
+            cq.Workplane("XY")
+            .box(40.0, 40.0, 224.0, centered=(True, True, False))
+            .translate((330.0, 0.0, LOWER_PROFILE_TOP_Z_MM))
+            .val()
+        )
+        upper = transform_upper_frame_shape(
+            group_shape("upper_frame"), Pose("Z0_corner", 0.0, 3.0, 3.0)
+        )
+        self.assertAlmostEqual(post.distance(upper), 1.565009818, places=5)
+        self.assertEqual(_screened_intersection_volume(post, upper), 0.0)
+
     def test_proposed_lower_4080_bridge_hits_existing_adapters(self):
         bridge = (
             cq.Workplane("XY")
