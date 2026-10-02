@@ -88,22 +88,25 @@ for force_n in (-750.0, 750.0):
 
 **Files:** `cad/revf_upper_pocket_pose_audit.py`, `tests/test_revf_upper_pocket_pose_audit.py`, `scripts/export_revf_upper_pocket_review.py`, `outputs/profile_radial_revF_upper_pocket_review_2026-10-02/`.
 
-**Interfaces:** `review_poses() -> tuple[Pose, ...]`는 조밀 격자 1859개를 준다. `audit_pose(pose: Pose, inputs: PocketInputs) -> dict[str, object]`, `audit_all(inputs: PocketInputs) -> dict[str, object]`가 각각 단일·전체 자세 결과를 준다. 두 결과는 `purchase_release`와 `fabrication_release`를 반드시 포함한다.
+**Interfaces:** `review_poses() -> tuple[Pose, ...]`는 조밀 격자 1859개를 준다. `audit_pose(pose: Pose, inputs: PocketInputs) -> dict[str, object]`, `audit_all(inputs: PocketInputs) -> dict[str, object]`가 각각 단일·전체 자세 결과를 준다. 두 결과는 `invalid_boolean_count`, `purchase_release`, `fabrication_release`를 반드시 포함한다.
 
 - [ ] 실패 테스트를 먼저 작성한다. 27 대표자세와 `Z=0:5:50 mm`, pitch/roll `−3:0.5:+3°` 조밀 격자(11×13×13=1859 자세), 허용 명령선분·HOME 경로가 각각 집계되고, 모든 축의 eye/핀·볼 편각·완전한 체결 적층 및 다른 축 액추에이터·프레임의 **비의도적** 관통이 검사 대상에 있어야 한다. 기존 옛 슬롯 단면만 사용한 결과는 `profile_slot_status=UNVERIFIED`와 릴리스 false를 강제한다.
 - [ ] 첫 단위시험은 아래처럼 검사 격자와 보수적 판정을 고정한다. `python -m unittest tests.test_revf_upper_pocket_pose_audit -v`의 신규 모듈 부재 실패를 확인한다.
 
 ```python
+from dataclasses import replace
 from cad.revf_upper_pocket_inputs import load_inputs
 from cad.revf_upper_pocket_pose_audit import review_poses, audit_pose
 from cad.profile_radial_reve_actual_vendor import Pose
 assert len(review_poses()) == 1859
 screen = audit_pose(Pose("neutral", 25.0, 0.0, 0.0), replace(load_inputs(), profile_slot_verified=False))
 assert screen["profile_slot_status"] == "UNVERIFIED"
+assert "invalid_boolean_count" in screen
 assert screen["purchase_release"] is False
 ```
 
-- [ ] 실제 STEP 기반 Rev F 조립으로 위 검사를 구현한다. 합격 자세와 최악 간섭/편각 자세, 위치·부품쌍·체적을 JSON에 남긴다. 본체 간섭 외에 포켓 조립 경로, 핀 삽입·너트 및 렌치 접근, 상·하한 여유를 별도 기록한다. S 중심이 변하면 `tests.test_reve_approved_workspace`, `tests.test_reve_home_path_audit`, `tests.test_reve_command_jog_path_audit` 및 신규 모델 경로를 재계산한다. 조밀 격자를 연속영역의 수학적 증명으로 표현하지 않는다.
+- [ ] 실제 STEP 기반 Rev F 조립으로 위 검사를 구현한다. **27 대표자세는 정확 B-rep 검사를 실행**하고, 1859 조밀 격자와 명령/HOME 경로는 모든 자세에서 길이·편각·보수적 bounding-volume broad phase를 검사한다. broad phase의 간섭 가능/근접 자세에만 정확 Boolean을 추가한다. 잘못된 Boolean 또는 계산 미완료인 자세는 `UNKNOWN/HOLD`로 남기며, `assembly_path_review().nominal_sample_clear`만으로 `clear` 판정하지 않는다. 이는 기존 27자세 검사에 약 394초가 걸린 실행환경의 계산량을 고려한 보수적 순서다.
+- [ ] 합격 자세와 최악 간섭/편각 자세, 위치·부품쌍·체적·invalid Boolean 수를 JSON에 남긴다. 본체 간섭 외에 포켓 조립 경로, 핀 삽입·너트 및 렌치 접근, 상·하한 여유를 별도 기록한다. S 중심이 변하면 `tests.test_reve_approved_workspace`, `tests.test_reve_home_path_audit`, `tests.test_reve_command_jog_path_audit` 및 신규 모델 경로를 재계산한다. 조밀 격자를 연속영역의 수학적 증명으로 표현하지 않는다.
 - [ ] `python -m unittest tests.test_revf_upper_pocket_pose_audit -v`를 통과시키고 `python scripts/export_revf_upper_pocket_review.py`로 리뷰용 STEP·렌더·감사 JSON·SHA256 manifest를 생성한다. 렌더와 README에 `REVIEW ONLY / NOT APPROVED FOR FABRICATION`을 넣는다. 제작 DXF/CNC 도면은 만들지 않는다.
 - [ ] 출력 JSON에서 모든 릴리스 flag false, 3개 브래킷, 모든 검사자세·실패자세가 누락 없이 기록됐는지 독립 검토한다. 실제 DNF3030 슬롯 단면 또는 제조사 허용치 부재는 합격으로 바꾸지 않고 blocker로 남긴다. 검증된 출력만 커밋한다.
 - [ ] `git add cad/revf_upper_pocket_pose_audit.py tests/test_revf_upper_pocket_pose_audit.py scripts/export_revf_upper_pocket_review.py outputs/profile_radial_revF_upper_pocket_review_2026-10-02`와 `git commit -m "Audit and export Rev F pocket review geometry"`를 실행하고 푸시한다.
