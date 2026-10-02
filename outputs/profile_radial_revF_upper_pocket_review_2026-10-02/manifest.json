@@ -5,8 +5,8 @@
   "artifacts": [
     {
       "path": "audit.json",
-      "bytes": 6419977,
-      "sha256": "f7ccbff034f271f5d405fb4e62fff8c51c10028b5706d1088756ac925669c766"
+      "bytes": 6429652,
+      "sha256": "4bf52faf4793743c8d4107dd66598f4ef4a2eedfc9eebd42a4cbc078facbd756"
     },
     {
       "path": "load_screen.json",
@@ -21,7 +21,7 @@
     {
       "path": "neutral.step",
       "bytes": 11196107,
-      "sha256": "e3cefb79a4eeb6838de0371e2f57b0c249e207c760847e16b3c28fdbd86a670c"
+      "sha256": "5fccced60b920b2638225a1bc384ca7211ac5d927dde0f0b99c4340b83e808eb"
     },
     {
       "path": "path_states_000000.json.gz",
@@ -95,60 +95,160 @@
     },
     {
       "path": "raised.png",
-      "bytes": 83754,
-      "sha256": "6e34717627c51bb68320e8b4fe7b15f72f8fc9cf4c1ab3ebaeef21f0315b0ebf"
+      "bytes": 83752,
+      "sha256": "38813360ae82497b9f47ff23896cd299190eef6b2eee5de0381489b06e8d1e2d"
     },
     {
       "path": "raised.step",
       "bytes": 11198439,
-      "sha256": "83e972b7d9911b38942d007c23954a258e01e20bcd44d47e1b805821cae5e5c3"
+      "sha256": "56ea8b2f9fbefde96c4f2d83fd5db0297896db0c0138e6628e02e3afc0ae4a2f"
     },
     {
       "path": "README.md",
-      "bytes": 1984,
-      "sha256": "8af19f3a067bc8c3582180515e95610c0eb79e6d556f8ef54b04bf4e7216608b"
+      "bytes": 3085,
+      "sha256": "369c730bcee899518c2e5fb0c5b6e74893bb39b7a32d205857e2ff1aab941ddc"
     },
     {
       "path": "worst_articulation.png",
-      "bytes": 82067,
-      "sha256": "4bf23230424875c38fbc626937f2e2aa2ec3aedb4471ac9500b7ee6274458ea4"
+      "bytes": 82072,
+      "sha256": "20d67fefde2bb890dc42468faf9b902258d6422b7f6740e0b960cd9df440c163"
     },
     {
       "path": "worst_articulation.step",
       "bytes": 11390903,
-      "sha256": "ef1a355c0f5991f043a72c70a57b6d2710ca51efc9be63241b44adb910652a8d"
+      "sha256": "d96fa89e9d91b470d3d49e6b6e191dc6e0735d7bcab353ac3792cd6ebe9544ad"
     },
     {
       "path": "worst_interference.png",
-      "bytes": 85050,
-      "sha256": "d1c6ec84bbefc8e13e268fcec049b5a92c65fc8fe103742440641c2dae5841e1"
+      "bytes": 85052,
+      "sha256": "59807cee85c5e4b72d33818ae2648b184c6cab62e5723c5999a360a3efb3be48"
     },
     {
       "path": "worst_interference.step",
       "bytes": 11430063,
-      "sha256": "c2baa2654c4ebff34a25e5cf85757fd70514678a8a120ea8d6b10e39de6b6e41"
+      "sha256": "cc5c8131eeceadba03ad1b14d33aa7d1f76cf7eec77aa1e61393414e4ae6839c"
     }
   ],
+  "measurement_id": "f25aeb4d-a703-487c-b9fe-81f4435e4a5d",
+  "measurement_provenance": {
+    "inputs": {
+      "bracket_count": 3,
+      "eye_hole_bounds_mm": [
+        6.0,
+        6.4
+      ],
+      "eye_offset_mm": 16.0,
+      "phs_ball_width_mm": 9.0,
+      "phs_outer_d_mm": 20.0,
+      "phs_outer_width_mm": 6.75,
+      "pin_dmin_mm": 5.95,
+      "profile_slot_verified": false,
+      "profile_slot_width_mm": null,
+      "purchase_release": false,
+      "shoulder_contact_length_mm": null,
+      "unresolved_evidence": [
+        "LM4075OE eye bore discrepancy and delivered eye dimensional tolerances",
+        "TRUSCO PHS6 versus BOM THK PHS6 exact delivered order identity",
+        "PHS6 housing outer diameter/width manufacturing tolerances",
+        "Selected MSB6 order, continuous shoulder contact length and fillet geometry",
+        "Delivered DNF3030 slot section and tolerances",
+        "Selected T-nut manufacturer drawing, tolerances and slot compatibility"
+      ]
+    },
+    "runtime": {
+      "cadquery": "2.8.0",
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+    },
+    "schema": 1,
+    "source_hashes": {
+      "cad/profile_radial_reve_actual_vendor.py": "ce33fea355591c9f96731460da428bff86043283d0cc124b089cd10f334534ed",
+      "cad/profile_radial_revf_upper_pocket_review.py": "4720b265e0cb51486c206ab505b7ed9a7d47372bcba4d5f79389786be9089705",
+      "cad/revf_upper_pocket_inputs.py": "3922308e83144ed20aa784e789bdcd5362511c40ec3763e20ec28094c9f894c5",
+      "cad/revf_upper_pocket_pose_audit.py": "f95f291cdd1ab11ea255102e239a75998de90d2e9b9380f51050427bcd2d10ef",
+      "calculations/reve_approved_workspace.py": "3354df3a45af6c3d0835271238d4058228732a5eea95b2d0691b7e7989382911",
+      "calculations/reve_command_jog_path_audit.py": "fe60a1b523f59ddd2a49d71de8957c0f6616a6ccae5442a5ab5fc0e380526f20",
+      "calculations/reve_forward_kinematics.py": "d668bc1b9c267362729eaae296564a5102cc982916b5d917b53c481e17e65717",
+      "calculations/reve_home_path_audit.py": "213f83641f818182726c1a1fce33d630a3f23cde5508a11cf7c55bb10d965b8c",
+      "fusion_scripts/ProfileRadialRevD/revd_data.py": "05b42488452ea6ecf4b5ab3485be1ae208ca628828f44fce36327000327af4a0",
+      "outputs/profile_radial_revD_fusion_native/groups/lower_adapters.step": "7b8ff37db5afbdf0c85b03ba050cc17711c1a32a3dda5b071fba70bd649d43a4",
+      "outputs/profile_radial_revD_fusion_native/groups/lower_brackets.step": "7527df36606661cc6f9a04fdd01cd076d4f14396bfa40d3661d665f121c4bf8e",
+      "outputs/profile_radial_revD_fusion_native/groups/lower_frame.step": "bdd8c5561ba71bf26f4bbae812148f41f0cd27b49ba83ec9e06089525d845c37",
+      "outputs/profile_radial_revD_fusion_native/groups/upper_brackets.step": "7087cedc1b59a8e4eaea771d406a895de06852c9fe4f4925bf4dbfe4d8cbc71c",
+      "outputs/profile_radial_revD_fusion_native/groups/upper_frame.step": "c070c60183379345b35d1ae7d7e946276013f57e595e35c82c43847ab2db8651",
+      "references/vendor_cad/LM4075OE-1075-100mm.stp": "1bc86009baddcf6458eeb63fb1fcac349fd80b6b64f9a0ddfa7c4b824df52f3b",
+      "scripts/export_revf_upper_pocket_review.py": "0953b31f928669dd0bfb3a795e630778979c1c134059106d259936721d2af691",
+      "scripts/render_lm4075oe_vendor_step.py": "26e4425ad1f3c39f88d10ef92be9116fc2aaaa9a35348e579e8fbb803d1604b9"
+    },
+    "fingerprint": "c70333b9a8014d469752f1a314d8dfa2a7abb8c79bd4bf3d0f2ac8367a7f4c68"
+  },
   "source_artifacts": [
     {
-      "path": "cad/revf_upper_pocket_inputs.py",
-      "sha256": "3922308e83144ed20aa784e789bdcd5362511c40ec3763e20ec28094c9f894c5"
+      "path": "cad/profile_radial_reve_actual_vendor.py",
+      "sha256": "ce33fea355591c9f96731460da428bff86043283d0cc124b089cd10f334534ed"
     },
     {
       "path": "cad/profile_radial_revf_upper_pocket_review.py",
       "sha256": "4720b265e0cb51486c206ab505b7ed9a7d47372bcba4d5f79389786be9089705"
     },
     {
-      "path": "cad/revf_upper_pocket_pose_audit.py",
-      "sha256": "5b009a1a7ba7bb59309cbdd84ffcf5d8d4b048601b336424169f795114c9353a"
+      "path": "cad/revf_upper_pocket_inputs.py",
+      "sha256": "3922308e83144ed20aa784e789bdcd5362511c40ec3763e20ec28094c9f894c5"
     },
     {
-      "path": "cad/profile_radial_reve_actual_vendor.py",
-      "sha256": "ce33fea355591c9f96731460da428bff86043283d0cc124b089cd10f334534ed"
+      "path": "cad/revf_upper_pocket_pose_audit.py",
+      "sha256": "f95f291cdd1ab11ea255102e239a75998de90d2e9b9380f51050427bcd2d10ef"
+    },
+    {
+      "path": "calculations/reve_approved_workspace.py",
+      "sha256": "3354df3a45af6c3d0835271238d4058228732a5eea95b2d0691b7e7989382911"
+    },
+    {
+      "path": "calculations/reve_command_jog_path_audit.py",
+      "sha256": "fe60a1b523f59ddd2a49d71de8957c0f6616a6ccae5442a5ab5fc0e380526f20"
+    },
+    {
+      "path": "calculations/reve_forward_kinematics.py",
+      "sha256": "d668bc1b9c267362729eaae296564a5102cc982916b5d917b53c481e17e65717"
+    },
+    {
+      "path": "calculations/reve_home_path_audit.py",
+      "sha256": "213f83641f818182726c1a1fce33d630a3f23cde5508a11cf7c55bb10d965b8c"
+    },
+    {
+      "path": "fusion_scripts/ProfileRadialRevD/revd_data.py",
+      "sha256": "05b42488452ea6ecf4b5ab3485be1ae208ca628828f44fce36327000327af4a0"
+    },
+    {
+      "path": "outputs/profile_radial_revD_fusion_native/groups/lower_adapters.step",
+      "sha256": "7b8ff37db5afbdf0c85b03ba050cc17711c1a32a3dda5b071fba70bd649d43a4"
+    },
+    {
+      "path": "outputs/profile_radial_revD_fusion_native/groups/lower_brackets.step",
+      "sha256": "7527df36606661cc6f9a04fdd01cd076d4f14396bfa40d3661d665f121c4bf8e"
+    },
+    {
+      "path": "outputs/profile_radial_revD_fusion_native/groups/lower_frame.step",
+      "sha256": "bdd8c5561ba71bf26f4bbae812148f41f0cd27b49ba83ec9e06089525d845c37"
+    },
+    {
+      "path": "outputs/profile_radial_revD_fusion_native/groups/upper_brackets.step",
+      "sha256": "7087cedc1b59a8e4eaea771d406a895de06852c9fe4f4925bf4dbfe4d8cbc71c"
+    },
+    {
+      "path": "outputs/profile_radial_revD_fusion_native/groups/upper_frame.step",
+      "sha256": "c070c60183379345b35d1ae7d7e946276013f57e595e35c82c43847ab2db8651"
     },
     {
       "path": "references/vendor_cad/LM4075OE-1075-100mm.stp",
       "sha256": "1bc86009baddcf6458eeb63fb1fcac349fd80b6b64f9a0ddfa7c4b824df52f3b"
+    },
+    {
+      "path": "scripts/export_revf_upper_pocket_review.py",
+      "sha256": "0953b31f928669dd0bfb3a795e630778979c1c134059106d259936721d2af691"
+    },
+    {
+      "path": "scripts/render_lm4075oe_vendor_step.py",
+      "sha256": "26e4425ad1f3c39f88d10ef92be9116fc2aaaa9a35348e579e8fbb803d1604b9"
     }
   ]
 }

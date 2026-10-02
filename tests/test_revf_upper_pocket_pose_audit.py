@@ -90,4 +90,76 @@ class PoseAuditTests(unittest.TestCase):
         self.assertGreater(result['mount_attachment_measurements'][0]['gap_mm'],3.9)
         self.assertGreater(result['mount_attachment_measurements'][2]['volume_mm3'],200)
 
+    def test_bounded_followup_executes_and_resumes_distinct_real_pairs(self):
+        from cad.revf_upper_pocket_pose_audit import bounded_followup
+        inputs=load_inputs()
+        row=audit_pose(Pose('dense',10,1,1),inputs)
+        path=audit_pose(Pose('path',11,1,1),inputs)
+        home=audit_pose(Pose('home',-1,0,0),inputs)
+        audit={'representatives':[],'dense':[row],'path_states':[path],'home':[home]}
+        first=bounded_followup(audit,inputs,budget=3)
+        self.assertEqual(len(first['completed']),3)
+        self.assertEqual({r['scope'] for r in first['completed']},{'dense','command','home'})
+        self.assertTrue(all('valid' in r and 'volume_mm3' in r for r in first['completed']))
+        self.assertGreater(first['backlog_distinct_keys'],0)
+        second=bounded_followup(audit,inputs,budget=3,previous=first)
+        self.assertEqual(len(second['completed']),6)
+        self.assertEqual(len({r['key'] for r in second['completed']}),6)
+        self.assertEqual(second['backlog_distinct_keys'],first['backlog_distinct_keys']-3)
+        self.assertEqual(second['status'],'HOLD')
+
+    def test_repackage_rejects_changed_or_missing_measurement_provenance(self):
+        from scripts.export_revf_upper_pocket_review import measurement_provenance, validate_reuse
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);(root/'shape.txt').write_text('original')
+            provenance=measurement_provenance(load_inputs(),root=root,sources=('shape.txt',))
+            audit={'measurement_provenance':provenance,'measurement_id':'original-run'}
+            validate_reuse(audit,provenance)
+            (root/'shape.txt').write_text('changed')
+            changed=measurement_provenance(load_inputs(),root=root,sources=('shape.txt',))
+            with self.assertRaisesRegex(ValueError,'provenance'): validate_reuse(audit,changed)
+            with self.assertRaisesRegex(ValueError,'provenance'): validate_reuse({},provenance)
+            self.assertEqual(audit['measurement_provenance'],provenance)
+            self.assertEqual(audit['measurement_id'],'original-run')
+            with self.assertRaisesRegex(ValueError,'identity'):
+                validate_reuse({'measurement_provenance':provenance},provenance)
+
+    def test_uncovered_pair_precedes_known_failed_representative_pair(self):
+        from cad.revf_upper_pocket_pose_audit import bounded_followup
+        inputs=load_inputs();row=audit_pose(Pose('candidate',10,1,1),inputs)
+        known,uncovered=row['near_pair_indices'][:2]
+        row['near_pair_indices']=[known,uncovered]
+        rep={'pose':{'lift_mm':0,'pitch_deg':0,'roll_deg':0},'exact_measurements':[{'pair_indices':known,'valid':False,'volume_mm3':None}]}
+        result=bounded_followup({'representatives':[rep],'dense':[row],'path_states':[],'home':[]},inputs,budget=1)
+        self.assertEqual(result['completed'][0]['pair_indices'],uncovered)
+        self.assertTrue(result['completed'][0]['representative_uncovered'])
+
+    def test_followup_deduplicates_scope_overlap_and_chooses_lowest_margin(self):
+        from cad.revf_upper_pocket_pose_audit import bounded_followup
+        inputs=load_inputs()
+        low=audit_pose(Pose('low',10,1,1),inputs)
+        high=audit_pose(Pose('high',20,1,1),inputs)
+        pair=low['near_pair_indices'][0]
+        low['near_pair_indices']=[pair];high['near_pair_indices']=[pair]
+        audit={'representatives':[],'dense':[high,low],'path_states':[low],'home':[]}
+        result=bounded_followup(audit,inputs,budget=1)
+        self.assertEqual(result['completed'][0]['pose'],[10,1,1])
+        self.assertEqual(result['backlog_distinct_keys'],1)
+
+    def test_provenance_detects_changed_input_values(self):
+        from scripts.export_revf_upper_pocket_review import measurement_provenance, validate_reuse
+        original=measurement_provenance(load_inputs(),sources=())
+        changed=measurement_provenance(replace(load_inputs(),eye_offset_mm=17),sources=())
+        with self.assertRaisesRegex(ValueError,'provenance'):
+            validate_reuse({'measurement_id':'same','measurement_provenance':original},changed)
+
+    def test_followup_normalizes_integer_and_float_pose_keys(self):
+        from cad.revf_upper_pocket_pose_audit import bounded_followup
+        row=audit_pose(Pose('integer',0,0,0),load_inputs())
+        pair=row['near_pair_indices'][0];row['near_pair_indices']=[pair]
+        rep={'pose':{'lift_mm':0.0,'pitch_deg':0.0,'roll_deg':0.0},'exact_measurements':[{'pair_indices':pair,'valid':True,'volume_mm3':0.0}]}
+        result=bounded_followup({'representatives':[rep],'dense':[row],'path_states':[],'home':[]},load_inputs(),budget=1)
+        self.assertEqual(result['attempted_this_run'],0)
+        self.assertEqual(result['backlog_distinct_keys'],0)
+
 if __name__=='__main__': unittest.main()

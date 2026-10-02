@@ -9,6 +9,7 @@ from dataclasses import asdict
 from functools import lru_cache
 from itertools import product, combinations
 from math import acos, degrees
+import json
 import numpy as np
 from cad.revf_upper_pocket_inputs import load_inputs
 from cad.profile_radial_reve_actual_vendor import Pose, platform_transform, actuator_pin_lengths, upper_eye_points
@@ -128,6 +129,76 @@ def audit_pose(pose, inputs, *, exact=False):
         unknown_pair_count=len(candidates)-len(measurements)+invalid,invalid_boolean_count=int(invalid),exact_measurements=measurements,
         interference_count=len(collision),profile_slot_status='UNVERIFIED',**RELEASES)
 
+def bounded_followup(audit, inputs, *, budget=24, previous=None):
+    """Execute a bounded, resumable exact queue, never declare backlog clear.
+
+    Distinct key = pose coordinates + part indices. Per scope/pair, take its
+    worst pending state; prioritize pair classes absent from representatives,
+    then known invalid/interfering classes, articulation and switch proximity.
+    Round-robin dense/command/HOME ensures all three scopes get follow-up.
+    Remaining keys are losslessly defined by the near arrays minus the exact
+    key ledgers, avoiding millions of duplicated backlog JSON strings.
+    """
+    if type(budget) is not int or budget < 0:
+        raise ValueError('nonnegative integer exact-pair budget required')
+    def coordinates(row):
+        return tuple(round(float(row['pose'][k]),9)+0.0 for k in ('lift_mm','pitch_deg','roll_deg'))
+    def key(pose, pair):
+        return json.dumps([*pose,*pair],separators=(',',':'))
+    completed=list((previous or {}).get('completed',[]))
+    done={r['key'] for r in completed}; representative_keys=set();covered=set();risk_pairs=set()
+    for row in audit['representatives']:
+        for measured in row['exact_measurements']:
+            pair=tuple(measured['pair_indices']);covered.add(pair)
+            representative_keys.add(key(coordinates(row),pair))
+            if not measured['valid'] or measured['volume_mm3']>1e-6: risk_pairs.add(pair)
+    done.update(representative_keys)
+    unique={}
+    for scope,rows in (('dense',audit['dense']),('command',audit['path_states']),('home',audit['home'])):
+        for row in rows:
+            if 'pose' not in row: continue
+            pose=coordinates(row)
+            if pose not in unique: unique[pose]=(row,set())
+            unique[pose][1].add(scope)
+    best={};backlog=0
+    # All duplicate occurrences share one physical key, not repeated Booleans.
+    for pose,(row,scopes) in unique.items():
+        state_risk=(-max(row['articulation_deg']),min(row['nominal_lower_switch_margin_mm'],row['nominal_upper_switch_margin_mm']))
+        for indices in row['near_pair_indices']:
+            pair=tuple(indices);identifier=key(pose,pair)
+            if identifier in done: continue
+            backlog+=1
+            priority=(pair in covered,pair not in risk_pairs,*state_risk,pose,pair)
+            for scope in scopes:
+                slot=(scope,pair)
+                if slot not in best or priority<best[slot][0]: best[slot]=(priority,identifier,pose,pair)
+    queues={scope:sorted((v for (s,_),v in best.items() if s==scope)) for scope in ('dense','command','home')}
+    positions={s:0 for s in queues};selected=[];selected_keys=set()
+    while len(selected)<budget:
+        progress=False
+        for scope,queue in queues.items():
+            while positions[scope]<len(queue):
+                candidate=queue[positions[scope]];positions[scope]+=1
+                if candidate[1] in selected_keys: continue
+                selected.append((scope,candidate));selected_keys.add(candidate[1]);progress=True;break
+            if len(selected)>=budget: break
+        if not progress: break
+    geometries={}
+    for scope,(priority,identifier,coords,pair) in selected:
+        if coords not in geometries:
+            geometries[coords]=revf_components_for_pose(Pose('bounded_exact',*coords),inputs)
+        parts=geometries[coords];i,j=pair
+        measurement=boolean_measure(parts[i].shape,parts[j].shape)
+        completed.append(dict(key=identifier,scope=scope,pose=list(coords),pair_indices=list(pair),
+            pair=[parts[i].name,parts[j].name],representative_uncovered=not priority[0],
+            **measurement))
+    return dict(status='HOLD',budget_per_run=budget,attempted_this_run=len(selected),completed=completed,
+        backlog_distinct_keys=backlog-len(selected),invalid_completed_count=sum(not r['valid'] for r in completed),
+        positive_completed_count=sum(r['valid'] and r['volume_mm3']>1e-6 for r in completed),
+        backlog_definition='Unique pose-coordinate/part-index keys in dense, command and HOME near_pair_indices minus representative exact keys and completed keys; invalid completed keys remain unresolved separately',
+        priority_policy='Per-scope/per-pair worst pending state; representative-uncovered first, known invalid/interfering pair next, maximum articulation then minimum switch margin; deterministic dense/command/HOME round-robin',
+        full_near_contact_clearance=False,**RELEASES)
+
 def audit_all(inputs):
     representatives=[]
     for pose in representative_poses():
@@ -158,15 +229,19 @@ def audit_all(inputs):
     parts,_,pairs,exemptions=_templates(inputs)
     all_rows=representatives+dense+list(states.values())+home
     witnesses=[dict(pose=row['pose'],**m) for row in representatives for m in row['exact_measurements'] if m['valid'] and m['volume_mm3']>1e-6]
-    return dict(review_only=True,status='HOLD',bracket_count=3,**mount_attachment_review(inputs),coordinate_system='lower centre; +X right,+Y front,+Z up; pitch Y,roll X; dependent X/Y/yaw closure',
+    result=dict(review_only=True,status='HOLD',bracket_count=3,**mount_attachment_review(inputs),coordinate_system='lower centre; +X right,+Y front,+Z up; pitch Y,roll X; dependent X/Y/yaw closure',
         unchanged_S_centers=True,continuous_workspace_proven=False,profile_slot_status='UNVERIFIED',
         representative_count=len(representatives),dense_count=len(dense),representatives=representatives,dense=dense,
         path_states=list(states.values()),command_segments=segments,park_segment_count=1859,jog_segment_count=5122,home=home,
         home_scope='PARK then alternating retract order 3,2,1 at <=1 mm samples; arbitrary starts, escape and restart collision audit HOLD',
         pair_catalog=[[parts[i].name,parts[j].name] for i,j in pairs],intentional_interfaces=exemptions,
-        broad_phase_margin_mm=MARGIN_MM,exact_followup_policy='27 representative near pairs exact; remaining near pairs explicitly UNKNOWN/HOLD pending expensive Boolean completion',
+        broad_phase_margin_mm=MARGIN_MM,exact_followup_policy='27 representatives exact plus deterministic bounded distinct-key follow-up; remaining near pairs UNKNOWN/HOLD',
         invalid_boolean_count=sum(r.get('invalid_boolean_count',0) for r in all_rows),unknown_pair_count=sum(r.get('unknown_pair_count',0) for r in all_rows),
         nominal_clear_representatives=[r['pose'] for r in representatives if r['geometry_status']=='NOMINAL_SAMPLE_CLEAR'],
         worst_interference=max(witnesses,key=lambda w:w['volume_mm3'],default=None),worst_articulation=max((r for r in all_rows if 'articulation_deg' in r),key=lambda r:max(r['articulation_deg']))['pose'],
         assembly_path=assembly_path_review(inputs),assembly_status='HOLD; nominal_sample_clear never proves valid Boolean or assembly',
         blockers=list(inputs.unresolved_evidence)+['Near contacts outside representatives await exact Boolean; no full-path clearance claim','Retained lower and intentional interfaces unverified','Manufacturer capacities and delivered tolerances missing','Independent mechanical stops omitted by approved deviation; electrical limits not physical stops','Pin transitions, wrench handle sweep and full assembly access unresolved'],**RELEASES)
+    result['exact_followup']=bounded_followup(result,inputs)
+    result['invalid_boolean_count']+=result['exact_followup']['invalid_completed_count']
+    result['unknown_pair_count_note']='Baseline broad-phase occurrence count retained for traceability; consult exact_followup distinct-key ledger/backlog for supplemental resolved measurements'
+    return result

@@ -6,7 +6,13 @@ Three upper pocket candidates. All release flags FALSE. Finite sampled review on
 
 Recorded counts: 4329 exact pair checks, 270 valid positive nominal intersections, 81 invalid Booleans, 69107 unique command states, 6981 command segments / 89707 sampled state occurrences, 61 HOME states. Unknown near-pair occurrences: 10327558. All failure/unknown records are retained; no representative is released.
 
-Mount status: INVALID_NOMINAL_PLACEMENT_ACTUAL_SLOT_UNVERIFIED. Measurements and per-bolt findings are in audit.json. Empty-space clearance alone is not attachment. Actual DNF3030 slot fit remains unverified. Representative invalid Boolean count: 81; invalid pin-head/eye results leave seating unresolved (not proven physical penetration). Open housing insertion requires unverified M6 retainer engagement/preload/locking for axial capture. Task 3 profile_attachment omits installed frame/T-nut/full tool context.
+Supplemental bounded exact follow-up: 24 distinct state/pair checks completed; 10041300 distinct keys remain uncomputed. Invalid completed results remain unresolved separately. The original broad occurrence count above is retained for traceability; exact_followup is the authoritative supplemental ledger. Scope queues prioritize representative-uncovered pairs and worst articulation/switch-margin states. All remainder stays UNKNOWN/HOLD.
+
+Measurement ID: f25aeb4d-a703-487c-b9fe-81f4435e4a5d. Source fingerprint: c70333b9a8014d469752f1a314d8dfa2a7abb8c79bd4bf3d0f2ac8367a7f4c68. Cached reuse requires identical measured inputs, STEP/frame sources, geometry, closure/policy/audit source hashes and runtime; missing or changed provenance is rejected before output writes. Repackaging preserves this original identity.
+
+Run the exporter with --continue-followup to execute the next bounded 24 distinct near-pair keys under the same validated measurement identity. --repackage-existing only repackages; it never silently substitutes fresh source hashes for old measurements.
+
+Mount status: INVALID_NOMINAL_PLACEMENT_ACTUAL_SLOT_UNVERIFIED. Measurements and per-bolt findings are in audit.json. Empty-space clearance alone is not attachment. Actual DNF3030 slot fit remains unverified. Total invalid Boolean count including supplemental checks: 81; invalid pin-head/eye results leave seating unresolved (not proven physical penetration). Open housing insertion requires unverified M6 retainer engagement/preload/locking for axial capture. Task 3 profile_attachment omits installed frame/T-nut/full tool context.
 
 Command policy: grid-to-PARK and adjacent JOG; HOME starts at PARK, retracting order 3,2,1. Arbitrary HOME starts/restart/escape remain HOLD. Manufacturer capacities, tolerances, pin transitions and complete wrench/assembly paths remain unresolved. Nominal assembly sample-clear flags do not establish valid Boolean or assembly success. No cart, payload or people validation.
 
