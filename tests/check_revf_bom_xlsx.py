@@ -29,6 +29,7 @@ def read_rows(path: Path) -> list[dict[str, object]]:
         rows.append(
             {
                 "id": match.group(1),
+                "purchase_status": sheet[f"B{row}"].value,
                 "seller": sheet[f"C{row}"].value,
                 "quantity_pieces": sheet[f"F{row}"].value * PACK_SIZES.get(match.group(1), 1),
                 "link_text": link.value,
@@ -60,6 +61,12 @@ def validate_rows(rows: list[dict[str, object]]) -> None:
             assert row["quantity_pieces"] == 1, f"{identifier}: exactly one bracket required"
             assert price == "견적 미확정", f"{identifier}: quote is not established"
             assert not row["hyperlink_target"], f"{identifier}: no exact quote/product hyperlink yet"
+            continue
+        if identifier == "F09":
+            assert row["quantity_pieces"] == 0, "F09: obsolete ball-side shims must have zero order quantity"
+            assert isinstance(price, str) and "제외" in price, "F09: obsolete price must not enter totals"
+            assert "구매 제외" in str(row["purchase_status"]), "F09: old SKU must not look orderable"
+            assert row["hyperlink_target"] == row["link_text"], "F09: historical source URL drift"
             continue
         assert isinstance(price, (int, float)) and price > 0, f"{identifier}: invalid price"
         assert isinstance(row["link_text"], str) and row["link_text"].startswith("https://"), (
@@ -94,42 +101,41 @@ def validate_hardware_hold_rows(sheet) -> None:
     assert "동봉 3개" in str(sheet["E78"].value), "Supplied rings must not be ordered again"
     assert "별도 구매 0" in str(sheet["I78"].value), "Ring double-purchase warning missing"
     assert "WSSB10-6-4" in str(sheet["D79"].value), "Head-side washer candidate missing"
-    assert "CIMR6-12-0.5" in str(sheet["D79"].value), "Existing F09 shim identity missing"
-    assert "3개" in str(sheet["E79"].value) and "9장" in str(sheet["E79"].value), (
-        "Three washers and nine nominal shims must be visible"
-    )
+    assert "머리쪽" in str(sheet["B79"].value) and "3개" in str(sheet["E79"].value)
+    assert "WSSB10-6-1.5" in str(sheet["D80"].value), "Ball-side washer candidate missing"
+    assert "볼쪽" in str(sheet["B80"].value) and "3개" in str(sheet["E80"].value)
+    assert "1,470" in str(sheet["H80"].value) and "실결제 미확정" in str(sheet["H80"].value)
     assert sheet["H77"].value == "견적 미확정", "H77: HOLD item priced as available"
-    for row in (77, 79):
+    for row in (77, 79, 80):
         assert "HOLD" in str(sheet[f"I{row}"].value), f"I{row}: hold state hidden"
     assert "동봉" in str(sheet["H78"].value) and "별도" in str(sheet["H78"].value), (
         "Supplied ring must not look like an additional unquoted expense"
     )
-    assert all(word in str(sheet["H79"].value) for word in ("와셔", "견적 미확정", "F09", "기포함")), (
-        "New washer quote must not hide the paid F09 shim cost"
-    )
+    assert "견적 미확정" in str(sheet["H79"].value)
+    assert "F09" in str(sheet["I73"].value) and "제외" in str(sheet["I73"].value)
     assert "E링" in str(sheet["I73"].value) and "동봉" in str(sheet["I73"].value), (
         "Partial-total caveat must distinguish supplied ring from unquoted purchases"
     )
     assert "유료 구매행" in str(sheet["I75"].value), "Candidate rows must not be called unlisted"
-    assert [sheet[f"F{row}"].value for row in range(77, 82)] == [
-        "한국미스미", "한국미스미", "한국미스미", "한국미스미", "미확정"
+    assert [sheet[f"F{row}"].value for row in range(77, 83)] == [
+        "한국미스미", "한국미스미", "한국미스미", "한국미스미", "한국미스미", "미확정"
     ], "Unpriced candidate seller group is split"
-    assert "HOLD" in str(sheet["I78"].value) and "HOLD" in str(sheet["I81"].value)
+    assert "HOLD" in str(sheet["I78"].value) and "HOLD" in str(sheet["I82"].value)
 
     # The center M6 fastener is not the F21 G9EA mounting bolt.
-    label = str(sheet["B80"].value or "")
-    purpose = str(sheet["C80"].value or "")
-    quantity = str(sheet["E80"].value or "")
-    status = str(sheet["I80"].value or "")
+    label = str(sheet["B81"].value or "")
+    purpose = str(sheet["C81"].value or "")
+    quantity = str(sheet["E81"].value or "")
+    status = str(sheet["I81"].value or "")
     assert "PHS6" in label and "M6" in label and "하우징" in label, "Missing PHS6 housing M6 capture row"
     assert "유효물림" in purpose and "잠금" in purpose, "PHS6 housing M6 engagement/locking gate missing"
-    assert "미선정" in str(sheet["D80"].value) and "PACK-SCB6-12-YBM" in str(sheet["D80"].value), (
+    assert "미선정" in str(sheet["D81"].value) and "CBS6-12" in str(sheet["D81"].value), (
         "PHS6 M6 exact SKU candidate must be named but unselected"
     )
-    assert "3축" in quantity and "3개" in quantity and "10개입" in quantity, (
+    assert "3축" in quantity and "3개" in quantity and "최소 1개" in quantity, (
         "PHS6 housing M6 3-axis quantity and pack must be visible"
     )
-    for row, slug in ((77, "HCDGH6-35"), (78, "HCDGH6-35"), (79, "WSSB10-6-4"), (80, "PACK-SCB6-12-YBM")):
+    for row, slug in ((77, "HCDGH6-35"), (78, "HCDGH6-35"), (79, "WSSB10-6-4"), (80, "WSSB10-6-1.5"), (81, "CBS6-12")):
         link = sheet[f"G{row}"]
         assert isinstance(link.value, str) and link.value.startswith("https://") and slug in link.value, (
             f"G{row}: candidate product URL text missing"
@@ -137,11 +143,13 @@ def validate_hardware_hold_rows(sheet) -> None:
         assert link.hyperlink and link.hyperlink.target == link.value, (
             f"G{row}: candidate product URL must be a native clickable link"
         )
-    assert sheet["H80"].value == "견적 미확정", "PHS6 housing M6 price must stay unquoted"
-    assert sheet["G81"].value == "—" and sheet["G81"].hyperlink is None, (
+    assert "671" in str(sheet["H81"].value) and "실결제 미확정" in str(sheet["H81"].value), (
+        "PHS6 housing M6 displayed unit price must not look like a final quote"
+    )
+    assert sheet["G82"].value == "—" and sheet["G82"].hyperlink is None, (
         "Unknown bracket mounting hardware must not carry a known-product link"
     )
-    assert "HOLD" in status and "F21" in status and "유효물림" in status, (
+    assert all(word in status for word in ("HOLD", "F21", "F17", "유효물림")), (
         "PHS6 housing M6 HOLD and non-substitution gate missing"
     )
 
@@ -162,7 +170,10 @@ def check(path: Path) -> None:
         if identifier in BRACKET_IDS:
             continue
         source = original_by_id[identifier]
-        for field in ("seller", "quantity_pieces", "link_text", "hyperlink_target", "price_krw"):
+        fields = ("seller", "link_text", "hyperlink_target") if identifier == "F09" else (
+            "seller", "quantity_pieces", "link_text", "hyperlink_target", "price_krw"
+        )
+        for field in fields:
             assert row[field] == source[field], f"{identifier}: retained {field} changed"
 
     formula_book = load_workbook(path, data_only=False)
@@ -181,7 +192,8 @@ def check(path: Path) -> None:
     for cell, expected in expected_formulas.items():
         assert sheet[cell].value == expected, f"{cell}: summary formula changed"
     assert sheet["I2"].value == 4_000_000, "Budget cap changed"
-    supply = sum(int(row["price_krw"]) for row in rows if row["id"] not in BRACKET_IDS)
+    supply = sum(int(row["price_krw"]) for row in rows if row["id"] not in BRACKET_IDS | {"F09"})
+    assert supply == 2_836_396, "F09 10,909 KRW must be absent from the supply subtotal"
     vat = int((Decimal(supply) * Decimal("0.1")).quantize(Decimal("1"), rounding=ROUND_HALF_UP))
     expected_values = {"H70": supply, "H71": vat, "H72": supply + vat, "H73": 4_000_000 - supply - vat}
     for cell, expected in expected_values.items():

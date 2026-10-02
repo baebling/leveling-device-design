@@ -32,6 +32,10 @@ REMOVED_UPPER_IDS = {"F08A", "F08B", "F11", "F12"}
 
 def review_rows():
     rows = [deepcopy(row) for row in read_rows(REV_E) if row["id"] not in REMOVED_UPPER_IDS]
+    f09 = next(row for row in rows if row["id"] == "F09")
+    f09["purchase_status"] = "구매 제외"
+    f09["quantity_pieces"] = 0
+    f09["price_krw"] = "구형안 제외"
     insertion = next(index for index, row in enumerate(rows) if row["id"] == "M03") + 1
     brackets = [
         {
@@ -54,28 +58,28 @@ class RevFBomCheckerTests(unittest.TestCase):
             path = Path(directory) / "missing_capture.xlsx"
             book = load_workbook(REV_F)
             # Keep the seller group intact so this isolates the missing M6 row.
-            for address in ("B80", "C80", "D80", "E80", "G80", "H80", "I80"):
+            for address in ("B81", "C81", "D81", "E81", "G81", "H81", "I81"):
                 book["Sheet1"][address].value = None
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "PHS6 housing M6"):
                 checker.check(path)
 
-    def test_phs6_housing_capture_price_cannot_be_zero(self):
+    def test_phs6_housing_capture_display_price_cannot_be_zero(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "zero_capture.xlsx"
             book = load_workbook(REV_F)
-            book["Sheet1"]["H80"] = 0
+            book["Sheet1"]["H81"] = 0
             book.save(path)
             book.close()
-            with self.assertRaisesRegex(AssertionError, "price must stay unquoted"):
+            with self.assertRaisesRegex(AssertionError, "displayed unit price"):
                 checker.check(path)
 
     def test_phs6_housing_capture_requires_m6_engagement_and_locking(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "no_lock_gate.xlsx"
             book = load_workbook(REV_F)
-            book["Sheet1"]["C80"] = "PHS6 housing fastener"
+            book["Sheet1"]["C81"] = "PHS6 housing fastener"
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "engagement/locking"):
@@ -85,7 +89,7 @@ class RevFBomCheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "no_quantity_gate.xlsx"
             book = load_workbook(REV_F)
-            book["Sheet1"]["E80"] = "미확정"
+            book["Sheet1"]["E81"] = "미확정"
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "3-axis quantity"):
@@ -95,7 +99,7 @@ class RevFBomCheckerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "no_sku_gate.xlsx"
             book = load_workbook(REV_F)
-            book["Sheet1"]["D80"] = "M6 후보"
+            book["Sheet1"]["D81"] = "M6 후보"
             book.save(path)
             book.close()
             with self.assertRaisesRegex(AssertionError, "exact SKU"):
@@ -172,6 +176,28 @@ class RevFBomCheckerTests(unittest.TestCase):
         rows[0]["price_krw"] = 0
         with self.assertRaisesRegex(AssertionError, "price"):
             checker.validate_rows(rows)
+
+    def test_obsolete_f09_cannot_return_to_order_quantity(self):
+        rows = review_rows()
+        next(row for row in rows if row["id"] == "F09")["quantity_pieces"] = 12
+        with self.assertRaisesRegex(AssertionError, "F09: obsolete"):
+            checker.validate_rows(rows)
+
+    def test_obsolete_f09_cannot_return_to_numeric_total(self):
+        rows = review_rows()
+        next(row for row in rows if row["id"] == "F09")["price_krw"] = 10_909
+        with self.assertRaisesRegex(AssertionError, "F09: obsolete price"):
+            checker.validate_rows(rows)
+
+    def test_ball_side_washer_url_must_remain_exact(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "wrong_ball_washer.xlsx"
+            book = load_workbook(REV_F)
+            book["Sheet1"]["G80"].hyperlink = "https://invalid.example/other"
+            book.save(path)
+            book.close()
+            with self.assertRaisesRegex(AssertionError, "G80: candidate product URL"):
+                checker.check(path)
 
     def test_reader_converts_m03_two_packs_to_four_pieces(self):
         rows = read_rows(REV_E)

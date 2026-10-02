@@ -57,13 +57,14 @@ hold_urls = {
     77: "https://kr.misumi-ec.com/vona2/detail/110300095750/?HissuCode=HCDGH6-35",
     78: "https://kr.misumi-ec.com/vona2/detail/110300095750/?HissuCode=HCDGH6-35",
     79: "https://kr.misumi-ec.com/vona2/detail/110302677010/?HissuCode=WSSB10-6-4",
-    80: "https://kr.misumi-ec.com/vona2/detail/110300239250/?HissuCode=PACK-SCB6-12-YBM",
+    80: "https://kr.misumi-ec.com/vona2/detail/110302677010/?HissuCode=WSSB10-6-1.5",
+    81: "https://kr.misumi-ec.com/vona2/detail/110100142110/?HissuCode=CBS6-12",
 }
 for row, expected in hold_urls.items():
     cell = target_sheet[f"G{row}"]
     assert cell.value == expected, f"G{row}: candidate URL text drift"
     cell.hyperlink = expected
-target_sheet["G81"].hyperlink = None
+target_sheet["G82"].hyperlink = None
 
 target_book.save(TARGET)
 source_book.close()
