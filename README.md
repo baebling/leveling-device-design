@@ -1,8 +1,8 @@
 # 수평유지 상부모듈 — 전동 Rev E 현행 검증
 
-> **현행 상태 (2026-10-02): 전동 LM4075OE 3축·자동수평 Rev E, 발주·제작·통전·시연 수락 모두 보류.** 대상은 카트·적재물·사람 없는 공개형 자중 시연 상부모듈이다. 목표는 Z 0~50 mm와 pitch/roll ±3°이며, 현재 27자세 CAD 검사는 실제 상부 핀·너트·스토퍼·움직이는 케이블을 포함하지 않아 최종 조립 합격이 아니다. 허용 금속 가공은 기존 A1~A3 판의 구멍/탭뿐이고 플라스틱 전장함/속판 타공은 가능하다. [현행 요구사항](references/수평유지장치%20요구사항.txt)과 [검증·발주 보류 사유](outputs/20261002_reve_followthrough/연속검증_중간기록.md)를 먼저 읽는다.
+> **현행 상태 (2026-10-02): 전동 LM4075OE 3축·자동수평 Rev E, 발주·제작·통전·시연 수락 모두 보류.** 대상은 카트·적재물·사람 없는 공개형 자중 시연 상부모듈이다. 목표는 Z 0~50 mm와 pitch/roll ±3°다. 기존 27자세 CAD에는 실제 상부 체결품이 빠져 있었고, 별도 후보 CAD에 볼트·너트 외피를 넣어 다시 검사했지만 눈 접촉·프로파일 단면 불일치·스토퍼·움직이는 케이블이 열려 있어 최종 조립 합격이 아니다. 허용 금속 가공은 기존 A1~A3 판의 구멍/탭뿐이고 플라스틱 전장함/속판 타공은 가능하다. [현행 요구사항](references/수평유지장치%20요구사항.txt)과 [검증·발주 보류 사유](outputs/20261002_reve_followthrough/연속검증_중간기록.md)를 먼저 읽는다.
 
-> **현행 검토본:** [핀축 보정 CAD/STEP](outputs/profile_radial_revE_pin_axis_corrected_2026-10-02/README_NOT_FOR_FABRICATION.md), [공급처별 검수 BOM](outputs/20261002_reve_followthrough/2026_BIZ-Lab_재료비관리_RevE_연속검수.xlsx), [전장함 2D 배치 가설](outputs/20261002_reve_followthrough/5070P_2D_배치_검토전용.svg). BOM의 VAT 포함 3,143,564원은 미확정 교체품·배송비를 제외한 **검수용 산술**이지 주문 가능 총액이 아니다. 상부 F07/F11 체결 불합격, Ø6 편심핀 강도, 추가 금속가공 없는 독립 스토퍼와 전장 실물 배치가 열려 있다. `PURCHASE_RELEASE=FALSE`, `FABRICATION_RELEASE=FALSE`, `CONTROL_POWER_TEST_RELEASE=FALSE`, `MOTOR_POWER_RELEASE=FALSE`, `POC_ACCEPTANCE=FALSE`.
+> **현행 검토본:** [핀축 보정 CAD/STEP](outputs/profile_radial_revE_pin_axis_corrected_2026-10-02/README_NOT_FOR_FABRICATION.md), [상부 관절 기성품 후보 CAD/STEP](outputs/20261002_reve_joint_candidates/README_REVIEW_ONLY.md), [공급처별 검수 BOM](outputs/20261002_reve_followthrough/2026_BIZ-Lab_재료비관리_RevE_연속검수.xlsx), [전장함 2D 배치 가설](outputs/20261002_reve_followthrough/5070P_2D_배치_검토전용.svg). BOM의 VAT 포함 3,143,564원은 미확정 교체품·배송비를 제외한 **검수용 산술**이지 주문 가능 총액이 아니다. 상부 F07/F11 체결 불합격, Ø6 편심핀 강도, 추가 금속가공 없는 독립 스토퍼와 전장 실물 배치가 열려 있다. `PURCHASE_RELEASE=FALSE`, `FABRICATION_RELEASE=FALSE`, `CONTROL_POWER_TEST_RELEASE=FALSE`, `MOTOR_POWER_RELEASE=FALSE`, `POC_ACCEPTANCE=FALSE`.
 
 ## 아래는 과거 결정의 이력 — 현행 주문·조립 기준 아님
 
