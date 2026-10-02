@@ -213,8 +213,57 @@ def vendor_shapes() -> tuple[tuple[str, cq.Shape], ...]:
     return tuple((name, cq.Shape.cast(shape)) for name, shape in read_named_shapes(VENDOR_STEP))
 
 
+@lru_cache(maxsize=128)
+def solve_reve_platform(pitch_deg: float, roll_deg: float):
+    """Constrain the actuator eyes while keeping each upper pin on its hinge axis.
+
+    The PHS6 centers rotate with the upper frame.  The actuator eyes sit 16 mm
+    from those centers along the *world-fixed* lower hinge axes; rotating that
+    offset with the platform makes the two Ø6 bores miss each other in tilt.
+    """
+
+    def residual(values):
+        x_mm, y_mm, yaw_rad = values
+        rotation = revd_data.rotation_matrix(pitch_deg, roll_deg, yaw_rad)
+        rows = []
+        for lower, support, (_, tangent) in zip(
+            revd_data.lower_eye_points(),
+            revd_data.upper_support_points(),
+            revd_data.support_basis(),
+        ):
+            moved = _matvec(rotation, (support[0], support[1], 0.0))
+            eye = (
+                moved[0] + x_mm - revd_data.P.upper_joint_side_offset_mm * tangent[0],
+                moved[1] + y_mm - revd_data.P.upper_joint_side_offset_mm * tangent[1],
+            )
+            rows.append((eye[0] - lower[0]) * tangent[0] + (eye[1] - lower[1]) * tangent[1])
+        return tuple(rows)
+
+    values = [0.0, 0.0, 0.0]
+    steps = (1e-4, 1e-4, 1e-7)
+    for _ in range(12):
+        current = residual(values)
+        if max(abs(value) for value in current) < 1e-10:
+            break
+        columns = []
+        for axis, step in enumerate(steps):
+            shifted = list(values)
+            shifted[axis] += step
+            moved = residual(shifted)
+            columns.append(tuple((moved[row] - current[row]) / step for row in range(3)))
+        jacobian = tuple(tuple(columns[col][row] for col in range(3)) for row in range(3))
+        delta = revd_data._solve_linear_3x3(jacobian, tuple(-value for value in current))
+        values = [values[index] + delta[index] for index in range(3)]
+    return {
+        "x_mm": values[0],
+        "y_mm": values[1],
+        "yaw_rad": values[2],
+        "residual_mm": max(abs(value) for value in residual(values)),
+    }
+
+
 def platform_transform(pose: Pose):
-    solved = revd_data.solve_platform(pose.pitch_deg, pose.roll_deg)
+    solved = solve_reve_platform(pose.pitch_deg, pose.roll_deg)
     rotation = revd_data.rotation_matrix(
         pose.pitch_deg, pose.roll_deg, solved["yaw_rad"]
     )
@@ -405,9 +454,17 @@ def upper_phs_fastener_local_shapes() -> tuple[cq.Shape, ...]:
 
 
 def upper_eye_points(pose: Pose):
-    return revd_data._upper_world_points(
-        pose.lift_mm, pose.pitch_deg, pose.roll_deg
-    )
+    rotation, translation, _ = platform_transform(pose)
+    rows = []
+    for support, (_, tangent) in zip(
+        revd_data.upper_support_points(), revd_data.support_basis()
+    ):
+        phs = _add(
+            _matvec(rotation, (support[0], support[1], revd_data.P.upper_ring_z_collapsed_mm)),
+            translation,
+        )
+        rows.append(_sub(phs, _scale(tangent, revd_data.P.upper_joint_side_offset_mm)))
+    return tuple(rows)
 
 
 def actuator_pin_lengths(pose: Pose):

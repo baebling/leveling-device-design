@@ -25,7 +25,7 @@ from cad.profile_radial_reve_actual_vendor import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "outputs" / "profile_radial_revE_frame_raise_2026-09-30"
+OUTPUT = ROOT / "outputs" / "profile_radial_revE_pin_axis_corrected_2026-10-02"
 STEP_DIR = OUTPUT / "step"
 RENDER_DIR = OUTPUT / "renders"
 AUDIT_PATH = OUTPUT / "Profile_Radial_3RPS_RevE_supplier_interface_validation.json"
@@ -207,8 +207,10 @@ def main() -> int:
             "vendor_collapsed_pin_center_distance_mm": VENDOR_COLLAPSED_PIN_MM,
             "note": (
                 "Pose models use the actual LM4075OE STEP plus public-dimension LMB-10 and "
-                "TRUSCO PHS6 supplier envelopes. The earlier mechanical-stop group is omitted "
-                "from this simplified prototype package per the selected internal-limit-only scope. "
+                "TRUSCO PHS6 supplier envelopes. Rev E upper eye centers and platform X/Y/yaw "
+                "are corrected for world-fixed lower hinge pin axes. Actual upper pivot pins, "
+                "independent mechanical stops, moving cables, and enclosure are not modeled; "
+                "this package does not establish final assembly or purchase readiness. "
                 "The stale mixed Rev D fastener group is replaced with the corrected six LMB bolts "
                 "and three PHS studs. Upper frame rises 15 mm; upper actuator eyes shift 1.5 mm "
                 "on three existing 0.5 mm shims per axis so PHS studs stay in the 3030 slot center. "
@@ -221,7 +223,7 @@ def main() -> int:
     AUDIT_PATH.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     artifacts = step_paths + [joint_detail] + render_paths + [AUDIT_PATH]
     manifest = {
-        "revision": "E_ACTUAL_VENDOR_FRAME_RAISE_2026_09_30",
+        "revision": "E_ACTUAL_VENDOR_PIN_AXIS_CORRECTED_2026_10_02",
         "artifact_count": len(artifacts),
         "artifacts": [
             {"path": str(path.relative_to(ROOT)), "bytes": path.stat().st_size, "sha256": sha256(path)}
