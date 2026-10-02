@@ -9,20 +9,27 @@ from calculations.revf_upper_pocket_load_screen import screen_loads, build_revie
 
 
 class PocketLoadTests(unittest.TestCase):
+    def test_hcdgh_pin_requires_guaranteed_strength_not_hardness_conversion(self):
+        result=screen_loads(load_inputs(),750)
+        self.assertAlmostEqual(result['tolerance_screen']['pin_min_diameter_mm'],5.988)
+        self.assertLess(abs(result['pin_bending_mpa']-569.3),1.)
+        self.assertLess(abs(result['required_yield_for_bending_sf_mpa']-854.),2.)
+        self.assertIsNone(result['conditional_pin_proof_mpa'])
+        self.assertEqual(result['tolerance_screen']['known_tolerance_min_gap_mm'],.20)
+        self.assertEqual(result['tolerance_screen']['known_tolerance_max_gap_mm'],.82)
+        self.assertFalse(result['strength_gate'])
     def test_750n_pin_check_both_directions(self):
         for force_n in (-750.0, 750.0):
             result = screen_loads(load_inputs(), force_n)
-            self.assertLess(abs(result["pin_bending_mpa"] - 580.0), 2.0)
+            self.assertLess(abs(result["pin_bending_mpa"] - 569.3), 1.0)
             self.assertAlmostEqual(result["signed_moment_nmm"], force_n * 16)
-            self.assertAlmostEqual(result["pin_shear_mpa"], 26.973, places=2)
-            self.assertAlmostEqual(result["pin_von_mises_mpa"], 582.15, places=1)
-            self.assertGreater(result["conditional_pin_ratio"], 1.60)
-            self.assertLess(result["conditional_pin_ratio"], 1.62)
+            self.assertAlmostEqual(result["pin_shear_mpa"], 26.632, places=2)
+            self.assertIsNone(result["conditional_pin_ratio"])
             self.assertIs(result["strength_gate"], False)
             self.assertIs(result["purchase_release"], False)
 
     def test_cubic_diameter_and_linear_force_scaling(self):
-        result = screen_loads(replace(load_inputs(), pin_dmin_mm=6.0), 375)
+        result = screen_loads(replace(load_inputs(), pin_dmin_mm=6.0, pin_dmax_mm=6.0), 375)
         self.assertAlmostEqual(result["pin_bending_mpa"], 282.9421, places=3)
 
     def test_dimension_completeness_cannot_close_strength_gaps(self):
@@ -40,8 +47,14 @@ class PocketLoadTests(unittest.TestCase):
 
     def test_adverse_bore_clearances_are_screening_bounds_not_tolerances(self):
         result = screen_loads(load_inputs(), -750)
-        self.assertAlmostEqual(result["tolerance_screen"]["diametral_clearance_bounds_mm"][0], 0.05)
-        self.assertAlmostEqual(result["tolerance_screen"]["diametral_clearance_bounds_mm"][1], 0.45)
+        screen=result['tolerance_screen']
+        self.assertNotIn('diametral_clearance_bounds_mm',screen)
+        self.assertEqual(screen['pin_diameter_limits_mm'],[5.988,5.996])
+        self.assertIsNone(screen['delivered_eye_bore_tolerance_mm'])
+        for row,expected in zip(screen['conditional_clearance_by_eye_source'],([.004,.012],[.404,.412])):
+            for actual,wanted in zip(row['diametral_clearance_limits_mm'],expected):
+                self.assertAlmostEqual(actual,wanted)
+            self.assertFalse(row['delivered_fit_verified'])
         self.assertIsNone(result["tolerance_screen"]["worst_case_effective_offset_mm"])
         self.assertIn("tolerance_stack", result["unverified"])
 

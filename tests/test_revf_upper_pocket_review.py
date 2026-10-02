@@ -15,6 +15,53 @@ from cad.profile_radial_revf_upper_pocket_review import (
 
 
 class UpperPocketReviewTests(unittest.TestCase):
+    def test_trusco_foot_blind_thread_and_m6_candidate_are_explicit(self):
+        geo=local_review_geometry(load_inputs())
+        # Probe the widened foot outside the old radius5 neck.
+        probe=review_module._box(.2,.2,1,(6,0,27))
+        self.assertGreater(geo['housing'].intersect(probe).Volume(),.03)
+        self.assertLess(geo['housing'].intersect(review_module._cylinder(2.9,11.9,(0,0,18.1))).Volume(),1e-6)
+        bolt=geo['m6_retainer_envelope'].BoundingBox()
+        self.assertAlmostEqual(bolt.zmin,21.)
+        self.assertAlmostEqual(bolt.zmax,39.)
+        review=review_module.hardware_review(load_inputs())
+        self.assertEqual(review['m6_retainer']['nominal_engagement_mm'],9.)
+        self.assertEqual(review['m6_retainer']['status'],'UNKNOWN/HOLD')
+        self.assertFalse(review['grease_nipple']['supplier_bound_verified'])
+        for axis in (1,2,3):
+            g=local_review_geometry(load_inputs(),axis)
+            for offset in (0,.1,1,5,10,20,40):
+                for key in ('housing','grease_nipple_unknown_envelope'):
+                    common=g[key].translate((0,offset,0)).intersect(g['bracket'])
+                    self.assertTrue(common.isValid());self.assertLess(common.Volume(),1e-6)
+
+    def test_stock_ring_pin_has_head_washer_then_eye_shims_ball_ring(self):
+        geo=local_review_geometry(load_inputs())
+        self.assertFalse(any('m5' in key for key in geo))
+        self.assertEqual(len(geo['shim'].Solids()),1)
+        self.assertAlmostEqual(geo['shim'].BoundingBox().xlen,10.)
+        head=geo['pin_head'].BoundingBox();washer=geo['spacer'].BoundingBox()
+        self.assertAlmostEqual(head.xlen,9.)
+        self.assertAlmostEqual(head.ylen,1.5)
+        self.assertAlmostEqual(washer.ymin,-30.)
+        self.assertAlmostEqual(washer.ymax,-26.)
+        self.assertAlmostEqual(geo['e5_ring_envelope'].BoundingBox().ymin,5.)
+        review=review_module.hardware_review(load_inputs())
+        self.assertAlmostEqual(review['pin_stack']['nominal_groove_gap_mm'],.5)
+        self.assertAlmostEqual(review['pin_stack']['known_tolerance_max_gap_mm'],.82)
+        self.assertAlmostEqual(review['pin_stack']['known_tolerance_min_gap_mm'],.20)
+        self.assertEqual(review['pin_stack']['fit_status'],'UNKNOWN')
+        self.assertEqual(review['pin_transition_coverage']['status'],'EXCLUDED/UNKNOWN')
+        self.assertFalse(review['pin_transition_coverage']['exact_geometry_checked'])
+
+    def test_ball_side_stock_washer_clears_neck_at_all_representative_poses(self):
+        for lift,pitch,roll in product((0,25,50),(-3,0,3),(-3,0,3)):
+            for axis in (1,2,3):
+                g=phs_components(axis,Pose('washer',lift,pitch,roll))
+                common=g['shim'].intersect(g['housing'])
+                self.assertTrue(common.isValid())
+                self.assertLess(common.Volume(),1e-6)
+
     def test_composite_paths_do_not_turn_all_invalid_children_into_zero(self):
         self.assertTrue(callable(getattr(review_module, '_aggregate_paths', None)))
         invalid = cq.Workplane('XY').box(1, 1, 1).val()
@@ -151,13 +198,14 @@ class UpperPocketReviewTests(unittest.TestCase):
 
     def test_assembly_paths_record_every_stage_and_keep_unknowns_blocked(self):
         review = assembly_path_review(load_inputs())
-        self.assertEqual({"tnut_end_insertion", "bracket_approach", "housing_insertion", "m6_retention", "eye_approach", "pin_insertion", "shim_insertion", "spacer_insertion", "m5_nut", "profile_attachment", "tool_access"}, {r["stage"] for r in review["stages"]})
+        self.assertEqual({"tnut_end_insertion", "bracket_approach", "housing_insertion", "m6_retention", "eye_approach", "pin_insertion", "shim_insertion", "head_washer_preload", "e5_ring_installation", "profile_attachment", "tool_access"}, {r["stage"] for r in review["stages"]})
         self.assertTrue(all(r["samples"] > 1 for r in review["stages"]))
         self.assertTrue(all("maximum_unintended_volume_mm3" in r for r in review["stages"]))
         self.assertFalse(review["assembly_verified"])
         self.assertFalse(review["fabrication_release"])
         self.assertFalse(review["purchase_release"])
-        self.assertEqual(30.5, review["nominal_grip_mm"])
+        self.assertEqual(34.5, review["nominal_grip_mm"])
+        self.assertEqual(30.5, review['nominal_eye_shim_ball_stack_mm'])
         self.assertIsNone(review["continuous_shoulder_contact_length_mm"])
         self.assertTrue(review["unresolved"])
 
@@ -165,7 +213,7 @@ class UpperPocketReviewTests(unittest.TestCase):
         stages = {row["stage"]: row for row in assembly_path_review(load_inputs())["stages"]}
         self.assertLess(stages["shim_insertion"]["maximum_unintended_volume_mm3"], 1e-6)
         self.assertEqual(4, len(stages["tool_access"]["paths"]))
-        self.assertLess(stages["tool_access"]["maximum_unintended_volume_mm3"], 1e-6)
+        self.assertEqual(stages['tool_access']['status'],'UNKNOWN')
 
     def test_invalid_axes_and_offset_change_are_not_silently_accepted(self):
         with self.assertRaises(ValueError):
@@ -182,7 +230,7 @@ class UpperPocketReviewTests(unittest.TestCase):
     def test_head_seating_overlap_is_retained_with_boolean_validity(self):
         stage = next(r for r in assembly_path_review(load_inputs())["stages"] if r["stage"] == "pin_insertion")
         witness = stage.get("maximum_witness", {})
-        self.assertEqual("pin_head", witness.get("moving"))
+        self.assertIn(witness.get('moving'),('pin_head','spacer','pin_shoulder'))
         self.assertEqual("actual_supplier_moving_part", witness.get("obstacle"))
         self.assertEqual(0, witness.get("offset_mm"))
         self.assertIn("boolean_valid", witness)

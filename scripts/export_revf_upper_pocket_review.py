@@ -15,6 +15,7 @@ from cad.revf_upper_pocket_pose_audit import audit_all, bounded_followup, refres
 from cad.profile_radial_reve_actual_vendor import Pose
 from cad.profile_radial_revf_upper_pocket_review import revf_components_for_pose, local_review_geometry, _basis
 from math import atan2, degrees
+from calculations.revf_upper_pocket_load_screen import build_review
 from scripts.export_profile_radial_reve_actual_vendor import actor_for
 
 OUTPUT=ROOT/'outputs/profile_radial_revF_upper_pocket_review_2026-10-02'
@@ -28,6 +29,7 @@ MEASUREMENT_SOURCES=(
     'fusion_scripts/ProfileRadialRevD/revd_data.py',
     'calculations/reve_forward_kinematics.py',
     'calculations/revf_forward_kinematics.py',
+    'calculations/revf_upper_pocket_load_screen.py',
     'references/revf_upper_pocket_source_register_2026-10-02.md',
     'calculations/reve_approved_workspace.py',
     'calculations/reve_command_jog_path_audit.py',
@@ -68,6 +70,10 @@ def write_audit(audit, destination, chunk_size=5000):
         if old.exists(): old.unlink()
         index['path_state_files'].append(name)
     (destination/'audit.json').write_text(json.dumps(index,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n',encoding='utf-8')
+
+def write_load_screen(destination):
+    """Regenerate the saved screen from the same fingerprinted calculation."""
+    (destination/'load_screen.json').write_text(json.dumps(build_review(),ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8')
 
 def review_export_poses(audit):
     """Refresh derived global witness for fresh, continued and repackaged runs."""
@@ -152,6 +158,7 @@ def main():
         validate_reuse(audit,measurement_provenance(inputs))
     poses=review_export_poses(audit)
     bracket_parts=export_bracket_parts(inputs,OUTPUT,provenance)
+    write_load_screen(OUTPUT)
     audit['bracket_part_exports']=bracket_parts
     write_audit(audit,OUTPUT)
     for pose in poses: export_pose(pose)
@@ -162,6 +169,14 @@ def main():
     readme=f'''# {LABEL}
 
 Three upper pocket candidates. All release flags FALSE. Finite sampled review only.
+
+Pin/eye clearance is reported per separate nominal eye source, not as delivered-eye tolerance: HCDGH diameter5.988–5.996 gives conditional0.004–0.012 for STEP eye6.0 and0.404–0.412 for sales eye6.4. Delivered eye tolerance and fit remain UNKNOWN. The former dmin-only clearance-bounds key is replaced by per-source lower/upper records in load_screen.json.
+
+Task 9/10 hardware baseline: TRUSCO PHS6 OD20 x 6.75, ball width9, conservative neck diameter11 and foot diameter13 x5, blind M6 depth12. The opened +localY channel preserves ball freedom. The all-azimuth nipple keepout (radius9, local Z10..25) is an assumed screening envelope, NOT a supplier-verified bound; a clear sample cannot establish actual nipple clearance. Candidate M6x12 socket head diameter10 x6 gives nominal9 engagement, length-only8.65..9.35, nominal3 bottom clearance and ZERO nominal head/recess flush margin. Exact SKU, tolerances, preload, locking and strength remain UNKNOWN/HOLD; install the retainer before mounting to the profile, which blocks later head access.
+
+Pin candidate HCDGH6-35 uses the head-under stack WSSB10-6-4 washer4 -> eye20 -> one WSSB10-6-1.5 washer1.5 -> ball9 =34.5, then nominal0.5 groove gap and E5 ring. The ball-side OD10 washer replaces three OD12 CIMR shims while preserving e16 and centres; legacy geometry key shim now denotes this one stock washer. Known tolerance gap0.20–0.82 excludes unknown eye width and relief; no assembly fit approval. HCDGH head diameter9 x1.5, groove diameter5(+0.075/0), width0.7(+0.1/0), end allowance2. Simplified ring C-contour and radial tool envelope are NOT verified E5 installation geometry. Pin/ring intended interface is separated from unintended interference checks but remains unverified. Ring capacity, groove/relief stress, supplier eye tolerance and delivered strength remain UNKNOWN/HOLD. S45C hardness is not converted to guaranteed yield. The regenerated load_screen.json uses minimum pin5.988, not historical MSB5.95 or a class10.9 proof assumption.
+
+Coverage exclusion: pin_transition_unknown_keepout is diagnostic local geometry only, NOT exported or included in pose/assembly collision lists. Its status is explicitly EXCLUDED/UNKNOWN in assembly hardware_review, not geometrically cleared. Actual head relief, groove transition contact and strength need supplier evidence. Assumed nipple-envelope intersections are potential obstructions, not confirmed actual nipple penetration. Conservative nominal neck/washer interference is distinct from retained shallow-slot-model mismatch; it is never blanket-exempted as intentional contact.
 
 27 representatives use exact B-rep Booleans after conservative broad phase. 1859 grid poses and all recorded command/HOME samples use transformed enclosing AABBs. Remaining near-contact pairs are UNKNOWN/HOLD; this is an incomplete clearance audit, not a continuous workspace proof. audit.json indexes deterministic gzip-compressed path_states_*.json.gz files; decompress to UTF-8 JSON arrays.
 
@@ -184,6 +199,8 @@ Three local bracket-only quotation-review candidates (not purchase/fabrication a
 Command policy: grid-to-PARK and adjacent JOG are pose interpolations whose IK lengths use the corrected CAD world-fixed tangent eye offset, not legacy FK. HOME uses the Rev F six-equation length/hinge solver and rechecks every solution against CAD lengths (1e-7 mm) and hinge closure. It starts at PARK, retracting order 3,2,1. Normal length window is 210-280 mm; intentional HOME may go to nominal 205 mm STEP collapsed length, NOT a verified physical switch trip. Per-row normal-window and HOME-window results are separate. Nonconvergence or FK/CAD disagreement stays UNKNOWN/HOLD without geometry clearance. Arbitrary HOME starts/restart/escape remain HOLD. Manufacturer capacities, tolerances, pin transitions and complete wrench/assembly paths remain unresolved. Nominal assembly sample-clear flags do not establish valid Boolean or assembly success. No cart, payload or people validation.
 
 Review loads +/-750 N per axis, conditional static target 1.5; see Task 2 load screen. Independent physical stops omitted by user-approved deviation; electrical limits are separate. No fabrication exports or purchase authorization.
+
+Production HOME additionally reconstructs the CAD X/Y/yaw branch: X/Y residuals are mm; wrapped yaw radians are multiplied by support radius250 mm, then all three length-equivalent residuals must be finite and <=1e-7 mm. Each HOME row records residuals, radius and threshold; divergence remains UNKNOWN/HOLD and cannot advance the continuation seed. Provenance now includes the load calculation (20 source files); all 30 artifact hashes include the regenerated load screen.
 '''
     (OUTPUT/'README.md').write_text(readme,encoding='utf-8')
     files=sorted(p for p in OUTPUT.iterdir() if p.is_file() and p.name!='manifest.json')

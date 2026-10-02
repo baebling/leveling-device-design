@@ -25,9 +25,10 @@ from fusion_scripts.ProfileRadialRevD import revd_data
 
 REVIEW_ASSUMPTIONS = {
     "material": "S45C/SM45C candidate; delivered grade/strength unverified",
-    "race_sphere_radius_mm": 7.0,
+    "race_sphere_radius_mm": 6.35,
     "ball_keepout_radius_mm": 7.5,
-    "neck_radius_mm": 5.0,
+    "neck_radius_mm": 5.5,
+    "nipple_keepout_radius_mm": 9.0,
     "neck_end_z_mm": 30.0,
     "bracket_outer_radius_mm": 14.0,
     "mount_face_z_mm": 39.0,
@@ -72,8 +73,12 @@ def local_review_geometry(inputs: PocketInputs, axis_index: int = 1) -> dict[str
     ball = race.intersect(_box(20, inputs.phs_ball_width_mm, 20, (0, 0, 0)))
     ball = ball.cut(_cylinder(3, 30, (0, -15, 0), (0, 1, 0)))
     ring = _cylinder(radius, width, (0, -width / 2, 0), (0, 1, 0))
-    neck = _cylinder(d["neck_radius_mm"], 24, (0, 0, 6))
-    housing = ring.fuse(neck).cut(race).cut(_cylinder(3, 10, (0, 0, 20)))
+    neck = _cylinder(d["neck_radius_mm"], 19, (0, 0, 6))
+    foot = _cylinder(6.5, 5, (0, 0, 25))
+    housing = ring.fuse(neck).fuse(foot).cut(race).cut(_cylinder(3, 12, (0, 0, 18)))
+    # All azimuths, assumed radial/height extent: no supplier upper bound is
+    # available, so this keepout can never verify actual nipple clearance.
+    nipple = _cylinder(d['nipple_keepout_radius_mm'],15,(0,0,10)).cut(_cylinder(5.5,15,(0,0,10)))
     # Axially open annular saddle, radial support around OD, no pin support ear.
     saddle = _cylinder(d["bracket_outer_radius_mm"], width, (0, -width / 2, 0), (0, 1, 0))
     saddle = saddle.cut(_cylinder(radius, width + 2, (0, -width / 2 - 1, 0), (0, 1, 0)))
@@ -81,34 +86,39 @@ def local_review_geometry(inputs: PocketInputs, axis_index: int = 1) -> dict[str
     base = mount_orientation(_box(d["base_length_mm"], d["base_width_mm"], 9, (0, 0, 34.5)))
     bracket = saddle.fuse(rails).fuse(base)
     # Open neck insertion channel; housing slides from +local Y before M6.
-    bracket = bracket.cut(_box(10, 60, 24, (0, 25, 18)))
+    bracket = bracket.cut(_box(18.5, 70, 24, (0, 25, 18)))
     bracket = bracket.cut(_cylinder(3.3, 9, (0, 0, 30)))
     bracket = bracket.cut(_cylinder(5.5, 6, (0, 0, 33)))
     for x in (-d["mount_pitch_mm"] / 2, d["mount_pitch_mm"] / 2):
         bracket = bracket.cut(mount_orientation(_cylinder(d["mount_hole_mm"] / 2, 12, (x, 0, 29))))
-    shoulder_start = -(20 + 1.5 + inputs.phs_ball_width_mm / 2)
+    shoulder_start = -(4 + 20 + 1.5 + inputs.phs_ball_width_mm / 2)
     shoulder_end = shoulder_start + d["nominal_shoulder_length_mm"]
     ball_end = inputs.phs_ball_width_mm / 2
-    pin = _cylinder(3, 35, (0, shoulder_start, 0), (0, 1, 0))
-    head = _cylinder(5, 6, (0, shoulder_start - 6, 0), (0, 1, 0))
-    thread = _cylinder(2.5, 10, (0, shoulder_end, 0), (0, 1, 0))
+    pin = _cylinder(3, 35, (0, shoulder_start, 0), (0, 1, 0)).fuse(
+        _cylinder(2.5,.7,(0,shoulder_end,0),(0,1,0))).fuse(
+        _cylinder(3,1.3,(0,shoulder_end+.7,0),(0,1,0)))
+    head = _cylinder(4.5, 1.5, (0, shoulder_start - 1.5, 0), (0, 1, 0))
     def washer(start, length, radius=5):
         return _cylinder(radius, length, (0, start, 0), (0, 1, 0)).cut(
             _cylinder(3.1, length, (0, start, 0), (0, 1, 0)))
     geometry = {
         "bracket": bracket.clean(), "housing": housing, "ball": ball,
+        "grease_nipple_unknown_envelope": nipple,
         "ball_window": cq.Solid.makeSphere(d["ball_keepout_radius_mm"], angleDegrees1=-90),
-        "eye_envelope": _cylinder(10, 20, (0, shoulder_start, 0), (0, 1, 0)).cut(
-            _cylinder(3, 20, (0, shoulder_start, 0), (0, 1, 0))),
-        "pin_shoulder": pin, "pin_head": head, "pin_m5_thread_envelope": thread,
-        "shim": washer(-ball_end - 1.5, 1.5),
-        "spacer": washer(ball_end, shoulder_end - ball_end),
-        "m5_nut_envelope": _cylinder(4.7, 5, (0, shoulder_end, 0), (0, 1, 0)).cut(thread),
-        "m6_retainer_envelope": _cylinder(3, 13, (0, 0, 20)).fuse(_cylinder(5, 6, (0, 0, 33))),
+        "eye_envelope": _cylinder(10, 20, (0, shoulder_start+4, 0), (0, 1, 0)).cut(
+            _cylinder(3, 20, (0, shoulder_start+4, 0), (0, 1, 0))),
+        "pin_shoulder": pin, "pin_head": head,
+        # Legacy key retained: now one stock WSSB10-6-1.5 ball-side washer.
+        "shim": washer(-ball_end-1.5,1.5,5),
+        "spacer": washer(shoulder_start,4),
+        # Simplified installed C-shaped E5 envelope, not a supplier E-lug model.
+        "e5_ring_envelope": _cylinder(5.5,.6,(0,shoulder_end,0),(0,1,0)).cut(
+            _cylinder(2.5,.6,(0,shoulder_end,0),(0,1,0))).cut(_box(8,1,5.2,(4,shoulder_end+.3,0))),
+        "m6_retainer_envelope": _cylinder(3, 12, (0, 0, 21)).fuse(_cylinder(5, 6, (0, 0, 33))),
         "pin_transition_unknown_keepout": _cylinder(4, 1, (0, shoulder_start, 0), (0, 1, 0)).fuse(
             _cylinder(4, 1, (0, shoulder_end - 1, 0), (0, 1, 0))),
         "m6_tool_envelope": _cylinder(3, 40, (0, 0, 39)),
-        "m5_tool_envelope": _cylinder(9, 35, (0, shoulder_end + 5, 0), (0, 1, 0)),
+        "ring_tool_envelope": _box(24,6,12,(-18,shoulder_end+.3,0)),
     }
     for index, x in enumerate((-22, 22), 1):
         geometry[f"mount_bolt_{index}_envelope"] = mount_orientation(_cylinder(3, 16.5, (x, 0, 30)).fuse(_cylinder(5, 6, (x, 0, 24))))
@@ -116,6 +126,24 @@ def local_review_geometry(inputs: PocketInputs, axis_index: int = 1) -> dict[str
         # Straight hex-driver shaft only; handle sweep is an unresolved check.
         geometry[f"mount_tool_{index}_envelope"] = mount_orientation(_cylinder(3, 40, (x, 0, -16)))
     return geometry
+
+
+def hardware_review(inputs):
+    return dict(pin_candidate='HCDGH6-35',washer_candidate='WSSB10-6-4',shim_candidate='1 x WSSB10-6-1.5 per axis; legacy shim key',
+        pin_transition_coverage=dict(status='EXCLUDED/UNKNOWN',exact_geometry_checked=False,
+            note='pin_transition_unknown_keepout is diagnostic local geometry only, absent from exported parts, pose and assembly collision lists; no clearance or actual relief/contact/strength proof'),
+        pin_stack=dict(nominal_groove_gap_mm=.5,known_tolerance_min_gap_mm=.20,known_tolerance_max_gap_mm=.82,
+            fit_status='UNKNOWN',eye_width_tolerance_mm=None,ring_axial_capacity_n=None,
+            groove_nominal_diameter_mm=5.,groove_diameter_limits_mm=[5.,5.075],
+            groove_nominal_width_mm=.7,groove_width_limits_mm=[.7,.8],end_allowance_mm=2.,
+            note='Head -> WSSB4 -> eye20 -> WSSB1.5 -> ball9 -> E5 groove; known tolerance limits exclude unknown eye width/relief; simplified ring contour/tool cannot verify installation'),
+        m6_retainer=dict(candidate='M6x12 socket head, exact SKU/proof unselected',nominal_engagement_mm=9.,
+            length_only_engagement_bounds_mm=[8.65,9.35],nominal_blind_bottom_clearance_mm=3.,
+            nominal_head_recess_clearance_mm=0.,status='UNKNOWN/HOLD',
+            note='12mm blind thread; full-thread length, tolerances, preload/locking and strength unverified. Preassemble before frame; removal required for later head access'),
+        grease_nipple=dict(supplier_bound_verified=False,status='UNKNOWN/HOLD',
+            assumed_keepout='orientation-independent annulus radius9, z10..25; NOT verified supplier protrusion bound or clearance proof'),
+        purchase_release=False,fabrication_release=False,control_power_test_release=False,motor_power_release=False)
 
 
 def _basis(axis_index):
@@ -154,8 +182,8 @@ def phs_components(axis_index: int, pose: Pose) -> dict[str, cq.Shape]:
 
 def _joint_components(axis, pose, inputs):
     geo = local_review_geometry(inputs, axis)
-    keys = ("housing", "ball", "pin_shoulder", "pin_head", "pin_m5_thread_envelope", "shim", "spacer", "m5_nut_envelope", "m6_retainer_envelope")
-    return {key: _place(geo[key], axis, pose, key in ("housing", "m6_retainer_envelope")) for key in keys}
+    keys = ("housing", "ball", "pin_shoulder", "pin_head", "shim", "spacer", "e5_ring_envelope", "m6_retainer_envelope", "grease_nipple_unknown_envelope")
+    return {key: _place(geo[key], axis, pose, key in ("housing", "m6_retainer_envelope", "grease_nipple_unknown_envelope")) for key in keys}
 
 
 def revf_components_for_pose(pose: Pose, inputs: PocketInputs) -> list[Part]:
@@ -229,7 +257,7 @@ def _axis_assembly_path_review(inputs, axis):
     frame_basis = tuple(tuple(sum(rotation[i][k] * basis[k][j] for k in range(3)) for j in range(3)) for i in range(3))
     inverse = tuple(zip(*frame_basis))
     pin_in_frame = tuple(tuple(sum(inverse[i][k] * basis[k][j] for k in range(3)) for j in range(3)) for i in range(3))
-    fixed_pin_keys = ("ball", "pin_shoulder", "pin_head", "pin_m5_thread_envelope", "shim", "spacer", "m5_nut_envelope", "m5_tool_envelope")
+    fixed_pin_keys = ("ball", "pin_shoulder", "pin_head", "shim", "spacer", "e5_ring_envelope", "ring_tool_envelope")
     for key in fixed_pin_keys:
         g[key] = _rigid_transform(g[key], pin_in_frame, (0, 0, 0))
     positive_pin = tuple(pin_in_frame[i][1] for i in range(3))
@@ -266,12 +294,12 @@ def _axis_assembly_path_review(inputs, axis):
                    "paths": nut_paths, "samples": 18, "obstacles": ["isolated_crossmember"],
                    **_aggregate_paths(nut_paths), "route": "+FRAME_X_END_OF_SEPARATE_CROSSMEMBER",
                    "prerequisite": "Insert and position both nuts before side/corner members close ends; retention during frame assembly unverified"})
-    check("housing_insertion", ["housing", "ball"], (0, 1, 0), ["bracket"])
+    check("housing_insertion", ["housing", "ball", "grease_nipple_unknown_envelope"], (0, 1, 0), ["bracket"])
     check("m6_retention", ["m6_retainer_envelope"], (0, 0, 1), ["bracket", "housing"])
     tool_paths = [check("tool_access", ["m6_tool_envelope"], (0, 0, 1), ["bracket", "housing", "ball"])]
     stages.pop()
     frame_obstacles = ["upper_frame", "upper_brackets", "tnut_1_UNVERIFIED_SLOT", "tnut_2_UNVERIFIED_SLOT"]
-    check("bracket_approach", ["bracket", "housing", "ball", "m6_retainer_envelope"], (0, 0, -1),
+    check("bracket_approach", ["bracket", "housing", "ball", "m6_retainer_envelope", "grease_nipple_unknown_envelope"], (0, 0, -1),
           frame_obstacles, phase="FRAME_POSITIONING_BEFORE_EYE")
     check("profile_attachment", ["mount_bolt_1_envelope", "mount_bolt_2_envelope"], (0, 0, -1),
           ["bracket", "housing", "m6_retainer_envelope"] + frame_obstacles, phase="FRAME_ATTACHED_BEFORE_EYE")
@@ -279,15 +307,15 @@ def _axis_assembly_path_review(inputs, axis):
         tool_paths.append(check("tool_access", [key], (0, 0, -1), ["bracket", "housing", "ball"] + frame_obstacles,
                                 phase="FRAME_ATTACHED_BEFORE_EYE"))
         stages.pop()
+    check("head_washer_preload", ["spacer"], positive_pin, ["pin_shoulder", "pin_head"], phase="BENCH_BEFORE_PIN_INSERTION")
     for stage, keys, direction, obstacles in (
         ("shim_insertion", ["shim"], negative_pin, ["bracket", "housing", "ball"]),
         ("eye_approach", ["actual_supplier_moving_part"], negative_pin, ["bracket", "housing", "ball", "shim"]),
-        ("pin_insertion", ["pin_shoulder", "pin_head", "pin_m5_thread_envelope"], negative_pin, ["bracket", "housing", "ball", "shim", "actual_supplier_moving_part"]),
-        ("spacer_insertion", ["spacer"], positive_pin, ["bracket", "housing", "ball", "pin_shoulder", "pin_m5_thread_envelope"]),
-        ("m5_nut", ["m5_nut_envelope"], positive_pin, ["bracket", "housing", "ball", "spacer", "pin_m5_thread_envelope"]),
+        ("pin_insertion", ["pin_shoulder", "pin_head", "spacer"], negative_pin, ["bracket", "housing", "ball", "shim", "actual_supplier_moving_part"]),
+        ("e5_ring_installation", ["e5_ring_envelope"], tuple(-pin_in_frame[i][0] for i in range(3)), ["bracket", "housing", "ball", "spacer", "pin_shoulder", "actual_supplier_moving_part"]),
     ):
         check(stage, keys, direction, obstacles + frame_obstacles + ["mount_bolt_1_envelope", "mount_bolt_2_envelope"], phase="AFTER_FRAME_ATTACHMENT")
-    tool_paths.append(check("tool_access", ["m5_tool_envelope"], positive_pin,
+    tool_paths.append(check("tool_access", ["ring_tool_envelope"], tuple(-pin_in_frame[i][0] for i in range(3)),
                             ["bracket", "housing", "ball", "actual_supplier_moving_part"] + frame_obstacles,
                             phase="AFTER_FRAME_ATTACHMENT"))
     stages.pop()
@@ -301,12 +329,15 @@ def assembly_path_review(inputs: PocketInputs) -> dict:
     """Three staged, sampled paths. Not assembly approval or a swept proof."""
     return {"review_only": True, "assembly_verified": False, "fabrication_release": False, "purchase_release": False,
             "control_power_test_release": False, "motor_power_release": False,
-            "nominal_grip_mm": 20 + inputs.phs_ball_width_mm + 1.5,
+            "nominal_grip_mm": 4 + 20 + inputs.phs_ball_width_mm + 1.5,
+            "nominal_grip_definition": "HCDGH head-under face to end of head-washer/eye/ball-side-washer/ball stack, excluding 0.5mm groove gap",
+            "nominal_eye_shim_ball_stack_mm": 20 + inputs.phs_ball_width_mm + 1.5,
             "continuous_shoulder_contact_length_mm": inputs.shoulder_contact_length_mm,
+            "hardware_review": hardware_review(inputs),
             "stages": [row for axis in (1, 2, 3) for row in _axis_assembly_path_review(inputs, axis)],
             "slot_review": {"status": "UNKNOWN/HOLD", "historical_model_depth_mm": 6.9,
                             "candidate_insertion_mm": 7.5, "model_floor_overlap_mm": 0.6,
                             "actual_dnf3030_interference_proven": False,
                             "note": "Historical 2.5 mm lip plus 4.4 mm cavity differs from prior 10.5 mm floor source. Delivered section and clamp capacity unverified; retained model unchanged."},
-            "intentional_contacts": ["housing OD / annular saddle", "neck end / bracket seat", "M6 thread / housing female thread", "ball spherical race / housing", "eye-shim-ball-spacer axial stack", "bolt head / seat", "bracket mount face / profile", "T-nut / profile slot lips"],
-            "unresolved": list(inputs.unresolved_evidence) + ["Internal ball/race and neck are assumed envelopes; verify exact supplier geometry", "Unknown head fillet and shoulder transition represented by separate keepout, NOT cleared", "Pin head seating on cylindrical vendor eye needs actual contact geometry", "All-pose actual-eye/frame and cross-axis collisions deferred to full audit", "Actual 3030 slot, nut positioning before frame closure and tool rotations unverified", "Sampled paths are not continuous sweeps; lower R final installation unverified", "Axis-specific candidates do not establish one orderable bracket SKU", "Housing fit/clearance and M6 lock/preload/capture under reversing +/-750 N unverified"]}
+            "intentional_contacts": ["housing OD / annular saddle", "foot end / bracket seat", "M6 thread / housing female thread", "ball spherical race / housing", "head-washer-eye-ball-side-washer-ball axial stack", "E5 ring / pin groove (unverified contour and capacity)", "bolt head / seat", "bracket mount face / profile", "T-nut / profile slot lips"],
+            "unresolved": list(inputs.unresolved_evidence) + ["Nipple all-azimuth envelope has assumed extent, not verified supplier bound; nominal clearance never verifies actual nipple/grease-tool access", "Internal race/neck transition, head relief, ring contour and tool are envelopes, NOT cleared", "Washer seating on cylindrical vendor eye needs actual contact geometry", "All-pose actual-eye/frame and cross-axis collisions deferred to full audit", "Actual 3030 slot, nut positioning before frame closure and tool rotations unverified", "Sampled paths are not continuous sweeps; lower R final installation unverified", "Axis-specific candidates do not establish one orderable bracket SKU", "Housing fit/clearance and M6 lock/preload/capture under reversing +/-750 N unverified"]}

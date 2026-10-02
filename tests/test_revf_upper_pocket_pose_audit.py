@@ -12,6 +12,18 @@ from cad.revf_upper_pocket_pose_audit import review_poses, audit_pose, represent
 
 
 class PoseAuditTests(unittest.TestCase):
+    def test_home_divergent_xy_yaw_branch_stays_unknown_without_advancing_seed(self):
+        from unittest.mock import patch
+        from cad import revf_upper_pocket_pose_audit as module
+        targets=module.actuator_pin_lengths(Pose('park',0,0,0))
+        solution=module.solve_pose_from_lengths(targets)
+        for changed in ({'x_mm':solution.x_mm+1},{'yaw_rad':solution.yaw_rad+.1}):
+            with patch.object(module,'alternating_length_path',return_value=(targets,targets)), patch.object(module,'solve_pose_from_lengths',return_value=replace(solution,**changed)) as solve:
+                rows=module.audit_home(load_inputs())
+            self.assertTrue(all(r['status']=='UNKNOWN/HOLD' for r in rows))
+            self.assertTrue(all(r['reason']=='FK solution disagrees with CAD X/Y/yaw branch' for r in rows))
+            self.assertEqual(solve.call_args_list[0].kwargs['seed'],solve.call_args_list[1].kwargs['seed'])
+
     def test_invalid_counts_include_assembly_once_and_refresh_after_followup(self):
         from cad.revf_upper_pocket_pose_audit import refresh_invalid_boolean_counts
         audit={'representatives':[{'invalid_boolean_count':81}],
@@ -46,6 +58,11 @@ class PoseAuditTests(unittest.TestCase):
         rows=audit_home(load_inputs())
         self.assertEqual(len(rows),61)
         for row in rows:
+            self.assertEqual(row['cad_branch_tolerance_mm'],1e-7)
+            self.assertAlmostEqual(row['cad_branch_yaw_radius_mm'],250.)
+            residual=row['cad_branch_residual']
+            self.assertAlmostEqual(residual['yaw_arc_mm'],residual['yaw_rad']*250.)
+            self.assertLess(max(residual[k] for k in ('x_mm','y_mm','yaw_arc_mm')),1e-7)
             self.assertLess(row['command_length_residual_mm'],1e-7)
             self.assertLess(row['hinge_constraint_residual_mm'],1e-7)
             self.assertEqual(row['length_window_policy'],'INTENTIONAL_HOME_205_TO_PARK')

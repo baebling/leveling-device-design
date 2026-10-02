@@ -23,11 +23,15 @@
       "force_n": -750.0,
       "direction": "pull",
       "signed_moment_nmm": -12000.0,
-      "pin_bending_mpa": 580.2704494689254,
-      "pin_shear_mpa": 26.97350917453208,
-      "pin_von_mises_mpa": 582.1481814095398,
-      "conditional_pin_proof_mpa": 940.0,
-      "conditional_pin_ratio": 1.6147091582833828,
+      "pin_bending_mpa": 569.2931741858871,
+      "pin_shear_mpa": 26.63224630488353,
+      "pin_von_mises_mpa": 571.1589514350403,
+      "conditional_pin_proof_mpa": null,
+      "conditional_pin_ratio": null,
+      "required_yield_for_bending_sf_mpa": 853.9397612788307,
+      "required_yield_for_von_mises_sf_mpa": 856.7384271525605,
+      "pin_candidate": "HCDGH6-35; S45C equivalent 40-45HRC, hardness is not a yield guarantee",
+      "ring_load_path": "E5 is axial retention only, not an extra primary actuator-load support",
       "target_static_safety_factor": 1.5,
       "conditional_ratio_is_joint_approval": false,
       "equations": {
@@ -37,22 +41,49 @@
       },
       "model_limits": "N, mm, MPa=N/mm^2. Cantilever pin surrogate; average single shear combined conservatively with outer-fibre bending, not a resolved contact stress field. Kt is not silently set to 1 for approval.",
       "tolerance_screen": {
-        "pin_min_diameter_mm": 5.95,
+        "pin_min_diameter_mm": 5.988,
         "eye_bore_source_bounds_mm": [
           6.0,
           6.4
         ],
-        "diametral_clearance_bounds_mm": [
-          0.04999999999999982,
-          0.4500000000000002
+        "pin_diameter_limits_mm": [
+          5.988,
+          5.996
         ],
+        "delivered_eye_bore_tolerance_mm": null,
+        "conditional_clearance_by_eye_source": [
+          {
+            "eye_source_nominal_mm": 6.0,
+            "diametral_clearance_limits_mm": [
+              0.0039999999999995595,
+              0.011999999999999567
+            ],
+            "delivered_fit_verified": false
+          },
+          {
+            "eye_source_nominal_mm": 6.4,
+            "diametral_clearance_limits_mm": [
+              0.4039999999999999,
+              0.4119999999999999
+            ],
+            "delivered_fit_verified": false
+          }
+        ],
+        "clearance_scope": "Each eye source is a separate fixed nominal, NOT delivered eye tolerance; conditional bounds include both pin g6 limits only",
         "source_bounds_are_delivered_tolerances": false,
         "nominal_offset_mm": 16.0,
         "worst_case_effective_offset_mm": null,
         "nominal_eye_width_mm": 20.0,
         "nominal_ball_width_mm": 9.0,
         "nominal_shim_mm": 1.5,
-        "nominal_grip_mm": 30.5,
+        "nominal_grip_mm": 34.5,
+        "nominal_head_washer_mm": 4.0,
+        "nominal_eye_shim_ball_stack_mm": 30.5,
+        "nominal_groove_gap_mm": 0.5,
+        "ball_side_washer_candidate": "WSSB10-6-1.5, one per axis",
+        "known_tolerance_min_gap_mm": 0.2,
+        "known_tolerance_max_gap_mm": 0.82,
+        "known_gap_excludes_unknown_eye_width": true,
         "continuous_shoulder_contact_length_mm": null,
         "adverse_stack_verified": false,
         "required_bounds": [
@@ -68,7 +99,7 @@
         "pin_transition": {
           "status": "unverified",
           "capacity": null,
-          "reason": "Shoulder/thread fillet Kt, thread root diameter, delivered shoulder proof strength, continuous contact length and preload unknown"
+          "reason": "HCDGH head relief and ring groove Kt, delivered yield strength, continuous contact length and E5 ring axial capacity unknown"
         },
         "eye_reaction": {
           "status": "unverified",
@@ -130,9 +161,11 @@
       ],
       "source_evidence_gaps": [
         "LM4075OE eye bore discrepancy and delivered eye dimensional tolerances",
-        "TRUSCO PHS6 versus BOM THK PHS6 exact delivered order identity",
+        "Current BOM TRUSCO 280-7599/PHS6 delivered static capacity and tolerances unverified; historical THK candidate is not current BOM",
         "PHS6 housing outer diameter/width manufacturing tolerances",
-        "Selected MSB6 order, continuous shoulder contact length and fillet geometry",
+        "HCDGH6-35 head relief, guaranteed yield strength and supplied E5 ring axial capacity; eye width tolerance and worst-case stack fit unknown",
+        "TRUSCO stem/nipple 3D geometry and protrusion bounds unverified; all-azimuth assumed envelope cannot verify actual clearance",
+        "M6x12 retainer exact SKU, complete thread engagement, tolerances, blind-bottom clearance and flush head margin unverified",
         "Delivered DNF3030 slot section and tolerances",
         "Selected T-nut manufacturer drawing, tolerances and slot compatibility"
       ],
@@ -155,11 +188,15 @@
       "force_n": 750.0,
       "direction": "push",
       "signed_moment_nmm": 12000.0,
-      "pin_bending_mpa": 580.2704494689254,
-      "pin_shear_mpa": 26.97350917453208,
-      "pin_von_mises_mpa": 582.1481814095398,
-      "conditional_pin_proof_mpa": 940.0,
-      "conditional_pin_ratio": 1.6147091582833828,
+      "pin_bending_mpa": 569.2931741858871,
+      "pin_shear_mpa": 26.63224630488353,
+      "pin_von_mises_mpa": 571.1589514350403,
+      "conditional_pin_proof_mpa": null,
+      "conditional_pin_ratio": null,
+      "required_yield_for_bending_sf_mpa": 853.9397612788307,
+      "required_yield_for_von_mises_sf_mpa": 856.7384271525605,
+      "pin_candidate": "HCDGH6-35; S45C equivalent 40-45HRC, hardness is not a yield guarantee",
+      "ring_load_path": "E5 is axial retention only, not an extra primary actuator-load support",
       "target_static_safety_factor": 1.5,
       "conditional_ratio_is_joint_approval": false,
       "equations": {
@@ -169,22 +206,49 @@
       },
       "model_limits": "N, mm, MPa=N/mm^2. Cantilever pin surrogate; average single shear combined conservatively with outer-fibre bending, not a resolved contact stress field. Kt is not silently set to 1 for approval.",
       "tolerance_screen": {
-        "pin_min_diameter_mm": 5.95,
+        "pin_min_diameter_mm": 5.988,
         "eye_bore_source_bounds_mm": [
           6.0,
           6.4
         ],
-        "diametral_clearance_bounds_mm": [
-          0.04999999999999982,
-          0.4500000000000002
+        "pin_diameter_limits_mm": [
+          5.988,
+          5.996
         ],
+        "delivered_eye_bore_tolerance_mm": null,
+        "conditional_clearance_by_eye_source": [
+          {
+            "eye_source_nominal_mm": 6.0,
+            "diametral_clearance_limits_mm": [
+              0.0039999999999995595,
+              0.011999999999999567
+            ],
+            "delivered_fit_verified": false
+          },
+          {
+            "eye_source_nominal_mm": 6.4,
+            "diametral_clearance_limits_mm": [
+              0.4039999999999999,
+              0.4119999999999999
+            ],
+            "delivered_fit_verified": false
+          }
+        ],
+        "clearance_scope": "Each eye source is a separate fixed nominal, NOT delivered eye tolerance; conditional bounds include both pin g6 limits only",
         "source_bounds_are_delivered_tolerances": false,
         "nominal_offset_mm": 16.0,
         "worst_case_effective_offset_mm": null,
         "nominal_eye_width_mm": 20.0,
         "nominal_ball_width_mm": 9.0,
         "nominal_shim_mm": 1.5,
-        "nominal_grip_mm": 30.5,
+        "nominal_grip_mm": 34.5,
+        "nominal_head_washer_mm": 4.0,
+        "nominal_eye_shim_ball_stack_mm": 30.5,
+        "nominal_groove_gap_mm": 0.5,
+        "ball_side_washer_candidate": "WSSB10-6-1.5, one per axis",
+        "known_tolerance_min_gap_mm": 0.2,
+        "known_tolerance_max_gap_mm": 0.82,
+        "known_gap_excludes_unknown_eye_width": true,
         "continuous_shoulder_contact_length_mm": null,
         "adverse_stack_verified": false,
         "required_bounds": [
@@ -200,7 +264,7 @@
         "pin_transition": {
           "status": "unverified",
           "capacity": null,
-          "reason": "Shoulder/thread fillet Kt, thread root diameter, delivered shoulder proof strength, continuous contact length and preload unknown"
+          "reason": "HCDGH head relief and ring groove Kt, delivered yield strength, continuous contact length and E5 ring axial capacity unknown"
         },
         "eye_reaction": {
           "status": "unverified",
@@ -262,9 +326,11 @@
       ],
       "source_evidence_gaps": [
         "LM4075OE eye bore discrepancy and delivered eye dimensional tolerances",
-        "TRUSCO PHS6 versus BOM THK PHS6 exact delivered order identity",
+        "Current BOM TRUSCO 280-7599/PHS6 delivered static capacity and tolerances unverified; historical THK candidate is not current BOM",
         "PHS6 housing outer diameter/width manufacturing tolerances",
-        "Selected MSB6 order, continuous shoulder contact length and fillet geometry",
+        "HCDGH6-35 head relief, guaranteed yield strength and supplied E5 ring axial capacity; eye width tolerance and worst-case stack fit unknown",
+        "TRUSCO stem/nipple 3D geometry and protrusion bounds unverified; all-azimuth assumed envelope cannot verify actual clearance",
+        "M6x12 retainer exact SKU, complete thread engagement, tolerances, blind-bottom clearance and flush head margin unverified",
         "Delivered DNF3030 slot section and tolerances",
         "Selected T-nut manufacturer drawing, tolerances and slot compatibility"
       ],

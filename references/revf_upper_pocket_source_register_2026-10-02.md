@@ -30,7 +30,7 @@ are not substituted for missing verified values in the executable interface.
 
 ## Downstream contract and uncertainty
 
-`load_inputs()` returns 3 brackets, eye bounds `(6.0, 6.4)`, minimum pin 5.95,
+`load_inputs()` returns 3 brackets, eye bounds `(6.0, 6.4)`, minimum HCDGH pin 5.988,
 e=16, housing Ø20×6.75 and ball width 9. Unknown continuous shoulder length and
 verified profile slot width are `None`. `source_complete()` requires positive
 finite dimensions, ordered eye bounds, three brackets, verified profile section,
@@ -40,7 +40,8 @@ Missing tolerances and order identity must stay in that list until independently
 reviewed evidence resolves them.
 
 The eye disagreement changes diametral clearance and contact distribution; with
-minimum pin 5.95 the nominal source-boundary clearances are 0.05 and 0.45. These
+pin diameter 5.988–5.996, conditional diametral clearances are 0.004–0.012
+for the STEP Ø6.0 eye and 0.404–0.412 for the sales Ø6.4 eye. These
 are screening values, **not delivered worst-case clearances** because eye
 tolerances are UNKNOWN. Any resulting pocket/contact differences permit only
 both-boundary screening. Stop fabrication-dimension freezing.
@@ -56,3 +57,45 @@ eye reactions, profile lip and T-nut clamp path must be resolved separately.
 `PURCHASE_RELEASE = FABRICATION_RELEASE = CONTROL_POWER_TEST_RELEASE =
 MOTOR_POWER_RELEASE = FALSE`. Completing sources cannot turn any release on.
 No certification, field safety, fatigue or suitability for people is claimed.
+
+## Task 9/10 candidate correction (2026-10-02)
+
+The MSB row above is historical and is not the current pin geometry or strength
+source. The official MSB diameter6 shoulder has M4x0.7 end thread, not M5;
+the former M5 envelope is withdrawn, not treated as an exact stock part.
+
+[Official MISUMI hinge-pin drawing](https://kr.misumi-ec.com/pdf/fa/2010/p1_0821.pdf)
+was downloaded, rendered and inspected: HCDGH6-35 diameter6 g6 is
+5.988–5.996; head diameter9 x1.5; L35(+0/-0.1) to groove; groove diameter
+5(+0.075/0), width0.7(+0.1/0), end allowance2; included E-ring No.5.
+[Exact candidate](https://kr.misumi-ec.com/vona2/detail/110300095750/?HissuCode=HCDGH6-35)
+is S45C, hardness40–45HRC, not a guaranteed yield/proof value. Head relief,
+groove stress and axial ring capacity remain UNKNOWN. A different supplier's
+JE-5 capacity cannot verify the included MISUMI ring.
+
+The axial stack below the head is
+[WSSB10-6-4](https://kr.misumi-ec.com/vona2/detail/110302677010/?HissuCode=WSSB10-6-4)
+washer4 (OD9.8–10, ID6.1–6.3, thickness3.9–4.1;
+[official washer tolerance drawing](https://jp.misumi-ec.com/pdf/fa/2018/p2_145_001_202106.pdf)
+independently checked by controller), eye20, one
+[WSSB10-6-1.5](https://kr.misumi-ec.com/vona2/detail/110302677010/?HissuCode=WSSB10-6-1.5)
+ball-side washer OD10, ID6 series, thickness1.5±0.1, ball9: nominal34.5 and
+groove gap0.5. Controller verified the exact Korean catalog model2026-10-02;
+no order/release follows. This replaces the initial three OD12 CIMR0.5 shims
+whose conservative neck intersection was recorded in the preserved first run.
+Known tolerance gap0.20–0.82 excludes UNKNOWN delivered eye width and relief. Simplified
+ring/tool geometry does not verify ring installation, retention load or fit.
+
+The TRUSCO drawing also shows ball sphere diameter12.7, neck diameter10/11
+in different views, diameter13 x5 foot, side grease nipple and blind M6 depth12.
+The model conservatively uses neck11 and opens the +localY channel for the foot.
+Nipple direction/extent is not dimensioned sufficiently for a verified 3D bound:
+the assumed all-azimuth radius9, Z10..25 keepout is explicitly UNKNOWN/HOLD,
+even when nominal samples clear. It is not asserted to enclose the delivered part.
+
+M6x12 socket-head diameter10 x6 is an unselected exact-SKU candidate. Nominal
+web3 gives engagement9 and blind-bottom clearance3. Length-only11.65–12.35
+screen gives engagement8.65–9.35, not a complete tolerance stack. Head/recess6
+has zero nominal flush margin. Actual thread, bottoming, recess tolerances,
+preload/locking and strength remain UNKNOWN/HOLD. Retainer head access requires
+bench preassembly before the upper profile covers it. No hardware is released.

@@ -77,7 +77,7 @@ def _motion(part, pose):
     if part.group in ('upper_frame','upper_brackets'):
         return np.array(rotation),np.array(translation)
     if part.group in ('upper_pockets','upper_joints','upper_fasteners'):
-        follows=part.group!='upper_joints' or part.name.endswith(('housing','m6_retainer_envelope'))
+        follows=part.group!='upper_joints' or part.name.endswith(('housing','m6_retainer_envelope','grease_nipple_unknown_envelope'))
         return np.array(rotation) if follows else np.eye(3),np.array(joint_reference(axis,pose)['ball_center'])
     return np.eye(3),np.zeros(3)
 
@@ -90,8 +90,8 @@ def _exemption(a,b):
     names=(a.name,b.name)
     if same:
         keys=tuple(n.split('_REVF_')[-1] for n in names)
-        contact={frozenset(p) for p in [('housing','ball'),('housing','m6_retainer_envelope'),('pin_shoulder','ball'),('pin_shoulder','shim'),('pin_shoulder','spacer'),('pin_m5_thread_envelope','m5_nut_envelope')]}
-        if frozenset(keys) in contact: return 'nominal bearing/thread/stack interface'
+        contact={frozenset(p) for p in [('housing','ball'),('housing','m6_retainer_envelope'),('pin_shoulder','ball'),('pin_shoulder','shim'),('pin_shoulder','spacer'),('pin_shoulder','e5_ring_envelope')]}
+        if frozenset(keys) in contact: return 'nominal bearing/retention/stack interface'
         if any('POCKET_REVIEW' in n for n in names) and any(n.endswith('housing') for n in names): return 'housing saddle interface'
     return None
 
@@ -256,6 +256,14 @@ def audit_home(inputs):
         if not solution.converged or not np.isfinite(solution.residual_mm) or solution.residual_mm>1e-7:
             home.append(dict(unknown,reason='forward closure failed'));continue
         pose=Pose(f'home_{index}',solution.lift_mm,solution.pitch_deg,solution.roll_deg)
+        _,_,branch=platform_transform(pose)
+        residuals={k:abs(getattr(solution,k)-branch[k]) for k in ('x_mm','y_mm','yaw_rad')}
+        residuals['yaw_rad']=abs((solution.yaw_rad-branch['yaw_rad']+np.pi)%(2*np.pi)-np.pi)
+        radius=max(float(np.linalg.norm(s)) for s in revd_data.upper_support_points())
+        residuals['yaw_arc_mm']=residuals['yaw_rad']*radius
+        branch_record=dict(cad_branch_residual=residuals,cad_branch_tolerance_mm=1e-7,cad_branch_yaw_radius_mm=radius)
+        if any(not np.isfinite(v) for v in residuals.values()) or max(residuals['x_mm'],residuals['y_mm'],residuals['yaw_arc_mm'])>1e-7:
+            home.append(dict(unknown,reason='FK solution disagrees with CAD X/Y/yaw branch',**branch_record));continue
         actual=actuator_pin_lengths(pose)
         error=max(abs(a-b) for a,b in zip(actual,lengths))
         if not np.isfinite(error) or error>1e-7:
@@ -265,6 +273,7 @@ def audit_home(inputs):
             home.append(dict(unknown,reason='CAD hinge closure failed'));continue
         seed=solution
         row.update(commanded_lengths_mm=list(lengths),command_length_residual_mm=error,
+            **branch_record,
             forward_residual_mm=solution.residual_mm,forward_solution=asdict(solution),
             length_window_policy='INTENTIONAL_HOME_205_TO_PARK',
             home_length_window_pass=all(205.-1e-7<=v<=start+1e-7 for v,start in zip(actual,park)))

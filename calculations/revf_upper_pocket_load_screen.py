@@ -29,8 +29,8 @@ def screen_loads(inputs: PocketInputs, force_n: float) -> dict[str, object]:
 
 PocketInputs supplies dimensions, not capacities. Consequently no caller
 can close the strength gate with this interface's dimensional data alone.
-940 MPa is a CONDITIONAL generic 10.9 proof value from the approved spec,
-not verified certification of the delivered shoulder or threaded section.
+HCDGH hardness is not converted to guaranteed yield strength. Manufacturer
+guaranteed strength and contact/retaining-ring capacity remain unknown.
 """
     dimensions = (inputs.pin_dmin_mm, inputs.eye_offset_mm,
                   inputs.phs_outer_d_mm, inputs.phs_outer_width_mm,
@@ -45,7 +45,7 @@ not verified certification of the delivered shoulder or threaded section.
     equivalent = sqrt(bending ** 2 + 3 * shear ** 2)
     # Separate unresolved load checks: no guessed dimensions, Kt or capacities.
     gaps = {
-        "pin_transition": "Shoulder/thread fillet Kt, thread root diameter, delivered shoulder proof strength, continuous contact length and preload unknown",
+        "pin_transition": "HCDGH head relief and ring groove Kt, delivered yield strength, continuous contact length and E5 ring axial capacity unknown",
         "eye_reaction": "Front eye bore bearing capacity, contact distribution and moment reaction unknown",
         "lower_hinge_reaction": "Lower R bearing spacing/capacities and actuator bending/couple closure unknown",
         "phs_contact": "Exact PHS6 manufacturer static/radial/axial and reversing contact capacities unknown; dynamic rating alone is insufficient",
@@ -67,8 +67,12 @@ not verified certification of the delivered shoulder or threaded section.
         "pin_bending_mpa": bending,
         "pin_shear_mpa": shear,
         "pin_von_mises_mpa": equivalent,
-        "conditional_pin_proof_mpa": 940.0,
-        "conditional_pin_ratio": 940 / equivalent if equivalent else None,
+        "conditional_pin_proof_mpa": None,
+        "conditional_pin_ratio": None,
+        "required_yield_for_bending_sf_mpa": 1.5*bending,
+        "required_yield_for_von_mises_sf_mpa": 1.5*equivalent,
+        "pin_candidate": "HCDGH6-35; S45C equivalent 40-45HRC, hardness is not a yield guarantee",
+        "ring_load_path": "E5 is axial retention only, not an extra primary actuator-load support",
         "target_static_safety_factor": 1.5,
         "conditional_ratio_is_joint_approval": False,
         "equations": {"bending": "32*abs(F*e)/(pi*d_min^3)",
@@ -78,14 +82,28 @@ not verified certification of the delivered shoulder or threaded section.
         "tolerance_screen": {
             "pin_min_diameter_mm": inputs.pin_dmin_mm,
             "eye_bore_source_bounds_mm": list(inputs.eye_hole_bounds_mm),
-            "diametral_clearance_bounds_mm": [h - inputs.pin_dmin_mm for h in inputs.eye_hole_bounds_mm],
+            "pin_diameter_limits_mm": [inputs.pin_dmin_mm, inputs.pin_dmax_mm],
+            "delivered_eye_bore_tolerance_mm": None,
+            "conditional_clearance_by_eye_source": [
+                {"eye_source_nominal_mm": h,
+                 "diametral_clearance_limits_mm": [h-inputs.pin_dmax_mm,h-inputs.pin_dmin_mm],
+                 "delivered_fit_verified": False}
+                for h in inputs.eye_hole_bounds_mm],
+            "clearance_scope": "Each eye source is a separate fixed nominal, NOT delivered eye tolerance; conditional bounds include both pin g6 limits only",
             "source_bounds_are_delivered_tolerances": False,
             "nominal_offset_mm": inputs.eye_offset_mm,
             "worst_case_effective_offset_mm": None,
             "nominal_eye_width_mm": 20.0,
             "nominal_ball_width_mm": inputs.phs_ball_width_mm,
             "nominal_shim_mm": 1.5,
-            "nominal_grip_mm": 20.0 + inputs.phs_ball_width_mm + 1.5,
+            "nominal_grip_mm": 4.0 + 20.0 + inputs.phs_ball_width_mm + 1.5,
+            "nominal_head_washer_mm": 4.0,
+            "nominal_eye_shim_ball_stack_mm": 20.0 + inputs.phs_ball_width_mm + 1.5,
+            "nominal_groove_gap_mm": .5,
+            "ball_side_washer_candidate": "WSSB10-6-1.5, one per axis",
+            "known_tolerance_min_gap_mm": .20,
+            "known_tolerance_max_gap_mm": .82,
+            "known_gap_excludes_unknown_eye_width": True,
             "continuous_shoulder_contact_length_mm": inputs.shoulder_contact_length_mm,
             "adverse_stack_verified": False,
             "required_bounds": ["maximum eye bore", "minimum pin diameter", "maximum eye/ball/shim widths", "minimum continuous shoulder length excluding fillets/thread transition", "pocket machining and alignment tolerances", "maximum effective eccentricity/contact lever arm"],

@@ -10,7 +10,7 @@ class PocketSourceTests(unittest.TestCase):
         inputs = load_inputs()
         self.assertEqual(inputs.bracket_count, 3)
         self.assertEqual(inputs.eye_hole_bounds_mm, (6.0, 6.4))
-        self.assertEqual(inputs.pin_dmin_mm, 5.95)
+        self.assertEqual(inputs.pin_dmin_mm, 5.988)
         self.assertFalse(inputs.purchase_release)
         self.assertFalse(source_complete(inputs))
 

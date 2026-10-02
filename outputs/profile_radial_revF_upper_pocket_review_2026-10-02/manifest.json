@@ -11,12 +11,12 @@
       "label": "REVIEW ONLY / NOT APPROVED FOR FABRICATION",
       "review_only": true,
       "solid_count": 1,
-      "bytes": 75823,
-      "sha256": "b8bab0d1732d6b5d6c82ced48305b7b5dd3931a2f6f555daca73ff5a78415eda",
+      "bytes": 83091,
+      "sha256": "4054ab59adf8f7664a7472289c8ba54f0b9d56fcb2dfc3077907a801fbfacbd3",
       "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
       "mount_pad_rotation_about_local_z_deg": -90.0,
-      "source_volume_mm3": 17924.08862211752,
-      "reimport_volume_mm3": 17924.088622117615,
+      "source_volume_mm3": 17643.00520393396,
+      "reimport_volume_mm3": 17643.005203934,
       "source_bbox_mm": [
         -15.000000000000004,
         15.000000000000004,
@@ -33,8 +33,8 @@
         -14.0,
         39.0
       ],
-      "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
-      "measurement_fingerprint": "463880e60d6720ba284f4295fcf69649711f2f18aa23d02f83e917ae043e03b7",
+      "geometry_sha256": "84dd3d1be1b5fa212aa7f4d5e36d472c6d6e3d85b34a7859a78c59cb8ab623e4",
+      "measurement_fingerprint": "2945909b88f621f8b8f796826d80afdf497556446f3e8d13303f901e5653e60f",
       "purchase_release": false,
       "fabrication_release": false,
       "control_power_test_release": false,
@@ -46,12 +46,12 @@
       "label": "REVIEW ONLY / NOT APPROVED FOR FABRICATION",
       "review_only": true,
       "solid_count": 1,
-      "bytes": 76645,
-      "sha256": "2e85435cc87841510438f363a81a864d07e478bd47ee03bc84434490ea871323",
+      "bytes": 83919,
+      "sha256": "c1faead244b4546430eaac591b2b2542c3c75d400248c6a5aa8bc24f48387838",
       "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
       "mount_pad_rotation_about_local_z_deg": 150.0,
-      "source_volume_mm3": 17924.088622117524,
-      "reimport_volume_mm3": 17924.08862211543,
+      "source_volume_mm3": 17643.00520393396,
+      "reimport_volume_mm3": 17643.00520393182,
       "source_bbox_mm": [
         -33.48076211353316,
         33.48076211353316,
@@ -68,8 +68,8 @@
         -14.0,
         39.0
       ],
-      "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
-      "measurement_fingerprint": "463880e60d6720ba284f4295fcf69649711f2f18aa23d02f83e917ae043e03b7",
+      "geometry_sha256": "84dd3d1be1b5fa212aa7f4d5e36d472c6d6e3d85b34a7859a78c59cb8ab623e4",
+      "measurement_fingerprint": "2945909b88f621f8b8f796826d80afdf497556446f3e8d13303f901e5653e60f",
       "purchase_release": false,
       "fabrication_release": false,
       "control_power_test_release": false,
@@ -81,12 +81,12 @@
       "label": "REVIEW ONLY / NOT APPROVED FOR FABRICATION",
       "review_only": true,
       "solid_count": 1,
-      "bytes": 76562,
-      "sha256": "489f8972538d4e79c447a0b955a2131ca15f1586185d47d1210cfe1bf8fdd96f",
+      "bytes": 83836,
+      "sha256": "a1e0a7cab011f0ac8521cf47f9df77f88f89836a0d017227605a3df0b011867b",
       "coordinate_system": "local PHS ball origin; X radial, Y tangent/pin, Z platform up; mm",
       "mount_pad_rotation_about_local_z_deg": 30.00000000000003,
-      "source_volume_mm3": 17924.08862211752,
-      "reimport_volume_mm3": 17924.088622114803,
+      "source_volume_mm3": 17643.00520393396,
+      "reimport_volume_mm3": 17643.005203931178,
       "source_bbox_mm": [
         -33.48076211353316,
         33.48076211353316,
@@ -103,8 +103,8 @@
         -14.0,
         39.0
       ],
-      "geometry_sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
-      "measurement_fingerprint": "463880e60d6720ba284f4295fcf69649711f2f18aa23d02f83e917ae043e03b7",
+      "geometry_sha256": "84dd3d1be1b5fa212aa7f4d5e36d472c6d6e3d85b34a7859a78c59cb8ab623e4",
+      "measurement_fingerprint": "2945909b88f621f8b8f796826d80afdf497556446f3e8d13303f901e5653e60f",
       "purchase_release": false,
       "fabrication_release": false,
       "control_power_test_release": false,
@@ -114,143 +114,143 @@
   "artifacts": [
     {
       "path": "A1_bracket_local_REVIEW_ONLY.stp",
-      "bytes": 75823,
-      "sha256": "b8bab0d1732d6b5d6c82ced48305b7b5dd3931a2f6f555daca73ff5a78415eda"
+      "bytes": 83091,
+      "sha256": "4054ab59adf8f7664a7472289c8ba54f0b9d56fcb2dfc3077907a801fbfacbd3"
     },
     {
       "path": "A2_bracket_local_REVIEW_ONLY.stp",
-      "bytes": 76645,
-      "sha256": "2e85435cc87841510438f363a81a864d07e478bd47ee03bc84434490ea871323"
+      "bytes": 83919,
+      "sha256": "c1faead244b4546430eaac591b2b2542c3c75d400248c6a5aa8bc24f48387838"
     },
     {
       "path": "A3_bracket_local_REVIEW_ONLY.stp",
-      "bytes": 76562,
-      "sha256": "489f8972538d4e79c447a0b955a2131ca15f1586185d47d1210cfe1bf8fdd96f"
+      "bytes": 83836,
+      "sha256": "a1e0a7cab011f0ac8521cf47f9df77f88f89836a0d017227605a3df0b011867b"
     },
     {
       "path": "audit.json",
-      "bytes": 6691758,
-      "sha256": "0251754546c795b77cba76f17dfc9020094bb275b0426c2a6c294fa695d1c7ad"
+      "bytes": 6565429,
+      "sha256": "2bba92cf350cd4a7c8fba82e601d00cb86b22f4fb5614988bfe5c2a735324fd4"
     },
     {
       "path": "load_screen.json",
-      "bytes": 14078,
-      "sha256": "670683d103354701f2c60ba7c2edff8571f85f6c0b46f8614a2370d3697ec73a"
+      "bytes": 18038,
+      "sha256": "106f870b31fc287e860498c010c7242b6d34689cfe2d3b2717c2021924ed1f4f"
     },
     {
       "path": "neutral.png",
-      "bytes": 81500,
-      "sha256": "73ee7ab593a671c820e59009d0539b9c56cf75c08da5bcb2bff83e9cfb347274"
+      "bytes": 81215,
+      "sha256": "75329dc46a8c80cfd5e87cbefb7b91809afc91d8f27df062bbdc1737850ceef6"
     },
     {
       "path": "neutral.step",
-      "bytes": 11196306,
-      "sha256": "89a2ca235d0df8855de7979d5dc1f727742fe490447fcaf4c733126d56ffb4c6"
+      "bytes": 11319088,
+      "sha256": "afa55b938f0e70ab9501b2cc111df809e4e834ff5653f22e8838688e33da105a"
     },
     {
       "path": "path_states_000000.json.gz",
-      "bytes": 602929,
-      "sha256": "7aea092c29835fdc040d808fc39e4aa139f2dcfcd8681413f345e337648a813f"
+      "bytes": 603345,
+      "sha256": "8bd3a8dca5832bde61c2bab305682ff6e8eac2bed7b0477a77adb8fa380fb6c3"
     },
     {
       "path": "path_states_005000.json.gz",
-      "bytes": 608233,
-      "sha256": "df198215c28274ea2a713013fb753e31f592eaadfd3fa497c896ce41ad9024bd"
+      "bytes": 608109,
+      "sha256": "d94851de368f4f032ab46bbfb54669b216c4e07602bb68d8739e1bdb5b818104"
     },
     {
       "path": "path_states_010000.json.gz",
-      "bytes": 603904,
-      "sha256": "22829cdee189d80866bc581358d72cb526bad0e01ed9605744b5dc32532ef2c6"
+      "bytes": 603580,
+      "sha256": "7bbcb9d8792e065b9ad58ebcf3f9e74f6e83245c0d4464a112611c9cff2b9ac7"
     },
     {
       "path": "path_states_015000.json.gz",
-      "bytes": 615633,
-      "sha256": "4e2ad4953059bf02707cfdc58d818b187c632c29843740f3a99751b755985a15"
+      "bytes": 615697,
+      "sha256": "0b635c60c0fe7d7cae423dd3a22980fa0223083e0ec29f2b9b3fe9aa754fe89f"
     },
     {
       "path": "path_states_020000.json.gz",
-      "bytes": 614470,
-      "sha256": "9e067837dc8399b3a6b5689ff8b750c8796f099f2c83c53fade9ea6657a9d753"
+      "bytes": 614698,
+      "sha256": "0a891e253fe280b6346f60e3d12cbc505a5c848ea0092ca6a64cb068145edbc5"
     },
     {
       "path": "path_states_025000.json.gz",
-      "bytes": 615390,
-      "sha256": "be4a73f6aa46e9c4f1f732fbb40822439b99c5fb1e3f275470bf23386135944b"
+      "bytes": 615281,
+      "sha256": "33ad96bb26b83d836a8ce652079f923a33f13864f4d41dbbd5fca8a489b193c3"
     },
     {
       "path": "path_states_030000.json.gz",
-      "bytes": 606725,
-      "sha256": "b25154393d9e42582764be42235975c6d90558952102215997052a92158f0b68"
+      "bytes": 606640,
+      "sha256": "a60868573d6ba747b43cb902ec73a772069b00364e47ba71385ebbfa684a2fc8"
     },
     {
       "path": "path_states_035000.json.gz",
-      "bytes": 611079,
-      "sha256": "2f2c9b51449be11ad716800ad005f3c3e71656c21587fe96de5bc59939830292"
+      "bytes": 610557,
+      "sha256": "e59348244be415c89732f4068efaa1e1b6eda25df2afb229a0563734b71e39a9"
     },
     {
       "path": "path_states_040000.json.gz",
-      "bytes": 615333,
-      "sha256": "7c576ff8f6ecaae2cbb72bfd536d2bbc4b02ca6e5302a301b101a54f873cf9d6"
+      "bytes": 615191,
+      "sha256": "e8c52f7775e7d75ff63ac00cab47585db163a9c2dc2fada0e81ea9db4f72ee1b"
     },
     {
       "path": "path_states_045000.json.gz",
-      "bytes": 596583,
-      "sha256": "e784dcd3ee7b62643eb98d79b9f68809c1966a3217d6b8900dc379ebb2d87f1b"
+      "bytes": 596577,
+      "sha256": "4e56c3d0d8e337c045c145b1b36a501739f3443efee2f1ad0c81531411497177"
     },
     {
       "path": "path_states_050000.json.gz",
-      "bytes": 514402,
-      "sha256": "6d4fa2b665706c972bf64cd6c66e74070f1e6319b93a306c45976ecfcdba24c3"
+      "bytes": 513849,
+      "sha256": "4a2aa69531df8c9ad7d58aeb2c98abe730c6c6065db8049d70d290fe634f2d17"
     },
     {
       "path": "path_states_055000.json.gz",
-      "bytes": 505278,
-      "sha256": "946f6439e8476994842fecc0b47f8c54ba038efdbb33a794bd22cef7a9673050"
+      "bytes": 504930,
+      "sha256": "121c7c99ca6c20ddf35ae4f0cfa016b87eeb5376acaedc67bd2bfb7bdfadfdbf"
     },
     {
       "path": "path_states_060000.json.gz",
-      "bytes": 501204,
-      "sha256": "bfedaa6cdc319536bf5b54b5f56853c7a052abc75796298f51a29156e2499a26"
+      "bytes": 501114,
+      "sha256": "a2fd4bb223c99881bc03065f204adddba7b216a7c0deb249dbd51381ef1617c4"
     },
     {
       "path": "path_states_065000.json.gz",
-      "bytes": 424935,
-      "sha256": "2d9d2f3f180d3ace418f8e3a6d268b6d39b056e5d256a6282386978409d0f490"
+      "bytes": 424922,
+      "sha256": "a107559d1a3326cefc7014a215d7e3b46ca260d915a64d8cd69d34e9ef13e355"
     },
     {
       "path": "raised.png",
-      "bytes": 83190,
-      "sha256": "f4c4cb3ba90106f3b82f32bead7e72e6e78136ef617774df58b93fd43c879aaa"
+      "bytes": 82907,
+      "sha256": "0286b52b1a6f6a6d83d198b5aca5f1b9d5d9839e8e3cb47991df5acc43eaeba6"
     },
     {
       "path": "raised.step",
-      "bytes": 11198638,
-      "sha256": "e52f97680145c380096c7d756768c09279822f5e87d3d6ffab2f68a23db4491d"
+      "bytes": 11321420,
+      "sha256": "95f1c115355cb0c26502ac73c98254f3aea3d74a1093882e9b3cb95fe8425eca"
     },
     {
       "path": "README.md",
-      "bytes": 6104,
-      "sha256": "6681e405a6bbb822e3e5b970f19cc712309d65ee83326fce85100de1c91ad112"
+      "bytes": 9191,
+      "sha256": "43402e8a169a55db93e998c6acfa51199e638284818f79319da4a666b724919c"
     },
     {
       "path": "worst_articulation.png",
-      "bytes": 81499,
-      "sha256": "e32251c33f2655aba416df94909e212c10954455bcfbcbfcb5a1bbd58f86a6ff"
+      "bytes": 81318,
+      "sha256": "cb2c41c21d5bde0e4eee20db6ae8d23dc57092f019f27f883fc95beae4d0b11a"
     },
     {
       "path": "worst_articulation.step",
-      "bytes": 11391206,
-      "sha256": "12ebb4f0ddfec9eae6df68335ccd3b0d32df38ac3ffb600b342beebc1c66b4e3"
+      "bytes": 11524391,
+      "sha256": "e93980186403a999c878918e2cd62cff18b3a5e241e435515890fee31b2c3822"
     },
     {
       "path": "worst_interference.png",
-      "bytes": 89530,
-      "sha256": "73ad50552f10bc3266139d6b2756600aa40d45843d0ad0e90073cd859591f885"
+      "bytes": 89164,
+      "sha256": "12b940e693170edee42332d6e4a0febd97429dcdc510fb72a50f912679eed4ba"
     },
     {
       "path": "worst_interference.step",
-      "bytes": 11458814,
-      "sha256": "f07d8d87a12993950f7f4e8d741201129b49df07b5d166cb85eff2d3066f641e"
+      "bytes": 11593628,
+      "sha256": "b9c2b9fd759c3d7930a7f210f5e5981d5ffe025589e42678a47f7efd03e22d06"
     },
     {
       "path": "worst_interference_pair.png",
@@ -260,10 +260,10 @@
     {
       "path": "worst_interference_pair.step",
       "bytes": 982522,
-      "sha256": "e211ac176c554c2ed9602201b6e0500c635ddbe8acc31e8370d86d764b291324"
+      "sha256": "6575130585fa80348fcc2cb195a1ae4fa80bc4cda6fe9d51424915d6b3302c92"
     }
   ],
-  "measurement_id": "ea4ae2a4-98bc-478b-8582-0ab37b7569d0",
+  "measurement_id": "7cfe271e-868f-4985-a2aa-0a65d040f4af",
   "measurement_provenance": {
     "inputs": {
       "bracket_count": 3,
@@ -275,7 +275,8 @@
       "phs_ball_width_mm": 9.0,
       "phs_outer_d_mm": 20.0,
       "phs_outer_width_mm": 6.75,
-      "pin_dmin_mm": 5.95,
+      "pin_dmax_mm": 5.996,
+      "pin_dmin_mm": 5.988,
       "profile_slot_verified": false,
       "profile_slot_width_mm": null,
       "purchase_release": false,
@@ -284,7 +285,9 @@
         "LM4075OE eye bore discrepancy and delivered eye dimensional tolerances",
         "Current BOM TRUSCO 280-7599/PHS6 delivered static capacity and tolerances unverified; historical THK candidate is not current BOM",
         "PHS6 housing outer diameter/width manufacturing tolerances",
-        "Selected MSB6 order, continuous shoulder contact length and fillet geometry",
+        "HCDGH6-35 head relief, guaranteed yield strength and supplied E5 ring axial capacity; eye width tolerance and worst-case stack fit unknown",
+        "TRUSCO stem/nipple 3D geometry and protrusion bounds unverified; all-azimuth assumed envelope cannot verify actual clearance",
+        "M6x12 retainer exact SKU, complete thread engagement, tolerances, blind-bottom clearance and flush head margin unverified",
         "Delivered DNF3030 slot section and tolerances",
         "Selected T-nut manufacturer drawing, tolerances and slot compatibility"
       ]
@@ -296,26 +299,27 @@
     "schema": 1,
     "source_hashes": {
       "cad/profile_radial_reve_actual_vendor.py": "ce33fea355591c9f96731460da428bff86043283d0cc124b089cd10f334534ed",
-      "cad/profile_radial_revf_upper_pocket_review.py": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92",
-      "cad/revf_upper_pocket_inputs.py": "5b570a1c9208460f1eb3e17feb71b510df6388331badf82597d22d975ec50978",
-      "cad/revf_upper_pocket_pose_audit.py": "a0e4d88d5cb3e4fdd789b3211c064295baeda2a8dc0fb5df25f27aac246400bf",
+      "cad/profile_radial_revf_upper_pocket_review.py": "84dd3d1be1b5fa212aa7f4d5e36d472c6d6e3d85b34a7859a78c59cb8ab623e4",
+      "cad/revf_upper_pocket_inputs.py": "f438c5f86caf1f139cc11b45013ab89973dd9562b49babef3bb15fe560c5aca8",
+      "cad/revf_upper_pocket_pose_audit.py": "397e7ae316e125972a0937700f32ae284dd94e0a010b4ac2d009c4a0d3633178",
       "calculations/reve_approved_workspace.py": "3354df3a45af6c3d0835271238d4058228732a5eea95b2d0691b7e7989382911",
       "calculations/reve_command_jog_path_audit.py": "fe60a1b523f59ddd2a49d71de8957c0f6616a6ccae5442a5ab5fc0e380526f20",
       "calculations/reve_forward_kinematics.py": "d668bc1b9c267362729eaae296564a5102cc982916b5d917b53c481e17e65717",
       "calculations/reve_home_path_audit.py": "213f83641f818182726c1a1fce33d630a3f23cde5508a11cf7c55bb10d965b8c",
       "calculations/revf_forward_kinematics.py": "824e840882fc8b299b28a9f0ab4b1de665dd949b25774c98e09ca960b5234dab",
+      "calculations/revf_upper_pocket_load_screen.py": "f147135a27f23ff60fb91acb0807913814c74ce3cee9361964636d8ef8ca14d2",
       "fusion_scripts/ProfileRadialRevD/revd_data.py": "05b42488452ea6ecf4b5ab3485be1ae208ca628828f44fce36327000327af4a0",
       "outputs/profile_radial_revD_fusion_native/groups/lower_adapters.step": "7b8ff37db5afbdf0c85b03ba050cc17711c1a32a3dda5b071fba70bd649d43a4",
       "outputs/profile_radial_revD_fusion_native/groups/lower_brackets.step": "7527df36606661cc6f9a04fdd01cd076d4f14396bfa40d3661d665f121c4bf8e",
       "outputs/profile_radial_revD_fusion_native/groups/lower_frame.step": "bdd8c5561ba71bf26f4bbae812148f41f0cd27b49ba83ec9e06089525d845c37",
       "outputs/profile_radial_revD_fusion_native/groups/upper_brackets.step": "7087cedc1b59a8e4eaea771d406a895de06852c9fe4f4925bf4dbfe4d8cbc71c",
       "outputs/profile_radial_revD_fusion_native/groups/upper_frame.step": "c070c60183379345b35d1ae7d7e946276013f57e595e35c82c43847ab2db8651",
-      "references/revf_upper_pocket_source_register_2026-10-02.md": "d4f531fdcef8cf019048f19c5e4b4ace14daf0579f8b022155df98ffc428db67",
+      "references/revf_upper_pocket_source_register_2026-10-02.md": "90b02fdd5595e2be0a589c28bf6a3a2e9621c22be21f669ca0e6bbe56fcf06a1",
       "references/vendor_cad/LM4075OE-1075-100mm.stp": "1bc86009baddcf6458eeb63fb1fcac349fd80b6b64f9a0ddfa7c4b824df52f3b",
-      "scripts/export_revf_upper_pocket_review.py": "b8512b0aa861f936bdf386683e40d7d056017aad5c091f18b0347aa2ebce34ee",
+      "scripts/export_revf_upper_pocket_review.py": "47897c0358a25a7c70bf9fa6495edc1cd412069d501dfbf78df7372f4e5563e6",
       "scripts/render_lm4075oe_vendor_step.py": "26e4425ad1f3c39f88d10ef92be9116fc2aaaa9a35348e579e8fbb803d1604b9"
     },
-    "fingerprint": "463880e60d6720ba284f4295fcf69649711f2f18aa23d02f83e917ae043e03b7"
+    "fingerprint": "2945909b88f621f8b8f796826d80afdf497556446f3e8d13303f901e5653e60f"
   },
   "source_artifacts": [
     {
@@ -324,15 +328,15 @@
     },
     {
       "path": "cad/profile_radial_revf_upper_pocket_review.py",
-      "sha256": "82c34d9c129f2a2de6f400229130c93292e8e786a8116cbc8fefc0d248cd3c92"
+      "sha256": "84dd3d1be1b5fa212aa7f4d5e36d472c6d6e3d85b34a7859a78c59cb8ab623e4"
     },
     {
       "path": "cad/revf_upper_pocket_inputs.py",
-      "sha256": "5b570a1c9208460f1eb3e17feb71b510df6388331badf82597d22d975ec50978"
+      "sha256": "f438c5f86caf1f139cc11b45013ab89973dd9562b49babef3bb15fe560c5aca8"
     },
     {
       "path": "cad/revf_upper_pocket_pose_audit.py",
-      "sha256": "a0e4d88d5cb3e4fdd789b3211c064295baeda2a8dc0fb5df25f27aac246400bf"
+      "sha256": "397e7ae316e125972a0937700f32ae284dd94e0a010b4ac2d009c4a0d3633178"
     },
     {
       "path": "calculations/reve_approved_workspace.py",
@@ -353,6 +357,10 @@
     {
       "path": "calculations/revf_forward_kinematics.py",
       "sha256": "824e840882fc8b299b28a9f0ab4b1de665dd949b25774c98e09ca960b5234dab"
+    },
+    {
+      "path": "calculations/revf_upper_pocket_load_screen.py",
+      "sha256": "f147135a27f23ff60fb91acb0807913814c74ce3cee9361964636d8ef8ca14d2"
     },
     {
       "path": "fusion_scripts/ProfileRadialRevD/revd_data.py",
@@ -380,7 +388,7 @@
     },
     {
       "path": "references/revf_upper_pocket_source_register_2026-10-02.md",
-      "sha256": "d4f531fdcef8cf019048f19c5e4b4ace14daf0579f8b022155df98ffc428db67"
+      "sha256": "90b02fdd5595e2be0a589c28bf6a3a2e9621c22be21f669ca0e6bbe56fcf06a1"
     },
     {
       "path": "references/vendor_cad/LM4075OE-1075-100mm.stp",
@@ -388,7 +396,7 @@
     },
     {
       "path": "scripts/export_revf_upper_pocket_review.py",
-      "sha256": "b8512b0aa861f936bdf386683e40d7d056017aad5c091f18b0347aa2ebce34ee"
+      "sha256": "47897c0358a25a7c70bf9fa6495edc1cd412069d501dfbf78df7372f4e5563e6"
     },
     {
       "path": "scripts/render_lm4075oe_vendor_step.py",
