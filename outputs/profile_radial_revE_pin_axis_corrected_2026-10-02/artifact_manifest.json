@@ -1,0 +1,81 @@
+{
+  "revision": "E_ACTUAL_VENDOR_PIN_AXIS_CORRECTED_2026_10_02",
+  "artifact_count": 15,
+  "artifacts": [
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_COLLAPSED.step",
+      "bytes": 10431265,
+      "sha256": "85122884867FFD2345F5478F9854650BE4CE9A8AFCC3B2AE381E8C027DE5EF15"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_NEUTRAL.step",
+      "bytes": 10425657,
+      "sha256": "3A85A6A5AE7E467981E381570201C3F0F7EF29660D7FEA9AA086A6FCE3400ECB"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_RAISED.step",
+      "bytes": 10427945,
+      "sha256": "0BD34311C46D13650C8C77F3BFF3672B5D1FE70DA955269A89B0340B2FDBD068"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_P3_R3.step",
+      "bytes": 10625015,
+      "sha256": "E721A406D535D97E26C335219D752062EF880CAA115D63FDD6435CD1FE159880"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\step\\Profile_Radial_3RPS_RevE_SUPPLIER_P3_RM3.step",
+      "bytes": 10559378,
+      "sha256": "762ADBEED94824A2FC033611230AE9DC592652F6C68AC0D221E146D1D26C2BC0"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\step\\A1_LM4075OE_LMB10_TRUSCO_PHS6_INTERFACE_DETAIL.step",
+      "bytes": 2633115,
+      "sha256": "3B7836C31E74E0DF40409F8E87624F8CC8493940DE9F13A1F338AABCF4E60A6B"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\renders\\01_COLLAPSED_SUPPLIER.png",
+      "bytes": 709807,
+      "sha256": "31CADC7819950CCBAA23E0474638A833A90F89D0EFBB04EE067A335BE5BC5712"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\renders\\02_NEUTRAL_SUPPLIER.png",
+      "bytes": 710089,
+      "sha256": "3BB94D76995A52489E8884F60D14A3466D69704F27E78B269AA08110D0979730"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\renders\\03_RAISED_SUPPLIER.png",
+      "bytes": 713623,
+      "sha256": "CE6D8BE3ADC96D0C89163A65FEA71DDC5F783C2FF022AF763F8F884E093D26A0"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\renders\\04_PITCH3_ROLL3_SUPPLIER.png",
+      "bytes": 708427,
+      "sha256": "0DDBA0D1C2C989A163E6D4D738D03CA5C73AF40C09BA1A502E7EB28A35219C98"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\renders\\05_PITCH3_ROLLM3_SUPPLIER.png",
+      "bytes": 712705,
+      "sha256": "9C2CB8C85A56B1631A5A6FBAF02EB2D25CA87AB5DE3F5C447A2E5213D3EB4006"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\renders\\06_SIDE_SUPPLIER.png",
+      "bytes": 774252,
+      "sha256": "9B2652480E3299E5F04018A78D6F84407B3DC52F6F39721A953FF37EFD270F2F"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\renders\\07_UNDERSIDE_SUPPLIER.png",
+      "bytes": 713809,
+      "sha256": "288E9AA32EC1E30CD51DF7D2F6CC82BA270FAC5A5CD554EE7D08C0E9B72E9242"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\renders\\08_A1_JOINT_SUPPLIER.png",
+      "bytes": 842563,
+      "sha256": "0806DF7EC1EB02C1079712568B8B7D8B25E351F92A771E299084D978F4929631"
+    },
+    {
+      "path": "outputs\\profile_radial_revE_pin_axis_corrected_2026-10-02\\Profile_Radial_3RPS_RevE_supplier_interface_validation.json",
+      "bytes": 115117,
+      "sha256": "185FEB7ECBD9D07888DAFB69CCBF401CD083D6B1C227B5AE7F677B69B7F6ADC3"
+    }
+  ]
+}
