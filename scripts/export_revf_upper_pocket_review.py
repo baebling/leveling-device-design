@@ -11,7 +11,7 @@ sys.path.insert(0,str(ROOT))
 import cadquery as cq
 import vtk
 from cad.revf_upper_pocket_inputs import load_inputs
-from cad.revf_upper_pocket_pose_audit import audit_all, bounded_followup
+from cad.revf_upper_pocket_pose_audit import audit_all, bounded_followup, refresh_worst_interference
 from cad.profile_radial_reve_actual_vendor import Pose
 from cad.profile_radial_revf_upper_pocket_review import revf_components_for_pose
 from scripts.export_profile_radial_reve_actual_vendor import actor_for
@@ -66,20 +66,41 @@ def write_audit(audit, destination, chunk_size=5000):
         index['path_state_files'].append(name)
     (destination/'audit.json').write_text(json.dumps(index,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n',encoding='utf-8')
 
-def export_pose(pose):
+def review_export_poses(audit):
+    """Refresh derived global witness for fresh, continued and repackaged runs."""
+    refresh_worst_interference(audit)
+    poses=[Pose('neutral',25,0,0),Pose('raised',50,0,0)]
+    for key in ('worst_interference','worst_articulation'):
+        record=audit[key]
+        if record:
+            values=record['pose'] if key=='worst_interference' else record
+            poses.append(Pose(key,values['lift_mm'],values['pitch_deg'],values['roll_deg']))
+    return poses
+
+def export_pose(pose, *, destination=OUTPUT, part_indices=None):
     parts=revf_components_for_pose(pose,load_inputs())
+    if part_indices is not None: parts=[parts[i] for i in part_indices]
     assembly=cq.Assembly(name='REVF_REVIEW_ONLY')
     for part in parts: assembly.add(part.shape,name=part.name,color=cq.Color(*part.color))
-    assembly.save(str(OUTPUT/f'{pose.label}.step'),exportType='STEP',mode='default')
+    assembly.save(str(destination/f'{pose.label}.step'),exportType='STEP',mode='default')
     renderer=vtk.vtkRenderer();renderer.SetBackground(.94,.96,.98)
-    for part in parts: renderer.AddActor(actor_for(part))
+    focus=min(parts,key=lambda part:part.shape.Volume()) if part_indices is not None else None
+    for part in parts:
+        actor=actor_for(part)
+        if focus is not None:
+            actor.GetProperty().SetOpacity(1.0 if part is focus else .3)
+            if part is focus: actor.GetProperty().SetColor(.85,.16,.05)
+        renderer.AddActor(actor)
     camera=renderer.GetActiveCamera(); camera.SetPosition(1050,-1250,850);camera.SetFocalPoint(0,0,175);camera.SetViewUp(0,0,1)
     camera.ParallelProjectionOn();camera.SetParallelScale(470);renderer.ResetCameraClippingRange()
+    if focus is not None:
+        centre=focus.shape.Center();camera.SetFocalPoint(centre.x,centre.y,centre.z)
+        camera.SetPosition(centre.x+140,centre.y-170,centre.z+110);camera.SetParallelScale(60);renderer.ResetCameraClippingRange()
     title=vtk.vtkTextActor();title.SetInput(f'{LABEL}\nRev F {pose.label}: Z={pose.lift_mm:.2f} pitch={pose.pitch_deg:.2f} roll={pose.roll_deg:.2f}')
     title.SetPosition(20,740);title.GetTextProperty().SetFontSize(20);title.GetTextProperty().SetColor(.65,.08,.06);renderer.AddActor2D(title)
     window=vtk.vtkRenderWindow();window.SetOffScreenRendering(True);window.SetSize(1300,820);window.AddRenderer(renderer);window.Render()
     capture=vtk.vtkWindowToImageFilter();capture.SetInput(window);capture.Update()
-    writer=vtk.vtkPNGWriter();writer.SetFileName(str(OUTPUT/f'{pose.label}.png'));writer.SetInputConnection(capture.GetOutputPort());writer.Write();window.Finalize()
+    writer=vtk.vtkPNGWriter();writer.SetFileName(str(destination/f'{pose.label}.png'));writer.SetInputConnection(capture.GetOutputPort());writer.Write();window.Finalize()
 
 def main():
     inputs=load_inputs();provenance=measurement_provenance(inputs)
@@ -99,14 +120,13 @@ def main():
         audit['exact_followup']=bounded_followup(audit,inputs,previous=audit['exact_followup'])
         audit['invalid_boolean_count']=sum(row['invalid_boolean_count'] for row in audit['representatives'])+audit['exact_followup']['invalid_completed_count']
         validate_reuse(audit,measurement_provenance(inputs))
+    poses=review_export_poses(audit)
     write_audit(audit,OUTPUT)
-    poses=[Pose('neutral',25,0,0),Pose('raised',50,0,0)]
-    for key in ('worst_interference','worst_articulation'):
-        record=audit[key]
-        if record:
-            values=record['pose'] if key=='worst_interference' else record
-            poses.append(Pose(key,values['lift_mm'],values['pitch_deg'],values['roll_deg']))
     for pose in poses: export_pose(pose)
+    witness=audit['worst_interference']
+    if witness:
+        p=witness['pose']
+        export_pose(Pose('worst_interference_pair',p['lift_mm'],p['pitch_deg'],p['roll_deg']),part_indices=witness['pair_indices'])
     readme=f'''# {LABEL}
 
 Three upper pocket candidates. All release flags FALSE. Finite sampled review only.
@@ -116,6 +136,8 @@ Three upper pocket candidates. All release flags FALSE. Finite sampled review on
 Recorded counts: {sum(r['exact_pair_count'] for r in audit['representatives'])} exact pair checks, {sum(r['interference_count'] for r in audit['representatives'])} valid positive nominal intersections, {audit['invalid_boolean_count']} invalid Booleans, {len(audit['path_states'])} unique command states, {len(audit['command_segments'])} command segments / {sum(len(s['samples']) for s in audit['command_segments'])} sampled state occurrences, {len(audit['home'])} HOME states. Unknown near-pair occurrences: {audit['unknown_pair_count']}. All failure/unknown records are retained; no representative is released.
 
 Supplemental bounded exact follow-up: {len(audit['exact_followup']['completed'])} distinct state/pair checks completed; {audit['exact_followup']['backlog_distinct_keys']} distinct keys remain uncomputed. Invalid completed results remain unresolved separately. The original broad occurrence count above is retained for traceability; exact_followup is the authoritative supplemental ledger. Scope queues prioritize representative-uncovered pairs and worst articulation/switch-margin states. All remainder stays UNKNOWN/HOLD.
+
+worst_interference is recomputed from all valid representative and supplemental exact measurements after every batch and before packaging. Its full-pose STEP/render and separate worst_interference_pair STEP/render follow that same witness; the pair view shows the smaller part in orange and the larger part translucent for inspection. Invalid Booleans never select a worst-volume witness.
 
 Measurement ID: {audit['measurement_id']}. Source fingerprint: {audit['measurement_provenance']['fingerprint']}. Cached reuse requires identical measured inputs, STEP/frame sources, geometry, closure/policy/audit source hashes and runtime; missing or changed provenance is rejected before output writes. Repackaging preserves this original identity.
 

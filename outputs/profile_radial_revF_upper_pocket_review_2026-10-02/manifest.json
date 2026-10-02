@@ -5,8 +5,8 @@
   "artifacts": [
     {
       "path": "audit.json",
-      "bytes": 6429652,
-      "sha256": "4bf52faf4793743c8d4107dd66598f4ef4a2eedfc9eebd42a4cbc078facbd756"
+      "bytes": 6435358,
+      "sha256": "b2be5cf43b9de567f25292bf55c228ac215c8a8222d4c19c442bd30a893ec1bc"
     },
     {
       "path": "load_screen.json",
@@ -21,7 +21,7 @@
     {
       "path": "neutral.step",
       "bytes": 11196107,
-      "sha256": "5fccced60b920b2638225a1bc384ca7211ac5d927dde0f0b99c4340b83e808eb"
+      "sha256": "d96802fe6e5f9a79b0de0559d62d909143e32136dad92861f71dae83c2c0d2d3"
     },
     {
       "path": "path_states_000000.json.gz",
@@ -96,17 +96,17 @@
     {
       "path": "raised.png",
       "bytes": 83752,
-      "sha256": "38813360ae82497b9f47ff23896cd299190eef6b2eee5de0381489b06e8d1e2d"
+      "sha256": "14316bd4aef1d6cbbba96295d3f6db029caea358649529f1c892004c2654843e"
     },
     {
       "path": "raised.step",
       "bytes": 11198439,
-      "sha256": "56ea8b2f9fbefde96c4f2d83fd5db0297896db0c0138e6628e02e3afc0ae4a2f"
+      "sha256": "236b5d23a8a847353611f4c2df043c641f6bbac7b3cf88589d6d9fb0a4953f6e"
     },
     {
       "path": "README.md",
-      "bytes": 3085,
-      "sha256": "369c730bcee899518c2e5fb0c5b6e74893bb39b7a32d205857e2ff1aab941ddc"
+      "bytes": 3477,
+      "sha256": "5f0a47be948e0ad41ec9f10d0f39f8e45c59c6697c4f2bdbfe1eb3e4d3bfe787"
     },
     {
       "path": "worst_articulation.png",
@@ -116,20 +116,30 @@
     {
       "path": "worst_articulation.step",
       "bytes": 11390903,
-      "sha256": "d96fa89e9d91b470d3d49e6b6e191dc6e0735d7bcab353ac3792cd6ebe9544ad"
+      "sha256": "0b4bc6243c804373d4238829f6a14fa459bcb78ec20869846f67053ce29ced6a"
     },
     {
       "path": "worst_interference.png",
-      "bytes": 85052,
-      "sha256": "59807cee85c5e4b72d33818ae2648b184c6cab62e5723c5999a360a3efb3be48"
+      "bytes": 85047,
+      "sha256": "a60862b1e6d77ca091621ea2f2de1d59f744bfa0d72e59f08f5bf8327000ab94"
     },
     {
       "path": "worst_interference.step",
       "bytes": 11430063,
-      "sha256": "cc5c8131eeceadba03ad1b14d33aa7d1f76cf7eec77aa1e61393414e4ae6839c"
+      "sha256": "1bea9133c499abc7952873a840533b1e3cc1bae590a308c9cc15906d28789971"
+    },
+    {
+      "path": "worst_interference_pair.png",
+      "bytes": 72445,
+      "sha256": "d769dc2716be1043835a8ef070f10fa1ee3ecc742d3a4452dc0cfe35c94afd3c"
+    },
+    {
+      "path": "worst_interference_pair.step",
+      "bytes": 979537,
+      "sha256": "bee9d15a8ef0a5f2fe760dd37781e9730538fdd546371a27458e9c3a68bac4fe"
     }
   ],
-  "measurement_id": "f25aeb4d-a703-487c-b9fe-81f4435e4a5d",
+  "measurement_id": "4eca813b-f682-487a-9ce3-3ffa05f9a8aa",
   "measurement_provenance": {
     "inputs": {
       "bracket_count": 3,
@@ -164,7 +174,7 @@
       "cad/profile_radial_reve_actual_vendor.py": "ce33fea355591c9f96731460da428bff86043283d0cc124b089cd10f334534ed",
       "cad/profile_radial_revf_upper_pocket_review.py": "4720b265e0cb51486c206ab505b7ed9a7d47372bcba4d5f79389786be9089705",
       "cad/revf_upper_pocket_inputs.py": "3922308e83144ed20aa784e789bdcd5362511c40ec3763e20ec28094c9f894c5",
-      "cad/revf_upper_pocket_pose_audit.py": "f95f291cdd1ab11ea255102e239a75998de90d2e9b9380f51050427bcd2d10ef",
+      "cad/revf_upper_pocket_pose_audit.py": "142121952b08a7ac2a618aad54fff6a19c9eb303d475c88ef0dccd61d0ccddce",
       "calculations/reve_approved_workspace.py": "3354df3a45af6c3d0835271238d4058228732a5eea95b2d0691b7e7989382911",
       "calculations/reve_command_jog_path_audit.py": "fe60a1b523f59ddd2a49d71de8957c0f6616a6ccae5442a5ab5fc0e380526f20",
       "calculations/reve_forward_kinematics.py": "d668bc1b9c267362729eaae296564a5102cc982916b5d917b53c481e17e65717",
@@ -176,10 +186,10 @@
       "outputs/profile_radial_revD_fusion_native/groups/upper_brackets.step": "7087cedc1b59a8e4eaea771d406a895de06852c9fe4f4925bf4dbfe4d8cbc71c",
       "outputs/profile_radial_revD_fusion_native/groups/upper_frame.step": "c070c60183379345b35d1ae7d7e946276013f57e595e35c82c43847ab2db8651",
       "references/vendor_cad/LM4075OE-1075-100mm.stp": "1bc86009baddcf6458eeb63fb1fcac349fd80b6b64f9a0ddfa7c4b824df52f3b",
-      "scripts/export_revf_upper_pocket_review.py": "0953b31f928669dd0bfb3a795e630778979c1c134059106d259936721d2af691",
+      "scripts/export_revf_upper_pocket_review.py": "63ee7e33c04bfaa1d4600ed508096f395d04937f7d7b4dbf48f09df2841d294e",
       "scripts/render_lm4075oe_vendor_step.py": "26e4425ad1f3c39f88d10ef92be9116fc2aaaa9a35348e579e8fbb803d1604b9"
     },
-    "fingerprint": "c70333b9a8014d469752f1a314d8dfa2a7abb8c79bd4bf3d0f2ac8367a7f4c68"
+    "fingerprint": "30821473239b833b41b302f1e3fe7a2fb0ee0380d25f20a4df605c13f0c4c890"
   },
   "source_artifacts": [
     {
@@ -196,7 +206,7 @@
     },
     {
       "path": "cad/revf_upper_pocket_pose_audit.py",
-      "sha256": "f95f291cdd1ab11ea255102e239a75998de90d2e9b9380f51050427bcd2d10ef"
+      "sha256": "142121952b08a7ac2a618aad54fff6a19c9eb303d475c88ef0dccd61d0ccddce"
     },
     {
       "path": "calculations/reve_approved_workspace.py",
@@ -244,7 +254,7 @@
     },
     {
       "path": "scripts/export_revf_upper_pocket_review.py",
-      "sha256": "0953b31f928669dd0bfb3a795e630778979c1c134059106d259936721d2af691"
+      "sha256": "63ee7e33c04bfaa1d4600ed508096f395d04937f7d7b4dbf48f09df2841d294e"
     },
     {
       "path": "scripts/render_lm4075oe_vendor_step.py",

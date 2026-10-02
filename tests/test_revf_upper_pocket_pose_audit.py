@@ -162,4 +162,41 @@ class PoseAuditTests(unittest.TestCase):
         self.assertEqual(result['attempted_this_run'],0)
         self.assertEqual(result['backlog_distinct_keys'],0)
 
+    def test_supplemental_worst_drives_export_after_continue_and_repackage(self):
+        from scripts.export_revf_upper_pocket_review import review_export_poses
+        audit={'representatives':[{'pose':{'label':'representative','lift_mm':0.,'pitch_deg':0.,'roll_deg':0.},
+                'exact_measurements':[{'valid':True,'volume_mm3':2.,'pair':['rep_a','rep_b'],'pair_indices':[1,2]}]}],
+            'exact_followup':{'completed':[{'valid':True,'volume_mm3':10.,'pose':[30.,1.,-1.],'pair':['new_a','new_b'],'pair_indices':[3,4]},
+                                         {'valid':False,'volume_mm3':1000.,'pose':[50.,3.,3.],'pair':['invalid','bad'],'pair_indices':[5,6]}]},
+            'worst_articulation':None,'status':'HOLD','purchase_release':False,'fabrication_release':False,'measurement_id':'preserved'}
+        poses=review_export_poses(audit)
+        self.assertEqual(audit['worst_interference']['volume_mm3'],10.)
+        self.assertEqual(audit['worst_interference']['pair'],['new_a','new_b'])
+        self.assertEqual(next(p for p in poses if p.label=='worst_interference').lift_mm,30.)
+        # A resumed batch appends a larger witness; the common export seam
+        # must update the summary rather than reuse its previously saved value.
+        audit['exact_followup']['completed'].append({'valid':True,'volume_mm3':20.,'pose':[40.,2.,-2.],'pair':['later_a','later_b'],'pair_indices':[7,8]})
+        continued=review_export_poses(audit)
+        self.assertEqual(next(p for p in continued if p.label=='worst_interference').lift_mm,40.)
+        repackaged=json.loads(json.dumps(audit));repacked=review_export_poses(repackaged)
+        self.assertEqual(repackaged['worst_interference']['pair'],['later_a','later_b'])
+        self.assertEqual(continued,repacked)
+        self.assertEqual(repackaged['measurement_id'],'preserved')
+        self.assertEqual(repackaged['status'],'HOLD')
+        self.assertFalse(repackaged['purchase_release'])
+        self.assertFalse(repackaged['fabrication_release'])
+
+    def test_pair_export_contains_only_requested_named_parts(self):
+        from scripts.export_revf_upper_pocket_review import export_pose
+        with tempfile.TemporaryDirectory() as folder:
+            folder=Path(folder)
+            export_pose(Pose('pair_fixture',25.,0.,0.),destination=folder,part_indices=[3,25])
+            shape=cq.importers.importStep(str(folder/'pair_fixture.step')).val()
+            self.assertTrue(shape.isValid())
+            self.assertLess(len(shape.Solids()),118)
+            self.assertGreater((folder/'pair_fixture.png').stat().st_size,1000)
+            text=(folder/'pair_fixture.step').read_text()
+            self.assertIn('A1_REVF_tnut_1_UNVERIFIED_SLOT',text)
+            self.assertNotIn('A2_REVF_',text)
+
 if __name__=='__main__': unittest.main()

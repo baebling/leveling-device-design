@@ -199,6 +199,21 @@ def bounded_followup(audit, inputs, *, budget=24, previous=None):
         priority_policy='Per-scope/per-pair worst pending state; representative-uncovered first, known invalid/interfering pair next, maximum articulation then minimum switch margin; deterministic dense/command/HOME round-robin',
         full_near_contact_clearance=False,**RELEASES)
 
+def refresh_worst_interference(audit):
+    """Derived global witness over every valid measured intersection, not backlog."""
+    candidates=[]
+    for row in audit['representatives']:
+        for measured in row['exact_measurements']:
+            candidates.append({**measured,'pose':row['pose'],'measurement_scope':'representative'})
+    for measured in audit.get('exact_followup',{}).get('completed',[]):
+        pose=measured['pose']
+        if not isinstance(pose,dict): pose=asdict(Pose('supplemental_exact',*pose))
+        candidates.append({**measured,'pose':pose,'measurement_scope':'supplemental'})
+    valid=[row for row in candidates if row['valid'] and isinstance(row.get('volume_mm3'),(int,float))
+           and np.isfinite(row['volume_mm3']) and row['volume_mm3']>1e-6]
+    audit['worst_interference']=max(valid,key=lambda row:row['volume_mm3'],default=None)
+    return audit['worst_interference']
+
 def audit_all(inputs):
     representatives=[]
     for pose in representative_poses():
@@ -228,7 +243,6 @@ def audit_all(inputs):
         row['commanded_lengths_mm']=list(lengths);home.append(row)
     parts,_,pairs,exemptions=_templates(inputs)
     all_rows=representatives+dense+list(states.values())+home
-    witnesses=[dict(pose=row['pose'],**m) for row in representatives for m in row['exact_measurements'] if m['valid'] and m['volume_mm3']>1e-6]
     result=dict(review_only=True,status='HOLD',bracket_count=3,**mount_attachment_review(inputs),coordinate_system='lower centre; +X right,+Y front,+Z up; pitch Y,roll X; dependent X/Y/yaw closure',
         unchanged_S_centers=True,continuous_workspace_proven=False,profile_slot_status='UNVERIFIED',
         representative_count=len(representatives),dense_count=len(dense),representatives=representatives,dense=dense,
@@ -238,10 +252,11 @@ def audit_all(inputs):
         broad_phase_margin_mm=MARGIN_MM,exact_followup_policy='27 representatives exact plus deterministic bounded distinct-key follow-up; remaining near pairs UNKNOWN/HOLD',
         invalid_boolean_count=sum(r.get('invalid_boolean_count',0) for r in all_rows),unknown_pair_count=sum(r.get('unknown_pair_count',0) for r in all_rows),
         nominal_clear_representatives=[r['pose'] for r in representatives if r['geometry_status']=='NOMINAL_SAMPLE_CLEAR'],
-        worst_interference=max(witnesses,key=lambda w:w['volume_mm3'],default=None),worst_articulation=max((r for r in all_rows if 'articulation_deg' in r),key=lambda r:max(r['articulation_deg']))['pose'],
+        worst_articulation=max((r for r in all_rows if 'articulation_deg' in r),key=lambda r:max(r['articulation_deg']))['pose'],
         assembly_path=assembly_path_review(inputs),assembly_status='HOLD; nominal_sample_clear never proves valid Boolean or assembly',
         blockers=list(inputs.unresolved_evidence)+['Near contacts outside representatives await exact Boolean; no full-path clearance claim','Retained lower and intentional interfaces unverified','Manufacturer capacities and delivered tolerances missing','Independent mechanical stops omitted by approved deviation; electrical limits not physical stops','Pin transitions, wrench handle sweep and full assembly access unresolved'],**RELEASES)
     result['exact_followup']=bounded_followup(result,inputs)
     result['invalid_boolean_count']+=result['exact_followup']['invalid_completed_count']
     result['unknown_pair_count_note']='Baseline broad-phase occurrence count retained for traceability; consult exact_followup distinct-key ledger/backlog for supplemental resolved measurements'
+    refresh_worst_interference(result)
     return result
