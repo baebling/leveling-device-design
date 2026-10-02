@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="790" viewBox="0 0 640 790" role="img" aria-labelledby="title desc">
+  <title id="title">5070 P 속판 2D 예약영역 검토도, 제작용 아님</title>
+  <desc id="desc">460×660 mm 플라스틱 속판에 전장품 외형과 임의 여유영역을 배치한 스크리닝. 실제 체결홀, 케이블, 팬, 도어 깊이 미검증.</desc>
+  <rect width="640" height="790" fill="#f7f9fc"/>
+  <text x="40" y="30" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#122032">5070 P / 460 × 660 mm — 2D screening only</text>
+  <text x="40" y="50" font-family="Arial,sans-serif" font-size="13" fill="#a11919">NOT FOR FABRICATION · wiring, fan, fixing holes and door depth unverified</text>
+  <g transform="translate(50,75)" font-family="Arial,sans-serif" font-size="12" fill="#122032">
+    <rect x="0" y="0" width="460" height="660" fill="#fff" stroke="#122032" stroke-width="2"/>
+    <g fill="#d7e8f7" stroke="#3e6d93" stroke-width="1.5">
+      <rect x="10" y="10" width="330" height="167"/>
+      <rect x="360" y="10" width="90" height="146"/>
+      <rect x="10" y="187" width="156" height="185"/>
+      <rect x="176" y="217" width="158" height="147"/>
+      <rect x="344" y="187" width="88" height="158"/>
+      <rect x="10" y="382" width="210" height="120"/>
+      <rect x="230" y="382" width="78" height="120"/>
+      <rect x="318" y="382" width="56" height="107"/>
+      <rect x="10" y="502" width="80" height="150"/>
+      <rect x="100" y="502" width="80" height="150"/>
+      <rect x="190" y="502" width="80" height="150"/>
+      <rect x="300" y="502" width="100" height="100"/>
+    </g>
+    <text x="20" y="43">RSP-750-24</text>
+    <text x="367" y="43">AC CB</text>
+    <text x="20" y="218">BPS</text>
+    <text x="185" y="248">G9EA</text>
+    <text x="350" y="214">DKD35</text>
+    <text x="350" y="232">×3</text>
+    <text x="20" y="414">Portenta</text>
+    <text x="235" y="414">RS485</text>
+    <text x="323" y="414">K1</text>
+    <text x="20" y="533">DMC1</text>
+    <text x="110" y="533">DMC2</text>
+    <text x="200" y="533">DMC3</text>
+    <text x="308" y="533">fuses ?</text>
+    <path d="M 0 660 H 460" stroke="#a11919" stroke-width="3"/>
+    <text x="5" y="647" fill="#a11919" font-weight="700">bottom reserve only 8 mm</text>
+    <text x="5" y="682" font-size="11">Origin: board top-left (0,0); all coordinates/dimensions in mm.</text>
+  </g>
+  <text x="40" y="780" font-family="Arial,sans-serif" font-size="12" fill="#a11919">PURCHASE_RELEASE = FALSE · FABRICATION_RELEASE = FALSE</text>
+</svg>

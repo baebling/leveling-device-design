@@ -83,18 +83,36 @@ class RevESupplierInterfaceCadTests(unittest.TestCase):
         self.assertGreaterEqual(LOWER_LMB_FASTENER_STACK["thread_engagement_mm"], 6.0)
         self.assertGreaterEqual(LOWER_LMB_FASTENER_STACK["nominal_tip_recess_mm"], 2.0)
 
-    def test_f07_spring_nut_thickness_and_stud_tip_projection_are_explicit(self):
-        """The purchased SP306 body is 5 mm, not the old assumed 6 mm."""
+    def test_f07_stud_entry_is_not_misreported_as_full_nut_engagement(self):
+        """Slot lip and external clamp gap make the present F07/F11 stack invalid."""
         stack = UPPER_PHS_FASTENER_STACK
         self.assertEqual(5.0, stack["slot_nut_body_thickness_mm"])
-        self.assertEqual(1.0, stack["nominal_tip_projection_mm"])
+        self.assertEqual(2.5, stack["slot_lip_depth_mm"])
+        self.assertEqual(10.5, stack["slot_floor_depth_mm"])
         self.assertAlmostEqual(
-            stack["stud_length_mm"],
-            stack["phs_thread_engagement_mm"]
-            + stack["jam_nut_thickness_mm"]
-            + stack["exposed_stud_gap_mm"]
-            + stack["slot_nut_body_thickness_mm"]
-            + stack["nominal_tip_projection_mm"],
+            stack["slot_nut_geometric_entry_max_mm"],
+            stack["stud_length_mm"]
+            - stack["phs_thread_engagement_mm"]
+            - stack["jam_nut_thickness_mm"]
+            - stack["exposed_stud_gap_mm"]
+            - stack["slot_lip_depth_mm"],
+        )
+        self.assertEqual(3.5, stack["slot_nut_geometric_entry_max_mm"])
+        self.assertEqual(-1.5, stack["tip_projection_beyond_nut_back_mm"])
+        self.assertEqual(4.5, stack["slot_floor_clearance_mm"])
+        self.assertEqual("INVALID_NO_PRELOAD", stack["assembly_status"])
+        self.assertFalse(stack["effective_thread_engagement_verified"])
+        self.assertFalse(stack["preload_path_closed"])
+        self.assertAlmostEqual(
+            stack["tip_projection_beyond_nut_back_mm"],
+            stack["slot_nut_geometric_entry_max_mm"]
+            - stack["slot_nut_body_thickness_mm"],
+        )
+        self.assertAlmostEqual(
+            stack["slot_floor_clearance_mm"],
+            stack["slot_floor_depth_mm"]
+            - stack["slot_lip_depth_mm"]
+            - stack["slot_nut_geometric_entry_max_mm"],
         )
 
     def test_full_pose_audit_declares_supplier_interfaces(self):
@@ -103,6 +121,9 @@ class RevESupplierInterfaceCadTests(unittest.TestCase):
         self.assertEqual("LMB-10", audit["lower_joint_model"])
         self.assertEqual("TRUSCO PHS6 / 280-7599", audit["upper_joint_model"])
         self.assertTrue(audit["supplier_joint_envelopes_in_collision_audit"])
+        self.assertEqual("POSE_LENGTH_AND_LISTED_SOLID_INTERSECTIONS_ONLY", audit["passes_scope"])
+        self.assertFalse(audit["upper_phs_fastener_stack_valid_for_assembly"])
+        self.assertEqual("INVALID_NO_PRELOAD", audit["upper_phs_fastener_stack"]["assembly_status"])
         self.assertTrue(audit["passes"])
 
 

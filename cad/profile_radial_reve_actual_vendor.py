@@ -60,13 +60,21 @@ UPPER_PHS_FASTENER_STACK = {
     "stud_length_mm": 25.0,
     "phs_thread_engagement_mm": 10.0,
     # F07 K14671215 is the 30-series SP306: 23 x 10 x 5 mm body.
-    # The 5 mm body is only a geometric upper bound on effective M6 thread
-    # engagement; the F11 cup point and incomplete end threads are not modeled.
+    # In the DNF3030 section, its bearing lip is 2.5 mm below the outer face
+    # and the slot floor is 10.5 mm below it.  The installed F11 M6x25 does
+    # not reach the back of this nut, and F12 is 4 mm short of a clamp stack.
+    # These are nominal *geometric* values, not verified effective threads.
     "slot_nut_body_thickness_mm": 5.0,
-    "slot_nut_thread_engagement_mm": 5.0,
+    "slot_lip_depth_mm": 2.5,
+    "slot_floor_depth_mm": 10.5,
+    "slot_nut_geometric_entry_max_mm": 3.5,
     "jam_nut_thickness_mm": 5.0,
     "exposed_stud_gap_mm": 4.0,
-    "nominal_tip_projection_mm": 1.0,
+    "tip_projection_beyond_nut_back_mm": -1.5,
+    "slot_floor_clearance_mm": 4.5,
+    "effective_thread_engagement_verified": False,
+    "preload_path_closed": False,
+    "assembly_status": "INVALID_NO_PRELOAD",
 }
 LOWER_LMB_FASTENER_STACK = {
     "bolt_length_mm": 12.0,
@@ -443,7 +451,7 @@ def lower_lmb_bolt_shapes() -> tuple[cq.Shape, ...]:
 
 @lru_cache(maxsize=1)
 def upper_phs_fastener_local_shapes() -> tuple[cq.Shape, ...]:
-    """M6x25 stud with a jam nut against each PHS6 shank end."""
+    """Legacy M6x25/F12 envelope only; it does not clamp F07 to the slot."""
 
     rows = []
     for support, (_, tangent) in zip(revd_data.upper_support_points(), revd_data.support_basis()):
@@ -701,6 +709,8 @@ def full_pose_audit():
         "collapsed_upper_frame_top_mm": revd_data.P.upper_profile_top_z_collapsed_mm + UPPER_FRAME_RISE_MM,
         "lower_lmb_fastener_stack": LOWER_LMB_FASTENER_STACK,
         "upper_phs_fastener_stack": UPPER_PHS_FASTENER_STACK,
+        "upper_phs_fastener_stack_valid_for_assembly": False,
+        "passes_scope": "POSE_LENGTH_AND_LISTED_SOLID_INTERSECTIONS_ONLY",
         "upper_clevis_shim_count_per_axis": 3,
         "upper_clevis_shim_thickness_mm": 0.5,
         "supplier_joint_envelopes_in_collision_audit": True,
