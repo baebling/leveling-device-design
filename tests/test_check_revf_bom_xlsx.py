@@ -49,6 +49,58 @@ def review_rows():
 
 
 class RevFBomCheckerTests(unittest.TestCase):
+    def test_missing_phs6_housing_capture_row_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "missing_capture.xlsx"
+            book = load_workbook(REV_F)
+            for row in book["Sheet1"]["B81:I81"]:
+                for cell in row:
+                    cell.value = None
+            book.save(path)
+            book.close()
+            with self.assertRaisesRegex(AssertionError, "PHS6 housing M6"):
+                checker.check(path)
+
+    def test_phs6_housing_capture_price_cannot_be_zero(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "zero_capture.xlsx"
+            book = load_workbook(REV_F)
+            book["Sheet1"]["H81"] = 0
+            book.save(path)
+            book.close()
+            with self.assertRaisesRegex(AssertionError, "price must stay unquoted"):
+                checker.check(path)
+
+    def test_phs6_housing_capture_requires_m6_engagement_and_locking(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "no_lock_gate.xlsx"
+            book = load_workbook(REV_F)
+            book["Sheet1"]["C81"] = "PHS6 housing fastener"
+            book.save(path)
+            book.close()
+            with self.assertRaisesRegex(AssertionError, "engagement/locking"):
+                checker.check(path)
+
+    def test_phs6_housing_capture_requires_three_axis_quantity_gate(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "no_quantity_gate.xlsx"
+            book = load_workbook(REV_F)
+            book["Sheet1"]["E81"] = "미확정"
+            book.save(path)
+            book.close()
+            with self.assertRaisesRegex(AssertionError, "3-axis quantity"):
+                checker.check(path)
+
+    def test_phs6_housing_capture_requires_exact_sku_gate(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "no_sku_gate.xlsx"
+            book = load_workbook(REV_F)
+            book["Sheet1"]["D81"] = "M6 후보"
+            book.save(path)
+            book.close()
+            with self.assertRaisesRegex(AssertionError, "exact SKU"):
+                checker.check(path)
+
     def test_exported_review_workbook_passes(self):
         checker.check(REV_F)
         book = load_workbook(REV_F)

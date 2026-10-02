@@ -85,6 +85,21 @@ def validate_rows(rows: list[dict[str, object]]) -> None:
         )
 
 
+def validate_housing_capture_row(sheet) -> None:
+    """Keep the PHS6 housing M6 capture separate from the eye-pivot retainer."""
+    label = str(sheet["B81"].value or "")
+    purpose = str(sheet["C81"].value or "")
+    quantity = str(sheet["E81"].value or "")
+    status = str(sheet["I81"].value or "")
+    assert "PHS6" in label and "M6" in label and "하우징" in label, "Missing PHS6 housing M6 capture row"
+    assert "유효물림" in purpose and "잠금" in purpose, "PHS6 housing M6 engagement/locking gate missing"
+    assert sheet["D81"].value == "미선정", "PHS6 housing M6 exact SKU must remain unselected"
+    assert "3축" in quantity and "미확정" in quantity, "PHS6 housing M6 3-axis quantity/pack gate missing"
+    assert sheet["G81"].hyperlink is None, "PHS6 housing M6 must not carry a product hyperlink"
+    assert sheet["H81"].value == "견적 미확정", "PHS6 housing M6 price must stay unquoted"
+    assert "HOLD" in status and "SKU" in status and "3축" in status, "PHS6 housing M6 HOLD gate missing"
+
+
 def check(path: Path) -> None:
     rows = read_rows(path)
     validate_rows(rows)
@@ -105,8 +120,9 @@ def check(path: Path) -> None:
             assert row[field] == source[field], f"{identifier}: retained {field} changed"
 
     formula_book = load_workbook(path, data_only=False)
-    value_book = load_workbook(path, data_only=True)
     sheet = formula_book["Sheet1"]
+    validate_housing_capture_row(sheet)
+    value_book = load_workbook(path, data_only=True)
     values = value_book["Sheet1"]
     last_item_row = max(int(row["row"]) for row in rows)
     assert last_item_row == 69, "Unexpected BOM row boundary"
