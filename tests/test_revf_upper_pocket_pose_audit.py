@@ -12,6 +12,51 @@ from cad.revf_upper_pocket_pose_audit import review_poses, audit_pose, represent
 
 
 class PoseAuditTests(unittest.TestCase):
+    def test_forward_solver_matches_corrected_cad_park_and_home_lengths(self):
+        from cad.revf_upper_pocket_pose_audit import solve_pose_from_lengths
+        from cad.profile_radial_reve_actual_vendor import actuator_pin_lengths
+        for targets in (actuator_pin_lengths(Pose('park',0,0,0)),(205.,205.,205.)):
+            with self.subTest(targets=targets):
+                solved=solve_pose_from_lengths(targets)
+                self.assertTrue(solved.converged)
+                actual=actuator_pin_lengths(Pose('solved',solved.lift_mm,solved.pitch_deg,solved.roll_deg))
+                self.assertLess(max(abs(a-b) for a,b in zip(actual,targets)),1e-7)
+
+    def test_home_validates_command_lengths_and_distinguishes_normal_window(self):
+        from cad.revf_upper_pocket_pose_audit import audit_home
+        rows=audit_home(load_inputs())
+        self.assertEqual(len(rows),61)
+        for row in rows:
+            self.assertLess(row['command_length_residual_mm'],1e-7)
+            self.assertLess(row['hinge_constraint_residual_mm'],1e-7)
+            self.assertEqual(row['length_window_policy'],'INTENTIONAL_HOME_205_TO_PARK')
+            self.assertTrue(row['home_length_window_pass'])
+            self.assertEqual(row['status'],'HOLD')
+        self.assertFalse(rows[-1]['normal_window_pass'])
+        self.assertTrue(rows[-1]['kinematic_sample_pass'])
+
+    def test_home_nonconvergence_is_unknown_not_geometry_clear(self):
+        from unittest.mock import patch
+        from cad import revf_upper_pocket_pose_audit as module
+        failed=module.solve_pose_from_lengths((205.,)*3,max_iterations=0)
+        with patch.object(module,'solve_pose_from_lengths',return_value=failed):
+            rows=module.audit_home(load_inputs())
+        self.assertTrue(all(r['status']=='UNKNOWN/HOLD' for r in rows))
+        self.assertTrue(all('near_pair_indices' not in r for r in rows))
+
+    def test_pose_interpolated_command_ik_matches_world_fixed_eye_offset(self):
+        from cad.profile_radial_reve_actual_vendor import platform_transform, upper_eye_points
+        from fusion_scripts.ProfileRadialRevD import revd_data
+        from calculations.reve_approved_workspace import sample_pose_segment
+        for values in sample_pose_segment((50.,3.,-3.),(0.,0.,0.)):
+            pose=Pose('command',*values);row=audit_pose(pose,load_inputs())
+            rotation,translation,_=platform_transform(pose)
+            expected=[]
+            for support,lower,(_,tangent) in zip(revd_data.upper_support_points(),revd_data.lower_eye_points(),revd_data.support_basis()):
+                ball=np.array(rotation)@np.array([support[0],support[1],revd_data.P.upper_ring_z_collapsed_mm])+translation
+                eye=ball-16*np.array(tangent);expected.append(float(np.linalg.norm(eye-lower)))
+            self.assertLess(max(abs(a-b) for a,b in zip(expected,row['pin_lengths_mm'])),1e-8)
+
     def test_audit_all_merges_mount_review_without_duplicate_release_keys(self):
         from unittest.mock import patch
         from contextlib import ExitStack

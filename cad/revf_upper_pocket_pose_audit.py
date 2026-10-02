@@ -18,7 +18,7 @@ from fusion_scripts.ProfileRadialRevD import revd_data
 from calculations.reve_approved_workspace import dense_pose_grid, sample_pose_segment
 from calculations.reve_command_jog_path_audit import _dense_adjacent_jog_segments
 from calculations.reve_home_path_audit import alternating_length_path
-from calculations.reve_forward_kinematics import solve_pose_from_lengths
+from calculations.revf_forward_kinematics import solve_pose_from_lengths
 
 MARGIN_MM = .25
 RELEASES = dict(purchase_release=False, fabrication_release=False, control_power_test_release=False, motor_power_release=False)
@@ -65,7 +65,7 @@ def mount_attachment_review(inputs):
         mount_attachment_measurements=measurements,
         mount_attachment_findings=[f"{r['part']}: nominal centering {'aligned' if r['nominal_crossmember_centered'] else 'invalid'}; " + ('invalid Boolean unresolved' if not r['valid'] else 'retained shallow-model intersection; actual slot unknown' if r['volume_mm3']>1e-6 else 'actual slot engagement unverified') for r in measurements],
         additional_mechanical_blockers=['Open +local Y housing insertion channel provides no independent axial capture; M6 retainer engagement/preload/locking under reversal unverified', 'Staged three-axis frame/T-nut/tool paths are finite nominal checks, not delivered assembly proof', 'Invalid pin-head/eye Boolean is unresolved seating, not proven physical penetration'],
-        mount_attachment_blocker='Legacy slot floor 6.9 mm versus 7.5 mm insertion creates nominal 0.6 mm overlap. Seller DNF diagram suggests 10.5 mm floor, but delivered-page DNP3030 image mismatch leaves actual DNF fit/tolerance/strength UNKNOWN; no physical-interference or fit clearance claim.',**RELEASES)
+        mount_attachment_blocker='Legacy slot floor 6.9 mm versus 7.5 mm insertion creates nominal 0.6 mm overlap. Historical Daeyoung DY5155 nominal floor 10.5 mm and different DYC section nominal floor 11.1 mm are not interchangeable; current NAVIMRO DNP3030 image mismatch leaves delivered DNF fit/tolerance/strength UNKNOWN.',**RELEASES)
 
 def _motion(part, pose):
     axis=int(part.name[1]) if part.name.startswith(('A1_','A2_','A3_')) else None
@@ -128,11 +128,14 @@ def audit_pose(pose, inputs, *, exact=False):
             row.update(pair=[parts[i].name,parts[j].name],pair_indices=[int(i),int(j)],location_mm=((low[i]+high[i])/2).tolist())
             measurements.append(row); invalid+=not row['valid']
     lengths=actuator_pin_lengths(pose)
+    hinges=max(abs(float(np.dot(np.array(eye)-lower,tangent))) for eye,lower,(_,tangent) in zip(upper_eye_points(pose),revd_data.lower_eye_points(),revd_data.support_basis()))
     r,_,_=platform_transform(pose)
     angles=[degrees(acos(np.clip(abs(np.dot(t,np.array(r)@t)),-1,1))) for _,t in revd_data.support_basis()]
     collision=[m for m in measurements if m['valid'] and m['volume_mm3']>1e-6]
     return dict(pose=asdict(pose),status='HOLD',geometry_status='INTERFERENCE' if collision else 'UNKNOWN' if invalid or not exact else 'NOMINAL_SAMPLE_CLEAR',
-        pin_lengths_mm=list(lengths),articulation_deg=angles,kinematic_sample_pass=min(lengths)>=210 and max(lengths)<=280 and max(angles)<=13,
+        pin_lengths_mm=list(lengths),articulation_deg=angles,hinge_constraint_residual_mm=hinges,
+        length_window_policy='NORMAL_210_TO_280',normal_window_pass=min(lengths)>=210 and max(lengths)<=280,
+        kinematic_sample_pass=min(lengths)>=210 and max(lengths)<=280 and max(angles)<=13 and hinges<=1e-7,
         nominal_lower_switch_margin_mm=min(lengths)-205,nominal_upper_switch_margin_mm=305-max(lengths),limits_status='NOMINAL_UNVERIFIED',
         pair_count=len(pairs),broad_clear_pair_count=int((~near).sum()),near_pair_indices=candidates.tolist(),exact_pair_count=len(measurements),
         unknown_pair_count=len(candidates)-len(measurements)+invalid,invalid_boolean_count=int(invalid),exact_measurements=measurements,
@@ -223,6 +226,36 @@ def refresh_worst_interference(audit):
     audit['worst_interference']=max(valid,key=lambda row:row['volume_mm3'],default=None)
     return audit['worst_interference']
 
+def audit_home(inputs):
+    """Finite intentional 205-to-PARK length path; 205 is not a verified switch."""
+    home=[];seed=(0.,0.,0.,0.,0.,0.)
+    park=actuator_pin_lengths(Pose('park',0,0,0))
+    for index,lengths in enumerate(alternating_length_path(park,(2,1,0))):
+        unknown=dict(index=index,commanded_lengths_mm=list(lengths),status='UNKNOWN/HOLD',
+            length_window_policy='INTENTIONAL_HOME_205_TO_PARK',**RELEASES)
+        try: solution=solve_pose_from_lengths(lengths,seed=seed)
+        except (ValueError,ArithmeticError,np.linalg.LinAlgError) as error:
+            home.append(dict(unknown,reason='forward closure exception: '+str(error)));continue
+        if not solution.converged or not np.isfinite(solution.residual_mm) or solution.residual_mm>1e-7:
+            home.append(dict(unknown,reason='forward closure failed'));continue
+        pose=Pose(f'home_{index}',solution.lift_mm,solution.pitch_deg,solution.roll_deg)
+        actual=actuator_pin_lengths(pose)
+        error=max(abs(a-b) for a,b in zip(actual,lengths))
+        if not np.isfinite(error) or error>1e-7:
+            home.append(dict(unknown,reason='FK solution disagrees with CAD branch',command_length_residual_mm=error));continue
+        row=audit_pose(pose,inputs)
+        if row['hinge_constraint_residual_mm']>1e-7:
+            home.append(dict(unknown,reason='CAD hinge closure failed'));continue
+        seed=solution
+        row.update(commanded_lengths_mm=list(lengths),command_length_residual_mm=error,
+            forward_residual_mm=solution.residual_mm,forward_solution=asdict(solution),
+            length_window_policy='INTENTIONAL_HOME_205_TO_PARK',
+            home_length_window_pass=all(205.-1e-7<=v<=start+1e-7 for v,start in zip(actual,park)))
+        row['kinematic_sample_pass']=row['home_length_window_pass'] and max(row['articulation_deg'])<=13
+        home.append(row)
+    return home
+
+
 def audit_all(inputs):
     representatives=[]
     for pose in representative_poses():
@@ -242,14 +275,7 @@ def audit_all(inputs):
         print(f'{kind} paths recorded; unique states {len(states)}',flush=True)
     # Selected finite HOME policy starts from commanded PARK, not arbitrary
     # direct endpoint retraction; interrupted or power-loss starts are HOLD.
-    home=[];seed=(0.,0.,0.,0.,0.,0.)
-    for index,lengths in enumerate(alternating_length_path(actuator_pin_lengths(Pose('park',0,0,0)),(2,1,0))):
-        solution=solve_pose_from_lengths(lengths,seed=seed)
-        if not solution.converged or solution.residual_mm>1e-6:
-            home.append(dict(index=index,lengths_mm=list(lengths),status='UNKNOWN/HOLD',reason='forward closure failed')); continue
-        seed=solution
-        row=audit_pose(Pose(f'home_{index}',solution.lift_mm,solution.pitch_deg,solution.roll_deg),inputs)
-        row['commanded_lengths_mm']=list(lengths);home.append(row)
+    home=audit_home(inputs)
     parts,_,pairs,exemptions=_templates(inputs)
     all_rows=representatives+dense+list(states.values())+home
     result=dict(review_only=True,status='HOLD',bracket_count=3,coordinate_system='lower centre; +X right,+Y front,+Z up; pitch Y,roll X; dependent X/Y/yaw closure',

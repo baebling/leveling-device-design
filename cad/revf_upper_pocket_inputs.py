@@ -38,7 +38,7 @@ class PocketInputs:
     # Required source/tolerance gaps, not a structural-approval checklist.
     unresolved_evidence: tuple[str, ...] = (
         "LM4075OE eye bore discrepancy and delivered eye dimensional tolerances",
-        "TRUSCO PHS6 versus BOM THK PHS6 exact delivered order identity",
+        "Current BOM TRUSCO 280-7599/PHS6 delivered static capacity and tolerances unverified; historical THK candidate is not current BOM",
         "PHS6 housing outer diameter/width manufacturing tolerances",
         "Selected MSB6 order, continuous shoulder contact length and fillet geometry",
         "Delivered DNF3030 slot section and tolerances",
