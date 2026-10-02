@@ -2,10 +2,12 @@
 import unittest
 from dataclasses import replace
 from itertools import product
+from unittest.mock import patch
 import cadquery as cq
+import cad.profile_radial_revf_upper_pocket_review as review_module
 
 from cad.revf_upper_pocket_inputs import load_inputs
-from cad.profile_radial_reve_actual_vendor import Pose, upper_eye_points
+from cad.profile_radial_reve_actual_vendor import Pose, upper_eye_points, platform_transform, _rigid_transform
 from cad.profile_radial_revf_upper_pocket_review import (
     pocket_brackets, phs_components, revf_components_for_pose,
     joint_reference, assembly_path_review, local_review_geometry,
@@ -13,6 +15,85 @@ from cad.profile_radial_revf_upper_pocket_review import (
 
 
 class UpperPocketReviewTests(unittest.TestCase):
+    def test_mounts_follow_crossmember_x_while_holes_and_tools_remain_z(self):
+        # Catches radial bolt patterns, rotated pin cores and world-fixed mounts.
+        for pose in (Pose('collapsed', 0, 0, 0), Pose('tilted', 25, 3, -3)):
+            rotation, _, _ = platform_transform(pose)
+            inverse = tuple(zip(*rotation))
+            parts = revf_components_for_pose(pose, load_inputs())
+            for axis in (1, 2, 3):
+                center = joint_reference(axis, pose)['ball_center']
+                translation = tuple(-sum(row[k] * center[k] for k in range(3)) for row in inverse)
+                for index, x in ((1, -22), (2, 22)):
+                    bolt = next(p.shape for p in parts if p.name == f'A{axis}_REVF_mount_bolt_{index}_envelope')
+                    local = _rigid_transform(bolt, inverse, translation)
+                    bb = local.BoundingBox()
+                    self.assertAlmostEqual(x, (bb.xmin + bb.xmax)/2, places=6)
+                    self.assertAlmostEqual(0, (bb.ymin + bb.ymax)/2, places=6)
+                    self.assertAlmostEqual(24, bb.zmin, places=6)
+                    self.assertAlmostEqual(46.5, bb.zmax, places=6)
+                    self.assertAlmostEqual(10, bb.xlen, places=6)
+                    self.assertAlmostEqual(10, bb.ylen, places=6)
+                    bracket = next(p.shape for p in parts if p.name == f'A{axis}_REVF_POCKET_REVIEW_NOT_FOR_FABRICATION')
+                    hole_clearance = bolt.intersect(bracket)
+                    self.assertTrue(hole_clearance.isValid())
+                    self.assertLess(hole_clearance.Volume(), 1e-6)
+                    tool = review_module._place(local_review_geometry(load_inputs(), axis)[f'mount_tool_{index}_envelope'], axis, pose)
+                    tb = _rigid_transform(tool, inverse, translation).BoundingBox()
+                    self.assertAlmostEqual(x, (tb.xmin + tb.xmax)/2, places=6)
+                    self.assertAlmostEqual(0, (tb.ymin + tb.ymax)/2, places=6)
+                    self.assertAlmostEqual(40, tb.zlen, places=6)
+                    self.assertAlmostEqual(6, tb.xlen, places=6)
+                    self.assertAlmostEqual(6, tb.ylen, places=6)
+                    nut = next(p.shape for p in parts if p.name == f'A{axis}_REVF_tnut_{index}_UNVERIFIED_SLOT')
+                    nb = _rigid_transform(nut, inverse, translation).BoundingBox()
+                    self.assertAlmostEqual(23, nb.xlen, places=6)
+                    self.assertAlmostEqual(10, nb.ylen, places=6)
+
+    def test_reoriented_brackets_are_connected_and_coposed_to_frame(self):
+        for pose in (Pose('collapsed', 0, 0, 0), Pose('tilt', 50, -3, 3)):
+            parts = revf_components_for_pose(pose, load_inputs())
+            for bracket in (p for p in parts if p.group == 'upper_pockets'):
+                self.assertTrue(bracket.shape.isValid())
+                self.assertEqual(1, len(bracket.shape.Solids()))
+                for frame in (p for p in parts if p.group in ('upper_frame', 'upper_brackets')):
+                    common = bracket.shape.intersect(frame.shape)
+                    self.assertTrue(common.isValid())
+                    self.assertLess(common.Volume(), 1e-6)
+                self.assertLess(bracket.shape.distance(next(p.shape for p in parts if p.group == 'upper_frame')), 1e-6)
+
+    def test_axis_assembly_stages_respect_frame_and_eye_installation_order(self):
+        report = assembly_path_review(load_inputs())
+        self.assertEqual({1, 2, 3}, {r.get('axis') for r in report['stages']})
+        for axis in (1, 2, 3):
+            stages = [r for r in report['stages'] if r['axis'] == axis]
+            by_name = {r['stage']: r for r in stages}
+            self.assertNotIn('upper_frame', by_name['m6_retention']['obstacles'])
+            self.assertIn('upper_frame', by_name['eye_approach']['obstacles'])
+            self.assertIn('upper_frame', by_name['profile_attachment']['obstacles'])
+            self.assertLess(stages.index(by_name['profile_attachment']), stages.index(by_name['eye_approach']))
+            route = by_name['tnut_end_insertion']
+            self.assertEqual('BEFORE_CROSSMEMBER_ENDS_CLOSED', route['assembly_phase'])
+            self.assertIn('isolated_crossmember', route['obstacles'])
+            self.assertEqual('UNKNOWN', route['status'])
+            self.assertEqual('UNKNOWN', by_name['pin_insertion']['status'])
+            mount_tools = [p for p in by_name['tool_access']['paths'] if p['moving'][0].startswith('mount_tool')]
+            self.assertTrue(all(p['approach_from_local'] == (0, 0, -1) for p in mount_tools))
+            self.assertTrue(all('actual_supplier_moving_part' not in p['obstacles'] for p in mount_tools))
+        self.assertEqual('UNKNOWN/HOLD', report['slot_review']['status'])
+        self.assertAlmostEqual(0.6, report['slot_review']['model_floor_overlap_mm'])
+
+    def test_any_invalid_boolean_prevents_nominal_clear_even_when_volume_zero(self):
+        # OCC invalid common with zero reported volume must not become clear.
+        invalid = cq.Workplane('XY').box(1, 1, 1).val()
+        self.assertTrue(callable(getattr(review_module, '_path_measurements', None)))
+        with patch.object(cq.Shape, 'isValid', return_value=False), patch.object(cq.Shape, 'Volume', return_value=0):
+            row = review_module._path_measurements({'a': invalid, 'b': invalid}, ['a'], (0, 0, 1), ['b'], 0)
+        self.assertEqual(0, row['maximum_unintended_volume_mm3'])
+        self.assertFalse(row['nominal_sample_clear'])
+        self.assertGreater(row['invalid_boolean_count'], 0)
+        self.assertEqual('UNKNOWN', row['status'])
+
     def test_three_unique_brackets_and_separate_bearing_replace_old_stack(self):
         inputs = load_inputs()
         brackets = pocket_brackets(inputs)
@@ -32,7 +113,8 @@ class UpperPocketReviewTests(unittest.TestCase):
         self.assertLess(geo["bracket"].distance(geo["housing"]), 1e-6)
         for moving in ("housing", "ball_window", "eye_envelope"):
             self.assertLess(geo["bracket"].intersect(geo[moving]).Volume(), 1e-6, moving)
-        self.assertLess(geo["bracket"].BoundingBox().ylen, 31)
+        # A1 mounting base now runs tangent/frame X, while its saddle stays fixed.
+        self.assertAlmostEqual(60, geo["bracket"].BoundingBox().ylen, places=6)
 
     def test_pin_passes_all_three_ball_and_eye_centres_in_combined_tilt(self):
         for pitch, roll in product((-3, 0, 3), repeat=2):
@@ -47,7 +129,7 @@ class UpperPocketReviewTests(unittest.TestCase):
 
     def test_assembly_paths_record_every_stage_and_keep_unknowns_blocked(self):
         review = assembly_path_review(load_inputs())
-        self.assertEqual({"housing_insertion", "m6_retention", "eye_approach", "pin_insertion", "shim_insertion", "spacer_insertion", "m5_nut", "profile_attachment", "tool_access"}, {r["stage"] for r in review["stages"]})
+        self.assertEqual({"tnut_end_insertion", "bracket_approach", "housing_insertion", "m6_retention", "eye_approach", "pin_insertion", "shim_insertion", "spacer_insertion", "m5_nut", "profile_attachment", "tool_access"}, {r["stage"] for r in review["stages"]})
         self.assertTrue(all(r["samples"] > 1 for r in review["stages"]))
         self.assertTrue(all("maximum_unintended_volume_mm3" in r for r in review["stages"]))
         self.assertFalse(review["assembly_verified"])
