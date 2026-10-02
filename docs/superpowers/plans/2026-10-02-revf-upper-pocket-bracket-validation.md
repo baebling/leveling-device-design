@@ -111,13 +111,40 @@ assert screen["purchase_release"] is False
 - [ ] 출력 JSON에서 모든 릴리스 flag false, 3개 브래킷, 모든 검사자세·실패자세가 누락 없이 기록됐는지 독립 검토한다. 실제 DNF3030 슬롯 단면 또는 제조사 허용치 부재는 합격으로 바꾸지 않고 blocker로 남긴다. 검증된 출력만 커밋한다.
 - [ ] `git add cad/revf_upper_pocket_pose_audit.py tests/test_revf_upper_pocket_pose_audit.py scripts/export_revf_upper_pocket_review.py outputs/profile_radial_revF_upper_pocket_review_2026-10-02`와 `git commit -m "Audit and export Rev F pocket review geometry"`를 실행하고 푸시한다.
 
-## Task 5 — 국내 완성가공·기성품 조달 확인 및 Rev F BOM
+## Task 5 — 3축 상부 브래킷 체결부 방향 수정과 조립 경로 재검증
+
+**왜 추가됐나:** Task 4의 독립 검수에서 기존 동일형 브래킷 3개의 구멍이 실제 상부 3030 가로바의 X방향 슬롯과 맞지 않는 것이 확인됐다. A1 볼트는 가로바를 빗나가고 A2/A3 볼트는 모델의 벽을 관통한다. 잘못된 리뷰 STEP로 견적을 요청하지 않는다. 이는 새 사용자 요구가 아니라 기존 승인안의 필수 결함 수정이다.
+
+**Files:** `cad/profile_radial_revf_upper_pocket_review.py`, `tests/test_revf_upper_pocket_review.py`, 필요하면 `references/revf_upper_pocket_source_register_2026-10-02.md`. Rev E 원본 프레임/운동학 코드는 읽기 전용으로 유지한다.
+
+**Interfaces:** 축별 완성 브래킷 형상과 장착품을 반환한다. 기존 `pocket_brackets(inputs)`, `phs_components(axis_index,pose)`, `revf_components_for_pose(pose,inputs)` 공개 인터페이스는 유지한다. `assembly_path_review(inputs)`는 A1/A2/A3의 단계별 결과를 구별하여 반환하고, 예전 A1 단독 결과를 전체 조립 확인으로 사용하지 않는다.
+
+- [ ] 먼저 실패하는 회귀 테스트를 작성한다. 상부 프레임 기준 S=(0,250), (−216.506351,−125), (+216.506351,−125) mm에서 각 축의 두 장착 구멍은 `(Sx−22,Sy)`와 `(Sx+22,Sy)`여야 한다. 모든 구멍은 해당 640 mm 가로바의 중심선 위에 있어야 하며, 같은 자세로 변환된 상부 프레임과 브래킷의 정확 Boolean은 유효하고 양의 관통이 없어야 한다. `group_shape('upper_frame')`의 변환 전 Rev D 좌표를 변환 후 브래킷과 섞어 검사하지 않는다.
+- [ ] PHS 포켓·볼·핀 중심/접선축, e=16 mm, 브래킷 장착면의 높이는 그대로 둔다. 축별 일체형 베이스 장변·두 구멍의 **배열 방향**·T너트 장변만 상부 **프레임 X 방향**으로 배치한다. 구멍·볼트·드라이버의 **중심축은 프레임 Z 방향**으로 유지하고 위치·방향 모두 플랫폼 자세를 따라 변환한다. 이 두 방향을 각각 테스트한다. 전체 브래킷을 회전해 PHS 핀축을 틀지 않는다. A1/A2/A3는 하나의 동일 SKU라고 가정하지 않는다.
+- [ ] 세 브래킷이 각각 유효한 단일 연결 솔리드인지, 기존 상부 코너 연결부와 양의 관통이 없는지, 베이스–레일 연결 및 구멍 주변 재료가 단절되지 않았는지 확인한다. 단일 솔리드는 ±750 N의 강도 합격 근거가 아니므로 기존 하중 `strength_gate`를 true로 바꾸지 않는다.
+- [ ] 축별로 하우징 삽입, M6 이탈방지 체결, 실제 공급 STEP eye 접근, 핀/심/스페이서/너트, 브래킷 체결볼트·T너트 및 공구 접근을 재검사한다. PHS·중앙 M6의 **프로파일 장착 전** 단계와 T너트·볼트의 **장착 후** 단계를 나누어 실제 장애물만 넣는다. T너트의 끝단 삽입 또는 검증된 회전 삽입을 명시한다. 각 단계의 어떤 Boolean이라도 invalid이면 체적이 0으로 보이더라도 `UNKNOWN`으로 둔다. 표본 경로만 검사한 경우도 `UNKNOWN`이다. M6 잠금·반전하중 포획, 핀 머리의 invalid Boolean, 연속 평활 어깨 길이와 하부 R 설치는 이번 형상 수정으로 자동 해결되지 않는다.
+- [ ] 기존 단순 프레임 코드의 3030 슬롯 깊이 6.9 mm와 후보 볼트·T너트 삽입 7.5 mm의 **0.6 mm 모델 바닥 간섭**을 별도 기록한다. 이는 실제 DNF3030 간섭의 증거가 아니다. 제조사 단면/납품 형상이 확인되지 않으면 슬롯·체결력 판정은 `UNKNOWN/HOLD`; 볼트 길이를 임의로 줄이거나 프레임 원본 모델을 조용히 바꾸지 않는다.
+- [ ] `python -m unittest tests.test_revf_upper_pocket_review tests.test_revf_upper_pocket_inputs tests.test_revf_upper_pocket_load_screen -v`를 통과시킨다. 독립 검수에서 각 축의 중심선, 실제 변환 좌표, 장착·조립경로, 불명값을 확인한 뒤 해당 파일만 커밋하고 푸시한다. 모든 release flag는 false다.
+
+## Task 6 — 수정된 3축 전 자세 재감사와 단품 견적용 리뷰 STEP
+
+**Files:** `cad/revf_upper_pocket_pose_audit.py`, `tests/test_revf_upper_pocket_pose_audit.py`, `scripts/export_revf_upper_pocket_review.py`, `outputs/profile_radial_revF_upper_pocket_review_2026-10-02/`.
+
+**Interfaces:** Task 4의 `audit_pose`, `audit_all` 및 증거/출처 fingerprint 계약을 유지한다. 새 출력에 A1/A2/A3 **각각의 단품 브래킷 STEP**과 SHA256/단일 솔리드/파일 크기/REVIEW ONLY 메타데이터를 추가한다. 조립 STEP와 단품 견적 후보를 혼동하지 않는다.
+
+- [ ] 수정된 장착축에 대한 실패 테스트를 먼저 작성한다. 27 대표자세의 정확 B-rep, 1859 조밀 자세와 명령/HOME 경로의 보수적 broad phase, 결정론적 bounded exact follow-up을 새 CAD 출처 해시로 재실행해야 한다. 새 형상에 예전 측정 ledger를 붙이는 재포장은 거절해야 한다.
+- [ ] 실제 eye/핀/볼, 세 브래킷·프레임·장착품 및 다른 축의 부품쌍을 다시 검사한다. 브래킷 자체 관통과 잘못된 장착 중심선은 해결돼야 하며, 구형 간략 슬롯의 바닥 간섭 및 실물 공차·강도는 별도 `UNKNOWN/HOLD`로 남긴다. 샘플·broad phase를 연속 운동영역의 무간섭 증명으로 부르지 않는다.
+- [ ] `python -m unittest tests.test_revf_upper_pocket_pose_audit tests.test_revf_upper_pocket_review -v`와 exporter를 실행한다. 27/1859/명령/HOME 카운트, 모든 invalid Boolean 및 전체 결과 중 유효 최악 간섭을 JSON·그림·STEP에서 일치시킨다. 네 release flag는 전부 false다.
+- [ ] 세 단품 브래킷 STEP를 각각 1개 유효 솔리드, 10 MB 미만으로 내보내고 다시 불러 체적·경계상자를 비교한다. 조립용 11 MB급 STEP는 meviy 업로드 후보가 아니다. README·manifest에 단품마다 형상 방향, 출처 해시, `REVIEW ONLY / NOT APPROVED FOR FABRICATION`을 명시한다. 제작 DXF/CNC 도면은 여전히 만들지 않는다.
+- [ ] 독립 검수 후 수정 CAD 결과만 커밋·푸시한다. 명목 조립이 불가능하거나 실제 상부 슬롯 증거와 모순되는 부분이 남으면 다음 견적 업로드는 보류한다. 강도·공차 미확정은 숨기지 않고 조건부 견적과 구매 릴리스를 구별한다.
+
+## Task 7 — 국내 완성가공·기성품 조달 확인 및 Rev F BOM
 
 **Files:** 신규 `procurement/revf_upper_pocket_purchase_evidence_2026-10-02.md`, `tests/check_revf_bom_xlsx.py`, `outputs/20261002_reve_upper_pocket_bom/2026_BIZ-Lab_재료비관리_RevF_상부포켓검토.xlsx`. 원본 `outputs/20261002_reve_followthrough/2026_BIZ-Lab_재료비관리_RevE_연속검수.xlsx`는 보존한다.
 
 **Interfaces:** 읽기 전용 `read_rows(path: Path) -> list[dict[str, object]]`가 새 XLSX 데이터행을 ID 기준으로 찾아 `id`, `seller`, `quantity_pieces`, `link_text`, `hyperlink_target`, `price_krw`를 반환하고, `check(path: Path) -> None`이 검사한다. 새 브래킷 행 ID는 `UP01A`, `UP01B`, `UP01C`로 각 1개이며 형상이 같다는 근거가 생기면 동일 SKU를 세 행에 재사용할 수 있다. 구매 증거 문서는 SKU마다 `판매처/정확 형번/수량/가격/납기/카드결제 확인/출처/확인일/상태`를 기록한다. 미정 견적은 숫자 가격이 아니라 문자 `견적 미확정`으로 남긴다.
 
-- [ ] Task 4의 리뷰 STEP가 모델 내부 자체검사에서 성립할 때만 한국미스미 meviy에 **해당 형상** 3개로 견적을 시도한다. 자동견적 수락, 재질, 실제 수량별 단가·VAT·배송·납기·카드 장바구니 가능 여부를 증거와 함께 기록한다. 실패하면 수동견적 또는 다른 국내 완성가공업체를 확인하되 주문하지 않는다. 어떤 견적도 없으면 가격을 지어내지 않고 BOM에 `견적 미확정/발주 보류`로 표기한다.
+- [ ] Task 6의 **단품 브래킷 STEP**가 모델 내부 자체검사에서 성립할 때만 한국미스미 meviy에 해당 축별 형상 3개로 견적을 시도한다. 자동견적 수락, 재질, 실제 수량별 단가·VAT·배송·납기·카드 장바구니 가능 여부를 증거와 함께 기록한다. 실패하면 수동견적 또는 다른 국내 완성가공업체를 확인하되 주문하지 않는다. 어떤 견적도 없으면 가격을 지어내지 않고 BOM에 `견적 미확정/발주 보류`로 표기한다.
 - [ ] MSB6-35 / MSB6-LC31 중 실제 전 길이 평활 어깨·필릿·너트 적층이 성립하는 형번만 남긴다. M6 체결품, 스페이서, 정확한 T너트·볼트와 3축 총수량의 국내 카드결제·재고·납기를 확인한다. 구형 F07/F08A/B/F11/F12를 무증거로 `구매 적합`으로 승격하지 않는다. F10 M6 너트는 F21/G9EA 장착에도 쓰이므로 관절 변경만으로 전량 삭제하지 않는다.
 - [ ] 신규 BOM 검증을 먼저 작성해 기존 67행 고정 검사에 묶이지 않도록 한다. 품목 ID 중복 없음, 정확한 하이퍼링크, 판매처별 연속 묶음, 포장단위↔실수량, 신규 완성 브래킷 정확히 3개, 미확정 가격은 숫자 0이 아님, 공급가·VAT·총액·400만 원 잔액이 독립 계산과 일치하는지 검증한다. 새 파일 부재일 때 실패를 확인한다.
 
@@ -153,7 +180,7 @@ python tests/check_reve_bom_xlsx.py 'outputs/20261002_reve_followthrough/2026_BI
 
 - [ ] 가격·발주 상태와 기구 검증 결과를 교차 검토한다. `git add procurement/revf_upper_pocket_purchase_evidence_2026-10-02.md tests/check_revf_bom_xlsx.py outputs/20261002_reve_upper_pocket_bom/2026_BIZ-Lab_재료비관리_RevF_상부포켓검토.xlsx`와 `git commit -m "Review Rev F pocket procurement and BOM"` 후 푸시한다. 실제 주문은 별도 사용자 지시가 있어도 모든 릴리스 게이트 충족 후에만 수행한다.
 
-## Task 6 — 최신 요구사항·조립 지침·릴리스 판정 정합화
+## Task 8 — 최신 요구사항·조립 지침·릴리스 판정 정합화
 
 **Files:** `references/수평유지장치 요구사항.txt`의 맨 위 최신 결정 단락, `requirements/current_variant_priority_2026-10-02.md`, `requirements/hard_constraints.md`, `fabrication/profile_radial_revE_release_candidate_2026-09-04/README_CURRENT_SCOPE_2026-10-02.md`, `verification/revf_upper_pocket_release_review_2026-10-02.md`, `assembly/revf_upper_pocket_assembly_review_2026-10-02.md`.
 
