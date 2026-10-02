@@ -1,0 +1,172 @@
+"""Finite Rev F review, never fabrication approval. Units mm/deg/mm^3.
+
+Broad phase transforms enclosing source AABB corners (not meshes). A 0.25 mm
+proximity margin is a screening assumption, NOT a delivered tolerance. Exact
+representatives use actual supplier STEP and nominal Task 3 joint envelopes.
+Uncomputed near contacts remain UNKNOWN/HOLD; finite samples are not sweeps.
+"""
+from dataclasses import asdict
+from functools import lru_cache
+from itertools import product, combinations
+from math import acos, degrees
+import numpy as np
+from cad.revf_upper_pocket_inputs import load_inputs
+from cad.profile_radial_reve_actual_vendor import Pose, platform_transform, actuator_pin_lengths, upper_eye_points
+from cad.profile_radial_revf_upper_pocket_review import revf_components_for_pose, joint_reference, assembly_path_review
+from fusion_scripts.ProfileRadialRevD import revd_data
+from calculations.reve_approved_workspace import dense_pose_grid, sample_pose_segment
+from calculations.reve_command_jog_path_audit import _dense_adjacent_jog_segments
+from calculations.reve_home_path_audit import alternating_length_path
+from calculations.reve_forward_kinematics import solve_pose_from_lengths
+
+MARGIN_MM = .25
+RELEASES = dict(purchase_release=False, fabrication_release=False, control_power_test_release=False, motor_power_release=False)
+
+def review_poses():
+    return tuple(Pose(f'grid_{i}',*p) for i,p in enumerate(dense_pose_grid()))
+
+def representative_poses():
+    return tuple(Pose(f'representative_{i}',*p) for i,p in enumerate(product((0.,25.,50.),(-3.,0.,3.),(-3.,0.,3.))))
+
+def boolean_measure(first, second):
+    """Invalid input/common or exceptions must not become zero-volume clear."""
+    try:
+        if not first.isValid() or not second.isValid():
+            raise ValueError('invalid source B-rep')
+        common=first.intersect(second)
+        volume=float(common.Volume())
+        valid=common.isValid() and np.isfinite(volume) and volume >= -1e-8
+        return dict(valid=bool(valid),volume_mm3=max(0.,volume) if valid else None)
+    except Exception as error:
+        return dict(valid=False,volume_mm3=None,error=str(error))
+
+def mount_attachment_review(inputs):
+    """A missing frame engagement is a failure even when Boolean volume is zero."""
+    parts=revf_components_for_pose(Pose('mount_neutral',25,0,0),inputs)
+    frame=next(p.shape for p in parts if p.group=='upper_frame')
+    measurements=[]
+    for part in parts:
+        if 'mount_bolt_' not in part.name: continue
+        row=boolean_measure(part.shape,frame)
+        row.update(part=part.name,gap_mm=float(part.shape.distance(frame)))
+        measurements.append(row)
+    invalid=any(not r['valid'] or r['volume_mm3']>1e-6 or r['gap_mm']>.25 for r in measurements)
+    return dict(mount_attachment_status='INVALID_NOMINAL_PLACEMENT_ACTUAL_SLOT_UNVERIFIED' if invalid else 'UNVERIFIED',
+        mount_attachment_measurements=measurements,
+        mount_attachment_findings=[f"{r['part']}: " + ('invalid Boolean' if not r['valid'] else 'no frame engagement' if r['gap_mm']>.25 else 'frame-wall intersection' if r['volume_mm3']>1e-6 else 'nominal contact; actual slot unverified') for r in measurements],
+        additional_mechanical_blockers=['Open +local Y housing insertion channel provides no independent axial capture; M6 retainer engagement/preload/locking under reversal unverified', 'Task 3 profile_attachment checks bracket-only approach, omitting installed frame/T-nut/full tool context', 'Invalid pin-head/eye Boolean is unresolved seating, not proven physical penetration'],
+        mount_attachment_blocker='Bolt gaps/volumes must be resolved against real slot evidence. Congruent rotated bases do not establish attachment. Base/hole orientation may need redesign; no automatic whole-bracket rotation.')
+
+def _motion(part, pose):
+    axis=int(part.name[1]) if part.name.startswith(('A1_','A2_','A3_')) else None
+    rotation,translation,_=platform_transform(pose)
+    if part.group=='actuators':
+        lower=np.array(revd_data.lower_eye_points()[axis-1]); eye=np.array(upper_eye_points(pose)[axis-1])
+        u=(eye-lower)/np.linalg.norm(eye-lower); t=np.array(revd_data.support_basis()[axis-1][1])
+        return np.column_stack((-u,t,-np.cross(u,t))), eye if 'NEIGUAN' in part.name else lower
+    if part.group in ('upper_frame','upper_brackets'):
+        return np.array(rotation),np.array(translation)
+    if part.group in ('upper_pockets','upper_joints','upper_fasteners'):
+        follows=part.group!='upper_joints' or part.name.endswith(('housing','m6_retainer_envelope'))
+        return np.array(rotation) if follows else np.eye(3),np.array(joint_reference(axis,pose)['ball_center'])
+    return np.eye(3),np.zeros(3)
+
+def _exemption(a,b):
+    # Explicit nominal contact interfaces only; exemptions remain unverified.
+    if a.group.startswith('lower') and b.group.startswith('lower'): return 'retained lower fixed assembly'
+    if a.group in ('upper_frame','upper_brackets') and b.group in ('upper_frame','upper_brackets'): return 'retained upper fixed assembly'
+    same=a.name[:3]==b.name[:3] and a.name.startswith(('A1_','A2_','A3_'))
+    if same and a.group==b.group=='actuators': return 'supplier internal assembly'
+    names=(a.name,b.name)
+    if same:
+        keys=tuple(n.split('_REVF_')[-1] for n in names)
+        contact={frozenset(p) for p in [('housing','ball'),('housing','m6_retainer_envelope'),('pin_shoulder','ball'),('pin_shoulder','shim'),('pin_shoulder','spacer'),('pin_m5_thread_envelope','m5_nut_envelope')]}
+        if frozenset(keys) in contact: return 'nominal bearing/thread/stack interface'
+        if any('POCKET_REVIEW' in n for n in names) and any(n.endswith('housing') for n in names): return 'housing saddle interface'
+    return None
+
+@lru_cache(maxsize=4)
+def _templates(inputs):
+    neutral=Pose('template',25,0,0)
+    parts=revf_components_for_pose(neutral,inputs)
+    corners=[]
+    for p in parts:
+        bb=p.shape.BoundingBox()
+        world=np.array(list(product((bb.xmin,bb.xmax),(bb.ymin,bb.ymax),(bb.zmin,bb.zmax))))
+        r,t=_motion(p,neutral)
+        corners.append((world-t)@r)
+    pairs=[]; exemptions=[]
+    for i,j in combinations(range(len(parts)),2):
+        why=_exemption(parts[i],parts[j])
+        if why: exemptions.append(dict(pair=[parts[i].name,parts[j].name],reason=why,status='INTERFACE_UNVERIFIED'))
+        else: pairs.append((i,j))
+    return parts,corners,np.array(pairs),exemptions
+
+def audit_pose(pose, inputs, *, exact=False):
+    parts,corners,pairs,_=_templates(inputs)
+    low=[];high=[]
+    for part,local in zip(parts,corners):
+        r,t=_motion(part,pose); world=local@r.T+t
+        low.append(world.min(axis=0)); high.append(world.max(axis=0))
+    low=np.array(low);high=np.array(high)
+    near=np.all((low[pairs[:,0]]<=high[pairs[:,1]]+MARGIN_MM)&(low[pairs[:,1]]<=high[pairs[:,0]]+MARGIN_MM),axis=1)
+    candidates=pairs[near]; measurements=[]; invalid=0
+    if exact:
+        actual=revf_components_for_pose(pose,inputs)
+        for i,j in candidates:
+            row=boolean_measure(actual[i].shape,actual[j].shape)
+            row.update(pair=[parts[i].name,parts[j].name],pair_indices=[int(i),int(j)],location_mm=((low[i]+high[i])/2).tolist())
+            measurements.append(row); invalid+=not row['valid']
+    lengths=actuator_pin_lengths(pose)
+    r,_,_=platform_transform(pose)
+    angles=[degrees(acos(np.clip(abs(np.dot(t,np.array(r)@t)),-1,1))) for _,t in revd_data.support_basis()]
+    collision=[m for m in measurements if m['valid'] and m['volume_mm3']>1e-6]
+    return dict(pose=asdict(pose),status='HOLD',geometry_status='INTERFERENCE' if collision else 'UNKNOWN' if invalid or not exact else 'NOMINAL_SAMPLE_CLEAR',
+        pin_lengths_mm=list(lengths),articulation_deg=angles,kinematic_sample_pass=min(lengths)>=210 and max(lengths)<=280 and max(angles)<=13,
+        nominal_lower_switch_margin_mm=min(lengths)-205,nominal_upper_switch_margin_mm=305-max(lengths),limits_status='NOMINAL_UNVERIFIED',
+        pair_count=len(pairs),broad_clear_pair_count=int((~near).sum()),near_pair_indices=candidates.tolist(),exact_pair_count=len(measurements),
+        unknown_pair_count=len(candidates)-len(measurements)+invalid,invalid_boolean_count=int(invalid),exact_measurements=measurements,
+        interference_count=len(collision),profile_slot_status='UNVERIFIED',**RELEASES)
+
+def audit_all(inputs):
+    representatives=[]
+    for pose in representative_poses():
+        representatives.append(audit_pose(pose,inputs,exact=True))
+        print(f'Exact representative {len(representatives)}/27',flush=True)
+    dense=[audit_pose(p,inputs) for p in review_poses()]
+    # Shared records retain every sampled state and segment membership without
+    # repeating geometry for endpoints shared by several command segments.
+    states={};segments=[]
+    def record(p):
+        key=tuple(round(float(v),9) for v in p)
+        if key not in states: states[key]=audit_pose(Pose(f'path_{len(states)}',*key),inputs)
+        return states[key]['pose']['label']
+    for kind,paths in [('PARK',((p,(0.,0.,0.)) for p in dense_pose_grid())),('JOG',_dense_adjacent_jog_segments())]:
+        for start,end in paths:
+            segments.append(dict(kind=kind,start=start,end=end,samples=[record(p) for p in sample_pose_segment(start,end)]))
+        print(f'{kind} paths recorded; unique states {len(states)}',flush=True)
+    # Selected finite HOME policy starts from commanded PARK, not arbitrary
+    # direct endpoint retraction; interrupted or power-loss starts are HOLD.
+    home=[];seed=(0.,0.,0.,0.,0.,0.)
+    for index,lengths in enumerate(alternating_length_path(actuator_pin_lengths(Pose('park',0,0,0)),(2,1,0))):
+        solution=solve_pose_from_lengths(lengths,seed=seed)
+        if not solution.converged or solution.residual_mm>1e-6:
+            home.append(dict(index=index,lengths_mm=list(lengths),status='UNKNOWN/HOLD',reason='forward closure failed')); continue
+        seed=solution
+        row=audit_pose(Pose(f'home_{index}',solution.lift_mm,solution.pitch_deg,solution.roll_deg),inputs)
+        row['commanded_lengths_mm']=list(lengths);home.append(row)
+    parts,_,pairs,exemptions=_templates(inputs)
+    all_rows=representatives+dense+list(states.values())+home
+    witnesses=[dict(pose=row['pose'],**m) for row in representatives for m in row['exact_measurements'] if m['valid'] and m['volume_mm3']>1e-6]
+    return dict(review_only=True,status='HOLD',bracket_count=3,**mount_attachment_review(inputs),coordinate_system='lower centre; +X right,+Y front,+Z up; pitch Y,roll X; dependent X/Y/yaw closure',
+        unchanged_S_centers=True,continuous_workspace_proven=False,profile_slot_status='UNVERIFIED',
+        representative_count=len(representatives),dense_count=len(dense),representatives=representatives,dense=dense,
+        path_states=list(states.values()),command_segments=segments,park_segment_count=1859,jog_segment_count=5122,home=home,
+        home_scope='PARK then alternating retract order 3,2,1 at <=1 mm samples; arbitrary starts, escape and restart collision audit HOLD',
+        pair_catalog=[[parts[i].name,parts[j].name] for i,j in pairs],intentional_interfaces=exemptions,
+        broad_phase_margin_mm=MARGIN_MM,exact_followup_policy='27 representative near pairs exact; remaining near pairs explicitly UNKNOWN/HOLD pending expensive Boolean completion',
+        invalid_boolean_count=sum(r.get('invalid_boolean_count',0) for r in all_rows),unknown_pair_count=sum(r.get('unknown_pair_count',0) for r in all_rows),
+        nominal_clear_representatives=[r['pose'] for r in representatives if r['geometry_status']=='NOMINAL_SAMPLE_CLEAR'],
+        worst_interference=max(witnesses,key=lambda w:w['volume_mm3'],default=None),worst_articulation=max((r for r in all_rows if 'articulation_deg' in r),key=lambda r:max(r['articulation_deg']))['pose'],
+        assembly_path=assembly_path_review(inputs),assembly_status='HOLD; nominal_sample_clear never proves valid Boolean or assembly',
+        blockers=list(inputs.unresolved_evidence)+['Near contacts outside representatives await exact Boolean; no full-path clearance claim','Retained lower and intentional interfaces unverified','Manufacturer capacities and delivered tolerances missing','Independent mechanical stops omitted by approved deviation; electrical limits not physical stops','Pin transitions, wrench handle sweep and full assembly access unresolved'],**RELEASES)

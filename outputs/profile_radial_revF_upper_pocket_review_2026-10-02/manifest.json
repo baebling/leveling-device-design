@@ -1,0 +1,154 @@
+{
+  "review_only": true,
+  "purchase_release": false,
+  "fabrication_release": false,
+  "artifacts": [
+    {
+      "path": "audit.json",
+      "bytes": 6419977,
+      "sha256": "f7ccbff034f271f5d405fb4e62fff8c51c10028b5706d1088756ac925669c766"
+    },
+    {
+      "path": "load_screen.json",
+      "bytes": 14078,
+      "sha256": "670683d103354701f2c60ba7c2edff8571f85f6c0b46f8614a2370d3697ec73a"
+    },
+    {
+      "path": "neutral.png",
+      "bytes": 82235,
+      "sha256": "03aed657c79bdeaa53403fca251702008379853f3e1e605873488564271d157d"
+    },
+    {
+      "path": "neutral.step",
+      "bytes": 11196107,
+      "sha256": "e3cefb79a4eeb6838de0371e2f57b0c249e207c760847e16b3c28fdbd86a670c"
+    },
+    {
+      "path": "path_states_000000.json.gz",
+      "bytes": 538332,
+      "sha256": "27efe1ddae1f2d6cf623e474599ec6e96be4a8083b74068cb59d64e29dc77efd"
+    },
+    {
+      "path": "path_states_005000.json.gz",
+      "bytes": 543713,
+      "sha256": "c4430449583f402f931263d156fd7bbf5268137c02a8c103cafff5c2b69b1866"
+    },
+    {
+      "path": "path_states_010000.json.gz",
+      "bytes": 541099,
+      "sha256": "302d2ad81db96305787cc93cae3da2692a77ee71f188a3ee576e6348f6a82b11"
+    },
+    {
+      "path": "path_states_015000.json.gz",
+      "bytes": 552430,
+      "sha256": "1893a7983152d63d2467d79a998ea71b26ae03c278e045756a539fa5b719b3c9"
+    },
+    {
+      "path": "path_states_020000.json.gz",
+      "bytes": 551141,
+      "sha256": "57bd51b035e10c78b9cf7cf20d7e40bc7a58410ecb1d123206fe23992ff40da2"
+    },
+    {
+      "path": "path_states_025000.json.gz",
+      "bytes": 552410,
+      "sha256": "0c6bde7b7f70892ff59996ea3d2e6b15ca5407f713775a890fed222c2cae334a"
+    },
+    {
+      "path": "path_states_030000.json.gz",
+      "bytes": 543598,
+      "sha256": "5929d031f4bbb51207d6cb1c6d654d8961100a1428b96978ba89b95f97c539f6"
+    },
+    {
+      "path": "path_states_035000.json.gz",
+      "bytes": 547574,
+      "sha256": "1aeb57dfb169f6c123ae2b2472ee6f9e2b2ebff22c1b8e8c8d2eb5f718b353fa"
+    },
+    {
+      "path": "path_states_040000.json.gz",
+      "bytes": 551256,
+      "sha256": "87306b5e5a78e2c0d24b4d8f78244cbe34821052a7724e3c701c40d834d04dfd"
+    },
+    {
+      "path": "path_states_045000.json.gz",
+      "bytes": 534819,
+      "sha256": "6efe328903dca8d4964a6e1023b6acc0f04aee531575ab549cc7e715d192723f"
+    },
+    {
+      "path": "path_states_050000.json.gz",
+      "bytes": 466246,
+      "sha256": "639ff01f0c873ef1be7f631135406b5a3548997cdc39ae689634ffaa732a938d"
+    },
+    {
+      "path": "path_states_055000.json.gz",
+      "bytes": 455812,
+      "sha256": "2890e10305956b879fe48d426dba19a8e3d0e9db93f5e4fe5e4efd0c933abb45"
+    },
+    {
+      "path": "path_states_060000.json.gz",
+      "bytes": 451167,
+      "sha256": "0cce40bd1719ae76ff7328baefd6a04c62492e0f601677975b885f221ddc7c56"
+    },
+    {
+      "path": "path_states_065000.json.gz",
+      "bytes": 380388,
+      "sha256": "3561f9c36ac8eba1592cdbdac9621d5d532c29c3959328613419ad4d3b6db492"
+    },
+    {
+      "path": "raised.png",
+      "bytes": 83754,
+      "sha256": "6e34717627c51bb68320e8b4fe7b15f72f8fc9cf4c1ab3ebaeef21f0315b0ebf"
+    },
+    {
+      "path": "raised.step",
+      "bytes": 11198439,
+      "sha256": "83e972b7d9911b38942d007c23954a258e01e20bcd44d47e1b805821cae5e5c3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1984,
+      "sha256": "8af19f3a067bc8c3582180515e95610c0eb79e6d556f8ef54b04bf4e7216608b"
+    },
+    {
+      "path": "worst_articulation.png",
+      "bytes": 82067,
+      "sha256": "4bf23230424875c38fbc626937f2e2aa2ec3aedb4471ac9500b7ee6274458ea4"
+    },
+    {
+      "path": "worst_articulation.step",
+      "bytes": 11390903,
+      "sha256": "ef1a355c0f5991f043a72c70a57b6d2710ca51efc9be63241b44adb910652a8d"
+    },
+    {
+      "path": "worst_interference.png",
+      "bytes": 85050,
+      "sha256": "d1c6ec84bbefc8e13e268fcec049b5a92c65fc8fe103742440641c2dae5841e1"
+    },
+    {
+      "path": "worst_interference.step",
+      "bytes": 11430063,
+      "sha256": "c2baa2654c4ebff34a25e5cf85757fd70514678a8a120ea8d6b10e39de6b6e41"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "cad/revf_upper_pocket_inputs.py",
+      "sha256": "3922308e83144ed20aa784e789bdcd5362511c40ec3763e20ec28094c9f894c5"
+    },
+    {
+      "path": "cad/profile_radial_revf_upper_pocket_review.py",
+      "sha256": "4720b265e0cb51486c206ab505b7ed9a7d47372bcba4d5f79389786be9089705"
+    },
+    {
+      "path": "cad/revf_upper_pocket_pose_audit.py",
+      "sha256": "5b009a1a7ba7bb59309cbdd84ffcf5d8d4b048601b336424169f795114c9353a"
+    },
+    {
+      "path": "cad/profile_radial_reve_actual_vendor.py",
+      "sha256": "ce33fea355591c9f96731460da428bff86043283d0cc124b089cd10f334534ed"
+    },
+    {
+      "path": "references/vendor_cad/LM4075OE-1075-100mm.stp",
+      "sha256": "1bc86009baddcf6458eeb63fb1fcac349fd80b6b64f9a0ddfa7c4b824df52f3b"
+    }
+  ]
+}
