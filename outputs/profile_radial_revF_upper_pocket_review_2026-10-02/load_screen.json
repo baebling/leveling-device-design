@@ -1,0 +1,396 @@
+{
+  "review_only": true,
+  "scope": "3-RPS supervised indoor self-weight-only PoC; no cart, payload or person; three factory-finished new upper brackets and existing A1-A3 machining only; no separate stopper",
+  "coordinate_system": "Lower centre origin; +X right, +Y front, +Z up; roll X, pitch Y",
+  "axes": {
+    "A1": {
+      "load_path": "eye -> diameter-6 pin -> PHS6 inner/outer race -> pocket/M6 -> bracket -> multiple fasteners -> 3030 slot",
+      "local_equilibrium": "r=e*t; F=F*u; M=r cross F. Eye, actuator and lower R must balance force AND eccentric couple; reactions unverified."
+    },
+    "A2": {
+      "load_path": "eye -> diameter-6 pin -> PHS6 inner/outer race -> pocket/M6 -> bracket -> multiple fasteners -> 3030 slot",
+      "local_equilibrium": "r=e*t; F=F*u; M=r cross F. Eye, actuator and lower R must balance force AND eccentric couple; reactions unverified."
+    },
+    "A3": {
+      "load_path": "eye -> diameter-6 pin -> PHS6 inner/outer race -> pocket/M6 -> bracket -> multiple fasteners -> 3030 slot",
+      "local_equilibrium": "r=e*t; F=F*u; M=r cross F. Eye, actuator and lower R must balance force AND eccentric couple; reactions unverified."
+    }
+  },
+  "cases": [
+    {
+      "review_only": true,
+      "status": "PRELIMINARY - NOT APPROVED FOR FABRICATION",
+      "force_n": -750.0,
+      "direction": "pull",
+      "signed_moment_nmm": -12000.0,
+      "pin_bending_mpa": 580.2704494689254,
+      "pin_shear_mpa": 26.97350917453208,
+      "pin_von_mises_mpa": 582.1481814095398,
+      "conditional_pin_proof_mpa": 940.0,
+      "conditional_pin_ratio": 1.6147091582833828,
+      "target_static_safety_factor": 1.5,
+      "conditional_ratio_is_joint_approval": false,
+      "equations": {
+        "bending": "32*abs(F*e)/(pi*d_min^3)",
+        "single_shear": "abs(F)/(pi*d_min^2/4)",
+        "simple_von_mises": "sqrt(sigma_b^2+3*tau_avg^2)"
+      },
+      "model_limits": "N, mm, MPa=N/mm^2. Cantilever pin surrogate; average single shear combined conservatively with outer-fibre bending, not a resolved contact stress field. Kt is not silently set to 1 for approval.",
+      "tolerance_screen": {
+        "pin_min_diameter_mm": 5.95,
+        "eye_bore_source_bounds_mm": [
+          6.0,
+          6.4
+        ],
+        "diametral_clearance_bounds_mm": [
+          0.04999999999999982,
+          0.4500000000000002
+        ],
+        "source_bounds_are_delivered_tolerances": false,
+        "nominal_offset_mm": 16.0,
+        "worst_case_effective_offset_mm": null,
+        "nominal_eye_width_mm": 20.0,
+        "nominal_ball_width_mm": 9.0,
+        "nominal_shim_mm": 1.5,
+        "nominal_grip_mm": 30.5,
+        "continuous_shoulder_contact_length_mm": null,
+        "adverse_stack_verified": false,
+        "required_bounds": [
+          "maximum eye bore",
+          "minimum pin diameter",
+          "maximum eye/ball/shim widths",
+          "minimum continuous shoulder length excluding fillets/thread transition",
+          "pocket machining and alignment tolerances",
+          "maximum effective eccentricity/contact lever arm"
+        ]
+      },
+      "checks": {
+        "pin_transition": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Shoulder/thread fillet Kt, thread root diameter, delivered shoulder proof strength, continuous contact length and preload unknown"
+        },
+        "eye_reaction": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Front eye bore bearing capacity, contact distribution and moment reaction unknown"
+        },
+        "lower_hinge_reaction": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Lower R bearing spacing/capacities and actuator bending/couple closure unknown"
+        },
+        "phs_contact": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Exact PHS6 manufacturer static/radial/axial and reversing contact capacities unknown; dynamic rating alone is insufficient"
+        },
+        "m6_reversal": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Actual engagement length, material, thread stripping, tension/shear interaction, preload and locking under reversal unknown"
+        },
+        "pocket_contact": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Housing-neck/pocket contact area, pressure distribution, capture under pull and local permissible bearing unknown"
+        },
+        "bracket_web": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Web section, local stress concentration, material guarantee and peak stress/deflection unknown"
+        },
+        "slot_attachment": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "T-nut pullout/slip, bolt spacing/preload, friction, profile lip bearing and manufacturer slot capacities unknown"
+        },
+        "tolerance_stack": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Delivered hole/pin/shim/ball-width/machining limits and shoulder-thread transition positions unknown"
+        },
+        "three_axis_equilibrium": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "All poses and eight simultaneous force-sign combinations need global force/moment and frame reaction closure"
+        }
+      },
+      "unverified": [
+        "pin_transition",
+        "eye_reaction",
+        "lower_hinge_reaction",
+        "phs_contact",
+        "m6_reversal",
+        "pocket_contact",
+        "bracket_web",
+        "slot_attachment",
+        "tolerance_stack",
+        "three_axis_equilibrium"
+      ],
+      "source_evidence_gaps": [
+        "LM4075OE eye bore discrepancy and delivered eye dimensional tolerances",
+        "TRUSCO PHS6 versus BOM THK PHS6 exact delivered order identity",
+        "PHS6 housing outer diameter/width manufacturing tolerances",
+        "Selected MSB6 order, continuous shoulder contact length and fillet geometry",
+        "Delivered DNF3030 slot section and tolerances",
+        "Selected T-nut manufacturer drawing, tolerances and slot compatibility"
+      ],
+      "fault_screen": {
+        "status": "unverified",
+        "stall_force_n": null,
+        "overload_verified": false,
+        "fatigue_verified": false,
+        "note": "750 N is a conservative static review load in both signs, not verified pull rating or maximum fault force; 2000 N self-locking is not stall thrust."
+      },
+      "strength_gate": false,
+      "purchase_release": false,
+      "fabrication_release": false,
+      "control_power_test_release": false,
+      "motor_power_release": false
+    },
+    {
+      "review_only": true,
+      "status": "PRELIMINARY - NOT APPROVED FOR FABRICATION",
+      "force_n": 750.0,
+      "direction": "push",
+      "signed_moment_nmm": 12000.0,
+      "pin_bending_mpa": 580.2704494689254,
+      "pin_shear_mpa": 26.97350917453208,
+      "pin_von_mises_mpa": 582.1481814095398,
+      "conditional_pin_proof_mpa": 940.0,
+      "conditional_pin_ratio": 1.6147091582833828,
+      "target_static_safety_factor": 1.5,
+      "conditional_ratio_is_joint_approval": false,
+      "equations": {
+        "bending": "32*abs(F*e)/(pi*d_min^3)",
+        "single_shear": "abs(F)/(pi*d_min^2/4)",
+        "simple_von_mises": "sqrt(sigma_b^2+3*tau_avg^2)"
+      },
+      "model_limits": "N, mm, MPa=N/mm^2. Cantilever pin surrogate; average single shear combined conservatively with outer-fibre bending, not a resolved contact stress field. Kt is not silently set to 1 for approval.",
+      "tolerance_screen": {
+        "pin_min_diameter_mm": 5.95,
+        "eye_bore_source_bounds_mm": [
+          6.0,
+          6.4
+        ],
+        "diametral_clearance_bounds_mm": [
+          0.04999999999999982,
+          0.4500000000000002
+        ],
+        "source_bounds_are_delivered_tolerances": false,
+        "nominal_offset_mm": 16.0,
+        "worst_case_effective_offset_mm": null,
+        "nominal_eye_width_mm": 20.0,
+        "nominal_ball_width_mm": 9.0,
+        "nominal_shim_mm": 1.5,
+        "nominal_grip_mm": 30.5,
+        "continuous_shoulder_contact_length_mm": null,
+        "adverse_stack_verified": false,
+        "required_bounds": [
+          "maximum eye bore",
+          "minimum pin diameter",
+          "maximum eye/ball/shim widths",
+          "minimum continuous shoulder length excluding fillets/thread transition",
+          "pocket machining and alignment tolerances",
+          "maximum effective eccentricity/contact lever arm"
+        ]
+      },
+      "checks": {
+        "pin_transition": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Shoulder/thread fillet Kt, thread root diameter, delivered shoulder proof strength, continuous contact length and preload unknown"
+        },
+        "eye_reaction": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Front eye bore bearing capacity, contact distribution and moment reaction unknown"
+        },
+        "lower_hinge_reaction": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Lower R bearing spacing/capacities and actuator bending/couple closure unknown"
+        },
+        "phs_contact": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Exact PHS6 manufacturer static/radial/axial and reversing contact capacities unknown; dynamic rating alone is insufficient"
+        },
+        "m6_reversal": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Actual engagement length, material, thread stripping, tension/shear interaction, preload and locking under reversal unknown"
+        },
+        "pocket_contact": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Housing-neck/pocket contact area, pressure distribution, capture under pull and local permissible bearing unknown"
+        },
+        "bracket_web": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Web section, local stress concentration, material guarantee and peak stress/deflection unknown"
+        },
+        "slot_attachment": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "T-nut pullout/slip, bolt spacing/preload, friction, profile lip bearing and manufacturer slot capacities unknown"
+        },
+        "tolerance_stack": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "Delivered hole/pin/shim/ball-width/machining limits and shoulder-thread transition positions unknown"
+        },
+        "three_axis_equilibrium": {
+          "status": "unverified",
+          "capacity": null,
+          "reason": "All poses and eight simultaneous force-sign combinations need global force/moment and frame reaction closure"
+        }
+      },
+      "unverified": [
+        "pin_transition",
+        "eye_reaction",
+        "lower_hinge_reaction",
+        "phs_contact",
+        "m6_reversal",
+        "pocket_contact",
+        "bracket_web",
+        "slot_attachment",
+        "tolerance_stack",
+        "three_axis_equilibrium"
+      ],
+      "source_evidence_gaps": [
+        "LM4075OE eye bore discrepancy and delivered eye dimensional tolerances",
+        "TRUSCO PHS6 versus BOM THK PHS6 exact delivered order identity",
+        "PHS6 housing outer diameter/width manufacturing tolerances",
+        "Selected MSB6 order, continuous shoulder contact length and fillet geometry",
+        "Delivered DNF3030 slot section and tolerances",
+        "Selected T-nut manufacturer drawing, tolerances and slot compatibility"
+      ],
+      "fault_screen": {
+        "status": "unverified",
+        "stall_force_n": null,
+        "overload_verified": false,
+        "fatigue_verified": false,
+        "note": "750 N is a conservative static review load in both signs, not verified pull rating or maximum fault force; 2000 N self-locking is not stall thrust."
+      },
+      "strength_gate": false,
+      "purchase_release": false,
+      "fabrication_release": false,
+      "control_power_test_release": false,
+      "motor_power_release": false
+    }
+  ],
+  "simultaneous_cases": [
+    {
+      "forces_n": [
+        -750.0,
+        -750.0,
+        -750.0
+      ],
+      "axis_order": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "global_equilibrium_verified": false
+    },
+    {
+      "forces_n": [
+        -750.0,
+        -750.0,
+        750.0
+      ],
+      "axis_order": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "global_equilibrium_verified": false
+    },
+    {
+      "forces_n": [
+        -750.0,
+        750.0,
+        -750.0
+      ],
+      "axis_order": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "global_equilibrium_verified": false
+    },
+    {
+      "forces_n": [
+        -750.0,
+        750.0,
+        750.0
+      ],
+      "axis_order": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "global_equilibrium_verified": false
+    },
+    {
+      "forces_n": [
+        750.0,
+        -750.0,
+        -750.0
+      ],
+      "axis_order": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "global_equilibrium_verified": false
+    },
+    {
+      "forces_n": [
+        750.0,
+        -750.0,
+        750.0
+      ],
+      "axis_order": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "global_equilibrium_verified": false
+    },
+    {
+      "forces_n": [
+        750.0,
+        750.0,
+        -750.0
+      ],
+      "axis_order": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "global_equilibrium_verified": false
+    },
+    {
+      "forces_n": [
+        750.0,
+        750.0,
+        750.0
+      ],
+      "axis_order": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "global_equilibrium_verified": false
+    }
+  ],
+  "strength_gate": false,
+  "purchase_release": false,
+  "fabrication_release": false,
+  "control_power_test_release": false,
+  "motor_power_release": false
+}
