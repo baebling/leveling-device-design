@@ -4,6 +4,8 @@
 
 > **현행 검토본:** [핀축 보정 CAD/STEP](outputs/profile_radial_revE_pin_axis_corrected_2026-10-02/README_NOT_FOR_FABRICATION.md), [상부 관절 기성품 후보 CAD/STEP](outputs/20261002_reve_joint_candidates/README_REVIEW_ONLY.md), [공급처별 검수 BOM](outputs/20261002_reve_followthrough/2026_BIZ-Lab_재료비관리_RevE_연속검수.xlsx), [전장함 2D 배치 가설](outputs/20261002_reve_followthrough/5070P_2D_배치_검토전용.svg). BOM을 덮던 빈 상자는 제거했지만 VAT 포함 3,143,564원은 미확정 교체품·배송비를 제외한 **검수용 산술**이지 주문 가능 총액이 아니다. 상부 F07/F11 체결 불합격, Ø6 편심핀 강도, 추가 금속가공 없는 독립 스토퍼와 전장 실물 배치가 열려 있다. `PURCHASE_RELEASE=FALSE`, `FABRICATION_RELEASE=FALSE`, `CONTROL_POWER_TEST_RELEASE=FALSE`, `MOTOR_POWER_RELEASE=FALSE`, `POC_ACCEPTANCE=FALSE`.
 
+> **10월 2일 독립 재검수 주의:** 포스트 스토퍼 3곳은 기존 하부 4040 프로파일과 받침 면적이 모두 0이고, 기존 보고서의 8~11 mm 여유 수치는 좌표계 재계산으로 철회했다. 새 하부 횡보 4080 후보도 기존 하부판·액추에이터와 간섭한다. 상부 슬롯 체결에 얇은 심을 더하는 후보 역시 하중 전달이 검증되지 않았다. 따라서 국내 장바구니에 보이는 기성품만 추가해 이 설계를 바로 조립할 수 있다고 판단하지 않는다. [수정 검증 기록](outputs/20261002_reve_followthrough/연속검증_중간기록.md)을 따른다.
+
 ## 아래는 과거 결정의 이력 — 현행 주문·조립 기준 아님
 
 > **2026-09-08 현행 범위:** [상부 패널 없는 공개형 프로파일 시연](requirements/current_open_frame_demo_scope_2026-09-08.md). 카트·적재물·사람, 별도 과조절 스토퍼/전용 받침, 전용 시험대 고정품은 구매하지 않는다. 남은 구매 전 작업은 활성20행 재검산과 최종 견적이다.

@@ -8,11 +8,15 @@ previous 8-11 mm stop-window values from an inconsistent Z datum.
 from itertools import product
 import unittest
 
+import cadquery as cq
+
 from cad.profile_radial_reve_actual_vendor import (
     Pose,
+    _screened_intersection_volume,
     actuator_pin_lengths,
     group_shape,
     platform_transform,
+    transform_upper_frame_shape,
 )
 
 
@@ -41,6 +45,31 @@ def centerline_first_touch(pitch_deg: float, roll_deg: float, post_length_mm: fl
 
 
 class StopCenterlineRecheck(unittest.TestCase):
+    def test_perimeter_post_centerline_overstates_real_clearance(self):
+        post = (
+            cq.Workplane("XY")
+            .box(40.0, 40.0, 230.5, centered=(True, True, False))
+            .translate((330.0, 0.0, LOWER_PROFILE_TOP_Z_MM))
+            .val()
+        )
+        upper = transform_upper_frame_shape(
+            group_shape("upper_frame"), Pose("Z5_corner", 5.0, 3.0, 3.0)
+        )
+        self.assertAlmostEqual(post.distance(upper), 0.0691183966170902, places=5)
+        self.assertEqual(_screened_intersection_volume(post, upper), 0.0)
+
+    def test_proposed_lower_4080_bridge_hits_existing_adapters(self):
+        bridge = (
+            cq.Workplane("XY")
+            .box(620.0, 80.0, 40.0)
+            .translate((0.0, -120.0, 60.0))
+            .val()
+        )
+        overlap_mm3 = _screened_intersection_volume(
+            bridge, group_shape("lower_adapters")
+        )
+        self.assertAlmostEqual(overlap_mm3, 8695.07362067945, places=2)
+
     def test_post_footprints_have_no_bearing_on_existing_lower_profiles(self):
         """The three hypothetical 40 x 40 posts lack a supporting 4040 beam."""
 
