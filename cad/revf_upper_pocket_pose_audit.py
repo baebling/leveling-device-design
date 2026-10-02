@@ -64,7 +64,7 @@ def mount_attachment_review(inputs):
         actual_dnf3030_interference_proven=False,
         mount_attachment_measurements=measurements,
         mount_attachment_findings=[f"{r['part']}: nominal centering {'aligned' if r['nominal_crossmember_centered'] else 'invalid'}; " + ('invalid Boolean unresolved' if not r['valid'] else 'retained shallow-model intersection; actual slot unknown' if r['volume_mm3']>1e-6 else 'actual slot engagement unverified') for r in measurements],
-        additional_mechanical_blockers=['Open +local Y housing insertion channel provides no independent axial capture; M6 retainer engagement/preload/locking under reversal unverified', 'Staged three-axis frame/T-nut/tool paths are finite nominal checks, not delivered assembly proof', 'Invalid pin-head/eye Boolean is unresolved seating, not proven physical penetration'],
+        additional_mechanical_blockers=['Open +local Y housing insertion channel provides no independent axial capture; M6 retainer engagement/preload/locking under reversal unverified', 'Staged three-axis frame/T-nut/tool paths are finite nominal checks, not delivered assembly proof', 'Invalid head-side WSSB10-6-4 washer / supplier moving-part eye Boolean is unresolved seating, not proven physical penetration'],
         mount_attachment_blocker='Legacy slot floor 6.9 mm versus 7.5 mm insertion creates nominal 0.6 mm overlap. Historical Daeyoung DY5155 nominal floor 10.5 mm and different DYC section nominal floor 11.1 mm are not interchangeable; current NAVIMRO DNP3030 image mismatch leaves delivered DNF fit/tolerance/strength UNKNOWN.',**RELEASES)
 
 def _motion(part, pose):
