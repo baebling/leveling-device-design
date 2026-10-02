@@ -205,6 +205,22 @@ def _path_measurements(geometry, keys, direction, obstacles, travel):
             "moving": keys, "obstacles": obstacles}
 
 
+def _aggregate_paths(paths):
+    """Composite measurements never substitute zero for absent valid evidence."""
+    valid = [p["maximum_valid_volume_mm3"] for p in paths
+             if p["maximum_valid_volume_mm3"] is not None and isfinite(p["maximum_valid_volume_mm3"])]
+    diagnostic = [p["maximum_unintended_volume_mm3"] for p in paths
+                  if p["maximum_unintended_volume_mm3"] is not None and isfinite(p["maximum_unintended_volume_mm3"])]
+    invalid = sum(p["invalid_boolean_count"] for p in paths)
+    maximum = max(valid, default=None)
+    return {"maximum_unintended_volume_mm3": maximum, "maximum_valid_volume_mm3": maximum,
+            "diagnostic_maximum_volume_mm3": max(diagnostic, default=None),
+            "invalid_boolean_count": invalid,
+            "invalid_witnesses": [dict(w, child_path_index=i) for i, p in enumerate(paths) for w in p["invalid_witnesses"]],
+            "nominal_sample_clear": bool(paths) and invalid == 0 and all(p["nominal_sample_clear"] for p in paths),
+            "status": "UNKNOWN"}
+
+
 def _axis_assembly_path_review(inputs, axis):
     g = dict(local_review_geometry(inputs, axis))
     neutral = Pose("axis_assembly", 25, 0, 0)
@@ -248,8 +264,7 @@ def _axis_assembly_path_review(inputs, axis):
         stages.pop()
     stages.append({"axis": axis, "stage": "tnut_end_insertion", "assembly_phase": "BEFORE_CROSSMEMBER_ENDS_CLOSED",
                    "paths": nut_paths, "samples": 18, "obstacles": ["isolated_crossmember"],
-                   "maximum_unintended_volume_mm3": max(p["maximum_unintended_volume_mm3"] or 0 for p in nut_paths),
-                   "status": "UNKNOWN", "route": "+FRAME_X_END_OF_SEPARATE_CROSSMEMBER",
+                   **_aggregate_paths(nut_paths), "route": "+FRAME_X_END_OF_SEPARATE_CROSSMEMBER",
                    "prerequisite": "Insert and position both nuts before side/corner members close ends; retention during frame assembly unverified"})
     check("housing_insertion", ["housing", "ball"], (0, 1, 0), ["bracket"])
     check("m6_retention", ["m6_retainer_envelope"], (0, 0, 1), ["bracket", "housing"])
@@ -277,8 +292,7 @@ def _axis_assembly_path_review(inputs, axis):
                             phase="AFTER_FRAME_ATTACHMENT"))
     stages.pop()
     stages.append({"axis": axis, "stage": "tool_access", "samples": 36, "paths": tool_paths,
-                   "maximum_unintended_volume_mm3": max(p["maximum_unintended_volume_mm3"] or 0 for p in tool_paths),
-                   "status": "UNKNOWN", "handle_sweep_verified": False})
+                   **_aggregate_paths(tool_paths), "handle_sweep_verified": False})
     return stages
 
 

@@ -15,6 +15,28 @@ from cad.profile_radial_revf_upper_pocket_review import (
 
 
 class UpperPocketReviewTests(unittest.TestCase):
+    def test_composite_paths_do_not_turn_all_invalid_children_into_zero(self):
+        self.assertTrue(callable(getattr(review_module, '_aggregate_paths', None)))
+        invalid = cq.Workplane('XY').box(1, 1, 1).val()
+        with patch.object(cq.Shape, 'isValid', return_value=False), patch.object(cq.Shape, 'Volume', return_value=0):
+            child = review_module._path_measurements({'a': invalid, 'b': invalid}, ['a'], (0, 0, 1), ['b'], 0)
+        aggregate = review_module._aggregate_paths([child, child])
+        self.assertIsNone(aggregate['maximum_unintended_volume_mm3'])
+        self.assertIsNone(aggregate['maximum_valid_volume_mm3'])
+        self.assertEqual(18, aggregate['invalid_boolean_count'])
+        self.assertEqual(18, len(aggregate['invalid_witnesses']))
+        self.assertEqual('UNKNOWN', aggregate['status'])
+        self.assertFalse(aggregate['nominal_sample_clear'])
+        # Exercise both real composite-stage consumers under the same fault.
+        with patch.object(review_module, '_path_measurements', side_effect=lambda *a, **k: dict(child)):
+            stages = review_module._axis_assembly_path_review(load_inputs(), 1)
+        for row in stages:
+            if row['stage'] in ('tnut_end_insertion', 'tool_access'):
+                self.assertIsNone(row['maximum_unintended_volume_mm3'])
+                self.assertEqual(9 * len(row['paths']), row['invalid_boolean_count'])
+                self.assertEqual(row['invalid_boolean_count'], len(row['invalid_witnesses']))
+                self.assertEqual('UNKNOWN', row['status'])
+
     def test_mounts_follow_crossmember_x_while_holes_and_tools_remain_z(self):
         # Catches radial bolt patterns, rotated pin cores and world-fixed mounts.
         for pose in (Pose('collapsed', 0, 0, 0), Pose('tilted', 25, 3, -3)):
