@@ -1,0 +1,52 @@
+{
+  "package": "Rev F quotation candidate",
+  "scope": "supervised indoor self-weight PoC; no cart, payload, or person",
+  "step_files": [
+    "step\\A1_LOWER_LMB_ADAPTER_120x70x8.step",
+    "step\\A2_LOWER_LMB_ADAPTER_120x70x8.step",
+    "step\\A3_LOWER_LMB_ADAPTER_120x70x8.step",
+    "step\\UP_A1_PHS6_POCKET_BRACKET.step",
+    "step\\UP_A2_PHS6_POCKET_BRACKET.step",
+    "step\\UP_A3_PHS6_POCKET_BRACKET.step"
+  ],
+  "dxf_files": [
+    "dxf\\A1_LOWER_LMB_ADAPTER_120x70x8.dxf",
+    "dxf\\A2_LOWER_LMB_ADAPTER_120x70x8.dxf",
+    "dxf\\A3_LOWER_LMB_ADAPTER_120x70x8.dxf",
+    "dxf\\UP_A1_PHS6_POCKET_MOUNT_FACE.dxf",
+    "dxf\\UP_A2_PHS6_POCKET_MOUNT_FACE.dxf",
+    "dxf\\UP_A3_PHS6_POCKET_MOUNT_FACE.dxf"
+  ],
+  "hole_table": "RevF_hole_coordinate_table.csv",
+  "upper_bracket_spec": {
+    "material": "S45C, untreated",
+    "base_length_mm": 60.0,
+    "base_width_mm": 30.0,
+    "base_thickness_mm": 9.0,
+    "mount_pitch_mm": 44.0,
+    "mount_hole_diameter_mm": 6.6,
+    "saddle_diameter_mm": 20.2,
+    "saddle_width_mm": 6.75,
+    "saddle_outer_diameter_mm": 28.0,
+    "center_through_diameter_mm": 6.6,
+    "counterbore_diameter_mm": 11.0,
+    "counterbore_depth_mm": 6.0,
+    "overall_height_from_ball_center_mm": 39.0,
+    "channel_width_mm": 18.5
+  },
+  "lower_plate_spec": {
+    "material": "A6061-T6",
+    "length_mm": 120.0,
+    "width_mm": 70.0,
+    "thickness_mm": 8.0,
+    "profile_hole_diameter_mm": 9.0,
+    "tap_drill_diameter_mm": 6.8,
+    "thread": "M8x1.25 THROUGH"
+  },
+  "warnings": [
+    "PRELIMINARY POC DESIGN - vendor DFM review required",
+    "DXF for upper brackets is mounting-face reference only; STEP controls the 3D pocket",
+    "M8 threads are modelled as D6.8 tap holes",
+    "No claim of certification, human carrying, or field safety"
+  ]
+}

@@ -1,0 +1,22 @@
+﻿part_id,hole_id,x_mm,y_mm,callout,note
+A1,P1,-48.0,12.0,D9 THRU,profile fastening
+A1,P2,48.0,12.0,D9 THRU,profile fastening
+A1,T1,14.5,-24.0,M8x1.25 THRU; drill D6.8,LMB-10 fastening
+A1,T2,14.5,12.0,M8x1.25 THRU; drill D6.8,LMB-10 fastening
+A2,P1,-48.0,-18.557,D9 THRU,profile fastening
+A2,P2,48.0,-18.557,D9 THRU,profile fastening
+A2,T1,23.927,12.0,M8x1.25 THRU; drill D6.8,LMB-10 fastening
+A2,T2,-7.25,-6.0,M8x1.25 THRU; drill D6.8,LMB-10 fastening
+A3,P1,-50.0,6.557,D9 THRU,profile fastening
+A3,P2,50.0,6.557,D9 THRU,profile fastening
+A3,T1,-18.427,12.0,M8x1.25 THRU; drill D6.8,LMB-10 fastening
+A3,T2,12.75,-6.0,M8x1.25 THRU; drill D6.8,LMB-10 fastening
+UP-A1,M1,-22.0,0.0,D6.6 THRU,rotate mount face 90.000 deg in STEP
+UP-A1,M2,22.0,0.0,D6.6 THRU,rotate mount face 90.000 deg in STEP
+UP-A1,C1,0.0,0.0,D6.6 THRU + CB D11 x 6,PHS6 M6 retainer
+UP-A2,M1,-22.0,0.0,D6.6 THRU,rotate mount face -150.000 deg in STEP
+UP-A2,M2,22.0,0.0,D6.6 THRU,rotate mount face -150.000 deg in STEP
+UP-A2,C1,0.0,0.0,D6.6 THRU + CB D11 x 6,PHS6 M6 retainer
+UP-A3,M1,-22.0,0.0,D6.6 THRU,rotate mount face -30.000 deg in STEP
+UP-A3,M2,22.0,0.0,D6.6 THRU,rotate mount face -30.000 deg in STEP
+UP-A3,C1,0.0,0.0,D6.6 THRU + CB D11 x 6,PHS6 M6 retainer

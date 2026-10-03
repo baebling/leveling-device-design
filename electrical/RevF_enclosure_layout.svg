@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1050" viewBox="0 0 900 1050">
+  <style>
+    text { font-family:"Malgun Gothic",Arial,sans-serif; fill:#17365d; }
+    .title { font-size:27px; font-weight:700; }
+    .panel { fill:#fafafa; stroke:#17365d; stroke-width:4; }
+    .rail { fill:#d9eaf7; stroke:#2f75b5; stroke-width:2; }
+    .device { fill:#fff; stroke:#5b9bd5; stroke-width:2; rx:6; }
+    .ac { fill:#fce4d6; stroke:#c00000; stroke-width:2; rx:6; }
+    .label { font-size:16px; font-weight:600; }
+    .small { font-size:13px; }
+  </style>
+  <text x="55" y="48" class="title">Rev F 전장함 속판 배치 기준 — 5070P 약 500×700 mm</text>
+  <rect x="145" y="80" width="610" height="855" class="panel"/>
+  <line x1="430" y1="90" x2="430" y2="925" stroke="#c00000" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="180" y="110" class="small">AC / PSU 영역</text><text x="565" y="110" class="small">24 V / 통신 영역</text>
+
+  <rect x="175" y="135" width="220" height="220" class="device"/><text x="223" y="230" class="label">RSP-750-24</text><text x="220" y="257" class="small">환기공 이격 유지</text>
+  <rect x="175" y="385" width="75" height="90" class="ac"/><text x="192" y="425" class="label">ELCB</text><text x="190" y="450" class="small">2P 10A</text>
+  <rect x="280" y="385" width="110" height="90" class="ac"/><text x="300" y="425" class="label">AC/PE</text><text x="305" y="450" class="small">단자부</text>
+
+  <rect x="465" y="145" width="255" height="18" class="rail"/>
+  <text x="470" y="135" class="small">DIN rail 1 / MRB-300</text>
+  <rect x="470" y="175" width="100" height="80" class="device"/><text x="483" y="210" class="label">Finder</text><text x="483" y="235" class="small">접촉기</text>
+  <rect x="590" y="175" width="110" height="80" class="device"/><text x="600" y="210" class="label">DDR-15G</text><text x="617" y="235" class="small">12 V</text>
+
+  <rect x="465" y="320" width="255" height="18" class="rail"/>
+  <text x="470" y="310" class="small">DIN rail 2 / MRB-300</text>
+  <rect x="470" y="350" width="160" height="110" class="device"/><text x="487" y="400" class="label">Portenta Machine</text><text x="530" y="426" class="label">Control</text>
+  <rect x="645" y="350" width="70" height="110" class="device"/><text x="653" y="398" class="small">ZMEC</text><text x="651" y="420" class="small">485DI</text>
+
+  <rect x="465" y="525" width="255" height="18" class="rail"/>
+  <text x="470" y="515" class="small">DIN rail 3 / MRB-300</text>
+  <rect x="470" y="555" width="110" height="95" class="device"/><text x="492" y="594" class="label">DKD35</text><text x="493" y="620" class="small">+MOTOR</text>
+  <rect x="600" y="555" width="110" height="95" class="device"/><text x="622" y="594" class="label">DKD35</text><text x="635" y="620" class="small">0 V</text>
+
+  <rect x="180" y="540" width="205" height="95" class="device"/><text x="243" y="580" class="label">DMC-1</text><text x="217" y="609" class="small">위쪽 10 A 홀더</text>
+  <rect x="180" y="660" width="205" height="95" class="device"/><text x="243" y="700" class="label">DMC-2</text><text x="217" y="729" class="small">위쪽 10 A 홀더</text>
+  <rect x="180" y="780" width="205" height="95" class="device"/><text x="243" y="820" class="label">DMC-3</text><text x="217" y="849" class="small">위쪽 10 A 홀더</text>
+
+  <rect x="465" y="705" width="245" height="125" class="device"/><text x="490" y="745" class="label">저전류 WAGO / 퓨즈홀더</text><text x="500" y="774" class="small">5 A 제어 · 20 A 주퓨즈</text><text x="500" y="798" class="small">리드선 장력 제거</text>
+  <rect x="175" y="895" width="535" height="18" fill="#e2f0d9" stroke="#70ad47" stroke-width="2"/>
+  <text x="246" y="960" class="label">하단 글랜드: AC | 축 A/B/C 모터·엔코더 | HWT 상/하</text>
+  <text x="178" y="995" class="small">치수는 배치 기준이며 속판 타공 전 실물 외형·단자 접근·케이블 굽힘반경을 대조한다.</text>
+</svg>

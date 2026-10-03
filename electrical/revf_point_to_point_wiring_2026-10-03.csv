@@ -1,0 +1,27 @@
+구간,출발,도착,선재/보호,확인사항
+AC-1,접지 전원코드 L/N,EBE32FB LINE,정격 AC 코드,무전압 결선
+AC-2,EBE32FB LOAD,RSP-750-24 L/N,정격 AC 코드,PE와 분리
+PE-1,전원코드 PE,RSP FG,녹/황선,도통 확인
+DC-MAIN-1,RSP V+,01550300Z+20A 퓨즈,KIV 4SQ/홀더 리드,극성 확인
+DC-MAIN-2,20A 퓨즈,Finder NO-1 입력,KIV 4SQ,접점 번호 실물 확인
+DC-MAIN-3,Finder NO-1 출력,DKD35 +MOTOR 입력,KIV 4SQ,20A 이하 경로
+AXIS-A,DKD35 +MOTOR 출력1,10A 퓨즈→DMC-1 V+,14AWG,DMC 전류제한 6A
+AXIS-B,DKD35 +MOTOR 출력2,10A 퓨즈→DMC-2 V+,14AWG,DMC 전류제한 6A
+AXIS-C,DKD35 +MOTOR 출력3,10A 퓨즈→DMC-3 V+,14AWG,DMC 전류제한 6A
+ZERO-1,RSP V-,DKD35 0V 입력,KIV 4SQ,공통 기준
+ZERO-2,DKD35 0V 출력,DMC-1/2/3 V-,14AWG,각 축 개별 귀환
+CONTROL-1,RSP V+,01550300Z+5A 퓨즈,14AWG,제어계통 전용
+CONTROL-2,5A 퓨즈,WAGO +CONTROL,14AWG,저전류 분배
+PMC-PWR,WAGO +CONTROL/0V,Portenta 24V/GND,14AWG,정격 24V
+DDR-IN,WAGO +CONTROL/0V,DDR-15G-12 IN+/IN-,14AWG,극성 확인
+SENSOR-PWR,DDR OUT+/OUT-,ZMEC485DI와 HWT905 두 대,24AWG,12V 확인
+COIL-1,WAGO +CONTROL,E-stop NC 입력,24AWG,NC 접점
+COIL-2,E-stop NC 출력,START NO와 Finder NO-2 병렬 입력,24AWG,자기유지 분기
+COIL-3,START/Finder 병렬 출력,Finder A1,24AWG,24VAC/DC 코일
+COIL-4,Finder A2,DKD35 0V,24AWG,코일 귀환
+DMC-BUS,Portenta J5 Data+/Data-/GND,DMC-1→DMC-2→DMC-3,차폐 3쌍/끝단120Ω,ID1/2/3
+HWT-NET,Portenta Ethernet,ZMEC485DI Ethernet,CAT6,Modbus TCP
+HWT-BUS,ZMEC A/B/GND,HWT 상부→HWT 하부,차폐선/끝단120Ω,ID0x50/0x51
+ENC-A,DMC-1 5V/GND/A/B,액추에이터 A 엔코더,차폐 신호선,5V 옵션
+ENC-B,DMC-2 5V/GND/A/B,액추에이터 B 엔코더,차폐 신호선,5V 옵션
+ENC-C,DMC-3 5V/GND/A/B,액추에이터 C 엔코더,차폐 신호선,5V 옵션
