@@ -35,4 +35,3 @@
 - `UP_A1/A2/A3_PHS6_POCKET_BRACKET.step`: 폐기된 일체형 머시닝안
 - split-keyhole mount/support STEP: 폐기된 2분할 검토안
 - `UPPER_PHS6_DIRECT_MOUNT_THREE_AXIS_REVIEW.step`: 조립 검토용이며 가공 발주 대상이 아님
-
