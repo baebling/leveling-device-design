@@ -9,6 +9,11 @@
     "step\\UP_A2_PHS6_POCKET_BRACKET.step",
     "step\\UP_A3_PHS6_POCKET_BRACKET.step"
   ],
+  "quote_simplified_step_files": [
+    "step_quote_simplified\\A1_LOWER_LMB_ADAPTER_120x70x8_D6.8_PILOT_M8_TAP_CALLOUT.step",
+    "step_quote_simplified\\A2_LOWER_LMB_ADAPTER_120x70x8_D6.8_PILOT_M8_TAP_CALLOUT.step",
+    "step_quote_simplified\\A3_LOWER_LMB_ADAPTER_120x70x8_D6.8_PILOT_M8_TAP_CALLOUT.step"
+  ],
   "dxf_files": [
     "dxf\\A1_LOWER_LMB_ADAPTER_120x70x8.dxf",
     "dxf\\A2_LOWER_LMB_ADAPTER_120x70x8.dxf",
@@ -18,6 +23,7 @@
     "dxf\\UP_A3_PHS6_POCKET_MOUNT_FACE.dxf"
   ],
   "hole_table": "RevF_hole_coordinate_table.csv",
+  "readme": "README_견적업로드.md",
   "upper_bracket_spec": {
     "material": "S45C, untreated",
     "base_length_mm": 60.0,
@@ -31,22 +37,27 @@
     "center_through_diameter_mm": 6.6,
     "counterbore_diameter_mm": 11.0,
     "counterbore_depth_mm": 6.0,
+    "counterbore_entry_face": "TOP",
     "overall_height_from_ball_center_mm": 39.0,
     "channel_width_mm": 18.5
   },
   "lower_plate_spec": {
-    "material": "A6061-T6",
+    "material": "A6061-T6 or A6061P-T651",
     "length_mm": 120.0,
     "width_mm": 70.0,
     "thickness_mm": 8.0,
     "profile_hole_diameter_mm": 9.0,
     "tap_drill_diameter_mm": 6.8,
-    "thread": "M8x1.25 THROUGH"
+    "thread_nominal_diameter_mm": 8.0,
+    "thread_pitch_mm": 1.25,
+    "thread": "M8x1.25 THROUGH",
+    "minimum_required_thread_engagement_mm": 6.0
   },
   "warnings": [
     "PRELIMINARY POC DESIGN - vendor DFM review required",
     "DXF for upper brackets is mounting-face reference only; STEP controls the 3D pocket",
-    "M8 threads are modelled as D6.8 tap holes",
+    "Authoritative lower STEP files contain modeled M8x1.25 threads; drawings control thread class",
+    "Quote-simplified lower STEP files show D6.8 pilot holes and still require M8x1.25 through tapping",
     "No claim of certification, human carrying, or field safety"
   ]
 }

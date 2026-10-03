@@ -111,7 +111,7 @@ def _lower_page(story, styles, part_id):
     spec = LOWER_PLATE_SPECS[part_id]
     story.append(Paragraph(f"{part_id} LOWER - LMB radial adapter", styles["h1"]))
     story.append(Paragraph(
-        "A6061-T6 plate, 120 x 70 x 8. Datum is the plate centre. X is the 120 mm direction; "
+        "A6061-T6 or A6061P-T651 plate, 120 x 70 x 8. Datum is the plate centre. X is the 120 mm direction; "
         "Y is the 70 mm direction. No outline cutting beyond the ordered rectangle.", styles["body"]))
     story.append(Spacer(1, 4 * mm))
     rows = [["Hole", "X", "Y", "Machining", "Function"]]
@@ -124,11 +124,12 @@ def _lower_page(story, styles, part_id):
     story.append(Paragraph(
         "Machining notes: deburr all edges and holes; break sharp edges lightly. Keep the two M8 axes "
         "normal to the plate. Verify LMB-10 hole pitch against the delivered bracket before tapping. "
-        "The STEP models threads as D6.8 pilot holes; this callout controls the thread.", styles["small"]))
+        "Detailed STEP models M8x1.25 threads. The quote-simplified STEP shows D6.8 pilot holes; "
+        "this callout controls thread tolerance and class.", styles["small"]))
     story.append(Spacer(1, 5 * mm))
     story.append(_table([
         ["Overall", "Material", "Profile holes", "LMB holes", "Surface"],
-        ["120 x 70 x 8", "A6061-T6", "2 x D9 THRU", "2 x M8x1.25 THRU", "as-machined / deburred"],
+        ["120 x 70 x 8", "A6061-T6/T651", "2 x D9 THRU", "2 x M8x1.25 THRU", "as-machined / deburred"],
     ], [45 * mm, 40 * mm, 45 * mm, 55 * mm, 55 * mm], _font_name()))
     story.append(PageBreak())
 
@@ -147,7 +148,7 @@ def _upper_page(story, styles, axis):
         ["Base", "60 x 30 x 9", "two D6.6 mount holes, pitch 44"],
         ["PHS6 saddle", "D20.2 x 6.75 wide", "STEP controls 3D pocket; remove burrs"],
         ["Saddle outside", "D28", "support ring joined to two 4 mm rails"],
-        ["Centre fastener", "D6.6 THRU", "D11 counterbore x 6 deep from top"],
+        ["Centre fastener", "D6.6 THRU", f"D11 counterbore x 6 deep from {d['counterbore_entry_face'].lower()}"],
         ["Side insertion channel", "18.5 wide", "keep open for PHS6 housing installation"],
         ["Height", "ball centre to mount face: 39", "do not change without assembly re-check"],
     ]
@@ -184,13 +185,14 @@ def build_drawing_pdf(output_dir: Path) -> Path:
     story.append(Spacer(1, 5 * mm))
     story.append(_table([
         ["Part", "Qty", "Material", "Required process", "Authoritative file"],
-        ["A1/A2/A3 LOWER", "1 each", "A6061-T6", "rectangle stock + drilling + M8 tapping", "DXF + hole table"],
+        ["A1/A2/A3 LOWER", "1 each", "A6061-T6/T651", "rectangle stock + drilling + M8 tapping", "detailed STEP + DXF/hole table"],
         ["UP-A1/A2/A3", "1 each", "S45C untreated", "supplier-finished 3D milling/drilling", "STEP; PDF notes"],
     ], [45 * mm, 22 * mm, 38 * mm, 85 * mm, 55 * mm], _font_name()))
     story.append(Spacer(1, 6 * mm))
     story.append(Paragraph(
         "File priority: upper bracket STEP controls the 3D pocket; upper DXF only documents the mounting "
-        "face. Lower plate DXF and the CSV hole table control hole locations. Ask the supplier to flag any "
+        "face. The detailed lower STEP shows M8 thread geometry, while the lower DXF and CSV hole table "
+        "control hole locations and tapping callouts. Ask the supplier to flag any "
         "unmachinable corner or inaccessible tool path instead of silently changing geometry.", styles["warning"]))
     story.append(Spacer(1, 5 * mm))
     story.append(Paragraph(
