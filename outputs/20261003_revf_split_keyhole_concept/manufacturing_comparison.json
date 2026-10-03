@@ -1,0 +1,57 @@
+{
+  "status": "CONCEPT / NOT APPROVED FOR FABRICATION",
+  "previous_one_piece": {
+    "custom_parts_per_axis": 1,
+    "processes": [
+      "3D annular pocket milling",
+      "tall rail milling",
+      "side channel",
+      "drilling"
+    ],
+    "dfm_risk": "high for a small one-off part"
+  },
+  "split_concept": {
+    "custom_parts_per_axis": 2,
+    "processes": [
+      "plate cutting",
+      "straight groove",
+      "through drilling",
+      "two edge pilots/taps"
+    ],
+    "dfm_risk": "lower, but PHS6 nipple evidence still open"
+  },
+  "spec": {
+    "status": "CONCEPT / NOT APPROVED FOR FABRICATION",
+    "approved_for_fabrication": false,
+    "design_load_per_axis_n": 750.0,
+    "mount_plate_material": "S45C or SS400, untreated",
+    "mount_plate_length_mm": 60.0,
+    "mount_plate_width_mm": 30.0,
+    "mount_plate_thickness_mm": 10.0,
+    "mount_pitch_mm": 44.0,
+    "mount_hole_diameter_mm": 6.6,
+    "centre_clearance_diameter_mm": 6.6,
+    "centre_counterbore_diameter_mm": 11.0,
+    "centre_counterbore_depth_mm": 6.0,
+    "keyhole_plate_material": "S45C flat plate, 8T",
+    "keyhole_plate_width_mm": 48.0,
+    "keyhole_plate_height_mm": 48.0,
+    "keyhole_plate_thickness_mm": 8.0,
+    "phs6_nominal_housing_diameter_mm": 20.0,
+    "housing_clearance_diameter_mm": 20.4,
+    "stem_slot_width_mm": 14.0,
+    "mount_plate_groove_width_mm": 8.2,
+    "mount_plate_groove_depth_mm": 4.0,
+    "edge_screw_count": 2,
+    "edge_screw": "M5 low-head, two places",
+    "edge_tap_pilot_diameter_mm": 4.2,
+    "edge_screw_clearance_diameter_mm": 5.5,
+    "edge_screw_pitch_mm": 26.0,
+    "unresolved": [
+      "Delivered PHS6 grease-nipple direction/envelope must clear the 14 mm open slot.",
+      "Delivered PHS6 housing/neck/foot transitions must be measured before machining.",
+      "M5 edge-thread detail and 750 N reversing-load path require supplier DFM review.",
+      "This concept has not been checked in the full three-axis moving assembly."
+    ]
+  }
+}
