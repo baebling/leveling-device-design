@@ -1,0 +1,50 @@
+{
+  "purchase_rows": 71,
+  "vendor_changes": 7,
+  "navimro_remaining_rows": 14,
+  "native_hyperlinks": 71,
+  "unchanged_rows_preserved": 61,
+  "formula_errors": 0,
+  "vendor_blocks_contiguous": true,
+  "source_preserved": true,
+  "supply": 2927415,
+  "vat": 292742,
+  "total": 3220157,
+  "remaining_budget": 779843,
+  "vendor_totals": {
+    "나비엠알오": {
+      "rows": 14,
+      "supply": 279460
+    },
+    "디바이스마트": {
+      "rows": 22,
+      "supply": 1048370
+    },
+    "모터뱅크": {
+      "rows": 3,
+      "supply": 614400
+    },
+    "한국미스미": {
+      "rows": 25,
+      "supply": 334438
+    },
+    "한국미스미 meviy": {
+      "rows": 4,
+      "supply": 177210
+    },
+    "Digi-Key Korea": {
+      "rows": 1,
+      "supply": 65302
+    },
+    "액티웍스": {
+      "rows": 1,
+      "supply": 76364
+    },
+    "G마켓 케이일레븐홀딩스": {
+      "rows": 1,
+      "supply": 331871
+    }
+  },
+  "cart_changed": false,
+  "live_prices_not_final_checkout": true
+}
