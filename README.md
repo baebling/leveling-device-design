@@ -1,5 +1,9 @@
 # 수평유지 상부모듈 — 전동 Rev E 현행 검증
 
+> **2026-10-07 최신 구매·조립 수정본:** [3개 이슈 수정 BOM](outputs/20261007_bom_three_issue_correction/2026_BIZ-Lab_재료비관리_RevF_3개이슈수정_2026-10-07.xlsx). 주전원 리드 접속품 교체, 40 mm 핀+기성 와셔/심 적층, 상·하부 HWT905의 PVC 장착판·체결품을 반영했다. 상부는 M6/3030, 하부는 M8/4040으로 구분하며 새 금속 가공은 없다. 기존 meviy 상·하부 금속판 4종 형상/수량은 그대로다. 최신 변경내역은 같은 폴더 `bom_change_manifest.json`, 검증 결과는 `verification.json`, 접속 상세는 [전장 자료](electrical/revf_final_wiring_and_enclosure_2026-10-03.md)에 있다. 핀과 센서 장착 형상의 27개 표본 자세 검증은 실물 하중·움직이는 케이블·자동수평 성능 시험을 대체하지 않는다. 스토퍼는 사용자의 최신 결정에 따라 제외한다.
+
+> 아래 2026-10-02의 **상부 포켓·스토퍼 필수·금속판 미확정 설명은 당시 이력**이다. 10/3 직접체결판과 10/4 meviy 견적, 10/7 위 변경 자료를 우선한다. 전체 장치의 구매·통전 승인 상태를 이 수정만으로 일괄 해제하지 않는다.
+
 > **현행 상태 (2026-10-02): 전동 LM4075OE 3축·자동수평 Rev E, 발주·제작·통전·시연 수락 모두 보류.** 대상은 카트·적재물·사람 없는 공개형 자중 시연 상부모듈이다. 목표는 Z 0~50 mm와 pitch/roll ±3°다. 기존 27자세 CAD에는 실제 상부 체결품이 빠져 있었고, 별도 후보 CAD에 볼트·너트 외피를 넣어 다시 검사했지만 하부 핀 동봉·상부 눈 접촉·프로파일 단면 불일치·스토퍼·움직이는 케이블이 열려 있어 최종 조립 합격이 아니다. 액추에이터 아이 홀도 판매도면 Ø6.4와 STEP Ø6.0이 불일치한다. 허용 금속 가공은 기존 A1~A3 판의 구멍/탭뿐이고 플라스틱 전장함/속판 타공은 가능하다. [현행 요구사항](references/수평유지장치%20요구사항.txt)과 [검증·발주 보류 사유](outputs/20261002_reve_followthrough/연속검증_중간기록.md)를 먼저 읽는다.
 
 > **현행 검토본:** [핀축 보정 CAD/STEP](outputs/profile_radial_revE_pin_axis_corrected_2026-10-02/README_NOT_FOR_FABRICATION.md), [상부 관절 기성품 후보 CAD/STEP](outputs/20261002_reve_joint_candidates/README_REVIEW_ONLY.md), [공급처별 검수 BOM](outputs/20261002_reve_followthrough/2026_BIZ-Lab_재료비관리_RevE_연속검수.xlsx), [전장함 2D 배치 가설](outputs/20261002_reve_followthrough/5070P_2D_배치_검토전용.svg). BOM을 덮던 빈 상자는 제거했지만 VAT 포함 3,143,564원은 미확정 교체품·배송비를 제외한 **검수용 산술**이지 주문 가능 총액이 아니다. 상부 F07/F11 체결 불합격, Ø6 편심핀 강도, 추가 금속가공 없는 독립 스토퍼와 전장 실물 배치가 열려 있다. `PURCHASE_RELEASE=FALSE`, `FABRICATION_RELEASE=FALSE`, `CONTROL_POWER_TEST_RELEASE=FALSE`, `MOTOR_POWER_RELEASE=FALSE`, `POC_ACCEPTANCE=FALSE`.

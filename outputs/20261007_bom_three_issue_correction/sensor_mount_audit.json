@@ -1,0 +1,857 @@
+{
+  "pose_count": 27,
+  "invalid_boolean_count": 0,
+  "unexpected_interference_count": 0,
+  "plate_quantity": 2,
+  "plate_size_mm": [
+    100,
+    100,
+    5
+  ],
+  "plate_holes_per_plate": 5,
+  "sensor_holes_mm": [
+    [
+      -23.95,
+      0
+    ],
+    [
+      23.95,
+      -14.35
+    ],
+    [
+      23.95,
+      14.35
+    ]
+  ],
+  "frame_holes_mm": [
+    [
+      -40,
+      -35
+    ],
+    [
+      40,
+      -35
+    ]
+  ],
+  "m4_sensor_fasteners": 6,
+  "m6_profile_fasteners": 2,
+  "m8_profile_fasteners": 2,
+  "spacer_5mm_quantity": 8,
+  "new_metal_machining_operations": 0,
+  "plastic_drilling_operations": 10,
+  "m6_nominal_thread_entry_mm": 6.0,
+  "sensor_shape_is_datasheet_envelope": true,
+  "moving_cable_sweep_verified": false,
+  "measurements": [
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        0.0,
+        3.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        0.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        25.0,
+        3.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        -3.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        0.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        -3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        0.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        0.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        0.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        3.0
+      ],
+      "mount": "upper",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        3.0
+      ],
+      "mount": "lower",
+      "valid": true,
+      "volume_mm3": 0.0
+    },
+    {
+      "pose": [
+        50.0,
+        3.0,
+        3.0
+      ],
+      "mount": "between",
+      "valid": true,
+      "volume_mm3": 0.0
+    }
+  ]
+}

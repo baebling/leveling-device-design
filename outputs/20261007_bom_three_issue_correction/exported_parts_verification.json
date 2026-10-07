@@ -1,0 +1,41 @@
+{
+  "step_reimport_count": 4,
+  "failed": 0,
+  "steps": [
+    {
+      "file": "HWT905_UPPER_PVC_100x100x5_PLASTIC_DRILL_ONLY.step",
+      "valid": true,
+      "solids": 1,
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        5.0
+      ],
+      "volume_mm3": 49450.06420598908
+    },
+    {
+      "file": "HWT905_LOWER_PVC_100x100x5_PLASTIC_DRILL_ONLY.step",
+      "valid": true,
+      "solids": 1,
+      "dimensions_mm": [
+        100.0,
+        100.0,
+        5.0
+      ],
+      "volume_mm3": 49156.01113361307
+    },
+    {
+      "file": "UPPER_JOINT_HCDGH6_40_REVIEW.step",
+      "valid": true,
+      "solids": 9
+    },
+    {
+      "file": "HWT905_MOUNT_REVIEW.step",
+      "valid": true,
+      "solids": 6
+    }
+  ],
+  "svg_xml_valid": true,
+  "plastic_plate_analytic_volume_check": true,
+  "manufacturing_strength_verification": false
+}

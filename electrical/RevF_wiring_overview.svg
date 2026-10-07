@@ -13,7 +13,8 @@
     <marker id="arrowR" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c00000"/></marker>
     <marker id="arrowB" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2f75b5"/></marker>
   </defs>
-  <text x="55" y="50" class="title">Rev F 전원·통신 배선 개요 — 감독하 실내 자중 PoC</text>
+  <text x="55" y="50" class="title">Rev F 전원·통신 배선 개요 — 2026-10-07 접속품 수정</text>
+  <text x="730" y="72" class="small">4SQ → 221-615 → 14AWG / 20A 퓨즈 → 221-615 → 4SQ</text>
 
   <rect x="60" y="100" width="160" height="70" class="box"/><text x="91" y="130" class="label">AC 220 V</text><text x="76" y="155" class="small">L / N / PE</text>
   <rect x="280" y="100" width="180" height="70" class="box"/><text x="301" y="130" class="label">EBE32FB</text><text x="300" y="155" class="small">2P 10 A / 30 mA</text>
@@ -32,12 +33,12 @@
     <rect x="1140" y="440" width="190" height="85" class="box"/><text x="1180" y="475" class="label">DMC-2</text><text x="1169" y="502" class="small">ID2 / limit 6 A</text>
     <rect x="960" y="565" width="130" height="55" class="box"/><text x="986" y="597" class="label">10 A</text>
     <rect x="1140" y="550" width="190" height="85" class="box"/><text x="1180" y="585" class="label">DMC-3</text><text x="1169" y="612" class="small">ID3 / limit 6 A</text>
-    <path d="M1150 275 V372 H960 M1090 372 H1140 M1150 275 V482 H960 M1090 482 H1140 M1150 275 V592 H960 M1090 592 H1140" class="power" marker-end="url(#arrowR)"/>
+    <path d="M1150 275 V300 H900 V592 M900 372 H960 M1090 372 H1140 M900 482 H960 M1090 482 H1140 M900 592 H960 M1090 592 H1140" class="power" marker-end="url(#arrowR)"/>
   </g>
 
   <rect x="70" y="265" width="160" height="60" class="box"/><text x="113" y="302" class="label">5 A ATO</text>
-  <rect x="290" y="250" width="190" height="90" class="box"/><text x="318" y="285" class="label">WAGO +24 V</text><text x="318" y="314" class="small">제어분기</text>
-  <path d="M625 180 V295 H230 M230 295 H290" class="power" marker-end="url(#arrowR)"/>
+  <rect x="290" y="250" width="190" height="90" class="box"/><text x="306" y="285" class="label">WAGO 221-415</text><text x="314" y="314" class="small">+24V 제어분기</text>
+  <path d="M625 180 V220 H150 V265 M230 295 H290" class="power" marker-end="url(#arrowR)"/>
 
   <rect x="70" y="420" width="180" height="70" class="box"/><text x="103" y="451" class="label">E-stop NC</text><text x="98" y="476" class="small">코일만 차단</text>
   <rect x="310" y="405" width="200" height="100" class="box"/><text x="340" y="441" class="label">START NO</text><text x="336" y="469" class="small">∥ Finder NO-2</text><text x="337" y="492" class="small">자기유지</text>
@@ -50,8 +51,10 @@
   <rect x="870" y="690" width="200" height="70" class="box"/><text x="912" y="721" class="label">HWT905 상부</text><text x="931" y="747" class="small">ID 0x50</text>
   <rect x="1130" y="690" width="200" height="70" class="box"/><text x="1172" y="721" class="label">HWT905 하부</text><text x="1191" y="747" class="small">ID 0x51</text>
   <path d="M385 340 V570 H180 V610 M385 570 H460 V610" class="power" marker-end="url(#arrowR)"/>
-  <path d="M550 652 H630 M810 652 H970 V690 M970 725 H1130" class="signal" marker-end="url(#arrowB)"/>
-  <text x="570" y="638" class="small">Ethernet</text><text x="884" y="671" class="small">RS-485 Modbus RTU</text>
+  <path d="M295 635 H335 V545 H720 V610 M810 652 H845 V675 H970 V690 M970 725 H1130" class="signal" marker-end="url(#arrowB)"/>
+  <text x="480" y="535" class="small">Portenta Ethernet → ZMEC</text><text x="855" y="668" class="small">RS-485 Modbus RTU</text>
+  <path d="M550 675 H595 V765 H1230 V760 M720 765 V695 M970 765 V760" class="power" marker-end="url(#arrowR)"/>
+  <text x="607" y="753" class="small">DDR 12V → ZMEC / HWT 2대</text>
 
   <path d="M295 675 H335 V785 H1270 V635" class="signal" marker-end="url(#arrowB)"/>
   <text x="350" y="812" class="small">Portenta J5 RS-485 전용 바이너리 버스 → DMC-1/2/3 (J7 사용 안 함)</text>

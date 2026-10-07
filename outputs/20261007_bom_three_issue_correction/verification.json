@@ -1,0 +1,107 @@
+{
+  "main_splice": {
+    "model": "WAGO 221-615 / 14954324",
+    "minimum_mm2": 0.5,
+    "maximum_mm2": 6.0,
+    "rated_current_a": 30.0,
+    "requires_crimp_tool": false,
+    "used_quantity": 2,
+    "purchase_quantity": 5,
+    "wire_cross_sections_mm2": [
+      2.08,
+      4.0
+    ],
+    "protected_path_a": 20,
+    "technical_source": "https://www.wago.com/global/electrical-interconnections/discover-installation-terminal-blocks-and-connectors/221"
+  },
+  "control_splice": {
+    "model": "WAGO 221-415 / 14954315 / 25EA",
+    "minimum_mm2": 0.14,
+    "maximum_mm2": 4.0,
+    "control_wire_mm2": 0.205
+  },
+  "pin_stack": {
+    "pin_length_mm": 40.0,
+    "fixed_stack_mm": 38.5,
+    "eye_to_ball_offset_mm": 16.0,
+    "unshimmed_gap_mm": 1.5,
+    "nominal_shim_mm": 1.0,
+    "nominal_final_gap_mm": 0.5,
+    "shim_adjustment_per_axis_mm": 2.3,
+    "target_measured_gap_mm": [
+      0.2,
+      0.5
+    ],
+    "eye_width_tolerance_verified": false,
+    "axial_ring_capacity_verified": false,
+    "strength_improved_by_longer_pin": false
+  },
+  "sensor_mount": {
+    "pose_count": 27,
+    "invalid_boolean_count": 0,
+    "unexpected_interference_count": 0,
+    "plate_quantity": 2,
+    "plate_size_mm": [
+      100,
+      100,
+      5
+    ],
+    "plate_holes_per_plate": 5,
+    "sensor_holes_mm": [
+      [
+        -23.95,
+        0
+      ],
+      [
+        23.95,
+        -14.35
+      ],
+      [
+        23.95,
+        14.35
+      ]
+    ],
+    "frame_holes_mm": [
+      [
+        -40,
+        -35
+      ],
+      [
+        40,
+        -35
+      ]
+    ],
+    "m4_sensor_fasteners": 6,
+    "m6_profile_fasteners": 2,
+    "m8_profile_fasteners": 2,
+    "spacer_5mm_quantity": 8,
+    "new_metal_machining_operations": 0,
+    "plastic_drilling_operations": 10,
+    "m6_nominal_thread_entry_mm": 6.0,
+    "sensor_shape_is_datasheet_envelope": true,
+    "moving_cable_sweep_verified": false
+  },
+  "bom": {
+    "unrelated_row_changes": [],
+    "purchase_rows": 71,
+    "native_hyperlinks": 71,
+    "independent_supply_sum": 2972088,
+    "spreadsheet_supply_sum": 2972088,
+    "vat_estimate": 297209,
+    "vat_included_estimate": 3269297,
+    "budget_remaining_estimate": 730703,
+    "supply_delta_from_previous": 74563,
+    "links_match_visible_urls": true,
+    "vendor_blocks_contiguous": true,
+    "formula_errors": 0,
+    "unexpected_merges": 0,
+    "delivery_cost_included": false
+  },
+  "scope": {
+    "new_metal_machining": false,
+    "existing_meviy_metal_shapes_changed": false,
+    "actual_powered_test_performed": false,
+    "moving_cable_sweep_verified": false,
+    "750N_strength_release": false
+  }
+}

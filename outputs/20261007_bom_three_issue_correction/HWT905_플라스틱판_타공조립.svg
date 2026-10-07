@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="660" viewBox="0 0 1100 660">
+<style>text{font-family:'Malgun Gothic',Arial,sans-serif;fill:#18344d;font-size:17px}.title{font-size:25px;font-weight:bold}.small{font-size:14px}.plate{fill:#eef7fc;stroke:#284f6e;stroke-width:2}.hole{fill:white;stroke:#284f6e;stroke-width:2}.sensor{fill:#1c465d;fill-opacity:.15;stroke:#1c465d;stroke-dasharray:5 4}.axis{stroke:#7895a9;stroke-dasharray:3 4}</style>
+<rect width="1100" height="660" fill="white"/>
+<text x="35" y="42" class="title">HWT905 센서 장착판 — PVC만 타공, 추가 금속 가공 없음</text>
+<text x="35" y="70">2026-10-07 / ENBT-100-100-5 ×2 / 치수 단위 mm / 실물 센서에 대어 홀 위치 확인</text>
+<g transform="translate(0,55)">
+ <text x="80" y="46">상부 3030용 (1장)</text>
+ <rect class="plate" x="70" y="70" width="200" height="200"/>
+ <path class="axis" d="M70 170H270M170 70V270"/>
+ <rect class="sensor" x="115" y="133.2" width="110" height="73.6"/>
+ <circle class="hole" cx="122.1" cy="170" r="4.2"/><circle class="hole" cx="217.9" cy="141.3" r="4.2"/><circle class="hole" cx="217.9" cy="198.7" r="4.2"/>
+ <circle class="hole" cx="90" cy="240" r="6.6"/><circle class="hole" cx="250" cy="240" r="6.6"/>
+ <text x="146" y="292">100 × 100 × 5</text>
+ <text x="54" y="321" class="small">센서 3홀 Ø4.2 / 프레임 2홀 Ø6.6</text>
+</g>
+<g transform="translate(360,55)">
+ <text x="80" y="46">하부 4040용 (1장)</text>
+ <rect class="plate" x="70" y="70" width="200" height="200"/>
+ <path class="axis" d="M70 170H270M170 70V270"/>
+ <rect class="sensor" x="115" y="133.2" width="110" height="73.6"/>
+ <circle class="hole" cx="122.1" cy="170" r="4.2"/><circle class="hole" cx="217.9" cy="141.3" r="4.2"/><circle class="hole" cx="217.9" cy="198.7" r="4.2"/>
+ <circle class="hole" cx="90" cy="240" r="9"/><circle class="hole" cx="250" cy="240" r="9"/>
+ <text x="146" y="292">100 × 100 × 5</text>
+ <text x="54" y="321" class="small">센서 3홀 Ø4.2 / 프레임 2홀 Ø9</text>
+</g>
+<text x="735" y="130">판 중심 = (0,0)</text>
+<text x="735" y="161">센서홀 좌표 (X,Y)</text>
+<text x="735" y="190">(−23.95, 0)</text>
+<text x="735" y="219">(+23.95, +14.35)</text>
+<text x="735" y="248">(+23.95, −14.35)</text>
+<text x="735" y="289">프레임홀 좌표</text>
+<text x="735" y="318">(−40, −35), (+40, −35)</text>
+<text x="35" y="420">조립: 프레임 상면 → 기성 간격재 5 mm 두 장(10 mm) → PVC 판 5 mm → 와셔 → 볼트 머리</text>
+<text x="35" y="454">상부: M6×25 2개, E-SPN306 2개, WSSB10-6-5 4개, WSSB10-6-1.5 2개</text>
+<text x="35" y="488">하부: M8×25 2개, 기존 4040용 M8 슬롯너트·M8 와셔 각2개, WSSB12-8-5 4개</text>
+<text x="35" y="522">센서는 각 판에 기존 M4×25 볼트·너트 3조로 고정. 볼트 머리는 판 아래, 너트는 센서 귀 위.</text>
+<text x="35" y="556">재단 불필요. 플라스틱 타공만 실시. 낮은 체결력으로 판 휨 없이 고정하고 케이블 인장 완화.</text>
+<text x="35" y="596" class="small">뒤쪽 횡보 장착: 판 중심 (X,Y)=(0,−295), 프레임홀 (±40,−330). 센서축 방향은 조립 후 영점 보정.</text>
+<text x="35" y="625" class="small">STEP은 플라스틱 홀 배치/조립 참고용이며 새로운 금속 가공 발주 파일이 아닙니다.</text>
+</svg>
