@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-07",
+  "source_bom": "outputs/20261007_bom_mechanical_misumi/2026_BIZ-Lab_재료비관리_RevF_기구류미스미통합_2026-10-07.xlsx",
+  "source_sheet": "Sheet1",
+  "source_purchase_rows": [4, 74],
+  "source_purchase_line_count": 71,
+  "cart_processing_line_count": 70,
+  "payment_executed": false,
+  "original_bom_modified_by_this_task": false,
+  "status": "PARTIAL_CART_FILL_CHECKOUT_NOT_CLEARED",
+  "existing_non_bom_items_policy": "Preserved; not deleted. NAVIMRO and DeviceMart only BOM items selected. MISUMI all items left unselected because full cart rendering could not be verified.",
+  "navimro": {
+    "bom_lines": 7,
+    "cart_total_lines": 34,
+    "selected_bom_lines": 7,
+    "verification": "Final DOM rows: SKU, pack contents, quantity, checked state.",
+    "items": [["K06130485",1],["K64647607",1],["K14364804",1],["K06130054",1],["K52569152",1],["K55027039",3],["K92854706",1]]
+  },
+  "devicemart": {
+    "bom_lines": 22,
+    "cart_total_lines": 32,
+    "selected_bom_lines": 21,
+    "new_cart_lines_added": 19,
+    "preexisting_matching_lines": 2,
+    "verification": "Final cart DOM: product IDs, quantity, options, checked state. All 11 old non-BOM lines unselected.",
+    "selected_supply_total_krw": 1048480,
+    "selected_vat_included_total_krw": 1153328,
+    "items": [["12375531",1],["16055797",1],["7182",2],["14954324",5],["13232167",1],["8994457",5],["11512",10],["11510",10],["11509",10],["10895022",1],["10894246",1],["16043939",2],["11269545",1],["15085668",1],["13963538",1],["14954315",1],["13352",6],["1997",10],["1061716",1],["10912091",10],["7181",2]],
+    "options": {
+      "7182": "KIV 4.0SQ red, quantity 2 x 1m, 절단없이 받기 (continuous 2m)",
+      "7181": "KIV 4.0SQ black, quantity 2 x 1m, 절단없이 받기 (continuous 2m)",
+      "11269545": "DDR-15G-12",
+      "13352": "UL2919 3P x 24AWG, quantity 6 x 1m, 절단없이 받기 (continuous 6m)",
+      "14954315": "221-415, one pack of 25EA"
+    },
+    "not_added": {
+      "bom_row": 29,
+      "product_id": "10932540",
+      "model": "Anyport AP-6UTP-2M(G)",
+      "quantity": 1,
+      "reason": "Quick order UI states product sale discontinued and hidden.",
+      "replacement_approval": "Awaiting user reply; no substitute added.",
+      "candidate": {"model":"Coms C3900","product_id":"16499","url":"https://www.devicemart.co.kr/goods/view?no=16499","spec":"2m Cat6 UTP direct RJ45 cable, 1Gbps","quantity":1,"supply_price_krw":2300,"vat_included_price_krw":2530,"displayed_preparation":"3~4 days"}
+    }
+  },
+  "motorbank": {
+    "bom_lines": 3,
+    "cart_total_lines": 3,
+    "verification": "Final cart DOM and screenshot: 3 lines, each quantity 3; actuator voltage/stroke/encoder options.",
+    "vat_included_total_krw": 675840,
+    "items": [["1000035578",3],["1000007655",3],["1000008040",3]],
+    "options": {"1000035578":"LM4075OE-1075 / motor 24V / stroke 100mm / encoder 5V","1000007655":"LMB-10 / 1개만 구입 x3 (not the 2-piece set)","1000008040":"DMC-200"}
+  },
+  "misumi": {
+    "bom_lines_including_meviy": 36,
+    "cart_total_lines": 37,
+    "new_lines_added": 31,
+    "preexisting_matching_lines": 5,
+    "preexisting_non_bom_lines": 1,
+    "selected_lines_final": 0,
+    "verification": "31 model/quantity pairs accepted through bulk input, selected BOXCO brand for enclosure, add-to-cart success shown, count increased from 6 to 37. Initial six preexisting lines checked before adding; final first ten lines match submitted quantities. Final remaining 27-line rendering and order selection NOT verified.",
+    "display_issue": "Cart persists 37 lines but only first 10 are rendered. Scroll, keyboard navigation, reload, temporary viewport and fresh cart tab did not expose remaining lines. Temporary viewport reset and duplicate verification tab closed. Do not use Select All or submit order until obsolete shim is excluded and full cart quantities checked.",
+    "obsolete_line_not_to_order": ["CIMR6-12-0.5",12],
+    "new_items": [["E-DNF4040BK-700",2],["E-DNF4040BK-620",4],["E-DCBK4035",8],["CB8-16",100],["CB8-20",100],["HXN-ST-M8-12",6],["E-SPN408",100],["BC-AGP-507025",1],["5070P",1],["DYP-G16B-B-3M-1.5",1],["BC-PG13.5L-G-N",10],["NMT-200KTW",1],["KS-ELETAPE-016MM-19MM-10M-BLACK",3],["E-DNF3030-700",2],["E-DNF3030-640",4],["E-SPN306",24],["E-DCBK3025",8],["CB6-12",16],["CB6-18",6],["HCDGH6-40",3],["WSSB10-6-4",6],["WSSB10-6-1.5",5],["CBS6-12",3],["MRB-300",3],["CIMR6-10-0.1",9],["CIMR6-10-0.5",12],["ENBT-100-100-5",2],["CB6-25",2],["WSSB10-6-5",4],["CB8-25",2],["WSSB12-8-5",4]],
+    "preexisting_bom_items": [["PHS6",2],["MVBLK-ASN-4NX-8UHCW",3],["MVBLK-ASN-4NX-MBY1F",1],["MVBLK-ASN-4NX-7TGEL",1],["MVBLK-ASN-4NX-1YMXR",1]],
+    "phs6_pack_contents": "2EA per pack, quantity 2 packs = 4EA",
+    "lead_time_note": "MRB-300 displayed 2026/10/19 ship during bulk input check, not previous 10/14. Shipping estimates can change."
+  },
+  "gmarket": {
+    "bom_lines": 2,
+    "verification": "Existing cart matches, no duplicate additions; final selected option and quantity checked.",
+    "vat_included_total_krw": 455060,
+    "items": [["4571273052",1],["3973625857",2]],
+    "options": {"4571273052":"ZMEC485DI, seller 연승몰","3973625857":"03 HWT905-RS485 (+46,200원), seller 케이일레븐홀딩스"},
+    "note": "Latest XLSX gateway vendor is Gmarket, unlike older JSON manifest. Actual cart gateway price 90,000 KRW including VAT."
+  },
+  "digikey": {
+    "bom_lines": 1,
+    "verification": "Existing exact cart row, quantity 1, availability 즉시; no duplicate addition.",
+    "items": [["2066-22.32.0.024.4320-ND",1]],
+    "displayed_supply_subtotal_krw": 65302,
+    "displayed_shipping": "free",
+    "note": "Displayed subtotal is not represented as a confirmed VAT-inclusive final charge. Checkout not submitted."
+  },
+  "remaining_actions": [
+    "User decision on discontinued Ethernet cable replacement; candidate not added.",
+    "Resolve MISUMI remaining-line display, verify all final quantities and select only 36 BOM lines, excluding CIMR6-12-0.5.",
+    "User completes checkout only after reviewing final selected lines, prices and lead times."
+  ],
+  "evidence_images_local_only": ["motorbank_cart.jpg","devicemart_cart.jpg","misumi_cart_display_limit.jpg","navimro_cart.jpg","c3900_replacement_candidate.jpg"]
+}
