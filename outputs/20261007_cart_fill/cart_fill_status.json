@@ -4,28 +4,31 @@
   "source_sheet": "Sheet1",
   "source_purchase_rows": [4, 74],
   "source_purchase_line_count": 71,
-  "cart_processing_line_count": 70,
+  "cart_processing_line_count": 71,
   "payment_executed": false,
   "original_bom_modified_by_this_task": false,
   "status": "PARTIAL_CART_FILL_CHECKOUT_NOT_CLEARED",
-  "existing_non_bom_items_policy": "Preserved; not deleted. NAVIMRO and DeviceMart only BOM items selected. MISUMI all items left unselected because full cart rendering could not be verified.",
+  "existing_non_bom_items_policy": "User authorized obsolete-design cart deletion and C3900 cable replacement. NAVIMRO and DeviceMart now contain only current BOM items (approved cable replacement included). MISUMI obsolete shim remains inaccessible; all 37 lines left unselected.",
   "navimro": {
     "bom_lines": 7,
-    "cart_total_lines": 34,
+    "cart_total_lines": 7,
     "selected_bom_lines": 7,
-    "verification": "Final DOM rows: SKU, pack contents, quantity, checked state.",
+    "verification": "After cleanup and fresh reload: exactly seven current BOM SKUs and quantities match, all selected. Selected supply total 122610 KRW. Screenshot navimro_after_cleanup.jpg.",
+    "obsolete_lines_removed": 27,
+    "cleanup_note": "Bulk delete confirmation did not change persisted rows. Individual deletion was used. Final reconciliation found the PE wire missing and obsolete PCB support still present; support was deleted and K55027039 quantity 3 restored. Fresh reload confirmed exact seven-line BOM match.",
     "items": [["K06130485",1],["K64647607",1],["K14364804",1],["K06130054",1],["K52569152",1],["K55027039",3],["K92854706",1]]
   },
   "devicemart": {
     "bom_lines": 22,
-    "cart_total_lines": 32,
-    "selected_bom_lines": 21,
-    "new_cart_lines_added": 19,
+    "cart_total_lines": 22,
+    "selected_bom_lines": 22,
+    "new_cart_lines_added": 20,
     "preexisting_matching_lines": 2,
-    "verification": "Final cart DOM: product IDs, quantity, options, checked state. All 11 old non-BOM lines unselected.",
-    "selected_supply_total_krw": 1048480,
-    "selected_vat_included_total_krw": 1153328,
-    "items": [["12375531",1],["16055797",1],["7182",2],["14954324",5],["13232167",1],["8994457",5],["11512",10],["11510",10],["11509",10],["10895022",1],["10894246",1],["16043939",2],["11269545",1],["15085668",1],["13963538",1],["14954315",1],["13352",6],["1997",10],["1061716",1],["10912091",10],["7181",2]],
+    "verification": "Fresh final cart DOM: exactly 22 current/approved-replacement product IDs with correct quantities and options, all selected. Ten remaining obsolete lines deleted; old MDD10A product 1280280 already absent before this cleanup.",
+    "obsolete_lines_removed_this_cleanup": [["1382306",1],["15960724",1],["13231965",1],["1330743",1],["12170196",4],["16020344",3],["8822862",1],["8831641",1],["10916422",1],["12538843",2]],
+    "selected_supply_total_krw": 1050780,
+    "selected_vat_included_total_krw": 1155858,
+    "items": [["12375531",1],["16055797",1],["7182",2],["14954324",5],["13232167",1],["8994457",5],["11512",10],["11510",10],["11509",10],["10895022",1],["10894246",1],["16043939",2],["11269545",1],["15085668",1],["13963538",1],["14954315",1],["13352",6],["1997",10],["1061716",1],["10912091",10],["7181",2],["16499",1]],
     "options": {
       "7182": "KIV 4.0SQ red, quantity 2 x 1m, 절단없이 받기 (continuous 2m)",
       "7181": "KIV 4.0SQ black, quantity 2 x 1m, 절단없이 받기 (continuous 2m)",
@@ -39,7 +42,8 @@
       "model": "Anyport AP-6UTP-2M(G)",
       "quantity": 1,
       "reason": "Quick order UI states product sale discontinued and hidden.",
-      "replacement_approval": "Awaiting user reply; no substitute added.",
+      "replacement_approval": "User approved replacement in follow-up. Coms C3900 product 16499 quantity 1 added and verified in final cart. Original XLSX not edited by this cart task.",
+      "replacement_added": true,
       "candidate": {"model":"Coms C3900","product_id":"16499","url":"https://www.devicemart.co.kr/goods/view?no=16499","spec":"2m Cat6 UTP direct RJ45 cable, 1Gbps","quantity":1,"supply_price_krw":2300,"vat_included_price_krw":2530,"displayed_preparation":"3~4 days"}
     }
   },
@@ -83,9 +87,9 @@
     "note": "Displayed subtotal is not represented as a confirmed VAT-inclusive final charge. Checkout not submitted."
   },
   "remaining_actions": [
-    "User decision on discontinued Ethernet cable replacement; candidate not added.",
     "Resolve MISUMI remaining-line display, verify all final quantities and select only 36 BOM lines, excluding CIMR6-12-0.5.",
+    "Synchronize BOM Ethernet cable row 29 with approved Coms C3900 product 16499 when workbook update is requested.",
     "User completes checkout only after reviewing final selected lines, prices and lead times."
   ],
-  "evidence_images_local_only": ["motorbank_cart.jpg","devicemart_cart.jpg","misumi_cart_display_limit.jpg","navimro_cart.jpg","c3900_replacement_candidate.jpg"]
+  "evidence_images_local_only": ["motorbank_cart.jpg","devicemart_cart.jpg","misumi_cart_display_limit.jpg","navimro_cart.jpg","c3900_replacement_candidate.jpg","navimro_after_cleanup.jpg","devicemart_after_cleanup.jpg","c3900_cart_final.jpg"]
 }
