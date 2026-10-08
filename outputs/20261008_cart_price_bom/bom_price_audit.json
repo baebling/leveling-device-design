@@ -1,0 +1,589 @@
+{
+  "asOf": "2026-10-08",
+  "sourcePath": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\20261007_bom_mechanical_misumi\\2026_BIZ-Lab_재료비관리_RevF_기구류미스미통합_2026-10-07.xlsx",
+  "outputPath": "C:\\Users\\gangm\\OneDrive\\2. 연구실\\지원사업\\BIZ-Lab 창업클럽\\수평유지장치설계 프로젝트\\outputs\\20261008_cart_price_bom\\2026_BIZ-Lab_재료비관리_RevF_장바구니가격반영_2026-10-08.xlsx",
+  "lineCount": 71,
+  "counts": {
+    "nav": 7,
+    "dm": 23,
+    "mb": 3,
+    "mis": 36,
+    "gm": 2
+  },
+  "oldSupplyTotal": 2904493,
+  "newSupplyTotal": 2917800,
+  "changes": [
+    {
+      "originalRow": 5,
+      "model": "K64647607",
+      "newModel": "K64647607",
+      "oldSupply": 8990,
+      "newSupply": 9990,
+      "delta": 1000
+    },
+    {
+      "originalRow": 9,
+      "model": "K55027039",
+      "newModel": "K55027039",
+      "oldSupply": 3870,
+      "newSupply": 4170,
+      "delta": 300
+    },
+    {
+      "originalRow": 16,
+      "model": "Littelfuse 01550300Z / 8994457",
+      "newModel": "Littelfuse 01550300Z / 8994457",
+      "oldSupply": 54900,
+      "newSupply": 44750,
+      "delta": -10150
+    },
+    {
+      "originalRow": 20,
+      "model": "KGE-C4R2R / 10895022",
+      "newModel": "KGE-C4R2R / 10895022",
+      "oldSupply": 6600,
+      "newSupply": 7000,
+      "delta": 400
+    },
+    {
+      "originalRow": 24,
+      "model": "LS EBE32FB 2P 10A 30mA / 15085668",
+      "newModel": "LS EBE32FB 2P 10A 30mA / 15085668",
+      "oldSupply": 30000,
+      "newSupply": 33000,
+      "delta": 3000
+    },
+    {
+      "originalRow": 25,
+      "model": "AKX00032 / 13963538",
+      "newModel": "AKX00032 / 13963538",
+      "oldSupply": 496970,
+      "newSupply": 505030,
+      "delta": 8060
+    },
+    {
+      "originalRow": 29,
+      "model": "Anyport AP-6UTP-2M(G) / 10932540",
+      "newModel": "Coms C3900 / CAT6 2M / 16499",
+      "oldSupply": 1200,
+      "newSupply": 2300,
+      "delta": 1100
+    },
+    {
+      "originalRow": 54,
+      "model": "CB6-12",
+      "newModel": "CB6-12",
+      "oldSupply": 3840,
+      "newSupply": 4304,
+      "delta": 464
+    },
+    {
+      "originalRow": 72,
+      "model": "Finder 22.32.0.024.4320",
+      "newModel": "Finder 22.32.0.024.4320",
+      "oldSupply": 65302,
+      "newSupply": 78070,
+      "delta": 12768
+    },
+    {
+      "originalRow": 73,
+      "model": "ZMEC485DI / 1000028596",
+      "newModel": "ZMEC485DI / 4571273052",
+      "oldSupply": 76364,
+      "newSupply": 81818,
+      "delta": 5454
+    },
+    {
+      "originalRow": 74,
+      "model": "HWT905-RS485 / 3973625857 / 옵션03",
+      "newModel": "HWT905-RS485 / 3973625857 / 옵션03",
+      "oldSupply": 331871,
+      "newSupply": 322782,
+      "delta": -9089
+    }
+  ],
+  "rowMapping": [
+    {
+      "originalRow": 4,
+      "outputRow": 4,
+      "group": "nav",
+      "sku": "K06130485"
+    },
+    {
+      "originalRow": 5,
+      "outputRow": 5,
+      "group": "nav",
+      "sku": "K64647607"
+    },
+    {
+      "originalRow": 6,
+      "outputRow": 6,
+      "group": "nav",
+      "sku": "K14364804"
+    },
+    {
+      "originalRow": 7,
+      "outputRow": 7,
+      "group": "nav",
+      "sku": "K06130054"
+    },
+    {
+      "originalRow": 8,
+      "outputRow": 8,
+      "group": "nav",
+      "sku": "K52569152"
+    },
+    {
+      "originalRow": 9,
+      "outputRow": 9,
+      "group": "nav",
+      "sku": "K55027039"
+    },
+    {
+      "originalRow": 10,
+      "outputRow": 10,
+      "group": "nav",
+      "sku": "K92854706"
+    },
+    {
+      "originalRow": 11,
+      "outputRow": 11,
+      "group": "dm",
+      "sku": "12375531"
+    },
+    {
+      "originalRow": 12,
+      "outputRow": 12,
+      "group": "dm",
+      "sku": "16055797"
+    },
+    {
+      "originalRow": 13,
+      "outputRow": 13,
+      "group": "dm",
+      "sku": "7182"
+    },
+    {
+      "originalRow": 14,
+      "outputRow": 14,
+      "group": "dm",
+      "sku": "14954324"
+    },
+    {
+      "originalRow": 15,
+      "outputRow": 15,
+      "group": "dm",
+      "sku": "13232167"
+    },
+    {
+      "originalRow": 16,
+      "outputRow": 16,
+      "group": "dm",
+      "sku": "8994457"
+    },
+    {
+      "originalRow": 17,
+      "outputRow": 17,
+      "group": "dm",
+      "sku": "11512"
+    },
+    {
+      "originalRow": 18,
+      "outputRow": 18,
+      "group": "dm",
+      "sku": "11510"
+    },
+    {
+      "originalRow": 19,
+      "outputRow": 19,
+      "group": "dm",
+      "sku": "11509"
+    },
+    {
+      "originalRow": 20,
+      "outputRow": 20,
+      "group": "dm",
+      "sku": "10895022"
+    },
+    {
+      "originalRow": 21,
+      "outputRow": 21,
+      "group": "dm",
+      "sku": "10894246"
+    },
+    {
+      "originalRow": 22,
+      "outputRow": 22,
+      "group": "dm",
+      "sku": "16043939"
+    },
+    {
+      "originalRow": 23,
+      "outputRow": 23,
+      "group": "dm",
+      "sku": "11269545"
+    },
+    {
+      "originalRow": 24,
+      "outputRow": 24,
+      "group": "dm",
+      "sku": "15085668"
+    },
+    {
+      "originalRow": 25,
+      "outputRow": 25,
+      "group": "dm",
+      "sku": "13963538"
+    },
+    {
+      "originalRow": 26,
+      "outputRow": 26,
+      "group": "dm",
+      "sku": "14954315"
+    },
+    {
+      "originalRow": 27,
+      "outputRow": 27,
+      "group": "dm",
+      "sku": "13352"
+    },
+    {
+      "originalRow": 28,
+      "outputRow": 28,
+      "group": "dm",
+      "sku": "1997"
+    },
+    {
+      "originalRow": 29,
+      "outputRow": 29,
+      "group": "dm",
+      "sku": "16499"
+    },
+    {
+      "originalRow": 30,
+      "outputRow": 30,
+      "group": "dm",
+      "sku": "1061716"
+    },
+    {
+      "originalRow": 31,
+      "outputRow": 31,
+      "group": "dm",
+      "sku": "10912091"
+    },
+    {
+      "originalRow": 32,
+      "outputRow": 32,
+      "group": "dm",
+      "sku": "7181"
+    },
+    {
+      "originalRow": 72,
+      "outputRow": 33,
+      "group": "dm",
+      "sku": "13113910"
+    },
+    {
+      "originalRow": 33,
+      "outputRow": 34,
+      "group": "mb",
+      "sku": "1000035578"
+    },
+    {
+      "originalRow": 34,
+      "outputRow": 35,
+      "group": "mb",
+      "sku": "1000007655"
+    },
+    {
+      "originalRow": 35,
+      "outputRow": 36,
+      "group": "mb",
+      "sku": "1000008040"
+    },
+    {
+      "originalRow": 36,
+      "outputRow": 37,
+      "group": "mis",
+      "sku": "E-DNF4040BK-700"
+    },
+    {
+      "originalRow": 37,
+      "outputRow": 38,
+      "group": "mis",
+      "sku": "E-DNF4040BK-620"
+    },
+    {
+      "originalRow": 38,
+      "outputRow": 39,
+      "group": "mis",
+      "sku": "E-DCBK4035"
+    },
+    {
+      "originalRow": 39,
+      "outputRow": 40,
+      "group": "mis",
+      "sku": "CB8-16"
+    },
+    {
+      "originalRow": 40,
+      "outputRow": 41,
+      "group": "mis",
+      "sku": "CB8-20"
+    },
+    {
+      "originalRow": 41,
+      "outputRow": 42,
+      "group": "mis",
+      "sku": "HXN-ST-M8-12"
+    },
+    {
+      "originalRow": 42,
+      "outputRow": 43,
+      "group": "mis",
+      "sku": "E-SPN408"
+    },
+    {
+      "originalRow": 43,
+      "outputRow": 44,
+      "group": "mis",
+      "sku": "BC-AGP-507025"
+    },
+    {
+      "originalRow": 44,
+      "outputRow": 45,
+      "group": "mis",
+      "sku": "5070P"
+    },
+    {
+      "originalRow": 45,
+      "outputRow": 46,
+      "group": "mis",
+      "sku": "DYP-G16B-B-3M-1.5"
+    },
+    {
+      "originalRow": 46,
+      "outputRow": 47,
+      "group": "mis",
+      "sku": "BC-PG13.5L-G-N"
+    },
+    {
+      "originalRow": 47,
+      "outputRow": 48,
+      "group": "mis",
+      "sku": "NMT-200KTW"
+    },
+    {
+      "originalRow": 48,
+      "outputRow": 49,
+      "group": "mis",
+      "sku": "KS-ELETAPE-016MM-19MM-10M-BLACK"
+    },
+    {
+      "originalRow": 49,
+      "outputRow": 50,
+      "group": "mis",
+      "sku": "PHS6"
+    },
+    {
+      "originalRow": 50,
+      "outputRow": 51,
+      "group": "mis",
+      "sku": "E-DNF3030-700"
+    },
+    {
+      "originalRow": 51,
+      "outputRow": 52,
+      "group": "mis",
+      "sku": "E-DNF3030-640"
+    },
+    {
+      "originalRow": 52,
+      "outputRow": 53,
+      "group": "mis",
+      "sku": "E-SPN306"
+    },
+    {
+      "originalRow": 53,
+      "outputRow": 54,
+      "group": "mis",
+      "sku": "E-DCBK3025"
+    },
+    {
+      "originalRow": 54,
+      "outputRow": 55,
+      "group": "mis",
+      "sku": "CB6-12"
+    },
+    {
+      "originalRow": 55,
+      "outputRow": 56,
+      "group": "mis",
+      "sku": "CB6-18"
+    },
+    {
+      "originalRow": 56,
+      "outputRow": 57,
+      "group": "mis",
+      "sku": "HCDGH6-40"
+    },
+    {
+      "originalRow": 57,
+      "outputRow": 58,
+      "group": "mis",
+      "sku": "WSSB10-6-4"
+    },
+    {
+      "originalRow": 58,
+      "outputRow": 59,
+      "group": "mis",
+      "sku": "WSSB10-6-1.5"
+    },
+    {
+      "originalRow": 59,
+      "outputRow": 60,
+      "group": "mis",
+      "sku": "CBS6-12"
+    },
+    {
+      "originalRow": 60,
+      "outputRow": 61,
+      "group": "mis",
+      "sku": "MRB-300"
+    },
+    {
+      "originalRow": 61,
+      "outputRow": 62,
+      "group": "mis",
+      "sku": "CIMR6-10-0.1"
+    },
+    {
+      "originalRow": 62,
+      "outputRow": 63,
+      "group": "mis",
+      "sku": "CIMR6-10-0.5"
+    },
+    {
+      "originalRow": 63,
+      "outputRow": 64,
+      "group": "mis",
+      "sku": "ENBT-100-100-5"
+    },
+    {
+      "originalRow": 64,
+      "outputRow": 65,
+      "group": "mis",
+      "sku": "CB6-25"
+    },
+    {
+      "originalRow": 65,
+      "outputRow": 66,
+      "group": "mis",
+      "sku": "WSSB10-6-5"
+    },
+    {
+      "originalRow": 66,
+      "outputRow": 67,
+      "group": "mis",
+      "sku": "CB8-25"
+    },
+    {
+      "originalRow": 67,
+      "outputRow": 68,
+      "group": "mis",
+      "sku": "WSSB12-8-5"
+    },
+    {
+      "originalRow": 68,
+      "outputRow": 69,
+      "group": "mis",
+      "sku": "MVBLK-ASN-4NX-8UHCW"
+    },
+    {
+      "originalRow": 69,
+      "outputRow": 70,
+      "group": "mis",
+      "sku": "MVBLK-ASN-4NX-MBY1F"
+    },
+    {
+      "originalRow": 70,
+      "outputRow": 71,
+      "group": "mis",
+      "sku": "MVBLK-ASN-4NX-7TGEL"
+    },
+    {
+      "originalRow": 71,
+      "outputRow": 72,
+      "group": "mis",
+      "sku": "MVBLK-ASN-4NX-1YMXR"
+    },
+    {
+      "originalRow": 73,
+      "outputRow": 73,
+      "group": "gm",
+      "sku": "4571273052"
+    },
+    {
+      "originalRow": 74,
+      "outputRow": 74,
+      "group": "gm",
+      "sku": "3973625857"
+    }
+  ],
+  "nativeLinkRepairs": [
+    {
+      "cell": "G29",
+      "target": "https://www.devicemart.co.kr/goods/view?no=16499"
+    },
+    {
+      "cell": "G33",
+      "target": "https://www.devicemart.co.kr/goods/view?no=13113910"
+    },
+    {
+      "cell": "G73",
+      "target": "https://item.gmarket.co.kr/Item?goodsCode=4571273052"
+    }
+  ],
+  "totals": {
+    "nav": {
+      "supply": 122610,
+      "vat": 12261,
+      "gross": 134871,
+      "shipping": 0,
+      "vatBasis": "장바구니 VAT 별도 공급가에서 10% 산출"
+    },
+    "dm": {
+      "supply": 1128850,
+      "vat": 112885,
+      "gross": 1241735,
+      "shipping": 0
+    },
+    "mb": {
+      "supply": 614400,
+      "vat": 61440,
+      "gross": 675840,
+      "shipping": 0
+    },
+    "mis": {
+      "supply": 647340,
+      "vat": 64734,
+      "gross": 712074,
+      "shipping": 0,
+      "includesMeviySupply": 177210
+    },
+    "gm": {
+      "supply": 404600,
+      "vat": 40460,
+      "gross": 445060,
+      "shipping": 0,
+      "vatBasis": "VAT 포함 표시가격을 1.1로 역산해 품목 공급가 원단위 반올림. 세금계산서 확정액 아님."
+    },
+    "all": {
+      "supply": 2917800,
+      "vat": 291780,
+      "gross": 3209580,
+      "remaining": 790420
+    }
+  },
+  "errorScan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}

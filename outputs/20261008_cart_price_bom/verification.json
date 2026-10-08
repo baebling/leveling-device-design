@@ -1,0 +1,17 @@
+{
+  "lineCount": 71,
+  "cachedTotals": {
+    "supply": 2917800,
+    "vat": 291780,
+    "gross": 3209580,
+    "remaining": 790420
+  },
+  "formulasPreserved": true,
+  "vendorGroupingPreserved": true,
+  "allLinkDestinationsCorrect": true,
+  "nativeLinkRepairs": 3,
+  "visibleStylesPreserved": true,
+  "styleNote": "Legacy font charset marker omitted by export; name, size, color, fill, border, alignment and number format verified.",
+  "sheetAndFreezePreserved": true,
+  "unexpectedFormulaErrors": 0
+}
